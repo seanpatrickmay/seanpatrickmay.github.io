@@ -1,11 +1,12 @@
 {
   "name": "sean-portfolio",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "preview": "npx serve out -l 4321"
   },
   "dependencies": {
     "lucide-react": "^0.447.0",

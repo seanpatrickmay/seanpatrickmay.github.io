@@ -8,7 +8,7 @@
       "Two-model pipeline: bounding box → digit count classifier.",
       "Custom image annotation tool for rapid dataset creation."
     ],
-    "links": [{ "label": "Repo", "href": "https://github.com/seanpatrickmay/Human-Digit-Recognition"}]
+    "links": [{ "label": "Git Repo", "href": "https://github.com/seanpatrickmay/Human-Digit-Recognition"}]
   },
   {
     "title": "Counterfactual Regret Exploration (CFR-Min)",
@@ -19,7 +19,7 @@
       "Worked examples: Colonel Blotto, Kuhn Poker.",
       "Toward general application for sequential games (Risk, Poker)."
     ],
-    "links": [{ "label": "Repo", "href": "https://github.com/seanpatrickmay/CFR-Exploration"}]
+    "links": [{ "label": "Git Repo", "href": "https://github.com/seanpatrickmay/CFR-Exploration"}]
   },
   {
     "title": "NLHE Alpha-Beta Pruning",
@@ -30,7 +30,7 @@
       "Hand bucketing + probabilistic range model to reduce space.",
       "Transforming NLHE into deterministic, complete-information variant."
     ],
-    "links": [{ "label": "Repo", "href": "https://github.com/seanpatrickmay/PokerML"}]
+    "links": [{ "label": "Git Repo", "href": "https://github.com/seanpatrickmay/PokerML"}]
   },
   {
     "title": "Linux Shell (C)",
