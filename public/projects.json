@@ -19,7 +19,7 @@
       "Worked examples: Colonel Blotto, Kuhn Poker.",
       "Toward general application for sequential games (Risk, Poker)."
     ],
-    "links": [{ "label": "Repo", "href": "https://github.com/seanpatrickmay/CFR-Exploration"}]]
+    "links": [{ "label": "Repo", "href": "https://github.com/seanpatrickmay/CFR-Exploration"}]
   },
   {
     "title": "NLHE Alpha-Beta Pruning",
