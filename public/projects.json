@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Human Digit Classification",
+    "period": "Jan – Mar 2025",
+    "stack": ["Python","JavaScript","HTML","PyTorch","ML"],
+    "bullets": [
+      "Built a computer vision web app with CNNs.",
+      "Two-model pipeline: bounding box → digit count classifier.",
+      "Custom image annotation tool for rapid dataset creation."
+    ],
+    "links": [{ "label": "Repo", "href": "https://github.com/seanpatrickmay/Human-Digit-Recognition"}]
+  },
+  {
+    "title": "Counterfactual Regret Exploration (CFR-Min)",
+    "period": "Nov 2024 – Present",
+    "stack": ["Jupyter","NumPy","Reinforcement Learning"],
+    "bullets": [
+      "Exploring CFR-Min for Nash equilibria in imperfect-information games.",
+      "Worked examples: Colonel Blotto, Kuhn Poker.",
+      "Toward general application for sequential games (Risk, Poker)."
+    ],
+    "links": [{ "label": "Repo", "href": "https://github.com/seanpatrickmay/CFR-Exploration"}]]
+  },
+  {
+    "title": "NLHE Alpha-Beta Pruning",
+    "period": "Aug – Dec 2024",
+    "stack": ["Python","NumPy","Monte Carlo"],
+    "bullets": [
+      "Adversarial search with alpha–beta pruning over game tree.",
+      "Hand bucketing + probabilistic range model to reduce space.",
+      "Transforming NLHE into deterministic, complete-information variant."
+    ],
+    "links": [{ "label": "Repo", "href": "https://github.com/seanpatrickmay/PokerML"}]
+  },
+  {
+    "title": "Linux Shell (C)",
+    "period": "Oct 2024",
+    "stack": ["C","Concurrency","Data Structures"],
+    "bullets": [
+      "Fully operational shell: commands, piping, I/O redirection, signals.",
+      "Child processes for sequential execution.",
+      "Custom commands: source, prev, cd, help, verbose toggle."
+    ],
+    "links": []
+  }
+]
+
