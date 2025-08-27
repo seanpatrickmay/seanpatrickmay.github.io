@@ -240,43 +240,74 @@ function AboutMe() {
         </div>
 
         {/* Weekly Sparkline */}
-        <Card>
-          <CardHeader className="flex items-center justify-between">
-            <CardTitle className="flex items-center gap-2">
-              Weekly {unit === "mi" ? "Miles" : "Kilometers"}
-              {typeof lastWeek === "number" && (
-                <span className="text-sm opacity-70">
-                  • last: <strong>{lastWeek.toFixed(1)}</strong> {unit}
-                </span>
-              )}
-            </CardTitle>
-            <UnitToggle unit={unit} onChange={setUnit} />
-          </CardHeader>
-          <CardContent>
-            {weeklyValues.length ? (
-              <div className="text-slate-900 dark:text-slate-100">
-                <BarSparkline
-                  values={weeklyValues}
-                  formatter={(v, i) => {
-                    const w = series[i];
-                    const label = w
-                      ? `${w.week_start} → ${w.week_end}`
-                      : `Week ${i + 1}`;
-                    return `${label}: ${v.toFixed(1)} ${unit}`;
-                  }}
-                />
-                <div className="mt-2 text-xs opacity-70">
-                  Best week:{" "}
-                  {typeof bestWeek === "number"
-                    ? bestWeek.toFixed(1)
-                    : "—"}{" "}
-                  {unit}
-                </div>
-              </div>
-            ) : (
-              <div className="text-sm opacity-70">No weekly data yet</div>
-            )}
-          </CardContent>
+	{/* Weekly charts: Hours (left) + Distance (right) */}
+<Card>
+  <CardHeader className="flex items-center justify-between">
+    <CardTitle className="flex items-center gap-2">
+      Weekly Training
+      {/* small live summary */}
+      {weeklyValues.length > 0 && (
+        <span className="text-sm opacity-70">
+          • last:{" "}
+          <strong>
+            {typeof lastWeek === "number" ? lastWeek.toFixed(1) : "—"}
+          </strong>{" "}
+          {unit}
+        </span>
+      )}
+    </CardTitle>
+    {/* unit toggle only affects distance */}
+    <UnitToggle unit={unit} onChange={setUnit} />
+  </CardHeader>
+
+  <CardContent>
+    {series.length ? (
+      <div className="grid md:grid-cols-2 gap-6 text-slate-900 dark:text-slate-100">
+        {/* LEFT: Hours */}
+        <div>
+          <div className="flex items-center justify-between mb-2">
+            <div className="text-sm font-medium opacity-80">Hours</div>
+          </div>
+          <BarSparkline
+            values={series.map(w => w.time_hours)}
+            formatter={(v, i) => {
+              const w = series[i];
+              const label = w ? `${w.week_start} → ${w.week_end}` : `Week ${i + 1}`;
+              return `${label}: ${v.toFixed(2)} h`;
+            }}
+          />
+        </div>
+
+        {/* RIGHT: Distance (mi|km toggle) */}
+        <div>
+          <div className="flex items-center justify-between mb-2">
+            <div className="text-sm font-medium opacity-80">
+              Distance ({unit})
+            </div>
+          </div>
+          <BarSparkline
+            values={series.map(w => (unit === "mi" ? w.distance_mi : w.distance_km))}
+            formatter={(v, i) => {
+              const w = series[i];
+              const label = w ? `${w.week_start} → ${w.week_end}` : `Week ${i + 1}`;
+              return `${label}: ${v.toFixed(1)} ${unit}`;
+            }}
+          />
+        </div>
+      </div>
+    ) : (
+      <div className="text-sm opacity-70">No weekly data yet</div>
+    )}
+
+    {/* Best week footnote (distance uses current unit) */}
+    {weeklyValues.length ? (
+      <div className="mt-3 text-xs opacity-70">
+        Best distance week:{" "}
+        {typeof bestWeek === "number" ? bestWeek.toFixed(1) : "—"} {unit} ·
+        Updated {stats ? new Date(stats.generated_at).toLocaleDateString() : "—"}
+      </div>
+    ) : null}
+	</CardContent>
         </Card>
       </div>
     </section>
