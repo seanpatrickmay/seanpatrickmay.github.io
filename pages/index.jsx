@@ -70,7 +70,7 @@ function AboutStat({ icon: Icon, label, value, hint }) {
 
 function AboutMe() {
   return (
-    <section id="about" className="relative">
+    <section id="about" className="relative scroll-mt-16">
       {/* Soft radial accent */}
       <div
         aria-hidden
@@ -197,7 +197,7 @@ export default function Home() {
 	</header>
 
 	{/* HERO — concise, no overlap with About */}
-	<section id="home" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+	<section id="home" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-16">
 	<div className="grid md:grid-cols-5 gap-8 items-center">
 	<div className="md:col-span-3 space-y-5">
 	<div className="inline-flex items-center gap-2 text-sm px-3 py-1 rounded-full border bg-white dark:bg-slate-900">
@@ -260,25 +260,22 @@ export default function Home() {
 
 	{/* New, expanded About section */}
 	<AboutMe />
-
-	{/* Projects */}
-	<Section title="Projects" icon={Trophy}>
-	<div id="projects" className="grid md:grid-cols-2 gap-6">
-	{projects.map(p => <ProjectCard key={p.title} project={p} />)}
-	</div>
-	</Section>
-
+	        {/* Projects */}
+        <Section id="projects" title="Projects" icon={Trophy}>
+        <div className="grid md:grid-cols-2 gap-6">
+        {projects.map(p => <ProjectCard key={p.title} project={p} />)}
+        </div>
+        </Section>
 	{/* Experience (render your entries via ExperienceItem) */}
-	<Section title="Experience" icon={Briefcase}>
-	<div id="experience" className="grid gap-6">
-	{experience.map((job) => <ExperienceItem key={job.org} job={job} />)}
-	</div>
-	</Section>
-
+        <Section id="experience" title="Experience" icon={Briefcase}>
+        <div className="grid gap-6">
+        {experience.map((job) => <ExperienceItem key={job.org} job={job} />)}
+        </div>
+        </Section>
 	{/* Education */}
-	<Section title="Education" icon={GraduationCap}>
-	<div id="education" className="grid gap-6">
-	{education.map(e => (
+        <Section id="education" title="Education" icon={GraduationCap}>
+        <div className="grid gap-6">
+        {education.map(e => (
 	    <Card key={e.school}>
 	    <CardHeader>
 	    <CardTitle>{e.school}</CardTitle>
@@ -295,11 +292,11 @@ export default function Home() {
 	</Section>
 
 	{/* Skills (updated to resume) */}
-	<Section title="Skills" icon={Cpu}>
-	<div id="skills">
-	<SkillsGrid skills={skills} />
-	</div>
-	</Section>
+        <Section id="skills" title="Skills" icon={Cpu}>
+        <div>
+        <SkillsGrid skills={skills} />
+        </div>
+        </Section>
 
 	<footer className="border-t dark:border-slate-800 py-10 mt-10">
 	<div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
