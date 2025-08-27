@@ -19,7 +19,6 @@ from __future__ import annotations
 
 import json
 import os
-from dotenv import load_dotenv
 from pathlib import Path
 from datetime import date, datetime, timedelta, timezone
 from collections import defaultdict
@@ -30,7 +29,6 @@ from garminconnect import Garmin
 # --------------------------- Configuration -----------------------------------
 
 
-load_dotenv() # Load .env vars
 EMAIL = os.getenv("GARMIN_EMAIL")
 PASSWORD = os.getenv("GARMIN_PASSWORD")
 TOKENS_DIR = Path(os.getenv("GARMIN_TOKENS_DIR", str(Path.home() / ".garminconnect")))
