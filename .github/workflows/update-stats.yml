@@ -1,0 +1,63 @@
+name: Update Garmin stats.json
+
+on:
+  schedule:
+    # 13:15 UTC ≈ 9:15 AM Eastern during DST (will shift 1hr in winter)
+    - cron: "15 13 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # allow committing back to the repo
+
+concurrency:
+  group: "update-stats"
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install garminconnect
+
+      # --- OPTION A: restore cached tokens (recommended, avoids MFA in CI) ---
+      # Put a base64 of your ~/.garminconnect/tokens file(s) into a secret named GARMIN_TOKENS_B64
+      - name: Restore Garmin tokens (if provided)
+        if: ${{ secrets.GARMIN_TOKENS_B64 != '' }}
+        run: |
+          mkdir -p ~/.garminconnect
+          echo "${{ secrets.GARMIN_TOKENS_B64 }}" | base64 -d > ~/.garminconnect/tokens.json
+          ls -la ~/.garminconnect
+
+      # --- OPTION B: fall back to email/password (works only if MFA is NOT enforced) ---
+      - name: Generate stats.json
+        env:
+          GARMIN_EMAIL: ${{ secrets.GARMIN_EMAIL }}
+          GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
+          GARMIN_OUT: public/stats.json
+        run: |
+          python scripts/update_stats.py
+
+      - name: Commit & push changes
+        run: |
+          if [[ -n "$(git status --porcelain public/stats.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add public/stats.json
+            git commit -m "chore(stats): daily refresh [skip ci]"
+            git push
+          else
+            echo "No changes to commit."
+          fi
+

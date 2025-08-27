@@ -1,25 +1,36 @@
-# Node
+# === Node / Next.js ===
 node_modules/
+.next/
+out/
+dist/
+
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Next.js build output
-.next/
-out/
-
-# Env
-.env
+# Local env files
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# OS / Editor junk
+# Mac / OS
 .DS_Store
-*.swp
-*.swo
-.idea/
-.vscode/
+Thumbs.db
+
+# === Python (for update_stats.py) ===
+__pycache__/
+*.pyc
+.venv/
+env/
+venv/
+
+# Garmin tokens
+.garminconnect/
+
+# === Don’t ignore lockfile or stats ===
+!package-lock.json
+!public/stats.json
 
