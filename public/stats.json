@@ -5,143 +5,284 @@
     "fullName": null,
     "userId": null
   },
-  "monthly": {
-    "window_days": 30,
-    "activities_count": 35,
-    "distance_km": 571.53,
-    "distance_mi": 355.13,
-    "time_hours": 36.43,
-    "longest_km": 100.23,
-    "longest_mi": 62.28
-  },
-  "recent": {
-    "last3": [
-      {
-        "id": 20176574779,
-        "name": "Anne Arundel County Cyclisme",
-        "type": "cycling",
-        "start": "2025-08-25 13:49:46",
-        "distance_km": 51.06,
-        "distance_mi": 31.72,
-        "duration_min": 122.7,
-        "avg_speed_kmh": 24.97
+  "stats": {
+    "combined": {
+      "monthly": {
+        "window_days": 30,
+        "activities_count": 35,
+        "distance_km": 571.53,
+        "time_hours": 36.43,
+        "longest_km": 100.23
       },
-      {
-        "id": 20175040492,
-        "name": "Vélo d'intérieur",
-        "type": "indoor_cycling",
-        "start": "2025-08-24 18:41:13",
-        "distance_km": 0.0,
-        "distance_mi": 0.0,
-        "duration_min": 29.7,
-        "avg_speed_kmh": 0.0
+      "recent": {
+        "last3": [
+          {
+            "id": 20176574779,
+            "name": "Anne Arundel County Cyclisme",
+            "type": "cycling",
+            "start": "2025-08-25 13:49:46",
+            "distance_km": 51.06,
+            "duration_min": 122.7,
+            "avg_speed_kmh": 24.97
+          },
+          {
+            "id": 20175040492,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-08-24 18:41:13",
+            "distance_km": 0.0,
+            "duration_min": 29.7,
+            "avg_speed_kmh": 0.0
+          },
+          {
+            "id": 20155257239,
+            "name": "Nags Head Cyclisme",
+            "type": "cycling",
+            "start": "2025-08-23 12:31:33",
+            "distance_km": 52.64,
+            "duration_min": 143.8,
+            "avg_speed_kmh": 21.96
+          }
+        ]
       },
-      {
-        "id": 20155257239,
-        "name": "Nags Head Cyclisme",
-        "type": "cycling",
-        "start": "2025-08-23 12:31:33",
-        "distance_km": 52.64,
-        "distance_mi": 32.71,
-        "duration_min": 143.8,
-        "avg_speed_kmh": 21.96
+      "weekly": {
+        "window_weeks": 12,
+        "series": [
+          {
+            "week_start": "2025-06-02",
+            "week_end": "2025-06-08",
+            "distance_km": 19.71,
+            "time_hours": 1.67
+          },
+          {
+            "week_start": "2025-06-09",
+            "week_end": "2025-06-15",
+            "distance_km": 39.51,
+            "time_hours": 9.68
+          },
+          {
+            "week_start": "2025-06-16",
+            "week_end": "2025-06-22",
+            "distance_km": 20.66,
+            "time_hours": 5.91
+          },
+          {
+            "week_start": "2025-06-23",
+            "week_end": "2025-06-29",
+            "distance_km": 5.38,
+            "time_hours": 1.31
+          },
+          {
+            "week_start": "2025-06-30",
+            "week_end": "2025-07-06",
+            "distance_km": 31.13,
+            "time_hours": 3.27
+          },
+          {
+            "week_start": "2025-07-07",
+            "week_end": "2025-07-13",
+            "distance_km": 14.06,
+            "time_hours": 5.52
+          },
+          {
+            "week_start": "2025-07-14",
+            "week_end": "2025-07-20",
+            "distance_km": 13.35,
+            "time_hours": 7.99
+          },
+          {
+            "week_start": "2025-07-21",
+            "week_end": "2025-07-27",
+            "distance_km": 28.73,
+            "time_hours": 9.7
+          },
+          {
+            "week_start": "2025-07-28",
+            "week_end": "2025-08-03",
+            "distance_km": 19.65,
+            "time_hours": 2.31
+          },
+          {
+            "week_start": "2025-08-04",
+            "week_end": "2025-08-10",
+            "distance_km": 97.47,
+            "time_hours": 14.09
+          },
+          {
+            "week_start": "2025-08-11",
+            "week_end": "2025-08-17",
+            "distance_km": 162.97,
+            "time_hours": 7.15
+          },
+          {
+            "week_start": "2025-08-18",
+            "week_end": "2025-08-24",
+            "distance_km": 240.37,
+            "time_hours": 10.82
+          },
+          {
+            "week_start": "2025-08-25",
+            "week_end": "2025-08-31",
+            "distance_km": 51.06,
+            "time_hours": 2.04
+          }
+        ]
       }
-    ]
-  },
-  "weekly": {
-    "window_weeks": 12,
-    "series": [
-      {
-        "week_start": "2025-06-02",
-        "week_end": "2025-06-08",
-        "distance_km": 19.71,
-        "distance_mi": 12.24,
-        "time_hours": 1.67
+    },
+    "biking": {
+      "monthly": {
+        "window_days": 30,
+        "activities_count": 35,
+        "distance_km": 571.53,
+        "time_hours": 36.43,
+        "longest_km": 100.23
       },
-      {
-        "week_start": "2025-06-09",
-        "week_end": "2025-06-15",
-        "distance_km": 39.51,
-        "distance_mi": 24.55,
-        "time_hours": 9.68
+      "recent": {
+        "last3": [
+          {
+            "id": 20176574779,
+            "name": "Anne Arundel County Cyclisme",
+            "type": "cycling",
+            "start": "2025-08-25 13:49:46",
+            "distance_km": 51.06,
+            "duration_min": 122.7,
+            "avg_speed_kmh": 24.97
+          },
+          {
+            "id": 20175040492,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-08-24 18:41:13",
+            "distance_km": 0.0,
+            "duration_min": 29.7,
+            "avg_speed_kmh": 0.0
+          },
+          {
+            "id": 20155257239,
+            "name": "Nags Head Cyclisme",
+            "type": "cycling",
+            "start": "2025-08-23 12:31:33",
+            "distance_km": 52.64,
+            "duration_min": 143.8,
+            "avg_speed_kmh": 21.96
+          }
+        ]
       },
-      {
-        "week_start": "2025-06-16",
-        "week_end": "2025-06-22",
-        "distance_km": 20.66,
-        "distance_mi": 12.83,
-        "time_hours": 5.91
-      },
-      {
-        "week_start": "2025-06-23",
-        "week_end": "2025-06-29",
-        "distance_km": 5.38,
-        "distance_mi": 3.34,
-        "time_hours": 1.31
-      },
-      {
-        "week_start": "2025-06-30",
-        "week_end": "2025-07-06",
-        "distance_km": 31.13,
-        "distance_mi": 19.35,
-        "time_hours": 3.27
-      },
-      {
-        "week_start": "2025-07-07",
-        "week_end": "2025-07-13",
-        "distance_km": 14.06,
-        "distance_mi": 8.73,
-        "time_hours": 5.52
-      },
-      {
-        "week_start": "2025-07-14",
-        "week_end": "2025-07-20",
-        "distance_km": 13.35,
-        "distance_mi": 8.3,
-        "time_hours": 7.99
-      },
-      {
-        "week_start": "2025-07-21",
-        "week_end": "2025-07-27",
-        "distance_km": 28.73,
-        "distance_mi": 17.85,
-        "time_hours": 9.7
-      },
-      {
-        "week_start": "2025-07-28",
-        "week_end": "2025-08-03",
-        "distance_km": 19.65,
-        "distance_mi": 12.21,
-        "time_hours": 2.31
-      },
-      {
-        "week_start": "2025-08-04",
-        "week_end": "2025-08-10",
-        "distance_km": 97.47,
-        "distance_mi": 60.57,
-        "time_hours": 14.09
-      },
-      {
-        "week_start": "2025-08-11",
-        "week_end": "2025-08-17",
-        "distance_km": 162.97,
-        "distance_mi": 101.27,
-        "time_hours": 7.15
-      },
-      {
-        "week_start": "2025-08-18",
-        "week_end": "2025-08-24",
-        "distance_km": 240.37,
-        "distance_mi": 149.36,
-        "time_hours": 10.82
-      },
-      {
-        "week_start": "2025-08-25",
-        "week_end": "2025-08-31",
-        "distance_km": 51.06,
-        "distance_mi": 31.72,
-        "time_hours": 2.04
+      "weekly": {
+        "window_weeks": 12,
+        "series": [
+          {
+            "week_start": "2025-06-02",
+            "week_end": "2025-06-08",
+            "distance_km": 19.71,
+            "time_hours": 1.67
+          },
+          {
+            "week_start": "2025-06-09",
+            "week_end": "2025-06-15",
+            "distance_km": 39.51,
+            "time_hours": 9.68
+          },
+          {
+            "week_start": "2025-06-16",
+            "week_end": "2025-06-22",
+            "distance_km": 20.66,
+            "time_hours": 5.91
+          },
+          {
+            "week_start": "2025-06-23",
+            "week_end": "2025-06-29",
+            "distance_km": 5.38,
+            "time_hours": 1.31
+          },
+          {
+            "week_start": "2025-06-30",
+            "week_end": "2025-07-06",
+            "distance_km": 31.13,
+            "time_hours": 3.27
+          },
+          {
+            "week_start": "2025-07-07",
+            "week_end": "2025-07-13",
+            "distance_km": 14.06,
+            "time_hours": 5.52
+          },
+          {
+            "week_start": "2025-07-14",
+            "week_end": "2025-07-20",
+            "distance_km": 13.35,
+            "time_hours": 7.99
+          },
+          {
+            "week_start": "2025-07-21",
+            "week_end": "2025-07-27",
+            "distance_km": 28.73,
+            "time_hours": 9.7
+          },
+          {
+            "week_start": "2025-07-28",
+            "week_end": "2025-08-03",
+            "distance_km": 19.65,
+            "time_hours": 2.31
+          },
+          {
+            "week_start": "2025-08-04",
+            "week_end": "2025-08-10",
+            "distance_km": 97.47,
+            "time_hours": 14.09
+          },
+          {
+            "week_start": "2025-08-11",
+            "week_end": "2025-08-17",
+            "distance_km": 162.97,
+            "time_hours": 7.15
+          },
+          {
+            "week_start": "2025-08-18",
+            "week_end": "2025-08-24",
+            "distance_km": 240.37,
+            "time_hours": 10.82
+          },
+          {
+            "week_start": "2025-08-25",
+            "week_end": "2025-08-31",
+            "distance_km": 51.06,
+            "time_hours": 2.04
+          }
+        ]
       }
-    ]
+    },
+    "running": {
+      "monthly": {
+        "window_days": 30,
+        "activities_count": 0,
+        "distance_km": 0,
+        "time_hours": 0,
+        "longest_km": 0
+      },
+      "recent": {
+        "last3": []
+      },
+      "weekly": {
+        "window_weeks": 12,
+        "series": []
+      }
+    },
+    "swimming": {
+      "monthly": {
+        "window_days": 30,
+        "activities_count": 0,
+        "distance_km": 0,
+        "time_hours": 0,
+        "longest_km": 0
+      },
+      "recent": {
+        "last3": []
+      },
+      "weekly": {
+        "window_weeks": 12,
+        "series": []
+      }
+    }
   }
 }

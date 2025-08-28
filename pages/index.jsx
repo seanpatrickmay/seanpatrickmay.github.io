@@ -6,7 +6,7 @@ import ExperienceItem from '@/components/ExperienceItem';
 import SkillsGrid from '@/components/SkillsGrid';
 import Badge from '@/components/ui/Badge';
 import BarSparkline from '@/components/ui/BarSparkline';
-import UnitToggle from '@/components/ui/UnitToggle';
+import ActivityToggle from '@/components/ui/ActivityToggle';
 import SpotifyTopArtists from '@/components/SpotifyTopArtists';
 import SpotifyTopTracks from '@/components/SpotifyTopTracks';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
@@ -98,14 +98,15 @@ function AboutStat({ icon: Icon, label, value, hint }) {
 function AboutMe() {
   const stats = useStats();
   const spotify = useSpotify();
-  const [unit, setUnit] = useState("mi"); // "mi" | "km"
+  const [activity, setActivity] = useState("combined");
 
-  const monthly = stats?.monthly;
-  const series = stats?.weekly?.series ?? [];
+  const data = stats?.stats?.[activity];
+  const monthly = data?.monthly;
+  const series = data?.weekly?.series ?? [];
 
   const weeklyValues = useMemo(
-    () => series.map(w => (unit === "mi" ? w.distance_mi : w.distance_km)),
-    [series, unit]
+    () => series.map(w => w.distance_km),
+    [series]
   );
 
   const lastWeek = weeklyValues.at(-1);
@@ -183,18 +184,14 @@ function AboutMe() {
               <CardTitle>
                 Monthly Training (last {monthly?.window_days ?? 30} days)
               </CardTitle>
-              <UnitToggle unit={unit} onChange={setUnit} />
+              <ActivityToggle activity={activity} onChange={setActivity} />
             </CardHeader>
             <CardContent className="grid sm:grid-cols-3 gap-4">
               <div>
                 <div className="text-3xl font-extrabold">
-                  {monthly
-                    ? unit === "mi"
-                      ? monthly.distance_mi
-                      : monthly.distance_km
-                    : "—"}
+                  {monthly ? monthly.distance_km : "—"}
                 </div>
-                <div className="text-sm opacity-70">Total distance ({unit})</div>
+                <div className="text-sm opacity-70">Total distance (km)</div>
               </div>
               <div>
                 <div className="text-3xl font-extrabold">
@@ -211,8 +208,7 @@ function AboutMe() {
               {monthly && (
                 <div className="sm:col-span-3 text-sm opacity-70">
                   Longest:{" "}
-                  {unit === "mi" ? monthly.longest_mi : monthly.longest_km}{" "}
-                  {unit} · Updated{" "}
+                  {monthly.longest_km} km · Updated{" "}
                   {new Date(stats.generated_at).toLocaleDateString()}
                 </div>
               )}
@@ -225,8 +221,8 @@ function AboutMe() {
               <CardTitle>Recent</CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-3">
-                {(stats?.recent?.last3 ?? []).map((a) => (
+                <ul className="space-y-3">
+                  {(data?.recent?.last3 ?? []).map((a) => (
                   <li
                     key={a.id}
                     className="flex items-start justify-between gap-3"
@@ -239,13 +235,13 @@ function AboutMe() {
                     </div>
                     <div className="text-right shrink-0">
                       <div className="text-sm">
-                        {unit === "mi" ? a.distance_mi : a.distance_km} {unit}
+                        {a.distance_km} km
                       </div>
                       <div className="text-xs opacity-70">{a.duration_min} min</div>
                     </div>
                   </li>
                 ))}
-                {!stats?.recent?.last3?.length && (
+                  {!data?.recent?.last3?.length && (
                   <div className="text-sm opacity-70">No recent activities</div>
                 )}
               </ul>
@@ -259,19 +255,16 @@ function AboutMe() {
   <CardHeader className="flex items-center justify-between">
     <CardTitle className="flex items-center gap-2">
       Weekly Training
-      {/* small live summary */}
       {weeklyValues.length > 0 && (
         <span className="text-sm opacity-70">
           • last:{" "}
           <strong>
             {typeof lastWeek === "number" ? lastWeek.toFixed(1) : "—"}
-          </strong>{" "}
-          {unit}
+          </strong>{" "}km
         </span>
       )}
     </CardTitle>
-    {/* unit toggle only affects distance */}
-    <UnitToggle unit={unit} onChange={setUnit} />
+    <ActivityToggle activity={activity} onChange={setActivity} />
   </CardHeader>
 
   <CardContent>
@@ -296,15 +289,15 @@ function AboutMe() {
         <div>
           <div className="flex items-center justify-between mb-2">
             <div className="text-sm font-medium opacity-80">
-              Distance ({unit})
+              Distance (km)
             </div>
           </div>
           <BarSparkline
-            values={series.map(w => (unit === "mi" ? w.distance_mi : w.distance_km))}
+            values={series.map(w => w.distance_km)}
             formatter={(v, i) => {
               const w = series[i];
               const label = w ? `${w.week_start} → ${w.week_end}` : `Week ${i + 1}`;
-              return `${label}: ${v.toFixed(1)} ${unit}`;
+              return `${label}: ${v.toFixed(1)} km`;
             }}
           />
         </div>
@@ -313,11 +306,11 @@ function AboutMe() {
       <div className="text-sm opacity-70">No weekly data yet</div>
     )}
 
-    {/* Best week footnote (distance uses current unit) */}
+    {/* Best week footnote */}
     {weeklyValues.length ? (
       <div className="mt-3 text-xs opacity-70">
         Best distance week:{" "}
-        {typeof bestWeek === "number" ? bestWeek.toFixed(1) : "—"} {unit} ·
+        {typeof bestWeek === "number" ? bestWeek.toFixed(1) : "—"} km ·
         Updated {stats ? new Date(stats.generated_at).toLocaleDateString() : "—"}
       </div>
     ) : null}
