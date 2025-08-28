@@ -13,11 +13,16 @@ export default function SpotifyTopTracks({ tracks = [] }) {
               className="w-8 h-8 rounded"
             />
           )}
-          <a href={t.url} target="_blank" rel="noreferrer" className="text-sm">
-            <span className="font-medium">{t.name}</span>
+          <a
+            href={t.url}
+            target="_blank"
+            rel="noreferrer"
+            className="text-sm leading-tight"
+          >
+            <span className="font-medium block">{t.name}</span>
             {t.artist && (
-              <span className="text-slate-500 dark:text-slate-400">
-                {' '}– {t.artist}
+              <span className="text-slate-500 dark:text-slate-400 block">
+                {t.artist}
               </span>
             )}
           </a>

@@ -108,8 +108,17 @@ function AboutMe() {
     [series, unit]
   );
 
-  const lastWeek = weeklyValues.at(-1);
+      // use previous week for "last" value (current week is still in progress)
+  const lastWeek = weeklyValues.length > 1 ? weeklyValues.at(-2) : undefined;
   const bestWeek = weeklyValues.length ? Math.max(...weeklyValues) : undefined;
+  const generatedAt = stats ? new Date(stats.generated_at) : null;
+  // display updated time slightly behind the actual generated time, varying by day
+  const updatedAt = generatedAt
+    ? new Date(
+        generatedAt.getTime() -
+          (10 - (generatedAt.getDate() % 11)) * 60 * 1000
+      )
+    : null;
   return (
     <section id="about" className="relative scroll-mt-16">
       {/* Soft radial accent */}
@@ -186,7 +195,7 @@ function AboutMe() {
               <UnitToggle unit={unit} onChange={setUnit} />
             </CardHeader>
             <CardContent className="grid sm:grid-cols-3 gap-4">
-              <div>
+              <div className="flex flex-col items-center justify-center gap-1">
                 <div className="text-3xl font-extrabold">
                   {monthly
                     ? unit === "mi"
@@ -194,26 +203,35 @@ function AboutMe() {
                       : monthly.distance_km
                     : "—"}
                 </div>
-                <div className="text-sm opacity-70">Total distance ({unit})</div>
+                <div className="text-sm opacity-70 h-10 flex items-center justify-center text-center">
+		    Total distance ({unit})
+		</div>
               </div>
-              <div>
+              <div className="flex flex-col items-center justify-center gap-1">
                 <div className="text-3xl font-extrabold">
                   {monthly?.time_hours ?? "—"}
                 </div>
-                <div className="text-sm opacity-70">Total hours</div>
+                <div className="text-sm opacity-70 h-10 flex items-center justify-center">
+		    Total hours
+		</div>
               </div>
-              <div>
+              <div className="flex flex-col items-center justify-center gap-1">
                 <div className="text-3xl font-extrabold">
                   {monthly?.activities_count ?? "—"}
                 </div>
-                <div className="text-sm opacity-70">Activities</div>
+                <div className="text-sm opacity-70 h-10 flex items-center justify-center">
+		    Activities
+		</div>
               </div>
-              {monthly && (
-                <div className="sm:col-span-3 text-sm opacity-70">
+              {monthly && updatedAt && (
+                <div className="sm:col-span-3 text-sm opacity-70 text-center">
                   Longest:{" "}
                   {unit === "mi" ? monthly.longest_mi : monthly.longest_km}{" "}
                   {unit} · Updated{" "}
-                  {new Date(stats.generated_at).toLocaleDateString()}
+		  {updatedAt.toLocaleString(undefined, {
+                    dateStyle: "short",
+                    timeStyle: "short",
+                  })}
                 </div>
               )}
             </CardContent>
@@ -260,7 +278,7 @@ function AboutMe() {
     <CardTitle className="flex items-center gap-2">
       Weekly Training
       {/* small live summary */}
-      {weeklyValues.length > 0 && (
+      {weeklyValues.length > 1 && (
         <span className="text-sm opacity-70">
           • last:{" "}
           <strong>
