@@ -44,7 +44,7 @@ async function main() {
   const token = await getAccessToken();
   const [artistsRes, tracksRes] = await Promise.all([
     fetchTop(token, 'artists', 5),
-    fetchTop(token, 'tracks', 5),
+    fetchTop(token, 'tracks', 10),
   ]);
 
   const artists = (artistsRes.items || []).map(a => ({
