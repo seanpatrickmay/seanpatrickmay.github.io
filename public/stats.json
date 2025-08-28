@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-08-27T20:07:38.098955Z",
+  "generated_at": "2025-08-28T14:35:18.483936Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -7,10 +7,10 @@
   },
   "monthly": {
     "window_days": 30,
-    "activities_count": 35,
+    "activities_count": 34,
     "distance_km": 571.53,
     "distance_mi": 355.13,
-    "time_hours": 36.43,
+    "time_hours": 35.83,
     "longest_km": 100.23,
     "longest_mi": 62.28
   },
@@ -54,9 +54,9 @@
       {
         "week_start": "2025-06-02",
         "week_end": "2025-06-08",
-        "distance_km": 19.71,
-        "distance_mi": 12.24,
-        "time_hours": 1.67
+        "distance_km": 8.43,
+        "distance_mi": 5.24,
+        "time_hours": 0.61
       },
       {
         "week_start": "2025-06-09",
