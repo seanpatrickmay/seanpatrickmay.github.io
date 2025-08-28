@@ -1,52 +1,52 @@
 {
-  "generated_at": "2025-08-27T20:07:38.098955Z",
+  "generated_at": "2025-08-28T02:37:48.328Z",
   "artists": [
     {
-      "name": "Artist One",
-      "image": "https://via.placeholder.com/150",
-      "url": "https://open.spotify.com/artist/1"
+      "name": "Adele",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
+      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     },
     {
-      "name": "Artist Two",
-      "image": "https://via.placeholder.com/150",
-      "url": "https://open.spotify.com/artist/2"
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
-      "name": "Artist Three",
-      "image": "https://via.placeholder.com/150",
-      "url": "https://open.spotify.com/artist/3"
+      "name": "Billy Joel",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebb34057d59275011032ef8bc8",
+      "url": "https://open.spotify.com/artist/6zFYqv1mOsgBRQbae3JJ9e"
     }
   ],
   "tracks": [
     {
-      "name": "Song A",
-      "artist": "Artist One",
-      "image": "https://via.placeholder.com/64",
-      "url": "https://open.spotify.com/track/a"
+      "name": "Right As Rain",
+      "artist": "Adele",
+      "image": "https://i.scdn.co/image/ab67616d0000b27350637420ddb6ea76237bb7f4",
+      "url": "https://open.spotify.com/track/6OLudcGaT6HQ5bXH54kI8i"
     },
     {
-      "name": "Song B",
-      "artist": "Artist Two",
-      "image": "https://via.placeholder.com/64",
-      "url": "https://open.spotify.com/track/b"
+      "name": "You Rock My World",
+      "artist": "Michael Jackson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273ed1c305cd1e673fe925407ce",
+      "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
     },
     {
-      "name": "Song C",
-      "artist": "Artist Three",
-      "image": "https://via.placeholder.com/64",
-      "url": "https://open.spotify.com/track/c"
+      "name": "Lovers Rock",
+      "artist": "TV Girl",
+      "image": "https://i.scdn.co/image/ab67616d0000b273e1bc1af856b42dd7fdba9f84",
+      "url": "https://open.spotify.com/track/6dBUzqjtbnIa1TwYbyw5CM"
     },
     {
-      "name": "Song D",
-      "artist": "Artist Four",
-      "image": "https://via.placeholder.com/64",
-      "url": "https://open.spotify.com/track/d"
+      "name": "Another Day Of Sun",
+      "artist": "La La Land Cast",
+      "image": "https://i.scdn.co/image/ab67616d0000b2730bdf4dd39843ad48c5b66bc4",
+      "url": "https://open.spotify.com/track/5kRBzRZmZTXVg8okC7SJFZ"
     },
     {
-      "name": "Song E",
-      "artist": "Artist Five",
-      "image": "https://via.placeholder.com/64",
-      "url": "https://open.spotify.com/track/e"
+      "name": "Movin' Out (Anthony's Song)",
+      "artist": "Billy Joel",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736ce61113662ecf693b605ee5",
+      "url": "https://open.spotify.com/track/16GUMo6u3D2qo9a19AkYct"
     }
   ]
 }
