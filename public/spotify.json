@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-08-28T02:37:48.328Z",
+  "generated_at": "2025-08-28T02:51:25.092Z",
   "artists": [
     {
       "name": "Adele",
@@ -15,6 +15,16 @@
       "name": "Billy Joel",
       "image": "https://i.scdn.co/image/ab6761610000e5ebb34057d59275011032ef8bc8",
       "url": "https://open.spotify.com/artist/6zFYqv1mOsgBRQbae3JJ9e"
+    },
+    {
+      "name": "Stromae",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebcc129f1c9b5047760d66aae2",
+      "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
+    },
+    {
+      "name": "Zedd",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
+      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     }
   ],
   "tracks": [
