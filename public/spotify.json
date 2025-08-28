@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-08-28T04:51:11.516Z",
+  "generated_at": "2025-08-28T13:45:28.039Z",
   "artists": [
     {
       "name": "Daft Punk",
@@ -41,12 +41,6 @@
       "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
     },
     {
-      "name": "Lovers Rock",
-      "artist": "TV Girl",
-      "image": "https://i.scdn.co/image/ab67616d0000b273e1bc1af856b42dd7fdba9f84",
-      "url": "https://open.spotify.com/track/6dBUzqjtbnIa1TwYbyw5CM"
-    },
-    {
       "name": "Another Day Of Sun",
       "artist": "La La Land Cast",
       "image": "https://i.scdn.co/image/ab67616d0000b2730bdf4dd39843ad48c5b66bc4",
@@ -57,6 +51,12 @@
       "artist": "Billy Joel",
       "image": "https://i.scdn.co/image/ab67616d0000b2736ce61113662ecf693b605ee5",
       "url": "https://open.spotify.com/track/16GUMo6u3D2qo9a19AkYct"
+    },
+    {
+      "name": "Lovers Rock",
+      "artist": "TV Girl",
+      "image": "https://i.scdn.co/image/ab67616d0000b273e1bc1af856b42dd7fdba9f84",
+      "url": "https://open.spotify.com/track/6dBUzqjtbnIa1TwYbyw5CM"
     },
     {
       "name": "The Stranger",
@@ -77,16 +77,16 @@
       "url": "https://open.spotify.com/track/5Rizj5FLb2AyNKu9esjYY6"
     },
     {
-      "name": "the perfect pair",
-      "artist": "beabadoobee",
-      "image": "https://i.scdn.co/image/ab67616d0000b273384d10f967c2b914de7e2713",
-      "url": "https://open.spotify.com/track/41P6Tnd8KIHqON0QIydx6a"
-    },
-    {
       "name": "Hey Lover",
       "artist": "The Daughters Of Eve",
       "image": "https://i.scdn.co/image/ab67616d0000b273c148a2f0d30a396bc2cc359f",
       "url": "https://open.spotify.com/track/0bhwnn2xqnBUcMZDcXNuII"
+    },
+    {
+      "name": "A Rush and a Push and the Land Is Ours - 2011 Remaster",
+      "artist": "The Smiths",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736d965be72ad1bceb7f2bd089",
+      "url": "https://open.spotify.com/track/6Ps04Nfh2PySU4fIPZWxrU"
     }
   ]
 }
