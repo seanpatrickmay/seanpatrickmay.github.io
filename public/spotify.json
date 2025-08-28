@@ -1,15 +1,15 @@
 {
-  "generated_at": "2025-08-28T02:51:25.092Z",
+  "generated_at": "2025-08-28T04:51:11.516Z",
   "artists": [
-    {
-      "name": "Adele",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
-      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
-    },
     {
       "name": "Daft Punk",
       "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+    },
+    {
+      "name": "Adele",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
+      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     },
     {
       "name": "Billy Joel",
@@ -57,6 +57,36 @@
       "artist": "Billy Joel",
       "image": "https://i.scdn.co/image/ab67616d0000b2736ce61113662ecf693b605ee5",
       "url": "https://open.spotify.com/track/16GUMo6u3D2qo9a19AkYct"
+    },
+    {
+      "name": "The Stranger",
+      "artist": "Billy Joel",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736ce61113662ecf693b605ee5",
+      "url": "https://open.spotify.com/track/54xbcKFYv2PC6ujERHppRj"
+    },
+    {
+      "name": "Someone In The Crowd",
+      "artist": "Emma Stone, Callie Hernandez, Sonoya Mizuno, Jessica Rothe",
+      "image": "https://i.scdn.co/image/ab67616d0000b2730bdf4dd39843ad48c5b66bc4",
+      "url": "https://open.spotify.com/track/39ncDMVidHOeQgeC5anYZM"
+    },
+    {
+      "name": "Rape Me",
+      "artist": "Nirvana",
+      "image": "https://i.scdn.co/image/ab67616d0000b273aca059cebc1841277db22d1c",
+      "url": "https://open.spotify.com/track/5Rizj5FLb2AyNKu9esjYY6"
+    },
+    {
+      "name": "the perfect pair",
+      "artist": "beabadoobee",
+      "image": "https://i.scdn.co/image/ab67616d0000b273384d10f967c2b914de7e2713",
+      "url": "https://open.spotify.com/track/41P6Tnd8KIHqON0QIydx6a"
+    },
+    {
+      "name": "Hey Lover",
+      "artist": "The Daughters Of Eve",
+      "image": "https://i.scdn.co/image/ab67616d0000b273c148a2f0d30a396bc2cc359f",
+      "url": "https://open.spotify.com/track/0bhwnn2xqnBUcMZDcXNuII"
     }
   ]
 }
