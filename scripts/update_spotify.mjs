@@ -43,7 +43,7 @@ async function fetchTop(token, type, limit) {
 async function main() {
   const token = await getAccessToken();
   const [artistsRes, tracksRes] = await Promise.all([
-    fetchTop(token, 'artists', 3),
+    fetchTop(token, 'artists', 5),
     fetchTop(token, 'tracks', 5),
   ]);
 
