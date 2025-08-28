@@ -7,6 +7,8 @@ import SkillsGrid from '@/components/SkillsGrid';
 import Badge from '@/components/ui/Badge';
 import BarSparkline from '@/components/ui/BarSparkline';
 import UnitToggle from '@/components/ui/UnitToggle';
+import SpotifyTopArtists from '@/components/SpotifyTopArtists';
+import SpotifyTopTracks from '@/components/SpotifyTopTracks';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import { MapPin, Trophy, Briefcase, GraduationCap, Cpu, Brain, FileText, Github, Linkedin, Mail, Sparkles, BarChart, Target } from 'lucide-react';
 import { useEffect, useState, useMemo } from 'react';
@@ -63,6 +65,17 @@ function useStats() {
   return stats;
 }
 
+function useSpotify() {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch('/spotify.json', { cache: 'no-cache' })
+      .then(r => (r.ok ? r.json() : null))
+      .then(setData)
+      .catch(() => setData(null));
+  }, []);
+  return data;
+}
+
 function AboutStat({ icon: Icon, label, value, hint }) {
     return (
 	<Card className="transition hover:shadow-md">
@@ -84,6 +97,7 @@ function AboutStat({ icon: Icon, label, value, hint }) {
 
 function AboutMe() {
   const stats = useStats();
+  const spotify = useSpotify();
   const [unit, setUnit] = useState("mi"); // "mi" | "km"
 
   const monthly = stats?.monthly;
@@ -309,6 +323,25 @@ function AboutMe() {
     ) : null}
 	</CardContent>
         </Card>
+      {/* Spotify listening */}
+        <div className="grid md:grid-cols-3 gap-6">
+          <Card className="md:col-span-2">
+            <CardHeader>
+              <CardTitle>Top Artists</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <SpotifyTopArtists artists={spotify?.artists ?? []} />
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>Top Tracks</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <SpotifyTopTracks tracks={spotify?.tracks ?? []} />
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </section>
   );

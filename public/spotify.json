@@ -1,0 +1,52 @@
+{
+  "generated_at": "2025-08-27T20:07:38.098955Z",
+  "artists": [
+    {
+      "name": "Artist One",
+      "image": "https://via.placeholder.com/150",
+      "url": "https://open.spotify.com/artist/1"
+    },
+    {
+      "name": "Artist Two",
+      "image": "https://via.placeholder.com/150",
+      "url": "https://open.spotify.com/artist/2"
+    },
+    {
+      "name": "Artist Three",
+      "image": "https://via.placeholder.com/150",
+      "url": "https://open.spotify.com/artist/3"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Song A",
+      "artist": "Artist One",
+      "image": "https://via.placeholder.com/64",
+      "url": "https://open.spotify.com/track/a"
+    },
+    {
+      "name": "Song B",
+      "artist": "Artist Two",
+      "image": "https://via.placeholder.com/64",
+      "url": "https://open.spotify.com/track/b"
+    },
+    {
+      "name": "Song C",
+      "artist": "Artist Three",
+      "image": "https://via.placeholder.com/64",
+      "url": "https://open.spotify.com/track/c"
+    },
+    {
+      "name": "Song D",
+      "artist": "Artist Four",
+      "image": "https://via.placeholder.com/64",
+      "url": "https://open.spotify.com/track/d"
+    },
+    {
+      "name": "Song E",
+      "artist": "Artist Five",
+      "image": "https://via.placeholder.com/64",
+      "url": "https://open.spotify.com/track/e"
+    }
+  ]
+}
