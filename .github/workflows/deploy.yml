@@ -3,7 +3,13 @@ name: Deploy Portfolio to GitHub Pages
 on:
   push:
     branches: [ "main" ]
-  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - "Update Garmin stats.json"
+      - "Update Spotify data"
+    types:
+      - completed
+  workflow_dispatch: {}
 
 permissions:
   contents: read
