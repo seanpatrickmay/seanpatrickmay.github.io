@@ -148,24 +148,33 @@ def main() -> None:
     # Get a window of activities
     activities: List[Dict[str, Any]] = client.get_activities(0, FETCH_LIMIT)
 
-    # ----- Monthly window aggregates (distance, time, count, longest)
-    last30: List[Dict[str, Any]] = []
-    for a in activities:
-        start = parse_dt(a.get("startTimeLocal") or a.get("startTimeGMT"))
-        if start and start >= start_month:
-            last30.append(a)
-
-    total_m = sum(meters(a) for a in last30)
-    total_s = sum(seconds(a) for a in last30)
-    monthly = {
-        "window_days": MONTHLY_WINDOW_DAYS,
-        "activities_count": len(last30),
-        "distance_km": round(total_m / 1000.0, 2),
-        "distance_mi": round(total_m / 1609.344, 2),
-        "time_hours": round(total_s / 3600.0, 2),
-        "longest_km": round(max([meters(a) for a in last30] + [0.0]) / 1000.0, 2),
-        "longest_mi": round(max([meters(a) for a in last30] + [0.0]) / 1609.344, 2),
+    # Categorize activities into sport types
+    SPORT_TYPES = {
+        "biking": {
+            "cycling",
+            "indoor_cycling",
+            "mountain_biking",
+            "virtual_cycling",
+        },
+        "running": {
+            "running",
+            "trail_running",
+            "treadmill_running",
+            "track_running",
+        },
+        "swimming": {
+            "swimming",
+            "open_water_swimming",
+            "pool_swimming",
+        },
     }
+
+    def sport_of(a: Dict[str, Any]) -> Optional[str]:
+        t = activity_type(a)
+        for sport, types in SPORT_TYPES.items():
+            if t in types:
+                return sport
+        return None
 
     # ----- Last 3 activities
     def start_key(a: Dict[str, Any]) -> datetime:
@@ -173,44 +182,78 @@ def main() -> None:
         return d or datetime.min.replace(tzinfo=timezone.utc)
 
     activities_sorted = sorted(activities, key=start_key, reverse=True)
-    last3 = activities_sorted[:RECENT_COUNT]
 
-    recent_last3 = []
-    for a in last3:
-        m = meters(a)
-        dur = seconds(a)
-        recent_last3.append({
-            "id": a.get("activityId"),
-            "name": a.get("activityName"),
-            "type": activity_type(a),
-            "start": a.get("startTimeLocal") or a.get("startTimeGMT"),
-            "distance_km": round(m / 1000.0, 2),
-            "distance_mi": round(m / 1609.344, 2),
-            "duration_min": round(dur / 60.0, 1),
-            "avg_speed_kmh": round((m / 1000.0) / (dur / 3600.0), 2) if dur > 0 else None,
-        })
+    stats_by_type: Dict[str, Dict[str, Any]] = {}
 
-    # ----- Weekly aggregates (last N weeks)
-    weekly = defaultdict(lambda: {"meters": 0.0, "seconds": 0.0})
-    for a in activities:
-        start = parse_dt(a.get("startTimeLocal") or a.get("startTimeGMT"))
-        if not start or start < cutoff_weekly:
-            continue
-        wk = week_key(start)
-        weekly[wk]["meters"] += meters(a)
-        weekly[wk]["seconds"] += seconds(a)
+    for sport in ["combined", "biking", "running", "swimming"]:
+        if sport == "combined":
+            acts = activities
+        else:
+            acts = [a for a in activities if sport_of(a) == sport]
 
-    weekly_rows: List[Dict[str, Any]] = []
-    for wk in sorted(weekly.keys()):
-        m = weekly[wk]["meters"]
-        s = weekly[wk]["seconds"]
-        weekly_rows.append({
-            "week_start": wk[0],
-            "week_end": wk[1],
-            "distance_km": round(m / 1000.0, 2),
-            "distance_mi": round(m / 1609.344, 2),
-            "time_hours": round(s / 3600.0, 2),
-        })
+        # Monthly aggregates
+        last30: List[Dict[str, Any]] = []
+        for a in acts:
+            start = parse_dt(a.get("startTimeLocal") or a.get("startTimeGMT"))
+            if start and start >= start_month:
+                last30.append(a)
+
+        total_m = sum(meters(a) for a in last30)
+        total_s = sum(seconds(a) for a in last30)
+        monthly = {
+            "window_days": MONTHLY_WINDOW_DAYS,
+            "activities_count": len(last30),
+            "distance_km": round(total_m / 1000.0, 2),
+            "time_hours": round(total_s / 3600.0, 2),
+            "longest_km": round(max([meters(a) for a in last30] + [0.0]) / 1000.0, 2),
+        }
+
+        # Last 3 activities
+        acts_sorted = [a for a in activities_sorted if a in acts]
+        last3 = acts_sorted[:RECENT_COUNT]
+        recent_last3 = []
+        for a in last3:
+            m = meters(a)
+            dur = seconds(a)
+            recent_last3.append({
+                "id": a.get("activityId"),
+                "name": a.get("activityName"),
+                "type": activity_type(a),
+                "start": a.get("startTimeLocal") or a.get("startTimeGMT"),
+                "distance_km": round(m / 1000.0, 2),
+                "duration_min": round(dur / 60.0, 1),
+                "avg_speed_kmh": round((m / 1000.0) / (dur / 3600.0), 2) if dur > 0 else None,
+            })
+
+        # Weekly aggregates
+        weekly = defaultdict(lambda: {"meters": 0.0, "seconds": 0.0})
+        for a in acts:
+            start = parse_dt(a.get("startTimeLocal") or a.get("startTimeGMT"))
+            if not start or start < cutoff_weekly:
+                continue
+            wk = week_key(start)
+            weekly[wk]["meters"] += meters(a)
+            weekly[wk]["seconds"] += seconds(a)
+
+        weekly_rows: List[Dict[str, Any]] = []
+        for wk in sorted(weekly.keys()):
+            m = weekly[wk]["meters"]
+            s = weekly[wk]["seconds"]
+            weekly_rows.append({
+                "week_start": wk[0],
+                "week_end": wk[1],
+                "distance_km": round(m / 1000.0, 2),
+                "time_hours": round(s / 3600.0, 2),
+            })
+
+        stats_by_type[sport] = {
+            "monthly": monthly,
+            "recent": {"last3": recent_last3},
+            "weekly": {
+                "window_weeks": WEEKLY_WINDOW,
+                "series": weekly_rows,
+            },
+        }
 
     # ----- Payload
     data = {
@@ -220,12 +263,7 @@ def main() -> None:
             "fullName": profile.get("fullName"),
             "userId": profile.get("userId"),
         },
-        "monthly": monthly,
-        "recent": {"last3": recent_last3},
-        "weekly": {
-            "window_weeks": WEEKLY_WINDOW,
-            "series": weekly_rows  # chronological (oldest -> newest)
-        },
+        "stats": stats_by_type,
     }
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
