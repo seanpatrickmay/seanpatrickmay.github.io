@@ -147,12 +147,6 @@ def main() -> None:
 
     # Get a window of activities
     activities: List[Dict[str, Any]] = client.get_activities(0, FETCH_LIMIT)
-    activitiesDict = {"activities": activities}
-    NEW_PATH = Path("public/allstats.json")
-    NEW_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with open(NEW_PATH, "w", encoding="utf-8") as f:
-        json.dump(activitiesDict, f, ensure_ascii=False, indent=2)
-
 
     # Categorize activities into sport types
     SPORT_TYPES = {
@@ -172,6 +166,7 @@ def main() -> None:
             "swimming",
             "open_water_swimming",
             "pool_swimming",
+            "lap_swimming",
         },
     }
 
