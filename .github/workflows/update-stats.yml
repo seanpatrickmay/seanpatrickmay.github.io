@@ -2,12 +2,11 @@ name: Update Garmin stats.json
 
 on:
   schedule:
-    # 13:15 UTC ≈ 9:15 AM Eastern during DST (will shift 1hr in winter)
-    - cron: "15 13 * * *"
+    - cron: "15 13 * * *"  # 13:15 UTC ~ 9:15 ET during DST
   workflow_dispatch: {}
 
 permissions:
-  contents: write   # allow committing back to the repo
+  contents: write
 
 concurrency:
   group: "update-stats"
@@ -16,7 +15,6 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -31,26 +29,56 @@ jobs:
           python -m pip install --upgrade pip
           pip install garminconnect
 
-      # --- OPTION A: restore cached tokens (recommended, avoids MFA in CI) ---
-      # Put a base64 of your ~/.garminconnect/tokens file(s) into a secret named GARMIN_TOKENS_B64
-      - name: Restore Garmin tokens (if provided)
-        if: ${{ secrets.GARMIN_TOKENS_B64 != '' }}
+      # Restore tokens from secrets if provided (supports either 2-file or 1-archive approach)
+      - name: Restore Garmin tokens
+        env:
+          OAUTH1_B64: ${{ secrets.GARMIN_OAUTH1_B64 }}   # optional
+          OAUTH2_B64: ${{ secrets.GARMIN_OAUTH2_B64 }}   # optional
+          TOKENS_B64: ${{ secrets.GARMIN_TOKENS_B64 }}   # optional (tgz/zip)
         run: |
+          set -euo pipefail
           mkdir -p ~/.garminconnect
-          echo "${{ secrets.GARMIN_TOKENS_B64 }}" | base64 -d > ~/.garminconnect/tokens.json
-          ls -la ~/.garminconnect
 
-      # --- OPTION B: fall back to email/password (works only if MFA is NOT enforced) ---
+          if [ -n "${OAUTH1_B64:-}" ] || [ -n "${OAUTH2_B64:-}" ]; then
+            # Two-secrets path
+            if [ -n "${OAUTH1_B64:-}" ]; then
+              echo "$OAUTH1_B64" | base64 -d > ~/.garminconnect/oauth1_token.json
+            fi
+            if [ -n "${OAUTH2_B64:-}" ]; then
+              echo "$OAUTH2_B64" | base64 -d > ~/.garminconnect/oauth2_token.json
+            fi
+            echo "Restored individual oauth token files."
+          elif [ -n "${TOKENS_B64:-}" ]; then
+            # Single-archive path (auto-detect tgz vs zip)
+            echo "$TOKENS_B64" | base64 -d > /tmp/garmin_tokens.blob
+            if tar -tzf /tmp/garmin_tokens.blob >/dev/null 2>&1; then
+              tar -xzf /tmp/garmin_tokens.blob -C ~/.garminconnect
+              echo "Extracted tokens from tgz."
+            else
+              sudo apt-get update -y >/dev/null
+              sudo apt-get install -y unzip >/dev/null
+              unzip -o /tmp/garmin_tokens.blob -d ~/.garminconnect
+              echo "Extracted tokens from zip."
+            fi
+          else
+            echo "No token secrets provided; relying on email/password (may fail if MFA/risk checks)."
+          fi
+
+          ls -la ~/.garminconnect || true
+
       - name: Generate stats.json
         env:
+          GARMIN_OUT: public/stats.json
+          # Optional fallback if you have NO MFA (will likely fail otherwise):
           GARMIN_EMAIL: ${{ secrets.GARMIN_EMAIL }}
           GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
-          GARMIN_OUT: public/stats.json
         run: |
+          set -euo pipefail
           python scripts/update_stats.py
 
       - name: Commit & push changes
         run: |
+          set -euo pipefail
           if [[ -n "$(git status --porcelain public/stats.json)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -60,4 +88,3 @@ jobs:
           else
             echo "No changes to commit."
           fi
-
