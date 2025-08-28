@@ -38,4 +38,4 @@ exchangeSpotifyCodes.sh
 # === Don’t ignore lockfile or stats ===
 !package-lock.json
 !public/stats.json
-
+!public/spotify.json
