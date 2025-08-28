@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-08-28T16:48:56.203676Z",
+  "generated_at": "2025-08-28T16:53:16.591741Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -366,10 +366,10 @@
     "swimming": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 2,
-        "distance_km": 0.73,
-        "time_hours": 0.68,
-        "longest_km": 0.41
+        "activities_count": 4,
+        "distance_km": 3.61,
+        "time_hours": 1.73,
+        "longest_km": 1.73
       },
       "recent": {
         "last3": [
@@ -392,19 +392,31 @@
             "avg_speed_kmh": 0.73
           },
           {
-            "id": 19820455770,
-            "name": "Tihany Natation en eau libre",
-            "type": "open_water_swimming",
-            "start": "2025-07-23 08:34:08",
-            "distance_km": 0.9,
-            "duration_min": 30.2,
-            "avg_speed_kmh": 1.8
+            "id": 19981410771,
+            "name": "Nat. piscine",
+            "type": "lap_swimming",
+            "start": "2025-08-07 08:52:17",
+            "distance_km": 1.73,
+            "duration_min": 36.8,
+            "avg_speed_kmh": 2.81
           }
         ]
       },
       "weekly": {
         "window_weeks": 12,
         "series": [
+          {
+            "week_start": "2025-06-16",
+            "week_end": "2025-06-22",
+            "distance_km": 4.1,
+            "time_hours": 1.73
+          },
+          {
+            "week_start": "2025-06-23",
+            "week_end": "2025-06-29",
+            "distance_km": 1.6,
+            "time_hours": 0.8
+          },
           {
             "week_start": "2025-07-14",
             "week_end": "2025-07-20",
@@ -420,8 +432,8 @@
           {
             "week_start": "2025-08-04",
             "week_end": "2025-08-10",
-            "distance_km": 0.73,
-            "time_hours": 0.68
+            "distance_km": 3.61,
+            "time_hours": 1.73
           }
         ]
       }
