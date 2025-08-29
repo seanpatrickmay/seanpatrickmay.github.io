@@ -1,8 +1,10 @@
 import Head from 'next/head';
 import rawProjects from '@/public/projects.json' assert { type: 'json' };
 import rawExperience from '@/public/experience.json' assert { type: 'json' };
+import rawOtherWork from '@/public/other-work.json' assert { type: 'json' };
 import { validateProjects } from '@/lib/projects';
 import { validateExperience } from '@/lib/experience';
+import { validateWork } from '@/lib/work';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import AboutSection from '@/components/AboutSection';
@@ -13,10 +15,11 @@ import ProjectCard from '@/components/ProjectCard';
 import ExperienceItem from '@/components/ExperienceItem';
 import EducationItem from '@/components/EducationItem';
 import SkillsGrid from '@/components/SkillsGrid';
-import { Trophy, Briefcase, GraduationCap, Cpu } from 'lucide-react';
+import { Trophy, Briefcase, GraduationCap, Cpu, ClipboardList } from 'lucide-react';
 
 const projects = validateProjects(rawProjects) ? rawProjects : [];
 const experience = validateExperience(rawExperience) ? rawExperience : [];
+const otherWork = validateWork(rawOtherWork) ? rawOtherWork : [];
 
 const links = {
   github: 'https://github.com/seanpatrickmay',
@@ -72,20 +75,28 @@ export default function Home() {
       <AboutSection interests={interests} />
 
       <ListSection
+        id="experience"
+        title="Experience"
+        icon={Briefcase}
+        items={experience}
+        renderItem={job => <ExperienceItem key={job.org} job={job} />}
+      />
+
+      <ListSection
+        id="other-work"
+        title="Other Work"
+        icon={ClipboardList}
+        items={otherWork}
+        renderItem={job => <ExperienceItem key={job.org} job={job} />}
+      />
+
+      <ListSection
         id="projects"
         title="Projects"
         icon={Trophy}
         items={projects}
         columns={2}
         renderItem={p => <ProjectCard key={p.title} project={p} />}
-      />
-
-      <ListSection
-        id="experience"
-        title="Experience"
-        icon={Briefcase}
-        items={experience}
-        renderItem={job => <ExperienceItem key={job.org} job={job} />}
       />
 
       <ListSection
