@@ -37,15 +37,15 @@ const skills = {
 const education = [
   {
     school: 'Northeastern University — Khoury College of Computer Sciences',
-    degree: 'B.S. in Computer Science & Mathematics (Expected Dec 2026)',
+    degree: 'B.S. in Computer Science & Mathematics (Expected May 2027)',
     extras: [
       'GPA 3.64/4.0; Dean’s Scholarship; Dean’s List (Fall 2024, Spring 2025)',
       'Activities: Bridge to Calculus Tutor, Calculus Field Day Volunteer, Math Club, Putnam Club, Running Club',
-      'Relevant coursework: AI, Matrix Methods in ML, Algorithms & Data Structures, OOP, Computer Systems, Probability & Statistics',
+      'Relevant coursework: AI, Matrix Methods in ML, Algorithms & Data Structures, OOP, Systems, Prob & Stat',
     ],
   },
   {
-    school: 'Summer Study — Mathematical Heritage of Budapest',
+    school: 'Corvinus University of Budapest - Mathematical Heritage of Budapest Summer Dialogue',
     degree: 'Budapest, Hungary (Jun – Aug 2025)',
     extras: ['Courses: Number Theory, Exploration of Modern Mathematics'],
   },

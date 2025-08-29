@@ -2,20 +2,21 @@
   {
     "org": "Self-Employed",
     "role": "Semi-Professional Poker (NLHE)",
-    "location": "Remote",
-    "period": "Part-time",
+    "location": "Remote/Travel",
+    "period": "May 2024 - Present",
     "bullets": [
       "Applied probabilistic reasoning and risk management in competitive play.",
-      "Tracked results and reviewed hands to improve decision-making."
+      "Tracked results and reviewed hands with peers to improve decision-making.",
+      "Travel and play in study groups (Miami, Maryland, New Haven, Providence, Boston, Montreal)"
     ]
   },
   {
-    "org": "Northeastern University",
+    "org": "Private",
     "role": "Computer Science Tutor (CSA)",
-    "location": "Boston, MA",
-    "period": "Sep 2024 – Present",
+    "location": "Remote",
+    "period": "Jul 2025 – Present",
     "bullets": [
-      "Mentor students on fundamentals, debugging strategies, and problem-solving patterns."
+      "Mentoring on fundamentals and problem-solving patterns."
     ]
   }
 ]

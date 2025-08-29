@@ -12,15 +12,14 @@ export default function Hero({ links }) {
             Boston, MA
           </Badge>
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
-            CS/Math engineer building ML + systems projects
+		CS & Math | SWE @ NExT
           </h1>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl">
-            I design and ship clean, usable software — from low-level C to applied ML.
           </p>
-          <ul className="text-sm text-slate-600 dark:text-slate-300 space-y-1">
+          <ul className="text-lg text-slate-600 dark:text-slate-300 space-y-1">
             <li>🎓 Northeastern University — B.S. CS & Math (May 2027)</li>
             <li>🧪 Incoming: NExT Program SWE Co-op (Fall 2025)</li>
-            <li>🔎 Open to Summer/Fall 2026 SWE/ML roles</li>
+            <li>🔎 Searching for Summer/Fall 2026 SWE/ML roles</li>
           </ul>
           <div className="flex flex-wrap gap-3 pt-2">
             <PillLink href="#projects" variant="solid" className="px-4">
@@ -46,11 +45,11 @@ export default function Hero({ links }) {
             <CardContent className="space-y-2">
               <div className="flex flex-wrap gap-2">
                 <Badge>ML</Badge>
-                <Badge>Systems</Badge>
+                <Badge>Algorithms</Badge>
                 <Badge>Full-stack</Badge>
               </div>
               <p className="text-sm text-slate-600 dark:text-slate-300">
-                Focused on game theory, computer vision, and performance-minded code.
+                Focused on game theory, all things ML, and performance-minded code.
               </p>
               <PillLink href={links.resume} icon={FileText} external>
                 Resume
