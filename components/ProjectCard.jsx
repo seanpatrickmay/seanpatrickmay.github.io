@@ -1,5 +1,6 @@
-import Badge from "./ui/Badge";
-import { Card, CardHeader, CardTitle, CardContent } from "./ui/Card";
+import Badge from './ui/Badge';
+import { Card, CardHeader, CardTitle, CardContent } from './ui/Card';
+import PillLink from './ui/PillLink';
 
 export default function ProjectCard({ project }) {
   const { title, period, stack = [], bullets = [], links = [] } = project;
@@ -25,9 +26,9 @@ export default function ProjectCard({ project }) {
         {!!links.length && (
           <div className="flex flex-wrap gap-3 pt-1">
             {links.map((l, i) => (
-              <a key={i} href={l.href} target="_blank" className="px-3 py-2 rounded-full border hover:bg-white dark:hover:bg-slate-800">
+              <PillLink key={i} href={l.href} external>
                 {l.label}
-              </a>
+              </PillLink>
             ))}
           </div>
         )}

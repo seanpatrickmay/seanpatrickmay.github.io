@@ -1,10 +1,10 @@
 export default function Section({ id, title, icon, children }) {
     const Icon = icon;
     return (
-	<section
-	   id={id}
-	    className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 scroll-mt-16"
-	>
+        <section
+           id={id}
+            className="section-container py-10 scroll-mt-16"
+        >
 	<div className="flex items-center gap-3 mb-6">
 	<div className="p-2 rounded-xl border bg-white dark:bg-slate-900 card">
 	<Icon className="w-5 h-5" />
