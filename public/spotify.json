@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-08-29T13:43:28.767Z",
+  "generated_at": "2025-08-30T01:45:16.574Z",
   "artists": [
     {
       "name": "Daft Punk",
@@ -12,14 +12,14 @@
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     },
     {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
-    {
       "name": "Billy Joel",
       "image": "https://i.scdn.co/image/ab6761610000e5ebb34057d59275011032ef8bc8",
       "url": "https://open.spotify.com/artist/6zFYqv1mOsgBRQbae3JJ9e"
+    },
+    {
+      "name": "Zedd",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
+      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
       "name": "Stromae",
@@ -47,16 +47,10 @@
       "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
     },
     {
-      "name": "Lovers Rock",
-      "artist": "TV Girl",
-      "image": "https://i.scdn.co/image/ab67616d0000b273e1bc1af856b42dd7fdba9f84",
-      "url": "https://open.spotify.com/track/6dBUzqjtbnIa1TwYbyw5CM"
-    },
-    {
-      "name": "Hourglass",
-      "artist": "Zedd, LIZ",
-      "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
-      "url": "https://open.spotify.com/track/6NwrXtcFbc8OX7wJyBqE89"
+      "name": "Last Train to London",
+      "artist": "Electric Light Orchestra",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736f5a9bf7c8093763dd2a4a82",
+      "url": "https://open.spotify.com/track/6xE6ZWzK1YDDSYzqOCoQlz"
     },
     {
       "name": "The Stranger",
@@ -65,16 +59,22 @@
       "url": "https://open.spotify.com/track/54xbcKFYv2PC6ujERHppRj"
     },
     {
-      "name": "Rape Me",
-      "artist": "Nirvana",
-      "image": "https://i.scdn.co/image/ab67616d0000b273aca059cebc1841277db22d1c",
-      "url": "https://open.spotify.com/track/5Rizj5FLb2AyNKu9esjYY6"
+      "name": "Lovers Rock",
+      "artist": "TV Girl",
+      "image": "https://i.scdn.co/image/ab67616d0000b273e1bc1af856b42dd7fdba9f84",
+      "url": "https://open.spotify.com/track/6dBUzqjtbnIa1TwYbyw5CM"
     },
     {
-      "name": "Another Day Of Sun",
-      "artist": "La La Land Cast",
-      "image": "https://i.scdn.co/image/ab67616d0000b2730bdf4dd39843ad48c5b66bc4",
-      "url": "https://open.spotify.com/track/5kRBzRZmZTXVg8okC7SJFZ"
+      "name": "A Rush and a Push and the Land Is Ours - 2011 Remaster",
+      "artist": "The Smiths",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736d965be72ad1bceb7f2bd089",
+      "url": "https://open.spotify.com/track/6Ps04Nfh2PySU4fIPZWxrU"
+    },
+    {
+      "name": "Linger",
+      "artist": "The Cranberries",
+      "image": "https://i.scdn.co/image/ab67616d0000b273f6325f361d7803ad0d908451",
+      "url": "https://open.spotify.com/track/0gEyKnHvgkrkBM6fbeHdwK"
     },
     {
       "name": "Someone In The Crowd",
@@ -83,10 +83,10 @@
       "url": "https://open.spotify.com/track/39ncDMVidHOeQgeC5anYZM"
     },
     {
-      "name": "Hey Lover",
-      "artist": "The Daughters Of Eve",
-      "image": "https://i.scdn.co/image/ab67616d0000b273c148a2f0d30a396bc2cc359f",
-      "url": "https://open.spotify.com/track/0bhwnn2xqnBUcMZDcXNuII"
+      "name": "Neon",
+      "artist": "John Mayer",
+      "image": "https://i.scdn.co/image/ab67616d0000b2738848d57cbfa7751e028f4dc9",
+      "url": "https://open.spotify.com/track/7Kohy4v3KLWfUXlv9N3feB"
     }
   ]
 }
