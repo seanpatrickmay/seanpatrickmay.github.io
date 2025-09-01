@@ -1,15 +1,10 @@
 {
-  "generated_at": "2025-08-31T13:40:02.591Z",
+  "generated_at": "2025-09-01T13:45:29.307Z",
   "artists": [
     {
       "name": "Daft Punk",
       "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
-    },
-    {
-      "name": "Adele",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
-      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     },
     {
       "name": "Billy Joel",
@@ -20,6 +15,11 @@
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+    },
+    {
+      "name": "Adele",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
+      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     },
     {
       "name": "Stromae",
@@ -59,22 +59,16 @@
       "url": "https://open.spotify.com/track/54xbcKFYv2PC6ujERHppRj"
     },
     {
-      "name": "Lovers Rock",
-      "artist": "TV Girl",
-      "image": "https://i.scdn.co/image/ab67616d0000b273e1bc1af856b42dd7fdba9f84",
-      "url": "https://open.spotify.com/track/6dBUzqjtbnIa1TwYbyw5CM"
-    },
-    {
       "name": "A Rush and a Push and the Land Is Ours - 2011 Remaster",
       "artist": "The Smiths",
       "image": "https://i.scdn.co/image/ab67616d0000b2736d965be72ad1bceb7f2bd089",
       "url": "https://open.spotify.com/track/6Ps04Nfh2PySU4fIPZWxrU"
     },
     {
-      "name": "Linger",
-      "artist": "The Cranberries",
-      "image": "https://i.scdn.co/image/ab67616d0000b273f6325f361d7803ad0d908451",
-      "url": "https://open.spotify.com/track/0gEyKnHvgkrkBM6fbeHdwK"
+      "name": "Lovers Rock",
+      "artist": "TV Girl",
+      "image": "https://i.scdn.co/image/ab67616d0000b273e1bc1af856b42dd7fdba9f84",
+      "url": "https://open.spotify.com/track/6dBUzqjtbnIa1TwYbyw5CM"
     },
     {
       "name": "Someone In The Crowd",
@@ -87,6 +81,12 @@
       "artist": "John Mayer",
       "image": "https://i.scdn.co/image/ab67616d0000b2738848d57cbfa7751e028f4dc9",
       "url": "https://open.spotify.com/track/7Kohy4v3KLWfUXlv9N3feB"
+    },
+    {
+      "name": "Instant Crush (feat. Julian Casablancas)",
+      "artist": "Daft Punk, Julian Casablancas",
+      "image": "https://i.scdn.co/image/ab67616d0000b2739b9b36b0e22870b9f542d937",
+      "url": "https://open.spotify.com/track/2cGxRwrMyEAp8dEbuZaVv6"
     }
   ]
 }
