@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-02T03:12:52.483503Z",
+  "generated_at": "2025-09-02T14:35:57.879412Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,39 +9,39 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 33,
+        "activities_count": 36,
         "distance_km": 561.73,
-        "time_hours": 35.02,
+        "time_hours": 38.11,
         "longest_km": 100.23
       },
       "recent": {
         "last3": [
           {
-            "id": 20176574779,
-            "name": "Anne Arundel County Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-25 13:49:46",
-            "distance_km": 51.06,
-            "duration_min": 122.7,
-            "avg_speed_kmh": 24.97
-          },
-          {
-            "id": 20175040492,
+            "id": 20255536596,
             "name": "Vélo d'intérieur",
             "type": "indoor_cycling",
-            "start": "2025-08-24 18:41:13",
+            "start": "2025-09-02 07:04:44",
             "distance_km": 0.0,
-            "duration_min": 29.7,
+            "duration_min": 61.9,
             "avg_speed_kmh": 0.0
           },
           {
-            "id": 20155257239,
-            "name": "Nags Head Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-23 12:31:33",
-            "distance_km": 52.64,
-            "duration_min": 143.8,
-            "avg_speed_kmh": 21.96
+            "id": 20254786033,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-09-01 17:42:59",
+            "distance_km": 0.0,
+            "duration_min": 61.4,
+            "avg_speed_kmh": 0.0
+          },
+          {
+            "id": 20254784986,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-09-01 09:02:36",
+            "distance_km": 0.0,
+            "duration_min": 62.3,
+            "avg_speed_kmh": 0.0
           }
         ]
       },
@@ -119,6 +119,12 @@
             "week_end": "2025-08-31",
             "distance_km": 51.06,
             "time_hours": 2.04
+          },
+          {
+            "week_start": "2025-09-01",
+            "week_end": "2025-09-07",
+            "distance_km": 0.0,
+            "time_hours": 3.09
           }
         ]
       }
@@ -126,39 +132,39 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 14,
+        "activities_count": 17,
         "distance_km": 427.44,
-        "time_hours": 20.26,
+        "time_hours": 23.35,
         "longest_km": 100.23
       },
       "recent": {
         "last3": [
           {
-            "id": 20176574779,
-            "name": "Anne Arundel County Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-25 13:49:46",
-            "distance_km": 51.06,
-            "duration_min": 122.7,
-            "avg_speed_kmh": 24.97
-          },
-          {
-            "id": 20175040492,
+            "id": 20255536596,
             "name": "Vélo d'intérieur",
             "type": "indoor_cycling",
-            "start": "2025-08-24 18:41:13",
+            "start": "2025-09-02 07:04:44",
             "distance_km": 0.0,
-            "duration_min": 29.7,
+            "duration_min": 61.9,
             "avg_speed_kmh": 0.0
           },
           {
-            "id": 20155257239,
-            "name": "Nags Head Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-23 12:31:33",
-            "distance_km": 52.64,
-            "duration_min": 143.8,
-            "avg_speed_kmh": 21.96
+            "id": 20254786033,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-09-01 17:42:59",
+            "distance_km": 0.0,
+            "duration_min": 61.4,
+            "avg_speed_kmh": 0.0
+          },
+          {
+            "id": 20254784986,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-09-01 09:02:36",
+            "distance_km": 0.0,
+            "duration_min": 62.3,
+            "avg_speed_kmh": 0.0
           }
         ]
       },
@@ -236,6 +242,12 @@
             "week_end": "2025-08-31",
             "distance_km": 51.06,
             "time_hours": 2.04
+          },
+          {
+            "week_start": "2025-09-01",
+            "week_end": "2025-09-07",
+            "distance_km": 0.0,
+            "time_hours": 3.09
           }
         ]
       }
