@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-01T13:45:29.307Z",
+  "generated_at": "2025-09-02T13:46:24.651Z",
   "artists": [
     {
       "name": "Daft Punk",
@@ -7,14 +7,14 @@
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
-      "name": "Billy Joel",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebb34057d59275011032ef8bc8",
-      "url": "https://open.spotify.com/artist/6zFYqv1mOsgBRQbae3JJ9e"
-    },
-    {
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+    },
+    {
+      "name": "Billy Joel",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebb34057d59275011032ef8bc8",
+      "url": "https://open.spotify.com/artist/6zFYqv1mOsgBRQbae3JJ9e"
     },
     {
       "name": "Adele",
@@ -35,16 +35,16 @@
       "url": "https://open.spotify.com/track/6OLudcGaT6HQ5bXH54kI8i"
     },
     {
-      "name": "Movin' Out (Anthony's Song)",
-      "artist": "Billy Joel",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736ce61113662ecf693b605ee5",
-      "url": "https://open.spotify.com/track/16GUMo6u3D2qo9a19AkYct"
-    },
-    {
       "name": "You Rock My World",
       "artist": "Michael Jackson",
       "image": "https://i.scdn.co/image/ab67616d0000b273ed1c305cd1e673fe925407ce",
       "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
+    },
+    {
+      "name": "Movin' Out (Anthony's Song)",
+      "artist": "Billy Joel",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736ce61113662ecf693b605ee5",
+      "url": "https://open.spotify.com/track/16GUMo6u3D2qo9a19AkYct"
     },
     {
       "name": "Last Train to London",
@@ -59,34 +59,34 @@
       "url": "https://open.spotify.com/track/54xbcKFYv2PC6ujERHppRj"
     },
     {
-      "name": "A Rush and a Push and the Land Is Ours - 2011 Remaster",
-      "artist": "The Smiths",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736d965be72ad1bceb7f2bd089",
-      "url": "https://open.spotify.com/track/6Ps04Nfh2PySU4fIPZWxrU"
-    },
-    {
-      "name": "Lovers Rock",
-      "artist": "TV Girl",
-      "image": "https://i.scdn.co/image/ab67616d0000b273e1bc1af856b42dd7fdba9f84",
-      "url": "https://open.spotify.com/track/6dBUzqjtbnIa1TwYbyw5CM"
-    },
-    {
       "name": "Someone In The Crowd",
       "artist": "Emma Stone, Callie Hernandez, Sonoya Mizuno, Jessica Rothe",
       "image": "https://i.scdn.co/image/ab67616d0000b2730bdf4dd39843ad48c5b66bc4",
       "url": "https://open.spotify.com/track/39ncDMVidHOeQgeC5anYZM"
     },
     {
-      "name": "Neon",
-      "artist": "John Mayer",
-      "image": "https://i.scdn.co/image/ab67616d0000b2738848d57cbfa7751e028f4dc9",
-      "url": "https://open.spotify.com/track/7Kohy4v3KLWfUXlv9N3feB"
+      "name": "A Rush and a Push and the Land Is Ours - 2011 Remaster",
+      "artist": "The Smiths",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736d965be72ad1bceb7f2bd089",
+      "url": "https://open.spotify.com/track/6Ps04Nfh2PySU4fIPZWxrU"
     },
     {
       "name": "Instant Crush (feat. Julian Casablancas)",
       "artist": "Daft Punk, Julian Casablancas",
       "image": "https://i.scdn.co/image/ab67616d0000b2739b9b36b0e22870b9f542d937",
       "url": "https://open.spotify.com/track/2cGxRwrMyEAp8dEbuZaVv6"
+    },
+    {
+      "name": "Another Day Of Sun",
+      "artist": "La La Land Cast",
+      "image": "https://i.scdn.co/image/ab67616d0000b2730bdf4dd39843ad48c5b66bc4",
+      "url": "https://open.spotify.com/track/5kRBzRZmZTXVg8okC7SJFZ"
+    },
+    {
+      "name": "Lovers Rock",
+      "artist": "TV Girl",
+      "image": "https://i.scdn.co/image/ab67616d0000b273e1bc1af856b42dd7fdba9f84",
+      "url": "https://open.spotify.com/track/6dBUzqjtbnIa1TwYbyw5CM"
     }
   ]
 }
