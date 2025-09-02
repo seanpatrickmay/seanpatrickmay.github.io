@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-01T14:33:34.413422Z",
+  "generated_at": "2025-09-02T03:12:52.483503Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -52,7 +52,7 @@
             "week_start": "2025-06-09",
             "week_end": "2025-06-15",
             "distance_km": 39.51,
-            "time_hours": 9.68
+            "time_hours": 8.15
           },
           {
             "week_start": "2025-06-16",
@@ -169,7 +169,7 @@
             "week_start": "2025-06-09",
             "week_end": "2025-06-15",
             "distance_km": 18.59,
-            "time_hours": 7.58
+            "time_hours": 6.37
           },
           {
             "week_start": "2025-06-16",
