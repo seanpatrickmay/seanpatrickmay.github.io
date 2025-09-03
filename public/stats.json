@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-02T14:35:57.879412Z",
+  "generated_at": "2025-09-03T03:01:02.929724Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,13 +9,22 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 36,
-        "distance_km": 561.73,
-        "time_hours": 38.11,
+        "activities_count": 35,
+        "distance_km": 551.88,
+        "time_hours": 38.14,
         "longest_km": 100.23
       },
       "recent": {
         "last3": [
+          {
+            "id": 20261853685,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-09-02 17:50:03",
+            "distance_km": 0.0,
+            "duration_min": 56.1,
+            "avg_speed_kmh": 0.0
+          },
           {
             "id": 20255536596,
             "name": "Vélo d'intérieur",
@@ -33,15 +42,6 @@
             "distance_km": 0.0,
             "duration_min": 61.4,
             "avg_speed_kmh": 0.0
-          },
-          {
-            "id": 20254784986,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-01 09:02:36",
-            "distance_km": 0.0,
-            "duration_min": 62.3,
-            "avg_speed_kmh": 0.0
           }
         ]
       },
@@ -52,7 +52,7 @@
             "week_start": "2025-06-09",
             "week_end": "2025-06-15",
             "distance_km": 39.51,
-            "time_hours": 8.15
+            "time_hours": 7.51
           },
           {
             "week_start": "2025-06-16",
@@ -124,7 +124,7 @@
             "week_start": "2025-09-01",
             "week_end": "2025-09-07",
             "distance_km": 0.0,
-            "time_hours": 3.09
+            "time_hours": 4.03
           }
         ]
       }
@@ -132,13 +132,22 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 17,
+        "activities_count": 18,
         "distance_km": 427.44,
-        "time_hours": 23.35,
+        "time_hours": 24.29,
         "longest_km": 100.23
       },
       "recent": {
         "last3": [
+          {
+            "id": 20261853685,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-09-02 17:50:03",
+            "distance_km": 0.0,
+            "duration_min": 56.1,
+            "avg_speed_kmh": 0.0
+          },
           {
             "id": 20255536596,
             "name": "Vélo d'intérieur",
@@ -156,15 +165,6 @@
             "distance_km": 0.0,
             "duration_min": 61.4,
             "avg_speed_kmh": 0.0
-          },
-          {
-            "id": 20254784986,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-01 09:02:36",
-            "distance_km": 0.0,
-            "duration_min": 62.3,
-            "avg_speed_kmh": 0.0
           }
         ]
       },
@@ -175,7 +175,7 @@
             "week_start": "2025-06-09",
             "week_end": "2025-06-15",
             "distance_km": 18.59,
-            "time_hours": 6.37
+            "time_hours": 5.73
           },
           {
             "week_start": "2025-06-16",
@@ -247,7 +247,7 @@
             "week_start": "2025-09-01",
             "week_end": "2025-09-07",
             "distance_km": 0.0,
-            "time_hours": 3.09
+            "time_hours": 4.03
           }
         ]
       }
@@ -255,9 +255,9 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 11,
-        "distance_km": 58.27,
-        "time_hours": 5.14,
+        "activities_count": 9,
+        "distance_km": 48.41,
+        "time_hours": 4.23,
         "longest_km": 12.97
       },
       "recent": {
