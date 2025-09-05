@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-04T14:34:37.915276Z",
+  "generated_at": "2025-09-05T03:05:00.719501Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,38 +9,38 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 35,
-        "distance_km": 551.88,
-        "time_hours": 37.72,
+        "activities_count": 36,
+        "distance_km": 528.91,
+        "time_hours": 37.59,
         "longest_km": 100.23
       },
       "recent": {
         "last3": [
           {
-            "id": 20274025811,
+            "id": 20284272421,
             "name": "Vélo d'intérieur",
             "type": "indoor_cycling",
-            "start": "2025-09-03 22:07:46",
+            "start": "2025-09-04 21:36:33",
             "distance_km": 0.0,
-            "duration_min": 35.0,
+            "duration_min": 14.5,
             "avg_speed_kmh": 0.0
           },
           {
-            "id": 20266637938,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-03 07:32:46",
-            "distance_km": 0.0,
-            "duration_min": 25.4,
-            "avg_speed_kmh": 0.0
+            "id": 20284176165,
+            "name": "Boston Course à pied",
+            "type": "running",
+            "start": "2025-09-04 20:14:13",
+            "distance_km": 12.26,
+            "duration_min": 65.2,
+            "avg_speed_kmh": 11.28
           },
           {
-            "id": 20261853685,
+            "id": 20283842208,
             "name": "Vélo d'intérieur",
             "type": "indoor_cycling",
-            "start": "2025-09-02 17:50:03",
+            "start": "2025-09-04 19:47:48",
             "distance_km": 0.0,
-            "duration_min": 56.1,
+            "duration_min": 23.2,
             "avg_speed_kmh": 0.0
           }
         ]
@@ -51,8 +51,8 @@
           {
             "week_start": "2025-06-09",
             "week_end": "2025-06-15",
-            "distance_km": 16.69,
-            "time_hours": 6.06
+            "distance_km": 14.94,
+            "time_hours": 4.54
           },
           {
             "week_start": "2025-06-16",
@@ -123,8 +123,8 @@
           {
             "week_start": "2025-09-01",
             "week_end": "2025-09-07",
-            "distance_km": 0.0,
-            "time_hours": 5.03
+            "distance_km": 12.26,
+            "time_hours": 6.75
           }
         ]
       }
@@ -132,13 +132,31 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 18,
-        "distance_km": 427.44,
-        "time_hours": 23.87,
+        "activities_count": 19,
+        "distance_km": 393.37,
+        "time_hours": 23.08,
         "longest_km": 100.23
       },
       "recent": {
         "last3": [
+          {
+            "id": 20284272421,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-09-04 21:36:33",
+            "distance_km": 0.0,
+            "duration_min": 14.5,
+            "avg_speed_kmh": 0.0
+          },
+          {
+            "id": 20283842208,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-09-04 19:47:48",
+            "distance_km": 0.0,
+            "duration_min": 23.2,
+            "avg_speed_kmh": 0.0
+          },
           {
             "id": 20274025811,
             "name": "Vélo d'intérieur",
@@ -146,24 +164,6 @@
             "start": "2025-09-03 22:07:46",
             "distance_km": 0.0,
             "duration_min": 35.0,
-            "avg_speed_kmh": 0.0
-          },
-          {
-            "id": 20266637938,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-03 07:32:46",
-            "distance_km": 0.0,
-            "duration_min": 25.4,
-            "avg_speed_kmh": 0.0
-          },
-          {
-            "id": 20261853685,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-02 17:50:03",
-            "distance_km": 0.0,
-            "duration_min": 56.1,
             "avg_speed_kmh": 0.0
           }
         ]
@@ -174,8 +174,8 @@
           {
             "week_start": "2025-06-09",
             "week_end": "2025-06-15",
-            "distance_km": 5.47,
-            "time_hours": 5.0
+            "distance_km": 3.72,
+            "time_hours": 3.72
           },
           {
             "week_start": "2025-06-16",
@@ -247,7 +247,7 @@
             "week_start": "2025-09-01",
             "week_end": "2025-09-07",
             "distance_km": 0.0,
-            "time_hours": 5.03
+            "time_hours": 5.66
           }
         ]
       }
@@ -255,13 +255,22 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 9,
-        "distance_km": 48.41,
-        "time_hours": 4.23,
+        "activities_count": 10,
+        "distance_km": 60.67,
+        "time_hours": 5.32,
         "longest_km": 12.97
       },
       "recent": {
         "last3": [
+          {
+            "id": 20284176165,
+            "name": "Boston Course à pied",
+            "type": "running",
+            "start": "2025-09-04 20:14:13",
+            "distance_km": 12.26,
+            "duration_min": 65.2,
+            "avg_speed_kmh": 11.28
+          },
           {
             "id": 20135638348,
             "name": "Nags Head Course à pied",
@@ -279,15 +288,6 @@
             "distance_km": 0.45,
             "duration_min": 1.9,
             "avg_speed_kmh": 13.82
-          },
-          {
-            "id": 20101134540,
-            "name": "Nags Head Course à pied",
-            "type": "running",
-            "start": "2025-08-18 14:14:41",
-            "distance_km": 3.23,
-            "duration_min": 20.4,
-            "avg_speed_kmh": 9.48
           }
         ]
       },
@@ -359,6 +359,12 @@
             "week_end": "2025-08-24",
             "distance_km": 16.64,
             "time_hours": 1.47
+          },
+          {
+            "week_start": "2025-09-01",
+            "week_end": "2025-09-07",
+            "distance_km": 12.26,
+            "time_hours": 1.09
           }
         ]
       }
@@ -366,9 +372,9 @@
     "swimming": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 4,
-        "distance_km": 3.61,
-        "time_hours": 1.73,
+        "activities_count": 3,
+        "distance_km": 2.46,
+        "time_hours": 1.3,
         "longest_km": 1.73
       },
       "recent": {
