@@ -1,16 +1,12 @@
 // components/RecentActivities.jsx
 import AutoScrollList from "@/components/AutoScrollList";
 
-const typeEmoji = {
-  running: "🏃",
-  cycling: "🚴",
-  walking: "🚶",
-  swimming: "🏊",
-  hiking: "🥾",
-  rowing: "🚣",
-  skiing: "⛷️",
-  strength: "🏋️",
-};
+function activityEmoji(type = "") {
+  const t = type.toLowerCase();
+  if (t.includes("swim")) return "🏊";
+  if (t.includes("bike") || t.includes("cycl")) return "🚴";
+  return "🏃";
+}
 
 export default function RecentActivities({ activities = [] }) {
   const items = activities.slice(0, 10).map((a) => ({
@@ -18,7 +14,7 @@ export default function RecentActivities({ activities = [] }) {
     title: a.name || a.type || "Activity",
     subtitle: `${a.start} • ${a.distance_km} km in ${a.duration_min} min`,
     url: a.id ? `https://connect.garmin.com/modern/activity/${a.id}` : undefined,
-    emoji: typeEmoji[(a.type || "").toLowerCase()] || "🏃",
+    emoji: activityEmoji(a.type),
   }));
 
   return (

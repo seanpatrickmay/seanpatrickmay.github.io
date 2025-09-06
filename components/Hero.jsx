@@ -23,16 +23,16 @@ export default function Hero({ links }) {
           </ul>
           <div className="flex flex-wrap gap-3 pt-2">
             <PillLink href="#projects" variant="solid" className="px-4">
-              See projects
+              📂 See projects
             </PillLink>
             <PillLink href={links.github} external className="px-4">
-              GitHub
+              🐙 GitHub
             </PillLink>
             <PillLink href={links.linkedin} external className="px-4">
-              LinkedIn
+              💼 LinkedIn
             </PillLink>
             <PillLink href={links.email} variant="solid" className="px-4">
-              Contact
+              ✉️ Contact
             </PillLink>
           </div>
         </div>

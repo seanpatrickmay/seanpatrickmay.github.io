@@ -1,6 +1,7 @@
 [
   {
     "title": "Human Digit Classification",
+    "emoji": "🔢",
     "period": "Jan – Mar 2025",
     "stack": ["Python","JavaScript","HTML","PyTorch","ML"],
     "bullets": [
@@ -12,6 +13,7 @@
   },
   {
     "title": "Counterfactual Regret Exploration (CFR-Min)",
+    "emoji": "♟️",
     "period": "Nov 2024 – Present",
     "stack": ["Jupyter","NumPy","Reinforcement Learning"],
     "bullets": [
@@ -23,6 +25,7 @@
   },
   {
     "title": "NLHE Alpha-Beta Pruning",
+    "emoji": "🃏",
     "period": "Aug – Dec 2024",
     "stack": ["Python","NumPy","Monte Carlo"],
     "bullets": [
@@ -34,6 +37,7 @@
   },
   {
     "title": "Linux Shell (C)",
+    "emoji": "🖥️",
     "period": "Oct 2024",
     "stack": ["C","Concurrency","Data Structures"],
     "bullets": [
