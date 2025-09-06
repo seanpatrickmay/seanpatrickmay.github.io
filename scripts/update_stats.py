@@ -154,7 +154,7 @@ def main() -> None:
             "cycling",
             "indoor_cycling",
             "mountain_biking",
-            "virtual_cycling",
+            "virtual_ride"
         },
         "running": {
             "running",
