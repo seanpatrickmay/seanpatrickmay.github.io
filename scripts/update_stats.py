@@ -39,7 +39,7 @@ WEEKLY_WINDOW = 12
 # Monthly window for totals (in days):
 MONTHLY_WINDOW_DAYS = 30
 # How many recent activities to include:
-RECENT_COUNT = 3
+RECENT_COUNT = 10
 # How many activities to fetch from Garmin (increase if you’re very active):
 FETCH_LIMIT = 200
 
@@ -154,7 +154,7 @@ def main() -> None:
             "cycling",
             "indoor_cycling",
             "mountain_biking",
-            "virtual_cycling",
+            "virtual_ride"
         },
         "running": {
             "running",
@@ -209,14 +209,14 @@ def main() -> None:
             "longest_km": round(max([meters(a) for a in last30] + [0.0]) / 1000.0, 2),
         }
 
-        # Last 3 activities
+        # Last N activities
         acts_sorted = [a for a in activities_sorted if a in acts]
-        last3 = acts_sorted[:RECENT_COUNT]
-        recent_last3 = []
-        for a in last3:
+        lastn = acts_sorted[:RECENT_COUNT]
+        recent_lastn = []
+        for a in lastn:
             m = meters(a)
             dur = seconds(a)
-            recent_last3.append({
+            recent_lastn.append({
                 "id": a.get("activityId"),
                 "name": a.get("activityName"),
                 "type": activity_type(a),
@@ -249,7 +249,7 @@ def main() -> None:
 
         stats_by_type[sport] = {
             "monthly": monthly,
-            "recent": {"last3": recent_last3},
+            "recent": {f"last{RECENT_COUNT}": recent_lastn},
             "weekly": {
                 "window_weeks": WEEKLY_WINDOW,
                 "series": weekly_rows,
