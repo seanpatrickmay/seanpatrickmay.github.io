@@ -4,6 +4,7 @@
     "role": "Software Engineering Co-op",
     "location": "Boston, MA",
     "period": "Expected Sep. - Dec. 2025",
+    "img": "/images/northeastern.svg",
     "bullets": [
       "Building real-world software with peers in an agile, consulting-style team for Northeastern's industry partners.",
       "Taking full ownership of projects, from design to coding, testing, and client demonstrations.",
@@ -15,6 +16,7 @@
     "role": "Software Development Co-op",
     "location": "Groton, CT",
     "period": "Jan – Jul 2024",
+    "img": "/images/gdeb.svg",
     "bullets": [
       "Automated database accuracy via ServiceNow REST API; improved tracking of ~1000 assets.",
       "Automated XML transformation testing with Python/Batch; delivered digestible review outputs.",
@@ -26,6 +28,7 @@
     "role": "Administrative Assistant",
     "location": "Fort Meade, MD",
     "period": "Jun – Sep 2023",
+    "img": "/images/disa.svg",
     "bullets": [
       "Maintained records/databases to support mission accessibility.",
       "Obtained Secret security clearance after full background investigation.",
