@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-06T14:29:06.486097Z",
+  "generated_at": "2025-09-06T23:08:55.047686Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,13 +9,22 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 36,
+        "activities_count": 37,
         "distance_km": 599.87,
-        "time_hours": 37.45,
+        "time_hours": 38.2,
         "longest_km": 100.23
       },
       "recent": {
-        "last3": [
+        "last10": [
+          {
+            "id": 20302629890,
+            "name": "Musculation",
+            "type": "strength_training",
+            "start": "2025-09-06 14:08:31",
+            "distance_km": 0.0,
+            "duration_min": 44.9,
+            "avg_speed_kmh": 0.0
+          },
           {
             "id": 20293900549,
             "name": "zwift ROCKS",
@@ -41,6 +50,60 @@
             "start": "2025-09-04 21:36:33",
             "distance_km": 0.0,
             "duration_min": 14.5,
+            "avg_speed_kmh": 0.0
+          },
+          {
+            "id": 20284176165,
+            "name": "Boston Course à pied",
+            "type": "running",
+            "start": "2025-09-04 20:14:13",
+            "distance_km": 12.26,
+            "duration_min": 65.2,
+            "avg_speed_kmh": 11.28
+          },
+          {
+            "id": 20283842208,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-09-04 19:47:48",
+            "distance_km": 0.0,
+            "duration_min": 23.2,
+            "avg_speed_kmh": 0.0
+          },
+          {
+            "id": 20274025811,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-09-03 22:07:46",
+            "distance_km": 0.0,
+            "duration_min": 35.0,
+            "avg_speed_kmh": 0.0
+          },
+          {
+            "id": 20266637938,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-09-03 07:32:46",
+            "distance_km": 0.0,
+            "duration_min": 25.4,
+            "avg_speed_kmh": 0.0
+          },
+          {
+            "id": 20261853685,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-09-02 17:50:03",
+            "distance_km": 0.0,
+            "duration_min": 56.1,
+            "avg_speed_kmh": 0.0
+          },
+          {
+            "id": 20255536596,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-09-02 07:04:44",
+            "distance_km": 0.0,
+            "duration_min": 61.9,
             "avg_speed_kmh": 0.0
           }
         ]
@@ -124,7 +187,7 @@
             "week_start": "2025-09-01",
             "week_end": "2025-09-07",
             "distance_km": 88.86,
-            "time_hours": 9.17
+            "time_hours": 9.92
           }
         ]
       }
@@ -132,13 +195,31 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 18,
-        "distance_km": 393.37,
-        "time_hours": 21.03,
+        "activities_count": 20,
+        "distance_km": 469.97,
+        "time_hours": 23.45,
         "longest_km": 100.23
       },
       "recent": {
-        "last3": [
+        "last10": [
+          {
+            "id": 20293900549,
+            "name": "zwift ROCKS",
+            "type": "virtual_ride",
+            "start": "2025-09-05 19:35:56",
+            "distance_km": 71.46,
+            "duration_min": 135.6,
+            "avg_speed_kmh": 31.61
+          },
+          {
+            "id": 20293138223,
+            "name": "FIRST RIDE",
+            "type": "virtual_ride",
+            "start": "2025-09-05 19:03:55",
+            "distance_km": 5.15,
+            "duration_min": 9.7,
+            "avg_speed_kmh": 31.99
+          },
           {
             "id": 20284272421,
             "name": "Vélo d'intérieur",
@@ -164,6 +245,51 @@
             "start": "2025-09-03 22:07:46",
             "distance_km": 0.0,
             "duration_min": 35.0,
+            "avg_speed_kmh": 0.0
+          },
+          {
+            "id": 20266637938,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-09-03 07:32:46",
+            "distance_km": 0.0,
+            "duration_min": 25.4,
+            "avg_speed_kmh": 0.0
+          },
+          {
+            "id": 20261853685,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-09-02 17:50:03",
+            "distance_km": 0.0,
+            "duration_min": 56.1,
+            "avg_speed_kmh": 0.0
+          },
+          {
+            "id": 20255536596,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-09-02 07:04:44",
+            "distance_km": 0.0,
+            "duration_min": 61.9,
+            "avg_speed_kmh": 0.0
+          },
+          {
+            "id": 20254786033,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-09-01 17:42:59",
+            "distance_km": 0.0,
+            "duration_min": 61.4,
+            "avg_speed_kmh": 0.0
+          },
+          {
+            "id": 20254784986,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-09-01 09:02:36",
+            "distance_km": 0.0,
+            "duration_min": 62.3,
             "avg_speed_kmh": 0.0
           }
         ]
@@ -246,8 +372,8 @@
           {
             "week_start": "2025-09-01",
             "week_end": "2025-09-07",
-            "distance_km": 0.0,
-            "time_hours": 5.66
+            "distance_km": 76.6,
+            "time_hours": 8.08
           }
         ]
       }
@@ -261,7 +387,7 @@
         "longest_km": 12.97
       },
       "recent": {
-        "last3": [
+        "last10": [
           {
             "id": 20284176165,
             "name": "Boston Course à pied",
@@ -288,6 +414,69 @@
             "distance_km": 0.45,
             "duration_min": 1.9,
             "avg_speed_kmh": 13.82
+          },
+          {
+            "id": 20101134540,
+            "name": "Nags Head Course à pied",
+            "type": "running",
+            "start": "2025-08-18 14:14:41",
+            "distance_km": 3.23,
+            "duration_min": 20.4,
+            "avg_speed_kmh": 9.48
+          },
+          {
+            "id": 20047733528,
+            "name": "Howard County Course à pied",
+            "type": "running",
+            "start": "2025-08-13 12:12:41",
+            "distance_km": 7.98,
+            "duration_min": 46.6,
+            "avg_speed_kmh": 10.27
+          },
+          {
+            "id": 20018263562,
+            "name": "Howard County Course à pied",
+            "type": "running",
+            "start": "2025-08-10 20:50:43",
+            "distance_km": 1.88,
+            "duration_min": 11.4,
+            "avg_speed_kmh": 9.89
+          },
+          {
+            "id": 20018263343,
+            "name": "Howard County Course à pied",
+            "type": "running",
+            "start": "2025-08-10 20:28:55",
+            "distance_km": 5.11,
+            "duration_min": 19.7,
+            "avg_speed_kmh": 15.56
+          },
+          {
+            "id": 20018263010,
+            "name": "Howard County Course à pied",
+            "type": "running",
+            "start": "2025-08-10 20:21:52",
+            "distance_km": 1.44,
+            "duration_min": 6.4,
+            "avg_speed_kmh": 13.59
+          },
+          {
+            "id": 19993125892,
+            "name": "Howard County Course à pied",
+            "type": "running",
+            "start": "2025-08-08 09:16:26",
+            "distance_km": 9.72,
+            "duration_min": 50.7,
+            "avg_speed_kmh": 11.51
+          },
+          {
+            "id": 19971215738,
+            "name": "Howard County Course à pied",
+            "type": "running",
+            "start": "2025-08-06 10:33:03",
+            "distance_km": 5.64,
+            "duration_min": 30.7,
+            "avg_speed_kmh": 11.01
           }
         ]
       },
@@ -378,7 +567,7 @@
         "longest_km": 1.73
       },
       "recent": {
-        "last3": [
+        "last10": [
           {
             "id": 20015631354,
             "name": "Shenandoah County Natation en eau libre",
@@ -405,6 +594,69 @@
             "distance_km": 1.73,
             "duration_min": 36.8,
             "avg_speed_kmh": 2.81
+          },
+          {
+            "id": 19960843744,
+            "name": "Nat. piscine",
+            "type": "lap_swimming",
+            "start": "2025-08-05 12:19:17",
+            "distance_km": 1.15,
+            "duration_min": 25.9,
+            "avg_speed_kmh": 2.66
+          },
+          {
+            "id": 19820455770,
+            "name": "Tihany Natation en eau libre",
+            "type": "open_water_swimming",
+            "start": "2025-07-23 08:34:08",
+            "distance_km": 0.9,
+            "duration_min": 30.2,
+            "avg_speed_kmh": 1.8
+          },
+          {
+            "id": 19810091712,
+            "name": "Tihany Natation en eau libre",
+            "type": "open_water_swimming",
+            "start": "2025-07-22 10:21:15",
+            "distance_km": 1.03,
+            "duration_min": 37.4,
+            "avg_speed_kmh": 1.65
+          },
+          {
+            "id": 19796043018,
+            "name": "Tihany Natation en eau libre",
+            "type": "open_water_swimming",
+            "start": "2025-07-20 20:54:54",
+            "distance_km": 0.08,
+            "duration_min": 18.1,
+            "avg_speed_kmh": 0.27
+          },
+          {
+            "id": 19525539892,
+            "name": "Nat. piscine",
+            "type": "lap_swimming",
+            "start": "2025-06-23 15:12:42",
+            "distance_km": 1.6,
+            "duration_min": 47.9,
+            "avg_speed_kmh": 2.0
+          },
+          {
+            "id": 19525537393,
+            "name": "Nat. piscine",
+            "type": "lap_swimming",
+            "start": "2025-06-18 15:40:39",
+            "distance_km": 1.93,
+            "duration_min": 49.3,
+            "avg_speed_kmh": 2.34
+          },
+          {
+            "id": 19525536575,
+            "name": "Nat. piscine",
+            "type": "lap_swimming",
+            "start": "2025-06-17 15:23:23",
+            "distance_km": 1.55,
+            "duration_min": 38.8,
+            "avg_speed_kmh": 2.39
           }
         ]
       },
