@@ -1,4 +1,4 @@
-import { MapPin, Brain, FileText } from 'lucide-react';
+import { MapPin, Brain, FileText, Github, Linkedin } from 'lucide-react';
 import Badge from '@/components/ui/Badge';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import PillLink from '@/components/ui/PillLink';
@@ -25,11 +25,11 @@ export default function Hero({ links }) {
             <PillLink href="#projects" variant="solid" className="px-4">
               📂 See projects
             </PillLink>
-            <PillLink href={links.github} external className="px-4">
-              🐙 GitHub
+            <PillLink href={links.github} icon={Github} external className="px-4">
+              GitHub
             </PillLink>
-            <PillLink href={links.linkedin} external className="px-4">
-              💼 LinkedIn
+            <PillLink href={links.linkedin} icon={Linkedin} external className="px-4">
+              LinkedIn
             </PillLink>
             <PillLink href={links.email} variant="solid" className="px-4">
               ✉️ Contact
