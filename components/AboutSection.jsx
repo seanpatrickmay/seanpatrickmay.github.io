@@ -4,6 +4,7 @@ import ActivityToggle from '@/components/ui/ActivityToggle';
 import BarSparkline from '@/components/ui/BarSparkline';
 import SpotifyTopArtists from '@/components/SpotifyTopArtists';
 import SpotifyTopTracks from '@/components/SpotifyTopTracks';
+import RecentActivities from '@/components/RecentActivities';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import Section from '@/components/ui/Section';
 import Stat from '@/components/ui/Stat';
@@ -147,26 +148,10 @@ export default function AboutSection({ interests }) {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>Recent</CardTitle>
+                  <CardTitle>Recent Activities</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-3">
-                    {(data?.recent?.last3 ?? []).map(a => (
-                      <li key={a.id} className="flex items-start justify-between gap-3">
-                        <div className="min-w-0">
-                          <div className="font-medium truncate">{a.name || a.type || 'Activity'}</div>
-                          <div className="text-xs opacity-70">{a.start}</div>
-                        </div>
-                        <div className="text-right shrink-0">
-                          <div className="text-sm">{a.distance_km} km</div>
-                          <div className="text-xs opacity-70">{a.duration_min} min</div>
-                        </div>
-                      </li>
-                    ))}
-                    {!data?.recent?.last3?.length && (
-                      <div className="text-sm opacity-70">No recent activities</div>
-                    )}
-                  </ul>
+                  <RecentActivities activities={data?.recent?.last10 ?? data?.recent?.last3 ?? []} />
                 </CardContent>
               </Card>
             </div>
