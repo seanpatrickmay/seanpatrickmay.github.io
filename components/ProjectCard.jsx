@@ -3,12 +3,12 @@ import { Card, CardHeader, CardTitle, CardContent } from './ui/Card';
 import PillLink from './ui/PillLink';
 
 export default function ProjectCard({ project }) {
-  const { title, period, stack = [], bullets = [], links = [] } = project;
+  const { title, period, stack = [], bullets = [], links = [], emoji } = project;
   return (
     <Card>
       <CardHeader>
         <div className="flex items-center justify-between gap-4 flex-wrap">
-          <CardTitle>{title}</CardTitle>
+          <CardTitle>{emoji ? `${emoji} ${title}` : title}</CardTitle>
           <span className="text-sm opacity-70">{period}</span>
         </div>
       </CardHeader>
