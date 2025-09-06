@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from "react";
 
 export default function AutoScrollList({
-  items = [], // [{ id, title, subtitle, image, emoji, url }]
+  items = [], // [{ id, title, subtitle, image, emoji, url, info, trailing }]
   visibleCount = 5,
   speed = 10,
   resumeDelayMs = 2000,
@@ -183,7 +183,7 @@ export default function AutoScrollList({
                 key={`${item.id || item.title}-A-${i}`}
                 className="flex items-center justify-between gap-2"
               >
-                <div className="flex items-center gap-2 min-w-0">
+                <div className="flex items-center gap-2 min-w-0 flex-1">
                   {item.image ? (
                     <img src={item.image} alt="" className="w-8 h-8 rounded shrink-0" />
                   ) : item.emoji ? (
@@ -196,8 +196,8 @@ export default function AutoScrollList({
                       href={item.url}
                       target="_blank"
                       rel="noreferrer"
-                      className="text-sm truncate"
-                      title={`${item.title} — ${item.subtitle || ""}`}
+                      className="text-sm truncate flex-1 min-w-0"
+                      title={item.subtitle ? `${item.title} — ${item.subtitle}` : item.title}
                       onClick={(e) => e.stopPropagation()}
                     >
                       <span className="font-medium">{item.title}</span>
@@ -208,13 +208,21 @@ export default function AutoScrollList({
                       )}
                     </a>
                   ) : (
-                    <span className="text-sm truncate" title={`${item.title} — ${item.subtitle || ""}`}>
+                    <span
+                      className="text-sm truncate flex-1 min-w-0"
+                      title={item.subtitle ? `${item.title} — ${item.subtitle}` : item.title}
+                    >
                       <span className="font-medium">{item.title}</span>
                       {item.subtitle && (
                         <span className="text-slate-500 dark:text-slate-400">
                           {" "}– {item.subtitle}
                         </span>
                       )}
+                    </span>
+                  )}
+                  {item.info && (
+                    <span className="text-sm text-slate-500 dark:text-slate-400 shrink-0">
+                      {item.info}
                     </span>
                   )}
                 </div>
@@ -234,7 +242,7 @@ export default function AutoScrollList({
                 key={`${item.id || item.title}-B-${i}`}
                 className="flex items-center justify-between gap-2"
               >
-                <div className="flex items-center gap-2 min-w-0">
+                <div className="flex items-center gap-2 min-w-0 flex-1">
                   {item.image ? (
                     <img src={item.image} alt="" className="w-8 h-8 rounded shrink-0" />
                   ) : item.emoji ? (
@@ -247,8 +255,8 @@ export default function AutoScrollList({
                       href={item.url}
                       target="_blank"
                       rel="noreferrer"
-                      className="text-sm truncate"
-                      title={`${item.title} — ${item.subtitle || ""}`}
+                      className="text-sm truncate flex-1 min-w-0"
+                      title={item.subtitle ? `${item.title} — ${item.subtitle}` : item.title}
                       onClick={(e) => e.stopPropagation()}
                     >
                       <span className="font-medium">{item.title}</span>
@@ -259,13 +267,21 @@ export default function AutoScrollList({
                       )}
                     </a>
                   ) : (
-                    <span className="text-sm truncate" title={`${item.title} — ${item.subtitle || ""}`}>
+                    <span
+                      className="text-sm truncate flex-1 min-w-0"
+                      title={item.subtitle ? `${item.title} — ${item.subtitle}` : item.title}
+                    >
                       <span className="font-medium">{item.title}</span>
                       {item.subtitle && (
                         <span className="text-slate-500 dark:text-slate-400">
                           {" "}– {item.subtitle}
                         </span>
                       )}
+                    </span>
+                  )}
+                  {item.info && (
+                    <span className="text-sm text-slate-500 dark:text-slate-400 shrink-0">
+                      {item.info}
                     </span>
                   )}
                 </div>
