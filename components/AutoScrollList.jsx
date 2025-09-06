@@ -179,7 +179,10 @@ export default function AutoScrollList({
           {/* List A (measure & display) */}
           <ul ref={measureRef} className="space-y-2">
             {top10.map((item, i) => (
-              <li key={`${item.id || item.title}-A-${i}`} className="flex items-center justify-between gap-2">
+              <li
+                key={`${item.id || item.title}-A-${i}`}
+                className="flex items-center justify-between gap-2"
+              >
                 <div className="flex items-center gap-2 min-w-0">
                   {item.image ? (
                     <img src={item.image} alt="" className="w-8 h-8 rounded shrink-0" />
@@ -215,8 +218,10 @@ export default function AutoScrollList({
                     </span>
                   )}
                 </div>
-                <span className="text-sm text-slate-500 dark:text-slate-400 w-6 text-right shrink-0">
-                  #{i + 1}
+                <span
+                  className="text-sm text-slate-500 dark:text-slate-400 text-right shrink-0 w-12"
+                >
+                  {item.trailing || `#${i + 1}`}
                 </span>
               </li>
             ))}
@@ -225,7 +230,10 @@ export default function AutoScrollList({
           {/* List B (duplicate for seamless loop) */}
           <ul className="space-y-2">
             {top10.map((item, i) => (
-              <li key={`${item.id || item.title}-B-${i}`} className="flex items-center justify-between gap-2">
+              <li
+                key={`${item.id || item.title}-B-${i}`}
+                className="flex items-center justify-between gap-2"
+              >
                 <div className="flex items-center gap-2 min-w-0">
                   {item.image ? (
                     <img src={item.image} alt="" className="w-8 h-8 rounded shrink-0" />
@@ -261,8 +269,10 @@ export default function AutoScrollList({
                     </span>
                   )}
                 </div>
-                <span className="text-sm text-slate-500 dark:text-slate-400 w-6 text-right shrink-0">
-                  #{i + 1}
+                <span
+                  className="text-sm text-slate-500 dark:text-slate-400 text-right shrink-0 w-12"
+                >
+                  {item.trailing || `#${i + 1}`}
                 </span>
               </li>
             ))}

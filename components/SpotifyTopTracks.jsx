@@ -4,8 +4,7 @@ import AutoScrollList from "@/components/AutoScrollList";
 export default function SpotifyTopTracks({ tracks = [], ...props }) {
   const items = tracks.slice(0, 10).map((t) => ({
     id: t.id,
-    title: t.name,
-    subtitle: t.artists,
+    title: `${t.name} – ${t.artists}`,
     image: t.image,
     url: t.url,
   }));
