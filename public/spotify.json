@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-06T13:37:23.909Z",
+  "generated_at": "2025-09-06T23:08:04.191Z",
   "artists": [
     {
       "name": "Daft Punk",
@@ -22,9 +22,9 @@
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     },
     {
-      "name": "Elton John",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb0dc33a1c53bb58a84b45d6a7",
-      "url": "https://open.spotify.com/artist/3PhoLpVuITZKcymswpck5b"
+      "name": "Billy Joel",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebb34057d59275011032ef8bc8",
+      "url": "https://open.spotify.com/artist/6zFYqv1mOsgBRQbae3JJ9e"
     }
   ],
   "tracks": [
@@ -35,28 +35,16 @@
       "url": "https://open.spotify.com/track/6OLudcGaT6HQ5bXH54kI8i"
     },
     {
-      "name": "Last Train to London",
-      "artist": "Electric Light Orchestra",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736f5a9bf7c8093763dd2a4a82",
-      "url": "https://open.spotify.com/track/6xE6ZWzK1YDDSYzqOCoQlz"
-    },
-    {
       "name": "Movin' Out (Anthony's Song)",
       "artist": "Billy Joel",
       "image": "https://i.scdn.co/image/ab67616d0000b2736ce61113662ecf693b605ee5",
       "url": "https://open.spotify.com/track/16GUMo6u3D2qo9a19AkYct"
     },
     {
-      "name": "Daydreamer",
-      "artist": "Adele",
-      "image": "https://i.scdn.co/image/ab67616d0000b27350637420ddb6ea76237bb7f4",
-      "url": "https://open.spotify.com/track/3FYqKyAKIB4mCygIFc1IYn"
-    },
-    {
-      "name": "You Rock My World",
-      "artist": "Michael Jackson",
-      "image": "https://i.scdn.co/image/ab67616d0000b273ed1c305cd1e673fe925407ce",
-      "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
+      "name": "Last Train to London",
+      "artist": "Electric Light Orchestra",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736f5a9bf7c8093763dd2a4a82",
+      "url": "https://open.spotify.com/track/6xE6ZWzK1YDDSYzqOCoQlz"
     },
     {
       "name": "The Stranger",
@@ -69,6 +57,18 @@
       "artist": "Cigarettes After Sex",
       "image": "https://i.scdn.co/image/ab67616d0000b273dfed999f959177dfc4f33cdc",
       "url": "https://open.spotify.com/track/2KhrPRV0V1FS2l4eQMJUWt"
+    },
+    {
+      "name": "Daydreamer",
+      "artist": "Adele",
+      "image": "https://i.scdn.co/image/ab67616d0000b27350637420ddb6ea76237bb7f4",
+      "url": "https://open.spotify.com/track/3FYqKyAKIB4mCygIFc1IYn"
+    },
+    {
+      "name": "You Rock My World",
+      "artist": "Michael Jackson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273ed1c305cd1e673fe925407ce",
+      "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
     },
     {
       "name": "Instant Crush (feat. Julian Casablancas)",
