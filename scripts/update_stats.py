@@ -35,7 +35,7 @@ TOKENS_DIR = Path(os.getenv("GARMIN_TOKENS_DIR", str(Path.home() / ".garminconne
 OUT_PATH = Path(os.getenv("GARMIN_OUT", "public/stats.json"))
 
 # How much history for weekly series (in weeks):
-WEEKLY_WINDOW = 12
+WEEKLY_WINDOW = 8
 # Monthly window for totals (in days):
 MONTHLY_WINDOW_DAYS = 30
 # How many recent activities to include:
@@ -237,9 +237,13 @@ def main() -> None:
             weekly[wk]["seconds"] += seconds(a)
 
         weekly_rows: List[Dict[str, Any]] = []
-        for wk in sorted(weekly.keys()):
-            m = weekly[wk]["meters"]
-            s = weekly[wk]["seconds"]
+        current_monday = today_dt - timedelta(days=today_dt.weekday())
+        start_week = current_monday - timedelta(weeks=WEEKLY_WINDOW - 1)
+        for i in range(WEEKLY_WINDOW):
+            wk_dt = start_week + timedelta(weeks=i)
+            wk = week_key(wk_dt)
+            m = weekly[wk]["meters"] if wk in weekly else 0.0
+            s = weekly[wk]["seconds"] if wk in weekly else 0.0
             weekly_rows.append({
                 "week_start": wk[0],
                 "week_end": wk[1],
