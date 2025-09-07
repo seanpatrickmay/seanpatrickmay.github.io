@@ -101,7 +101,7 @@ export default function AboutSection({ interests }) {
               <p className="text-slate-600 dark:text-slate-300">A peek at what I'm listening to.</p>
             </div>
             <div className="grid md:grid-cols-3 gap-6">
-              <Card className="md:col-span-2">
+              <Card className="space-y-9 md:col-span-2">
                 <CardHeader>
                   <CardTitle>Top Artists</CardTitle>
                 </CardHeader>

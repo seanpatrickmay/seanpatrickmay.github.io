@@ -4,8 +4,9 @@ import AutoScrollList from "@/components/AutoScrollList";
 function activityEmoji(type = "") {
   const t = type.toLowerCase();
   if (t.includes("swim")) return "🏊";
-  if (t.includes("bike") || t.includes("cycl")) return "🚴";
-  return "🏃";
+  if (t.includes("bike") || t.includes("cycl") || t.includes("ride")) return "🚴";
+  if (t.includes("run")) return "🏃";
+  return "🏋";
 }
 
 export default function RecentActivities({ activities = [] }) {
@@ -18,16 +19,17 @@ export default function RecentActivities({ activities = [] }) {
     return {
       id: a.id,
       title: a.name || a.type || "Activity",
-      subtitle: duration != null ? `${duration} min` : undefined,
-      info: `${distance} km`,
+      subtitle: "",
+      info: `${duration}mins - ` + `${distance}km`,
       url: a.id ? `https://connect.garmin.com/modern/activity/${a.id}` : undefined,
-      emoji: typeEmoji[(a.type || "").toLowerCase()] || "🏃",
+      emoji: activityEmoji((a.type || "").toLowerCase()) || "🏃",
       trailing:
-        daysAgo <= 0
-          ? "today"
-          : daysAgo === 1
-          ? "1d ago"
-          : `${daysAgo}d ago`,
+	daysAgo >= 62 ?
+	    `${Math.floor(daysAgo/31)}m`
+	: daysAgo >= 7 ? 
+	    `${Math.floor(daysAgo/7)}w`
+        : `${daysAgo}d`
+
     };
   });
 

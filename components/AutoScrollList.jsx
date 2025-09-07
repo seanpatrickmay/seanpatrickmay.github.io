@@ -227,7 +227,7 @@ export default function AutoScrollList({
                   )}
                 </div>
                 <span
-                  className="text-sm text-slate-500 dark:text-slate-400 text-right shrink-0 w-12"
+                  className="text-sm text-slate-500 dark:text-slate-400 text-right shrink-0 w-6"
                 >
                   {item.trailing || `#${i + 1}`}
                 </span>
@@ -286,7 +286,7 @@ export default function AutoScrollList({
                   )}
                 </div>
                 <span
-                  className="text-sm text-slate-500 dark:text-slate-400 text-right shrink-0 w-12"
+                  className="text-sm text-slate-500 dark:text-slate-400 text-right shrink-0 w-6"
                 >
                   {item.trailing || `#${i + 1}`}
                 </span>
