@@ -130,7 +130,7 @@ export default function AboutSection({ interests }) {
               <p className="text-slate-600 dark:text-slate-300">Snapshot of recent workouts.</p>
             </div>
             <div className="grid md:grid-cols-3 gap-6">
-              <Card className="md:col-span-2">
+              <Card className="space-y-6 md:col-span-2">
                 <CardHeader action={<ActivityToggle activity={activity} onChange={setActivity} />}>
                   <CardTitle>Monthly Training (last {monthly?.window_days ?? 30} days)</CardTitle>
                 </CardHeader>
@@ -139,7 +139,7 @@ export default function AboutSection({ interests }) {
                   <Stat value={monthly?.time_hours ?? '—'} label="Total hours" />
                   <Stat value={monthly?.activities_count ?? '—'} label="Activities" />
                   {monthly && updatedAt && (
-                    <div className="sm:col-span-3 text-sm opacity-70 text-center">
+                    <div className="sm:col-span-3 text-md opacity-70 text-center">
                       Longest: {monthly.longest_km} km
                     </div>
                   )}
