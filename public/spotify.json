@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-07T13:37:57.610Z",
+  "generated_at": "2025-09-08T13:46:35.962Z",
   "artists": [
     {
       "name": "Daft Punk",
@@ -71,22 +71,22 @@
       "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
     },
     {
-      "name": "Instant Crush (feat. Julian Casablancas)",
-      "artist": "Daft Punk, Julian Casablancas",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739b9b36b0e22870b9f542d937",
-      "url": "https://open.spotify.com/track/2cGxRwrMyEAp8dEbuZaVv6"
-    },
-    {
       "name": "Hourglass",
       "artist": "Zedd, LIZ",
       "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
       "url": "https://open.spotify.com/track/6NwrXtcFbc8OX7wJyBqE89"
     },
     {
-      "name": "Another Day Of Sun",
-      "artist": "La La Land Cast",
+      "name": "Someone In The Crowd",
+      "artist": "Emma Stone, Callie Hernandez, Sonoya Mizuno, Jessica Rothe",
       "image": "https://i.scdn.co/image/ab67616d0000b2730bdf4dd39843ad48c5b66bc4",
-      "url": "https://open.spotify.com/track/5kRBzRZmZTXVg8okC7SJFZ"
+      "url": "https://open.spotify.com/track/39ncDMVidHOeQgeC5anYZM"
+    },
+    {
+      "name": "A Rush and a Push and the Land Is Ours - 2011 Remaster",
+      "artist": "The Smiths",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736d965be72ad1bceb7f2bd089",
+      "url": "https://open.spotify.com/track/6Ps04Nfh2PySU4fIPZWxrU"
     }
   ]
 }
