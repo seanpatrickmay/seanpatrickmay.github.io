@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-08T14:36:02.759184Z",
+  "generated_at": "2025-09-09T03:08:10.706578Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,13 +9,22 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 37,
-        "distance_km": 646.52,
-        "time_hours": 36.52,
+        "activities_count": 36,
+        "distance_km": 666.77,
+        "time_hours": 34.89,
         "longest_km": 100.23
       },
       "recent": {
         "last10": [
+          {
+            "id": 20325516672,
+            "name": "Zwift - Road to Sky in Watopia",
+            "type": "virtual_ride",
+            "start": "2025-09-08 17:47:23",
+            "distance_km": 31.89,
+            "duration_min": 97.4,
+            "avg_speed_kmh": 19.65
+          },
           {
             "id": 20312052081,
             "name": "recovery",
@@ -96,15 +105,6 @@
             "distance_km": 12.26,
             "duration_min": 65.2,
             "avg_speed_kmh": 11.28
-          },
-          {
-            "id": 20283842208,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-04 19:47:48",
-            "distance_km": 0.0,
-            "duration_min": 23.2,
-            "avg_speed_kmh": 0.0
           }
         ]
       },
@@ -156,8 +156,8 @@
           {
             "week_start": "2025-09-08",
             "week_end": "2025-09-14",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 31.89,
+            "time_hours": 1.62
           }
         ]
       }
@@ -165,13 +165,22 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 23,
-        "distance_km": 535.38,
-        "time_hours": 25.44,
+        "activities_count": 24,
+        "distance_km": 567.26,
+        "time_hours": 27.06,
         "longest_km": 100.23
       },
       "recent": {
         "last10": [
+          {
+            "id": 20325516672,
+            "name": "Zwift - Road to Sky in Watopia",
+            "type": "virtual_ride",
+            "start": "2025-09-08 17:47:23",
+            "distance_km": 31.89,
+            "duration_min": 97.4,
+            "avg_speed_kmh": 19.65
+          },
           {
             "id": 20312052081,
             "name": "recovery",
@@ -252,15 +261,6 @@
             "distance_km": 0.0,
             "duration_min": 35.0,
             "avg_speed_kmh": 0.0
-          },
-          {
-            "id": 20266637938,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-03 07:32:46",
-            "distance_km": 0.0,
-            "duration_min": 25.4,
-            "avg_speed_kmh": 0.0
           }
         ]
       },
@@ -312,8 +312,8 @@
           {
             "week_start": "2025-09-08",
             "week_end": "2025-09-14",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 31.89,
+            "time_hours": 1.62
           }
         ]
       }
@@ -477,10 +477,10 @@
     "swimming": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 2,
-        "distance_km": 0.73,
-        "time_hours": 0.68,
-        "longest_km": 0.41
+        "activities_count": 1,
+        "distance_km": 0.32,
+        "time_hours": 0.12,
+        "longest_km": 0.32
       },
       "recent": {
         "last10": [
