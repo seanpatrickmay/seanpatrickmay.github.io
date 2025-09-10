@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-10T03:01:42.150235Z",
+  "generated_at": "2025-09-10T14:33:08.546779Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,13 +9,22 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 33,
-        "distance_km": 673.57,
-        "time_hours": 34.73,
+        "activities_count": 34,
+        "distance_km": 696.94,
+        "time_hours": 35.48,
         "longest_km": 100.23
       },
       "recent": {
         "last10": [
+          {
+            "id": 20337953090,
+            "name": "easy",
+            "type": "virtual_ride",
+            "start": "2025-09-09 23:30:39",
+            "distance_km": 23.37,
+            "duration_min": 44.7,
+            "avg_speed_kmh": 31.38
+          },
           {
             "id": 20336116972,
             "name": "FTP TEST",
@@ -96,15 +105,6 @@
             "distance_km": 5.15,
             "duration_min": 9.7,
             "avg_speed_kmh": 31.99
-          },
-          {
-            "id": 20284272421,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-04 21:36:33",
-            "distance_km": 0.0,
-            "duration_min": 14.5,
-            "avg_speed_kmh": 0.0
           }
         ]
       },
@@ -156,8 +156,8 @@
           {
             "week_start": "2025-09-08",
             "week_end": "2025-09-14",
-            "distance_km": 47.44,
-            "time_hours": 2.22
+            "distance_km": 70.81,
+            "time_hours": 2.96
           }
         ]
       }
@@ -165,13 +165,22 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 25,
-        "distance_km": 582.82,
-        "time_hours": 27.66,
+        "activities_count": 26,
+        "distance_km": 606.19,
+        "time_hours": 28.4,
         "longest_km": 100.23
       },
       "recent": {
         "last10": [
+          {
+            "id": 20337953090,
+            "name": "easy",
+            "type": "virtual_ride",
+            "start": "2025-09-09 23:30:39",
+            "distance_km": 23.37,
+            "duration_min": 44.7,
+            "avg_speed_kmh": 31.38
+          },
           {
             "id": 20336116972,
             "name": "FTP TEST",
@@ -252,15 +261,6 @@
             "distance_km": 0.0,
             "duration_min": 14.5,
             "avg_speed_kmh": 0.0
-          },
-          {
-            "id": 20283842208,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-04 19:47:48",
-            "distance_km": 0.0,
-            "duration_min": 23.2,
-            "avg_speed_kmh": 0.0
           }
         ]
       },
@@ -312,8 +312,8 @@
           {
             "week_start": "2025-09-08",
             "week_end": "2025-09-14",
-            "distance_km": 47.44,
-            "time_hours": 2.22
+            "distance_km": 70.81,
+            "time_hours": 2.96
           }
         ]
       }
