@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-09T13:48:44.778Z",
+  "generated_at": "2025-09-10T13:42:37.193Z",
   "artists": [
     {
       "name": "Daft Punk",
@@ -22,9 +22,9 @@
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     },
     {
-      "name": "Billy Joel",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebb34057d59275011032ef8bc8",
-      "url": "https://open.spotify.com/artist/6zFYqv1mOsgBRQbae3JJ9e"
+      "name": "IVE",
+      "image": "https://i.scdn.co/image/ab6761610000e5eba9c8608865ca7eded5520359",
+      "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
     }
   ],
   "tracks": [
@@ -35,22 +35,16 @@
       "url": "https://open.spotify.com/track/6OLudcGaT6HQ5bXH54kI8i"
     },
     {
-      "name": "Movin' Out (Anthony's Song)",
-      "artist": "Billy Joel",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736ce61113662ecf693b605ee5",
-      "url": "https://open.spotify.com/track/16GUMo6u3D2qo9a19AkYct"
-    },
-    {
       "name": "Last Train to London",
       "artist": "Electric Light Orchestra",
       "image": "https://i.scdn.co/image/ab67616d0000b2736f5a9bf7c8093763dd2a4a82",
       "url": "https://open.spotify.com/track/6xE6ZWzK1YDDSYzqOCoQlz"
     },
     {
-      "name": "The Stranger",
+      "name": "Movin' Out (Anthony's Song)",
       "artist": "Billy Joel",
       "image": "https://i.scdn.co/image/ab67616d0000b2736ce61113662ecf693b605ee5",
-      "url": "https://open.spotify.com/track/54xbcKFYv2PC6ujERHppRj"
+      "url": "https://open.spotify.com/track/16GUMo6u3D2qo9a19AkYct"
     },
     {
       "name": "Sweet",
@@ -69,6 +63,12 @@
       "artist": "Michael Jackson",
       "image": "https://i.scdn.co/image/ab67616d0000b273ed1c305cd1e673fe925407ce",
       "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
+    },
+    {
+      "name": "The Stranger",
+      "artist": "Billy Joel",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736ce61113662ecf693b605ee5",
+      "url": "https://open.spotify.com/track/54xbcKFYv2PC6ujERHppRj"
     },
     {
       "name": "Hourglass",
