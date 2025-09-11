@@ -1,10 +1,15 @@
 {
-  "generated_at": "2025-09-10T13:42:37.193Z",
+  "generated_at": "2025-09-11T13:41:27.234Z",
   "artists": [
     {
       "name": "Daft Punk",
       "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+    },
+    {
+      "name": "IVE",
+      "image": "https://i.scdn.co/image/ab6761610000e5eba9c8608865ca7eded5520359",
+      "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
     },
     {
       "name": "Zedd",
@@ -20,11 +25,6 @@
       "name": "Adele",
       "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
-    },
-    {
-      "name": "IVE",
-      "image": "https://i.scdn.co/image/ab6761610000e5eba9c8608865ca7eded5520359",
-      "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
     }
   ],
   "tracks": [
