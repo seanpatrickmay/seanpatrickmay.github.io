@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-12T03:01:15.871975Z",
+  "generated_at": "2025-09-12T14:33:32.587212Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,13 +9,22 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 34,
-        "distance_km": 679.52,
-        "time_hours": 34.95,
+        "activities_count": 35,
+        "distance_km": 690.52,
+        "time_hours": 35.28,
         "longest_km": 100.23
       },
       "recent": {
         "last10": [
+          {
+            "id": 20358781784,
+            "name": "vo2 :(",
+            "type": "virtual_ride",
+            "start": "2025-09-11 23:58:58",
+            "distance_km": 11.0,
+            "duration_min": 19.7,
+            "avg_speed_kmh": 33.51
+          },
           {
             "id": 20348174977,
             "name": "cd",
@@ -96,15 +105,6 @@
             "distance_km": 10.25,
             "duration_min": 25.2,
             "avg_speed_kmh": 24.35
-          },
-          {
-            "id": 20302629890,
-            "name": "Musculation",
-            "type": "strength_training",
-            "start": "2025-09-06 14:08:31",
-            "distance_km": 0.0,
-            "duration_min": 44.9,
-            "avg_speed_kmh": 0.0
           }
         ]
       },
@@ -156,8 +156,8 @@
           {
             "week_start": "2025-09-08",
             "week_end": "2025-09-14",
-            "distance_km": 122.21,
-            "time_hours": 4.83
+            "distance_km": 133.21,
+            "time_hours": 5.16
           }
         ]
       }
@@ -165,13 +165,22 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 26,
-        "distance_km": 588.77,
-        "time_hours": 27.88,
+        "activities_count": 27,
+        "distance_km": 599.77,
+        "time_hours": 28.21,
         "longest_km": 100.23
       },
       "recent": {
         "last10": [
+          {
+            "id": 20358781784,
+            "name": "vo2 :(",
+            "type": "virtual_ride",
+            "start": "2025-09-11 23:58:58",
+            "distance_km": 11.0,
+            "duration_min": 19.7,
+            "avg_speed_kmh": 33.51
+          },
           {
             "id": 20348174977,
             "name": "cd",
@@ -252,15 +261,6 @@
             "distance_km": 10.25,
             "duration_min": 25.2,
             "avg_speed_kmh": 24.35
-          },
-          {
-            "id": 20293900549,
-            "name": "zwift ROCKS",
-            "type": "virtual_ride",
-            "start": "2025-09-05 19:35:56",
-            "distance_km": 71.46,
-            "duration_min": 135.6,
-            "avg_speed_kmh": 31.61
           }
         ]
       },
@@ -312,8 +312,8 @@
           {
             "week_start": "2025-09-08",
             "week_end": "2025-09-14",
-            "distance_km": 122.21,
-            "time_hours": 4.83
+            "distance_km": 133.21,
+            "time_hours": 5.16
           }
         ]
       }
