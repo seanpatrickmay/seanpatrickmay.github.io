@@ -1,11 +1,6 @@
 {
-  "generated_at": "2025-09-12T13:42:02.323Z",
+  "generated_at": "2025-09-13T13:37:45.790Z",
   "artists": [
-    {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
-    },
     {
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
@@ -17,28 +12,33 @@
       "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
     },
     {
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+    },
+    {
       "name": "Adele",
       "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     },
     {
-      "name": "Stromae",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebcc129f1c9b5047760d66aae2",
-      "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
+      "name": "Toshifumi Hinata",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb1d5fb5b560b966ca1177aefe",
+      "url": "https://open.spotify.com/artist/08tfDO4dSrwxax35a3HIMC"
     }
   ],
   "tracks": [
-    {
-      "name": "Right As Rain",
-      "artist": "Adele",
-      "image": "https://i.scdn.co/image/ab67616d0000b27350637420ddb6ea76237bb7f4",
-      "url": "https://open.spotify.com/track/6OLudcGaT6HQ5bXH54kI8i"
-    },
     {
       "name": "Hourglass",
       "artist": "Zedd, LIZ",
       "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
       "url": "https://open.spotify.com/track/6NwrXtcFbc8OX7wJyBqE89"
+    },
+    {
+      "name": "Right As Rain",
+      "artist": "Adele",
+      "image": "https://i.scdn.co/image/ab67616d0000b27350637420ddb6ea76237bb7f4",
+      "url": "https://open.spotify.com/track/6OLudcGaT6HQ5bXH54kI8i"
     },
     {
       "name": "Last Train to London",
@@ -47,28 +47,22 @@
       "url": "https://open.spotify.com/track/6xE6ZWzK1YDDSYzqOCoQlz"
     },
     {
-      "name": "Movin' Out (Anthony's Song)",
-      "artist": "Billy Joel",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736ce61113662ecf693b605ee5",
-      "url": "https://open.spotify.com/track/16GUMo6u3D2qo9a19AkYct"
-    },
-    {
       "name": "Sweet",
       "artist": "Cigarettes After Sex",
       "image": "https://i.scdn.co/image/ab67616d0000b273dfed999f959177dfc4f33cdc",
       "url": "https://open.spotify.com/track/2KhrPRV0V1FS2l4eQMJUWt"
     },
     {
-      "name": "Daydreamer",
-      "artist": "Adele",
-      "image": "https://i.scdn.co/image/ab67616d0000b27350637420ddb6ea76237bb7f4",
-      "url": "https://open.spotify.com/track/3FYqKyAKIB4mCygIFc1IYn"
-    },
-    {
       "name": "You Rock My World",
       "artist": "Michael Jackson",
       "image": "https://i.scdn.co/image/ab67616d0000b273ed1c305cd1e673fe925407ce",
       "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
+    },
+    {
+      "name": "Movin' Out (Anthony's Song)",
+      "artist": "Billy Joel",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736ce61113662ecf693b605ee5",
+      "url": "https://open.spotify.com/track/16GUMo6u3D2qo9a19AkYct"
     },
     {
       "name": "The Stranger",
@@ -81,6 +75,12 @@
       "artist": "Emma Stone, Callie Hernandez, Sonoya Mizuno, Jessica Rothe",
       "image": "https://i.scdn.co/image/ab67616d0000b2730bdf4dd39843ad48c5b66bc4",
       "url": "https://open.spotify.com/track/39ncDMVidHOeQgeC5anYZM"
+    },
+    {
+      "name": "Daydreamer",
+      "artist": "Adele",
+      "image": "https://i.scdn.co/image/ab67616d0000b27350637420ddb6ea76237bb7f4",
+      "url": "https://open.spotify.com/track/3FYqKyAKIB4mCygIFc1IYn"
     },
     {
       "name": "A Rush and a Push and the Land Is Ours - 2011 Remaster",
