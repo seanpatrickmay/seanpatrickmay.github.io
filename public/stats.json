@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-12T14:33:32.587212Z",
+  "generated_at": "2025-09-13T02:54:17.787032Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,13 +9,40 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 35,
-        "distance_km": 690.52,
-        "time_hours": 35.28,
+        "activities_count": 37,
+        "distance_km": 724.1,
+        "time_hours": 35.82,
         "longest_km": 100.23
       },
       "recent": {
         "last10": [
+          {
+            "id": 20367117544,
+            "name": "cd",
+            "type": "virtual_ride",
+            "start": "2025-09-12 19:02:50",
+            "distance_km": 4.44,
+            "duration_min": 14.0,
+            "avg_speed_kmh": 19.07
+          },
+          {
+            "id": 20367035894,
+            "name": "some threshold",
+            "type": "virtual_ride",
+            "start": "2025-09-12 18:21:25",
+            "distance_km": 23.92,
+            "duration_min": 40.3,
+            "avg_speed_kmh": 35.59
+          },
+          {
+            "id": 20366787710,
+            "name": "wu",
+            "type": "virtual_ride",
+            "start": "2025-09-12 17:50:13",
+            "distance_km": 13.18,
+            "duration_min": 24.9,
+            "avg_speed_kmh": 31.8
+          },
           {
             "id": 20358781784,
             "name": "vo2 :(",
@@ -78,33 +105,6 @@
             "distance_km": 30.18,
             "duration_min": 55.4,
             "avg_speed_kmh": 32.71
-          },
-          {
-            "id": 20305285210,
-            "name": "cd",
-            "type": "virtual_ride",
-            "start": "2025-09-07 01:14:53",
-            "distance_km": 20.07,
-            "duration_min": 37.1,
-            "avg_speed_kmh": 32.41
-          },
-          {
-            "id": 20305090467,
-            "name": "FIRST RACE! W",
-            "type": "virtual_ride",
-            "start": "2025-09-07 00:12:26",
-            "distance_km": 22.38,
-            "duration_min": 36.9,
-            "avg_speed_kmh": 36.43
-          },
-          {
-            "id": 20304979708,
-            "name": "first workout",
-            "type": "virtual_ride",
-            "start": "2025-09-06 23:40:15",
-            "distance_km": 10.25,
-            "duration_min": 25.2,
-            "avg_speed_kmh": 24.35
           }
         ]
       },
@@ -156,8 +156,8 @@
           {
             "week_start": "2025-09-08",
             "week_end": "2025-09-14",
-            "distance_km": 133.21,
-            "time_hours": 5.16
+            "distance_km": 174.76,
+            "time_hours": 6.48
           }
         ]
       }
@@ -165,13 +165,40 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 27,
-        "distance_km": 599.77,
-        "time_hours": 28.21,
+        "activities_count": 30,
+        "distance_km": 641.32,
+        "time_hours": 29.53,
         "longest_km": 100.23
       },
       "recent": {
         "last10": [
+          {
+            "id": 20367117544,
+            "name": "cd",
+            "type": "virtual_ride",
+            "start": "2025-09-12 19:02:50",
+            "distance_km": 4.44,
+            "duration_min": 14.0,
+            "avg_speed_kmh": 19.07
+          },
+          {
+            "id": 20367035894,
+            "name": "some threshold",
+            "type": "virtual_ride",
+            "start": "2025-09-12 18:21:25",
+            "distance_km": 23.92,
+            "duration_min": 40.3,
+            "avg_speed_kmh": 35.59
+          },
+          {
+            "id": 20366787710,
+            "name": "wu",
+            "type": "virtual_ride",
+            "start": "2025-09-12 17:50:13",
+            "distance_km": 13.18,
+            "duration_min": 24.9,
+            "avg_speed_kmh": 31.8
+          },
           {
             "id": 20358781784,
             "name": "vo2 :(",
@@ -234,33 +261,6 @@
             "distance_km": 30.18,
             "duration_min": 55.4,
             "avg_speed_kmh": 32.71
-          },
-          {
-            "id": 20305285210,
-            "name": "cd",
-            "type": "virtual_ride",
-            "start": "2025-09-07 01:14:53",
-            "distance_km": 20.07,
-            "duration_min": 37.1,
-            "avg_speed_kmh": 32.41
-          },
-          {
-            "id": 20305090467,
-            "name": "FIRST RACE! W",
-            "type": "virtual_ride",
-            "start": "2025-09-07 00:12:26",
-            "distance_km": 22.38,
-            "duration_min": 36.9,
-            "avg_speed_kmh": 36.43
-          },
-          {
-            "id": 20304979708,
-            "name": "first workout",
-            "type": "virtual_ride",
-            "start": "2025-09-06 23:40:15",
-            "distance_km": 10.25,
-            "duration_min": 25.2,
-            "avg_speed_kmh": 24.35
           }
         ]
       },
@@ -312,8 +312,8 @@
           {
             "week_start": "2025-09-08",
             "week_end": "2025-09-14",
-            "distance_km": 133.21,
-            "time_hours": 5.16
+            "distance_km": 174.76,
+            "time_hours": 6.48
           }
         ]
       }
@@ -321,9 +321,9 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 5,
-        "distance_km": 36.88,
-        "time_hours": 3.33,
+        "activities_count": 4,
+        "distance_km": 28.9,
+        "time_hours": 2.56,
         "longest_km": 12.97
       },
       "recent": {
