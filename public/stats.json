@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-13T14:27:40.645804Z",
+  "generated_at": "2025-09-14T03:08:31.583979Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,13 +9,22 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 37,
-        "distance_km": 724.1,
-        "time_hours": 35.82,
+        "activities_count": 38,
+        "distance_km": 731.12,
+        "time_hours": 36.44,
         "longest_km": 100.23
       },
       "recent": {
         "last10": [
+          {
+            "id": 20376638390,
+            "name": "Boston Course à pied",
+            "type": "running",
+            "start": "2025-09-13 15:04:39",
+            "distance_km": 7.03,
+            "duration_min": 36.6,
+            "avg_speed_kmh": 11.51
+          },
           {
             "id": 20367117544,
             "name": "cd",
@@ -96,15 +105,6 @@
             "distance_km": 31.89,
             "duration_min": 97.4,
             "avg_speed_kmh": 19.65
-          },
-          {
-            "id": 20312052081,
-            "name": "recovery",
-            "type": "virtual_ride",
-            "start": "2025-09-07 11:09:50",
-            "distance_km": 30.18,
-            "duration_min": 55.4,
-            "avg_speed_kmh": 32.71
           }
         ]
       },
@@ -156,8 +156,8 @@
           {
             "week_start": "2025-09-08",
             "week_end": "2025-09-14",
-            "distance_km": 174.76,
-            "time_hours": 6.48
+            "distance_km": 181.79,
+            "time_hours": 7.09
           }
         ]
       }
@@ -321,13 +321,22 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 4,
-        "distance_km": 28.9,
-        "time_hours": 2.56,
+        "activities_count": 5,
+        "distance_km": 35.93,
+        "time_hours": 3.17,
         "longest_km": 12.97
       },
       "recent": {
         "last10": [
+          {
+            "id": 20376638390,
+            "name": "Boston Course à pied",
+            "type": "running",
+            "start": "2025-09-13 15:04:39",
+            "distance_km": 7.03,
+            "duration_min": 36.6,
+            "avg_speed_kmh": 11.51
+          },
           {
             "id": 20284176165,
             "name": "Boston Course à pied",
@@ -408,15 +417,6 @@
             "distance_km": 9.72,
             "duration_min": 50.7,
             "avg_speed_kmh": 11.51
-          },
-          {
-            "id": 19971215738,
-            "name": "Howard County Course à pied",
-            "type": "running",
-            "start": "2025-08-06 10:33:03",
-            "distance_km": 5.64,
-            "duration_min": 30.7,
-            "avg_speed_kmh": 11.01
           }
         ]
       },
@@ -468,8 +468,8 @@
           {
             "week_start": "2025-09-08",
             "week_end": "2025-09-14",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 7.03,
+            "time_hours": 0.61
           }
         ]
       }
