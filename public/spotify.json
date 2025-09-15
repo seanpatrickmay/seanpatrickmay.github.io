@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-14T13:37:10.569Z",
+  "generated_at": "2025-09-15T13:42:36.404Z",
   "artists": [
     {
       "name": "Zedd",
@@ -22,9 +22,9 @@
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     },
     {
-      "name": "Toshifumi Hinata",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb1d5fb5b560b966ca1177aefe",
-      "url": "https://open.spotify.com/artist/08tfDO4dSrwxax35a3HIMC"
+      "name": "Billy Joel",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebb34057d59275011032ef8bc8",
+      "url": "https://open.spotify.com/artist/6zFYqv1mOsgBRQbae3JJ9e"
     }
   ],
   "tracks": [
@@ -47,12 +47,6 @@
       "url": "https://open.spotify.com/track/6xE6ZWzK1YDDSYzqOCoQlz"
     },
     {
-      "name": "Sweet",
-      "artist": "Cigarettes After Sex",
-      "image": "https://i.scdn.co/image/ab67616d0000b273dfed999f959177dfc4f33cdc",
-      "url": "https://open.spotify.com/track/2KhrPRV0V1FS2l4eQMJUWt"
-    },
-    {
       "name": "You Rock My World",
       "artist": "Michael Jackson",
       "image": "https://i.scdn.co/image/ab67616d0000b273ed1c305cd1e673fe925407ce",
@@ -69,6 +63,12 @@
       "artist": "Emma Stone, Callie Hernandez, Sonoya Mizuno, Jessica Rothe",
       "image": "https://i.scdn.co/image/ab67616d0000b2730bdf4dd39843ad48c5b66bc4",
       "url": "https://open.spotify.com/track/39ncDMVidHOeQgeC5anYZM"
+    },
+    {
+      "name": "Sweet",
+      "artist": "Cigarettes After Sex",
+      "image": "https://i.scdn.co/image/ab67616d0000b273dfed999f959177dfc4f33cdc",
+      "url": "https://open.spotify.com/track/2KhrPRV0V1FS2l4eQMJUWt"
     },
     {
       "name": "Daydreamer",
