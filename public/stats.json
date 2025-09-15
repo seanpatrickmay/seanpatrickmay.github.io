@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-14T14:28:34.309296Z",
+  "generated_at": "2025-09-15T03:14:02.662871Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,13 +9,22 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 38,
-        "distance_km": 731.12,
-        "time_hours": 36.44,
+        "activities_count": 39,
+        "distance_km": 752.38,
+        "time_hours": 37.4,
         "longest_km": 100.23
       },
       "recent": {
         "last10": [
+          {
+            "id": 20387950471,
+            "name": "wu",
+            "type": "virtual_ride",
+            "start": "2025-09-14 17:40:21",
+            "distance_km": 21.26,
+            "duration_min": 57.9,
+            "avg_speed_kmh": 22.04
+          },
           {
             "id": 20376638390,
             "name": "Boston Course à pied",
@@ -96,27 +105,12 @@
             "distance_km": 15.56,
             "duration_min": 35.7,
             "avg_speed_kmh": 26.15
-          },
-          {
-            "id": 20325516672,
-            "name": "Zwift - Road to Sky in Watopia",
-            "type": "virtual_ride",
-            "start": "2025-09-08 17:47:23",
-            "distance_km": 31.89,
-            "duration_min": 97.4,
-            "avg_speed_kmh": 19.65
           }
         ]
       },
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-07-21",
-            "week_end": "2025-07-27",
-            "distance_km": 28.73,
-            "time_hours": 9.7
-          },
           {
             "week_start": "2025-07-28",
             "week_end": "2025-08-03",
@@ -156,8 +150,14 @@
           {
             "week_start": "2025-09-08",
             "week_end": "2025-09-14",
-            "distance_km": 181.79,
-            "time_hours": 7.09
+            "distance_km": 203.05,
+            "time_hours": 8.05
+          },
+          {
+            "week_start": "2025-09-15",
+            "week_end": "2025-09-21",
+            "distance_km": 0.0,
+            "time_hours": 0.0
           }
         ]
       }
@@ -165,13 +165,22 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 30,
-        "distance_km": 641.32,
-        "time_hours": 29.53,
+        "activities_count": 31,
+        "distance_km": 662.58,
+        "time_hours": 30.49,
         "longest_km": 100.23
       },
       "recent": {
         "last10": [
+          {
+            "id": 20387950471,
+            "name": "wu",
+            "type": "virtual_ride",
+            "start": "2025-09-14 17:40:21",
+            "distance_km": 21.26,
+            "duration_min": 57.9,
+            "avg_speed_kmh": 22.04
+          },
           {
             "id": 20367117544,
             "name": "cd",
@@ -252,27 +261,12 @@
             "distance_km": 31.89,
             "duration_min": 97.4,
             "avg_speed_kmh": 19.65
-          },
-          {
-            "id": 20312052081,
-            "name": "recovery",
-            "type": "virtual_ride",
-            "start": "2025-09-07 11:09:50",
-            "distance_km": 30.18,
-            "duration_min": 55.4,
-            "avg_speed_kmh": 32.71
           }
         ]
       },
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-07-21",
-            "week_end": "2025-07-27",
-            "distance_km": 0.0,
-            "time_hours": 5.23
-          },
           {
             "week_start": "2025-07-28",
             "week_end": "2025-08-03",
@@ -312,8 +306,14 @@
           {
             "week_start": "2025-09-08",
             "week_end": "2025-09-14",
-            "distance_km": 174.76,
-            "time_hours": 6.48
+            "distance_km": 196.02,
+            "time_hours": 7.44
+          },
+          {
+            "week_start": "2025-09-15",
+            "week_end": "2025-09-21",
+            "distance_km": 0.0,
+            "time_hours": 0.0
           }
         ]
       }
@@ -424,12 +424,6 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-07-21",
-            "week_end": "2025-07-27",
-            "distance_km": 26.79,
-            "time_hours": 2.75
-          },
-          {
             "week_start": "2025-07-28",
             "week_end": "2025-08-03",
             "distance_km": 19.65,
@@ -470,6 +464,12 @@
             "week_end": "2025-09-14",
             "distance_km": 7.03,
             "time_hours": 0.61
+          },
+          {
+            "week_start": "2025-09-15",
+            "week_end": "2025-09-21",
+            "distance_km": 0.0,
+            "time_hours": 0.0
           }
         ]
       }
@@ -580,12 +580,6 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-07-21",
-            "week_end": "2025-07-27",
-            "distance_km": 1.93,
-            "time_hours": 1.13
-          },
-          {
             "week_start": "2025-07-28",
             "week_end": "2025-08-03",
             "distance_km": 0.0,
@@ -624,6 +618,12 @@
           {
             "week_start": "2025-09-08",
             "week_end": "2025-09-14",
+            "distance_km": 0.0,
+            "time_hours": 0.0
+          },
+          {
+            "week_start": "2025-09-15",
+            "week_end": "2025-09-21",
             "distance_km": 0.0,
             "time_hours": 0.0
           }
