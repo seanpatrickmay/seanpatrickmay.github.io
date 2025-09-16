@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-15T14:31:35.505412Z",
+  "generated_at": "2025-09-16T03:02:26.052150Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -10,12 +10,21 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 39,
-        "distance_km": 752.38,
-        "time_hours": 37.4,
+        "distance_km": 746.26,
+        "time_hours": 36.08,
         "longest_km": 100.23
       },
       "recent": {
         "last10": [
+          {
+            "id": 20398470230,
+            "name": "ss",
+            "type": "virtual_ride",
+            "start": "2025-09-15 18:46:39",
+            "distance_km": 47.76,
+            "duration_min": 90.6,
+            "avg_speed_kmh": 31.63
+          },
           {
             "id": 20387950471,
             "name": "wu",
@@ -96,15 +105,6 @@
             "distance_km": 23.37,
             "duration_min": 44.7,
             "avg_speed_kmh": 31.38
-          },
-          {
-            "id": 20336116972,
-            "name": "FTP TEST",
-            "type": "virtual_ride",
-            "start": "2025-09-09 17:21:28",
-            "distance_km": 15.56,
-            "duration_min": 35.7,
-            "avg_speed_kmh": 26.15
           }
         ]
       },
@@ -156,8 +156,8 @@
           {
             "week_start": "2025-09-15",
             "week_end": "2025-09-21",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 47.76,
+            "time_hours": 1.51
           }
         ]
       }
@@ -165,13 +165,22 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 31,
-        "distance_km": 662.58,
-        "time_hours": 30.49,
+        "activities_count": 32,
+        "distance_km": 710.33,
+        "time_hours": 32.0,
         "longest_km": 100.23
       },
       "recent": {
         "last10": [
+          {
+            "id": 20398470230,
+            "name": "ss",
+            "type": "virtual_ride",
+            "start": "2025-09-15 18:46:39",
+            "distance_km": 47.76,
+            "duration_min": 90.6,
+            "avg_speed_kmh": 31.63
+          },
           {
             "id": 20387950471,
             "name": "wu",
@@ -252,15 +261,6 @@
             "distance_km": 15.56,
             "duration_min": 35.7,
             "avg_speed_kmh": 26.15
-          },
-          {
-            "id": 20325516672,
-            "name": "Zwift - Road to Sky in Watopia",
-            "type": "virtual_ride",
-            "start": "2025-09-08 17:47:23",
-            "distance_km": 31.89,
-            "duration_min": 97.4,
-            "avg_speed_kmh": 19.65
           }
         ]
       },
@@ -312,8 +312,8 @@
           {
             "week_start": "2025-09-15",
             "week_end": "2025-09-21",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 47.76,
+            "time_hours": 1.51
           }
         ]
       }
