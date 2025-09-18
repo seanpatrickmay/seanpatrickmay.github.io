@@ -6,7 +6,7 @@ export default function ThemeToggle() {
   if (!mounted) return null;
   return (
     <button onClick={toggle} aria-label="Toggle theme"
-      className="pill-outline flex items-center gap-2">
+      className="pill-accent">
       {dark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
       <span className="hidden sm:inline">{dark ? "Light" : "Dark"}</span>
     </button>
