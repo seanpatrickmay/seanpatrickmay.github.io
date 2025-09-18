@@ -9,12 +9,11 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import AboutSection from '@/components/AboutSection';
 import Footer from '@/components/Footer';
-import ListSection from '@/components/ListSection';
-import Section from '@/components/ui/Section';
 import ProjectCard from '@/components/ProjectCard';
 import ExperienceItem from '@/components/ExperienceItem';
 import EducationItem from '@/components/EducationItem';
-import SkillsGrid from '@/components/SkillsGrid';
+import StackedCardSection from '@/components/StackedCardSection';
+import SkillCategoryCard from '@/components/SkillCategoryCard';
 import { Trophy, Briefcase, GraduationCap, Cpu, ClipboardList } from 'lucide-react';
 
 const projects = validateProjects(rawProjects) ? rawProjects : [];
@@ -57,6 +56,12 @@ const interests = [
   'Brain Teasers', 'Game Theory', 'Poker', 'Chess', 'Français', 'Track & Field', 'Triathlon', 'Skiing', 'Sports Science'
 ];
 
+const skillCategories = [
+  { title: 'Languages', items: skills.languages },
+  { title: 'Tools & Libraries', items: skills.tools },
+  { title: 'Platforms', items: skills.platforms },
+];
+
 export default function Home() {
   return (
     <>
@@ -76,42 +81,59 @@ export default function Home() {
       <Hero links={links} />
       <AboutSection interests={interests} />
 
-      <ListSection
-        id="experience"
-        title="Experience"
-        icon={Briefcase}
-        items={experience}
-        renderItem={job => <ExperienceItem key={job.org} job={job} />}
-      />
+      <div className="section-container">
+        <div className="grid gap-12 lg:grid-cols-2">
+          <StackedCardSection
+            id="experience"
+            title="Experience"
+            icon={Briefcase}
+            items={experience}
+            getKey={job => `${job.org}-${job.role}`}
+            renderItem={job => <ExperienceItem job={job} />}
+          />
+          <StackedCardSection
+            id="projects"
+            title="Projects"
+            icon={Trophy}
+            items={projects}
+            getKey={project => project.title}
+            renderItem={project => <ProjectCard project={project} />}
+          />
+        </div>
+      </div>
 
-      <ListSection
-        id="other-work"
-        title="Other Work"
-        icon={ClipboardList}
-        items={otherWork}
-        renderItem={job => <ExperienceItem key={job.org} job={job} />}
-      />
+      <div className="section-container">
+        <div className="grid gap-12 lg:grid-cols-2">
+          <StackedCardSection
+            id="education"
+            title="Education"
+            icon={GraduationCap}
+            items={education}
+            getKey={item => item.school}
+            renderItem={item => <EducationItem item={item} />}
+          />
+          <StackedCardSection
+            id="other-work"
+            title="Other Work"
+            icon={ClipboardList}
+            items={otherWork}
+            getKey={job => `${job.org}-${job.role}`}
+            renderItem={job => <ExperienceItem job={job} />}
+          />
+        </div>
+      </div>
 
-      <ListSection
-        id="projects"
-        title="Projects"
-        icon={Trophy}
-        items={projects}
-        columns={2}
-        renderItem={p => <ProjectCard key={p.title} project={p} />}
-      />
-
-      <ListSection
-        id="education"
-        title="Education"
-        icon={GraduationCap}
-        items={education}
-        renderItem={e => <EducationItem key={e.school} item={e} />}
-      />
-
-      <Section id="skills" title="Skills" icon={Cpu}>
-        <SkillsGrid skills={skills} />
-      </Section>
+      <div className="section-container">
+        <StackedCardSection
+          id="skills"
+          title="Skills"
+          icon={Cpu}
+          items={skillCategories}
+          getKey={category => category.title}
+          stackOffset={24}
+          renderItem={category => <SkillCategoryCard category={category} />}
+        />
+      </div>
 
       <Footer links={links} />
     </>
