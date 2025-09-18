@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-17T14:34:00.395976Z",
+  "generated_at": "2025-09-18T03:03:25.332092Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,13 +9,22 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 38,
-        "distance_km": 713.96,
-        "time_hours": 34.92,
+        "activities_count": 37,
+        "distance_km": 730.46,
+        "time_hours": 34.82,
         "longest_km": 100.23
       },
       "recent": {
         "last10": [
+          {
+            "id": 20420496002,
+            "name": "ss",
+            "type": "virtual_ride",
+            "start": "2025-09-17 20:37:31",
+            "distance_km": 57.39,
+            "duration_min": 111.2,
+            "avg_speed_kmh": 30.97
+          },
           {
             "id": 20398470230,
             "name": "ss",
@@ -96,15 +105,6 @@
             "distance_km": 41.25,
             "duration_min": 90.6,
             "avg_speed_kmh": 27.33
-          },
-          {
-            "id": 20337953090,
-            "name": "easy",
-            "type": "virtual_ride",
-            "start": "2025-09-09 23:30:39",
-            "distance_km": 23.37,
-            "duration_min": 44.7,
-            "avg_speed_kmh": 31.38
           }
         ]
       },
@@ -156,8 +156,8 @@
           {
             "week_start": "2025-09-15",
             "week_end": "2025-09-21",
-            "distance_km": 47.76,
-            "time_hours": 1.51
+            "distance_km": 105.15,
+            "time_hours": 3.36
           }
         ]
       }
@@ -166,12 +166,21 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 31,
-        "distance_km": 678.03,
-        "time_hours": 30.85,
+        "distance_km": 697.76,
+        "time_hours": 31.09,
         "longest_km": 100.23
       },
       "recent": {
         "last10": [
+          {
+            "id": 20420496002,
+            "name": "ss",
+            "type": "virtual_ride",
+            "start": "2025-09-17 20:37:31",
+            "distance_km": 57.39,
+            "duration_min": 111.2,
+            "avg_speed_kmh": 30.97
+          },
           {
             "id": 20398470230,
             "name": "ss",
@@ -252,15 +261,6 @@
             "distance_km": 23.37,
             "duration_min": 44.7,
             "avg_speed_kmh": 31.38
-          },
-          {
-            "id": 20336116972,
-            "name": "FTP TEST",
-            "type": "virtual_ride",
-            "start": "2025-09-09 17:21:28",
-            "distance_km": 15.56,
-            "duration_min": 35.7,
-            "avg_speed_kmh": 26.15
           }
         ]
       },
@@ -312,8 +312,8 @@
           {
             "week_start": "2025-09-15",
             "week_end": "2025-09-21",
-            "distance_km": 47.76,
-            "time_hours": 1.51
+            "distance_km": 105.15,
+            "time_hours": 3.36
           }
         ]
       }
@@ -321,9 +321,9 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 5,
-        "distance_km": 35.93,
-        "time_hours": 3.17,
+        "activities_count": 4,
+        "distance_km": 32.7,
+        "time_hours": 2.83,
         "longest_km": 12.97
       },
       "recent": {
