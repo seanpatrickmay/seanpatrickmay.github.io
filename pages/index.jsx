@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Head from 'next/head';
 import rawProjects from '@/public/projects.json' assert { type: 'json' };
 import rawExperience from '@/public/experience.json' assert { type: 'json' };
@@ -9,12 +10,12 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import AboutSection from '@/components/AboutSection';
 import Footer from '@/components/Footer';
-import ListSection from '@/components/ListSection';
-import Section from '@/components/ui/Section';
+import StackedCardSection from '@/components/StackedCardSection';
 import ProjectCard from '@/components/ProjectCard';
 import ExperienceItem from '@/components/ExperienceItem';
 import EducationItem from '@/components/EducationItem';
-import SkillsGrid from '@/components/SkillsGrid';
+import Badge from '@/components/ui/Badge';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import { Trophy, Briefcase, GraduationCap, Cpu, ClipboardList } from 'lucide-react';
 
 const projects = validateProjects(rawProjects) ? rawProjects : [];
@@ -33,6 +34,12 @@ const skills = {
   tools: ['Git', 'PyTorch', 'NumPy', 'Neovim', 'Matplotlib', 'Jupyter', 'React'],
   platforms: ['Windows', 'macOS', 'Ubuntu Linux'],
 };
+
+const skillCategories = [
+  { title: 'Languages', items: skills.languages },
+  { title: 'Tools & Libraries', items: skills.tools },
+  { title: 'Platforms', items: skills.platforms },
+];
 
 const education = [
   {
@@ -58,6 +65,8 @@ const interests = [
 ];
 
 export default function Home() {
+  const [activeStackSection, setActiveStackSection] = useState(null);
+
   return (
     <>
       <Head>
@@ -76,42 +85,109 @@ export default function Home() {
       <Hero links={links} />
       <AboutSection interests={interests} />
 
-      <ListSection
-        id="experience"
-        title="Experience"
-        icon={Briefcase}
-        items={experience}
-        renderItem={job => <ExperienceItem key={job.org} job={job} />}
-      />
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        <div className="relative">
+          {activeStackSection && (
+            <div className="pointer-events-none absolute -inset-4 rounded-[32px] bg-slate-950/60 backdrop-blur-sm transition-opacity duration-300 z-10" />
+          )}
+          <div className={`space-y-8 relative ${activeStackSection ? 'z-20' : ''}`}>
+            <div className="grid gap-8 md:grid-cols-2">
+              <StackedCardSection
+                id="experience"
+                title="Experience"
+                icon={Briefcase}
+                items={experience}
+                keyExtractor={job => job.org}
+                renderItem={(job, _, context) => (
+                  <ExperienceItem job={job} compact={context?.mode === 'preview'} />
+                )}
+                className="px-0 md:mx-0 py-6 md:py-8"
+                stackOffset={168}
+                expandOnHover
+                activeSectionId={activeStackSection}
+                setActiveSectionId={setActiveStackSection}
+              />
+              <StackedCardSection
+                id="projects"
+                title="Projects"
+                icon={Trophy}
+                items={projects}
+                keyExtractor={project => project.title}
+                renderItem={(project, _, context) => (
+                  <ProjectCard project={project} compact={context?.mode === 'preview'} />
+                )}
+                className="px-0 md:mx-0 py-6 md:py-8"
+                stackOffset={168}
+                expandOnHover
+                activeSectionId={activeStackSection}
+                setActiveSectionId={setActiveStackSection}
+              />
+            </div>
+            <div className="grid gap-8 md:grid-cols-2">
+              <StackedCardSection
+                id="education"
+                title="Education"
+                icon={GraduationCap}
+                items={education}
+                keyExtractor={item => item.school}
+                renderItem={(item, _, context) => (
+                  <EducationItem item={item} compact={context?.mode === 'preview'} />
+                )}
+                className="px-0 md:mx-0 py-6 md:py-8"
+                stackOffset={168}
+                expandOnHover
+                activeSectionId={activeStackSection}
+                setActiveSectionId={setActiveStackSection}
+              />
+              <StackedCardSection
+                id="other-work"
+                title="Other Work"
+                icon={ClipboardList}
+                items={otherWork}
+                keyExtractor={job => job.org}
+                renderItem={(job, _, context) => (
+                  <ExperienceItem job={job} compact={context?.mode === 'preview'} />
+                )}
+                className="px-0 md:mx-0 py-6 md:py-8"
+                stackOffset={168}
+                expandOnHover
+                activeSectionId={activeStackSection}
+                setActiveSectionId={setActiveStackSection}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <ListSection
-        id="other-work"
-        title="Other Work"
-        icon={ClipboardList}
-        items={otherWork}
-        renderItem={job => <ExperienceItem key={job.org} job={job} />}
-      />
+      <StackedCardSection
+        id="skills"
+        title="Skills"
+        icon={Cpu}
+        items={skillCategories}
+        keyExtractor={category => category.title}
+        renderItem={(category, _, context) => {
+          const isPreview = context?.mode === 'preview';
+          const items = isPreview ? category.items.slice(0, 6) : category.items;
 
-      <ListSection
-        id="projects"
-        title="Projects"
-        icon={Trophy}
-        items={projects}
-        columns={2}
-        renderItem={p => <ProjectCard key={p.title} project={p} />}
+          return (
+            <Card className={isPreview ? 'shadow-sm' : ''}>
+              <CardHeader className={isPreview ? 'pb-3' : ''}>
+                <CardTitle className={isPreview ? 'text-base font-semibold' : ''}>{category.title}</CardTitle>
+              </CardHeader>
+              <CardContent className={isPreview ? 'px-6 pb-4 pt-0' : ''}>
+                <div className="flex flex-wrap gap-2">
+                  {items.map(item => (
+                    <Badge key={item}>{item}</Badge>
+                  ))}
+                  {isPreview && category.items.length > items.length && (
+                    <Badge key="more">+{category.items.length - items.length}</Badge>
+                  )}
+                </div>
+              </CardContent>
+            </Card>
+          );
+        }}
       />
-
-      <ListSection
-        id="education"
-        title="Education"
-        icon={GraduationCap}
-        items={education}
-        renderItem={e => <EducationItem key={e.school} item={e} />}
-      />
-
-      <Section id="skills" title="Skills" icon={Cpu}>
-        <SkillsGrid skills={skills} />
-      </Section>
 
       <Footer links={links} />
     </>
