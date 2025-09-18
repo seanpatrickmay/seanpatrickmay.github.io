@@ -13,7 +13,7 @@ export default function Header({ links }) {
               key={id}
               href={`#${id}`}
               variant="solid"
-              className="capitalize hover:bg-slate-100 dark:hover:bg-slate-800"
+              className="capitalize"
             >
               {id}
             </PillLink>
