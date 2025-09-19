@@ -73,7 +73,7 @@ export default function Home() {
       </Head>
 
       <Header links={links} />
-      <main className="pt-32 sm:pt-28 md:pt-24 lg:pt-0 lg:pl-[18rem] lg:pr-8 xl:pl-[20rem]">
+      <main className="pt-32 sm:pt-28 md:pt-24 lg:pt-4 lg:pl-[21rem] lg:pr-12 xl:pl-[22rem] xl:pr-16 2xl:pl-[23rem]">
         <Hero links={links} />
         <AboutSection interests={interests} />
 
