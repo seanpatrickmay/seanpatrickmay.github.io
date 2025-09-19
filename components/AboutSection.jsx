@@ -64,15 +64,13 @@ export default function AboutSection({ interests }) {
           <div className="grid md:grid-cols-5 gap-8 items-start">
             <div className="md:col-span-3 space-y-4">
               <p className="text-lg text-slate-600 dark:text-slate-300">
-		I'm a CS & Math student just trying to get better at everything I do.
-		 <br></br>
-        
-		<br></br>
-		I love solving hard problems, if you have any for me, send me an email, I'd love to chat.
-		 <br></br>
-        
-		<br></br>
-		Check out some of my projects below: RL Research, Computer Vision, Tree-Search, Game Theory, and Concurrency.
+                I'm a CS & Math student just trying to get better at everything I do.
+                <br />
+                <br />
+                I love solving hard problems—if you have any for me, send me an email, I'd love to chat.
+                <br />
+                <br />
+                Check out some of my projects below: RL Research, Computer Vision, Tree-Search, Game Theory, and Concurrency.
               </p>
             </div>
             <div className="md:col-span-2">
@@ -86,35 +84,6 @@ export default function AboutSection({ interests }) {
                       <Badge key={i}>{i}</Badge>
                     ))}
                   </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-
-
-          <div className="space-y-6">
-            <div className="space-y-2">
-              <h3 className="flex items-center gap-2 text-2xl font-semibold">
-                <Music className="w-5 h-5" />
-                Music
-              </h3>
-              <p className="text-slate-600 dark:text-slate-300">A peek at what I'm listening to.</p>
-            </div>
-            <div className="grid md:grid-cols-3 gap-6">
-              <Card className="space-y-9 md:col-span-2">
-                <CardHeader>
-                  <CardTitle>Top Artists</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <SpotifyTopArtists artists={spotify?.artists ?? []} />
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle>Top Tracks</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <SpotifyTopTracks tracks={spotify?.tracks ?? []} />
                 </CardContent>
               </Card>
             </div>
@@ -209,9 +178,36 @@ export default function AboutSection({ interests }) {
             </Card>
           </div>
 
+          <div className="space-y-6">
+            <div className="space-y-2">
+              <h3 className="flex items-center gap-2 text-2xl font-semibold">
+                <Music className="w-5 h-5" />
+                Music
+              </h3>
+              <p className="text-slate-600 dark:text-slate-300">A peek at what I'm listening to.</p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card className="space-y-9 md:col-span-2">
+                <CardHeader>
+                  <CardTitle>Top Artists</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <SpotifyTopArtists artists={spotify?.artists ?? []} />
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Top Tracks</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <SpotifyTopTracks tracks={spotify?.tracks ?? []} />
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
         </div>
       </div>
     </Section>
   );
 }
-

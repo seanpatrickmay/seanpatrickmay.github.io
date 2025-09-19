@@ -5,7 +5,7 @@ import PillLink from '@/components/ui/PillLink';
 
 export default function Hero({ links }) {
   return (
-    <section id="home" className="section-container py-16 scroll-mt-16">
+    <section id="home" className="section-container py-16 scroll-mt-32 lg:scroll-mt-16">
       <div className="grid md:grid-cols-5 gap-8 items-center">
         <div className="md:col-span-3 space-y-5">
           <Badge icon={MapPin} variant="outline">

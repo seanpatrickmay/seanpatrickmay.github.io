@@ -26,7 +26,7 @@ export default function RecentActivities({ activities = [] }) {
       trailing:
 	daysAgo >= 62 ?
 	    `${Math.floor(daysAgo/31)}m`
-	: daysAgo >= 7 ? 
+	: daysAgo >= 7 ?
 	    `${Math.floor(daysAgo/7)}w`
         : `${daysAgo}d`
 

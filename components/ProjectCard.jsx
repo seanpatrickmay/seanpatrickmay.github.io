@@ -11,7 +11,7 @@ export default function ProjectCard({ project, mode = 'expanded' }) {
   if (isPreview) {
     return (
       <Card className="h-full overflow-hidden" data-mode={mode}>
-        <StackedCardPreview emoji={emoji} label={previewLabel} />
+        <StackedCardPreview emoji={emoji} label={previewLabel} meta={period} />
       </Card>
     );
   }

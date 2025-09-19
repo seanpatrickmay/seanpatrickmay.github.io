@@ -130,13 +130,6 @@ export default function Home() {
     },
   ], [experience, projects, education, otherWork]);
 
-  const showcaseRows = useMemo(() => {
-    const rows = [];
-    for (let index = 0; index < showcaseSections.length; index += 2) {
-      rows.push(showcaseSections.slice(index, index + 2));
-    }
-    return rows;
-  }, [showcaseSections]);
 
   return (
     <>
@@ -152,87 +145,72 @@ export default function Home() {
         />
       </Head>
 
-      <Header links={links} />
-      <Hero links={links} />
-      <AboutSection interests={interests} />
+      <div className="lg:mx-auto lg:flex lg:max-w-screen-2xl lg:items-start lg:justify-center lg:gap-10 lg:px-12 xl:px-16">
+        <Header links={links} />
+        <main className="flex-1 space-y-16 pt-32 pb-24 sm:pt-28 md:pt-24 lg:min-w-0 lg:pt-16 xl:pt-20">
+          <Hero links={links} />
+          <AboutSection interests={interests} />
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
-        {showcaseRows.map((row, rowIndex) => {
-          const rowActiveId = row.some(section => section.id === activeSectionId)
-            ? activeSectionId
-            : undefined;
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
+          {showcaseSections.map(section => (
+            <StackedCardSection
+              key={section.id}
+              {...section}
+              className="!py-6 !px-0"
+              activeSectionId={activeSectionId}
+              onActiveSectionChange={setActiveSectionId}
+            />
+          ))}
 
-          return (
-            <div
-              key={row.map(section => section.id).join('-')}
-              className="space-y-8 md:flex md:flex-wrap md:items-start md:gap-6 md:space-y-0"
-            >
-              {row.map((section, columnIndex) => (
-                <StackedCardSection
-                  key={section.id}
-                  {...section}
-                  columnsInRow={row.length}
-                  columnIndex={columnIndex}
-                  rowActiveId={rowActiveId}
-                  className="!py-6 !px-0"
-                  activeSectionId={activeSectionId}
-                  onActiveSectionChange={setActiveSectionId}
-                />
-              ))}
-            </div>
-          );
-        })}
+          <StackedCardSection
+            id="skills"
+            title="Skills"
+            icon={Cpu}
+            items={skillCategories}
+            keyExtractor={category => category.title}
+            className="!py-8 !px-0"
+            renderItem={(category, _index, state) => (
+              <Card className="h-full">
+                {state.mode === 'preview' ? (
+                  <StackedCardPreview emoji={category.emoji} label={category.oneLiner} />
+                ) : (
+                  <>
+                    <CardHeader className="space-y-4">
+                      <div className="flex items-center gap-3">
+                        <span className="text-3xl" aria-hidden="true">
+                          {category.emoji}
+                        </span>
+                        <CardTitle className="text-xl sm:text-2xl">{category.title}</CardTitle>
+                      </div>
+                      {category.summary && (
+                        <p className="text-sm text-slate-600 dark:text-white/70">{category.summary}</p>
+                      )}
+                    </CardHeader>
+                    <CardContent className="pt-0">
+                      <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                        {category.items.map(item => (
+                          <li
+                            key={item}
+                            className="flex items-center gap-2 rounded-xl border border-white/10 bg-white px-3 py-2 text-sm font-medium text-slate-900 shadow-sm dark:border-white/10 dark:bg-slate-900 dark:text-white"
+                          >
+                            <span className="text-xs font-semibold text-slate-500 dark:text-white/60">•</span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </>
+                )}
+              </Card>
+            )}
+            activeSectionId={activeSectionId}
+            onActiveSectionChange={setActiveSectionId}
+          />
+        </div>
 
-        <StackedCardSection
-          id="skills"
-          title="Skills"
-          icon={Cpu}
-          items={skillCategories}
-          keyExtractor={category => category.title}
-          columnsInRow={1}
-          columnIndex={0}
-          rowActiveId={activeSectionId === 'skills' ? 'skills' : undefined}
-          className="!py-8 !px-0"
-          renderItem={(category, _index, state) => (
-            <Card className="h-full">
-              {state.mode === 'preview' ? (
-                <StackedCardPreview emoji={category.emoji} label={category.oneLiner} />
-              ) : (
-                <>
-                  <CardHeader className="space-y-4">
-                    <div className="flex items-center gap-3">
-                      <span className="text-3xl" aria-hidden="true">
-                        {category.emoji}
-                      </span>
-                      <CardTitle className="text-xl sm:text-2xl">{category.title}</CardTitle>
-                    </div>
-                    {category.summary && (
-                      <p className="text-sm text-slate-600 dark:text-white/70">{category.summary}</p>
-                    )}
-                  </CardHeader>
-                  <CardContent className="pt-0">
-                    <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-                      {category.items.map(item => (
-                        <li
-                          key={item}
-                          className="flex items-center gap-2 rounded-xl border border-white/10 bg-white px-3 py-2 text-sm font-medium text-slate-900 shadow-sm dark:border-white/10 dark:bg-slate-900 dark:text-white"
-                        >
-                          <span className="text-xs font-semibold text-slate-500 dark:text-white/60">•</span>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </>
-              )}
-            </Card>
-          )}
-          activeSectionId={activeSectionId}
-          onActiveSectionChange={setActiveSectionId}
-        />
+          <Footer links={links} />
+        </main>
       </div>
-
-      <Footer links={links} />
     </>
   );
 }

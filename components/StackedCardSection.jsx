@@ -13,7 +13,6 @@ const PREVIEW_VERTICAL_OVERLAP = 24;
 const PREVIEW_VERTICAL_OFFSET = PREVIEW_CARD_HEIGHT - PREVIEW_VERTICAL_OVERLAP;
 const PREVIEW_HORIZONTAL_OFFSET = 0;
 const GRID_GAP = 24;
-const ROW_GAP = GRID_GAP;
 const MAX_GRID_COLUMNS = 3;
 const TRANSITION_DURATION = 900;
 const WIDTH_EXPAND_DELAY = 160;
@@ -47,9 +46,6 @@ export default function StackedCardSection({
   className = '',
   activeSectionId,
   onActiveSectionChange,
-  columnsInRow = 1,
-  columnIndex = 0,
-  rowActiveId,
 }) {
   const containerRef = useRef(null);
   const measurementRef = useRef(null);
@@ -60,7 +56,6 @@ export default function StackedCardSection({
   const [expandedLayout, setExpandedLayout] = useState({ positions: [], height: PREVIEW_CARD_HEIGHT });
   const [containerHeight, setContainerHeight] = useState(PREVIEW_CARD_HEIGHT);
   const [containerWidth, setContainerWidth] = useState(0);
-  const [previewColumnWidth, setPreviewColumnWidth] = useState(0);
   const leaveTimeoutRef = useRef(null);
 
   const setExpanded = useCallback(
@@ -137,18 +132,16 @@ export default function StackedCardSection({
   }, [containerWidth, itemCount]);
 
   const collapsedLayout = useMemo(() => {
-    const collapsedWidth = previewColumnWidth > 0 ? `${previewColumnWidth}px` : '100%';
-
     return items.map((_, index) => {
       const translateX = PREVIEW_HORIZONTAL_OFFSET * index;
       const translateY = index * PREVIEW_VERTICAL_OFFSET;
 
       return {
         transform: `translate3d(${translateX}px, ${translateY}px, 0)`,
-        width: collapsedWidth,
+        width: '100%',
       };
     });
-  }, [items, previewColumnWidth]);
+  }, [items]);
 
   useEffect(() => {
     setContainerHeight(collapsedHeight);
@@ -180,13 +173,6 @@ export default function StackedCardSection({
       setContainerHeight(collapsedHeight);
     }
   }, [isExpanded, expandedLayout.height, collapsedHeight]);
-
-  useEffect(() => {
-    if (!isExpanded && containerRef.current) {
-      const width = containerRef.current.offsetWidth;
-      setPreviewColumnWidth(previous => (previous === width ? previous : width));
-    }
-  }, [isExpanded, containerWidth, columnsInRow]);
 
   const measureLayout = useCallback(() => {
     const measureEl = measurementRef.current;
@@ -263,22 +249,11 @@ export default function StackedCardSection({
   }, [isCoarsePointer, isExpanded, setExpanded, clearLeaveTimeout]);
 
   const sectionClassName = [
-    'relative w-full transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] md:min-w-0 md:self-start data-[expanded=true]:z-10',
+    'relative w-full transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] md:min-w-0 data-[expanded=true]:z-10',
     className,
   ]
     .filter(Boolean)
     .join(' ');
-
-  const collapsedFlexBasis =
-    columnsInRow > 1
-      ? `calc((100% - ${(columnsInRow - 1) * ROW_GAP}px) / ${columnsInRow})`
-      : '100%';
-  const rowHasActive = Boolean(rowActiveId);
-  const isSiblingOfActive = rowHasActive && rowActiveId !== id;
-  const collapsedOrder = isSiblingOfActive ? 1 : columnIndex + 1;
-  const sectionStyle = isExpanded
-    ? { order: 2, flexBasis: '100%', flexGrow: 1, flexShrink: 1, minWidth: 0 }
-    : { order: collapsedOrder, flexBasis: collapsedFlexBasis, flexGrow: 1, flexShrink: 1, minWidth: 0 };
 
   const handlePointerEnter = event => {
     if (isCoarsePointer || event.pointerType === 'touch') {
@@ -370,7 +345,6 @@ export default function StackedCardSection({
       className={sectionClassName}
       data-expanded={isExpanded ? 'true' : 'false'}
       aria-expanded={isExpanded}
-      style={sectionStyle}
     >
       <div
         ref={containerRef}

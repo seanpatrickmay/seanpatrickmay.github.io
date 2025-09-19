@@ -11,7 +11,7 @@ export default function ExperienceItem({ job, mode = 'expanded' }) {
   if (isPreview) {
     return (
       <Card className="h-full overflow-hidden" data-mode={mode}>
-        <StackedCardPreview img={img} alt={imageAlt} emoji={emoji} label={previewLabel} />
+        <StackedCardPreview img={img} alt={imageAlt} emoji={emoji} label={previewLabel} meta={period} />
       </Card>
     );
   }
