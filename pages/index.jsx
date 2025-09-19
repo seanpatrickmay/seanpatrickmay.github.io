@@ -13,6 +13,7 @@ import StackedCardSection from '@/components/StackedCardSection';
 import ProjectCard from '@/components/ProjectCard';
 import ExperienceItem from '@/components/ExperienceItem';
 import EducationItem from '@/components/EducationItem';
+import StackedCardPreview from '@/components/StackedCardPreview';
 import Badge from '@/components/ui/Badge';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import { Trophy, Briefcase, GraduationCap, Cpu, ClipboardList } from 'lucide-react';
@@ -35,9 +36,24 @@ const skills = {
 };
 
 const skillCategories = [
-  { title: 'Languages', items: skills.languages },
-  { title: 'Tools & Libraries', items: skills.tools },
-  { title: 'Platforms', items: skills.platforms },
+  {
+    title: 'Languages',
+    items: skills.languages,
+    emoji: '💬',
+    oneLiner: `Languages — ${skills.languages.length} stack`,
+  },
+  {
+    title: 'Tools & Libraries',
+    items: skills.tools,
+    emoji: '🧰',
+    oneLiner: `Tools & Libraries — ${skills.tools.length} stack`,
+  },
+  {
+    title: 'Platforms',
+    items: skills.platforms,
+    emoji: '🖥️',
+    oneLiner: `Platforms — ${skills.platforms.length} stack`,
+  },
 ];
 
 const education = [
@@ -45,6 +61,7 @@ const education = [
     school: 'Northeastern University — Khoury College of Computer Sciences',
     degree: 'B.S. in Computer Science & Mathematics (Expected May 2027)',
     img: '/images/northeastern.svg',
+    oneLiner: 'BS CS+Math — Northeastern',
     extras: [
       'GPA 3.64/4.0; Dean’s Scholarship; Dean’s List (Fall 2024, Spring 2025)',
       'Activities: Bridge to Calculus Tutor, Calculus Field Day Volunteer, Math Club, Putnam Club, Running Club',
@@ -55,6 +72,7 @@ const education = [
     school: 'Corvinus University of Budapest - Mathematical Heritage of Budapest Summer Dialogue',
     degree: 'Budapest, Hungary (Jun – Aug 2025)',
     img: '/images/corvinus.svg',
+    oneLiner: 'Math Dialogue — Corvinus',
     extras: ['Courses: Number Theory, Exploration of Modern Mathematics'],
   },
 ];
@@ -133,17 +151,21 @@ export default function Home() {
         keyExtractor={category => category.title}
         renderItem={(category, _index, state) => (
           <Card className="h-full" data-mode={state.mode}>
-            <CardHeader>
-              <CardTitle>{category.title}</CardTitle>
-            </CardHeader>
-            {state.mode !== 'preview' && (
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {category.items.map(item => (
-                    <Badge key={item}>{item}</Badge>
-                  ))}
-                </div>
-              </CardContent>
+            {state.mode === 'preview' ? (
+              <StackedCardPreview emoji={category.emoji} label={category.oneLiner} />
+            ) : (
+              <>
+                <CardHeader>
+                  <CardTitle>{category.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    {category.items.map(item => (
+                      <Badge key={item}>{item}</Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </>
             )}
           </Card>
         )}

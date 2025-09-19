@@ -8,8 +8,9 @@ import {
 } from 'react';
 import Section from '@/components/ui/Section';
 
-const PREVIEW_CARD_HEIGHT = 136;
-const STACK_OFFSET_Y = 22;
+const PREVIEW_CARD_HEIGHT = 72;
+const PREVIEW_VERTICAL_GAP = 12;
+const PREVIEW_HORIZONTAL_OFFSET = 16;
 const GRID_GAP = 24;
 const MAX_GRID_COLUMNS = 3;
 const TRANSITION_DURATION = 520;
@@ -73,13 +74,18 @@ export default function StackedCardSection({
       return PREVIEW_CARD_HEIGHT;
     }
 
-    return PREVIEW_CARD_HEIGHT + STACK_OFFSET_Y * Math.max(0, itemCount - 1);
+    return PREVIEW_CARD_HEIGHT * itemCount + PREVIEW_VERTICAL_GAP * Math.max(0, itemCount - 1);
   }, [itemCount]);
 
-  const collapsedTransforms = useMemo(() => {
+  const collapsedLayout = useMemo(() => {
     return items.map((_, index) => {
-      const translateY = STACK_OFFSET_Y * index;
-      return `translate3d(0, ${translateY}px, 0)`;
+      const translateX = PREVIEW_HORIZONTAL_OFFSET * index;
+      const translateY = index * (PREVIEW_CARD_HEIGHT + PREVIEW_VERTICAL_GAP);
+
+      return {
+        transform: `translate3d(${translateX}px, ${translateY}px, 0)`,
+        width: index === 0 ? '100%' : `calc(100% - ${translateX}px)`,
+      };
     });
   }, [items]);
 
@@ -274,13 +280,15 @@ export default function StackedCardSection({
 
           {items.map((item, index) => {
             const key = keyExtractor ? keyExtractor(item, index) : index;
-            const collapsedTransform = collapsedTransforms[index] || 'translate3d(0, 0, 0)';
+            const collapsedPreview = collapsedLayout[index] || {
+              transform: 'translate3d(0, 0, 0)',
+              width: '100%',
+            };
             const layoutPosition = expandedLayout.positions[index];
             const expandedTransform = layoutPosition
               ? `translate3d(${layoutPosition.x}px, ${layoutPosition.y}px, 0)`
               : 'translate3d(0, 0, 0)';
             const expandedHeight = layoutPosition?.height ?? PREVIEW_CARD_HEIGHT;
-            const collapsedCardHeight = Math.min(expandedHeight, PREVIEW_CARD_HEIGHT);
             const cardShadow = isExpanded ? EXPANDED_SHADOW : buildPreviewShadow(index);
 
             return (
@@ -289,12 +297,13 @@ export default function StackedCardSection({
                 className="absolute top-0 left-0"
                 data-state={isExpanded ? 'expanded' : 'preview'}
                 style={{
-                  transform: isExpanded ? expandedTransform : collapsedTransform,
-                  width: isExpanded && layoutPosition ? `${layoutPosition.width}px` : '100%',
-                  height: isExpanded ? `${expandedHeight}px` : `${collapsedCardHeight}px`,
+                  transform: isExpanded ? expandedTransform : collapsedPreview.transform,
+                  width: isExpanded && layoutPosition ? `${layoutPosition.width}px` : collapsedPreview.width,
+                  height: isExpanded ? `${expandedHeight}px` : `${PREVIEW_CARD_HEIGHT}px`,
                   zIndex: itemCount - index,
                   transition: `transform ${TRANSITION_DURATION}ms ${TRANSITION_EASING}, width ${TRANSITION_DURATION}ms ${TRANSITION_EASING}, height ${TRANSITION_DURATION}ms ${TRANSITION_EASING}, box-shadow 360ms ease`,
                   boxShadow: cardShadow,
+                  willChange: 'transform, width, height',
                 }}
               >
                 <div className="relative h-full overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur">
