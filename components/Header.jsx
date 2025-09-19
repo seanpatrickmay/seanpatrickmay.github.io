@@ -91,29 +91,40 @@ export default function Header({ links }) {
         </nav>
       </header>
 
-      <aside className="hidden lg:block">
-        <div
-          className="fixed left-8 top-8 z-40 w-72 transition-transform duration-300 ease-out will-change-transform"
-          style={{ transform: `translateY(${scrollOffset}px)` }}
-        >
-          <div className="space-y-8 rounded-3xl border border-slate-200/80 bg-white/90 p-7 shadow-xl backdrop-blur dark:border-slate-800/70 dark:bg-slate-950/70">
-            <div className="space-y-3">
-              <a
-                href="#home"
-                className="text-2xl font-bold tracking-tight text-slate-900 transition hover:text-slate-700 dark:text-slate-100 dark:hover:text-slate-300"
-              >
-                Sean P. May
-              </a>
-              <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
-                CS & Math student navigating ML, systems, and strategy—always curious about the next challenge.
-              </p>
-            </div>
+      <aside className="hidden lg:flex lg:flex-none lg:pt-6">
+        <div className="sticky top-6">
+          <div
+            className="w-72 space-y-6 transition-transform duration-300 ease-out will-change-transform"
+            style={{ transform: `translateY(${scrollOffset}px)` }}
+          >
+            <section className="rounded-3xl border border-slate-200/80 bg-white/90 p-6 shadow-xl backdrop-blur dark:border-slate-800/70 dark:bg-slate-950/70">
+              <div className="flex items-start justify-between gap-3">
+                <div className="space-y-2">
+                  <a
+                    href="#home"
+                    className="text-2xl font-bold tracking-tight text-slate-900 transition hover:text-slate-700 dark:text-slate-100 dark:hover:text-slate-300"
+                  >
+                    Sean P. May
+                  </a>
+                  <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                    CS & Math student exploring ML, systems, and strategy—always curious about the next challenge.
+                  </p>
+                </div>
+                <div className="flex-shrink-0">
+                  <ThemeToggle />
+                </div>
+              </div>
+              <ul className="mt-4 space-y-2 text-sm text-slate-600 dark:text-slate-300">
+                <li>🎓 Northeastern University &mdash; B.S. CS & Math (May 2027)</li>
+                <li>🧪 Incoming SWE Co-op @ NExT (Fall 2025)</li>
+              </ul>
+            </section>
 
-            <nav aria-label="Primary" className="space-y-4">
+            <section className="rounded-3xl border border-slate-200/80 bg-white/90 p-6 shadow-xl backdrop-blur dark:border-slate-800/70 dark:bg-slate-950/70">
               <div className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500">
                 Navigate
               </div>
-              <div className="space-y-1.5">
+              <nav aria-label="Primary" className="mt-4 space-y-1.5">
                 {navItems.map(({ id, label, icon: Icon }) => (
                   <a
                     key={id}
@@ -126,14 +137,14 @@ export default function Header({ links }) {
                     {label}
                   </a>
                 ))}
-              </div>
-            </nav>
+              </nav>
+            </section>
 
-            <div className="space-y-4 border-t border-slate-200/70 pt-4 dark:border-slate-800/60">
+            <section className="rounded-3xl border border-slate-200/80 bg-white/90 p-6 shadow-xl backdrop-blur dark:border-slate-800/70 dark:bg-slate-950/70">
               <div className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500">
                 Get in touch
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="mt-4 flex flex-col gap-2">
                 <PillLink
                   href={links.resume}
                   icon={FileText}
@@ -151,7 +162,7 @@ export default function Header({ links }) {
                   Say Hello
                 </PillLink>
               </div>
-              <div className="flex flex-wrap gap-4 text-sm text-slate-500 dark:text-slate-400">
+              <div className="mt-4 flex flex-wrap gap-4 text-sm text-slate-500 dark:text-slate-400">
                 <a
                   href={links.github}
                   className="group inline-flex items-center gap-2 transition hover:text-slate-700 dark:hover:text-slate-200"
@@ -171,12 +182,7 @@ export default function Header({ links }) {
                   LinkedIn
                 </a>
               </div>
-            </div>
-
-            <div className="flex items-center justify-between border-t border-slate-200/70 pt-4 text-sm text-slate-500 dark:border-slate-800/60 dark:text-slate-400">
-              <span>Theme</span>
-              <ThemeToggle />
-            </div>
+            </section>
           </div>
         </div>
       </aside>
