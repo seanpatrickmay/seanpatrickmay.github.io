@@ -91,10 +91,10 @@ export default function Header({ links }) {
         </nav>
       </header>
 
-      <aside className="hidden lg:flex lg:flex-none lg:pt-6">
+      <aside className="hidden lg:block lg:flex-none">
         <div className="sticky top-6">
           <div
-            className="w-72 space-y-6 transition-transform duration-300 ease-out will-change-transform"
+            className="flex min-h-[calc(100vh_-_3rem)] w-72 flex-col justify-between gap-6 transition-transform duration-300 ease-out will-change-transform"
             style={{ transform: `translateY(${scrollOffset}px)` }}
           >
             <section className="rounded-3xl border border-slate-200/80 bg-white/90 p-6 shadow-xl backdrop-blur dark:border-slate-800/70 dark:bg-slate-950/70">
