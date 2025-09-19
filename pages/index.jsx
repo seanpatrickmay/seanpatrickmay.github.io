@@ -9,12 +9,12 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import AboutSection from '@/components/AboutSection';
 import Footer from '@/components/Footer';
-import ListSection from '@/components/ListSection';
-import Section from '@/components/ui/Section';
+import StackedCardSection from '@/components/StackedCardSection';
 import ProjectCard from '@/components/ProjectCard';
 import ExperienceItem from '@/components/ExperienceItem';
 import EducationItem from '@/components/EducationItem';
-import SkillsGrid from '@/components/SkillsGrid';
+import Badge from '@/components/ui/Badge';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import { Trophy, Briefcase, GraduationCap, Cpu, ClipboardList } from 'lucide-react';
 
 const projects = validateProjects(rawProjects) ? rawProjects : [];
@@ -33,6 +33,12 @@ const skills = {
   tools: ['Git', 'PyTorch', 'NumPy', 'Neovim', 'Matplotlib', 'Jupyter', 'React'],
   platforms: ['Windows', 'macOS', 'Ubuntu Linux'],
 };
+
+const skillCategories = [
+  { title: 'Languages', items: skills.languages },
+  { title: 'Tools & Libraries', items: skills.tools },
+  { title: 'Platforms', items: skills.platforms },
+];
 
 const education = [
   {
@@ -76,42 +82,70 @@ export default function Home() {
       <Hero links={links} />
       <AboutSection interests={interests} />
 
-      <ListSection
-        id="experience"
-        title="Experience"
-        icon={Briefcase}
-        items={experience}
-        renderItem={job => <ExperienceItem key={job.org} job={job} />}
-      />
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        <div className="grid gap-8 md:grid-cols-2">
+          <StackedCardSection
+            id="experience"
+            title="Experience"
+            icon={Briefcase}
+            items={experience}
+            keyExtractor={job => job.org}
+            renderItem={job => <ExperienceItem job={job} />}
+            className="px-0 md:mx-0"
+          />
+          <StackedCardSection
+            id="projects"
+            title="Projects"
+            icon={Trophy}
+            items={projects}
+            keyExtractor={project => project.title}
+            renderItem={project => <ProjectCard project={project} />}
+            className="px-0 md:mx-0"
+          />
+        </div>
+        <div className="grid gap-8 md:grid-cols-2">
+          <StackedCardSection
+            id="education"
+            title="Education"
+            icon={GraduationCap}
+            items={education}
+            keyExtractor={item => item.school}
+            renderItem={item => <EducationItem item={item} />}
+            className="px-0 md:mx-0"
+          />
+          <StackedCardSection
+            id="other-work"
+            title="Other Work"
+            icon={ClipboardList}
+            items={otherWork}
+            keyExtractor={job => job.org}
+            renderItem={job => <ExperienceItem job={job} />}
+            className="px-0 md:mx-0"
+          />
+        </div>
+      </div>
 
-      <ListSection
-        id="other-work"
-        title="Other Work"
-        icon={ClipboardList}
-        items={otherWork}
-        renderItem={job => <ExperienceItem key={job.org} job={job} />}
+      <StackedCardSection
+        id="skills"
+        title="Skills"
+        icon={Cpu}
+        items={skillCategories}
+        keyExtractor={category => category.title}
+        renderItem={category => (
+          <Card>
+            <CardHeader>
+              <CardTitle>{category.title}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-wrap gap-2">
+                {category.items.map(item => (
+                  <Badge key={item}>{item}</Badge>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        )}
       />
-
-      <ListSection
-        id="projects"
-        title="Projects"
-        icon={Trophy}
-        items={projects}
-        columns={2}
-        renderItem={p => <ProjectCard key={p.title} project={p} />}
-      />
-
-      <ListSection
-        id="education"
-        title="Education"
-        icon={GraduationCap}
-        items={education}
-        renderItem={e => <EducationItem key={e.school} item={e} />}
-      />
-
-      <Section id="skills" title="Skills" icon={Cpu}>
-        <SkillsGrid skills={skills} />
-      </Section>
 
       <Footer links={links} />
     </>
