@@ -72,48 +72,52 @@ export default function Home() {
         />
       </Head>
 
-      <Header links={links} />
-      <Hero links={links} />
-      <AboutSection interests={interests} />
+      <div className="lg:mx-auto lg:flex lg:max-w-5xl lg:items-start lg:gap-4 lg:px-8">
+        <Header links={links} />
+        <main className="flex-1 min-w-0 pt-32 sm:pt-28 md:pt-24 lg:pt-12">
+          <Hero links={links} />
+          <AboutSection interests={interests} />
 
-      <ListSection
-        id="experience"
-        title="Experience"
-        icon={Briefcase}
-        items={experience}
-        renderItem={job => <ExperienceItem key={job.org} job={job} />}
-      />
+          <ListSection
+            id="experience"
+            title="Experience"
+            icon={Briefcase}
+            items={experience}
+            renderItem={job => <ExperienceItem key={job.org} job={job} />}
+          />
 
-      <ListSection
-        id="other-work"
-        title="Other Work"
-        icon={ClipboardList}
-        items={otherWork}
-        renderItem={job => <ExperienceItem key={job.org} job={job} />}
-      />
+          <ListSection
+            id="other-work"
+            title="Other Work"
+            icon={ClipboardList}
+            items={otherWork}
+            renderItem={job => <ExperienceItem key={job.org} job={job} />}
+          />
 
-      <ListSection
-        id="projects"
-        title="Projects"
-        icon={Trophy}
-        items={projects}
-        columns={2}
-        renderItem={p => <ProjectCard key={p.title} project={p} />}
-      />
+          <ListSection
+            id="projects"
+            title="Projects"
+            icon={Trophy}
+            items={projects}
+            columns={2}
+            renderItem={p => <ProjectCard key={p.title} project={p} />}
+          />
 
-      <ListSection
-        id="education"
-        title="Education"
-        icon={GraduationCap}
-        items={education}
-        renderItem={e => <EducationItem key={e.school} item={e} />}
-      />
+          <ListSection
+            id="education"
+            title="Education"
+            icon={GraduationCap}
+            items={education}
+            renderItem={e => <EducationItem key={e.school} item={e} />}
+          />
 
-      <Section id="skills" title="Skills" icon={Cpu}>
-        <SkillsGrid skills={skills} />
-      </Section>
+          <Section id="skills" title="Skills" icon={Cpu}>
+            <SkillsGrid skills={skills} />
+          </Section>
 
-      <Footer links={links} />
+          <Footer links={links} />
+        </main>
+      </div>
     </>
   );
 }
