@@ -91,7 +91,7 @@ export default function Header({ links }) {
         </nav>
       </header>
 
-      <aside className="hidden lg:block lg:flex-none">
+      <aside className="hidden lg:block lg:flex-none lg:self-stretch">
         <div className="sticky top-6">
           <div className="flex min-h-[calc(100vh_-_3rem)] flex-col justify-center py-6">
             <div
