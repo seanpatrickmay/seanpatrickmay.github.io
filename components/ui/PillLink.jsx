@@ -1,9 +1,10 @@
 export default function PillLink({ href, children, icon: Icon, variant = 'outline', external = false, className = '' }) {
-  const base =
-    variant === 'solid'
-      ? 'pill bg-slate-900 text-white dark:bg-white dark:text-slate-900'
-      : 'pill-outline';
-  const classes = `${base} flex items-center gap-2 ${className}`.trim();
+  const variantClass =
+    ({
+      solid: 'pill-accent',
+      outline: 'pill-accent',
+    }[variant]) ?? 'pill-accent';
+  const classes = `${variantClass} ${className}`.trim();
   return (
     <a
       href={href}
