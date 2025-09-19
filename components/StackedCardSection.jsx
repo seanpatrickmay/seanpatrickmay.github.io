@@ -1,11 +1,29 @@
-import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import {
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import Section from '@/components/ui/Section';
 
-const DEFAULT_BASE_GAP = 24; // matches gap-6 from Tailwind
-const PREVIEW_PEEK_HEIGHT = 96; // px of each card visible while collapsed
-const PREVIEW_STACK_X_OFFSET = 28; // px
-const PREVIEW_STACK_Y_OFFSET = 44; // px
-const PREVIEW_STACK_ROTATION = -3.5; // deg
+const PREVIEW_PEEK_HEIGHT = 112;
+const CASCADE_OFFSET_X = 26;
+const CASCADE_OFFSET_Y = 48;
+const CASCADE_ROTATION = -3.5;
+const GRID_GAP = 24;
+const MAX_GRID_COLUMNS = 3;
+const TRANSITION_EASING = 'cubic-bezier(0.22, 1, 0.36, 1)';
+
+function getGridColumns(count) {
+  if (count <= 1) {
+    return 1;
+  }
+
+  const ideal = Math.ceil(Math.sqrt(count));
+  return Math.max(2, Math.min(MAX_GRID_COLUMNS, ideal));
+}
 
 export default function StackedCardSection({
   id,
@@ -15,272 +33,289 @@ export default function StackedCardSection({
   renderItem,
   keyExtractor,
   className = '',
-  baseGap = DEFAULT_BASE_GAP,
 }) {
-  const [activeIndex, setActiveIndex] = useState(null);
-  const [overlayPhase, setOverlayPhase] = useState('idle');
-  const shouldStack = items.length > 1;
-  const sectionClassName = `h-full ${className}`.trim();
-  const Icon = icon;
-  const dialogLabelId = useId();
-  const overlayContentRef = useRef(null);
-  const previouslyFocusedRef = useRef(null);
-  const isExpanded = activeIndex !== null && items.length > 0;
-  const collapsedTransforms = useMemo(() => {
-    if (!shouldStack) {
-      return items.map(() => 'translate3d(0, 0, 0)');
+  const containerRef = useRef(null);
+  const measurementRef = useRef(null);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [isCoarsePointer, setIsCoarsePointer] = useState(false);
+  const [expandedLayout, setExpandedLayout] = useState({ positions: [], height: 0 });
+  const [containerHeight, setContainerHeight] = useState(0);
+  const [containerWidth, setContainerWidth] = useState(0);
+
+  const itemCount = items.length;
+  const columns = useMemo(() => {
+    if (itemCount <= 1) {
+      return 1;
     }
 
+    if (containerWidth > 0) {
+      if (containerWidth < 420) {
+        return 1;
+      }
+
+      if (containerWidth < 640) {
+        return Math.min(itemCount, 2);
+      }
+    }
+
+    return getGridColumns(itemCount);
+  }, [itemCount, containerWidth]);
+
+  const collapsedHeight = useMemo(() => {
+    if (itemCount === 0) {
+      return PREVIEW_PEEK_HEIGHT;
+    }
+
+    return PREVIEW_PEEK_HEIGHT + CASCADE_OFFSET_Y * Math.max(0, itemCount - 1) + 32;
+  }, [itemCount]);
+
+  const collapsedTransforms = useMemo(() => {
     return items.map((_, index) => {
-      const translateX = PREVIEW_STACK_X_OFFSET * index;
-      const translateY = PREVIEW_STACK_Y_OFFSET * index;
-      const rotation = PREVIEW_STACK_ROTATION * index;
+      const translateX = CASCADE_OFFSET_X * index;
+      const translateY = CASCADE_OFFSET_Y * index;
+      const rotation = CASCADE_ROTATION * index;
 
       return `translate3d(${translateX}px, ${translateY}px, 0) rotate(${rotation}deg)`;
     });
-  }, [items, shouldStack]);
-  const previewStackHeight = useMemo(() => {
-    if (!shouldStack) {
+  }, [items]);
+
+  useEffect(() => {
+    setContainerHeight(collapsedHeight);
+  }, [collapsedHeight]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') {
       return undefined;
     }
 
-    return PREVIEW_PEEK_HEIGHT + PREVIEW_STACK_Y_OFFSET * (items.length - 1) + 16;
-  }, [shouldStack, items.length]);
+    const mediaQuery = window.matchMedia('(pointer: coarse)');
+    const updatePointerType = event => {
+      setIsCoarsePointer(event.matches);
+    };
 
-  const handleActivate = index => {
-    if (!items || items.length === 0) {
+    setIsCoarsePointer(mediaQuery.matches);
+    mediaQuery.addEventListener('change', updatePointerType);
+
+    return () => {
+      mediaQuery.removeEventListener('change', updatePointerType);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isExpanded) {
+      setContainerHeight(expandedLayout.height || collapsedHeight);
+    } else {
+      setContainerHeight(collapsedHeight);
+    }
+  }, [isExpanded, expandedLayout.height, collapsedHeight]);
+
+  const measureLayout = useCallback(() => {
+    const measureEl = measurementRef.current;
+    if (!measureEl) {
       return;
     }
 
-    setActiveIndex(index);
-  };
+    const containerRect = measureEl.getBoundingClientRect();
+    const width = measureEl.offsetWidth;
+    setContainerWidth(previous => (previous === width ? previous : width));
+    const children = Array.from(measureEl.children);
 
-  const handleClearActive = () => {
-    setActiveIndex(null);
-  };
-
-  useLayoutEffect(() => {
-    if (!isExpanded) {
-      return undefined;
+    if (children.length === 0) {
+      setExpandedLayout({ positions: [], height: 0 });
+      return;
     }
 
-    setOverlayPhase('initial');
+    const positions = children.map(child => {
+      const rect = child.getBoundingClientRect();
 
-    const frame = requestAnimationFrame(() => {
-      setOverlayPhase('entering');
+      return {
+        x: rect.left - containerRect.left,
+        y: rect.top - containerRect.top,
+        width: rect.width,
+        height: rect.height,
+      };
     });
 
-    return () => {
-      cancelAnimationFrame(frame);
-    };
-  }, [isExpanded]);
-
-  useEffect(() => {
-    if (!isExpanded) {
-      setOverlayPhase('idle');
-    }
-  }, [isExpanded]);
-
-  useEffect(() => {
-    if (!isExpanded) {
-      return undefined;
-    }
-
-    if (typeof window !== 'undefined') {
-      const handleKeyDown = event => {
-        if (event.key === 'Escape') {
-          handleClearActive();
-        }
-      };
-
-      window.addEventListener('keydown', handleKeyDown);
-
-      return () => {
-        window.removeEventListener('keydown', handleKeyDown);
-      };
-    }
-
-    return undefined;
-  }, [isExpanded]);
-
-  useEffect(() => {
-    if (!isExpanded || typeof document === 'undefined') {
-      return undefined;
-    }
-
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-
-    previouslyFocusedRef.current =
-      document.activeElement instanceof HTMLElement ? document.activeElement : null;
-
-    const focusTimer = setTimeout(() => {
-      overlayContentRef.current?.focus?.({ preventScroll: true });
+    const height = positions.reduce((accumulator, position) => {
+      const bottom = position.y + position.height;
+      return Math.max(accumulator, bottom);
     }, 0);
 
-    return () => {
-      clearTimeout(focusTimer);
-      document.body.style.overflow = previousOverflow;
-      previouslyFocusedRef.current?.focus?.({ preventScroll: true });
+    setExpandedLayout({ positions, height });
+  }, []);
+
+  useLayoutEffect(() => {
+    measureLayout();
+  }, [measureLayout, columns, items]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') {
+      return undefined;
+    }
+
+    const handleResize = () => {
+      measureLayout();
     };
-  }, [isExpanded]);
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [measureLayout]);
+
+  useEffect(() => {
+    if (!isCoarsePointer || !isExpanded) {
+      return undefined;
+    }
+
+    const handleDocumentClick = event => {
+      if (!containerRef.current?.contains(event.target)) {
+        setIsExpanded(false);
+      }
+    };
+
+    document.addEventListener('click', handleDocumentClick);
+
+    return () => {
+      document.removeEventListener('click', handleDocumentClick);
+    };
+  }, [isCoarsePointer, isExpanded]);
+
+  const sectionClassName = `h-full ${className}`.trim();
+
+  const handlePointerEnter = event => {
+    if (isCoarsePointer || event.pointerType === 'touch') {
+      return;
+    }
+
+    setIsExpanded(true);
+  };
+
+  const handlePointerLeave = event => {
+    if (isCoarsePointer || event.pointerType === 'touch') {
+      return;
+    }
+
+    setIsExpanded(false);
+  };
+
+  const handleFocusCapture = () => {
+    setIsExpanded(true);
+  };
+
+  const handleBlurCapture = event => {
+    if (!containerRef.current?.contains(event.relatedTarget)) {
+      setIsExpanded(false);
+    }
+  };
+
+  const handleClickCapture = event => {
+    if (!isCoarsePointer) {
+      return;
+    }
+
+    if (!isExpanded) {
+      setIsExpanded(true);
+      event.preventDefault();
+      event.stopPropagation();
+    }
+  };
+
+  const gridTemplateColumns = `repeat(${columns}, minmax(0, 1fr))`;
 
   return (
     <Section id={id} title={title} icon={icon} className={sectionClassName}>
       <div
-        className="relative transition-[opacity,transform] duration-300 ease-out"
-        style={{
-          opacity: isExpanded ? 0 : 1,
-          transform: isExpanded ? 'scale(0.97) translateY(-6px)' : 'scale(1) translateY(0)',
-          pointerEvents: isExpanded ? 'none' : 'auto',
-        }}
-        aria-hidden={isExpanded}
+        ref={containerRef}
+        className="relative"
+        onPointerEnter={handlePointerEnter}
+        onPointerLeave={handlePointerLeave}
+        onFocusCapture={handleFocusCapture}
+        onBlurCapture={handleBlurCapture}
+        onClickCapture={handleClickCapture}
       >
-        <div className="relative" style={{ minHeight: previewStackHeight }}>
+        <div
+          className="relative transition-[height] duration-[620ms]"
+          style={{ height: containerHeight, transitionTimingFunction: TRANSITION_EASING }}
+        >
+          {itemCount === 0 && (
+            <div className="flex h-full items-center justify-center rounded-3xl border border-white/10 bg-white/5 p-6 text-sm text-white/70">
+              Nothing to display yet.
+            </div>
+          )}
+
           {items.map((item, index) => {
             const key = keyExtractor ? keyExtractor(item, index) : index;
             const collapsedTransform = collapsedTransforms[index] || 'translate3d(0, 0, 0)';
-            const baseStyle = shouldStack
-              ? {
-                  position: 'absolute',
-                  insetInline: 0,
-                  top: 0,
-                  transform: collapsedTransform,
-                  zIndex: items.length - index,
-                  transition: 'transform 450ms cubic-bezier(0.16, 1, 0.3, 1)',
-                }
-              : {
-                  position: 'relative',
-                  marginTop: index === 0 ? 0 : baseGap,
-                  transition: 'transform 450ms cubic-bezier(0.16, 1, 0.3, 1)',
-                };
+            const layoutPosition = expandedLayout.positions[index];
+            const expandedTransform = layoutPosition
+              ? `translate3d(${layoutPosition.x}px, ${layoutPosition.y}px, 0)`
+              : 'translate3d(0, 0, 0)';
+            const expandedHeight = layoutPosition?.height ?? PREVIEW_PEEK_HEIGHT;
+            const collapsedCardHeight = Math.min(expandedHeight, PREVIEW_PEEK_HEIGHT);
 
             return (
               <div
                 key={key}
-                className="cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
-                style={baseStyle}
-                onMouseEnter={() => handleActivate(index)}
-                onFocusCapture={() => handleActivate(index)}
-                onBlurCapture={event => {
-                  if (overlayContentRef.current?.contains(event.relatedTarget)) {
-                    return;
-                  }
-
-                  if (!event.currentTarget.contains(event.relatedTarget)) {
-                    handleClearActive();
-                  }
+                className="absolute top-0 left-0"
+                style={{
+                  transform: isExpanded ? expandedTransform : collapsedTransform,
+                  width: isExpanded && layoutPosition ? `${layoutPosition.width}px` : '100%',
+                  height: isExpanded ? `${expandedHeight}px` : `${collapsedCardHeight}px`,
+                  zIndex: itemCount - index,
+                  transition: `transform 620ms ${TRANSITION_EASING}, width 620ms ${TRANSITION_EASING}, height 620ms ${TRANSITION_EASING}, box-shadow 420ms ease`,
                 }}
-                onKeyDown={event => {
-                  if (event.key === 'Enter' || event.key === ' ') {
-                    event.preventDefault();
-                    handleActivate(index);
-                  }
-                }}
-                onClick={() => handleActivate(index)}
-                tabIndex={0}
               >
                 <div
-                  className="relative overflow-hidden rounded-3xl shadow-xl shadow-slate-950/35 transition-[box-shadow,filter] duration-500 ease-out"
-                  style={{ maxHeight: shouldStack ? PREVIEW_PEEK_HEIGHT : undefined }}
+                  className="relative h-full overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-xl shadow-slate-900/30 backdrop-blur"
                 >
-                  {shouldStack && (
-                    <div
-                      className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-b from-transparent via-slate-950/40 to-slate-950/80"
-                      aria-hidden="true"
-                    />
-                  )}
-                  <div className={`${shouldStack ? 'pointer-events-none select-none' : ''}`.trim()}>
+                  <div className={isExpanded ? '' : 'pointer-events-none select-none'}>
                     {renderItem(item, index, {
-                      isPreview: true,
-                      isExpanded: false,
-                      isActive: activeIndex === index,
+                      isPreview: !isExpanded,
+                      isExpanded,
+                      isActive: isExpanded,
                     })}
                   </div>
+                  {!isExpanded && (
+                    <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-b from-transparent via-slate-900/30 to-slate-950/80" />
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div
+          ref={measurementRef}
+          aria-hidden="true"
+          className="absolute inset-0 grid opacity-0"
+          style={{
+            pointerEvents: 'none',
+            visibility: 'hidden',
+            gridTemplateColumns,
+            gap: GRID_GAP,
+          }}
+        >
+          {items.map((item, index) => {
+            const key = keyExtractor ? keyExtractor(item, index) : index;
+
+            return (
+              <div key={key} className="h-full">
+                <div className="h-full rounded-3xl border border-white/10 bg-white/5">
+                  {renderItem(item, index, {
+                    isPreview: false,
+                    isExpanded: true,
+                    isActive: true,
+                    isMeasuring: true,
+                  })}
                 </div>
               </div>
             );
           })}
         </div>
       </div>
-      {isExpanded && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center px-4 py-10 sm:px-6 md:px-10">
-          <div
-            className="absolute inset-0 cursor-pointer"
-            aria-hidden="true"
-            onClick={handleClearActive}
-          >
-            <div className="absolute inset-0 bg-slate-950/45 backdrop-blur-sm" />
-          </div>
-          <div
-            className="absolute inset-0 pointer-events-none flex items-center justify-center"
-            aria-hidden="true"
-          >
-            <div
-              className="h-[min(90vh,48rem)] w-[min(90vw,72rem)] max-w-full rounded-[32px]"
-              style={{
-                boxShadow:
-                  '0 40px 140px rgba(15, 23, 42, 0.55), 0 0 0 9999px rgba(15, 23, 42, 0.65)',
-              }}
-            />
-          </div>
-          <div
-            ref={overlayContentRef}
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby={dialogLabelId}
-            tabIndex={-1}
-            className="relative z-10 w-full max-w-6xl max-h-[90vh] overflow-y-auto rounded-[32px] bg-slate-900/80 p-6 shadow-[0_40px_120px_rgba(15,23,42,0.55),0_0_0_9999px_rgba(15,23,42,0.55)] backdrop-blur-xl"
-            style={{
-              transform:
-                overlayPhase === 'initial' ? 'translateY(32px) scale(0.95)' : 'translateY(0) scale(1)',
-              opacity: overlayPhase === 'initial' ? 0 : 1,
-              transition:
-                'transform 520ms cubic-bezier(0.16, 1, 0.3, 1), opacity 360ms ease-out',
-            }}
-          >
-            <div className="flex items-center gap-3 mb-6 text-white">
-              {Icon && (
-                <div className="p-2 rounded-xl bg-white/10 backdrop-blur">
-                  <Icon className="w-5 h-5" />
-                </div>
-              )}
-              <h2 id={dialogLabelId} className="text-2xl font-semibold">
-                {title}
-              </h2>
-            </div>
-            <div className="grid grid-cols-1 gap-6 auto-rows-fr sm:grid-cols-2 xl:grid-cols-3">
-              {items.map((item, index) => {
-                const key = keyExtractor ? keyExtractor(item, index) : index;
-                const initialTransform = collapsedTransforms[index] || 'translate3d(0, 0, 0)';
-                const transitionDelay =
-                  overlayPhase === 'entering' ? `${index * 50}ms` : '0ms';
-
-                return (
-                  <div
-                    key={key}
-                    className="h-full transition-[transform,opacity] duration-500 ease-out"
-                    style={{
-                      transform:
-                        overlayPhase === 'initial' ? initialTransform : 'translate3d(0, 0, 0)',
-                      opacity: overlayPhase === 'initial' ? 0 : 1,
-                      transitionDelay,
-                    }}
-                  >
-                    <div className="h-full [&>div]:h-full [&>div]:flex [&>div]:flex-col">
-                      {renderItem(item, index, {
-                        isPreview: false,
-                        isExpanded: true,
-                        isActive: activeIndex === index,
-                      })}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      )}
     </Section>
   );
 }
+
