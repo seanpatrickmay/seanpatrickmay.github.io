@@ -1,3 +1,4 @@
+import { useState, useMemo } from 'react';
 import Head from 'next/head';
 import rawProjects from '@/public/projects.json' assert { type: 'json' };
 import rawExperience from '@/public/experience.json' assert { type: 'json' };
@@ -9,12 +10,12 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import AboutSection from '@/components/AboutSection';
 import Footer from '@/components/Footer';
-import ListSection from '@/components/ListSection';
-import Section from '@/components/ui/Section';
+import StackedCardSection from '@/components/StackedCardSection';
 import ProjectCard from '@/components/ProjectCard';
 import ExperienceItem from '@/components/ExperienceItem';
 import EducationItem from '@/components/EducationItem';
-import SkillsGrid from '@/components/SkillsGrid';
+import StackedCardPreview from '@/components/StackedCardPreview';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import { Trophy, Briefcase, GraduationCap, Cpu, ClipboardList } from 'lucide-react';
 
 const projects = validateProjects(rawProjects) ? rawProjects : [];
@@ -28,17 +29,50 @@ const links = {
   resume: '/resume.pdf',
 };
 
-const skills = {
-  languages: ['Python', 'Java', 'C', 'JavaScript', 'HTML', 'CSS'],
-  tools: ['Git', 'PyTorch', 'NumPy', 'Neovim', 'Matplotlib', 'Jupyter', 'React'],
-  platforms: ['Windows', 'macOS', 'Ubuntu Linux'],
-};
+const skillCategories = [
+  {
+    title: 'Core Languages & Frameworks',
+    emoji: '💻',
+    oneLiner: 'Core languages · Python-first shipping',
+    summary: 'Daily languages and front-end frameworks across co-ops, teaching, and research builds.',
+    items: ['Python', 'TypeScript', 'JavaScript', 'C', 'Next.js & React', 'HTML & CSS', 'Shell Scripting'],
+  },
+  {
+    title: 'AI & Decision Science',
+    emoji: '🧠',
+    oneLiner: 'Decision science · CFR, CV, poker',
+    summary: 'Research tooling for digit classifiers, CFR-Min exploration, and poker AI experiments.',
+    items: ['PyTorch', 'Computer Vision', 'Reinforcement Learning', 'Monte Carlo Simulation', 'Game Theory', 'Alpha-Beta Search'],
+  },
+  {
+    title: 'Systems & Automation',
+    emoji: '🛠️',
+    oneLiner: 'Automation · shipyard & internal tooling',
+    summary: 'Infrastructure work from Navy shipyard tools to internal libraries that keep data flowing.',
+    items: ['Linux', 'Git', 'JupyterLab', 'ServiceNow REST API', 'Test Automation', 'CSV/JSON Pipelines'],
+  },
+  {
+    title: 'Software Engineering Practices',
+    emoji: '🚀',
+    oneLiner: 'Engineering habits · delivering with teams',
+    summary: 'Habits proven through co-ops, tutoring, and client demos.',
+    items: [
+      'Concurrency & Synchronization',
+      'Data Structures & Algorithms',
+      'Agile Delivery',
+      'Mentoring & Technical Communication',
+      'Client-Facing Demos',
+      'Risk & Probabilistic Analysis',
+    ],
+  },
+];
 
 const education = [
   {
     school: 'Northeastern University — Khoury College of Computer Sciences',
     degree: 'B.S. in Computer Science & Mathematics (Expected May 2027)',
     img: '/images/northeastern.svg',
+    oneLiner: 'BS CS+Math — Northeastern',
     extras: [
       'GPA 3.64/4.0; Dean’s Scholarship; Dean’s List (Fall 2024, Spring 2025)',
       'Activities: Bridge to Calculus Tutor, Calculus Field Day Volunteer, Math Club, Putnam Club, Running Club',
@@ -49,6 +83,7 @@ const education = [
     school: 'Corvinus University of Budapest - Mathematical Heritage of Budapest Summer Dialogue',
     degree: 'Budapest, Hungary (Jun – Aug 2025)',
     img: '/images/corvinus.svg',
+    oneLiner: 'Math Dialogue — Corvinus',
     extras: ['Courses: Number Theory, Exploration of Modern Mathematics'],
   },
 ];
@@ -58,6 +93,44 @@ const interests = [
 ];
 
 export default function Home() {
+  const [activeSectionId, setActiveSectionId] = useState(null);
+
+  const showcaseSections = useMemo(() => [
+    {
+      id: 'experience',
+      title: 'Experience',
+      icon: Briefcase,
+      items: experience,
+      keyExtractor: job => job.org,
+      renderItem: (job, _index, state) => <ExperienceItem job={job} mode={state.mode} />,
+    },
+    {
+      id: 'projects',
+      title: 'Projects',
+      icon: Trophy,
+      items: projects,
+      keyExtractor: project => project.title,
+      renderItem: (project, _index, state) => <ProjectCard project={project} mode={state.mode} />,
+    },
+    {
+      id: 'education',
+      title: 'Education',
+      icon: GraduationCap,
+      items: education,
+      keyExtractor: item => item.school,
+      renderItem: (item, _index, state) => <EducationItem item={item} mode={state.mode} />,
+    },
+    {
+      id: 'other-work',
+      title: 'Other Work',
+      icon: ClipboardList,
+      items: otherWork,
+      keyExtractor: job => job.org,
+      renderItem: (job, _index, state) => <ExperienceItem job={job} mode={state.mode} />,
+    },
+  ], [experience, projects, education, otherWork]);
+
+
   return (
     <>
       <Head>
@@ -74,46 +147,66 @@ export default function Home() {
 
       <div className="lg:mx-auto lg:flex lg:max-w-screen-2xl lg:items-start lg:justify-center lg:gap-10 lg:px-12 xl:px-16">
         <Header links={links} />
-        <main className="flex-1 pt-32 sm:pt-28 md:pt-24 lg:min-w-0 lg:pt-14 xl:pt-16">
+        <main className="flex-1 space-y-16 pt-32 pb-24 sm:pt-28 md:pt-24 lg:min-w-0 lg:pt-16 xl:pt-20">
           <Hero links={links} />
           <AboutSection interests={interests} />
 
-          <ListSection
-            id="experience"
-            title="Experience"
-            icon={Briefcase}
-            items={experience}
-            renderItem={job => <ExperienceItem key={job.org} job={job} />}
-          />
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
+          {showcaseSections.map(section => (
+            <StackedCardSection
+              key={section.id}
+              {...section}
+              className="!py-6 !px-0"
+              activeSectionId={activeSectionId}
+              onActiveSectionChange={setActiveSectionId}
+            />
+          ))}
 
-          <ListSection
-            id="other-work"
-            title="Other Work"
-            icon={ClipboardList}
-            items={otherWork}
-            renderItem={job => <ExperienceItem key={job.org} job={job} />}
+          <StackedCardSection
+            id="skills"
+            title="Skills"
+            icon={Cpu}
+            items={skillCategories}
+            keyExtractor={category => category.title}
+            className="!py-8 !px-0"
+            renderItem={(category, _index, state) => (
+              <Card className="h-full">
+                {state.mode === 'preview' ? (
+                  <StackedCardPreview emoji={category.emoji} label={category.oneLiner} />
+                ) : (
+                  <>
+                    <CardHeader className="space-y-4">
+                      <div className="flex items-center gap-3">
+                        <span className="text-3xl" aria-hidden="true">
+                          {category.emoji}
+                        </span>
+                        <CardTitle className="text-xl sm:text-2xl">{category.title}</CardTitle>
+                      </div>
+                      {category.summary && (
+                        <p className="text-sm text-slate-600 dark:text-white/70">{category.summary}</p>
+                      )}
+                    </CardHeader>
+                    <CardContent className="pt-0">
+                      <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                        {category.items.map(item => (
+                          <li
+                            key={item}
+                            className="flex items-center gap-2 rounded-xl border border-white/10 bg-white px-3 py-2 text-sm font-medium text-slate-900 shadow-sm dark:border-white/10 dark:bg-slate-900 dark:text-white"
+                          >
+                            <span className="text-xs font-semibold text-slate-500 dark:text-white/60">•</span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                  </>
+                )}
+              </Card>
+            )}
+            activeSectionId={activeSectionId}
+            onActiveSectionChange={setActiveSectionId}
           />
-
-          <ListSection
-            id="projects"
-            title="Projects"
-            icon={Trophy}
-            items={projects}
-            columns={2}
-            renderItem={p => <ProjectCard key={p.title} project={p} />}
-          />
-
-          <ListSection
-            id="education"
-            title="Education"
-            icon={GraduationCap}
-            items={education}
-            renderItem={e => <EducationItem key={e.school} item={e} />}
-          />
-
-          <Section id="skills" title="Skills" icon={Cpu}>
-            <SkillsGrid skills={skills} />
-          </Section>
+        </div>
 
           <Footer links={links} />
         </main>
@@ -121,4 +214,3 @@ export default function Home() {
     </>
   );
 }
-

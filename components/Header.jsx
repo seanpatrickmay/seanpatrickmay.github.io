@@ -108,7 +108,7 @@ export default function Header({ links }) {
                       Sean P. May
                     </a>
                     <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
-                      CS & Math student exploring ML, systems, and strategy—always curious about the next challenge.
+                      CS & Math @ Northeastern. I build ML + systems tools for messy problems.
                     </p>
                   </div>
                   <div className="flex-shrink-0">

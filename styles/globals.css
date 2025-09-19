@@ -14,10 +14,10 @@ html {
 
 /* Light (default) */
 :root { color-scheme: light; }
-body { @apply bg-gradient-to-b from-white to-slate-50 text-slate-900; }
+body { @apply min-h-screen bg-gradient-to-b from-white to-slate-50 text-slate-900; }
 
 /* Dark */
-.dark body { @apply from-slate-950 to-slate-900 text-slate-100; }
+.dark body { @apply min-h-screen bg-gradient-to-b from-slate-950 to-slate-900 text-slate-100; }
 .dark .card { @apply bg-slate-900 border-slate-800; }
 .dark .badge { @apply bg-slate-800 text-slate-100; }
 
