@@ -8,13 +8,19 @@ import {
 } from 'react';
 import Section from '@/components/ui/Section';
 
-const PREVIEW_PEEK_HEIGHT = 112;
-const CASCADE_OFFSET_X = 26;
-const CASCADE_OFFSET_Y = 48;
-const CASCADE_ROTATION = -3.5;
+const PREVIEW_CARD_HEIGHT = 136;
+const STACK_OFFSET_Y = 22;
 const GRID_GAP = 24;
 const MAX_GRID_COLUMNS = 3;
+const TRANSITION_DURATION = 520;
 const TRANSITION_EASING = 'cubic-bezier(0.22, 1, 0.36, 1)';
+const EXPANDED_SHADOW = '0 32px 60px -30px rgba(15, 23, 42, 0.55)';
+
+function buildPreviewShadow(index) {
+  const offset = 8 + index * 3;
+  const blur = 18 + index * 4;
+  return `0 ${offset}px ${blur}px -28px rgba(15, 23, 42, 0.35)`;
+}
 
 function getGridColumns(count) {
   if (count <= 1) {
@@ -38,11 +44,12 @@ export default function StackedCardSection({
   const measurementRef = useRef(null);
   const [isExpanded, setIsExpanded] = useState(false);
   const [isCoarsePointer, setIsCoarsePointer] = useState(false);
-  const [expandedLayout, setExpandedLayout] = useState({ positions: [], height: 0 });
-  const [containerHeight, setContainerHeight] = useState(0);
+  const [expandedLayout, setExpandedLayout] = useState({ positions: [], height: PREVIEW_CARD_HEIGHT });
+  const [containerHeight, setContainerHeight] = useState(PREVIEW_CARD_HEIGHT);
   const [containerWidth, setContainerWidth] = useState(0);
 
   const itemCount = items.length;
+
   const columns = useMemo(() => {
     if (itemCount <= 1) {
       return 1;
@@ -63,19 +70,16 @@ export default function StackedCardSection({
 
   const collapsedHeight = useMemo(() => {
     if (itemCount === 0) {
-      return PREVIEW_PEEK_HEIGHT;
+      return PREVIEW_CARD_HEIGHT;
     }
 
-    return PREVIEW_PEEK_HEIGHT + CASCADE_OFFSET_Y * Math.max(0, itemCount - 1) + 32;
+    return PREVIEW_CARD_HEIGHT + STACK_OFFSET_Y * Math.max(0, itemCount - 1);
   }, [itemCount]);
 
   const collapsedTransforms = useMemo(() => {
     return items.map((_, index) => {
-      const translateX = CASCADE_OFFSET_X * index;
-      const translateY = CASCADE_OFFSET_Y * index;
-      const rotation = CASCADE_ROTATION * index;
-
-      return `translate3d(${translateX}px, ${translateY}px, 0) rotate(${rotation}deg)`;
+      const translateY = STACK_OFFSET_Y * index;
+      return `translate3d(0, ${translateY}px, 0)`;
     });
   }, [items]);
 
@@ -103,7 +107,8 @@ export default function StackedCardSection({
 
   useEffect(() => {
     if (isExpanded) {
-      setContainerHeight(expandedLayout.height || collapsedHeight);
+      const measuredHeight = expandedLayout.height || PREVIEW_CARD_HEIGHT;
+      setContainerHeight(Math.max(collapsedHeight, measuredHeight));
     } else {
       setContainerHeight(collapsedHeight);
     }
@@ -118,10 +123,10 @@ export default function StackedCardSection({
     const containerRect = measureEl.getBoundingClientRect();
     const width = measureEl.offsetWidth;
     setContainerWidth(previous => (previous === width ? previous : width));
-    const children = Array.from(measureEl.children);
 
+    const children = Array.from(measureEl.children);
     if (children.length === 0) {
-      setExpandedLayout({ positions: [], height: 0 });
+      setExpandedLayout({ positions: [], height: PREVIEW_CARD_HEIGHT });
       return;
     }
 
@@ -141,12 +146,12 @@ export default function StackedCardSection({
       return Math.max(accumulator, bottom);
     }, 0);
 
-    setExpandedLayout({ positions, height });
+    setExpandedLayout({ positions, height: Math.max(height, PREVIEW_CARD_HEIGHT) });
   }, []);
 
   useLayoutEffect(() => {
     measureLayout();
-  }, [measureLayout, columns, items]);
+  }, [measureLayout, columns, items, isExpanded]);
 
   useEffect(() => {
     if (typeof window === 'undefined') {
@@ -182,7 +187,14 @@ export default function StackedCardSection({
     };
   }, [isCoarsePointer, isExpanded]);
 
-  const sectionClassName = `h-full ${className}`.trim();
+  const sectionClassName = [
+    'relative transition-[grid-column,transform] duration-500 md:col-span-1 data-[expanded=true]:md:col-span-2 data-[expanded=true]:z-10',
+    className,
+  ]
+    .filter(Boolean)
+    .join(' ');
+
+  const sectionStyle = isExpanded ? { order: -1 } : undefined;
 
   const handlePointerEnter = event => {
     if (isCoarsePointer || event.pointerType === 'touch') {
@@ -223,9 +235,24 @@ export default function StackedCardSection({
   };
 
   const gridTemplateColumns = `repeat(${columns}, minmax(0, 1fr))`;
+  const renderState = {
+    mode: isExpanded ? 'expanded' : 'preview',
+    isExpanded,
+    isPreview: !isExpanded,
+    isActive: isExpanded,
+    isMeasuring: false,
+  };
 
   return (
-    <Section id={id} title={title} icon={icon} className={sectionClassName}>
+    <Section
+      id={id}
+      title={title}
+      icon={icon}
+      className={sectionClassName}
+      data-expanded={isExpanded ? 'true' : 'false'}
+      aria-expanded={isExpanded}
+      style={sectionStyle}
+    >
       <div
         ref={containerRef}
         className="relative"
@@ -236,7 +263,7 @@ export default function StackedCardSection({
         onClickCapture={handleClickCapture}
       >
         <div
-          className="relative transition-[height] duration-[620ms]"
+          className="relative transition-[height] duration-[520ms]"
           style={{ height: containerHeight, transitionTimingFunction: TRANSITION_EASING }}
         >
           {itemCount === 0 && (
@@ -252,34 +279,28 @@ export default function StackedCardSection({
             const expandedTransform = layoutPosition
               ? `translate3d(${layoutPosition.x}px, ${layoutPosition.y}px, 0)`
               : 'translate3d(0, 0, 0)';
-            const expandedHeight = layoutPosition?.height ?? PREVIEW_PEEK_HEIGHT;
-            const collapsedCardHeight = Math.min(expandedHeight, PREVIEW_PEEK_HEIGHT);
+            const expandedHeight = layoutPosition?.height ?? PREVIEW_CARD_HEIGHT;
+            const collapsedCardHeight = Math.min(expandedHeight, PREVIEW_CARD_HEIGHT);
+            const cardShadow = isExpanded ? EXPANDED_SHADOW : buildPreviewShadow(index);
 
             return (
               <div
                 key={key}
                 className="absolute top-0 left-0"
+                data-state={isExpanded ? 'expanded' : 'preview'}
                 style={{
                   transform: isExpanded ? expandedTransform : collapsedTransform,
                   width: isExpanded && layoutPosition ? `${layoutPosition.width}px` : '100%',
                   height: isExpanded ? `${expandedHeight}px` : `${collapsedCardHeight}px`,
                   zIndex: itemCount - index,
-                  transition: `transform 620ms ${TRANSITION_EASING}, width 620ms ${TRANSITION_EASING}, height 620ms ${TRANSITION_EASING}, box-shadow 420ms ease`,
+                  transition: `transform ${TRANSITION_DURATION}ms ${TRANSITION_EASING}, width ${TRANSITION_DURATION}ms ${TRANSITION_EASING}, height ${TRANSITION_DURATION}ms ${TRANSITION_EASING}, box-shadow 360ms ease`,
+                  boxShadow: cardShadow,
                 }}
               >
-                <div
-                  className="relative h-full overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-xl shadow-slate-900/30 backdrop-blur"
-                >
-                  <div className={isExpanded ? '' : 'pointer-events-none select-none'}>
-                    {renderItem(item, index, {
-                      isPreview: !isExpanded,
-                      isExpanded,
-                      isActive: isExpanded,
-                    })}
+                <div className="relative h-full overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur">
+                  <div className={isExpanded ? 'h-full' : 'pointer-events-none select-none h-full'}>
+                    {renderItem(item, index, renderState)}
                   </div>
-                  {!isExpanded && (
-                    <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-b from-transparent via-slate-900/30 to-slate-950/80" />
-                  )}
                 </div>
               </div>
             );
@@ -304,8 +325,9 @@ export default function StackedCardSection({
               <div key={key} className="h-full">
                 <div className="h-full rounded-3xl border border-white/10 bg-white/5">
                   {renderItem(item, index, {
-                    isPreview: false,
+                    mode: 'expanded',
                     isExpanded: true,
+                    isPreview: false,
                     isActive: true,
                     isMeasuring: true,
                   })}
@@ -318,4 +340,3 @@ export default function StackedCardSection({
     </Section>
   );
 }
-

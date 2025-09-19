@@ -90,7 +90,7 @@ export default function Home() {
             icon={Briefcase}
             items={experience}
             keyExtractor={job => job.org}
-            renderItem={job => <ExperienceItem job={job} />}
+            renderItem={(job, _index, state) => <ExperienceItem job={job} mode={state.mode} />}
             className="px-0 md:mx-0"
           />
           <StackedCardSection
@@ -99,7 +99,7 @@ export default function Home() {
             icon={Trophy}
             items={projects}
             keyExtractor={project => project.title}
-            renderItem={project => <ProjectCard project={project} />}
+            renderItem={(project, _index, state) => <ProjectCard project={project} mode={state.mode} />}
             className="px-0 md:mx-0"
           />
         </div>
@@ -110,7 +110,7 @@ export default function Home() {
             icon={GraduationCap}
             items={education}
             keyExtractor={item => item.school}
-            renderItem={item => <EducationItem item={item} />}
+            renderItem={(item, _index, state) => <EducationItem item={item} mode={state.mode} />}
             className="px-0 md:mx-0"
           />
           <StackedCardSection
@@ -119,7 +119,7 @@ export default function Home() {
             icon={ClipboardList}
             items={otherWork}
             keyExtractor={job => job.org}
-            renderItem={job => <ExperienceItem job={job} />}
+            renderItem={(job, _index, state) => <ExperienceItem job={job} mode={state.mode} />}
             className="px-0 md:mx-0"
           />
         </div>
@@ -131,18 +131,20 @@ export default function Home() {
         icon={Cpu}
         items={skillCategories}
         keyExtractor={category => category.title}
-        renderItem={category => (
-          <Card>
+        renderItem={(category, _index, state) => (
+          <Card className="h-full" data-mode={state.mode}>
             <CardHeader>
               <CardTitle>{category.title}</CardTitle>
             </CardHeader>
-            <CardContent>
-              <div className="flex flex-wrap gap-2">
-                {category.items.map(item => (
-                  <Badge key={item}>{item}</Badge>
-                ))}
-              </div>
-            </CardContent>
+            {state.mode !== 'preview' && (
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {category.items.map(item => (
+                    <Badge key={item}>{item}</Badge>
+                  ))}
+                </div>
+              </CardContent>
+            )}
           </Card>
         )}
       />
