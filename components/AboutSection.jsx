@@ -110,12 +110,17 @@ function deriveTrainingInsights(allStats) {
     return {
       calories: {},
       cups: {},
-      bikingRoute: describeBikingRoute(0),
+      routes: {
+        combined: describeBikingRoute(0),
+        biking: describeBikingRoute(0),
+        running: describeBikingRoute(0),
+      },
     };
   }
 
   const calories = {};
   const cups = {};
+  const routes = {};
 
   const activityKeys = ['combined', 'biking', 'running', 'swimming'];
   activityKeys.forEach(key => {
@@ -125,12 +130,16 @@ function deriveTrainingInsights(allStats) {
     cups[key] = calorieTotal > 0 ? calorieTotal / CALORIES_PER_CUP_OF_MILK : 0;
   });
 
-  const bikingDistance = toNumber(allStats?.biking?.monthly?.distance_km);
+  const routeKeys = ['combined', 'biking', 'running'];
+  routeKeys.forEach(key => {
+    const distance = toNumber(allStats?.[key]?.monthly?.distance_km);
+    routes[key] = describeBikingRoute(distance);
+  });
 
   return {
     calories,
     cups,
-    bikingRoute: describeBikingRoute(bikingDistance),
+    routes,
   };
 }
 
@@ -225,7 +234,14 @@ export default function AboutSection({ interests }) {
   const trainingInsights = useMemo(() => deriveTrainingInsights(stats?.stats), [stats]);
   const selectedCalories = trainingInsights.calories?.[activity] ?? 0;
   const selectedCups = trainingInsights.cups?.[activity] ?? 0;
-  const bikingRoute = trainingInsights.bikingRoute;
+  const routeEquivalents = trainingInsights.routes ?? {};
+
+  const routeLabelMap = {
+    combined: 'All activity',
+    biking: 'Biking',
+    running: 'Running',
+  };
+  const selectedRoute = routeEquivalents?.[activity];
 
   const activityLabels = {
     combined: 'all sessions',
@@ -303,15 +319,17 @@ export default function AboutSection({ interests }) {
                           {formatCalories(selectedCalories)} burned across {activityLabels[activity] ?? 'training'}
                         </div>
                       </div>
-                      <div className="rounded-2xl border border-white/10 bg-white/70 p-4 text-center shadow-sm dark:border-white/10 dark:bg-slate-900/70">
+                      <div className="rounded-2xl border border-white/10 bg-white/70 p-4 text-center shadow-sm dark:border-white/10 dark:bg-slate-900/70 sm:col-span-1">
                         <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
-                          Route equivalent
+                          Route equivalents
                         </div>
-                        <div className="mt-2 text-lg font-semibold text-slate-900 dark:text-white">
-                          {bikingRoute?.summary ?? 'Ride to set a landmark'}
-                        </div>
-                        <div className="mt-1 text-xs text-slate-500 dark:text-slate-400">
-                          {bikingRoute?.detail ?? ''}
+                        <div className="mt-2 grid gap-2 text-center text-xs text-slate-600 dark:text-slate-300">
+                            <div className="text-lg font-semibold text-slate-900 dark:text-white">
+                              {selectedRoute?.summary ?? 'Log more sessions'}
+                            </div>
+                            <div className="text-[11px] text-slate-500 dark:text-slate-400">
+                              {selectedRoute?.detail ?? ''}
+                            </div>
                         </div>
                       </div>
                     </div>

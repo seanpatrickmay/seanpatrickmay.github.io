@@ -197,27 +197,17 @@ export default function AutoScrollList({
                       target="_blank"
                       rel="noreferrer"
                       className="text-sm truncate flex-1 min-w-0"
-                      title={item.subtitle ? `${item.title} — ${item.subtitle}` : item.title}
+                      title={item.title}
                       onClick={(e) => e.stopPropagation()}
                     >
-                      <span className="font-medium">{item.title}</span>
-                      {item.subtitle && (
-                        <span className="text-slate-500 dark:text-slate-400">
-                          {" "}– {item.subtitle}
-                        </span>
-                      )}
+                      <span className="font-semibold">{item.title}</span>
                     </a>
                   ) : (
                     <span
                       className="text-sm truncate flex-1 min-w-0"
-                      title={item.subtitle ? `${item.title} — ${item.subtitle}` : item.title}
+                      title={item.title}
                     >
-                      <span className="font-medium">{item.title}</span>
-                      {item.subtitle && (
-                        <span className="text-slate-500 dark:text-slate-400">
-                          {" "}– {item.subtitle}
-                        </span>
-                      )}
+                      <span className="font-semibold">{item.title}</span>
                     </span>
                   )}
                   {item.info && (
@@ -256,27 +246,17 @@ export default function AutoScrollList({
                       target="_blank"
                       rel="noreferrer"
                       className="text-sm truncate flex-1 min-w-0"
-                      title={item.subtitle ? `${item.title} — ${item.subtitle}` : item.title}
+                      title={item.title}
                       onClick={(e) => e.stopPropagation()}
                     >
-                      <span className="font-medium">{item.title}</span>
-                      {item.subtitle && (
-                        <span className="text-slate-500 dark:text-slate-400">
-                          {" "}– {item.subtitle}
-                        </span>
-                      )}
+                      <span className="font-semibold">{item.title}</span>
                     </a>
                   ) : (
                     <span
                       className="text-sm truncate flex-1 min-w-0"
-                      title={item.subtitle ? `${item.title} — ${item.subtitle}` : item.title}
+                      title={item.title}
                     >
-                      <span className="font-medium">{item.title}</span>
-                      {item.subtitle && (
-                        <span className="text-slate-500 dark:text-slate-400">
-                          {" "}– {item.subtitle}
-                        </span>
-                      )}
+                      <span className="font-semibold">{item.title}</span>
                     </span>
                   )}
                   {item.info && (
@@ -307,4 +287,3 @@ export default function AutoScrollList({
     </div>
   );
 }
-
