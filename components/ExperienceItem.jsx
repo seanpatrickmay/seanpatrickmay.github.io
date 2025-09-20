@@ -9,11 +9,7 @@ export default function ExperienceItem({ job, mode = 'expanded' }) {
   const hasMeta = Boolean(location || period);
 
   if (isPreview) {
-    return (
-      <Card className="h-full overflow-hidden" data-mode={mode}>
-        <StackedCardPreview img={img} alt={imageAlt} emoji={emoji} label={previewLabel} meta={period} />
-      </Card>
-    );
+    return <StackedCardPreview img={img} alt={imageAlt} emoji={emoji} label={previewLabel} />;
   }
 
   return (

@@ -2,18 +2,13 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import StackedCardPreview from './StackedCardPreview';
 
 export default function EducationItem({ item, mode = 'expanded' }) {
-  const { school, degree, extras = [], img, oneLiner, emoji, period } = item;
+  const { school, degree, extras = [], img, oneLiner, emoji } = item;
   const isPreview = mode === 'preview';
   const previewLabel = oneLiner || school;
   const imageAlt = img ? `${school} logo` : undefined;
-  const previewMeta = period || (degree ? degree.match(/\(([^)]+)\)$/)?.[1] : undefined);
 
   if (isPreview) {
-    return (
-      <Card className="h-full overflow-hidden" data-mode={mode}>
-        <StackedCardPreview img={img} alt={imageAlt} emoji={emoji} label={previewLabel} meta={previewMeta} />
-      </Card>
-    );
+    return <StackedCardPreview img={img} alt={imageAlt} emoji={emoji} label={previewLabel} />;
   }
 
   return (
@@ -40,3 +35,4 @@ export default function EducationItem({ item, mode = 'expanded' }) {
     </Card>
   );
 }
+

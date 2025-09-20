@@ -22,11 +22,15 @@ export default function BarSparkline({
   maxBarWidth = 22,
   className = "",
   formatter,
+  labels = [],
+  labelClassName = "text-xs text-slate-500",
+  labelOrientation = "horizontal",
 }) {
   const containerRef = useRef(null);
   const [containerWidth, setContainerWidth] = useState(0);
   const [hover, setHover] = useState({ i: -1, x: 0, y: 0, text: "" });
 
+  const labelTexts = useMemo(() => (Array.isArray(labels) ? labels : []), [labels]);
   // Observe container size
   useEffect(() => {
     if (!containerRef.current) return;
@@ -64,6 +68,9 @@ export default function BarSparkline({
 
     return { bars: data, width: total };
   }, [values, containerWidth, height, barGap, minBarWidth, maxBarWidth]);
+
+  const hasLabels = labelTexts.some(label => label && String(label).length > 0);
+  const labelHeight = labelOrientation === 'stacked' ? 48 : labelOrientation === 'vertical' ? bars.length * 18 : 18;
 
   return (
     <div ref={containerRef} className={`relative w-full ${className}`} style={{ minWidth: 0 }}>
@@ -108,6 +115,83 @@ export default function BarSparkline({
         ))}
       </svg>
 
+      {hasLabels && bars.length ? (
+        labelOrientation === 'vertical' ? (
+          <div className="mt-2 space-y-1">
+            {bars.map((b, i) => {
+              const text = labelTexts[i];
+              if (!text) return null;
+              return (
+                <div key={`label-${i}`} className={labelClassName}>
+                  {text}
+                </div>
+              );
+            })}
+          </div>
+        ) : labelOrientation === 'stacked' ? (
+          <div
+            className="relative mt-2"
+            style={{ height: `${labelHeight}px` }}
+          >
+            {bars.map((b, i) => {
+              const text = labelTexts[i];
+              if (!text) return null;
+              const left = Math.max(width, 1) > 0 ? ((b.x + b.w / 2) / Math.max(width, 1)) * 100 : 0;
+              const characters = Array.from(String(text));
+              return (
+                <span
+                  key={`label-${i}`}
+                  className={`absolute -translate-x-1/2 whitespace-pre-wrap ${labelClassName}`}
+                  style={{
+                    left: `${left}%`,
+                    top: 0,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    gap: '2px',
+                    lineHeight: '1.1',
+                    padding: '4px 3px',
+                    borderRadius: '9999px',
+                    background: 'rgba(15,23,42,0.04)',
+                    color: 'inherit',
+                  }}
+                >
+                  {characters.map((char, index) => (
+                    <span
+                      key={`char-${index}`}
+                      className="leading-none"
+                      style={{ fontWeight: index === 0 ? 600 : 500 }}
+                    >
+                      {char === ' ' ? ' ' : char}
+                    </span>
+                  ))}
+                </span>
+              );
+            })}
+          </div>
+        ) : (
+          <div
+            className="relative mt-2"
+            style={{ height: `${labelHeight}px` }}
+          >
+            {bars.map((b, i) => {
+              const text = labelTexts[i];
+              if (!text) return null;
+              const left = Math.max(width, 1) > 0 ? ((b.x + b.w / 2) / Math.max(width, 1)) * 100 : 0;
+              return (
+                <span
+                  key={`label-${i}`}
+                  className={`absolute -translate-x-1/2 whitespace-nowrap ${labelClassName}`}
+                  style={{ left: `${left}%`, top: 0 }}
+                >
+                  {text}
+                </span>
+              );
+            })}
+          </div>
+        )
+      ) : null}
+
       {hover.i >= 0 && (
         <div
           className="pointer-events-none fixed z-50 px-2 py-1 rounded-md text-xs bg-black/80 text-white shadow"
@@ -119,4 +203,3 @@ export default function BarSparkline({
     </div>
   );
 }
-

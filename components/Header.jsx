@@ -19,9 +19,9 @@ const navItems = [
   { id: 'home', label: 'Home', icon: Home },
   { id: 'about', label: 'About', icon: Sparkles },
   { id: 'experience', label: 'Experience', icon: Briefcase },
-  { id: 'other-work', label: 'Other Work', icon: ClipboardList },
   { id: 'projects', label: 'Projects', icon: Trophy },
   { id: 'education', label: 'Education', icon: GraduationCap },
+  { id: 'other-work', label: 'Other Work', icon: ClipboardList },
   { id: 'skills', label: 'Skills', icon: Cpu },
 ];
 
@@ -108,7 +108,8 @@ export default function Header({ links }) {
                       Sean P. May
                     </a>
                     <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
-                      CS & Math @ Northeastern. I build ML + systems tools for messy problems.
+			CS & Math @ NEU.
+			Finding and solving difficult problems.
                     </p>
                   </div>
                   <div className="flex-shrink-0">
@@ -116,8 +117,9 @@ export default function Header({ links }) {
                   </div>
                 </div>
                 <ul className="mt-4 space-y-2 text-sm text-slate-600 dark:text-slate-300">
-                  <li>🎓 Northeastern University &mdash; B.S. CS & Math (May 2027)</li>
-                  <li>🧪 Incoming SWE Co-op @ NExT (Fall 2025)</li>
+                  <li>🎓 NEU &mdash; B.S. CS &amp; Math</li>
+                  <li>🧪 SWE Co-op @ NExT</li>
+                  <li>🔎 Seeking 2026 SWE/ML roles</li>
                 </ul>
               </section>
 
@@ -163,7 +165,7 @@ export default function Header({ links }) {
                     Say Hello
                   </PillLink>
                 </div>
-                <div className="mt-4 flex flex-wrap gap-4 text-sm text-slate-500 dark:text-slate-400">
+                <div className="mt-4 flex flex-wrap justify-center gap-4 text-sm text-slate-500 dark:text-slate-400">
                   <a
                     href={links.github}
                     className="group inline-flex items-center gap-2 transition hover:text-slate-700 dark:hover:text-slate-200"

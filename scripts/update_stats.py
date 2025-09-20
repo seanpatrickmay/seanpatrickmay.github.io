@@ -112,6 +112,31 @@ def seconds(a: Dict[str, Any]) -> float:
     )
 
 
+def calories(a: Dict[str, Any]) -> float:
+    summary = a.get("summaryDTO") or {}
+    activity_summary = a.get("activitySummary") or {}
+    candidates = [
+        a.get("calories"),
+        a.get("kilocalories"),
+        summary.get("calories"),
+        summary.get("kiloCalories"),
+        summary.get("totalKilocalories"),
+        summary.get("sumCalories"),
+        activity_summary.get("calories"),
+        activity_summary.get("totalKilocalories"),
+    ]
+
+    for value in candidates:
+        try:
+            if value is None:
+                continue
+            return float(value)
+        except (TypeError, ValueError):
+            continue
+
+    return 0.0
+
+
 def activity_type(a: Dict[str, Any]) -> Optional[str]:
     t = a.get("activityType")
     if isinstance(t, dict):
@@ -201,12 +226,15 @@ def main() -> None:
 
         total_m = sum(meters(a) for a in last30)
         total_s = sum(seconds(a) for a in last30)
+        total_calories = sum(calories(a) for a in last30)
+
         monthly = {
             "window_days": MONTHLY_WINDOW_DAYS,
             "activities_count": len(last30),
             "distance_km": round(total_m / 1000.0, 2),
             "time_hours": round(total_s / 3600.0, 2),
             "longest_km": round(max([meters(a) for a in last30] + [0.0]) / 1000.0, 2),
+            "calories_kcal": round(total_calories, 1),
         }
 
         # Last N activities
@@ -216,6 +244,7 @@ def main() -> None:
         for a in lastn:
             m = meters(a)
             dur = seconds(a)
+            cal = calories(a)
             recent_lastn.append({
                 "id": a.get("activityId"),
                 "name": a.get("activityName"),
@@ -224,6 +253,7 @@ def main() -> None:
                 "distance_km": round(m / 1000.0, 2),
                 "duration_min": round(dur / 60.0, 1),
                 "avg_speed_kmh": round((m / 1000.0) / (dur / 3600.0), 2) if dur > 0 else None,
+                "calories_kcal": round(cal, 1) if cal else 0.0,
             })
 
         # Weekly aggregates
