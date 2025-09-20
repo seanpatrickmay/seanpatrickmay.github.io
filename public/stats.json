@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-20T14:29:53.761645Z",
+  "generated_at": "2025-09-20T22:45:20.569039Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,13 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 36,
-        "distance_km": 707.97,
-        "time_hours": 34.26,
-        "longest_km": 100.23
+        "activities_count": 37,
+        "distance_km": 811.1,
+        "time_hours": 37.27,
+        "longest_km": 103.12,
+        "calories_kcal": 27170.0
       },
       "recent": {
         "last10": [
+          {
+            "id": 20449478050,
+            "name": "long",
+            "type": "virtual_ride",
+            "start": "2025-09-20 13:24:02",
+            "distance_km": 103.12,
+            "duration_min": 180.6,
+            "avg_speed_kmh": 34.27,
+            "calories_kcal": 2339.0
+          },
           {
             "id": 20440083249,
             "name": "Newton Cyclisme",
@@ -23,7 +34,8 @@
             "start": "2025-09-19 20:02:15",
             "distance_km": 11.15,
             "duration_min": 37.4,
-            "avg_speed_kmh": 17.9
+            "avg_speed_kmh": 17.9,
+            "calories_kcal": 450.0
           },
           {
             "id": 20420496002,
@@ -32,7 +44,8 @@
             "start": "2025-09-17 20:37:31",
             "distance_km": 57.39,
             "duration_min": 111.2,
-            "avg_speed_kmh": 30.97
+            "avg_speed_kmh": 30.97,
+            "calories_kcal": 1327.0
           },
           {
             "id": 20398470230,
@@ -41,7 +54,8 @@
             "start": "2025-09-15 18:46:39",
             "distance_km": 47.76,
             "duration_min": 90.6,
-            "avg_speed_kmh": 31.63
+            "avg_speed_kmh": 31.63,
+            "calories_kcal": 1198.0
           },
           {
             "id": 20387950471,
@@ -50,7 +64,8 @@
             "start": "2025-09-14 17:40:21",
             "distance_km": 21.26,
             "duration_min": 57.9,
-            "avg_speed_kmh": 22.04
+            "avg_speed_kmh": 22.04,
+            "calories_kcal": 730.0
           },
           {
             "id": 20376638390,
@@ -59,7 +74,8 @@
             "start": "2025-09-13 15:04:39",
             "distance_km": 7.03,
             "duration_min": 36.6,
-            "avg_speed_kmh": 11.51
+            "avg_speed_kmh": 11.51,
+            "calories_kcal": 631.0
           },
           {
             "id": 20367117544,
@@ -68,7 +84,8 @@
             "start": "2025-09-12 19:02:50",
             "distance_km": 4.44,
             "duration_min": 14.0,
-            "avg_speed_kmh": 19.07
+            "avg_speed_kmh": 19.07,
+            "calories_kcal": 140.0
           },
           {
             "id": 20367035894,
@@ -77,7 +94,8 @@
             "start": "2025-09-12 18:21:25",
             "distance_km": 23.92,
             "duration_min": 40.3,
-            "avg_speed_kmh": 35.59
+            "avg_speed_kmh": 35.59,
+            "calories_kcal": 605.0
           },
           {
             "id": 20366787710,
@@ -86,7 +104,8 @@
             "start": "2025-09-12 17:50:13",
             "distance_km": 13.18,
             "duration_min": 24.9,
-            "avg_speed_kmh": 31.8
+            "avg_speed_kmh": 31.8,
+            "calories_kcal": 282.0
           },
           {
             "id": 20358781784,
@@ -95,16 +114,8 @@
             "start": "2025-09-11 23:58:58",
             "distance_km": 11.0,
             "duration_min": 19.7,
-            "avg_speed_kmh": 33.51
-          },
-          {
-            "id": 20348174977,
-            "name": "cd",
-            "type": "virtual_ride",
-            "start": "2025-09-10 22:26:12",
-            "distance_km": 10.14,
-            "duration_min": 21.4,
-            "avg_speed_kmh": 28.46
+            "avg_speed_kmh": 33.51,
+            "calories_kcal": 298.0
           }
         ]
       },
@@ -156,8 +167,8 @@
           {
             "week_start": "2025-09-15",
             "week_end": "2025-09-21",
-            "distance_km": 116.3,
-            "time_hours": 3.99
+            "distance_km": 219.42,
+            "time_hours": 7.0
           }
         ]
       }
@@ -165,13 +176,24 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 31,
-        "distance_km": 675.72,
-        "time_hours": 30.55,
-        "longest_km": 100.23
+        "activities_count": 32,
+        "distance_km": 778.84,
+        "time_hours": 33.56,
+        "longest_km": 103.12,
+        "calories_kcal": 24163.0
       },
       "recent": {
         "last10": [
+          {
+            "id": 20449478050,
+            "name": "long",
+            "type": "virtual_ride",
+            "start": "2025-09-20 13:24:02",
+            "distance_km": 103.12,
+            "duration_min": 180.6,
+            "avg_speed_kmh": 34.27,
+            "calories_kcal": 2339.0
+          },
           {
             "id": 20440083249,
             "name": "Newton Cyclisme",
@@ -179,7 +201,8 @@
             "start": "2025-09-19 20:02:15",
             "distance_km": 11.15,
             "duration_min": 37.4,
-            "avg_speed_kmh": 17.9
+            "avg_speed_kmh": 17.9,
+            "calories_kcal": 450.0
           },
           {
             "id": 20420496002,
@@ -188,7 +211,8 @@
             "start": "2025-09-17 20:37:31",
             "distance_km": 57.39,
             "duration_min": 111.2,
-            "avg_speed_kmh": 30.97
+            "avg_speed_kmh": 30.97,
+            "calories_kcal": 1327.0
           },
           {
             "id": 20398470230,
@@ -197,7 +221,8 @@
             "start": "2025-09-15 18:46:39",
             "distance_km": 47.76,
             "duration_min": 90.6,
-            "avg_speed_kmh": 31.63
+            "avg_speed_kmh": 31.63,
+            "calories_kcal": 1198.0
           },
           {
             "id": 20387950471,
@@ -206,7 +231,8 @@
             "start": "2025-09-14 17:40:21",
             "distance_km": 21.26,
             "duration_min": 57.9,
-            "avg_speed_kmh": 22.04
+            "avg_speed_kmh": 22.04,
+            "calories_kcal": 730.0
           },
           {
             "id": 20367117544,
@@ -215,7 +241,8 @@
             "start": "2025-09-12 19:02:50",
             "distance_km": 4.44,
             "duration_min": 14.0,
-            "avg_speed_kmh": 19.07
+            "avg_speed_kmh": 19.07,
+            "calories_kcal": 140.0
           },
           {
             "id": 20367035894,
@@ -224,7 +251,8 @@
             "start": "2025-09-12 18:21:25",
             "distance_km": 23.92,
             "duration_min": 40.3,
-            "avg_speed_kmh": 35.59
+            "avg_speed_kmh": 35.59,
+            "calories_kcal": 605.0
           },
           {
             "id": 20366787710,
@@ -233,7 +261,8 @@
             "start": "2025-09-12 17:50:13",
             "distance_km": 13.18,
             "duration_min": 24.9,
-            "avg_speed_kmh": 31.8
+            "avg_speed_kmh": 31.8,
+            "calories_kcal": 282.0
           },
           {
             "id": 20358781784,
@@ -242,7 +271,8 @@
             "start": "2025-09-11 23:58:58",
             "distance_km": 11.0,
             "duration_min": 19.7,
-            "avg_speed_kmh": 33.51
+            "avg_speed_kmh": 33.51,
+            "calories_kcal": 298.0
           },
           {
             "id": 20348174977,
@@ -251,16 +281,8 @@
             "start": "2025-09-10 22:26:12",
             "distance_km": 10.14,
             "duration_min": 21.4,
-            "avg_speed_kmh": 28.46
-          },
-          {
-            "id": 20348057493,
-            "name": "SS",
-            "type": "virtual_ride",
-            "start": "2025-09-10 20:40:47",
-            "distance_km": 41.25,
-            "duration_min": 90.6,
-            "avg_speed_kmh": 27.33
+            "avg_speed_kmh": 28.46,
+            "calories_kcal": 231.0
           }
         ]
       },
@@ -312,8 +334,8 @@
           {
             "week_start": "2025-09-15",
             "week_end": "2025-09-21",
-            "distance_km": 116.3,
-            "time_hours": 3.99
+            "distance_km": 219.42,
+            "time_hours": 7.0
           }
         ]
       }
@@ -324,7 +346,8 @@
         "activities_count": 3,
         "distance_km": 32.26,
         "time_hours": 2.8,
-        "longest_km": 12.97
+        "longest_km": 12.97,
+        "calories_kcal": 2656.0
       },
       "recent": {
         "last10": [
@@ -335,7 +358,8 @@
             "start": "2025-09-13 15:04:39",
             "distance_km": 7.03,
             "duration_min": 36.6,
-            "avg_speed_kmh": 11.51
+            "avg_speed_kmh": 11.51,
+            "calories_kcal": 631.0
           },
           {
             "id": 20284176165,
@@ -344,7 +368,8 @@
             "start": "2025-09-04 20:14:13",
             "distance_km": 12.26,
             "duration_min": 65.2,
-            "avg_speed_kmh": 11.28
+            "avg_speed_kmh": 11.28,
+            "calories_kcal": 988.0
           },
           {
             "id": 20135638348,
@@ -353,7 +378,8 @@
             "start": "2025-08-21 16:05:55",
             "distance_km": 12.97,
             "duration_min": 65.9,
-            "avg_speed_kmh": 11.8
+            "avg_speed_kmh": 11.8,
+            "calories_kcal": 1037.0
           },
           {
             "id": 20125112681,
@@ -362,7 +388,8 @@
             "start": "2025-08-20 17:01:16",
             "distance_km": 0.45,
             "duration_min": 1.9,
-            "avg_speed_kmh": 13.82
+            "avg_speed_kmh": 13.82,
+            "calories_kcal": 25.0
           },
           {
             "id": 20101134540,
@@ -371,7 +398,8 @@
             "start": "2025-08-18 14:14:41",
             "distance_km": 3.23,
             "duration_min": 20.4,
-            "avg_speed_kmh": 9.48
+            "avg_speed_kmh": 9.48,
+            "calories_kcal": 293.0
           },
           {
             "id": 20047733528,
@@ -380,7 +408,8 @@
             "start": "2025-08-13 12:12:41",
             "distance_km": 7.98,
             "duration_min": 46.6,
-            "avg_speed_kmh": 10.27
+            "avg_speed_kmh": 10.27,
+            "calories_kcal": 682.0
           },
           {
             "id": 20018263562,
@@ -389,7 +418,8 @@
             "start": "2025-08-10 20:50:43",
             "distance_km": 1.88,
             "duration_min": 11.4,
-            "avg_speed_kmh": 9.89
+            "avg_speed_kmh": 9.89,
+            "calories_kcal": 168.0
           },
           {
             "id": 20018263343,
@@ -398,7 +428,8 @@
             "start": "2025-08-10 20:28:55",
             "distance_km": 5.11,
             "duration_min": 19.7,
-            "avg_speed_kmh": 15.56
+            "avg_speed_kmh": 15.56,
+            "calories_kcal": 392.0
           },
           {
             "id": 20018263010,
@@ -407,7 +438,8 @@
             "start": "2025-08-10 20:21:52",
             "distance_km": 1.44,
             "duration_min": 6.4,
-            "avg_speed_kmh": 13.59
+            "avg_speed_kmh": 13.59,
+            "calories_kcal": 109.0
           },
           {
             "id": 19993125892,
@@ -416,7 +448,8 @@
             "start": "2025-08-08 09:16:26",
             "distance_km": 9.72,
             "duration_min": 50.7,
-            "avg_speed_kmh": 11.51
+            "avg_speed_kmh": 11.51,
+            "calories_kcal": 754.0
           }
         ]
       },
@@ -480,7 +513,8 @@
         "activities_count": 0,
         "distance_km": 0.0,
         "time_hours": 0.0,
-        "longest_km": 0.0
+        "longest_km": 0.0,
+        "calories_kcal": 0
       },
       "recent": {
         "last10": [
@@ -491,7 +525,8 @@
             "start": "2025-08-10 11:59:26",
             "distance_km": 0.32,
             "duration_min": 7.4,
-            "avg_speed_kmh": 2.63
+            "avg_speed_kmh": 2.63,
+            "calories_kcal": 77.0
           },
           {
             "id": 20006938509,
@@ -500,7 +535,8 @@
             "start": "2025-08-09 16:38:24",
             "distance_km": 0.41,
             "duration_min": 33.7,
-            "avg_speed_kmh": 0.73
+            "avg_speed_kmh": 0.73,
+            "calories_kcal": 285.0
           },
           {
             "id": 19981410771,
@@ -509,7 +545,8 @@
             "start": "2025-08-07 08:52:17",
             "distance_km": 1.73,
             "duration_min": 36.8,
-            "avg_speed_kmh": 2.81
+            "avg_speed_kmh": 2.81,
+            "calories_kcal": 371.0
           },
           {
             "id": 19960843744,
@@ -518,7 +555,8 @@
             "start": "2025-08-05 12:19:17",
             "distance_km": 1.15,
             "duration_min": 25.9,
-            "avg_speed_kmh": 2.66
+            "avg_speed_kmh": 2.66,
+            "calories_kcal": 318.0
           },
           {
             "id": 19820455770,
@@ -527,7 +565,8 @@
             "start": "2025-07-23 08:34:08",
             "distance_km": 0.9,
             "duration_min": 30.2,
-            "avg_speed_kmh": 1.8
+            "avg_speed_kmh": 1.8,
+            "calories_kcal": 371.0
           },
           {
             "id": 19810091712,
@@ -536,7 +575,8 @@
             "start": "2025-07-22 10:21:15",
             "distance_km": 1.03,
             "duration_min": 37.4,
-            "avg_speed_kmh": 1.65
+            "avg_speed_kmh": 1.65,
+            "calories_kcal": 469.0
           },
           {
             "id": 19796043018,
@@ -545,7 +585,8 @@
             "start": "2025-07-20 20:54:54",
             "distance_km": 0.08,
             "duration_min": 18.1,
-            "avg_speed_kmh": 0.27
+            "avg_speed_kmh": 0.27,
+            "calories_kcal": 132.0
           },
           {
             "id": 19525539892,
@@ -554,7 +595,8 @@
             "start": "2025-06-23 15:12:42",
             "distance_km": 1.6,
             "duration_min": 47.9,
-            "avg_speed_kmh": 2.0
+            "avg_speed_kmh": 2.0,
+            "calories_kcal": 691.0
           },
           {
             "id": 19525537393,
@@ -563,7 +605,8 @@
             "start": "2025-06-18 15:40:39",
             "distance_km": 1.93,
             "duration_min": 49.3,
-            "avg_speed_kmh": 2.34
+            "avg_speed_kmh": 2.34,
+            "calories_kcal": 640.0
           },
           {
             "id": 19525536575,
@@ -572,7 +615,8 @@
             "start": "2025-06-17 15:23:23",
             "distance_km": 1.55,
             "duration_min": 38.8,
-            "avg_speed_kmh": 2.39
+            "avg_speed_kmh": 2.39,
+            "calories_kcal": 575.0
           }
         ]
       },
