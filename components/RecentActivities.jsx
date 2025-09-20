@@ -73,7 +73,7 @@ export default function RecentActivities({ activities = [] }) {
   return (
     <AutoScrollList
       items={items}
-      visibleCount={5}
+      visibleCount={7}
       ariaLabel="Longest activities in the last 30 days"
       emptyMessage="No standout efforts yet"
     />

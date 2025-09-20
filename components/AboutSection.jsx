@@ -21,7 +21,7 @@ const CITY_ROUTES = [
 ];
 
 const WEEK_RANGE_FORMAT = { month: 'short', day: 'numeric' };
-const WEEK_START_FORMAT = { month: 'short', day: 'numeric' };
+const WEEK_BOUNDARY_FORMAT = { month: 'long', day: 'numeric' };
 
 function toNumber(value) {
   const parsed = Number(value);
@@ -95,19 +95,13 @@ function formatWeekRange(week) {
   }
 }
 
-function formatWeekStart(week) {
-  if (!week?.week_start) return '';
+function formatWeekBoundary(dateString) {
+  if (!dateString) return '';
   try {
-    const start = new Date(`${week.week_start}T00:00:00`);
-    const formatter = new Intl.DateTimeFormat('en-US', WEEK_START_FORMAT);
-    const formatted = formatter.format(start);
-    const parts = formatted.split(' ');
-    if (parts.length >= 2) {
-      return `${parts[0]}. ${parts[1]}`;
-    }
-    return formatted;
+    const date = new Date(`${dateString}T00:00:00`);
+    return new Intl.DateTimeFormat('en-US', WEEK_BOUNDARY_FORMAT).format(date);
   } catch (error) {
-    return week.week_start;
+    return dateString;
   }
 }
 
@@ -329,8 +323,8 @@ export default function AboutSection({ interests }) {
                 <CardHeader>
                   <CardTitle>Highlights (30 Days)</CardTitle>
                 </CardHeader>
-                <CardContent className="flex-1 space-y-0 pt-0">
-                  <div className="h-full">
+                <CardContent className="flex flex-1 flex-col gap-0 px-6 pb-6 pt-0">
+                  <div className="flex-1 overflow-hidden">
                     <RecentActivities activities={data?.recent?.last10 ?? data?.recent?.last3 ?? []} />
                   </div>
                 </CardContent>
@@ -367,7 +361,7 @@ export default function AboutSection({ interests }) {
                       </div>
 
                       {series.length ? (
-                        <div className="mt-4">
+                        <div className="mt-4 space-y-3">
                           <BarSparkline
                             values={weeklyValues}
                             formatter={(v, i) => {
@@ -378,10 +372,10 @@ export default function AboutSection({ interests }) {
                             }}
                             height={72}
                             className="text-slate-700 dark:text-slate-200"
-                            labels={series.map((week, index) => formatWeekStart(week) || `Week ${index + 1}`)}
-                            labelClassName="text-[10px] font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500"
-                            labelOrientation="stacked"
                           />
+                          <div className="text-center text-sm font-semibold text-slate-600 dark:text-slate-300">
+                            {formatWeekBoundary(series[0]?.week_start)} → {formatWeekBoundary(series.at(-1)?.week_end)}
+                          </div>
                         </div>
                       ) : (
                         <div className="mt-4 text-sm text-slate-500 dark:text-slate-400">No weekly data yet</div>
