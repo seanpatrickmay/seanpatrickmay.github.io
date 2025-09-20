@@ -4,7 +4,7 @@
     "emoji": "🔢",
     "period": "Jan – Mar 2025",
     "stack": ["Python","JavaScript","HTML","PyTorch","ML"],
-    "oneLiner": "Digit Classifier — CV Web App",
+    "oneLiner": "Digit Classifier",
     "bullets": [
       "Built a computer vision web app with CNNs.",
       "Two-model pipeline: bounding box → digit count classifier.",
@@ -17,7 +17,7 @@
     "emoji": "♟️",
     "period": "Nov 2024 – Present",
     "stack": ["Jupyter","NumPy","Reinforcement Learning"],
-    "oneLiner": "CFR-Min — Sequential Game Lab",
+    "oneLiner": "CFR-Min Research",
     "bullets": [
       "Exploring CFR-Min for Nash equilibria in imperfect-information games.",
       "Worked examples: Colonel Blotto, Kuhn Poker.",
@@ -30,7 +30,7 @@
     "emoji": "🃏",
     "period": "Aug – Dec 2024",
     "stack": ["Python","NumPy","Monte Carlo"],
-    "oneLiner": "NLHE Alpha-Beta — Poker AI",
+    "oneLiner": "Poker Alpha-Beta",
     "bullets": [
       "Adversarial search with alpha–beta pruning over game tree.",
       "Hand bucketing + probabilistic range model to reduce space.",
@@ -43,7 +43,7 @@
     "emoji": "🖥️",
     "period": "Oct 2024",
     "stack": ["C","Concurrency","Data Structures"],
-    "oneLiner": "C Shell — Systems Project",
+    "oneLiner": "C Shell",
     "bullets": [
       "Fully operational shell: commands, piping, I/O redirection, signals.",
       "Child processes for sequential execution.",
@@ -52,4 +52,3 @@
     "links": []
   }
 ]
-

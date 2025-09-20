@@ -18,7 +18,7 @@ export default function Hero({ links }) {
           </p>
           <ul className="text-lg text-slate-600 dark:text-slate-300 space-y-1">
             <li>🎓 Northeastern University — B.S. CS & Math (May 2027)</li>
-            <li>🧪 Incoming: NExT Program SWE Co-op (Fall 2025)</li>
+            <li>🧪 SWE Co-op — NExT Program (Fall 2025)</li>
             <li>🔎 Searching for Summer/Fall 2026 SWE/ML roles</li>
           </ul>
           <div className="flex flex-wrap gap-3 pt-2">
@@ -61,4 +61,3 @@ export default function Hero({ links }) {
     </section>
   );
 }
-

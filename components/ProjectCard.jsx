@@ -9,11 +9,7 @@ export default function ProjectCard({ project, mode = 'expanded' }) {
   const previewLabel = oneLiner || title;
 
   if (isPreview) {
-    return (
-      <Card className="h-full overflow-hidden" data-mode={mode}>
-        <StackedCardPreview emoji={emoji} label={previewLabel} meta={period} />
-      </Card>
-    );
+    return <StackedCardPreview emoji={emoji} label={previewLabel} />;
   }
 
   return (

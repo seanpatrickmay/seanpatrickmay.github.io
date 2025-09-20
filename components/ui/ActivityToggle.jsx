@@ -4,7 +4,6 @@ export default function ActivityToggle({ activity = "combined", onChange }) {
     { key: "combined", label: "All" },
     { key: "biking", label: "Biking" },
     { key: "running", label: "Running" },
-    { key: "swimming", label: "Swimming" },
   ];
   return (
     <div className="inline-flex items-center gap-2 text-xs">

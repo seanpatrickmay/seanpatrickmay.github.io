@@ -31,9 +31,11 @@ venv/
 # Garmin tokens
 .garminconnect/
 
-# Spotify tokens
+# Spotify tokens / helper scripts (should live outside repo)
 spotifyTokens.json
 exchangeSpotifyCodes.sh
+spotify-local/
+*.spotify-secret
 
 # === Don’t ignore lockfile or stats ===
 !package-lock.json
