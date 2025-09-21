@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-21T03:26:01.898684Z",
+  "generated_at": "2025-09-21T14:29:28.698587Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -16,7 +16,7 @@
         "calories_kcal": 26133.0
       },
       "recent": {
-        "last50": [
+        "last60": [
           {
             "id": 20449478050,
             "name": "long",
@@ -516,6 +516,106 @@
             "duration_min": 7.4,
             "avg_speed_kmh": 2.63,
             "calories_kcal": 77.0
+          },
+          {
+            "id": 20006938509,
+            "name": "Shenandoah County Natation en eau libre",
+            "type": "open_water_swimming",
+            "start": "2025-08-09 16:38:24",
+            "distance_km": 0.41,
+            "duration_min": 33.7,
+            "avg_speed_kmh": 0.73,
+            "calories_kcal": 285.0
+          },
+          {
+            "id": 20005825389,
+            "name": "Page County Marche à pied",
+            "type": "walking",
+            "start": "2025-08-09 11:58:51",
+            "distance_km": 11.22,
+            "duration_min": 162.1,
+            "avg_speed_kmh": 4.15,
+            "calories_kcal": 931.0
+          },
+          {
+            "id": 19996598793,
+            "name": "Hardy County Marche à pied",
+            "type": "walking",
+            "start": "2025-08-08 17:23:50",
+            "distance_km": 7.32,
+            "duration_min": 132.0,
+            "avg_speed_kmh": 3.32,
+            "calories_kcal": 766.0
+          },
+          {
+            "id": 19993125892,
+            "name": "Howard County Course à pied",
+            "type": "running",
+            "start": "2025-08-08 09:16:26",
+            "distance_km": 9.72,
+            "duration_min": 50.7,
+            "avg_speed_kmh": 11.51,
+            "calories_kcal": 754.0
+          },
+          {
+            "id": 19987026867,
+            "name": "Howard County Cyclisme",
+            "type": "cycling",
+            "start": "2025-08-07 20:22:51",
+            "distance_km": 17.47,
+            "duration_min": 35.4,
+            "avg_speed_kmh": 29.61,
+            "calories_kcal": 572.0
+          },
+          {
+            "id": 19981410771,
+            "name": "Nat. piscine",
+            "type": "lap_swimming",
+            "start": "2025-08-07 08:52:17",
+            "distance_km": 1.73,
+            "duration_min": 36.8,
+            "avg_speed_kmh": 2.81,
+            "calories_kcal": 371.0
+          },
+          {
+            "id": 19974103024,
+            "name": "Vélo d'intérieur",
+            "type": "indoor_cycling",
+            "start": "2025-08-06 13:15:29",
+            "distance_km": 0.0,
+            "duration_min": 122.9,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 1404.0
+          },
+          {
+            "id": 19971215738,
+            "name": "Howard County Course à pied",
+            "type": "running",
+            "start": "2025-08-06 10:33:03",
+            "distance_km": 5.64,
+            "duration_min": 30.7,
+            "avg_speed_kmh": 11.01,
+            "calories_kcal": 442.0
+          },
+          {
+            "id": 19960843744,
+            "name": "Nat. piscine",
+            "type": "lap_swimming",
+            "start": "2025-08-05 12:19:17",
+            "distance_km": 1.15,
+            "duration_min": 25.9,
+            "avg_speed_kmh": 2.66,
+            "calories_kcal": 318.0
+          },
+          {
+            "id": 19960209649,
+            "name": "Anne Arundel County Cyclisme",
+            "type": "cycling",
+            "start": "2025-08-05 10:27:32",
+            "distance_km": 34.07,
+            "duration_min": 84.8,
+            "avg_speed_kmh": 24.11,
+            "calories_kcal": 1110.0
           }
         ]
       },
@@ -525,14 +625,14 @@
           {
             "week_start": "2025-07-28",
             "week_end": "2025-08-03",
-            "distance_km": 19.65,
-            "time_hours": 2.31
+            "distance_km": 0.0,
+            "time_hours": 0.0
           },
           {
             "week_start": "2025-08-04",
             "week_end": "2025-08-10",
             "distance_km": 97.47,
-            "time_hours": 14.09
+            "time_hours": 12.67
           },
           {
             "week_start": "2025-08-11",
@@ -583,7 +683,7 @@
         "calories_kcal": 24163.0
       },
       "recent": {
-        "last50": [
+        "last60": [
           {
             "id": 20449478050,
             "name": "long",
@@ -983,106 +1083,6 @@
             "duration_min": 84.8,
             "avg_speed_kmh": 24.11,
             "calories_kcal": 1110.0
-          },
-          {
-            "id": 19953737983,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-08-04 21:18:42",
-            "distance_km": 0.0,
-            "duration_min": 24.1,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 221.0
-          },
-          {
-            "id": 19949224671,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-08-04 11:02:31",
-            "distance_km": 0.0,
-            "duration_min": 61.6,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 966.0
-          },
-          {
-            "id": 19876574517,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-07-28 19:28:41",
-            "distance_km": 0.0,
-            "duration_min": 35.9,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 477.0
-          },
-          {
-            "id": 19857022385,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-07-26 18:51:48",
-            "distance_km": 0.0,
-            "duration_min": 78.4,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 753.0
-          },
-          {
-            "id": 19845881091,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-07-25 17:21:01",
-            "distance_km": 0.0,
-            "duration_min": 48.0,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 746.0
-          },
-          {
-            "id": 19843214918,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-07-25 12:38:22",
-            "distance_km": 0.0,
-            "duration_min": 42.2,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 644.0
-          },
-          {
-            "id": 19842477008,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-07-25 11:46:42",
-            "distance_km": 0.0,
-            "duration_min": 10.1,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 97.0
-          },
-          {
-            "id": 19836443514,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-07-24 18:14:43",
-            "distance_km": 0.0,
-            "duration_min": 51.8,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 669.0
-          },
-          {
-            "id": 19828142071,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-07-23 19:25:59",
-            "distance_km": 0.0,
-            "duration_min": 40.2,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 366.0
-          },
-          {
-            "id": 19828141755,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-07-23 14:28:52",
-            "distance_km": 0.0,
-            "duration_min": 43.0,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 232.0
           }
         ]
       },
@@ -1093,13 +1093,13 @@
             "week_start": "2025-07-28",
             "week_end": "2025-08-03",
             "distance_km": 0.0,
-            "time_hours": 0.6
+            "time_hours": 0.0
           },
           {
             "week_start": "2025-08-04",
             "week_end": "2025-08-10",
             "distance_km": 51.54,
-            "time_hours": 5.48
+            "time_hours": 4.05
           },
           {
             "week_start": "2025-08-11",
@@ -1150,7 +1150,7 @@
         "calories_kcal": 1619.0
       },
       "recent": {
-        "last50": [
+        "last60": [
           {
             "id": 20376638390,
             "name": "Boston Course à pied",
@@ -1260,116 +1260,6 @@
             "duration_min": 30.7,
             "avg_speed_kmh": 11.01,
             "calories_kcal": 442.0
-          },
-          {
-            "id": 19942322346,
-            "name": "Howard County Course à pied",
-            "type": "running",
-            "start": "2025-08-03 20:32:00",
-            "distance_km": 4.85,
-            "duration_min": 24.4,
-            "avg_speed_kmh": 11.89,
-            "calories_kcal": 381.0
-          },
-          {
-            "id": 19942072053,
-            "name": "Howard County Course à pied",
-            "type": "running",
-            "start": "2025-08-03 19:07:42",
-            "distance_km": 5.01,
-            "duration_min": 29.9,
-            "avg_speed_kmh": 10.06,
-            "calories_kcal": 376.0
-          },
-          {
-            "id": 19899864663,
-            "name": "Budapest Course à pied",
-            "type": "running",
-            "start": "2025-07-30 21:37:06",
-            "distance_km": 9.79,
-            "duration_min": 48.5,
-            "avg_speed_kmh": 12.12,
-            "calories_kcal": 788.0
-          },
-          {
-            "id": 19864234248,
-            "name": "Budapest Course à pied",
-            "type": "running",
-            "start": "2025-07-27 13:13:50",
-            "distance_km": 15.33,
-            "duration_min": 97.9,
-            "avg_speed_kmh": 9.39,
-            "calories_kcal": 1215.0
-          },
-          {
-            "id": 19817862141,
-            "name": "Tihany Course à pied",
-            "type": "running",
-            "start": "2025-07-22 23:38:29",
-            "distance_km": 10.1,
-            "duration_min": 40.8,
-            "avg_speed_kmh": 14.87,
-            "calories_kcal": 745.0
-          },
-          {
-            "id": 19805727199,
-            "name": "Tihany Course à pied",
-            "type": "running",
-            "start": "2025-07-21 21:08:11",
-            "distance_km": 1.36,
-            "duration_min": 26.2,
-            "avg_speed_kmh": 3.13,
-            "calories_kcal": 249.0
-          },
-          {
-            "id": 19784143562,
-            "name": "Course à pied sur tapis roulant",
-            "type": "treadmill_running",
-            "start": "2025-07-19 17:34:15",
-            "distance_km": 3.46,
-            "duration_min": 17.6,
-            "avg_speed_kmh": 11.76,
-            "calories_kcal": 290.0
-          },
-          {
-            "id": 19755308243,
-            "name": "Budapest Course à pied",
-            "type": "running",
-            "start": "2025-07-16 20:30:22",
-            "distance_km": 9.81,
-            "duration_min": 68.1,
-            "avg_speed_kmh": 8.65,
-            "calories_kcal": 844.0
-          },
-          {
-            "id": 19709046176,
-            "name": "Course à pied sur tapis roulant",
-            "type": "treadmill_running",
-            "start": "2025-07-12 13:18:51",
-            "distance_km": 7.43,
-            "duration_min": 28.2,
-            "avg_speed_kmh": 15.82,
-            "calories_kcal": 455.0
-          },
-          {
-            "id": 19691443083,
-            "name": "Budapest Course à pied",
-            "type": "running",
-            "start": "2025-07-10 17:33:15",
-            "distance_km": 6.26,
-            "duration_min": 37.4,
-            "avg_speed_kmh": 10.04,
-            "calories_kcal": 522.0
-          },
-          {
-            "id": 19644099502,
-            "name": "Budapest Course à pied",
-            "type": "running",
-            "start": "2025-07-06 00:13:29",
-            "distance_km": 11.61,
-            "duration_min": 54.8,
-            "avg_speed_kmh": 12.7,
-            "calories_kcal": 942.0
           }
         ]
       },
@@ -1379,8 +1269,8 @@
           {
             "week_start": "2025-07-28",
             "week_end": "2025-08-03",
-            "distance_km": 19.65,
-            "time_hours": 1.71
+            "distance_km": 0.0,
+            "time_hours": 0.0
           },
           {
             "week_start": "2025-08-04",
@@ -1437,7 +1327,7 @@
         "calories_kcal": 0
       },
       "recent": {
-        "last50": [
+        "last60": [
           {
             "id": 20015631354,
             "name": "Shenandoah County Natation en eau libre",
@@ -1477,36 +1367,6 @@
             "duration_min": 25.9,
             "avg_speed_kmh": 2.66,
             "calories_kcal": 318.0
-          },
-          {
-            "id": 19820455770,
-            "name": "Tihany Natation en eau libre",
-            "type": "open_water_swimming",
-            "start": "2025-07-23 08:34:08",
-            "distance_km": 0.9,
-            "duration_min": 30.2,
-            "avg_speed_kmh": 1.8,
-            "calories_kcal": 371.0
-          },
-          {
-            "id": 19810091712,
-            "name": "Tihany Natation en eau libre",
-            "type": "open_water_swimming",
-            "start": "2025-07-22 10:21:15",
-            "distance_km": 1.03,
-            "duration_min": 37.4,
-            "avg_speed_kmh": 1.65,
-            "calories_kcal": 469.0
-          },
-          {
-            "id": 19796043018,
-            "name": "Tihany Natation en eau libre",
-            "type": "open_water_swimming",
-            "start": "2025-07-20 20:54:54",
-            "distance_km": 0.08,
-            "duration_min": 18.1,
-            "avg_speed_kmh": 0.27,
-            "calories_kcal": 132.0
           }
         ]
       },
