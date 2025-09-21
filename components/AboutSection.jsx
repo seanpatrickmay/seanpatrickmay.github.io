@@ -272,6 +272,15 @@ export default function AboutSection({ interests }) {
     running: 'running',
   };
 
+  const recentActivitiesSource = data?.recent?.all ?? data?.recent?.last10 ?? data?.recent?.last3 ?? [];  
+
+  const topLongestActivities = useMemo(() => {
+    const hours = x => toNumber(x?.time_hours ?? x?.hours ?? x?.duration_hours);
+    return [...recentActivitiesSource]
+      .sort((a, b) => hours(b) - hours(a))  // desc by hours
+      .slice(0, 10);                        // up to 10, or fewer if not available
+  }, [recentActivitiesSource]);
+
   return (
     <Section id="about" title="About me" icon={Sparkles}>
       <div className="relative">
@@ -360,13 +369,13 @@ export default function AboutSection({ interests }) {
                 </CardContent>
               </Card>
 
-              <Card className="h-full flex flex-col">
+              <Card className="h-full text-center flex flex-col">
                 <CardHeader>
-                  <CardTitle>Highlights (30 Days)</CardTitle>
+                  <CardTitle>Highlights</CardTitle>
                 </CardHeader>
                 <CardContent className="flex flex-1 flex-col gap-0 px-6 pb-6 pt-0">
                   <div className="flex-1 overflow-hidden">
-                    <RecentActivities activities={data?.recent?.last10 ?? data?.recent?.last3 ?? []} />
+                    <RecentActivities activities={topLongestActivities} />
                   </div>
                 </CardContent>
               </Card>
