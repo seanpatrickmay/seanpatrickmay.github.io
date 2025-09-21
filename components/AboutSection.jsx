@@ -13,14 +13,35 @@ import { Sparkles, Brain, Dumbbell, Music } from 'lucide-react';
 const CALORIES_PER_CUP_OF_MILK = 124;
 
 const CITY_ROUTES = [
-  { from: 'Boston', to: 'Providence', distanceKm: 81 },
+  { from: 'Boston', to: 'Salem (MA)', distanceKm: 22 },
+  { from: 'Boston', to: 'Worcester', distanceKm: 62 },
+  { from: 'Boston', to: 'Providence', distanceKm: 66 },
+  { from: 'Boston', to: 'Manchester (NH)', distanceKm: 78 },
+  { from: 'Boston', to: 'Portsmouth (NH)', distanceKm: 83 },
+  { from: 'Boston', to: 'Springfield (MA)', distanceKm: 129 },
+  { from: 'Boston', to: 'Hartford', distanceKm: 149 },
+  { from: 'Boston', to: 'Portland (Maine)', distanceKm: 158 },
+  { from: 'Boston', to: 'New Haven', distanceKm: 194 },
+  { from: 'Boston', to: 'Albany', distanceKm: 223 },
+  { from: 'Boston', to: 'Burlington (Vermont)', distanceKm: 293 },
   { from: 'Boston', to: 'New York City', distanceKm: 306 },
-  { from: 'Boston', to: 'Montreal', distanceKm: 495 },
-  { from: 'Boston', to: 'Washington, DC', distanceKm: 725 },
-  { from: 'Boston', to: 'Toronto', distanceKm: 880 },
-  { from: 'Boston', to: 'Chicago', distanceKm: 1585 },
-  { from: 'Boston', to: 'Miami', distanceKm: 2413 },
+  { from: 'Boston', to: 'Montreal', distanceKm: 403 },
+  { from: 'Boston', to: 'Philadelphia', distanceKm: 436 },
+  { from: 'Boston', to: 'Ottawa', distanceKm: 504 },
+  { from: 'Boston', to: 'Harrisburg', distanceKm: 539 },
+  { from: 'Boston', to: 'Baltimore', distanceKm: 578 },
+  { from: 'Boston', to: 'Washington, DC', distanceKm: 634 },
+  { from: 'Boston', to: 'Toronto', distanceKm: 692 },
+  { from: 'Boston', to: 'Pittsburgh', distanceKm: 775 },
+  { from: 'Boston', to: 'Cleveland', distanceKm: 884 },
+  { from: 'Boston', to: 'Detroit', distanceKm: 984 },
+  { from: 'Boston', to: 'Columbus', distanceKm: 1034 },
+  { from: 'Boston', to: 'Charlotte', distanceKm: 1160 },
+  { from: 'Boston', to: 'Chicago', distanceKm: 1366 },
+  { from: 'Boston', to: 'Atlanta', distanceKm: 1506 },
+  { from: 'Boston', to: 'St. Louis', distanceKm: 1667 },
 ];
+
 
 const WEEK_RANGE_FORMAT = { month: 'short', day: 'numeric' };
 const WEEK_BOUNDARY_FORMAT = { month: 'long', day: 'numeric' };
