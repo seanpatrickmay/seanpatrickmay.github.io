@@ -17,7 +17,9 @@ const CITY_ROUTES = [
   { from: 'Boston', to: 'New York City', distanceKm: 306 },
   { from: 'Boston', to: 'Montreal', distanceKm: 495 },
   { from: 'Boston', to: 'Washington, DC', distanceKm: 725 },
+  { from: 'Boston', to: 'Toronto', distanceKm: 880 },
   { from: 'Boston', to: 'Chicago', distanceKm: 1585 },
+  { from: 'Boston', to: 'Miami', distanceKm: 2413 },
 ];
 
 const WEEK_RANGE_FORMAT = { month: 'short', day: 'numeric' };
