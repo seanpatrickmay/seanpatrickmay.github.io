@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-20T13:38:48.175Z",
+  "generated_at": "2025-09-21T13:38:43.683Z",
   "artists": [
     {
       "name": "Zedd",
@@ -22,23 +22,23 @@
       "url": "https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we"
     },
     {
-      "name": "Adele",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
-      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
+      "name": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb9555a0b3231117c8cde1fca7",
+      "url": "https://open.spotify.com/artist/3GBPw9NK25X1Wt2OUvOwY3"
     }
   ],
   "tracks": [
-    {
-      "name": "Right As Rain",
-      "artist": "Adele",
-      "image": "https://i.scdn.co/image/ab67616d0000b27350637420ddb6ea76237bb7f4",
-      "url": "https://open.spotify.com/track/6OLudcGaT6HQ5bXH54kI8i"
-    },
     {
       "name": "Hourglass",
       "artist": "Zedd, LIZ",
       "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
       "url": "https://open.spotify.com/track/6NwrXtcFbc8OX7wJyBqE89"
+    },
+    {
+      "name": "Right As Rain",
+      "artist": "Adele",
+      "image": "https://i.scdn.co/image/ab67616d0000b27350637420ddb6ea76237bb7f4",
+      "url": "https://open.spotify.com/track/6OLudcGaT6HQ5bXH54kI8i"
     },
     {
       "name": "Movin' Out (Anthony's Song)",
@@ -65,6 +65,12 @@
       "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
     },
     {
+      "name": "Exit Music (For A Film)",
+      "artist": "Radiohead",
+      "image": "https://i.scdn.co/image/ab67616d0000b273c8b444df094279e70d0ed856",
+      "url": "https://open.spotify.com/track/0z1o5L7HJx562xZSATcIpY"
+    },
+    {
       "name": "Instant Crush (feat. Julian Casablancas)",
       "artist": "Daft Punk, Julian Casablancas",
       "image": "https://i.scdn.co/image/ab67616d0000b2739b9b36b0e22870b9f542d937",
@@ -75,12 +81,6 @@
       "artist": "Emma Stone, Callie Hernandez, Sonoya Mizuno, Jessica Rothe",
       "image": "https://i.scdn.co/image/ab67616d0000b2730bdf4dd39843ad48c5b66bc4",
       "url": "https://open.spotify.com/track/39ncDMVidHOeQgeC5anYZM"
-    },
-    {
-      "name": "Daydreamer",
-      "artist": "Adele",
-      "image": "https://i.scdn.co/image/ab67616d0000b27350637420ddb6ea76237bb7f4",
-      "url": "https://open.spotify.com/track/3FYqKyAKIB4mCygIFc1IYn"
     },
     {
       "name": "The Stranger",
