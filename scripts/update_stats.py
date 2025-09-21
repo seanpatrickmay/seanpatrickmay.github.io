@@ -39,9 +39,9 @@ WEEKLY_WINDOW = 8
 # Monthly window for totals (in days):
 MONTHLY_WINDOW_DAYS = 30
 # How many recent activities to include:
-RECENT_COUNT = 50
+RECENT_COUNT = 60
 # How many activities to fetch from Garmin (increase if you’re very active):
-FETCH_LIMIT = 100
+FETCH_LIMIT = 60
 
 
 # ---------------------------- Helpers ----------------------------------------

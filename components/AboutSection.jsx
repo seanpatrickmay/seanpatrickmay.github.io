@@ -144,11 +144,14 @@ function deriveTrainingInsights(allStats) {
   const calories = {};
   const cups = {};
   const routes = {};
+  const highlights = {};
 
   const activityKeys = ['combined', 'biking', 'running', 'swimming'];
   activityKeys.forEach(key => {
     const monthly = allStats[key]?.monthly;
     const calorieTotal = toNumber(monthly?.calories_kcal);
+    const activities = allStats[key].recent.last50;
+    highlights[key] = activities
     calories[key] = calorieTotal;
     cups[key] = calorieTotal > 0 ? calorieTotal / CALORIES_PER_CUP_OF_MILK : 0;
   });
@@ -163,6 +166,7 @@ function deriveTrainingInsights(allStats) {
     calories,
     cups,
     routes,
+    highlights,
   };
 }
 
@@ -258,6 +262,7 @@ export default function AboutSection({ interests }) {
   const selectedCalories = trainingInsights.calories?.[activity] ?? 0;
   const selectedCups = trainingInsights.cups?.[activity] ?? 0;
   const routeEquivalents = trainingInsights.routes ?? {};
+  const selectedHighlights = trainingInsights.highlights?.[activity] ?? [];
 
   const routeLabelMap = {
     combined: 'All activity',
@@ -271,15 +276,6 @@ export default function AboutSection({ interests }) {
     biking: 'biking',
     running: 'running',
   };
-
-  const recentActivitiesSource = data?.recent?.all ?? data?.recent?.last10 ?? data?.recent?.last3 ?? [];  
-
-  const topLongestActivities = useMemo(() => {
-    const hours = x => toNumber(x?.time_hours ?? x?.hours ?? x?.duration_hours);
-    return [...recentActivitiesSource]
-      .sort((a, b) => hours(b) - hours(a))  // desc by hours
-      .slice(0, 10);                        // up to 10, or fewer if not available
-  }, [recentActivitiesSource]);
 
   return (
     <Section id="about" title="About me" icon={Sparkles}>
@@ -375,7 +371,7 @@ export default function AboutSection({ interests }) {
                 </CardHeader>
                 <CardContent className="flex flex-1 flex-col gap-0 px-6 pb-6 pt-0">
                   <div className="flex-1 overflow-hidden">
-                    <RecentActivities activities={topLongestActivities} />
+                    <RecentActivities activities={selectedHighlights} />
                   </div>
                 </CardContent>
               </Card>
