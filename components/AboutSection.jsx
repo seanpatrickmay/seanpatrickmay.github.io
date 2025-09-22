@@ -150,7 +150,7 @@ function deriveTrainingInsights(allStats) {
   activityKeys.forEach(key => {
     const monthly = allStats[key]?.monthly;
     const calorieTotal = toNumber(monthly?.calories_kcal);
-    const activities = allStats[key].recent.last50;
+    const activities = allStats[key].recent.last60;
     highlights[key] = activities
     calories[key] = calorieTotal;
     cups[key] = calorieTotal > 0 ? calorieTotal / CALORIES_PER_CUP_OF_MILK : 0;
