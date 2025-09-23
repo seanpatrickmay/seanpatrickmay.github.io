@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-22T13:45:57.601Z",
+  "generated_at": "2025-09-23T13:45:50.033Z",
   "artists": [
     {
       "name": "Zedd",
@@ -28,12 +28,6 @@
     }
   ],
   "tracks": [
-    {
-      "name": "Hourglass",
-      "artist": "Zedd, LIZ",
-      "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
-      "url": "https://open.spotify.com/track/6NwrXtcFbc8OX7wJyBqE89"
-    },
     {
       "name": "Movin' Out (Anthony's Song)",
       "artist": "Billy Joel",
@@ -71,10 +65,16 @@
       "url": "https://open.spotify.com/track/2cGxRwrMyEAp8dEbuZaVv6"
     },
     {
-      "name": "A Rush and a Push and the Land Is Ours - 2011 Remaster",
-      "artist": "The Smiths",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736d965be72ad1bceb7f2bd089",
-      "url": "https://open.spotify.com/track/6Ps04Nfh2PySU4fIPZWxrU"
+      "name": "Hourglass",
+      "artist": "Zedd, LIZ",
+      "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
+      "url": "https://open.spotify.com/track/6NwrXtcFbc8OX7wJyBqE89"
+    },
+    {
+      "name": "Neon",
+      "artist": "John Mayer",
+      "image": "https://i.scdn.co/image/ab67616d0000b2738848d57cbfa7751e028f4dc9",
+      "url": "https://open.spotify.com/track/7Kohy4v3KLWfUXlv9N3feB"
     },
     {
       "name": "You Rock My World",
