@@ -1,10 +1,10 @@
 {
-  "generated_at": "2025-09-24T13:45:26.693Z",
+  "generated_at": "2025-09-25T13:26:45.055Z",
   "artists": [
     {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+      "name": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb9555a0b3231117c8cde1fca7",
+      "url": "https://open.spotify.com/artist/3GBPw9NK25X1Wt2OUvOwY3"
     },
     {
       "name": "IVE",
@@ -12,14 +12,14 @@
       "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
     },
     {
-      "name": "Jack Johnson",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb9555a0b3231117c8cde1fca7",
-      "url": "https://open.spotify.com/artist/3GBPw9NK25X1Wt2OUvOwY3"
-    },
-    {
       "name": "Daft Punk",
       "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+    },
+    {
+      "name": "Zedd",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
+      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
       "name": "Dua Lipa",
@@ -35,16 +35,16 @@
       "url": "https://open.spotify.com/track/16GUMo6u3D2qo9a19AkYct"
     },
     {
-      "name": "Right As Rain",
-      "artist": "Adele",
-      "image": "https://i.scdn.co/image/ab67616d0000b27350637420ddb6ea76237bb7f4",
-      "url": "https://open.spotify.com/track/6OLudcGaT6HQ5bXH54kI8i"
-    },
-    {
       "name": "Last Train to London",
       "artist": "Electric Light Orchestra",
       "image": "https://i.scdn.co/image/ab67616d0000b2736f5a9bf7c8093763dd2a4a82",
       "url": "https://open.spotify.com/track/6xE6ZWzK1YDDSYzqOCoQlz"
+    },
+    {
+      "name": "Right As Rain",
+      "artist": "Adele",
+      "image": "https://i.scdn.co/image/ab67616d0000b27350637420ddb6ea76237bb7f4",
+      "url": "https://open.spotify.com/track/6OLudcGaT6HQ5bXH54kI8i"
     },
     {
       "name": "Sweet",
@@ -65,28 +65,28 @@
       "url": "https://open.spotify.com/track/2cGxRwrMyEAp8dEbuZaVv6"
     },
     {
-      "name": "Hourglass",
-      "artist": "Zedd, LIZ",
-      "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
-      "url": "https://open.spotify.com/track/6NwrXtcFbc8OX7wJyBqE89"
-    },
-    {
       "name": "Neon",
       "artist": "John Mayer",
       "image": "https://i.scdn.co/image/ab67616d0000b2738848d57cbfa7751e028f4dc9",
       "url": "https://open.spotify.com/track/7Kohy4v3KLWfUXlv9N3feB"
     },
     {
-      "name": "Don't Let Me Down - Remastered 2009",
-      "artist": "The Beatles",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736e3d3c964df32136fb1cd594",
-      "url": "https://open.spotify.com/track/3evG0BIqEFMMP7lVJh1cSf"
+      "name": "Never Know",
+      "artist": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
+      "url": "https://open.spotify.com/track/2BnTUxzWAcv0qerzESIunY"
     },
     {
       "name": "A Rush and a Push and the Land Is Ours - 2011 Remaster",
       "artist": "The Smiths",
       "image": "https://i.scdn.co/image/ab67616d0000b2736d965be72ad1bceb7f2bd089",
       "url": "https://open.spotify.com/track/6Ps04Nfh2PySU4fIPZWxrU"
+    },
+    {
+      "name": "You Rock My World",
+      "artist": "Michael Jackson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273ed1c305cd1e673fe925407ce",
+      "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
     }
   ]
 }
