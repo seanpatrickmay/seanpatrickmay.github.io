@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-24T13:46:21.276884Z",
+  "generated_at": "2025-09-25T13:27:39.977902Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -10,13 +10,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 37,
-        "distance_km": 823.83,
-        "time_hours": 35.43,
+        "distance_km": 800.72,
+        "time_hours": 34.38,
         "longest_km": 103.12,
-        "calories_kcal": 25476.0
+        "calories_kcal": 24516.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20492270508,
+            "name": "recovery",
+            "type": "virtual_ride",
+            "start": "2025-09-24 21:06:38",
+            "distance_km": 27.95,
+            "duration_min": 60.1,
+            "avg_speed_kmh": 27.9,
+            "calories_kcal": 564.0
+          },
           {
             "id": 20482318536,
             "name": "steady",
@@ -606,16 +616,6 @@
             "duration_min": 50.7,
             "avg_speed_kmh": 11.51,
             "calories_kcal": 754.0
-          },
-          {
-            "id": 19987026867,
-            "name": "Howard County Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-07 20:22:51",
-            "distance_km": 17.47,
-            "duration_min": 35.4,
-            "avg_speed_kmh": 29.61,
-            "calories_kcal": 572.0
           }
         ]
       },
@@ -625,8 +625,8 @@
           {
             "week_start": "2025-08-04",
             "week_end": "2025-08-10",
-            "distance_km": 54.89,
-            "time_hours": 7.65
+            "distance_km": 37.42,
+            "time_hours": 7.06
           },
           {
             "week_start": "2025-08-11",
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-09-22",
             "week_end": "2025-09-28",
-            "distance_km": 128.39,
-            "time_hours": 4.34
+            "distance_km": 156.34,
+            "time_hours": 5.34
           }
         ]
       }
@@ -677,13 +677,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 34,
-        "distance_km": 804.54,
-        "time_hours": 32.98,
+        "distance_km": 781.44,
+        "time_hours": 31.94,
         "longest_km": 103.12,
-        "calories_kcal": 23575.0
+        "calories_kcal": 22615.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20492270508,
+            "name": "recovery",
+            "type": "virtual_ride",
+            "start": "2025-09-24 21:06:38",
+            "distance_km": 27.95,
+            "duration_min": 60.1,
+            "avg_speed_kmh": 27.9,
+            "calories_kcal": 564.0
+          },
           {
             "id": 20482318536,
             "name": "steady",
@@ -1103,16 +1113,6 @@
             "duration_min": 39.3,
             "avg_speed_kmh": 27.99,
             "calories_kcal": 647.0
-          },
-          {
-            "id": 19987026867,
-            "name": "Howard County Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-07 20:22:51",
-            "distance_km": 17.47,
-            "duration_min": 35.4,
-            "avg_speed_kmh": 29.61,
-            "calories_kcal": 572.0
           }
         ]
       },
@@ -1122,8 +1122,8 @@
           {
             "week_start": "2025-08-04",
             "week_end": "2025-08-10",
-            "distance_km": 17.47,
-            "time_hours": 0.59
+            "distance_km": 0.0,
+            "time_hours": 0.0
           },
           {
             "week_start": "2025-08-11",
@@ -1164,8 +1164,8 @@
           {
             "week_start": "2025-09-22",
             "week_end": "2025-09-28",
-            "distance_km": 128.39,
-            "time_hours": 4.34
+            "distance_km": 156.34,
+            "time_hours": 5.34
           }
         ]
       }
