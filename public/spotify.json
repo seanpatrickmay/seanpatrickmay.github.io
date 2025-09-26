@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-25T13:26:45.055Z",
+  "generated_at": "2025-09-26T13:25:17.132Z",
   "artists": [
     {
       "name": "Jack Johnson",
@@ -17,14 +17,14 @@
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
-    {
       "name": "Dua Lipa",
       "image": "https://i.scdn.co/image/ab6761610000e5eb0c68f6c95232e716f0abee8d",
       "url": "https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we"
+    },
+    {
+      "name": "Zedd",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
+      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     }
   ],
   "tracks": [
@@ -77,16 +77,16 @@
       "url": "https://open.spotify.com/track/2BnTUxzWAcv0qerzESIunY"
     },
     {
-      "name": "A Rush and a Push and the Land Is Ours - 2011 Remaster",
-      "artist": "The Smiths",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736d965be72ad1bceb7f2bd089",
-      "url": "https://open.spotify.com/track/6Ps04Nfh2PySU4fIPZWxrU"
-    },
-    {
       "name": "You Rock My World",
       "artist": "Michael Jackson",
       "image": "https://i.scdn.co/image/ab67616d0000b273ed1c305cd1e673fe925407ce",
       "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
+    },
+    {
+      "name": "Don't Let Me Down - Remastered 2009",
+      "artist": "The Beatles",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736e3d3c964df32136fb1cd594",
+      "url": "https://open.spotify.com/track/3evG0BIqEFMMP7lVJh1cSf"
     }
   ]
 }
