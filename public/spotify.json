@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-26T13:25:17.132Z",
+  "generated_at": "2025-09-27T13:18:52.196Z",
   "artists": [
     {
       "name": "Jack Johnson",
@@ -12,14 +12,14 @@
       "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
     },
     {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
-    },
-    {
       "name": "Dua Lipa",
       "image": "https://i.scdn.co/image/ab6761610000e5eb0c68f6c95232e716f0abee8d",
       "url": "https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we"
+    },
+    {
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
       "name": "Zedd",
@@ -29,28 +29,10 @@
   ],
   "tracks": [
     {
-      "name": "Movin' Out (Anthony's Song)",
-      "artist": "Billy Joel",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736ce61113662ecf693b605ee5",
-      "url": "https://open.spotify.com/track/16GUMo6u3D2qo9a19AkYct"
-    },
-    {
-      "name": "Last Train to London",
-      "artist": "Electric Light Orchestra",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736f5a9bf7c8093763dd2a4a82",
-      "url": "https://open.spotify.com/track/6xE6ZWzK1YDDSYzqOCoQlz"
-    },
-    {
-      "name": "Right As Rain",
-      "artist": "Adele",
-      "image": "https://i.scdn.co/image/ab67616d0000b27350637420ddb6ea76237bb7f4",
-      "url": "https://open.spotify.com/track/6OLudcGaT6HQ5bXH54kI8i"
-    },
-    {
-      "name": "Sweet",
-      "artist": "Cigarettes After Sex",
-      "image": "https://i.scdn.co/image/ab67616d0000b273dfed999f959177dfc4f33cdc",
-      "url": "https://open.spotify.com/track/2KhrPRV0V1FS2l4eQMJUWt"
+      "name": "Never Know",
+      "artist": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
+      "url": "https://open.spotify.com/track/2BnTUxzWAcv0qerzESIunY"
     },
     {
       "name": "Exit Music (For A Film)",
@@ -59,34 +41,52 @@
       "url": "https://open.spotify.com/track/0z1o5L7HJx562xZSATcIpY"
     },
     {
-      "name": "Instant Crush (feat. Julian Casablancas)",
-      "artist": "Daft Punk, Julian Casablancas",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739b9b36b0e22870b9f542d937",
-      "url": "https://open.spotify.com/track/2cGxRwrMyEAp8dEbuZaVv6"
+      "name": "Lips",
+      "artist": "IVE",
+      "image": "https://i.scdn.co/image/ab67616d0000b27325ef3cec1eceefd4db2f91c8",
+      "url": "https://open.spotify.com/track/0dRSOmb7pqkkmjXCu5BYbe"
     },
     {
-      "name": "Neon",
-      "artist": "John Mayer",
-      "image": "https://i.scdn.co/image/ab67616d0000b2738848d57cbfa7751e028f4dc9",
-      "url": "https://open.spotify.com/track/7Kohy4v3KLWfUXlv9N3feB"
+      "name": "After LIKE",
+      "artist": "IVE",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387f53da5fb4ab1171766b2d5",
+      "url": "https://open.spotify.com/track/2gYj9lubBorOPIVWsTXugG"
     },
     {
-      "name": "Never Know",
-      "artist": "Jack Johnson",
-      "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
-      "url": "https://open.spotify.com/track/2BnTUxzWAcv0qerzESIunY"
+      "name": "Cherish",
+      "artist": "IVE",
+      "image": "https://i.scdn.co/image/ab67616d0000b27325ef3cec1eceefd4db2f91c8",
+      "url": "https://open.spotify.com/track/3cw6T3OEgqLiqEDLDQPSnE"
     },
     {
-      "name": "You Rock My World",
-      "artist": "Michael Jackson",
-      "image": "https://i.scdn.co/image/ab67616d0000b273ed1c305cd1e673fe925407ce",
-      "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
+      "name": "Payback",
+      "artist": "IVE",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736ec565375fe79d6328a3c6d7",
+      "url": "https://open.spotify.com/track/74l5BPqT3RbvADZg63Xz2g"
     },
     {
-      "name": "Don't Let Me Down - Remastered 2009",
-      "artist": "The Beatles",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736e3d3c964df32136fb1cd594",
-      "url": "https://open.spotify.com/track/3evG0BIqEFMMP7lVJh1cSf"
+      "name": "ROYAL",
+      "artist": "IVE",
+      "image": "https://i.scdn.co/image/ab67616d0000b2739016f58cc49e6473e1207093",
+      "url": "https://open.spotify.com/track/0LMdtBOxbVgrYoA4n0Vwvv"
+    },
+    {
+      "name": "LOVE DIVE",
+      "artist": "IVE",
+      "image": "https://i.scdn.co/image/ab67616d0000b2739016f58cc49e6473e1207093",
+      "url": "https://open.spotify.com/track/0Q5VnK2DYzRyfqQRJuUtvi"
+    },
+    {
+      "name": "I WANT",
+      "artist": "IVE",
+      "image": "https://i.scdn.co/image/ab67616d0000b2738c475998f5005d0a339b1f0d",
+      "url": "https://open.spotify.com/track/1Xnha5ko8j7yY8O3ATe0Vs"
+    },
+    {
+      "name": "섬찟 (Hypnosis)",
+      "artist": "IVE",
+      "image": "https://i.scdn.co/image/ab67616d0000b27325ef3cec1eceefd4db2f91c8",
+      "url": "https://open.spotify.com/track/1tzeAVyGwvoHcVzDit0UeT"
     }
   ]
 }
