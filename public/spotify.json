@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-28T13:19:27.803Z",
+  "generated_at": "2025-09-29T13:26:34.401Z",
   "artists": [
     {
       "name": "Jack Johnson",
@@ -12,14 +12,14 @@
       "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
     },
     {
-      "name": "Dua Lipa",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb0c68f6c95232e716f0abee8d",
-      "url": "https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we"
-    },
-    {
       "name": "Daft Punk",
       "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+    },
+    {
+      "name": "Adele",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
+      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     },
     {
       "name": "Zedd",
