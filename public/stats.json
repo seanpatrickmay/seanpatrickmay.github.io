@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-29T13:27:48.385475Z",
+  "generated_at": "2025-09-30T13:27:40.502718Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 41,
-        "distance_km": 837.44,
-        "time_hours": 36.79,
+        "activities_count": 42,
+        "distance_km": 894.28,
+        "time_hours": 38.81,
         "longest_km": 103.12,
-        "calories_kcal": 26352.0
+        "calories_kcal": 27402.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20541630124,
+            "name": "RECOVERY",
+            "type": "virtual_ride",
+            "start": "2025-09-29 18:56:33",
+            "distance_km": 56.84,
+            "duration_min": 121.0,
+            "avg_speed_kmh": 28.17,
+            "calories_kcal": 1050.0
+          },
           {
             "id": 20531494519,
             "name": "Boston Cyclisme",
@@ -606,16 +616,6 @@
             "duration_min": 6.4,
             "avg_speed_kmh": 13.59,
             "calories_kcal": 109.0
-          },
-          {
-            "id": 20015631354,
-            "name": "Shenandoah County Natation en eau libre",
-            "type": "open_water_swimming",
-            "start": "2025-08-10 11:59:26",
-            "distance_km": 0.32,
-            "duration_min": 7.4,
-            "avg_speed_kmh": 2.63,
-            "calories_kcal": 77.0
           }
         ]
       },
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-09-29",
             "week_end": "2025-10-05",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 56.84,
+            "time_hours": 2.02
           }
         ]
       }
@@ -676,14 +676,24 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 37,
-        "distance_km": 808.42,
-        "time_hours": 33.43,
+        "activities_count": 38,
+        "distance_km": 865.26,
+        "time_hours": 35.44,
         "longest_km": 103.12,
-        "calories_kcal": 23612.0
+        "calories_kcal": 24662.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20541630124,
+            "name": "RECOVERY",
+            "type": "virtual_ride",
+            "start": "2025-09-29 18:56:33",
+            "distance_km": 56.84,
+            "duration_min": 121.0,
+            "avg_speed_kmh": 28.17,
+            "calories_kcal": 1050.0
+          },
           {
             "id": 20531494519,
             "name": "Boston Cyclisme",
@@ -1194,8 +1204,8 @@
           {
             "week_start": "2025-09-29",
             "week_end": "2025-10-05",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 56.84,
+            "time_hours": 2.02
           }
         ]
       }
@@ -1377,18 +1387,7 @@
         "calories_kcal": 0
       },
       "recent": {
-        "last60": [
-          {
-            "id": 20015631354,
-            "name": "Shenandoah County Natation en eau libre",
-            "type": "open_water_swimming",
-            "start": "2025-08-10 11:59:26",
-            "distance_km": 0.32,
-            "duration_min": 7.4,
-            "avg_speed_kmh": 2.63,
-            "calories_kcal": 77.0
-          }
-        ]
+        "last60": []
       },
       "weekly": {
         "window_weeks": 8,
