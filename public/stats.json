@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-03T13:24:07.451322Z",
+  "generated_at": "2025-10-05T13:19:44.976958Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,44 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 40,
-        "distance_km": 932.52,
-        "time_hours": 36.99,
+        "activities_count": 38,
+        "distance_km": 963.64,
+        "time_hours": 36.29,
         "longest_km": 103.12,
-        "calories_kcal": 26609.0
+        "calories_kcal": 26234.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20591368754,
+            "name": "Boston - 10x3m",
+            "type": "running",
+            "start": "2025-10-04 19:50:28",
+            "distance_km": 11.19,
+            "duration_min": 53.3,
+            "avg_speed_kmh": 12.6,
+            "calories_kcal": 939.0
+          },
+          {
+            "id": 20590460456,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-04 16:54:20",
+            "distance_km": 2.12,
+            "duration_min": 7.7,
+            "avg_speed_kmh": 16.63,
+            "calories_kcal": 95.0
+          },
+          {
+            "id": 20582774119,
+            "name": "easy",
+            "type": "virtual_ride",
+            "start": "2025-10-04 00:31:33",
+            "distance_km": 30.07,
+            "duration_min": 60.4,
+            "avg_speed_kmh": 29.87,
+            "calories_kcal": 600.0
+          },
           {
             "id": 20576616353,
             "name": "recovery :D",
@@ -586,36 +616,6 @@
             "duration_min": 46.6,
             "avg_speed_kmh": 10.27,
             "calories_kcal": 682.0
-          },
-          {
-            "id": 20038892579,
-            "name": "Howard County Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-12 15:21:19",
-            "distance_km": 50.48,
-            "duration_min": 104.1,
-            "avg_speed_kmh": 29.11,
-            "calories_kcal": 1679.0
-          },
-          {
-            "id": 20027907087,
-            "name": "Howard County Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-11 17:37:30",
-            "distance_km": 18.34,
-            "duration_min": 39.3,
-            "avg_speed_kmh": 27.99,
-            "calories_kcal": 647.0
-          },
-          {
-            "id": 20018263562,
-            "name": "Howard County Course à pied",
-            "type": "running",
-            "start": "2025-08-10 20:50:43",
-            "distance_km": 1.88,
-            "duration_min": 11.4,
-            "avg_speed_kmh": 9.89,
-            "calories_kcal": 168.0
           }
         ]
       },
@@ -625,8 +625,8 @@
           {
             "week_start": "2025-08-11",
             "week_end": "2025-08-17",
-            "distance_km": 162.97,
-            "time_hours": 7.15
+            "distance_km": 94.15,
+            "time_hours": 4.76
           },
           {
             "week_start": "2025-08-18",
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-09-29",
             "week_end": "2025-10-05",
-            "distance_km": 95.08,
-            "time_hours": 4.22
+            "distance_km": 138.46,
+            "time_hours": 6.25
           }
         ]
       }
@@ -676,14 +676,34 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 35,
-        "distance_km": 887.46,
-        "time_hours": 32.14,
+        "activities_count": 33,
+        "distance_km": 919.65,
+        "time_hours": 31.64,
         "longest_km": 103.12,
-        "calories_kcal": 22563.0
+        "calories_kcal": 22237.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20590460456,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-04 16:54:20",
+            "distance_km": 2.12,
+            "duration_min": 7.7,
+            "avg_speed_kmh": 16.63,
+            "calories_kcal": 95.0
+          },
+          {
+            "id": 20582774119,
+            "name": "easy",
+            "type": "virtual_ride",
+            "start": "2025-10-04 00:31:33",
+            "distance_km": 30.07,
+            "duration_min": 60.4,
+            "avg_speed_kmh": 29.87,
+            "calories_kcal": 600.0
+          },
           {
             "id": 20576616353,
             "name": "recovery :D",
@@ -1143,26 +1163,6 @@
             "duration_min": 69.3,
             "avg_speed_kmh": 27.96,
             "calories_kcal": 986.0
-          },
-          {
-            "id": 20038892579,
-            "name": "Howard County Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-12 15:21:19",
-            "distance_km": 50.48,
-            "duration_min": 104.1,
-            "avg_speed_kmh": 29.11,
-            "calories_kcal": 1679.0
-          },
-          {
-            "id": 20027907087,
-            "name": "Howard County Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-11 17:37:30",
-            "distance_km": 18.34,
-            "duration_min": 39.3,
-            "avg_speed_kmh": 27.99,
-            "calories_kcal": 647.0
           }
         ]
       },
@@ -1172,8 +1172,8 @@
           {
             "week_start": "2025-08-11",
             "week_end": "2025-08-17",
-            "distance_km": 101.12,
-            "time_hours": 3.54
+            "distance_km": 32.3,
+            "time_hours": 1.15
           },
           {
             "week_start": "2025-08-18",
@@ -1214,8 +1214,8 @@
           {
             "week_start": "2025-09-29",
             "week_end": "2025-10-05",
-            "distance_km": 79.03,
-            "time_hours": 2.74
+            "distance_km": 111.23,
+            "time_hours": 3.88
           }
         ]
       }
@@ -1224,13 +1224,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 4,
-        "distance_km": 45.06,
-        "time_hours": 4.1,
+        "distance_km": 43.99,
+        "time_hours": 3.9,
         "longest_km": 16.04,
-        "calories_kcal": 3764.0
+        "calories_kcal": 3715.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20591368754,
+            "name": "Boston - 10x3m",
+            "type": "running",
+            "start": "2025-10-04 19:50:28",
+            "distance_km": 11.19,
+            "duration_min": 53.3,
+            "avg_speed_kmh": 12.6,
+            "calories_kcal": 939.0
+          },
           {
             "id": 20563932724,
             "name": "Boston Course à pied",
@@ -1310,16 +1320,6 @@
             "duration_min": 46.6,
             "avg_speed_kmh": 10.27,
             "calories_kcal": 682.0
-          },
-          {
-            "id": 20018263562,
-            "name": "Howard County Course à pied",
-            "type": "running",
-            "start": "2025-08-10 20:50:43",
-            "distance_km": 1.88,
-            "duration_min": 11.4,
-            "avg_speed_kmh": 9.89,
-            "calories_kcal": 168.0
           }
         ]
       },
@@ -1371,8 +1371,8 @@
           {
             "week_start": "2025-09-29",
             "week_end": "2025-10-05",
-            "distance_km": 16.04,
-            "time_hours": 1.48
+            "distance_km": 27.23,
+            "time_hours": 2.37
           }
         ]
       }
