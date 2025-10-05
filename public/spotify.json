@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-04T13:18:48.407Z",
+  "generated_at": "2025-10-05T13:18:58.902Z",
   "artists": [
     {
       "name": "Jack Johnson",
@@ -22,9 +22,9 @@
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     },
     {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+      "name": "Radiohead",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb4104fbd80f1f795728abbd59",
+      "url": "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb"
     }
   ],
   "tracks": [
@@ -65,18 +65,6 @@
       "url": "https://open.spotify.com/track/74l5BPqT3RbvADZg63Xz2g"
     },
     {
-      "name": "Infinity Repeating (2013 Demo) [feat. Julian Casablancas+The Voidz]",
-      "artist": "Daft Punk, Julian Casablancas, The Voidz",
-      "image": "https://i.scdn.co/image/ab67616d0000b2733c196ec7c5344d654ff552e9",
-      "url": "https://open.spotify.com/track/4r4fX4NZIqVIhGyDvERp0l"
-    },
-    {
-      "name": "Exit Music (For A Film)",
-      "artist": "Radiohead",
-      "image": "https://i.scdn.co/image/ab67616d0000b273c8b444df094279e70d0ed856",
-      "url": "https://open.spotify.com/track/0z1o5L7HJx562xZSATcIpY"
-    },
-    {
       "name": "ROYAL",
       "artist": "IVE",
       "image": "https://i.scdn.co/image/ab67616d0000b2739016f58cc49e6473e1207093",
@@ -87,6 +75,18 @@
       "artist": "IVE",
       "image": "https://i.scdn.co/image/ab67616d0000b2739016f58cc49e6473e1207093",
       "url": "https://open.spotify.com/track/0Q5VnK2DYzRyfqQRJuUtvi"
+    },
+    {
+      "name": "I WANT",
+      "artist": "IVE",
+      "image": "https://i.scdn.co/image/ab67616d0000b2738c475998f5005d0a339b1f0d",
+      "url": "https://open.spotify.com/track/1Xnha5ko8j7yY8O3ATe0Vs"
+    },
+    {
+      "name": "섬찟 (Hypnosis)",
+      "artist": "IVE",
+      "image": "https://i.scdn.co/image/ab67616d0000b27325ef3cec1eceefd4db2f91c8",
+      "url": "https://open.spotify.com/track/1tzeAVyGwvoHcVzDit0UeT"
     }
   ]
 }
