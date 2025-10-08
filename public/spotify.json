@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-07T13:27:04.721Z",
+  "generated_at": "2025-10-08T13:27:08.067Z",
   "artists": [
     {
       "name": "Jack Johnson",
@@ -12,19 +12,19 @@
       "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
     },
     {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
-    {
       "name": "Adele",
       "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     },
     {
-      "name": "Radiohead",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb4104fbd80f1f795728abbd59",
-      "url": "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb"
+      "name": "Zedd",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
+      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+    },
+    {
+      "name": "Tame Impala",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe412a782245eb20d9626c601",
+      "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
     }
   ],
   "tracks": [
@@ -35,46 +35,28 @@
       "url": "https://open.spotify.com/track/2BnTUxzWAcv0qerzESIunY"
     },
     {
-      "name": "Lips",
-      "artist": "IVE",
-      "image": "https://i.scdn.co/image/ab67616d0000b27325ef3cec1eceefd4db2f91c8",
-      "url": "https://open.spotify.com/track/0dRSOmb7pqkkmjXCu5BYbe"
-    },
-    {
       "name": "The Great Gig in the Sky",
       "artist": "Pink Floyd",
       "image": "https://i.scdn.co/image/ab67616d0000b27317cb878012a0c769091e8045",
       "url": "https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d"
     },
     {
-      "name": "After LIKE",
-      "artist": "IVE",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387f53da5fb4ab1171766b2d5",
-      "url": "https://open.spotify.com/track/2gYj9lubBorOPIVWsTXugG"
+      "name": "Banana Pancakes",
+      "artist": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
+      "url": "https://open.spotify.com/track/0BgbobvykXxEvxo2HhCuvM"
     },
     {
-      "name": "Cherish",
-      "artist": "IVE",
-      "image": "https://i.scdn.co/image/ab67616d0000b27325ef3cec1eceefd4db2f91c8",
-      "url": "https://open.spotify.com/track/3cw6T3OEgqLiqEDLDQPSnE"
+      "name": "Exit Music (For A Film)",
+      "artist": "Radiohead",
+      "image": "https://i.scdn.co/image/ab67616d0000b273c8b444df094279e70d0ed856",
+      "url": "https://open.spotify.com/track/0z1o5L7HJx562xZSATcIpY"
     },
     {
-      "name": "Payback",
-      "artist": "IVE",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736ec565375fe79d6328a3c6d7",
-      "url": "https://open.spotify.com/track/74l5BPqT3RbvADZg63Xz2g"
-    },
-    {
-      "name": "ROYAL",
-      "artist": "IVE",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739016f58cc49e6473e1207093",
-      "url": "https://open.spotify.com/track/0LMdtBOxbVgrYoA4n0Vwvv"
-    },
-    {
-      "name": "LOVE DIVE",
-      "artist": "IVE",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739016f58cc49e6473e1207093",
-      "url": "https://open.spotify.com/track/0Q5VnK2DYzRyfqQRJuUtvi"
+      "name": "Infinity Repeating (2013 Demo) [feat. Julian Casablancas+The Voidz]",
+      "artist": "Daft Punk, Julian Casablancas, The Voidz",
+      "image": "https://i.scdn.co/image/ab67616d0000b2733c196ec7c5344d654ff552e9",
+      "url": "https://open.spotify.com/track/4r4fX4NZIqVIhGyDvERp0l"
     },
     {
       "name": "I WANT",
@@ -83,10 +65,28 @@
       "url": "https://open.spotify.com/track/1Xnha5ko8j7yY8O3ATe0Vs"
     },
     {
-      "name": "섬찟 (Hypnosis)",
+      "name": "WAVE",
       "artist": "IVE",
-      "image": "https://i.scdn.co/image/ab67616d0000b27325ef3cec1eceefd4db2f91c8",
-      "url": "https://open.spotify.com/track/1tzeAVyGwvoHcVzDit0UeT"
+      "image": "https://i.scdn.co/image/ab67616d0000b2739254f2d47aa762c033f2682e",
+      "url": "https://open.spotify.com/track/2FNgoGLkE4AAOtYkQfiVL4"
+    },
+    {
+      "name": "Either Way",
+      "artist": "IVE",
+      "image": "https://i.scdn.co/image/ab67616d0000b2732be8b9dc6d86c18e8a322427",
+      "url": "https://open.spotify.com/track/3jxFmvoG55Cwv0JJBzRPce"
+    },
+    {
+      "name": "Good People",
+      "artist": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
+      "url": "https://open.spotify.com/track/1A4WjuUXeFEVXjwgc7eVZ6"
+    },
+    {
+      "name": "My Same",
+      "artist": "Adele",
+      "image": "https://i.scdn.co/image/ab67616d0000b27389d0ff2366a208016b6e9c6e",
+      "url": "https://open.spotify.com/track/6McbSHjAKqf0fjsLDRzgr5"
     }
   ]
 }
