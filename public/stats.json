@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-07T13:27:49.246986Z",
+  "generated_at": "2025-10-08T13:28:02.268079Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,34 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 35,
-        "distance_km": 923.09,
-        "time_hours": 34.23,
+        "activities_count": 34,
+        "distance_km": 887.23,
+        "time_hours": 33.25,
         "longest_km": 103.12,
-        "calories_kcal": 25052.0
+        "calories_kcal": 24324.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20621450523,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-07 19:28:52",
+            "distance_km": 2.76,
+            "duration_min": 9.0,
+            "avg_speed_kmh": 18.47,
+            "calories_kcal": 128.0
+          },
+          {
+            "id": 20621078590,
+            "name": "steady",
+            "type": "virtual_ride",
+            "start": "2025-10-07 17:39:52",
+            "distance_km": 34.0,
+            "duration_min": 61.6,
+            "avg_speed_kmh": 33.1,
+            "calories_kcal": 775.0
+          },
           {
             "id": 20610980113,
             "name": "steady",
@@ -596,26 +616,6 @@
             "duration_min": 97.0,
             "avg_speed_kmh": 23.31,
             "calories_kcal": 1166.0
-          },
-          {
-            "id": 20092579382,
-            "name": "Nags Head Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-17 17:46:13",
-            "distance_km": 32.3,
-            "duration_min": 69.3,
-            "avg_speed_kmh": 27.96,
-            "calories_kcal": 986.0
-          },
-          {
-            "id": 20079566395,
-            "name": "Page County Multisport",
-            "type": "multi_sport",
-            "start": "2025-08-16 08:03:04",
-            "distance_km": 53.88,
-            "duration_min": 169.9,
-            "avg_speed_kmh": 19.03,
-            "calories_kcal": 2550.0
           }
         ]
       },
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-10-06",
             "week_end": "2025-10-12",
-            "distance_km": 46.3,
-            "time_hours": 1.53
+            "distance_km": 83.06,
+            "time_hours": 2.7
           }
         ]
       }
@@ -676,14 +676,34 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 31,
-        "distance_km": 879.1,
-        "time_hours": 30.33,
+        "activities_count": 30,
+        "distance_km": 843.24,
+        "time_hours": 29.35,
         "longest_km": 103.12,
-        "calories_kcal": 21337.0
+        "calories_kcal": 20609.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20621450523,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-07 19:28:52",
+            "distance_km": 2.76,
+            "duration_min": 9.0,
+            "avg_speed_kmh": 18.47,
+            "calories_kcal": 128.0
+          },
+          {
+            "id": 20621078590,
+            "name": "steady",
+            "type": "virtual_ride",
+            "start": "2025-10-07 17:39:52",
+            "distance_km": 34.0,
+            "duration_min": 61.6,
+            "avg_speed_kmh": 33.1,
+            "calories_kcal": 775.0
+          },
           {
             "id": 20610980113,
             "name": "steady",
@@ -1163,16 +1183,6 @@
             "duration_min": 97.0,
             "avg_speed_kmh": 23.31,
             "calories_kcal": 1166.0
-          },
-          {
-            "id": 20092579382,
-            "name": "Nags Head Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-17 17:46:13",
-            "distance_km": 32.3,
-            "duration_min": 69.3,
-            "avg_speed_kmh": 27.96,
-            "calories_kcal": 986.0
           }
         ]
       },
@@ -1224,8 +1234,8 @@
           {
             "week_start": "2025-10-06",
             "week_end": "2025-10-12",
-            "distance_km": 46.3,
-            "time_hours": 1.53
+            "distance_km": 83.06,
+            "time_hours": 2.7
           }
         ]
       }
