@@ -1,15 +1,10 @@
 {
-  "generated_at": "2025-10-08T13:27:08.067Z",
+  "generated_at": "2025-10-09T13:27:59.757Z",
   "artists": [
     {
       "name": "Jack Johnson",
       "image": "https://i.scdn.co/image/ab6761610000e5eb9555a0b3231117c8cde1fca7",
       "url": "https://open.spotify.com/artist/3GBPw9NK25X1Wt2OUvOwY3"
-    },
-    {
-      "name": "IVE",
-      "image": "https://i.scdn.co/image/ab6761610000e5eba9c8608865ca7eded5520359",
-      "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
     },
     {
       "name": "Adele",
@@ -25,6 +20,11 @@
       "name": "Tame Impala",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe412a782245eb20d9626c601",
       "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
+    },
+    {
+      "name": "Radiohead",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb4104fbd80f1f795728abbd59",
+      "url": "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb"
     }
   ],
   "tracks": [
@@ -59,24 +59,6 @@
       "url": "https://open.spotify.com/track/4r4fX4NZIqVIhGyDvERp0l"
     },
     {
-      "name": "I WANT",
-      "artist": "IVE",
-      "image": "https://i.scdn.co/image/ab67616d0000b2738c475998f5005d0a339b1f0d",
-      "url": "https://open.spotify.com/track/1Xnha5ko8j7yY8O3ATe0Vs"
-    },
-    {
-      "name": "WAVE",
-      "artist": "IVE",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739254f2d47aa762c033f2682e",
-      "url": "https://open.spotify.com/track/2FNgoGLkE4AAOtYkQfiVL4"
-    },
-    {
-      "name": "Either Way",
-      "artist": "IVE",
-      "image": "https://i.scdn.co/image/ab67616d0000b2732be8b9dc6d86c18e8a322427",
-      "url": "https://open.spotify.com/track/3jxFmvoG55Cwv0JJBzRPce"
-    },
-    {
       "name": "Good People",
       "artist": "Jack Johnson",
       "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
@@ -87,6 +69,24 @@
       "artist": "Adele",
       "image": "https://i.scdn.co/image/ab67616d0000b27389d0ff2366a208016b6e9c6e",
       "url": "https://open.spotify.com/track/6McbSHjAKqf0fjsLDRzgr5"
+    },
+    {
+      "name": "Upside Down",
+      "artist": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab67616d0000b2731e0232d637e8313d3ef4923e",
+      "url": "https://open.spotify.com/track/6shRGWCtBUOPFLFTTqXZIC"
+    },
+    {
+      "name": "Hourglass",
+      "artist": "Zedd, LIZ",
+      "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
+      "url": "https://open.spotify.com/track/6NwrXtcFbc8OX7wJyBqE89"
+    },
+    {
+      "name": "Balloon",
+      "artist": "ZICO",
+      "image": "https://i.scdn.co/image/ab67616d0000b2733f4d25299e90f04e44791b7f",
+      "url": "https://open.spotify.com/track/1nFjZcb68bXrNVStialSdC"
     }
   ]
 }
