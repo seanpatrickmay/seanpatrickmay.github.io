@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-09T13:28:26.492424Z",
+  "generated_at": "2025-10-10T13:26:30.733129Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 35,
-        "distance_km": 885.49,
-        "time_hours": 33.17,
+        "activities_count": 34,
+        "distance_km": 890.68,
+        "time_hours": 33.34,
         "longest_km": 103.12,
-        "calories_kcal": 24543.0
+        "calories_kcal": 24438.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20642351038,
+            "name": "recovery",
+            "type": "virtual_ride",
+            "start": "2025-10-09 20:05:19",
+            "distance_km": 44.12,
+            "duration_min": 90.6,
+            "avg_speed_kmh": 29.22,
+            "calories_kcal": 898.0
+          },
           {
             "id": 20632086705,
             "name": "Boston - 10x3m",
@@ -606,16 +616,6 @@
             "duration_min": 1.9,
             "avg_speed_kmh": 13.82,
             "calories_kcal": 25.0
-          },
-          {
-            "id": 20123362747,
-            "name": "Nags Head Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-20 11:58:01",
-            "distance_km": 33.19,
-            "duration_min": 69.2,
-            "avg_speed_kmh": 28.77,
-            "calories_kcal": 963.0
           }
         ]
       },
@@ -625,8 +625,8 @@
           {
             "week_start": "2025-08-18",
             "week_end": "2025-08-24",
-            "distance_km": 199.48,
-            "time_hours": 8.87
+            "distance_km": 166.29,
+            "time_hours": 7.71
           },
           {
             "week_start": "2025-08-25",
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-10-06",
             "week_end": "2025-10-12",
-            "distance_km": 113.21,
-            "time_hours": 4.25
+            "distance_km": 157.33,
+            "time_hours": 5.76
           }
         ]
       }
@@ -676,14 +676,24 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 30,
-        "distance_km": 828.79,
-        "time_hours": 28.23,
+        "activities_count": 29,
+        "distance_km": 833.98,
+        "time_hours": 28.4,
         "longest_km": 103.12,
-        "calories_kcal": 19773.0
+        "calories_kcal": 19668.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20642351038,
+            "name": "recovery",
+            "type": "virtual_ride",
+            "start": "2025-10-09 20:05:19",
+            "distance_km": 44.12,
+            "duration_min": 90.6,
+            "avg_speed_kmh": 29.22,
+            "calories_kcal": 898.0
+          },
           {
             "id": 20631556735,
             "name": "warmup",
@@ -1173,16 +1183,6 @@
             "duration_min": 211.8,
             "avg_speed_kmh": 28.4,
             "calories_kcal": 2699.0
-          },
-          {
-            "id": 20123362747,
-            "name": "Nags Head Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-20 11:58:01",
-            "distance_km": 33.19,
-            "duration_min": 69.2,
-            "avg_speed_kmh": 28.77,
-            "calories_kcal": 963.0
           }
         ]
       },
@@ -1192,8 +1192,8 @@
           {
             "week_start": "2025-08-18",
             "week_end": "2025-08-24",
-            "distance_km": 186.06,
-            "time_hours": 7.58
+            "distance_km": 152.87,
+            "time_hours": 6.42
           },
           {
             "week_start": "2025-08-25",
@@ -1234,8 +1234,8 @@
           {
             "week_start": "2025-10-06",
             "week_end": "2025-10-12",
-            "distance_km": 100.5,
-            "time_hours": 3.21
+            "distance_km": 144.61,
+            "time_hours": 4.72
           }
         ]
       }
