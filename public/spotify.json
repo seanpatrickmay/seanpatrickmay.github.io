@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-10T13:25:38.701Z",
+  "generated_at": "2025-10-11T13:19:09.379Z",
   "artists": [
     {
       "name": "Jack Johnson",
@@ -12,19 +12,19 @@
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     },
     {
-      "name": "Tame Impala",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe412a782245eb20d9626c601",
-      "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
-    },
-    {
       "name": "Radiohead",
       "image": "https://i.scdn.co/image/ab6761610000e5eb4104fbd80f1f795728abbd59",
       "url": "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb"
     },
     {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+    },
+    {
+      "name": "Tame Impala",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe412a782245eb20d9626c601",
+      "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
     }
   ],
   "tracks": [
@@ -35,22 +35,28 @@
       "url": "https://open.spotify.com/track/2BnTUxzWAcv0qerzESIunY"
     },
     {
+      "name": "Upside Down",
+      "artist": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab67616d0000b2731e0232d637e8313d3ef4923e",
+      "url": "https://open.spotify.com/track/6shRGWCtBUOPFLFTTqXZIC"
+    },
+    {
       "name": "Banana Pancakes",
       "artist": "Jack Johnson",
       "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
       "url": "https://open.spotify.com/track/0BgbobvykXxEvxo2HhCuvM"
     },
     {
-      "name": "Exit Music (For A Film)",
-      "artist": "Radiohead",
-      "image": "https://i.scdn.co/image/ab67616d0000b273c8b444df094279e70d0ed856",
-      "url": "https://open.spotify.com/track/0z1o5L7HJx562xZSATcIpY"
-    },
-    {
       "name": "Infinity Repeating (2013 Demo) [feat. Julian Casablancas+The Voidz]",
       "artist": "Daft Punk, Julian Casablancas, The Voidz",
       "image": "https://i.scdn.co/image/ab67616d0000b2733c196ec7c5344d654ff552e9",
       "url": "https://open.spotify.com/track/4r4fX4NZIqVIhGyDvERp0l"
+    },
+    {
+      "name": "Exit Music (For A Film)",
+      "artist": "Radiohead",
+      "image": "https://i.scdn.co/image/ab67616d0000b273c8b444df094279e70d0ed856",
+      "url": "https://open.spotify.com/track/0z1o5L7HJx562xZSATcIpY"
     },
     {
       "name": "My Same",
@@ -65,12 +71,6 @@
       "url": "https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d"
     },
     {
-      "name": "Upside Down",
-      "artist": "Jack Johnson",
-      "image": "https://i.scdn.co/image/ab67616d0000b2731e0232d637e8313d3ef4923e",
-      "url": "https://open.spotify.com/track/6shRGWCtBUOPFLFTTqXZIC"
-    },
-    {
       "name": "Good People",
       "artist": "Jack Johnson",
       "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
@@ -83,10 +83,10 @@
       "url": "https://open.spotify.com/track/6IAZHEBUIGJ6NJKxxOBIEr"
     },
     {
-      "name": "Balloon",
-      "artist": "ZICO",
-      "image": "https://i.scdn.co/image/ab67616d0000b2733f4d25299e90f04e44791b7f",
-      "url": "https://open.spotify.com/track/1nFjZcb68bXrNVStialSdC"
+      "name": "Tired",
+      "artist": "Adele",
+      "image": "https://i.scdn.co/image/ab67616d0000b27389d0ff2366a208016b6e9c6e",
+      "url": "https://open.spotify.com/track/1L91NeuzKQfcCchDI8SVii"
     }
   ]
 }
