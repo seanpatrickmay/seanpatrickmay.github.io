@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-10T13:26:30.733129Z",
+  "generated_at": "2025-10-11T13:19:30.159829Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 34,
-        "distance_km": 890.68,
-        "time_hours": 33.34,
+        "activities_count": 33,
+        "distance_km": 889.41,
+        "time_hours": 33.02,
         "longest_km": 103.12,
-        "calories_kcal": 24438.0
+        "calories_kcal": 23893.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20651343081,
+            "name": "easy",
+            "type": "virtual_ride",
+            "start": "2025-10-10 19:41:52",
+            "distance_km": 50.13,
+            "duration_min": 92.6,
+            "avg_speed_kmh": 32.49,
+            "calories_kcal": 914.0
+          },
           {
             "id": 20642351038,
             "name": "recovery",
@@ -606,16 +616,6 @@
             "duration_min": 65.9,
             "avg_speed_kmh": 11.8,
             "calories_kcal": 1037.0
-          },
-          {
-            "id": 20125112681,
-            "name": "Nags Head Course à pied",
-            "type": "running",
-            "start": "2025-08-20 17:01:16",
-            "distance_km": 0.45,
-            "duration_min": 1.9,
-            "avg_speed_kmh": 13.82,
-            "calories_kcal": 25.0
           }
         ]
       },
@@ -625,8 +625,8 @@
           {
             "week_start": "2025-08-18",
             "week_end": "2025-08-24",
-            "distance_km": 166.29,
-            "time_hours": 7.71
+            "distance_km": 165.84,
+            "time_hours": 7.68
           },
           {
             "week_start": "2025-08-25",
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-10-06",
             "week_end": "2025-10-12",
-            "distance_km": 157.33,
-            "time_hours": 5.76
+            "distance_km": 207.45,
+            "time_hours": 7.3
           }
         ]
       }
@@ -676,14 +676,24 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 29,
-        "distance_km": 833.98,
-        "time_hours": 28.4,
+        "activities_count": 28,
+        "distance_km": 832.7,
+        "time_hours": 28.07,
         "longest_km": 103.12,
-        "calories_kcal": 19668.0
+        "calories_kcal": 19123.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20651343081,
+            "name": "easy",
+            "type": "virtual_ride",
+            "start": "2025-10-10 19:41:52",
+            "distance_km": 50.13,
+            "duration_min": 92.6,
+            "avg_speed_kmh": 32.49,
+            "calories_kcal": 914.0
+          },
           {
             "id": 20642351038,
             "name": "recovery",
@@ -1234,8 +1244,8 @@
           {
             "week_start": "2025-10-06",
             "week_end": "2025-10-12",
-            "distance_km": 144.61,
-            "time_hours": 4.72
+            "distance_km": 194.74,
+            "time_hours": 6.26
           }
         ]
       }
@@ -1320,16 +1330,6 @@
             "duration_min": 65.9,
             "avg_speed_kmh": 11.8,
             "calories_kcal": 1037.0
-          },
-          {
-            "id": 20125112681,
-            "name": "Nags Head Course à pied",
-            "type": "running",
-            "start": "2025-08-20 17:01:16",
-            "distance_km": 0.45,
-            "duration_min": 1.9,
-            "avg_speed_kmh": 13.82,
-            "calories_kcal": 25.0
           }
         ]
       },
@@ -1339,8 +1339,8 @@
           {
             "week_start": "2025-08-18",
             "week_end": "2025-08-24",
-            "distance_km": 13.42,
-            "time_hours": 1.13
+            "distance_km": 12.97,
+            "time_hours": 1.1
           },
           {
             "week_start": "2025-08-25",
