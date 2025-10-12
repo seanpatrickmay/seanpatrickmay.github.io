@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-11T13:19:09.379Z",
+  "generated_at": "2025-10-12T13:19:30.057Z",
   "artists": [
     {
       "name": "Jack Johnson",
@@ -12,6 +12,11 @@
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     },
     {
+      "name": "IVE",
+      "image": "https://i.scdn.co/image/ab6761610000e5eba9c8608865ca7eded5520359",
+      "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
+    },
+    {
       "name": "Radiohead",
       "image": "https://i.scdn.co/image/ab6761610000e5eb4104fbd80f1f795728abbd59",
       "url": "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb"
@@ -20,11 +25,6 @@
       "name": "Daft Punk",
       "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
-    },
-    {
-      "name": "Tame Impala",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe412a782245eb20d9626c601",
-      "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
     }
   ],
   "tracks": [
@@ -65,28 +65,28 @@
       "url": "https://open.spotify.com/track/6McbSHjAKqf0fjsLDRzgr5"
     },
     {
-      "name": "The Great Gig in the Sky",
-      "artist": "Pink Floyd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27317cb878012a0c769091e8045",
-      "url": "https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d"
-    },
-    {
       "name": "Good People",
       "artist": "Jack Johnson",
       "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
       "url": "https://open.spotify.com/track/1A4WjuUXeFEVXjwgc7eVZ6"
     },
     {
-      "name": "Rolling in the Deep",
-      "artist": "Adele",
-      "image": "https://i.scdn.co/image/ab67616d0000b273744ea41a7c1ae57024752db9",
-      "url": "https://open.spotify.com/track/6IAZHEBUIGJ6NJKxxOBIEr"
-    },
-    {
       "name": "Tired",
       "artist": "Adele",
       "image": "https://i.scdn.co/image/ab67616d0000b27389d0ff2366a208016b6e9c6e",
       "url": "https://open.spotify.com/track/1L91NeuzKQfcCchDI8SVii"
+    },
+    {
+      "name": "The Great Gig in the Sky",
+      "artist": "Pink Floyd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27317cb878012a0c769091e8045",
+      "url": "https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d"
+    },
+    {
+      "name": "Rolling in the Deep",
+      "artist": "Adele",
+      "image": "https://i.scdn.co/image/ab67616d0000b273744ea41a7c1ae57024752db9",
+      "url": "https://open.spotify.com/track/6IAZHEBUIGJ6NJKxxOBIEr"
     }
   ]
 }
