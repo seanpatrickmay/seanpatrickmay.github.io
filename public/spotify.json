@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-13T13:27:29.209Z",
+  "generated_at": "2025-10-14T13:28:03.224Z",
   "artists": [
     {
       "name": "Jack Johnson",
@@ -17,14 +17,14 @@
       "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
     },
     {
-      "name": "Radiohead",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb4104fbd80f1f795728abbd59",
-      "url": "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb"
-    },
-    {
       "name": "Daft Punk",
       "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+    },
+    {
+      "name": "Tame Impala",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe412a782245eb20d9626c601",
+      "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
     }
   ],
   "tracks": [
@@ -33,6 +33,12 @@
       "artist": "Jack Johnson",
       "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
       "url": "https://open.spotify.com/track/2BnTUxzWAcv0qerzESIunY"
+    },
+    {
+      "name": "My Same",
+      "artist": "Adele",
+      "image": "https://i.scdn.co/image/ab67616d0000b27389d0ff2366a208016b6e9c6e",
+      "url": "https://open.spotify.com/track/6McbSHjAKqf0fjsLDRzgr5"
     },
     {
       "name": "Upside Down",
@@ -53,16 +59,16 @@
       "url": "https://open.spotify.com/track/4r4fX4NZIqVIhGyDvERp0l"
     },
     {
-      "name": "Exit Music (For A Film)",
-      "artist": "Radiohead",
-      "image": "https://i.scdn.co/image/ab67616d0000b273c8b444df094279e70d0ed856",
-      "url": "https://open.spotify.com/track/0z1o5L7HJx562xZSATcIpY"
+      "name": "The Great Gig in the Sky",
+      "artist": "Pink Floyd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27317cb878012a0c769091e8045",
+      "url": "https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d"
     },
     {
-      "name": "My Same",
+      "name": "Rolling in the Deep",
       "artist": "Adele",
-      "image": "https://i.scdn.co/image/ab67616d0000b27389d0ff2366a208016b6e9c6e",
-      "url": "https://open.spotify.com/track/6McbSHjAKqf0fjsLDRzgr5"
+      "image": "https://i.scdn.co/image/ab67616d0000b273744ea41a7c1ae57024752db9",
+      "url": "https://open.spotify.com/track/6IAZHEBUIGJ6NJKxxOBIEr"
     },
     {
       "name": "Good People",
@@ -77,16 +83,10 @@
       "url": "https://open.spotify.com/track/1L91NeuzKQfcCchDI8SVii"
     },
     {
-      "name": "The Great Gig in the Sky",
-      "artist": "Pink Floyd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27317cb878012a0c769091e8045",
-      "url": "https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d"
-    },
-    {
-      "name": "Rolling in the Deep",
+      "name": "Send My Love (To Your New Lover)",
       "artist": "Adele",
-      "image": "https://i.scdn.co/image/ab67616d0000b273744ea41a7c1ae57024752db9",
-      "url": "https://open.spotify.com/track/6IAZHEBUIGJ6NJKxxOBIEr"
+      "image": "https://i.scdn.co/image/ab67616d0000b2737b9888dc365b8f957c63df14",
+      "url": "https://open.spotify.com/track/563SfWAHJs4FBZMkRN0IFN"
     }
   ]
 }
