@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-13T13:28:30.504446Z",
+  "generated_at": "2025-10-14T13:28:23.830740Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,34 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 32,
-        "distance_km": 881.24,
-        "time_hours": 33.96,
+        "activities_count": 33,
+        "distance_km": 937.4,
+        "time_hours": 35.5,
         "longest_km": 103.12,
-        "calories_kcal": 24849.0
+        "calories_kcal": 25466.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20681981167,
+            "name": "recovery",
+            "type": "virtual_ride",
+            "start": "2025-10-13 22:24:12",
+            "distance_km": 20.92,
+            "duration_min": 45.3,
+            "avg_speed_kmh": 27.72,
+            "calories_kcal": 455.0
+          },
+          {
+            "id": 20679434510,
+            "name": "recovery",
+            "type": "virtual_ride",
+            "start": "2025-10-13 13:34:47",
+            "distance_km": 42.26,
+            "duration_min": 83.8,
+            "avg_speed_kmh": 30.25,
+            "calories_kcal": 793.0
+          },
           {
             "id": 20671400872,
             "name": "Boston Course à pied",
@@ -596,26 +616,6 @@
             "duration_min": 122.7,
             "avg_speed_kmh": 24.97,
             "calories_kcal": 1524.0
-          },
-          {
-            "id": 20175040492,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-08-24 18:41:13",
-            "distance_km": 0.0,
-            "duration_min": 29.7,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 367.0
-          },
-          {
-            "id": 20155257239,
-            "name": "Nags Head Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-23 12:31:33",
-            "distance_km": 52.64,
-            "duration_min": 143.8,
-            "avg_speed_kmh": 21.96,
-            "calories_kcal": 1390.0
           }
         ]
       },
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-10-13",
             "week_end": "2025-10-19",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 63.19,
+            "time_hours": 2.15
           }
         ]
       }
@@ -676,14 +676,34 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 26,
-        "distance_km": 803.22,
-        "time_hours": 27.2,
+        "activities_count": 28,
+        "distance_km": 866.41,
+        "time_hours": 29.35,
         "longest_km": 103.12,
-        "calories_kcal": 18380.0
+        "calories_kcal": 19628.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20681981167,
+            "name": "recovery",
+            "type": "virtual_ride",
+            "start": "2025-10-13 22:24:12",
+            "distance_km": 20.92,
+            "duration_min": 45.3,
+            "avg_speed_kmh": 27.72,
+            "calories_kcal": 455.0
+          },
+          {
+            "id": 20679434510,
+            "name": "recovery",
+            "type": "virtual_ride",
+            "start": "2025-10-13 13:34:47",
+            "distance_km": 42.26,
+            "duration_min": 83.8,
+            "avg_speed_kmh": 30.25,
+            "calories_kcal": 793.0
+          },
           {
             "id": 20660325083,
             "name": "ramps",
@@ -1183,26 +1203,6 @@
             "duration_min": 122.7,
             "avg_speed_kmh": 24.97,
             "calories_kcal": 1524.0
-          },
-          {
-            "id": 20175040492,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-08-24 18:41:13",
-            "distance_km": 0.0,
-            "duration_min": 29.7,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 367.0
-          },
-          {
-            "id": 20155257239,
-            "name": "Nags Head Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-23 12:31:33",
-            "distance_km": 52.64,
-            "duration_min": 143.8,
-            "avg_speed_kmh": 21.96,
-            "calories_kcal": 1390.0
           }
         ]
       },
@@ -1254,8 +1254,8 @@
           {
             "week_start": "2025-10-13",
             "week_end": "2025-10-19",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 63.19,
+            "time_hours": 2.15
           }
         ]
       }
@@ -1263,11 +1263,11 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 6,
-        "distance_km": 78.02,
-        "time_hours": 6.76,
+        "activities_count": 5,
+        "distance_km": 70.99,
+        "time_hours": 6.15,
         "longest_km": 21.31,
-        "calories_kcal": 6469.0
+        "calories_kcal": 5838.0
       },
       "recent": {
         "last60": [
