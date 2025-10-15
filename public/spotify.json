@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-14T13:28:03.224Z",
+  "generated_at": "2025-10-15T13:29:41.137Z",
   "artists": [
     {
       "name": "Jack Johnson",
@@ -47,12 +47,6 @@
       "url": "https://open.spotify.com/track/6shRGWCtBUOPFLFTTqXZIC"
     },
     {
-      "name": "Banana Pancakes",
-      "artist": "Jack Johnson",
-      "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
-      "url": "https://open.spotify.com/track/0BgbobvykXxEvxo2HhCuvM"
-    },
-    {
       "name": "Infinity Repeating (2013 Demo) [feat. Julian Casablancas+The Voidz]",
       "artist": "Daft Punk, Julian Casablancas, The Voidz",
       "image": "https://i.scdn.co/image/ab67616d0000b2733c196ec7c5344d654ff552e9",
@@ -65,22 +59,28 @@
       "url": "https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d"
     },
     {
+      "name": "Banana Pancakes",
+      "artist": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
+      "url": "https://open.spotify.com/track/0BgbobvykXxEvxo2HhCuvM"
+    },
+    {
       "name": "Rolling in the Deep",
       "artist": "Adele",
       "image": "https://i.scdn.co/image/ab67616d0000b273744ea41a7c1ae57024752db9",
       "url": "https://open.spotify.com/track/6IAZHEBUIGJ6NJKxxOBIEr"
     },
     {
-      "name": "Good People",
-      "artist": "Jack Johnson",
-      "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
-      "url": "https://open.spotify.com/track/1A4WjuUXeFEVXjwgc7eVZ6"
-    },
-    {
       "name": "Tired",
       "artist": "Adele",
       "image": "https://i.scdn.co/image/ab67616d0000b27389d0ff2366a208016b6e9c6e",
       "url": "https://open.spotify.com/track/1L91NeuzKQfcCchDI8SVii"
+    },
+    {
+      "name": "Wildflower and Barley (feat. Allison Russell)",
+      "artist": "Hozier, Allison Russell",
+      "image": "https://i.scdn.co/image/ab67616d0000b2735aa29751874ca4ba06da8877",
+      "url": "https://open.spotify.com/track/3Zwb1yipBxvrukVaNMm4o5"
     },
     {
       "name": "Send My Love (To Your New Lover)",
