@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-15T13:30:16.095747Z",
+  "generated_at": "2025-10-16T13:29:13.804020Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -10,13 +10,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 33,
-        "distance_km": 977.16,
-        "time_hours": 36.4,
+        "distance_km": 955.52,
+        "time_hours": 35.9,
         "longest_km": 103.12,
-        "calories_kcal": 26068.0
+        "calories_kcal": 25569.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20702714735,
+            "name": "strides ig",
+            "type": "virtual_ride",
+            "start": "2025-10-15 21:45:25",
+            "distance_km": 26.12,
+            "duration_min": 60.3,
+            "avg_speed_kmh": 25.98,
+            "calories_kcal": 699.0
+          },
           {
             "id": 20691822253,
             "name": "ssteady",
@@ -606,16 +616,6 @@
             "duration_min": 61.4,
             "avg_speed_kmh": 0.0,
             "calories_kcal": 736.0
-          },
-          {
-            "id": 20254784986,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-01 09:02:36",
-            "distance_km": 0.0,
-            "duration_min": 62.3,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 596.0
           }
         ]
       },
@@ -632,7 +632,7 @@
             "week_start": "2025-09-01",
             "week_end": "2025-09-07",
             "distance_km": 171.73,
-            "time_hours": 12.49
+            "time_hours": 11.46
           },
           {
             "week_start": "2025-09-08",
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-10-13",
             "week_end": "2025-10-19",
-            "distance_km": 124.21,
-            "time_hours": 4.02
+            "distance_km": 150.32,
+            "time_hours": 5.02
           }
         ]
       }
@@ -677,13 +677,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 28,
-        "distance_km": 906.17,
-        "time_hours": 30.25,
+        "distance_km": 884.53,
+        "time_hours": 29.75,
         "longest_km": 103.12,
-        "calories_kcal": 20230.0
+        "calories_kcal": 19731.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20702714735,
+            "name": "strides ig",
+            "type": "virtual_ride",
+            "start": "2025-10-15 21:45:25",
+            "distance_km": 26.12,
+            "duration_min": 60.3,
+            "avg_speed_kmh": 25.98,
+            "calories_kcal": 699.0
+          },
           {
             "id": 20691822253,
             "name": "ssteady",
@@ -1193,16 +1203,6 @@
             "duration_min": 61.4,
             "avg_speed_kmh": 0.0,
             "calories_kcal": 736.0
-          },
-          {
-            "id": 20254784986,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-01 09:02:36",
-            "distance_km": 0.0,
-            "duration_min": 62.3,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 596.0
           }
         ]
       },
@@ -1219,7 +1219,7 @@
             "week_start": "2025-09-01",
             "week_end": "2025-09-07",
             "distance_km": 159.47,
-            "time_hours": 10.66
+            "time_hours": 9.62
           },
           {
             "week_start": "2025-09-08",
@@ -1254,8 +1254,8 @@
           {
             "week_start": "2025-10-13",
             "week_end": "2025-10-19",
-            "distance_km": 124.21,
-            "time_hours": 4.02
+            "distance_km": 150.32,
+            "time_hours": 5.02
           }
         ]
       }
