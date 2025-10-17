@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-16T13:29:13.804020Z",
+  "generated_at": "2025-10-17T13:26:23.432055Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,64 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 33,
-        "distance_km": 955.52,
-        "time_hours": 35.9,
+        "activities_count": 38,
+        "distance_km": 999.59,
+        "time_hours": 37.88,
         "longest_km": 103.12,
-        "calories_kcal": 25569.0
+        "calories_kcal": 26970.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20716155570,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-17 08:46:50",
+            "distance_km": 1.97,
+            "duration_min": 6.8,
+            "avg_speed_kmh": 17.42,
+            "calories_kcal": 96.0
+          },
+          {
+            "id": 20712430674,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-16 21:55:34",
+            "distance_km": 2.98,
+            "duration_min": 16.6,
+            "avg_speed_kmh": 10.76,
+            "calories_kcal": 204.0
+          },
+          {
+            "id": 20712261651,
+            "name": "treshold intervals",
+            "type": "virtual_ride",
+            "start": "2025-10-16 20:21:48",
+            "distance_km": 32.29,
+            "duration_min": 60.3,
+            "avg_speed_kmh": 32.12,
+            "calories_kcal": 834.0
+          },
+          {
+            "id": 20709443288,
+            "name": "Boston Incident détecté",
+            "type": "incident_detected",
+            "start": "2025-10-16 13:55:51",
+            "distance_km": 0.0,
+            "duration_min": 0.1,
+            "avg_speed_kmh": 0.88,
+            "calories_kcal": 1.0
+          },
+          {
+            "id": 20709442648,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-16 13:20:43",
+            "distance_km": 6.82,
+            "duration_min": 35.0,
+            "avg_speed_kmh": 11.68,
+            "calories_kcal": 266.0
+          },
           {
             "id": 20702714735,
             "name": "strides ig",
@@ -566,56 +616,6 @@
             "duration_min": 23.2,
             "avg_speed_kmh": 0.0,
             "calories_kcal": 131.0
-          },
-          {
-            "id": 20274025811,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-03 22:07:46",
-            "distance_km": 0.0,
-            "duration_min": 35.0,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 431.0
-          },
-          {
-            "id": 20266637938,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-03 07:32:46",
-            "distance_km": 0.0,
-            "duration_min": 25.4,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 279.0
-          },
-          {
-            "id": 20261853685,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-02 17:50:03",
-            "distance_km": 0.0,
-            "duration_min": 56.1,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 601.0
-          },
-          {
-            "id": 20255536596,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-02 07:04:44",
-            "distance_km": 0.0,
-            "duration_min": 61.9,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 560.0
-          },
-          {
-            "id": 20254786033,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-01 17:42:59",
-            "distance_km": 0.0,
-            "duration_min": 61.4,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 736.0
           }
         ]
       },
@@ -632,7 +632,7 @@
             "week_start": "2025-09-01",
             "week_end": "2025-09-07",
             "distance_km": 171.73,
-            "time_hours": 11.46
+            "time_hours": 7.46
           },
           {
             "week_start": "2025-09-08",
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-10-13",
             "week_end": "2025-10-19",
-            "distance_km": 150.32,
-            "time_hours": 5.02
+            "distance_km": 194.39,
+            "time_hours": 7.01
           }
         ]
       }
@@ -676,14 +676,54 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 28,
-        "distance_km": 884.53,
-        "time_hours": 29.75,
+        "activities_count": 32,
+        "distance_km": 928.6,
+        "time_hours": 31.73,
         "longest_km": 103.12,
-        "calories_kcal": 19731.0
+        "calories_kcal": 21131.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20716155570,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-17 08:46:50",
+            "distance_km": 1.97,
+            "duration_min": 6.8,
+            "avg_speed_kmh": 17.42,
+            "calories_kcal": 96.0
+          },
+          {
+            "id": 20712430674,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-16 21:55:34",
+            "distance_km": 2.98,
+            "duration_min": 16.6,
+            "avg_speed_kmh": 10.76,
+            "calories_kcal": 204.0
+          },
+          {
+            "id": 20712261651,
+            "name": "treshold intervals",
+            "type": "virtual_ride",
+            "start": "2025-10-16 20:21:48",
+            "distance_km": 32.29,
+            "duration_min": 60.3,
+            "avg_speed_kmh": 32.12,
+            "calories_kcal": 834.0
+          },
+          {
+            "id": 20709442648,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-16 13:20:43",
+            "distance_km": 6.82,
+            "duration_min": 35.0,
+            "avg_speed_kmh": 11.68,
+            "calories_kcal": 266.0
+          },
           {
             "id": 20702714735,
             "name": "strides ig",
@@ -1153,56 +1193,6 @@
             "duration_min": 23.2,
             "avg_speed_kmh": 0.0,
             "calories_kcal": 131.0
-          },
-          {
-            "id": 20274025811,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-03 22:07:46",
-            "distance_km": 0.0,
-            "duration_min": 35.0,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 431.0
-          },
-          {
-            "id": 20266637938,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-03 07:32:46",
-            "distance_km": 0.0,
-            "duration_min": 25.4,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 279.0
-          },
-          {
-            "id": 20261853685,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-02 17:50:03",
-            "distance_km": 0.0,
-            "duration_min": 56.1,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 601.0
-          },
-          {
-            "id": 20255536596,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-02 07:04:44",
-            "distance_km": 0.0,
-            "duration_min": 61.9,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 560.0
-          },
-          {
-            "id": 20254786033,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-01 17:42:59",
-            "distance_km": 0.0,
-            "duration_min": 61.4,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 736.0
           }
         ]
       },
@@ -1219,7 +1209,7 @@
             "week_start": "2025-09-01",
             "week_end": "2025-09-07",
             "distance_km": 159.47,
-            "time_hours": 9.62
+            "time_hours": 5.63
           },
           {
             "week_start": "2025-09-08",
@@ -1254,8 +1244,8 @@
           {
             "week_start": "2025-10-13",
             "week_end": "2025-10-19",
-            "distance_km": 150.32,
-            "time_hours": 5.02
+            "distance_km": 194.39,
+            "time_hours": 7.0
           }
         ]
       }
