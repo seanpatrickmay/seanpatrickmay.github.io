@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-16T13:28:51.673Z",
+  "generated_at": "2025-10-17T13:25:27.798Z",
   "artists": [
     {
       "name": "Jack Johnson",
@@ -47,12 +47,6 @@
       "url": "https://open.spotify.com/track/6shRGWCtBUOPFLFTTqXZIC"
     },
     {
-      "name": "Infinity Repeating (2013 Demo) [feat. Julian Casablancas+The Voidz]",
-      "artist": "Daft Punk, Julian Casablancas, The Voidz",
-      "image": "https://i.scdn.co/image/ab67616d0000b2733c196ec7c5344d654ff552e9",
-      "url": "https://open.spotify.com/track/4r4fX4NZIqVIhGyDvERp0l"
-    },
-    {
       "name": "The Great Gig in the Sky",
       "artist": "Pink Floyd",
       "image": "https://i.scdn.co/image/ab67616d0000b27317cb878012a0c769091e8045",
@@ -69,6 +63,12 @@
       "artist": "Adele",
       "image": "https://i.scdn.co/image/ab67616d0000b273744ea41a7c1ae57024752db9",
       "url": "https://open.spotify.com/track/6IAZHEBUIGJ6NJKxxOBIEr"
+    },
+    {
+      "name": "Infinity Repeating (2013 Demo) [feat. Julian Casablancas+The Voidz]",
+      "artist": "Daft Punk, Julian Casablancas, The Voidz",
+      "image": "https://i.scdn.co/image/ab67616d0000b2733c196ec7c5344d654ff552e9",
+      "url": "https://open.spotify.com/track/4r4fX4NZIqVIhGyDvERp0l"
     },
     {
       "name": "Tired",
