@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-17T13:25:27.798Z",
+  "generated_at": "2025-10-18T13:20:17.262Z",
   "artists": [
     {
       "name": "Jack Johnson",
@@ -53,16 +53,16 @@
       "url": "https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d"
     },
     {
-      "name": "Banana Pancakes",
-      "artist": "Jack Johnson",
-      "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
-      "url": "https://open.spotify.com/track/0BgbobvykXxEvxo2HhCuvM"
-    },
-    {
       "name": "Rolling in the Deep",
       "artist": "Adele",
       "image": "https://i.scdn.co/image/ab67616d0000b273744ea41a7c1ae57024752db9",
       "url": "https://open.spotify.com/track/6IAZHEBUIGJ6NJKxxOBIEr"
+    },
+    {
+      "name": "Banana Pancakes",
+      "artist": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
+      "url": "https://open.spotify.com/track/0BgbobvykXxEvxo2HhCuvM"
     },
     {
       "name": "Infinity Repeating (2013 Demo) [feat. Julian Casablancas+The Voidz]",
