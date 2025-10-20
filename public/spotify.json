@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-19T13:20:43.082Z",
+  "generated_at": "2025-10-20T13:27:01.202Z",
   "artists": [
     {
       "name": "Jack Johnson",
@@ -17,14 +17,14 @@
       "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
     },
     {
+      "name": "Nirvana",
+      "image": "https://i.scdn.co/image/84282c28d851a700132356381fcfbadc67ff498b",
+      "url": "https://open.spotify.com/artist/6olE6TJLqED3rqDCT0FyPh"
+    },
+    {
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
-    {
-      "name": "Tame Impala",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe412a782245eb20d9626c601",
-      "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
     }
   ],
   "tracks": [
@@ -65,6 +65,18 @@
       "url": "https://open.spotify.com/track/0BgbobvykXxEvxo2HhCuvM"
     },
     {
+      "name": "Welcome To Japan",
+      "artist": "The Strokes",
+      "image": "https://i.scdn.co/image/ab67616d0000b273f07ef193e0bb6a238ea37f0a",
+      "url": "https://open.spotify.com/track/7bfocP7GYoLOutUYpTI8tx"
+    },
+    {
+      "name": "The Bay",
+      "artist": "Metronomy",
+      "image": "https://i.scdn.co/image/ab67616d0000b2738ca7d89456553e4bbbf3c981",
+      "url": "https://open.spotify.com/track/2akjLHnHjDGsgqxuf48VYs"
+    },
+    {
       "name": "Infinity Repeating (2013 Demo) [feat. Julian Casablancas+The Voidz]",
       "artist": "Daft Punk, Julian Casablancas, The Voidz",
       "image": "https://i.scdn.co/image/ab67616d0000b2733c196ec7c5344d654ff552e9",
@@ -75,18 +87,6 @@
       "artist": "Adele",
       "image": "https://i.scdn.co/image/ab67616d0000b27389d0ff2366a208016b6e9c6e",
       "url": "https://open.spotify.com/track/1L91NeuzKQfcCchDI8SVii"
-    },
-    {
-      "name": "Wildflower and Barley (feat. Allison Russell)",
-      "artist": "Hozier, Allison Russell",
-      "image": "https://i.scdn.co/image/ab67616d0000b2735aa29751874ca4ba06da8877",
-      "url": "https://open.spotify.com/track/3Zwb1yipBxvrukVaNMm4o5"
-    },
-    {
-      "name": "Send My Love (To Your New Lover)",
-      "artist": "Adele",
-      "image": "https://i.scdn.co/image/ab67616d0000b2737b9888dc365b8f957c63df14",
-      "url": "https://open.spotify.com/track/563SfWAHJs4FBZMkRN0IFN"
     }
   ]
 }
