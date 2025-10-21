@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-20T13:27:44.171428Z",
+  "generated_at": "2025-10-21T13:32:00.303933Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -10,13 +10,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 41,
-        "distance_km": 992.62,
-        "time_hours": 37.87,
-        "longest_km": 103.12,
-        "calories_kcal": 27313.0
+        "distance_km": 1050.61,
+        "time_hours": 39.66,
+        "longest_km": 161.11,
+        "calories_kcal": 27976.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20750922301,
+            "name": "imperial century :D",
+            "type": "virtual_ride",
+            "start": "2025-10-20 17:39:52",
+            "distance_km": 161.11,
+            "duration_min": 287.8,
+            "avg_speed_kmh": 33.59,
+            "calories_kcal": 3002.0
+          },
           {
             "id": 20740567240,
             "name": "Boston Course à pied",
@@ -606,16 +616,6 @@
             "duration_min": 25.2,
             "avg_speed_kmh": 24.35,
             "calories_kcal": 250.0
-          },
-          {
-            "id": 20302629890,
-            "name": "Musculation",
-            "type": "strength_training",
-            "start": "2025-09-06 14:08:31",
-            "distance_km": 0.0,
-            "duration_min": 44.9,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 282.0
           }
         ]
       },
@@ -626,7 +626,7 @@
             "week_start": "2025-09-01",
             "week_end": "2025-09-07",
             "distance_km": 82.87,
-            "time_hours": 3.32
+            "time_hours": 2.58
           },
           {
             "week_start": "2025-09-08",
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-10-20",
             "week_end": "2025-10-26",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 161.11,
+            "time_hours": 4.8
           }
         ]
       }
@@ -677,13 +677,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 33,
-        "distance_km": 910.8,
-        "time_hours": 30.91,
-        "longest_km": 103.12,
-        "calories_kcal": 20604.0
+        "distance_km": 968.79,
+        "time_hours": 32.69,
+        "longest_km": 161.11,
+        "calories_kcal": 21267.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20750922301,
+            "name": "imperial century :D",
+            "type": "virtual_ride",
+            "start": "2025-10-20 17:39:52",
+            "distance_km": 161.11,
+            "duration_min": 287.8,
+            "avg_speed_kmh": 33.59,
+            "calories_kcal": 3002.0
+          },
           {
             "id": 20739936037,
             "name": "threshold warmup",
@@ -1234,8 +1244,8 @@
           {
             "week_start": "2025-10-20",
             "week_end": "2025-10-26",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 161.11,
+            "time_hours": 4.8
           }
         ]
       }
