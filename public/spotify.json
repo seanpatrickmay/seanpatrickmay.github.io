@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-20T13:27:01.202Z",
+  "generated_at": "2025-10-21T13:31:36.367Z",
   "artists": [
     {
       "name": "Jack Johnson",
@@ -35,34 +35,22 @@
       "url": "https://open.spotify.com/track/2BnTUxzWAcv0qerzESIunY"
     },
     {
-      "name": "My Same",
-      "artist": "Adele",
-      "image": "https://i.scdn.co/image/ab67616d0000b27389d0ff2366a208016b6e9c6e",
-      "url": "https://open.spotify.com/track/6McbSHjAKqf0fjsLDRzgr5"
-    },
-    {
       "name": "The Great Gig in the Sky",
       "artist": "Pink Floyd",
       "image": "https://i.scdn.co/image/ab67616d0000b27317cb878012a0c769091e8045",
       "url": "https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d"
     },
     {
-      "name": "Rolling in the Deep",
+      "name": "My Same",
       "artist": "Adele",
-      "image": "https://i.scdn.co/image/ab67616d0000b273744ea41a7c1ae57024752db9",
-      "url": "https://open.spotify.com/track/6IAZHEBUIGJ6NJKxxOBIEr"
+      "image": "https://i.scdn.co/image/ab67616d0000b27389d0ff2366a208016b6e9c6e",
+      "url": "https://open.spotify.com/track/6McbSHjAKqf0fjsLDRzgr5"
     },
     {
       "name": "Upside Down",
       "artist": "Jack Johnson",
       "image": "https://i.scdn.co/image/ab67616d0000b2731e0232d637e8313d3ef4923e",
       "url": "https://open.spotify.com/track/6shRGWCtBUOPFLFTTqXZIC"
-    },
-    {
-      "name": "Banana Pancakes",
-      "artist": "Jack Johnson",
-      "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
-      "url": "https://open.spotify.com/track/0BgbobvykXxEvxo2HhCuvM"
     },
     {
       "name": "Welcome To Japan",
@@ -83,10 +71,22 @@
       "url": "https://open.spotify.com/track/4r4fX4NZIqVIhGyDvERp0l"
     },
     {
-      "name": "Tired",
+      "name": "Rolling in the Deep",
       "artist": "Adele",
-      "image": "https://i.scdn.co/image/ab67616d0000b27389d0ff2366a208016b6e9c6e",
-      "url": "https://open.spotify.com/track/1L91NeuzKQfcCchDI8SVii"
+      "image": "https://i.scdn.co/image/ab67616d0000b273744ea41a7c1ae57024752db9",
+      "url": "https://open.spotify.com/track/6IAZHEBUIGJ6NJKxxOBIEr"
+    },
+    {
+      "name": "Banana Pancakes",
+      "artist": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
+      "url": "https://open.spotify.com/track/0BgbobvykXxEvxo2HhCuvM"
+    },
+    {
+      "name": "Social Cues",
+      "artist": "Cage The Elephant",
+      "image": "https://i.scdn.co/image/ab67616d0000b27388883701231713b18429f80b",
+      "url": "https://open.spotify.com/track/1KuVdyg8d6NlRhbpHxg5UF"
     }
   ]
 }
