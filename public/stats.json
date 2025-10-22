@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-21T13:32:00.303933Z",
+  "generated_at": "2025-10-22T13:31:30.986056Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 41,
-        "distance_km": 1050.61,
-        "time_hours": 39.66,
+        "activities_count": 40,
+        "distance_km": 1002.44,
+        "time_hours": 38.27,
         "longest_km": 161.11,
-        "calories_kcal": 27976.0
+        "calories_kcal": 26981.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20760237086,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-21 19:09:01",
+            "distance_km": 2.01,
+            "duration_min": 6.9,
+            "avg_speed_kmh": 17.63,
+            "calories_kcal": 59.0
+          },
           {
             "id": 20750922301,
             "name": "imperial century :D",
@@ -606,16 +616,6 @@
             "duration_min": 36.9,
             "avg_speed_kmh": 36.43,
             "calories_kcal": 638.0
-          },
-          {
-            "id": 20304979708,
-            "name": "first workout",
-            "type": "virtual_ride",
-            "start": "2025-09-06 23:40:15",
-            "distance_km": 10.25,
-            "duration_min": 25.2,
-            "avg_speed_kmh": 24.35,
-            "calories_kcal": 250.0
           }
         ]
       },
@@ -625,8 +625,8 @@
           {
             "week_start": "2025-09-01",
             "week_end": "2025-09-07",
-            "distance_km": 82.87,
-            "time_hours": 2.58
+            "distance_km": 72.63,
+            "time_hours": 2.16
           },
           {
             "week_start": "2025-09-08",
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-10-20",
             "week_end": "2025-10-26",
-            "distance_km": 161.11,
-            "time_hours": 4.8
+            "distance_km": 163.13,
+            "time_hours": 4.91
           }
         ]
       }
@@ -676,14 +676,24 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 33,
-        "distance_km": 968.79,
-        "time_hours": 32.69,
+        "activities_count": 32,
+        "distance_km": 920.62,
+        "time_hours": 31.31,
         "longest_km": 161.11,
-        "calories_kcal": 21267.0
+        "calories_kcal": 20272.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20760237086,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-21 19:09:01",
+            "distance_km": 2.01,
+            "duration_min": 6.9,
+            "avg_speed_kmh": 17.63,
+            "calories_kcal": 59.0
+          },
           {
             "id": 20750922301,
             "name": "imperial century :D",
@@ -1183,16 +1193,6 @@
             "duration_min": 36.9,
             "avg_speed_kmh": 36.43,
             "calories_kcal": 638.0
-          },
-          {
-            "id": 20304979708,
-            "name": "first workout",
-            "type": "virtual_ride",
-            "start": "2025-09-06 23:40:15",
-            "distance_km": 10.25,
-            "duration_min": 25.2,
-            "avg_speed_kmh": 24.35,
-            "calories_kcal": 250.0
           }
         ]
       },
@@ -1202,8 +1202,8 @@
           {
             "week_start": "2025-09-01",
             "week_end": "2025-09-07",
-            "distance_km": 82.87,
-            "time_hours": 2.58
+            "distance_km": 72.63,
+            "time_hours": 2.16
           },
           {
             "week_start": "2025-09-08",
@@ -1244,8 +1244,8 @@
           {
             "week_start": "2025-10-20",
             "week_end": "2025-10-26",
-            "distance_km": 161.11,
-            "time_hours": 4.8
+            "distance_km": 163.13,
+            "time_hours": 4.91
           }
         ]
       }
