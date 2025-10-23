@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-22T13:30:48.579Z",
+  "generated_at": "2025-10-23T13:29:31.792Z",
   "artists": [
     {
       "name": "Jack Johnson",
@@ -22,18 +22,12 @@
       "url": "https://open.spotify.com/artist/6olE6TJLqED3rqDCT0FyPh"
     },
     {
-      "name": "TV Girl",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd80695211689a9c8c3fee3b0",
-      "url": "https://open.spotify.com/artist/0Y6dVaC9DZtPNH4591M42W"
+      "name": "Zedd",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
+      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     }
   ],
   "tracks": [
-    {
-      "name": "Never Know",
-      "artist": "Jack Johnson",
-      "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
-      "url": "https://open.spotify.com/track/2BnTUxzWAcv0qerzESIunY"
-    },
     {
       "name": "Upside Down",
       "artist": "Jack Johnson",
@@ -45,6 +39,12 @@
       "artist": "Pink Floyd",
       "image": "https://i.scdn.co/image/ab67616d0000b27317cb878012a0c769091e8045",
       "url": "https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d"
+    },
+    {
+      "name": "Never Know",
+      "artist": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
+      "url": "https://open.spotify.com/track/2BnTUxzWAcv0qerzESIunY"
     },
     {
       "name": "My Same",
@@ -59,18 +59,6 @@
       "url": "https://open.spotify.com/track/7bfocP7GYoLOutUYpTI8tx"
     },
     {
-      "name": "The Bay",
-      "artist": "Metronomy",
-      "image": "https://i.scdn.co/image/ab67616d0000b2738ca7d89456553e4bbbf3c981",
-      "url": "https://open.spotify.com/track/2akjLHnHjDGsgqxuf48VYs"
-    },
-    {
-      "name": "Infinity Repeating (2013 Demo) [feat. Julian Casablancas+The Voidz]",
-      "artist": "Daft Punk, Julian Casablancas, The Voidz",
-      "image": "https://i.scdn.co/image/ab67616d0000b2733c196ec7c5344d654ff552e9",
-      "url": "https://open.spotify.com/track/4r4fX4NZIqVIhGyDvERp0l"
-    },
-    {
       "name": "Rolling in the Deep",
       "artist": "Adele",
       "image": "https://i.scdn.co/image/ab67616d0000b273744ea41a7c1ae57024752db9",
@@ -81,6 +69,18 @@
       "artist": "Jack Johnson",
       "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
       "url": "https://open.spotify.com/track/0BgbobvykXxEvxo2HhCuvM"
+    },
+    {
+      "name": "The Bay",
+      "artist": "Metronomy",
+      "image": "https://i.scdn.co/image/ab67616d0000b2738ca7d89456553e4bbbf3c981",
+      "url": "https://open.spotify.com/track/2akjLHnHjDGsgqxuf48VYs"
+    },
+    {
+      "name": "Infinity Repeating (2013 Demo) [feat. Julian Casablancas+The Voidz]",
+      "artist": "Daft Punk, Julian Casablancas, The Voidz",
+      "image": "https://i.scdn.co/image/ab67616d0000b2733c196ec7c5344d654ff552e9",
+      "url": "https://open.spotify.com/track/4r4fX4NZIqVIhGyDvERp0l"
     },
     {
       "name": "Social Cues",
