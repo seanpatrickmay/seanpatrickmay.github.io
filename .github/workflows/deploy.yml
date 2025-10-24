@@ -1,6 +1,8 @@
 name: Deploy Portfolio to GitHub Pages
 
 on:
+  schedule:
+    - cron: "3 13 * * *"  # 13:00 UTC ~ 9:00 AM ET during DST
   push:
     branches: [ "main" ]
   workflow_dispatch: {}
