@@ -1,10 +1,15 @@
 {
-  "generated_at": "2025-10-24T13:28:28.707Z",
+  "generated_at": "2025-10-25T13:20:38.361Z",
   "artists": [
     {
       "name": "Jack Johnson",
       "image": "https://i.scdn.co/image/ab6761610000e5eb9555a0b3231117c8cde1fca7",
       "url": "https://open.spotify.com/artist/3GBPw9NK25X1Wt2OUvOwY3"
+    },
+    {
+      "name": "Kid Cudi",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb5f00bb6dd7a7008d14156630",
+      "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
     },
     {
       "name": "Adele",
@@ -20,11 +25,6 @@
       "name": "Pink Floyd",
       "image": "https://i.scdn.co/image/ab6761610000e5eb97885ce689d644c91dfba05c",
       "url": "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9"
-    },
-    {
-      "name": "Nirvana",
-      "image": "https://i.scdn.co/image/84282c28d851a700132356381fcfbadc67ff498b",
-      "url": "https://open.spotify.com/artist/6olE6TJLqED3rqDCT0FyPh"
     }
   ],
   "tracks": [
