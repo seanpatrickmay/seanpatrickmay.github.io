@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-27T13:29:46.899Z",
+  "generated_at": "2025-10-28T13:28:16.930Z",
   "artists": [
     {
       "name": "Jack Johnson",
@@ -12,6 +12,11 @@
       "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
     },
     {
+      "name": "Cigarettes After Sex",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb1c312be98c615df97ea79a30",
+      "url": "https://open.spotify.com/artist/1QAJqy2dA3ihHBFIHRphZj"
+    },
+    {
       "name": "IVE",
       "image": "https://i.scdn.co/image/ab6761610000e5eba9c8608865ca7eded5520359",
       "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
@@ -20,20 +25,9 @@
       "name": "Pink Floyd",
       "image": "https://i.scdn.co/image/ab6761610000e5eb97885ce689d644c91dfba05c",
       "url": "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9"
-    },
-    {
-      "name": "Adele",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
-      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     }
   ],
   "tracks": [
-    {
-      "name": "The Great Gig in the Sky",
-      "artist": "Pink Floyd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27317cb878012a0c769091e8045",
-      "url": "https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d"
-    },
     {
       "name": "Upside Down",
       "artist": "Jack Johnson",
@@ -47,22 +41,16 @@
       "url": "https://open.spotify.com/track/2BnTUxzWAcv0qerzESIunY"
     },
     {
-      "name": "My Same",
-      "artist": "Adele",
-      "image": "https://i.scdn.co/image/ab67616d0000b27389d0ff2366a208016b6e9c6e",
-      "url": "https://open.spotify.com/track/6McbSHjAKqf0fjsLDRzgr5"
-    },
-    {
       "name": "Welcome To Japan",
       "artist": "The Strokes",
       "image": "https://i.scdn.co/image/ab67616d0000b273f07ef193e0bb6a238ea37f0a",
       "url": "https://open.spotify.com/track/7bfocP7GYoLOutUYpTI8tx"
     },
     {
-      "name": "Rolling in the Deep",
+      "name": "My Same",
       "artist": "Adele",
-      "image": "https://i.scdn.co/image/ab67616d0000b273744ea41a7c1ae57024752db9",
-      "url": "https://open.spotify.com/track/6IAZHEBUIGJ6NJKxxOBIEr"
+      "image": "https://i.scdn.co/image/ab67616d0000b27389d0ff2366a208016b6e9c6e",
+      "url": "https://open.spotify.com/track/6McbSHjAKqf0fjsLDRzgr5"
     },
     {
       "name": "Banana Pancakes",
@@ -77,16 +65,28 @@
       "url": "https://open.spotify.com/track/2akjLHnHjDGsgqxuf48VYs"
     },
     {
-      "name": "Infinity Repeating (2013 Demo) [feat. Julian Casablancas+The Voidz]",
-      "artist": "Daft Punk, Julian Casablancas, The Voidz",
-      "image": "https://i.scdn.co/image/ab67616d0000b2733c196ec7c5344d654ff552e9",
-      "url": "https://open.spotify.com/track/4r4fX4NZIqVIhGyDvERp0l"
+      "name": "The Great Gig in the Sky",
+      "artist": "Pink Floyd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27317cb878012a0c769091e8045",
+      "url": "https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d"
+    },
+    {
+      "name": "Rolling in the Deep",
+      "artist": "Adele",
+      "image": "https://i.scdn.co/image/ab67616d0000b273744ea41a7c1ae57024752db9",
+      "url": "https://open.spotify.com/track/6IAZHEBUIGJ6NJKxxOBIEr"
     },
     {
       "name": "Social Cues",
       "artist": "Cage The Elephant",
       "image": "https://i.scdn.co/image/ab67616d0000b27388883701231713b18429f80b",
       "url": "https://open.spotify.com/track/1KuVdyg8d6NlRhbpHxg5UF"
+    },
+    {
+      "name": "Movin' Out (Anthony's Song)",
+      "artist": "Billy Joel",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736ce61113662ecf693b605ee5",
+      "url": "https://open.spotify.com/track/16GUMo6u3D2qo9a19AkYct"
     }
   ]
 }
