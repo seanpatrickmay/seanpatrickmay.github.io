@@ -1,15 +1,15 @@
 {
-  "generated_at": "2025-10-28T13:28:16.930Z",
+  "generated_at": "2025-10-29T13:30:48.891Z",
   "artists": [
-    {
-      "name": "Jack Johnson",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb9555a0b3231117c8cde1fca7",
-      "url": "https://open.spotify.com/artist/3GBPw9NK25X1Wt2OUvOwY3"
-    },
     {
       "name": "Kid Cudi",
       "image": "https://i.scdn.co/image/ab6761610000e5eb5f00bb6dd7a7008d14156630",
       "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
+    },
+    {
+      "name": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb9555a0b3231117c8cde1fca7",
+      "url": "https://open.spotify.com/artist/3GBPw9NK25X1Wt2OUvOwY3"
     },
     {
       "name": "Cigarettes After Sex",
