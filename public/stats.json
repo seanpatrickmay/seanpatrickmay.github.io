@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-28T13:28:47.173044Z",
+  "generated_at": "2025-10-29T13:31:24.246611Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,54 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 46,
-        "distance_km": 1039.26,
-        "time_hours": 39.45,
+        "activities_count": 48,
+        "distance_km": 1105.23,
+        "time_hours": 41.6,
         "longest_km": 161.11,
-        "calories_kcal": 28623.0
+        "calories_kcal": 30161.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20827034517,
+            "name": "easy",
+            "type": "virtual_ride",
+            "start": "2025-10-28 20:43:13",
+            "distance_km": 34.21,
+            "duration_min": 60.3,
+            "avg_speed_kmh": 34.05,
+            "calories_kcal": 657.0
+          },
+          {
+            "id": 20826663310,
+            "name": "steady w MUMA",
+            "type": "virtual_ride",
+            "start": "2025-10-28 19:15:01",
+            "distance_km": 29.83,
+            "duration_min": 60.4,
+            "avg_speed_kmh": 29.61,
+            "calories_kcal": 532.0
+          },
+          {
+            "id": 20826201915,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-28 18:41:06",
+            "distance_km": 3.28,
+            "duration_min": 14.8,
+            "avg_speed_kmh": 13.31,
+            "calories_kcal": 153.0
+          },
+          {
+            "id": 20826019591,
+            "name": "Boston Course à pied",
+            "type": "running",
+            "start": "2025-10-28 17:30:04",
+            "distance_km": 11.31,
+            "duration_min": 52.2,
+            "avg_speed_kmh": 12.99,
+            "calories_kcal": 859.0
+          },
           {
             "id": 20816820889,
             "name": "still doing laundry",
@@ -576,46 +616,6 @@
             "duration_min": 37.4,
             "avg_speed_kmh": 17.9,
             "calories_kcal": 450.0
-          },
-          {
-            "id": 20420496002,
-            "name": "ss",
-            "type": "virtual_ride",
-            "start": "2025-09-17 20:37:31",
-            "distance_km": 57.39,
-            "duration_min": 111.2,
-            "avg_speed_kmh": 30.97,
-            "calories_kcal": 1327.0
-          },
-          {
-            "id": 20398470230,
-            "name": "ss",
-            "type": "virtual_ride",
-            "start": "2025-09-15 18:46:39",
-            "distance_km": 47.76,
-            "duration_min": 90.6,
-            "avg_speed_kmh": 31.63,
-            "calories_kcal": 1198.0
-          },
-          {
-            "id": 20387950471,
-            "name": "wu",
-            "type": "virtual_ride",
-            "start": "2025-09-14 17:40:21",
-            "distance_km": 21.26,
-            "duration_min": 57.9,
-            "avg_speed_kmh": 22.04,
-            "calories_kcal": 730.0
-          },
-          {
-            "id": 20376638390,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-09-13 15:04:39",
-            "distance_km": 7.03,
-            "duration_min": 36.6,
-            "avg_speed_kmh": 11.51,
-            "calories_kcal": 631.0
           }
         ]
       },
@@ -625,14 +625,14 @@
           {
             "week_start": "2025-09-08",
             "week_end": "2025-09-14",
-            "distance_km": 28.29,
-            "time_hours": 1.58
+            "distance_km": 0.0,
+            "time_hours": 0.0
           },
           {
             "week_start": "2025-09-15",
             "week_end": "2025-09-21",
-            "distance_km": 269.6,
-            "time_hours": 8.49
+            "distance_km": 164.46,
+            "time_hours": 5.13
           },
           {
             "week_start": "2025-09-22",
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-10-27",
             "week_end": "2025-11-02",
-            "distance_km": 58.83,
-            "time_hours": 1.72
+            "distance_km": 137.45,
+            "time_hours": 4.85
           }
         ]
       }
@@ -676,14 +676,44 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 37,
-        "distance_km": 943.93,
-        "time_hours": 31.66,
+        "activities_count": 38,
+        "distance_km": 998.59,
+        "time_hours": 32.93,
         "longest_km": 161.11,
-        "calories_kcal": 20950.0
+        "calories_kcal": 21629.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20827034517,
+            "name": "easy",
+            "type": "virtual_ride",
+            "start": "2025-10-28 20:43:13",
+            "distance_km": 34.21,
+            "duration_min": 60.3,
+            "avg_speed_kmh": 34.05,
+            "calories_kcal": 657.0
+          },
+          {
+            "id": 20826663310,
+            "name": "steady w MUMA",
+            "type": "virtual_ride",
+            "start": "2025-10-28 19:15:01",
+            "distance_km": 29.83,
+            "duration_min": 60.4,
+            "avg_speed_kmh": 29.61,
+            "calories_kcal": 532.0
+          },
+          {
+            "id": 20826201915,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-28 18:41:06",
+            "distance_km": 3.28,
+            "duration_min": 14.8,
+            "avg_speed_kmh": 13.31,
+            "calories_kcal": 153.0
+          },
           {
             "id": 20816820889,
             "name": "still doing laundry",
@@ -1143,36 +1173,6 @@
             "duration_min": 37.4,
             "avg_speed_kmh": 17.9,
             "calories_kcal": 450.0
-          },
-          {
-            "id": 20420496002,
-            "name": "ss",
-            "type": "virtual_ride",
-            "start": "2025-09-17 20:37:31",
-            "distance_km": 57.39,
-            "duration_min": 111.2,
-            "avg_speed_kmh": 30.97,
-            "calories_kcal": 1327.0
-          },
-          {
-            "id": 20398470230,
-            "name": "ss",
-            "type": "virtual_ride",
-            "start": "2025-09-15 18:46:39",
-            "distance_km": 47.76,
-            "duration_min": 90.6,
-            "avg_speed_kmh": 31.63,
-            "calories_kcal": 1198.0
-          },
-          {
-            "id": 20387950471,
-            "name": "wu",
-            "type": "virtual_ride",
-            "start": "2025-09-14 17:40:21",
-            "distance_km": 21.26,
-            "duration_min": 57.9,
-            "avg_speed_kmh": 22.04,
-            "calories_kcal": 730.0
           }
         ]
       },
@@ -1182,14 +1182,14 @@
           {
             "week_start": "2025-09-08",
             "week_end": "2025-09-14",
-            "distance_km": 21.26,
-            "time_hours": 0.96
+            "distance_km": 0.0,
+            "time_hours": 0.0
           },
           {
             "week_start": "2025-09-15",
             "week_end": "2025-09-21",
-            "distance_km": 269.6,
-            "time_hours": 8.49
+            "distance_km": 164.46,
+            "time_hours": 5.13
           },
           {
             "week_start": "2025-09-22",
@@ -1224,8 +1224,8 @@
           {
             "week_start": "2025-10-27",
             "week_end": "2025-11-02",
-            "distance_km": 58.83,
-            "time_hours": 1.72
+            "distance_km": 126.14,
+            "time_hours": 3.98
           }
         ]
       }
@@ -1233,14 +1233,24 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 8,
-        "distance_km": 95.33,
-        "time_hours": 7.79,
+        "activities_count": 9,
+        "distance_km": 106.64,
+        "time_hours": 8.66,
         "longest_km": 21.31,
-        "calories_kcal": 7672.0
+        "calories_kcal": 8531.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20826019591,
+            "name": "Boston Course à pied",
+            "type": "running",
+            "start": "2025-10-28 17:30:04",
+            "distance_km": 11.31,
+            "duration_min": 52.2,
+            "avg_speed_kmh": 12.99,
+            "calories_kcal": 859.0
+          },
           {
             "id": 20796938580,
             "name": "Boston Course à pied",
@@ -1330,16 +1340,6 @@
             "duration_min": 55.4,
             "avg_speed_kmh": 10.55,
             "calories_kcal": 839.0
-          },
-          {
-            "id": 20376638390,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-09-13 15:04:39",
-            "distance_km": 7.03,
-            "duration_min": 36.6,
-            "avg_speed_kmh": 11.51,
-            "calories_kcal": 631.0
           }
         ]
       },
@@ -1349,8 +1349,8 @@
           {
             "week_start": "2025-09-08",
             "week_end": "2025-09-14",
-            "distance_km": 7.03,
-            "time_hours": 0.61
+            "distance_km": 0.0,
+            "time_hours": 0.0
           },
           {
             "week_start": "2025-09-15",
@@ -1391,8 +1391,8 @@
           {
             "week_start": "2025-10-27",
             "week_end": "2025-11-02",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 11.31,
+            "time_hours": 0.87
           }
         ]
       }
