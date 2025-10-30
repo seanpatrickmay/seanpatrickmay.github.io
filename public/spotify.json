@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-29T13:30:48.891Z",
+  "generated_at": "2025-10-30T13:28:26.388Z",
   "artists": [
     {
       "name": "Kid Cudi",
@@ -22,9 +22,9 @@
       "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
     },
     {
-      "name": "Pink Floyd",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb97885ce689d644c91dfba05c",
-      "url": "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9"
+      "name": "Maroon 5",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebf8349dfb619a7f842242de77",
+      "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
     }
   ],
   "tracks": [
@@ -51,6 +51,12 @@
       "artist": "Adele",
       "image": "https://i.scdn.co/image/ab67616d0000b27389d0ff2366a208016b6e9c6e",
       "url": "https://open.spotify.com/track/6McbSHjAKqf0fjsLDRzgr5"
+    },
+    {
+      "name": "Won't Go Home Without You",
+      "artist": "Maroon 5",
+      "image": "https://i.scdn.co/image/ab67616d0000b273515b72d7c72fc65b017a87ea",
+      "url": "https://open.spotify.com/track/6WEBwvsmpaoGxka0tSh5a7"
     },
     {
       "name": "Banana Pancakes",
@@ -81,12 +87,6 @@
       "artist": "Cage The Elephant",
       "image": "https://i.scdn.co/image/ab67616d0000b27388883701231713b18429f80b",
       "url": "https://open.spotify.com/track/1KuVdyg8d6NlRhbpHxg5UF"
-    },
-    {
-      "name": "Movin' Out (Anthony's Song)",
-      "artist": "Billy Joel",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736ce61113662ecf693b605ee5",
-      "url": "https://open.spotify.com/track/16GUMo6u3D2qo9a19AkYct"
     }
   ]
 }
