@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-31T13:28:00.452Z",
+  "generated_at": "2025-11-01T13:21:13.466Z",
   "artists": [
     {
       "name": "Kid Cudi",
@@ -17,14 +17,14 @@
       "url": "https://open.spotify.com/artist/1QAJqy2dA3ihHBFIHRphZj"
     },
     {
-      "name": "IVE",
-      "image": "https://i.scdn.co/image/ab6761610000e5eba9c8608865ca7eded5520359",
-      "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
-    },
-    {
       "name": "Maroon 5",
       "image": "https://i.scdn.co/image/ab6761610000e5ebf8349dfb619a7f842242de77",
       "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
+    },
+    {
+      "name": "IVE",
+      "image": "https://i.scdn.co/image/ab6761610000e5eba9c8608865ca7eded5520359",
+      "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
     }
   ],
   "tracks": [
