@@ -7,6 +7,8 @@ Environment variables:
   GARMIN_PASSWORD      your Garmin account password (only needed for first login)
   GARMIN_TOKENS_DIR    where to cache tokens (default: ~/.garminconnect)
   GARMIN_OUT           output path for stats.json (default: public/stats.json)
+  GARMIN_FETCH_PAGE_SIZE  page size for activity fetch pagination (default: 100)
+  GARMIN_FETCH_MAX        maximum activities to retrieve per run (default: 400)
 
 First run (to seed tokens, especially if MFA is enabled):
   python -m pip install garminconnect
@@ -40,8 +42,10 @@ WEEKLY_WINDOW = 8
 MONTHLY_WINDOW_DAYS = 30
 # How many recent activities to include:
 RECENT_COUNT = 60
-# How many activities to fetch from Garmin (increase if you’re very active):
-FETCH_LIMIT = 60
+# How many activities to ask for per page when paging the Garmin API:
+FETCH_PAGE_SIZE = int(os.getenv("GARMIN_FETCH_PAGE_SIZE", "100"))
+# Hard ceiling to keep API usage bounded:
+FETCH_MAX = int(os.getenv("GARMIN_FETCH_MAX", "400"))
 
 
 # ---------------------------- Helpers ----------------------------------------
@@ -171,7 +175,40 @@ def main() -> None:
     profile = client.get_user_profile() or {}
 
     # Get a window of activities
-    activities: List[Dict[str, Any]] = client.get_activities(0, FETCH_LIMIT)
+    def fetch_activities(cutoff: datetime) -> List[Dict[str, Any]]:
+        """
+        Page through Garmin activities until we have data that predates the cutoff
+        (covers both monthly + weekly windows) or we hit the configured FETCH_MAX.
+        """
+        activities: List[Dict[str, Any]] = []
+        start = 0
+
+        while start < FETCH_MAX:
+            remaining = FETCH_MAX - start
+            batch_size = min(FETCH_PAGE_SIZE, remaining)
+            if batch_size <= 0:
+                break
+
+            batch = client.get_activities(start, batch_size)
+            if not batch:
+                break
+
+            activities.extend(batch)
+            start += len(batch)
+
+            last = batch[-1]
+            last_dt = parse_dt(last.get("startTimeLocal") or last.get("startTimeGMT"))
+
+            # Stop paging once we have crossed the cutoff or received a short page.
+            if len(batch) < batch_size:
+                break
+            if last_dt and last_dt <= cutoff:
+                break
+
+        return activities
+
+    cutoff = min(start_month, cutoff_weekly)
+    activities: List[Dict[str, Any]] = fetch_activities(cutoff)
 
     # Categorize activities into sport types
     SPORT_TYPES = {
