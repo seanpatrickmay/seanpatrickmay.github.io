@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-09-22T03:13:17.661893Z",
+  "generated_at": "2025-11-02T13:21:29.501663Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,613 +9,613 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 36,
-        "distance_km": 748.08,
-        "time_hours": 33.98,
-        "longest_km": 103.12,
-        "calories_kcal": 24419.0
+        "activities_count": 56,
+        "distance_km": 1181.59,
+        "time_hours": 43.31,
+        "longest_km": 161.11,
+        "calories_kcal": 31577.0
       },
       "recent": {
         "last60": [
           {
-            "id": 20461586629,
-            "name": "steady",
-            "type": "virtual_ride",
-            "start": "2025-09-21 22:05:27",
-            "distance_km": 23.26,
-            "duration_min": 45.2,
-            "avg_speed_kmh": 30.88,
-            "calories_kcal": 460.0
+            "id": 20860206914,
+            "name": "Cambridge Course à pied",
+            "type": "running",
+            "start": "2025-11-01 10:46:08",
+            "distance_km": 2.89,
+            "duration_min": 15.3,
+            "avg_speed_kmh": 11.36,
+            "calories_kcal": 238.0
           },
           {
-            "id": 20461470982,
-            "name": "wo",
-            "type": "virtual_ride",
-            "start": "2025-09-21 21:18:16",
-            "distance_km": 26.92,
-            "duration_min": 44.6,
-            "avg_speed_kmh": 36.18,
-            "calories_kcal": 594.0
+            "id": 20859715920,
+            "name": "Cambridge Course à pied",
+            "type": "running",
+            "start": "2025-11-01 10:00:29",
+            "distance_km": 4.95,
+            "duration_min": 18.6,
+            "avg_speed_kmh": 15.93,
+            "calories_kcal": 338.0
           },
           {
-            "id": 20449478050,
-            "name": "long",
-            "type": "virtual_ride",
-            "start": "2025-09-20 13:24:02",
-            "distance_km": 103.12,
-            "duration_min": 180.6,
-            "avg_speed_kmh": 34.27,
-            "calories_kcal": 2339.0
-          },
-          {
-            "id": 20440083249,
-            "name": "Newton Cyclisme",
-            "type": "cycling",
-            "start": "2025-09-19 20:02:15",
-            "distance_km": 11.15,
-            "duration_min": 37.4,
-            "avg_speed_kmh": 17.9,
-            "calories_kcal": 450.0
-          },
-          {
-            "id": 20420496002,
-            "name": "ss",
-            "type": "virtual_ride",
-            "start": "2025-09-17 20:37:31",
-            "distance_km": 57.39,
-            "duration_min": 111.2,
-            "avg_speed_kmh": 30.97,
-            "calories_kcal": 1327.0
-          },
-          {
-            "id": 20398470230,
-            "name": "ss",
-            "type": "virtual_ride",
-            "start": "2025-09-15 18:46:39",
-            "distance_km": 47.76,
-            "duration_min": 90.6,
-            "avg_speed_kmh": 31.63,
-            "calories_kcal": 1198.0
-          },
-          {
-            "id": 20387950471,
-            "name": "wu",
-            "type": "virtual_ride",
-            "start": "2025-09-14 17:40:21",
-            "distance_km": 21.26,
-            "duration_min": 57.9,
-            "avg_speed_kmh": 22.04,
-            "calories_kcal": 730.0
-          },
-          {
-            "id": 20376638390,
+            "id": 20859357552,
             "name": "Boston Course à pied",
             "type": "running",
-            "start": "2025-09-13 15:04:39",
-            "distance_km": 7.03,
-            "duration_min": 36.6,
-            "avg_speed_kmh": 11.51,
-            "calories_kcal": 631.0
+            "start": "2025-11-01 09:24:46",
+            "distance_km": 4.16,
+            "duration_min": 20.5,
+            "avg_speed_kmh": 12.2,
+            "calories_kcal": 345.0
           },
           {
-            "id": 20367117544,
-            "name": "cd",
+            "id": 20858736276,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-11-01 08:35:29",
+            "distance_km": 2.91,
+            "duration_min": 11.7,
+            "avg_speed_kmh": 14.97,
+            "calories_kcal": 157.0
+          },
+          {
+            "id": 20854459534,
+            "name": "z2",
             "type": "virtual_ride",
-            "start": "2025-09-12 19:02:50",
-            "distance_km": 4.44,
-            "duration_min": 14.0,
-            "avg_speed_kmh": 19.07,
-            "calories_kcal": 140.0
+            "start": "2025-10-31 18:35:49",
+            "distance_km": 86.66,
+            "duration_min": 145.3,
+            "avg_speed_kmh": 35.79,
+            "calories_kcal": 1716.0
           },
           {
-            "id": 20367035894,
-            "name": "some threshold",
-            "type": "virtual_ride",
-            "start": "2025-09-12 18:21:25",
-            "distance_km": 23.92,
-            "duration_min": 40.3,
-            "avg_speed_kmh": 35.59,
-            "calories_kcal": 605.0
+            "id": 20853594711,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-31 17:13:15",
+            "distance_km": 3.56,
+            "duration_min": 12.3,
+            "avg_speed_kmh": 17.41,
+            "calories_kcal": 63.0
           },
           {
-            "id": 20366787710,
-            "name": "wu",
-            "type": "virtual_ride",
-            "start": "2025-09-12 17:50:13",
-            "distance_km": 13.18,
-            "duration_min": 24.9,
-            "avg_speed_kmh": 31.8,
-            "calories_kcal": 282.0
+            "id": 20849236237,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-31 08:12:41",
+            "distance_km": 2.53,
+            "duration_min": 7.5,
+            "avg_speed_kmh": 20.13,
+            "calories_kcal": 32.0
           },
           {
-            "id": 20358781784,
-            "name": "vo2 :(",
-            "type": "virtual_ride",
-            "start": "2025-09-11 23:58:58",
-            "distance_km": 11.0,
-            "duration_min": 19.7,
-            "avg_speed_kmh": 33.51,
-            "calories_kcal": 298.0
+            "id": 20845512979,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-30 19:08:07",
+            "distance_km": 1.39,
+            "duration_min": 5.1,
+            "avg_speed_kmh": 16.29,
+            "calories_kcal": 50.0
           },
           {
-            "id": 20348174977,
-            "name": "cd",
-            "type": "virtual_ride",
-            "start": "2025-09-10 22:26:12",
-            "distance_km": 10.14,
-            "duration_min": 21.4,
-            "avg_speed_kmh": 28.46,
-            "calories_kcal": 231.0
-          },
-          {
-            "id": 20348057493,
-            "name": "SS",
-            "type": "virtual_ride",
-            "start": "2025-09-10 20:40:47",
-            "distance_km": 41.25,
-            "duration_min": 90.6,
-            "avg_speed_kmh": 27.33,
-            "calories_kcal": 1228.0
-          },
-          {
-            "id": 20337953090,
+            "id": 20836244100,
             "name": "easy",
             "type": "virtual_ride",
-            "start": "2025-09-09 23:30:39",
-            "distance_km": 23.37,
-            "duration_min": 44.7,
-            "avg_speed_kmh": 31.38,
-            "calories_kcal": 546.0
+            "start": "2025-10-29 18:42:20",
+            "distance_km": 36.39,
+            "duration_min": 62.8,
+            "avg_speed_kmh": 34.79,
+            "calories_kcal": 783.0
           },
           {
-            "id": 20336116972,
-            "name": "FTP TEST",
+            "id": 20832211639,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-29 11:21:02",
+            "distance_km": 3.81,
+            "duration_min": 13.5,
+            "avg_speed_kmh": 16.94,
+            "calories_kcal": 50.0
+          },
+          {
+            "id": 20827034517,
+            "name": "easy",
             "type": "virtual_ride",
-            "start": "2025-09-09 17:21:28",
-            "distance_km": 15.56,
-            "duration_min": 35.7,
-            "avg_speed_kmh": 26.15,
-            "calories_kcal": 457.0
+            "start": "2025-10-28 20:43:13",
+            "distance_km": 34.21,
+            "duration_min": 60.3,
+            "avg_speed_kmh": 34.05,
+            "calories_kcal": 657.0
           },
           {
-            "id": 20325516672,
-            "name": "Zwift - Road to Sky in Watopia",
+            "id": 20826663310,
+            "name": "steady w MUMA",
             "type": "virtual_ride",
-            "start": "2025-09-08 17:47:23",
-            "distance_km": 31.89,
-            "duration_min": 97.4,
-            "avg_speed_kmh": 19.65,
-            "calories_kcal": 1219.0
+            "start": "2025-10-28 19:15:01",
+            "distance_km": 29.83,
+            "duration_min": 60.4,
+            "avg_speed_kmh": 29.61,
+            "calories_kcal": 532.0
           },
           {
-            "id": 20312052081,
-            "name": "recovery",
-            "type": "virtual_ride",
-            "start": "2025-09-07 11:09:50",
-            "distance_km": 30.18,
-            "duration_min": 55.4,
-            "avg_speed_kmh": 32.71,
-            "calories_kcal": 615.0
+            "id": 20826201915,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-28 18:41:06",
+            "distance_km": 3.28,
+            "duration_min": 14.8,
+            "avg_speed_kmh": 13.31,
+            "calories_kcal": 153.0
           },
           {
-            "id": 20305285210,
-            "name": "cd",
-            "type": "virtual_ride",
-            "start": "2025-09-07 01:14:53",
-            "distance_km": 20.07,
-            "duration_min": 37.1,
-            "avg_speed_kmh": 32.41,
-            "calories_kcal": 378.0
-          },
-          {
-            "id": 20305090467,
-            "name": "FIRST RACE! W",
-            "type": "virtual_ride",
-            "start": "2025-09-07 00:12:26",
-            "distance_km": 22.38,
-            "duration_min": 36.9,
-            "avg_speed_kmh": 36.43,
-            "calories_kcal": 638.0
-          },
-          {
-            "id": 20304979708,
-            "name": "first workout",
-            "type": "virtual_ride",
-            "start": "2025-09-06 23:40:15",
-            "distance_km": 10.25,
-            "duration_min": 25.2,
-            "avg_speed_kmh": 24.35,
-            "calories_kcal": 250.0
-          },
-          {
-            "id": 20302629890,
-            "name": "Musculation",
-            "type": "strength_training",
-            "start": "2025-09-06 14:08:31",
-            "distance_km": 0.0,
-            "duration_min": 44.9,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 282.0
-          },
-          {
-            "id": 20293900549,
-            "name": "zwift ROCKS",
-            "type": "virtual_ride",
-            "start": "2025-09-05 19:35:56",
-            "distance_km": 71.46,
-            "duration_min": 135.6,
-            "avg_speed_kmh": 31.61,
-            "calories_kcal": 1623.0
-          },
-          {
-            "id": 20293138223,
-            "name": "FIRST RIDE",
-            "type": "virtual_ride",
-            "start": "2025-09-05 19:03:55",
-            "distance_km": 5.15,
-            "duration_min": 9.7,
-            "avg_speed_kmh": 31.99,
-            "calories_kcal": 115.0
-          },
-          {
-            "id": 20284272421,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-04 21:36:33",
-            "distance_km": 0.0,
-            "duration_min": 14.5,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 180.0
-          },
-          {
-            "id": 20284176165,
+            "id": 20826019591,
             "name": "Boston Course à pied",
             "type": "running",
-            "start": "2025-09-04 20:14:13",
-            "distance_km": 12.26,
-            "duration_min": 65.2,
-            "avg_speed_kmh": 11.28,
-            "calories_kcal": 988.0
+            "start": "2025-10-28 17:30:04",
+            "distance_km": 11.31,
+            "duration_min": 52.2,
+            "avg_speed_kmh": 12.99,
+            "calories_kcal": 859.0
           },
           {
-            "id": 20283842208,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-04 19:47:48",
-            "distance_km": 0.0,
-            "duration_min": 23.2,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 131.0
+            "id": 20816820889,
+            "name": "still doing laundry",
+            "type": "virtual_ride",
+            "start": "2025-10-27 20:29:38",
+            "distance_km": 20.42,
+            "duration_min": 35.6,
+            "avg_speed_kmh": 34.38,
+            "calories_kcal": 405.0
           },
           {
-            "id": 20274025811,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-03 22:07:46",
-            "distance_km": 0.0,
-            "duration_min": 35.0,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 431.0
+            "id": 20816610183,
+            "name": "doing laundry",
+            "type": "virtual_ride",
+            "start": "2025-10-27 19:46:28",
+            "distance_km": 16.85,
+            "duration_min": 31.3,
+            "avg_speed_kmh": 32.27,
+            "calories_kcal": 467.0
           },
           {
-            "id": 20266637938,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-03 07:32:46",
-            "distance_km": 0.0,
-            "duration_min": 25.4,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 279.0
+            "id": 20816358199,
+            "name": "warmup",
+            "type": "virtual_ride",
+            "start": "2025-10-27 19:00:18",
+            "distance_km": 19.51,
+            "duration_min": 30.3,
+            "avg_speed_kmh": 38.6,
+            "calories_kcal": 393.0
           },
           {
-            "id": 20261853685,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-02 17:50:03",
-            "distance_km": 0.0,
-            "duration_min": 56.1,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 601.0
-          },
-          {
-            "id": 20255536596,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-02 07:04:44",
-            "distance_km": 0.0,
-            "duration_min": 61.9,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 560.0
-          },
-          {
-            "id": 20254786033,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-01 17:42:59",
-            "distance_km": 0.0,
-            "duration_min": 61.4,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 736.0
-          },
-          {
-            "id": 20254784986,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-01 09:02:36",
-            "distance_km": 0.0,
-            "duration_min": 62.3,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 596.0
-          },
-          {
-            "id": 20176574779,
-            "name": "Anne Arundel County Cyclisme",
+            "id": 20811208983,
+            "name": "Boston Cyclisme",
             "type": "cycling",
-            "start": "2025-08-25 13:49:46",
-            "distance_km": 51.06,
-            "duration_min": 122.7,
-            "avg_speed_kmh": 24.97,
-            "calories_kcal": 1524.0
+            "start": "2025-10-27 08:48:10",
+            "distance_km": 2.05,
+            "duration_min": 6.0,
+            "avg_speed_kmh": 20.52,
+            "calories_kcal": 29.0
           },
           {
-            "id": 20175040492,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-08-24 18:41:13",
-            "distance_km": 0.0,
-            "duration_min": 29.7,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 367.0
-          },
-          {
-            "id": 20155257239,
-            "name": "Nags Head Cyclisme",
+            "id": 20806926599,
+            "name": "Boston Cyclisme",
             "type": "cycling",
-            "start": "2025-08-23 12:31:33",
-            "distance_km": 52.64,
-            "duration_min": 143.8,
-            "avg_speed_kmh": 21.96,
-            "calories_kcal": 1390.0
+            "start": "2025-10-26 17:26:12",
+            "distance_km": 7.63,
+            "duration_min": 22.6,
+            "avg_speed_kmh": 20.23,
+            "calories_kcal": 238.0
           },
           {
-            "id": 20144190057,
-            "name": "Musculation",
-            "type": "strength_training",
-            "start": "2025-08-22 14:11:41",
-            "distance_km": 0.0,
-            "duration_min": 9.6,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 69.0
-          },
-          {
-            "id": 20142413086,
-            "name": "Nags Head Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-22 07:14:00",
-            "distance_km": 100.23,
-            "duration_min": 211.8,
-            "avg_speed_kmh": 28.4,
-            "calories_kcal": 2699.0
-          },
-          {
-            "id": 20135638348,
-            "name": "Nags Head Course à pied",
-            "type": "running",
-            "start": "2025-08-21 16:05:55",
-            "distance_km": 12.97,
-            "duration_min": 65.9,
-            "avg_speed_kmh": 11.8,
-            "calories_kcal": 1037.0
-          },
-          {
-            "id": 20125112681,
-            "name": "Nags Head Course à pied",
-            "type": "running",
-            "start": "2025-08-20 17:01:16",
-            "distance_km": 0.45,
-            "duration_min": 1.9,
-            "avg_speed_kmh": 13.82,
-            "calories_kcal": 25.0
-          },
-          {
-            "id": 20123362747,
-            "name": "Nags Head Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-20 11:58:01",
-            "distance_km": 33.19,
-            "duration_min": 69.2,
-            "avg_speed_kmh": 28.77,
-            "calories_kcal": 963.0
-          },
-          {
-            "id": 20101134540,
-            "name": "Nags Head Course à pied",
-            "type": "running",
-            "start": "2025-08-18 14:14:41",
-            "distance_km": 3.23,
-            "duration_min": 20.4,
-            "avg_speed_kmh": 9.48,
-            "calories_kcal": 293.0
-          },
-          {
-            "id": 20099831288,
-            "name": "Nags Head Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-18 11:01:10",
-            "distance_km": 37.67,
-            "duration_min": 97.0,
-            "avg_speed_kmh": 23.31,
-            "calories_kcal": 1166.0
-          },
-          {
-            "id": 20092579382,
-            "name": "Nags Head Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-17 17:46:13",
-            "distance_km": 32.3,
-            "duration_min": 69.3,
-            "avg_speed_kmh": 27.96,
-            "calories_kcal": 986.0
-          },
-          {
-            "id": 20079566395,
-            "name": "Page County Multisport",
-            "type": "multi_sport",
-            "start": "2025-08-16 08:03:04",
-            "distance_km": 53.88,
-            "duration_min": 169.9,
-            "avg_speed_kmh": 19.03,
-            "calories_kcal": 2550.0
-          },
-          {
-            "id": 20047733528,
-            "name": "Howard County Course à pied",
-            "type": "running",
-            "start": "2025-08-13 12:12:41",
-            "distance_km": 7.98,
-            "duration_min": 46.6,
-            "avg_speed_kmh": 10.27,
-            "calories_kcal": 682.0
-          },
-          {
-            "id": 20038892579,
-            "name": "Howard County Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-12 15:21:19",
-            "distance_km": 50.48,
-            "duration_min": 104.1,
-            "avg_speed_kmh": 29.11,
-            "calories_kcal": 1679.0
-          },
-          {
-            "id": 20027907087,
-            "name": "Howard County Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-11 17:37:30",
-            "distance_km": 18.34,
-            "duration_min": 39.3,
-            "avg_speed_kmh": 27.99,
-            "calories_kcal": 647.0
-          },
-          {
-            "id": 20018263562,
-            "name": "Howard County Course à pied",
-            "type": "running",
-            "start": "2025-08-10 20:50:43",
-            "distance_km": 1.88,
-            "duration_min": 11.4,
-            "avg_speed_kmh": 9.89,
-            "calories_kcal": 168.0
-          },
-          {
-            "id": 20018263343,
-            "name": "Howard County Course à pied",
-            "type": "running",
-            "start": "2025-08-10 20:28:55",
-            "distance_km": 5.11,
-            "duration_min": 19.7,
-            "avg_speed_kmh": 15.56,
-            "calories_kcal": 392.0
-          },
-          {
-            "id": 20018263010,
-            "name": "Howard County Course à pied",
-            "type": "running",
-            "start": "2025-08-10 20:21:52",
-            "distance_km": 1.44,
-            "duration_min": 6.4,
-            "avg_speed_kmh": 13.59,
-            "calories_kcal": 109.0
-          },
-          {
-            "id": 20015631354,
-            "name": "Shenandoah County Natation en eau libre",
-            "type": "open_water_swimming",
-            "start": "2025-08-10 11:59:26",
-            "distance_km": 0.32,
-            "duration_min": 7.4,
-            "avg_speed_kmh": 2.63,
-            "calories_kcal": 77.0
-          },
-          {
-            "id": 20006938509,
-            "name": "Shenandoah County Natation en eau libre",
-            "type": "open_water_swimming",
-            "start": "2025-08-09 16:38:24",
-            "distance_km": 0.41,
-            "duration_min": 33.7,
-            "avg_speed_kmh": 0.73,
-            "calories_kcal": 285.0
-          },
-          {
-            "id": 20005825389,
-            "name": "Page County Marche à pied",
-            "type": "walking",
-            "start": "2025-08-09 11:58:51",
-            "distance_km": 11.22,
-            "duration_min": 162.1,
-            "avg_speed_kmh": 4.15,
-            "calories_kcal": 931.0
-          },
-          {
-            "id": 19996598793,
-            "name": "Hardy County Marche à pied",
-            "type": "walking",
-            "start": "2025-08-08 17:23:50",
-            "distance_km": 7.32,
-            "duration_min": 132.0,
-            "avg_speed_kmh": 3.32,
-            "calories_kcal": 766.0
-          },
-          {
-            "id": 19993125892,
-            "name": "Howard County Course à pied",
-            "type": "running",
-            "start": "2025-08-08 09:16:26",
-            "distance_km": 9.72,
-            "duration_min": 50.7,
-            "avg_speed_kmh": 11.51,
-            "calories_kcal": 754.0
-          },
-          {
-            "id": 19987026867,
-            "name": "Howard County Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-07 20:22:51",
-            "distance_km": 17.47,
-            "duration_min": 35.4,
-            "avg_speed_kmh": 29.61,
-            "calories_kcal": 572.0
-          },
-          {
-            "id": 19981410771,
-            "name": "Nat. piscine",
-            "type": "lap_swimming",
-            "start": "2025-08-07 08:52:17",
-            "distance_km": 1.73,
+            "id": 20797138169,
+            "name": "cooldown",
+            "type": "virtual_ride",
+            "start": "2025-10-25 18:57:59",
+            "distance_km": 17.57,
             "duration_min": 36.8,
-            "avg_speed_kmh": 2.81,
-            "calories_kcal": 371.0
+            "avg_speed_kmh": 28.62,
+            "calories_kcal": 368.0
           },
           {
-            "id": 19974103024,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-08-06 13:15:29",
-            "distance_km": 0.0,
-            "duration_min": 122.9,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 1404.0
-          },
-          {
-            "id": 19971215738,
-            "name": "Howard County Course à pied",
+            "id": 20796938580,
+            "name": "Boston Course à pied",
             "type": "running",
-            "start": "2025-08-06 10:33:03",
-            "distance_km": 5.64,
-            "duration_min": 30.7,
-            "avg_speed_kmh": 11.01,
-            "calories_kcal": 442.0
+            "start": "2025-10-25 17:01:42",
+            "distance_km": 12.97,
+            "duration_min": 57.1,
+            "avg_speed_kmh": 13.62,
+            "calories_kcal": 1001.0
+          },
+          {
+            "id": 20795963151,
+            "name": "warmup",
+            "type": "virtual_ride",
+            "start": "2025-10-25 14:50:16",
+            "distance_km": 10.25,
+            "duration_min": 20.4,
+            "avg_speed_kmh": 30.06,
+            "calories_kcal": 248.0
+          },
+          {
+            "id": 20786993445,
+            "name": "40m prog",
+            "type": "virtual_ride",
+            "start": "2025-10-24 16:00:28",
+            "distance_km": 27.15,
+            "duration_min": 42.2,
+            "avg_speed_kmh": 38.63,
+            "calories_kcal": 649.0
+          },
+          {
+            "id": 20780050168,
+            "name": "easy",
+            "type": "virtual_ride",
+            "start": "2025-10-23 21:48:40",
+            "distance_km": 39.53,
+            "duration_min": 71.6,
+            "avg_speed_kmh": 33.12,
+            "calories_kcal": 877.0
+          },
+          {
+            "id": 20770931096,
+            "name": "recovery",
+            "type": "virtual_ride",
+            "start": "2025-10-22 21:08:20",
+            "distance_km": 33.04,
+            "duration_min": 74.9,
+            "avg_speed_kmh": 26.48,
+            "calories_kcal": 716.0
+          },
+          {
+            "id": 20770225866,
+            "name": "Boston Course à pied",
+            "type": "running",
+            "start": "2025-10-22 18:46:37",
+            "distance_km": 10.28,
+            "duration_min": 48.2,
+            "avg_speed_kmh": 12.79,
+            "calories_kcal": 802.0
+          },
+          {
+            "id": 20760237086,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-21 19:09:01",
+            "distance_km": 2.01,
+            "duration_min": 6.9,
+            "avg_speed_kmh": 17.63,
+            "calories_kcal": 59.0
+          },
+          {
+            "id": 20750922301,
+            "name": "imperial century :D",
+            "type": "virtual_ride",
+            "start": "2025-10-20 17:39:52",
+            "distance_km": 161.11,
+            "duration_min": 287.8,
+            "avg_speed_kmh": 33.59,
+            "calories_kcal": 3002.0
+          },
+          {
+            "id": 20740567240,
+            "name": "Boston Course à pied",
+            "type": "running",
+            "start": "2025-10-19 16:47:30",
+            "distance_km": 1.69,
+            "duration_min": 8.3,
+            "avg_speed_kmh": 12.26,
+            "calories_kcal": 147.0
+          },
+          {
+            "id": 20740566811,
+            "name": "Boston - 10x3m",
+            "type": "running",
+            "start": "2025-10-19 15:47:47",
+            "distance_km": 9.14,
+            "duration_min": 40.2,
+            "avg_speed_kmh": 13.64,
+            "calories_kcal": 723.0
+          },
+          {
+            "id": 20739936037,
+            "name": "threshold warmup",
+            "type": "virtual_ride",
+            "start": "2025-10-19 14:55:25",
+            "distance_km": 16.56,
+            "duration_min": 29.2,
+            "avg_speed_kmh": 34.05,
+            "calories_kcal": 401.0
+          },
+          {
+            "id": 20721229973,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-17 20:50:52",
+            "distance_km": 2.65,
+            "duration_min": 9.8,
+            "avg_speed_kmh": 16.19,
+            "calories_kcal": 129.0
+          },
+          {
+            "id": 20720704284,
+            "name": "steady",
+            "type": "virtual_ride",
+            "start": "2025-10-17 18:12:27",
+            "distance_km": 31.54,
+            "duration_min": 60.5,
+            "avg_speed_kmh": 31.29,
+            "calories_kcal": 720.0
+          },
+          {
+            "id": 20716155570,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-17 08:46:50",
+            "distance_km": 1.97,
+            "duration_min": 6.8,
+            "avg_speed_kmh": 17.42,
+            "calories_kcal": 96.0
+          },
+          {
+            "id": 20712430674,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-16 21:55:34",
+            "distance_km": 2.98,
+            "duration_min": 16.6,
+            "avg_speed_kmh": 10.76,
+            "calories_kcal": 204.0
+          },
+          {
+            "id": 20712261651,
+            "name": "treshold intervals",
+            "type": "virtual_ride",
+            "start": "2025-10-16 20:21:48",
+            "distance_km": 32.29,
+            "duration_min": 60.3,
+            "avg_speed_kmh": 32.12,
+            "calories_kcal": 834.0
+          },
+          {
+            "id": 20709443288,
+            "name": "Boston Incident détecté",
+            "type": "incident_detected",
+            "start": "2025-10-16 13:55:51",
+            "distance_km": 0.0,
+            "duration_min": 0.1,
+            "avg_speed_kmh": 0.88,
+            "calories_kcal": 1.0
+          },
+          {
+            "id": 20709442648,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-16 13:20:43",
+            "distance_km": 6.82,
+            "duration_min": 35.0,
+            "avg_speed_kmh": 11.68,
+            "calories_kcal": 266.0
+          },
+          {
+            "id": 20702714735,
+            "name": "strides ig",
+            "type": "virtual_ride",
+            "start": "2025-10-15 21:45:25",
+            "distance_km": 26.12,
+            "duration_min": 60.3,
+            "avg_speed_kmh": 25.98,
+            "calories_kcal": 699.0
+          },
+          {
+            "id": 20691822253,
+            "name": "ssteady",
+            "type": "virtual_ride",
+            "start": "2025-10-14 18:16:33",
+            "distance_km": 61.02,
+            "duration_min": 112.0,
+            "avg_speed_kmh": 32.68,
+            "calories_kcal": 1332.0
+          },
+          {
+            "id": 20681981167,
+            "name": "recovery",
+            "type": "virtual_ride",
+            "start": "2025-10-13 22:24:12",
+            "distance_km": 20.92,
+            "duration_min": 45.3,
+            "avg_speed_kmh": 27.72,
+            "calories_kcal": 455.0
+          },
+          {
+            "id": 20679434510,
+            "name": "recovery",
+            "type": "virtual_ride",
+            "start": "2025-10-13 13:34:47",
+            "distance_km": 42.26,
+            "duration_min": 83.8,
+            "avg_speed_kmh": 30.25,
+            "calories_kcal": 793.0
+          },
+          {
+            "id": 20671400872,
+            "name": "Boston Course à pied",
+            "type": "running",
+            "start": "2025-10-12 17:25:23",
+            "distance_km": 21.31,
+            "duration_min": 109.1,
+            "avg_speed_kmh": 11.72,
+            "calories_kcal": 1699.0
+          },
+          {
+            "id": 20660325083,
+            "name": "ramps",
+            "type": "virtual_ride",
+            "start": "2025-10-11 16:59:59",
+            "distance_km": 17.46,
+            "duration_min": 35.8,
+            "avg_speed_kmh": 29.29,
+            "calories_kcal": 476.0
+          },
+          {
+            "id": 20660131041,
+            "name": "wu",
+            "type": "virtual_ride",
+            "start": "2025-10-11 16:42:40",
+            "distance_km": 5.61,
+            "duration_min": 10.4,
+            "avg_speed_kmh": 32.35,
+            "calories_kcal": 106.0
+          },
+          {
+            "id": 20651343081,
+            "name": "easy",
+            "type": "virtual_ride",
+            "start": "2025-10-10 19:41:52",
+            "distance_km": 50.13,
+            "duration_min": 92.6,
+            "avg_speed_kmh": 32.49,
+            "calories_kcal": 914.0
+          },
+          {
+            "id": 20642351038,
+            "name": "recovery",
+            "type": "virtual_ride",
+            "start": "2025-10-09 20:05:19",
+            "distance_km": 44.12,
+            "duration_min": 90.6,
+            "avg_speed_kmh": 29.22,
+            "calories_kcal": 898.0
+          },
+          {
+            "id": 20632086705,
+            "name": "Boston - 10x3m",
+            "type": "running",
+            "start": "2025-10-08 19:05:39",
+            "distance_km": 12.71,
+            "duration_min": 62.5,
+            "avg_speed_kmh": 12.2,
+            "calories_kcal": 1055.0
+          },
+          {
+            "id": 20631556735,
+            "name": "warmup",
+            "type": "virtual_ride",
+            "start": "2025-10-08 18:11:15",
+            "distance_km": 17.44,
+            "duration_min": 30.3,
+            "avg_speed_kmh": 34.54,
+            "calories_kcal": 383.0
+          },
+          {
+            "id": 20621450523,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-07 19:28:52",
+            "distance_km": 2.76,
+            "duration_min": 9.0,
+            "avg_speed_kmh": 18.47,
+            "calories_kcal": 128.0
+          },
+          {
+            "id": 20621078590,
+            "name": "steady",
+            "type": "virtual_ride",
+            "start": "2025-10-07 17:39:52",
+            "distance_km": 34.0,
+            "duration_min": 61.6,
+            "avg_speed_kmh": 33.1,
+            "calories_kcal": 775.0
+          },
+          {
+            "id": 20610980113,
+            "name": "steady",
+            "type": "virtual_ride",
+            "start": "2025-10-06 18:38:42",
+            "distance_km": 46.3,
+            "duration_min": 91.5,
+            "avg_speed_kmh": 30.34,
+            "calories_kcal": 1088.0
+          },
+          {
+            "id": 20591368754,
+            "name": "Boston - 10x3m",
+            "type": "running",
+            "start": "2025-10-04 19:50:28",
+            "distance_km": 11.19,
+            "duration_min": 53.3,
+            "avg_speed_kmh": 12.6,
+            "calories_kcal": 939.0
+          },
+          {
+            "id": 20590460456,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-04 16:54:20",
+            "distance_km": 2.12,
+            "duration_min": 7.7,
+            "avg_speed_kmh": 16.63,
+            "calories_kcal": 95.0
+          },
+          {
+            "id": 20582774119,
+            "name": "easy",
+            "type": "virtual_ride",
+            "start": "2025-10-04 00:31:33",
+            "distance_km": 30.07,
+            "duration_min": 60.4,
+            "avg_speed_kmh": 29.87,
+            "calories_kcal": 600.0
+          },
+          {
+            "id": 20576616353,
+            "name": "recovery :D",
+            "type": "virtual_ride",
+            "start": "2025-10-03 07:40:13",
+            "distance_km": 22.19,
+            "duration_min": 43.5,
+            "avg_speed_kmh": 30.61,
+            "calories_kcal": 394.0
+          },
+          {
+            "id": 20563932724,
+            "name": "Boston Course à pied",
+            "type": "running",
+            "start": "2025-10-01 20:53:01",
+            "distance_km": 16.04,
+            "duration_min": 88.9,
+            "avg_speed_kmh": 10.83,
+            "calories_kcal": 1306.0
+          },
+          {
+            "id": 20541630124,
+            "name": "RECOVERY",
+            "type": "virtual_ride",
+            "start": "2025-09-29 18:56:33",
+            "distance_km": 56.84,
+            "duration_min": 121.0,
+            "avg_speed_kmh": 28.17,
+            "calories_kcal": 1050.0
+          },
+          {
+            "id": 20531494519,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-09-28 19:01:05",
+            "distance_km": 10.19,
+            "duration_min": 50.4,
+            "avg_speed_kmh": 12.12,
+            "calories_kcal": 609.0
+          },
+          {
+            "id": 20530775040,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-09-28 16:56:28",
+            "distance_km": 2.47,
+            "duration_min": 8.5,
+            "avg_speed_kmh": 17.47,
+            "calories_kcal": 54.0
           }
         ]
       },
@@ -623,52 +623,52 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-08-04",
-            "week_end": "2025-08-10",
-            "distance_km": 62.25,
-            "time_hours": 10.82
-          },
-          {
-            "week_start": "2025-08-11",
-            "week_end": "2025-08-17",
-            "distance_km": 162.97,
-            "time_hours": 7.15
-          },
-          {
-            "week_start": "2025-08-18",
-            "week_end": "2025-08-24",
-            "distance_km": 240.37,
-            "time_hours": 10.82
-          },
-          {
-            "week_start": "2025-08-25",
-            "week_end": "2025-08-31",
-            "distance_km": 51.06,
-            "time_hours": 2.04
-          },
-          {
-            "week_start": "2025-09-01",
-            "week_end": "2025-09-07",
-            "distance_km": 171.73,
-            "time_hours": 12.49
-          },
-          {
             "week_start": "2025-09-08",
             "week_end": "2025-09-14",
-            "distance_km": 203.05,
-            "time_hours": 8.05
+            "distance_km": 0.0,
+            "time_hours": 0.0
           },
           {
             "week_start": "2025-09-15",
             "week_end": "2025-09-21",
-            "distance_km": 269.6,
-            "time_hours": 8.49
+            "distance_km": 0.0,
+            "time_hours": 0.0
           },
           {
             "week_start": "2025-09-22",
             "week_end": "2025-09-28",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 12.65,
+            "time_hours": 0.98
+          },
+          {
+            "week_start": "2025-09-29",
+            "week_end": "2025-10-05",
+            "distance_km": 138.46,
+            "time_hours": 6.25
+          },
+          {
+            "week_start": "2025-10-06",
+            "week_end": "2025-10-12",
+            "distance_km": 251.83,
+            "time_hours": 9.89
+          },
+          {
+            "week_start": "2025-10-13",
+            "week_end": "2025-10-19",
+            "distance_km": 255.97,
+            "time_hours": 9.47
+          },
+          {
+            "week_start": "2025-10-20",
+            "week_end": "2025-10-26",
+            "distance_km": 321.53,
+            "time_hours": 11.14
+          },
+          {
+            "week_start": "2025-10-27",
+            "week_end": "2025-11-02",
+            "distance_km": 286.69,
+            "time_hours": 10.06
           }
         ]
       }
@@ -676,423 +676,483 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 33,
-        "distance_km": 728.8,
-        "time_hours": 31.53,
-        "longest_km": 103.12,
-        "calories_kcal": 22518.0
+        "activities_count": 44,
+        "distance_km": 1079.0,
+        "time_hours": 35.22,
+        "longest_km": 161.11,
+        "calories_kcal": 23430.0
       },
       "recent": {
         "last60": [
           {
-            "id": 20461586629,
-            "name": "steady",
-            "type": "virtual_ride",
-            "start": "2025-09-21 22:05:27",
-            "distance_km": 23.26,
-            "duration_min": 45.2,
-            "avg_speed_kmh": 30.88,
-            "calories_kcal": 460.0
-          },
-          {
-            "id": 20461470982,
-            "name": "wo",
-            "type": "virtual_ride",
-            "start": "2025-09-21 21:18:16",
-            "distance_km": 26.92,
-            "duration_min": 44.6,
-            "avg_speed_kmh": 36.18,
-            "calories_kcal": 594.0
-          },
-          {
-            "id": 20449478050,
-            "name": "long",
-            "type": "virtual_ride",
-            "start": "2025-09-20 13:24:02",
-            "distance_km": 103.12,
-            "duration_min": 180.6,
-            "avg_speed_kmh": 34.27,
-            "calories_kcal": 2339.0
-          },
-          {
-            "id": 20440083249,
-            "name": "Newton Cyclisme",
+            "id": 20858736276,
+            "name": "Boston Cyclisme",
             "type": "cycling",
-            "start": "2025-09-19 20:02:15",
-            "distance_km": 11.15,
-            "duration_min": 37.4,
-            "avg_speed_kmh": 17.9,
-            "calories_kcal": 450.0
+            "start": "2025-11-01 08:35:29",
+            "distance_km": 2.91,
+            "duration_min": 11.7,
+            "avg_speed_kmh": 14.97,
+            "calories_kcal": 157.0
           },
           {
-            "id": 20420496002,
-            "name": "ss",
+            "id": 20854459534,
+            "name": "z2",
             "type": "virtual_ride",
-            "start": "2025-09-17 20:37:31",
-            "distance_km": 57.39,
-            "duration_min": 111.2,
-            "avg_speed_kmh": 30.97,
-            "calories_kcal": 1327.0
+            "start": "2025-10-31 18:35:49",
+            "distance_km": 86.66,
+            "duration_min": 145.3,
+            "avg_speed_kmh": 35.79,
+            "calories_kcal": 1716.0
           },
           {
-            "id": 20398470230,
-            "name": "ss",
-            "type": "virtual_ride",
-            "start": "2025-09-15 18:46:39",
-            "distance_km": 47.76,
-            "duration_min": 90.6,
-            "avg_speed_kmh": 31.63,
-            "calories_kcal": 1198.0
+            "id": 20853594711,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-31 17:13:15",
+            "distance_km": 3.56,
+            "duration_min": 12.3,
+            "avg_speed_kmh": 17.41,
+            "calories_kcal": 63.0
           },
           {
-            "id": 20387950471,
-            "name": "wu",
-            "type": "virtual_ride",
-            "start": "2025-09-14 17:40:21",
-            "distance_km": 21.26,
-            "duration_min": 57.9,
-            "avg_speed_kmh": 22.04,
-            "calories_kcal": 730.0
+            "id": 20849236237,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-31 08:12:41",
+            "distance_km": 2.53,
+            "duration_min": 7.5,
+            "avg_speed_kmh": 20.13,
+            "calories_kcal": 32.0
           },
           {
-            "id": 20367117544,
-            "name": "cd",
-            "type": "virtual_ride",
-            "start": "2025-09-12 19:02:50",
-            "distance_km": 4.44,
-            "duration_min": 14.0,
-            "avg_speed_kmh": 19.07,
-            "calories_kcal": 140.0
+            "id": 20845512979,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-30 19:08:07",
+            "distance_km": 1.39,
+            "duration_min": 5.1,
+            "avg_speed_kmh": 16.29,
+            "calories_kcal": 50.0
           },
           {
-            "id": 20367035894,
-            "name": "some threshold",
-            "type": "virtual_ride",
-            "start": "2025-09-12 18:21:25",
-            "distance_km": 23.92,
-            "duration_min": 40.3,
-            "avg_speed_kmh": 35.59,
-            "calories_kcal": 605.0
-          },
-          {
-            "id": 20366787710,
-            "name": "wu",
-            "type": "virtual_ride",
-            "start": "2025-09-12 17:50:13",
-            "distance_km": 13.18,
-            "duration_min": 24.9,
-            "avg_speed_kmh": 31.8,
-            "calories_kcal": 282.0
-          },
-          {
-            "id": 20358781784,
-            "name": "vo2 :(",
-            "type": "virtual_ride",
-            "start": "2025-09-11 23:58:58",
-            "distance_km": 11.0,
-            "duration_min": 19.7,
-            "avg_speed_kmh": 33.51,
-            "calories_kcal": 298.0
-          },
-          {
-            "id": 20348174977,
-            "name": "cd",
-            "type": "virtual_ride",
-            "start": "2025-09-10 22:26:12",
-            "distance_km": 10.14,
-            "duration_min": 21.4,
-            "avg_speed_kmh": 28.46,
-            "calories_kcal": 231.0
-          },
-          {
-            "id": 20348057493,
-            "name": "SS",
-            "type": "virtual_ride",
-            "start": "2025-09-10 20:40:47",
-            "distance_km": 41.25,
-            "duration_min": 90.6,
-            "avg_speed_kmh": 27.33,
-            "calories_kcal": 1228.0
-          },
-          {
-            "id": 20337953090,
+            "id": 20836244100,
             "name": "easy",
             "type": "virtual_ride",
-            "start": "2025-09-09 23:30:39",
-            "distance_km": 23.37,
-            "duration_min": 44.7,
-            "avg_speed_kmh": 31.38,
-            "calories_kcal": 546.0
+            "start": "2025-10-29 18:42:20",
+            "distance_km": 36.39,
+            "duration_min": 62.8,
+            "avg_speed_kmh": 34.79,
+            "calories_kcal": 783.0
           },
           {
-            "id": 20336116972,
-            "name": "FTP TEST",
+            "id": 20832211639,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-29 11:21:02",
+            "distance_km": 3.81,
+            "duration_min": 13.5,
+            "avg_speed_kmh": 16.94,
+            "calories_kcal": 50.0
+          },
+          {
+            "id": 20827034517,
+            "name": "easy",
             "type": "virtual_ride",
-            "start": "2025-09-09 17:21:28",
-            "distance_km": 15.56,
-            "duration_min": 35.7,
-            "avg_speed_kmh": 26.15,
-            "calories_kcal": 457.0
+            "start": "2025-10-28 20:43:13",
+            "distance_km": 34.21,
+            "duration_min": 60.3,
+            "avg_speed_kmh": 34.05,
+            "calories_kcal": 657.0
           },
           {
-            "id": 20325516672,
-            "name": "Zwift - Road to Sky in Watopia",
+            "id": 20826663310,
+            "name": "steady w MUMA",
             "type": "virtual_ride",
-            "start": "2025-09-08 17:47:23",
-            "distance_km": 31.89,
-            "duration_min": 97.4,
-            "avg_speed_kmh": 19.65,
-            "calories_kcal": 1219.0
+            "start": "2025-10-28 19:15:01",
+            "distance_km": 29.83,
+            "duration_min": 60.4,
+            "avg_speed_kmh": 29.61,
+            "calories_kcal": 532.0
           },
           {
-            "id": 20312052081,
+            "id": 20826201915,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-28 18:41:06",
+            "distance_km": 3.28,
+            "duration_min": 14.8,
+            "avg_speed_kmh": 13.31,
+            "calories_kcal": 153.0
+          },
+          {
+            "id": 20816820889,
+            "name": "still doing laundry",
+            "type": "virtual_ride",
+            "start": "2025-10-27 20:29:38",
+            "distance_km": 20.42,
+            "duration_min": 35.6,
+            "avg_speed_kmh": 34.38,
+            "calories_kcal": 405.0
+          },
+          {
+            "id": 20816610183,
+            "name": "doing laundry",
+            "type": "virtual_ride",
+            "start": "2025-10-27 19:46:28",
+            "distance_km": 16.85,
+            "duration_min": 31.3,
+            "avg_speed_kmh": 32.27,
+            "calories_kcal": 467.0
+          },
+          {
+            "id": 20816358199,
+            "name": "warmup",
+            "type": "virtual_ride",
+            "start": "2025-10-27 19:00:18",
+            "distance_km": 19.51,
+            "duration_min": 30.3,
+            "avg_speed_kmh": 38.6,
+            "calories_kcal": 393.0
+          },
+          {
+            "id": 20811208983,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-27 08:48:10",
+            "distance_km": 2.05,
+            "duration_min": 6.0,
+            "avg_speed_kmh": 20.52,
+            "calories_kcal": 29.0
+          },
+          {
+            "id": 20806926599,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-26 17:26:12",
+            "distance_km": 7.63,
+            "duration_min": 22.6,
+            "avg_speed_kmh": 20.23,
+            "calories_kcal": 238.0
+          },
+          {
+            "id": 20797138169,
+            "name": "cooldown",
+            "type": "virtual_ride",
+            "start": "2025-10-25 18:57:59",
+            "distance_km": 17.57,
+            "duration_min": 36.8,
+            "avg_speed_kmh": 28.62,
+            "calories_kcal": 368.0
+          },
+          {
+            "id": 20795963151,
+            "name": "warmup",
+            "type": "virtual_ride",
+            "start": "2025-10-25 14:50:16",
+            "distance_km": 10.25,
+            "duration_min": 20.4,
+            "avg_speed_kmh": 30.06,
+            "calories_kcal": 248.0
+          },
+          {
+            "id": 20786993445,
+            "name": "40m prog",
+            "type": "virtual_ride",
+            "start": "2025-10-24 16:00:28",
+            "distance_km": 27.15,
+            "duration_min": 42.2,
+            "avg_speed_kmh": 38.63,
+            "calories_kcal": 649.0
+          },
+          {
+            "id": 20780050168,
+            "name": "easy",
+            "type": "virtual_ride",
+            "start": "2025-10-23 21:48:40",
+            "distance_km": 39.53,
+            "duration_min": 71.6,
+            "avg_speed_kmh": 33.12,
+            "calories_kcal": 877.0
+          },
+          {
+            "id": 20770931096,
             "name": "recovery",
             "type": "virtual_ride",
-            "start": "2025-09-07 11:09:50",
-            "distance_km": 30.18,
-            "duration_min": 55.4,
-            "avg_speed_kmh": 32.71,
-            "calories_kcal": 615.0
+            "start": "2025-10-22 21:08:20",
+            "distance_km": 33.04,
+            "duration_min": 74.9,
+            "avg_speed_kmh": 26.48,
+            "calories_kcal": 716.0
           },
           {
-            "id": 20305285210,
-            "name": "cd",
+            "id": 20760237086,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-21 19:09:01",
+            "distance_km": 2.01,
+            "duration_min": 6.9,
+            "avg_speed_kmh": 17.63,
+            "calories_kcal": 59.0
+          },
+          {
+            "id": 20750922301,
+            "name": "imperial century :D",
             "type": "virtual_ride",
-            "start": "2025-09-07 01:14:53",
-            "distance_km": 20.07,
-            "duration_min": 37.1,
-            "avg_speed_kmh": 32.41,
-            "calories_kcal": 378.0
+            "start": "2025-10-20 17:39:52",
+            "distance_km": 161.11,
+            "duration_min": 287.8,
+            "avg_speed_kmh": 33.59,
+            "calories_kcal": 3002.0
           },
           {
-            "id": 20305090467,
-            "name": "FIRST RACE! W",
+            "id": 20739936037,
+            "name": "threshold warmup",
             "type": "virtual_ride",
-            "start": "2025-09-07 00:12:26",
-            "distance_km": 22.38,
-            "duration_min": 36.9,
-            "avg_speed_kmh": 36.43,
-            "calories_kcal": 638.0
+            "start": "2025-10-19 14:55:25",
+            "distance_km": 16.56,
+            "duration_min": 29.2,
+            "avg_speed_kmh": 34.05,
+            "calories_kcal": 401.0
           },
           {
-            "id": 20304979708,
-            "name": "first workout",
+            "id": 20721229973,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-17 20:50:52",
+            "distance_km": 2.65,
+            "duration_min": 9.8,
+            "avg_speed_kmh": 16.19,
+            "calories_kcal": 129.0
+          },
+          {
+            "id": 20720704284,
+            "name": "steady",
             "type": "virtual_ride",
-            "start": "2025-09-06 23:40:15",
-            "distance_km": 10.25,
-            "duration_min": 25.2,
-            "avg_speed_kmh": 24.35,
-            "calories_kcal": 250.0
+            "start": "2025-10-17 18:12:27",
+            "distance_km": 31.54,
+            "duration_min": 60.5,
+            "avg_speed_kmh": 31.29,
+            "calories_kcal": 720.0
           },
           {
-            "id": 20293900549,
-            "name": "zwift ROCKS",
+            "id": 20716155570,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-17 08:46:50",
+            "distance_km": 1.97,
+            "duration_min": 6.8,
+            "avg_speed_kmh": 17.42,
+            "calories_kcal": 96.0
+          },
+          {
+            "id": 20712430674,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-16 21:55:34",
+            "distance_km": 2.98,
+            "duration_min": 16.6,
+            "avg_speed_kmh": 10.76,
+            "calories_kcal": 204.0
+          },
+          {
+            "id": 20712261651,
+            "name": "treshold intervals",
             "type": "virtual_ride",
-            "start": "2025-09-05 19:35:56",
-            "distance_km": 71.46,
-            "duration_min": 135.6,
-            "avg_speed_kmh": 31.61,
-            "calories_kcal": 1623.0
+            "start": "2025-10-16 20:21:48",
+            "distance_km": 32.29,
+            "duration_min": 60.3,
+            "avg_speed_kmh": 32.12,
+            "calories_kcal": 834.0
           },
           {
-            "id": 20293138223,
-            "name": "FIRST RIDE",
-            "type": "virtual_ride",
-            "start": "2025-09-05 19:03:55",
-            "distance_km": 5.15,
-            "duration_min": 9.7,
-            "avg_speed_kmh": 31.99,
-            "calories_kcal": 115.0
-          },
-          {
-            "id": 20284272421,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-04 21:36:33",
-            "distance_km": 0.0,
-            "duration_min": 14.5,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 180.0
-          },
-          {
-            "id": 20283842208,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-04 19:47:48",
-            "distance_km": 0.0,
-            "duration_min": 23.2,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 131.0
-          },
-          {
-            "id": 20274025811,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-03 22:07:46",
-            "distance_km": 0.0,
+            "id": 20709442648,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-10-16 13:20:43",
+            "distance_km": 6.82,
             "duration_min": 35.0,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 431.0
+            "avg_speed_kmh": 11.68,
+            "calories_kcal": 266.0
           },
           {
-            "id": 20266637938,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-03 07:32:46",
-            "distance_km": 0.0,
-            "duration_min": 25.4,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 279.0
+            "id": 20702714735,
+            "name": "strides ig",
+            "type": "virtual_ride",
+            "start": "2025-10-15 21:45:25",
+            "distance_km": 26.12,
+            "duration_min": 60.3,
+            "avg_speed_kmh": 25.98,
+            "calories_kcal": 699.0
           },
           {
-            "id": 20261853685,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-02 17:50:03",
-            "distance_km": 0.0,
-            "duration_min": 56.1,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 601.0
+            "id": 20691822253,
+            "name": "ssteady",
+            "type": "virtual_ride",
+            "start": "2025-10-14 18:16:33",
+            "distance_km": 61.02,
+            "duration_min": 112.0,
+            "avg_speed_kmh": 32.68,
+            "calories_kcal": 1332.0
           },
           {
-            "id": 20255536596,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-02 07:04:44",
-            "distance_km": 0.0,
-            "duration_min": 61.9,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 560.0
+            "id": 20681981167,
+            "name": "recovery",
+            "type": "virtual_ride",
+            "start": "2025-10-13 22:24:12",
+            "distance_km": 20.92,
+            "duration_min": 45.3,
+            "avg_speed_kmh": 27.72,
+            "calories_kcal": 455.0
           },
           {
-            "id": 20254786033,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-01 17:42:59",
-            "distance_km": 0.0,
-            "duration_min": 61.4,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 736.0
+            "id": 20679434510,
+            "name": "recovery",
+            "type": "virtual_ride",
+            "start": "2025-10-13 13:34:47",
+            "distance_km": 42.26,
+            "duration_min": 83.8,
+            "avg_speed_kmh": 30.25,
+            "calories_kcal": 793.0
           },
           {
-            "id": 20254784986,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-09-01 09:02:36",
-            "distance_km": 0.0,
-            "duration_min": 62.3,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 596.0
+            "id": 20660325083,
+            "name": "ramps",
+            "type": "virtual_ride",
+            "start": "2025-10-11 16:59:59",
+            "distance_km": 17.46,
+            "duration_min": 35.8,
+            "avg_speed_kmh": 29.29,
+            "calories_kcal": 476.0
           },
           {
-            "id": 20176574779,
-            "name": "Anne Arundel County Cyclisme",
+            "id": 20660131041,
+            "name": "wu",
+            "type": "virtual_ride",
+            "start": "2025-10-11 16:42:40",
+            "distance_km": 5.61,
+            "duration_min": 10.4,
+            "avg_speed_kmh": 32.35,
+            "calories_kcal": 106.0
+          },
+          {
+            "id": 20651343081,
+            "name": "easy",
+            "type": "virtual_ride",
+            "start": "2025-10-10 19:41:52",
+            "distance_km": 50.13,
+            "duration_min": 92.6,
+            "avg_speed_kmh": 32.49,
+            "calories_kcal": 914.0
+          },
+          {
+            "id": 20642351038,
+            "name": "recovery",
+            "type": "virtual_ride",
+            "start": "2025-10-09 20:05:19",
+            "distance_km": 44.12,
+            "duration_min": 90.6,
+            "avg_speed_kmh": 29.22,
+            "calories_kcal": 898.0
+          },
+          {
+            "id": 20631556735,
+            "name": "warmup",
+            "type": "virtual_ride",
+            "start": "2025-10-08 18:11:15",
+            "distance_km": 17.44,
+            "duration_min": 30.3,
+            "avg_speed_kmh": 34.54,
+            "calories_kcal": 383.0
+          },
+          {
+            "id": 20621450523,
+            "name": "Boston Cyclisme",
             "type": "cycling",
-            "start": "2025-08-25 13:49:46",
-            "distance_km": 51.06,
-            "duration_min": 122.7,
-            "avg_speed_kmh": 24.97,
-            "calories_kcal": 1524.0
+            "start": "2025-10-07 19:28:52",
+            "distance_km": 2.76,
+            "duration_min": 9.0,
+            "avg_speed_kmh": 18.47,
+            "calories_kcal": 128.0
           },
           {
-            "id": 20175040492,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-08-24 18:41:13",
-            "distance_km": 0.0,
-            "duration_min": 29.7,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 367.0
+            "id": 20621078590,
+            "name": "steady",
+            "type": "virtual_ride",
+            "start": "2025-10-07 17:39:52",
+            "distance_km": 34.0,
+            "duration_min": 61.6,
+            "avg_speed_kmh": 33.1,
+            "calories_kcal": 775.0
           },
           {
-            "id": 20155257239,
-            "name": "Nags Head Cyclisme",
+            "id": 20610980113,
+            "name": "steady",
+            "type": "virtual_ride",
+            "start": "2025-10-06 18:38:42",
+            "distance_km": 46.3,
+            "duration_min": 91.5,
+            "avg_speed_kmh": 30.34,
+            "calories_kcal": 1088.0
+          },
+          {
+            "id": 20590460456,
+            "name": "Boston Cyclisme",
             "type": "cycling",
-            "start": "2025-08-23 12:31:33",
-            "distance_km": 52.64,
-            "duration_min": 143.8,
-            "avg_speed_kmh": 21.96,
-            "calories_kcal": 1390.0
+            "start": "2025-10-04 16:54:20",
+            "distance_km": 2.12,
+            "duration_min": 7.7,
+            "avg_speed_kmh": 16.63,
+            "calories_kcal": 95.0
           },
           {
-            "id": 20142413086,
-            "name": "Nags Head Cyclisme",
+            "id": 20582774119,
+            "name": "easy",
+            "type": "virtual_ride",
+            "start": "2025-10-04 00:31:33",
+            "distance_km": 30.07,
+            "duration_min": 60.4,
+            "avg_speed_kmh": 29.87,
+            "calories_kcal": 600.0
+          },
+          {
+            "id": 20576616353,
+            "name": "recovery :D",
+            "type": "virtual_ride",
+            "start": "2025-10-03 07:40:13",
+            "distance_km": 22.19,
+            "duration_min": 43.5,
+            "avg_speed_kmh": 30.61,
+            "calories_kcal": 394.0
+          },
+          {
+            "id": 20541630124,
+            "name": "RECOVERY",
+            "type": "virtual_ride",
+            "start": "2025-09-29 18:56:33",
+            "distance_km": 56.84,
+            "duration_min": 121.0,
+            "avg_speed_kmh": 28.17,
+            "calories_kcal": 1050.0
+          },
+          {
+            "id": 20531494519,
+            "name": "Boston Cyclisme",
             "type": "cycling",
-            "start": "2025-08-22 07:14:00",
-            "distance_km": 100.23,
-            "duration_min": 211.8,
-            "avg_speed_kmh": 28.4,
-            "calories_kcal": 2699.0
+            "start": "2025-09-28 19:01:05",
+            "distance_km": 10.19,
+            "duration_min": 50.4,
+            "avg_speed_kmh": 12.12,
+            "calories_kcal": 609.0
           },
           {
-            "id": 20123362747,
-            "name": "Nags Head Cyclisme",
+            "id": 20530775040,
+            "name": "Boston Cyclisme",
             "type": "cycling",
-            "start": "2025-08-20 11:58:01",
-            "distance_km": 33.19,
-            "duration_min": 69.2,
-            "avg_speed_kmh": 28.77,
-            "calories_kcal": 963.0
-          },
-          {
-            "id": 20099831288,
-            "name": "Nags Head Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-18 11:01:10",
-            "distance_km": 37.67,
-            "duration_min": 97.0,
-            "avg_speed_kmh": 23.31,
-            "calories_kcal": 1166.0
-          },
-          {
-            "id": 20092579382,
-            "name": "Nags Head Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-17 17:46:13",
-            "distance_km": 32.3,
-            "duration_min": 69.3,
-            "avg_speed_kmh": 27.96,
-            "calories_kcal": 986.0
-          },
-          {
-            "id": 20038892579,
-            "name": "Howard County Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-12 15:21:19",
-            "distance_km": 50.48,
-            "duration_min": 104.1,
-            "avg_speed_kmh": 29.11,
-            "calories_kcal": 1679.0
-          },
-          {
-            "id": 20027907087,
-            "name": "Howard County Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-11 17:37:30",
-            "distance_km": 18.34,
-            "duration_min": 39.3,
-            "avg_speed_kmh": 27.99,
-            "calories_kcal": 647.0
-          },
-          {
-            "id": 19987026867,
-            "name": "Howard County Cyclisme",
-            "type": "cycling",
-            "start": "2025-08-07 20:22:51",
-            "distance_km": 17.47,
-            "duration_min": 35.4,
-            "avg_speed_kmh": 29.61,
-            "calories_kcal": 572.0
-          },
-          {
-            "id": 19974103024,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-08-06 13:15:29",
-            "distance_km": 0.0,
-            "duration_min": 122.9,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 1404.0
+            "start": "2025-09-28 16:56:28",
+            "distance_km": 2.47,
+            "duration_min": 8.5,
+            "avg_speed_kmh": 17.47,
+            "calories_kcal": 54.0
           }
         ]
       },
@@ -1100,52 +1160,52 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-08-04",
-            "week_end": "2025-08-10",
-            "distance_km": 17.47,
-            "time_hours": 2.64
-          },
-          {
-            "week_start": "2025-08-11",
-            "week_end": "2025-08-17",
-            "distance_km": 101.12,
-            "time_hours": 3.54
-          },
-          {
-            "week_start": "2025-08-18",
-            "week_end": "2025-08-24",
-            "distance_km": 223.73,
-            "time_hours": 9.19
-          },
-          {
-            "week_start": "2025-08-25",
-            "week_end": "2025-08-31",
-            "distance_km": 51.06,
-            "time_hours": 2.04
-          },
-          {
-            "week_start": "2025-09-01",
-            "week_end": "2025-09-07",
-            "distance_km": 159.47,
-            "time_hours": 10.66
-          },
-          {
             "week_start": "2025-09-08",
             "week_end": "2025-09-14",
-            "distance_km": 196.02,
-            "time_hours": 7.44
+            "distance_km": 0.0,
+            "time_hours": 0.0
           },
           {
             "week_start": "2025-09-15",
             "week_end": "2025-09-21",
-            "distance_km": 269.6,
-            "time_hours": 8.49
+            "distance_km": 0.0,
+            "time_hours": 0.0
           },
           {
             "week_start": "2025-09-22",
             "week_end": "2025-09-28",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 12.65,
+            "time_hours": 0.98
+          },
+          {
+            "week_start": "2025-09-29",
+            "week_end": "2025-10-05",
+            "distance_km": 111.23,
+            "time_hours": 3.88
+          },
+          {
+            "week_start": "2025-10-06",
+            "week_end": "2025-10-12",
+            "distance_km": 217.8,
+            "time_hours": 7.03
+          },
+          {
+            "week_start": "2025-10-13",
+            "week_end": "2025-10-19",
+            "distance_km": 245.14,
+            "time_hours": 8.66
+          },
+          {
+            "week_start": "2025-10-20",
+            "week_end": "2025-10-26",
+            "distance_km": 298.29,
+            "time_hours": 9.39
+          },
+          {
+            "week_start": "2025-10-27",
+            "week_end": "2025-11-02",
+            "distance_km": 263.39,
+            "time_hours": 8.28
           }
         ]
       }
@@ -1153,123 +1213,133 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 2,
-        "distance_km": 19.29,
-        "time_hours": 1.7,
-        "longest_km": 12.26,
-        "calories_kcal": 1619.0
+        "activities_count": 11,
+        "distance_km": 102.59,
+        "time_hours": 8.09,
+        "longest_km": 21.31,
+        "calories_kcal": 8146.0
       },
       "recent": {
         "last60": [
           {
-            "id": 20376638390,
-            "name": "Boston Course à pied",
+            "id": 20860206914,
+            "name": "Cambridge Course à pied",
             "type": "running",
-            "start": "2025-09-13 15:04:39",
-            "distance_km": 7.03,
-            "duration_min": 36.6,
-            "avg_speed_kmh": 11.51,
-            "calories_kcal": 631.0
+            "start": "2025-11-01 10:46:08",
+            "distance_km": 2.89,
+            "duration_min": 15.3,
+            "avg_speed_kmh": 11.36,
+            "calories_kcal": 238.0
           },
           {
-            "id": 20284176165,
-            "name": "Boston Course à pied",
+            "id": 20859715920,
+            "name": "Cambridge Course à pied",
             "type": "running",
-            "start": "2025-09-04 20:14:13",
-            "distance_km": 12.26,
-            "duration_min": 65.2,
-            "avg_speed_kmh": 11.28,
-            "calories_kcal": 988.0
+            "start": "2025-11-01 10:00:29",
+            "distance_km": 4.95,
+            "duration_min": 18.6,
+            "avg_speed_kmh": 15.93,
+            "calories_kcal": 338.0
           },
           {
-            "id": 20135638348,
-            "name": "Nags Head Course à pied",
+            "id": 20859357552,
+            "name": "Boston Course à pied",
             "type": "running",
-            "start": "2025-08-21 16:05:55",
+            "start": "2025-11-01 09:24:46",
+            "distance_km": 4.16,
+            "duration_min": 20.5,
+            "avg_speed_kmh": 12.2,
+            "calories_kcal": 345.0
+          },
+          {
+            "id": 20826019591,
+            "name": "Boston Course à pied",
+            "type": "running",
+            "start": "2025-10-28 17:30:04",
+            "distance_km": 11.31,
+            "duration_min": 52.2,
+            "avg_speed_kmh": 12.99,
+            "calories_kcal": 859.0
+          },
+          {
+            "id": 20796938580,
+            "name": "Boston Course à pied",
+            "type": "running",
+            "start": "2025-10-25 17:01:42",
             "distance_km": 12.97,
-            "duration_min": 65.9,
-            "avg_speed_kmh": 11.8,
-            "calories_kcal": 1037.0
+            "duration_min": 57.1,
+            "avg_speed_kmh": 13.62,
+            "calories_kcal": 1001.0
           },
           {
-            "id": 20125112681,
-            "name": "Nags Head Course à pied",
+            "id": 20770225866,
+            "name": "Boston Course à pied",
             "type": "running",
-            "start": "2025-08-20 17:01:16",
-            "distance_km": 0.45,
-            "duration_min": 1.9,
-            "avg_speed_kmh": 13.82,
-            "calories_kcal": 25.0
+            "start": "2025-10-22 18:46:37",
+            "distance_km": 10.28,
+            "duration_min": 48.2,
+            "avg_speed_kmh": 12.79,
+            "calories_kcal": 802.0
           },
           {
-            "id": 20101134540,
-            "name": "Nags Head Course à pied",
+            "id": 20740567240,
+            "name": "Boston Course à pied",
             "type": "running",
-            "start": "2025-08-18 14:14:41",
-            "distance_km": 3.23,
-            "duration_min": 20.4,
-            "avg_speed_kmh": 9.48,
-            "calories_kcal": 293.0
+            "start": "2025-10-19 16:47:30",
+            "distance_km": 1.69,
+            "duration_min": 8.3,
+            "avg_speed_kmh": 12.26,
+            "calories_kcal": 147.0
           },
           {
-            "id": 20047733528,
-            "name": "Howard County Course à pied",
+            "id": 20740566811,
+            "name": "Boston - 10x3m",
             "type": "running",
-            "start": "2025-08-13 12:12:41",
-            "distance_km": 7.98,
-            "duration_min": 46.6,
-            "avg_speed_kmh": 10.27,
-            "calories_kcal": 682.0
+            "start": "2025-10-19 15:47:47",
+            "distance_km": 9.14,
+            "duration_min": 40.2,
+            "avg_speed_kmh": 13.64,
+            "calories_kcal": 723.0
           },
           {
-            "id": 20018263562,
-            "name": "Howard County Course à pied",
+            "id": 20671400872,
+            "name": "Boston Course à pied",
             "type": "running",
-            "start": "2025-08-10 20:50:43",
-            "distance_km": 1.88,
-            "duration_min": 11.4,
-            "avg_speed_kmh": 9.89,
-            "calories_kcal": 168.0
+            "start": "2025-10-12 17:25:23",
+            "distance_km": 21.31,
+            "duration_min": 109.1,
+            "avg_speed_kmh": 11.72,
+            "calories_kcal": 1699.0
           },
           {
-            "id": 20018263343,
-            "name": "Howard County Course à pied",
+            "id": 20632086705,
+            "name": "Boston - 10x3m",
             "type": "running",
-            "start": "2025-08-10 20:28:55",
-            "distance_km": 5.11,
-            "duration_min": 19.7,
-            "avg_speed_kmh": 15.56,
-            "calories_kcal": 392.0
+            "start": "2025-10-08 19:05:39",
+            "distance_km": 12.71,
+            "duration_min": 62.5,
+            "avg_speed_kmh": 12.2,
+            "calories_kcal": 1055.0
           },
           {
-            "id": 20018263010,
-            "name": "Howard County Course à pied",
+            "id": 20591368754,
+            "name": "Boston - 10x3m",
             "type": "running",
-            "start": "2025-08-10 20:21:52",
-            "distance_km": 1.44,
-            "duration_min": 6.4,
-            "avg_speed_kmh": 13.59,
-            "calories_kcal": 109.0
+            "start": "2025-10-04 19:50:28",
+            "distance_km": 11.19,
+            "duration_min": 53.3,
+            "avg_speed_kmh": 12.6,
+            "calories_kcal": 939.0
           },
           {
-            "id": 19993125892,
-            "name": "Howard County Course à pied",
+            "id": 20563932724,
+            "name": "Boston Course à pied",
             "type": "running",
-            "start": "2025-08-08 09:16:26",
-            "distance_km": 9.72,
-            "duration_min": 50.7,
-            "avg_speed_kmh": 11.51,
-            "calories_kcal": 754.0
-          },
-          {
-            "id": 19971215738,
-            "name": "Howard County Course à pied",
-            "type": "running",
-            "start": "2025-08-06 10:33:03",
-            "distance_km": 5.64,
-            "duration_min": 30.7,
-            "avg_speed_kmh": 11.01,
-            "calories_kcal": 442.0
+            "start": "2025-10-01 20:53:01",
+            "distance_km": 16.04,
+            "duration_min": 88.9,
+            "avg_speed_kmh": 10.83,
+            "calories_kcal": 1306.0
           }
         ]
       },
@@ -1277,40 +1347,10 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-08-04",
-            "week_end": "2025-08-10",
-            "distance_km": 23.79,
-            "time_hours": 1.98
-          },
-          {
-            "week_start": "2025-08-11",
-            "week_end": "2025-08-17",
-            "distance_km": 7.98,
-            "time_hours": 0.78
-          },
-          {
-            "week_start": "2025-08-18",
-            "week_end": "2025-08-24",
-            "distance_km": 16.64,
-            "time_hours": 1.47
-          },
-          {
-            "week_start": "2025-08-25",
-            "week_end": "2025-08-31",
-            "distance_km": 0.0,
-            "time_hours": 0.0
-          },
-          {
-            "week_start": "2025-09-01",
-            "week_end": "2025-09-07",
-            "distance_km": 12.26,
-            "time_hours": 1.09
-          },
-          {
             "week_start": "2025-09-08",
             "week_end": "2025-09-14",
-            "distance_km": 7.03,
-            "time_hours": 0.61
+            "distance_km": 0.0,
+            "time_hours": 0.0
           },
           {
             "week_start": "2025-09-15",
@@ -1323,6 +1363,36 @@
             "week_end": "2025-09-28",
             "distance_km": 0.0,
             "time_hours": 0.0
+          },
+          {
+            "week_start": "2025-09-29",
+            "week_end": "2025-10-05",
+            "distance_km": 27.23,
+            "time_hours": 2.37
+          },
+          {
+            "week_start": "2025-10-06",
+            "week_end": "2025-10-12",
+            "distance_km": 34.03,
+            "time_hours": 2.86
+          },
+          {
+            "week_start": "2025-10-13",
+            "week_end": "2025-10-19",
+            "distance_km": 10.83,
+            "time_hours": 0.81
+          },
+          {
+            "week_start": "2025-10-20",
+            "week_end": "2025-10-26",
+            "distance_km": 23.24,
+            "time_hours": 1.76
+          },
+          {
+            "week_start": "2025-10-27",
+            "week_end": "2025-11-02",
+            "distance_km": 23.31,
+            "time_hours": 1.78
           }
         ]
       }
@@ -1337,72 +1407,11 @@
         "calories_kcal": 0
       },
       "recent": {
-        "last60": [
-          {
-            "id": 20015631354,
-            "name": "Shenandoah County Natation en eau libre",
-            "type": "open_water_swimming",
-            "start": "2025-08-10 11:59:26",
-            "distance_km": 0.32,
-            "duration_min": 7.4,
-            "avg_speed_kmh": 2.63,
-            "calories_kcal": 77.0
-          },
-          {
-            "id": 20006938509,
-            "name": "Shenandoah County Natation en eau libre",
-            "type": "open_water_swimming",
-            "start": "2025-08-09 16:38:24",
-            "distance_km": 0.41,
-            "duration_min": 33.7,
-            "avg_speed_kmh": 0.73,
-            "calories_kcal": 285.0
-          },
-          {
-            "id": 19981410771,
-            "name": "Nat. piscine",
-            "type": "lap_swimming",
-            "start": "2025-08-07 08:52:17",
-            "distance_km": 1.73,
-            "duration_min": 36.8,
-            "avg_speed_kmh": 2.81,
-            "calories_kcal": 371.0
-          }
-        ]
+        "last60": []
       },
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-08-04",
-            "week_end": "2025-08-10",
-            "distance_km": 2.46,
-            "time_hours": 1.3
-          },
-          {
-            "week_start": "2025-08-11",
-            "week_end": "2025-08-17",
-            "distance_km": 0.0,
-            "time_hours": 0.0
-          },
-          {
-            "week_start": "2025-08-18",
-            "week_end": "2025-08-24",
-            "distance_km": 0.0,
-            "time_hours": 0.0
-          },
-          {
-            "week_start": "2025-08-25",
-            "week_end": "2025-08-31",
-            "distance_km": 0.0,
-            "time_hours": 0.0
-          },
-          {
-            "week_start": "2025-09-01",
-            "week_end": "2025-09-07",
-            "distance_km": 0.0,
-            "time_hours": 0.0
-          },
           {
             "week_start": "2025-09-08",
             "week_end": "2025-09-14",
@@ -1418,6 +1427,36 @@
           {
             "week_start": "2025-09-22",
             "week_end": "2025-09-28",
+            "distance_km": 0.0,
+            "time_hours": 0.0
+          },
+          {
+            "week_start": "2025-09-29",
+            "week_end": "2025-10-05",
+            "distance_km": 0.0,
+            "time_hours": 0.0
+          },
+          {
+            "week_start": "2025-10-06",
+            "week_end": "2025-10-12",
+            "distance_km": 0.0,
+            "time_hours": 0.0
+          },
+          {
+            "week_start": "2025-10-13",
+            "week_end": "2025-10-19",
+            "distance_km": 0.0,
+            "time_hours": 0.0
+          },
+          {
+            "week_start": "2025-10-20",
+            "week_end": "2025-10-26",
+            "distance_km": 0.0,
+            "time_hours": 0.0
+          },
+          {
+            "week_start": "2025-10-27",
+            "week_end": "2025-11-02",
             "distance_km": 0.0,
             "time_hours": 0.0
           }

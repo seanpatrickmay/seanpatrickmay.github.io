@@ -2,8 +2,7 @@ name: Update Garmin stats.json
 
 on:
   schedule:
-    - cron: "15 14 * * *"  # 14:15 UTC ~ 10:15 AM ET during DST
-    - cron: "15 02 * * *"  # 01:15 UTC ~ 10:15 PM ET (UTC - 4)
+    - cron: "0 13 * * *"  # 13:00 UTC ~ 9:00 AM ET during DST
   workflow_dispatch: {}
 
 permissions:

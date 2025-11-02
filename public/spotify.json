@@ -1,92 +1,92 @@
 {
-  "generated_at": "2025-09-21T13:38:43.683Z",
+  "generated_at": "2025-11-02T13:20:36.711Z",
   "artists": [
     {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
-    {
-      "name": "IVE",
-      "image": "https://i.scdn.co/image/ab6761610000e5eba9c8608865ca7eded5520359",
-      "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
-    },
-    {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
-    },
-    {
-      "name": "Dua Lipa",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb0c68f6c95232e716f0abee8d",
-      "url": "https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we"
+      "name": "Kid Cudi",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb5f00bb6dd7a7008d14156630",
+      "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
     },
     {
       "name": "Jack Johnson",
       "image": "https://i.scdn.co/image/ab6761610000e5eb9555a0b3231117c8cde1fca7",
       "url": "https://open.spotify.com/artist/3GBPw9NK25X1Wt2OUvOwY3"
+    },
+    {
+      "name": "Maroon 5",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebf8349dfb619a7f842242de77",
+      "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
+    },
+    {
+      "name": "Cigarettes After Sex",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb1c312be98c615df97ea79a30",
+      "url": "https://open.spotify.com/artist/1QAJqy2dA3ihHBFIHRphZj"
+    },
+    {
+      "name": "IVE",
+      "image": "https://i.scdn.co/image/ab6761610000e5eba9c8608865ca7eded5520359",
+      "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
     }
   ],
   "tracks": [
     {
-      "name": "Hourglass",
-      "artist": "Zedd, LIZ",
-      "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
-      "url": "https://open.spotify.com/track/6NwrXtcFbc8OX7wJyBqE89"
+      "name": "Upside Down",
+      "artist": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab67616d0000b2731e0232d637e8313d3ef4923e",
+      "url": "https://open.spotify.com/track/6shRGWCtBUOPFLFTTqXZIC"
     },
     {
-      "name": "Right As Rain",
+      "name": "Welcome To Japan",
+      "artist": "The Strokes",
+      "image": "https://i.scdn.co/image/ab67616d0000b273f07ef193e0bb6a238ea37f0a",
+      "url": "https://open.spotify.com/track/7bfocP7GYoLOutUYpTI8tx"
+    },
+    {
+      "name": "Never Know",
+      "artist": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
+      "url": "https://open.spotify.com/track/2BnTUxzWAcv0qerzESIunY"
+    },
+    {
+      "name": "My Same",
       "artist": "Adele",
-      "image": "https://i.scdn.co/image/ab67616d0000b27350637420ddb6ea76237bb7f4",
-      "url": "https://open.spotify.com/track/6OLudcGaT6HQ5bXH54kI8i"
+      "image": "https://i.scdn.co/image/ab67616d0000b27389d0ff2366a208016b6e9c6e",
+      "url": "https://open.spotify.com/track/6McbSHjAKqf0fjsLDRzgr5"
     },
     {
-      "name": "Movin' Out (Anthony's Song)",
-      "artist": "Billy Joel",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736ce61113662ecf693b605ee5",
-      "url": "https://open.spotify.com/track/16GUMo6u3D2qo9a19AkYct"
+      "name": "Won't Go Home Without You",
+      "artist": "Maroon 5",
+      "image": "https://i.scdn.co/image/ab67616d0000b273515b72d7c72fc65b017a87ea",
+      "url": "https://open.spotify.com/track/6WEBwvsmpaoGxka0tSh5a7"
     },
     {
-      "name": "Last Train to London",
-      "artist": "Electric Light Orchestra",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736f5a9bf7c8093763dd2a4a82",
-      "url": "https://open.spotify.com/track/6xE6ZWzK1YDDSYzqOCoQlz"
+      "name": "Banana Pancakes",
+      "artist": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
+      "url": "https://open.spotify.com/track/0BgbobvykXxEvxo2HhCuvM"
     },
     {
-      "name": "Sweet",
-      "artist": "Cigarettes After Sex",
-      "image": "https://i.scdn.co/image/ab67616d0000b273dfed999f959177dfc4f33cdc",
-      "url": "https://open.spotify.com/track/2KhrPRV0V1FS2l4eQMJUWt"
+      "name": "The Great Gig in the Sky",
+      "artist": "Pink Floyd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27317cb878012a0c769091e8045",
+      "url": "https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d"
     },
     {
-      "name": "You Rock My World",
-      "artist": "Michael Jackson",
-      "image": "https://i.scdn.co/image/ab67616d0000b273ed1c305cd1e673fe925407ce",
-      "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
+      "name": "The Bay",
+      "artist": "Metronomy",
+      "image": "https://i.scdn.co/image/ab67616d0000b2738ca7d89456553e4bbbf3c981",
+      "url": "https://open.spotify.com/track/2akjLHnHjDGsgqxuf48VYs"
     },
     {
-      "name": "Exit Music (For A Film)",
-      "artist": "Radiohead",
-      "image": "https://i.scdn.co/image/ab67616d0000b273c8b444df094279e70d0ed856",
-      "url": "https://open.spotify.com/track/0z1o5L7HJx562xZSATcIpY"
+      "name": "Rolling in the Deep",
+      "artist": "Adele",
+      "image": "https://i.scdn.co/image/ab67616d0000b273744ea41a7c1ae57024752db9",
+      "url": "https://open.spotify.com/track/6IAZHEBUIGJ6NJKxxOBIEr"
     },
     {
-      "name": "Instant Crush (feat. Julian Casablancas)",
-      "artist": "Daft Punk, Julian Casablancas",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739b9b36b0e22870b9f542d937",
-      "url": "https://open.spotify.com/track/2cGxRwrMyEAp8dEbuZaVv6"
-    },
-    {
-      "name": "Someone In The Crowd",
-      "artist": "Emma Stone, Callie Hernandez, Sonoya Mizuno, Jessica Rothe",
-      "image": "https://i.scdn.co/image/ab67616d0000b2730bdf4dd39843ad48c5b66bc4",
-      "url": "https://open.spotify.com/track/39ncDMVidHOeQgeC5anYZM"
-    },
-    {
-      "name": "The Stranger",
-      "artist": "Billy Joel",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736ce61113662ecf693b605ee5",
-      "url": "https://open.spotify.com/track/54xbcKFYv2PC6ujERHppRj"
+      "name": "Cigarette Daydreams",
+      "artist": "Cage The Elephant",
+      "image": "https://i.scdn.co/image/ab67616d0000b273fb1cb900d28642e668d77b12",
+      "url": "https://open.spotify.com/track/2tznHmp70DxMyr2XhWLOW0"
     }
   ]
 }
