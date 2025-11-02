@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-01T13:21:13.466Z",
+  "generated_at": "2025-11-02T13:20:36.711Z",
   "artists": [
     {
       "name": "Kid Cudi",
@@ -12,14 +12,14 @@
       "url": "https://open.spotify.com/artist/3GBPw9NK25X1Wt2OUvOwY3"
     },
     {
-      "name": "Cigarettes After Sex",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb1c312be98c615df97ea79a30",
-      "url": "https://open.spotify.com/artist/1QAJqy2dA3ihHBFIHRphZj"
-    },
-    {
       "name": "Maroon 5",
       "image": "https://i.scdn.co/image/ab6761610000e5ebf8349dfb619a7f842242de77",
       "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
+    },
+    {
+      "name": "Cigarettes After Sex",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb1c312be98c615df97ea79a30",
+      "url": "https://open.spotify.com/artist/1QAJqy2dA3ihHBFIHRphZj"
     },
     {
       "name": "IVE",
@@ -35,16 +35,16 @@
       "url": "https://open.spotify.com/track/6shRGWCtBUOPFLFTTqXZIC"
     },
     {
-      "name": "Never Know",
-      "artist": "Jack Johnson",
-      "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
-      "url": "https://open.spotify.com/track/2BnTUxzWAcv0qerzESIunY"
-    },
-    {
       "name": "Welcome To Japan",
       "artist": "The Strokes",
       "image": "https://i.scdn.co/image/ab67616d0000b273f07ef193e0bb6a238ea37f0a",
       "url": "https://open.spotify.com/track/7bfocP7GYoLOutUYpTI8tx"
+    },
+    {
+      "name": "Never Know",
+      "artist": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
+      "url": "https://open.spotify.com/track/2BnTUxzWAcv0qerzESIunY"
     },
     {
       "name": "My Same",
@@ -65,16 +65,16 @@
       "url": "https://open.spotify.com/track/0BgbobvykXxEvxo2HhCuvM"
     },
     {
-      "name": "The Bay",
-      "artist": "Metronomy",
-      "image": "https://i.scdn.co/image/ab67616d0000b2738ca7d89456553e4bbbf3c981",
-      "url": "https://open.spotify.com/track/2akjLHnHjDGsgqxuf48VYs"
-    },
-    {
       "name": "The Great Gig in the Sky",
       "artist": "Pink Floyd",
       "image": "https://i.scdn.co/image/ab67616d0000b27317cb878012a0c769091e8045",
       "url": "https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d"
+    },
+    {
+      "name": "The Bay",
+      "artist": "Metronomy",
+      "image": "https://i.scdn.co/image/ab67616d0000b2738ca7d89456553e4bbbf3c981",
+      "url": "https://open.spotify.com/track/2akjLHnHjDGsgqxuf48VYs"
     },
     {
       "name": "Rolling in the Deep",
@@ -83,10 +83,10 @@
       "url": "https://open.spotify.com/track/6IAZHEBUIGJ6NJKxxOBIEr"
     },
     {
-      "name": "Social Cues",
+      "name": "Cigarette Daydreams",
       "artist": "Cage The Elephant",
-      "image": "https://i.scdn.co/image/ab67616d0000b27388883701231713b18429f80b",
-      "url": "https://open.spotify.com/track/1KuVdyg8d6NlRhbpHxg5UF"
+      "image": "https://i.scdn.co/image/ab67616d0000b273fb1cb900d28642e668d77b12",
+      "url": "https://open.spotify.com/track/2tznHmp70DxMyr2XhWLOW0"
     }
   ]
 }
