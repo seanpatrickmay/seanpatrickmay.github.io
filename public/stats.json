@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-02T21:46:45.718224Z",
+  "generated_at": "2025-11-03T13:29:04.848097Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -10,13 +10,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 57,
-        "distance_km": 1248.23,
-        "time_hours": 45.33,
+        "distance_km": 1229.74,
+        "time_hours": 44.79,
         "longest_km": 161.11,
-        "calories_kcal": 32960.0
+        "calories_kcal": 32624.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20875125934,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-11-02 21:37:25",
+            "distance_km": 3.7,
+            "duration_min": 11.3,
+            "avg_speed_kmh": 19.64,
+            "calories_kcal": 58.0
+          },
           {
             "id": 20873292851,
             "name": "recovery",
@@ -606,28 +616,12 @@
             "duration_min": 121.0,
             "avg_speed_kmh": 28.17,
             "calories_kcal": 1050.0
-          },
-          {
-            "id": 20531494519,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-09-28 19:01:05",
-            "distance_km": 10.19,
-            "duration_min": 50.4,
-            "avg_speed_kmh": 12.12,
-            "calories_kcal": 609.0
           }
         ]
       },
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-09-08",
-            "week_end": "2025-09-14",
-            "distance_km": 203.05,
-            "time_hours": 8.05
-          },
           {
             "week_start": "2025-09-15",
             "week_end": "2025-09-21",
@@ -667,8 +661,14 @@
           {
             "week_start": "2025-10-27",
             "week_end": "2025-11-02",
-            "distance_km": 353.33,
-            "time_hours": 12.08
+            "distance_km": 357.04,
+            "time_hours": 12.26
+          },
+          {
+            "week_start": "2025-11-03",
+            "week_end": "2025-11-09",
+            "distance_km": 0.0,
+            "time_hours": 0.0
           }
         ]
       }
@@ -677,13 +677,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 45,
-        "distance_km": 1145.64,
-        "time_hours": 37.24,
+        "distance_km": 1127.15,
+        "time_hours": 36.7,
         "longest_km": 161.11,
-        "calories_kcal": 24813.0
+        "calories_kcal": 24477.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20875125934,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-11-02 21:37:25",
+            "distance_km": 3.7,
+            "duration_min": 11.3,
+            "avg_speed_kmh": 19.64,
+            "calories_kcal": 58.0
+          },
           {
             "id": 20873292851,
             "name": "recovery",
@@ -1273,28 +1283,12 @@
             "duration_min": 90.6,
             "avg_speed_kmh": 31.63,
             "calories_kcal": 1198.0
-          },
-          {
-            "id": 20387950471,
-            "name": "wu",
-            "type": "virtual_ride",
-            "start": "2025-09-14 17:40:21",
-            "distance_km": 21.26,
-            "duration_min": 57.9,
-            "avg_speed_kmh": 22.04,
-            "calories_kcal": 730.0
           }
         ]
       },
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-09-08",
-            "week_end": "2025-09-14",
-            "distance_km": 196.02,
-            "time_hours": 7.44
-          },
           {
             "week_start": "2025-09-15",
             "week_end": "2025-09-21",
@@ -1334,8 +1328,14 @@
           {
             "week_start": "2025-10-27",
             "week_end": "2025-11-02",
-            "distance_km": 330.03,
-            "time_hours": 10.3
+            "distance_km": 333.73,
+            "time_hours": 10.49
+          },
+          {
+            "week_start": "2025-11-03",
+            "week_end": "2025-11-09",
+            "distance_km": 0.0,
+            "time_hours": 0.0
           }
         ]
       }
@@ -1507,12 +1507,6 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-09-08",
-            "week_end": "2025-09-14",
-            "distance_km": 7.03,
-            "time_hours": 0.61
-          },
-          {
             "week_start": "2025-09-15",
             "week_end": "2025-09-21",
             "distance_km": 0.0,
@@ -1553,6 +1547,12 @@
             "week_end": "2025-11-02",
             "distance_km": 23.31,
             "time_hours": 1.78
+          },
+          {
+            "week_start": "2025-11-03",
+            "week_end": "2025-11-09",
+            "distance_km": 0.0,
+            "time_hours": 0.0
           }
         ]
       }
@@ -1572,12 +1572,6 @@
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-09-08",
-            "week_end": "2025-09-14",
-            "distance_km": 0.0,
-            "time_hours": 0.0
-          },
           {
             "week_start": "2025-09-15",
             "week_end": "2025-09-21",
@@ -1617,6 +1611,12 @@
           {
             "week_start": "2025-10-27",
             "week_end": "2025-11-02",
+            "distance_km": 0.0,
+            "time_hours": 0.0
+          },
+          {
+            "week_start": "2025-11-03",
+            "week_end": "2025-11-09",
             "distance_km": 0.0,
             "time_hours": 0.0
           }
