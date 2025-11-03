@@ -12,18 +12,16 @@ export default function Hero({ links }) {
             Boston, MA
           </Badge>
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
-		CS & Math | SWE @ NExT
+            CS & Math | SWE @ NExT
           </h1>
-          <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl">
-          </p>
           <ul className="text-lg text-slate-600 dark:text-slate-300 space-y-1">
             <li>🎓 Northeastern University — B.S. CS & Math (May 2027)</li>
-            <li>🧪 SWE Co-op — NExT Program (Fall 2025)</li>
+            <li>🧪 SWE Co-op — NExT (Fall 2025)</li>
             <li>🔎 Searching for Summer/Fall 2026 SWE/ML roles</li>
           </ul>
           <div className="flex flex-wrap gap-3 pt-2">
-            <PillLink href="/projects" variant="solid" className="px-4">
-              📂 See projects
+            <PillLink href={links.resume} icon={FileText} external className="px-4" variant="solid">
+              Resume
             </PillLink>
             <PillLink href={links.github} icon={Github} external className="px-4">
               GitHub
@@ -45,14 +43,14 @@ export default function Hero({ links }) {
             <CardContent className="space-y-2">
               <div className="flex flex-wrap gap-2">
                 <Badge>ML</Badge>
-                <Badge>Algorithms</Badge>
+                <Badge>AI</Badge>
                 <Badge>Full-stack</Badge>
               </div>
               <p className="text-sm text-slate-600 dark:text-slate-300">
-                Focused on game theory, all things ML, and performance-minded code.
+                Researching and developing AI and ML applications, with keen interests in game theory and agentic AI.
               </p>
-              <PillLink href={links.resume} icon={FileText} external>
-                Resume
+              <PillLink href="/projects" variant="solid" className="px-3 text-sm">
+                🚀 Explore projects
               </PillLink>
             </CardContent>
           </Card>

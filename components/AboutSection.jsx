@@ -8,6 +8,7 @@ import RecentActivities from '@/components/RecentActivities';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import Section from '@/components/ui/Section';
 import Stat from '@/components/ui/Stat';
+import PillLink from '@/components/ui/PillLink';
 import { Sparkles, Brain, Dumbbell, Music } from 'lucide-react';
 
 const CALORIES_PER_CUP_OF_MILK = 124;
@@ -299,6 +300,9 @@ export default function AboutSection({ interests }) {
                 <br />
                 Check out some of my projects below: RL Research, Computer Vision, Tree-Search, Game Theory, and Concurrency.
               </p>
+              <PillLink href="/projects" variant="solid" className="px-4">
+                🔍 Take a peak at my projects
+              </PillLink>
             </div>
             <div className="md:col-span-2">
               <Card>

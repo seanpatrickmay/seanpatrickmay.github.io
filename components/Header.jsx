@@ -18,8 +18,8 @@ import {
 const navItems = [
   { id: 'home', label: 'Home', icon: Home },
   { id: 'about', label: 'About', icon: Sparkles },
-  { id: 'experience', label: 'Experience', icon: Briefcase },
   { id: 'projects', label: 'Projects', icon: Trophy },
+  { id: 'experience', label: 'Experience', icon: Briefcase },
   { id: 'education', label: 'Education', icon: GraduationCap },
   { id: 'other-work', label: 'Other Work', icon: ClipboardList },
   { id: 'skills', label: 'Skills', icon: Cpu },
