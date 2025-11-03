@@ -301,7 +301,7 @@ export default function AboutSection({ interests }) {
                 Check out some of my projects below: RL Research, Computer Vision, Tree-Search, Game Theory, and Concurrency.
               </p>
               <PillLink href="/projects" variant="solid" className="px-4">
-                🔍 Take a peak at my projects
+                🔍 Take a peek at my projects
               </PillLink>
             </div>
             <div className="md:col-span-2">

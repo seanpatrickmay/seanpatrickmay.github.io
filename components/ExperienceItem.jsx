@@ -15,10 +15,10 @@ export default function ExperienceItem({ job, mode = 'expanded' }) {
   return (
     <Card className="h-full" data-mode={mode}>
       <CardHeader className="flex flex-col gap-3">
-        <div className="flex items-center gap-3">
-          {img && <img src={img} alt={imageAlt} className="w-9 h-9 object-contain" />}
+        <div className="flex items-center gap-5">
+          {img && <img src={img} alt={imageAlt} className="w-16 h-16 object-contain" />}
           {!img && emoji && (
-            <span className="text-2xl" aria-hidden="true">
+            <span className="text-3xl" aria-hidden="true">
               {emoji}
             </span>
           )}
@@ -44,4 +44,3 @@ export default function ExperienceItem({ job, mode = 'expanded' }) {
     </Card>
   );
 }
-

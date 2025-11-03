@@ -4,7 +4,7 @@
     "role": "Software Engineering Co-op",
     "location": "Boston, MA",
     "period": "Sep. - Dec. 2025",
-    "img": "/images/northeastern.svg",
+    "img": "/logos/normalized/next-logo.png",
     "oneLiner": "NExT SWE Co-op",
     "bullets": [
       "Building real-world software with peers in an agile, consulting-style team for Northeastern's industry partners.",
@@ -16,8 +16,8 @@
     "org": "General Dynamics Electric Boat",
     "role": "Software Development Co-op",
     "location": "Groton, CT",
-    "period": "Jan – Jul 2024",
-    "img": "/images/gdeb.svg",
+    "period": "Jan \u2013 Jul 2024",
+    "img": "/logos/normalized/gdeb-logo.png",
     "oneLiner": "GDEB SDE Co-op",
     "bullets": [
       "Automated database accuracy via ServiceNow REST API; improved tracking of ~1000 assets.",
@@ -29,8 +29,8 @@
     "org": "Defense Information Systems Agency (DISA)",
     "role": "Administrative Assistant",
     "location": "Fort Meade, MD",
-    "period": "Jun – Sep 2023",
-    "img": "/images/disa.svg",
+    "period": "Jun \u2013 Sep 2023",
+    "img": "/logos/normalized/disa-logo.png",
     "oneLiner": "DISA Admin Assistant",
     "bullets": [
       "Maintained records/databases to support mission accessibility.",

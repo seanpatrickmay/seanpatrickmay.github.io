@@ -70,7 +70,7 @@ const education = [
   {
     school: 'Northeastern University — Khoury College of Computer Sciences',
     degree: 'B.S. in Computer Science & Mathematics (Expected May 2027)',
-    img: '/images/northeastern.svg',
+    img: '/logos/normalized/nu-logo.png',
     oneLiner: 'BS CS+Math',
     extras: [
       'GPA 3.64/4.0; Dean’s Scholarship; Dean’s List (Fall 2024, Spring 2025)',
@@ -81,7 +81,7 @@ const education = [
   {
     school: 'Corvinus University of Budapest - Mathematical Heritage of Budapest Summer Dialogue',
     degree: 'Budapest, Hungary (Jun – Aug 2025)',
-    img: '/images/corvinus.svg',
+    img: '/logos/normalized/corvinus-logo.png',
     oneLiner: 'Math Dialogue',
     extras: ['Courses: Number Theory, Exploration of Modern Mathematics'],
   },

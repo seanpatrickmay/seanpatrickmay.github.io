@@ -6,14 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "preview": "npx serve out -l 4321"
+    "preview": "npx serve out -l 4321",
+    "normalize-logos": "node scripts/normalize-logos.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.447.0",
     "next": "^14.2.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "@headlessui/react": "^2.2.8"
+    "@headlessui/react": "^2.2.8",
+    "sharp": "^0.33.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
