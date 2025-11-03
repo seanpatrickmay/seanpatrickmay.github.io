@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function PillLink({ href, children, icon: Icon, variant = 'outline', external = false, className = '' }) {
   const variantClass =
     ({
@@ -5,15 +7,25 @@ export default function PillLink({ href, children, icon: Icon, variant = 'outlin
       outline: 'pill-accent',
     }[variant]) ?? 'pill-accent';
   const classes = `${variantClass} ${className}`.trim();
+
+  if (external) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={classes}
+      >
+        {Icon && <Icon className="w-4 h-4" />}
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <a
-      href={href}
-      target={external ? '_blank' : undefined}
-      rel={external ? 'noopener noreferrer' : undefined}
-      className={classes}
-    >
+    <Link href={href} className={classes}>
       {Icon && <Icon className="w-4 h-4" />}
       {children}
-    </a>
+    </Link>
   );
 }

@@ -18,8 +18,8 @@ import {
 const navItems = [
   { id: 'home', label: 'Home', icon: Home },
   { id: 'about', label: 'About', icon: Sparkles },
-  { id: 'experience', label: 'Experience', icon: Briefcase },
   { id: 'projects', label: 'Projects', icon: Trophy },
+  { id: 'experience', label: 'Experience', icon: Briefcase },
   { id: 'education', label: 'Education', icon: GraduationCap },
   { id: 'other-work', label: 'Other Work', icon: ClipboardList },
   { id: 'skills', label: 'Skills', icon: Cpu },
@@ -81,7 +81,7 @@ export default function Header({ links }) {
             {navItems.map(({ id, label }) => (
               <a
                 key={id}
-                href={`#${id}`}
+                href={id === 'projects' ? '/projects' : `#${id}`}
                 className="flex flex-none items-center rounded-full border border-transparent bg-slate-100 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-slate-700 dark:hover:bg-slate-800"
               >
                 {label}
@@ -131,7 +131,7 @@ export default function Header({ links }) {
                   {navItems.map(({ id, label, icon: Icon }) => (
                     <a
                       key={id}
-                      href={`#${id}`}
+                      href={id === 'projects' ? '/projects' : `#${id}`}
                       className="group flex items-center gap-3 rounded-2xl px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 dark:text-slate-300 dark:hover:bg-slate-900 dark:hover:text-white"
                     >
                       <span className="flex h-8 w-8 items-center justify-center rounded-xl border border-transparent bg-slate-100 text-slate-600 transition group-hover:border-slate-300 group-hover:bg-white group-hover:text-slate-900 dark:bg-slate-900 dark:text-slate-400 dark:group-hover:border-slate-700 dark:group-hover:bg-slate-800 dark:group-hover:text-white">
