@@ -104,14 +104,6 @@ export default function Home() {
       renderItem: (job, _index, state) => <ExperienceItem job={job} mode={state.mode} />,
     },
     {
-      id: 'projects',
-      title: 'Projects',
-      icon: Trophy,
-      items: projects,
-      keyExtractor: project => project.title,
-      renderItem: (project, _index, state) => <ProjectCard project={project} mode={state.mode} />,
-    },
-    {
       id: 'education',
       title: 'Education',
       icon: GraduationCap,
@@ -127,7 +119,7 @@ export default function Home() {
       keyExtractor: job => job.org,
       renderItem: (job, _index, state) => <ExperienceItem job={job} mode={state.mode} />,
     },
-  ], [experience, projects, education, otherWork]);
+  ], [experience, education, otherWork]);
 
 
   return (

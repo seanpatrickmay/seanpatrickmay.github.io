@@ -22,7 +22,7 @@ export default function Hero({ links }) {
             <li>🔎 Searching for Summer/Fall 2026 SWE/ML roles</li>
           </ul>
           <div className="flex flex-wrap gap-3 pt-2">
-            <PillLink href="#projects" variant="solid" className="px-4">
+            <PillLink href="/projects" variant="solid" className="px-4">
               📂 See projects
             </PillLink>
             <PillLink href={links.github} icon={Github} external className="px-4">

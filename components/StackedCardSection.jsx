@@ -2,7 +2,6 @@ import { Tab } from '@headlessui/react';
 import {
   useCallback,
   useEffect,
-  useLayoutEffect,
   useMemo,
   useRef,
   useState,
@@ -105,7 +104,8 @@ export default function StackedCardSection({
     setPanelHeight(previous => (Math.abs(previous - nextHeight) > 1 ? nextHeight : previous));
   }, []);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
     measurePanels();
   }, [measurePanels, keyedItems, selectedIndex]);
 

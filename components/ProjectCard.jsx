@@ -4,7 +4,7 @@ import PillLink from './ui/PillLink';
 import StackedCardPreview from './StackedCardPreview';
 
 export default function ProjectCard({ project, mode = 'expanded' }) {
-  const { title, period, stack = [], bullets = [], links = [], emoji, oneLiner } = project;
+  const { title, period, stack = [], bullets = [], links = [], emoji, oneLiner, slug } = project;
   const isPreview = mode === 'preview';
   const previewLabel = oneLiner || title;
 
@@ -37,8 +37,13 @@ export default function ProjectCard({ project, mode = 'expanded' }) {
             ))}
           </ul>
         )}
-        {!!links.length && (
+        {(!!links.length || slug) && (
           <div className="flex flex-wrap gap-3 pt-1">
+            {slug && (
+              <PillLink href={`/projects/${slug}`} className="px-4">
+                View details
+              </PillLink>
+            )}
             {links.map((l, i) => (
               <PillLink key={i} href={l.href} external>
                 {l.label}
@@ -50,4 +55,3 @@ export default function ProjectCard({ project, mode = 'expanded' }) {
     </Card>
   );
 }
-

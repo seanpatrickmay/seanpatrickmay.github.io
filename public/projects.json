@@ -1,127 +1,351 @@
 [
   {
     "title": "seanpatrickmay.github.io",
-    "emoji": "🌐",
-    "period": "2024 – Present",
-    "stack": ["Next.js", "React", "Tailwind CSS", "Garmin API", "Spotify API"],
-    "oneLiner": "Portfolio & quantified self hub",
+    "slug": "seanpatrickmay-github-io",
+    "emoji": "\ud83c\udf10",
+    "period": "2024 \u2013 Present",
+    "stack": [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Garmin API",
+      "Spotify API"
+    ],
+    "oneLiner": "Static portfolio with live activity dashboards and data hooks.",
+    "languages": [
+      "JavaScript",
+      "Python"
+    ],
+    "tags": [
+      "Full-stack"
+    ],
+    "coolness": 89,
     "bullets": [
       "Static-exported Next.js site with stacked card navigation and responsive layouts.",
       "Live training + music dashboards powered by Garmin and Spotify refresh scripts.",
       "Long-form about section with auto-scrolling highlights and rich data visualizations."
     ],
-    "links": [{ "label": "Git Repo", "href": "https://github.com/seanpatrickmay/seanpatrickmay.github.io" }]
+    "links": [
+      {
+        "label": "Git Repo",
+        "href": "https://github.com/seanpatrickmay/seanpatrickmay.github.io"
+      }
+    ]
   },
   {
     "title": "Life-Dashboard",
-    "emoji": "📊",
+    "slug": "life-dashboard",
+    "emoji": "\ud83d\udcca",
     "period": "Updated Oct 2025",
-    "stack": ["Next.js", "Supabase", "Google Cloud Run", "Stripe", "Vertex AI"],
-    "oneLiner": "Hybrid cloud life operations dashboard",
+    "stack": [
+      "Next.js",
+      "Supabase",
+      "Google Cloud Run",
+      "Stripe",
+      "Vertex AI"
+    ],
+    "oneLiner": "Cloud-run personal ops hub linking Supabase data, billing, and AI coaching.",
+    "languages": [
+      "JavaScript"
+    ],
+    "tags": [
+      "Full-stack",
+      "Cloud/Infra",
+      "Agentic AI"
+    ],
+    "coolness": 88,
     "bullets": [
       "Vercel-hosted Next.js frontend pairs with Cloud Run services, Supabase Postgres/RLS, and Stripe billing.",
       "Garmin + Withings webhooks stream quantified-self data into Supabase, seeded by scripts/seed.ts for demos.",
       "Vertex AI coaching insights, pnpm-driven tooling, and Terraform automation round out production-ready infra."
     ],
-    "links": [{ "label": "Git Repo", "href": "https://github.com/seanpatrickmay/Life-Dashboard" }]
+    "links": [
+      {
+        "label": "Git Repo",
+        "href": "https://github.com/seanpatrickmay/Life-Dashboard"
+      }
+    ]
   },
   {
     "title": "LecteurAide",
-    "emoji": "📚",
+    "slug": "lecteuraide",
+    "emoji": "\ud83d\udcda",
     "period": "Updated Oct 2025",
-    "stack": ["Python", "FastAPI", "Vertex AI Gemini", "Cloud Translation", "Next.js"],
-    "oneLiner": "AI-powered French reading companion",
+    "stack": [
+      "Python",
+      "FastAPI",
+      "Vertex AI Gemini",
+      "Cloud Translation",
+      "Next.js"
+    ],
+    "oneLiner": "French reading companion that segments scenes, translates sentences, and quizzes vocab.",
+    "languages": [
+      "Python",
+      "JavaScript"
+    ],
+    "tags": [
+      "Full-stack",
+      "NLP",
+      "Cloud/Infra",
+      "Agentic AI",
+      "Concurrency"
+    ],
+    "coolness": 100,
     "bullets": [
       "Back end chunks French PDFs, calls Gemini for scene summaries, and layers sentence-level translations plus vocab.",
       "Streaming ingestion API uploads books and persists scenes, questions, and glossary terms into SQLite/Postgres.",
       "Next.js reader surfaces scene-by-scene translations, highlighted vocabulary, and comprehension quizzes."
     ],
-    "links": [{ "label": "Git Repo", "href": "https://github.com/seanpatrickmay/LecteurAide" }]
+    "links": [
+      {
+        "label": "Git Repo",
+        "href": "https://github.com/seanpatrickmay/LecteurAide"
+      }
+    ]
   },
   {
     "title": "study-buddy",
-    "emoji": "🧠",
+    "slug": "study-buddy",
+    "emoji": "\ud83e\udde0",
     "period": "Updated Sep 2025",
-    "stack": ["Python", "FastAPI", "LangChain", "CrewAI", "ChromaDB"],
-    "oneLiner": "Agent-assisted study companion",
+    "stack": [
+      "Python",
+      "FastAPI",
+      "LangChain",
+      "CrewAI",
+      "ChromaDB"
+    ],
+    "oneLiner": "Agentic study workflow turning class materials and Anki decks into flashcards and cheat sheets.",
+    "languages": [
+      "Python",
+      "JavaScript"
+    ],
+    "tags": [
+      "Full-stack",
+      "Agentic AI",
+      "Concurrency"
+    ],
+    "coolness": 94,
     "bullets": [
       "CrewAI-powered agents ingest notes, expand key concepts, and assemble flashcards plus cheat sheets.",
       "Two-step workflow loops Anki exports back in to build difficulty-weighted revisions with RAG context.",
       "FastAPI + Chroma backend with a focused single-page UI for uploading material and downloading artefacts."
     ],
-    "links": [{ "label": "Git Repo", "href": "https://github.com/seanpatrickmay/study-buddy" }]
+    "links": [
+      {
+        "label": "Git Repo",
+        "href": "https://github.com/seanpatrickmay/study-buddy"
+      }
+    ]
   },
   {
     "title": "Human Digit Classification",
-    "emoji": "🔢",
-    "period": "Jan – Mar 2025",
-    "stack": ["Python", "JavaScript", "HTML", "PyTorch", "ML"],
-    "oneLiner": "Digit Classifier",
+    "slug": "human-digit-classification",
+    "emoji": "\ud83d\udd22",
+    "period": "Jan \u2013 Mar 2025",
+    "stack": [
+      "Python",
+      "JavaScript",
+      "HTML",
+      "PyTorch",
+      "ML"
+    ],
+    "oneLiner": "Computer-vision pipeline that detects hands, counts digits, and serves a web demo.",
+    "languages": [
+      "Python",
+      "JavaScript"
+    ],
+    "tags": [
+      "Machine Learning",
+      "Computer Vision",
+      "Algorithms",
+      "Full-stack"
+    ],
+    "coolness": 98,
     "bullets": [
       "Built a computer vision web app with CNNs.",
-      "Two-model pipeline: bounding box → digit count classifier.",
+      "Two-model pipeline: bounding box \u2192 digit count classifier.",
       "Custom image annotation tool for rapid dataset creation."
     ],
-    "links": [{ "label": "Git Repo", "href": "https://github.com/seanpatrickmay/Human-Digit-Recognition" }]
+    "links": [
+      {
+        "label": "Git Repo",
+        "href": "https://github.com/seanpatrickmay/Human-Digit-Recognition"
+      }
+    ]
   },
   {
     "title": "Counterfactual Regret Exploration (CFR-Min)",
-    "emoji": "♟️",
-    "period": "Nov 2024 – Present",
-    "stack": ["Jupyter", "NumPy", "Reinforcement Learning"],
-    "oneLiner": "CFR-Min Research",
+    "slug": "cfr-exploration",
+    "emoji": "\u265f\ufe0f",
+    "period": "Nov 2024 \u2013 Present",
+    "stack": [
+      "Jupyter",
+      "NumPy",
+      "Reinforcement Learning"
+    ],
+    "oneLiner": "Research notebooks applying CFR-Min techniques to imperfect-information strategy games.",
+    "languages": [
+      "Python"
+    ],
+    "tags": [
+      "Game Theory",
+      "Algorithms",
+      "Machine Learning"
+    ],
+    "coolness": 86,
     "bullets": [
       "Exploring CFR-Min for Nash equilibria in imperfect-information games.",
       "Worked examples: Colonel Blotto, Kuhn Poker.",
       "Toward general application for sequential games (Risk, Poker)."
     ],
-    "links": [{ "label": "Git Repo", "href": "https://github.com/seanpatrickmay/CFR-Exploration" }]
+    "links": [
+      {
+        "label": "Git Repo",
+        "href": "https://github.com/seanpatrickmay/CFR-Exploration"
+      }
+    ]
   },
   {
     "title": "NLHE Alpha-Beta Pruning",
-    "emoji": "🃏",
-    "period": "Aug – Dec 2024",
-    "stack": ["Python", "NumPy", "Monte Carlo"],
-    "oneLiner": "Poker Alpha-Beta",
+    "slug": "nlhe-alpha-beta",
+    "emoji": "\ud83c\udccf",
+    "period": "Aug \u2013 Dec 2024",
+    "stack": [
+      "Python",
+      "NumPy",
+      "Monte Carlo"
+    ],
+    "oneLiner": "Alpha-beta search experiments for simplified No-Limit Hold\u2019em decision trees.",
+    "languages": [
+      "Python"
+    ],
+    "tags": [
+      "Game Theory",
+      "Algorithms"
+    ],
+    "coolness": 96,
     "bullets": [
-      "Adversarial search with alpha–beta pruning over game tree.",
+      "Adversarial search with alpha\u2013beta pruning over game tree.",
       "Hand bucketing + probabilistic range model to reduce space.",
       "Transforming NLHE into deterministic, complete-information variant."
     ],
-    "links": [{ "label": "Git Repo", "href": "https://github.com/seanpatrickmay/PokerML" }]
+    "links": [
+      {
+        "label": "Git Repo",
+        "href": "https://github.com/seanpatrickmay/PokerML"
+      }
+    ]
   },
   {
     "title": "Maze-Game",
-    "emoji": "🌀",
+    "slug": "maze-game",
+    "emoji": "\ud83c\udf00",
     "period": "Updated Feb 2025",
-    "stack": ["Python", "Pygame"],
-    "oneLiner": "Procedural maze runner",
+    "stack": [
+      "Java",
+      "javalib.impworld",
+      "javalib.worldimages"
+    ],
+    "oneLiner": "Interactive maze generator and solver with DFS/BFS playback and player mode in Java.",
+    "languages": [
+      "Java"
+    ],
+    "tags": [
+      "Algorithms"
+    ],
+    "coolness": 83,
     "bullets": [
       "Generates solvable mazes with adjustable difficulty and layouts.",
       "Interactive run mode with keyboard controls and collision handling.",
       "Includes visual solver overlays to demonstrate path-finding tactics."
     ],
-    "links": [{ "label": "Git Repo", "href": "https://github.com/seanpatrickmay/Maze-Game" }]
+    "links": [
+      {
+        "label": "Git Repo",
+        "href": "https://github.com/seanpatrickmay/Maze-Game"
+      }
+    ]
   },
   {
     "title": "NQueensGeneticAlgorithms",
-    "emoji": "♛",
+    "slug": "nqueens-genetic-algorithms",
+    "emoji": "\u265b",
     "period": "Updated Feb 2025",
-    "stack": ["Python", "Genetic Algorithms"],
-    "oneLiner": "Tournament-driven GA for conflict-free N-Queens boards",
+    "stack": [
+      "Python",
+      "Genetic Algorithms"
+    ],
+    "oneLiner": "Genetic algorithm playground evolving conflict-free N-Queens boards.",
+    "languages": [
+      "Python"
+    ],
+    "tags": [
+      "Algorithms"
+    ],
+    "coolness": 84,
     "bullets": [
       "Tournament selection and single-point crossover push populations toward zero-collision layouts.",
       "Mutation rate scales automatically with board size for balanced exploration and convergence.",
       ".env-configurable constants let you trial different populations, iteration caps, and board sizes from the CLI."
     ],
-    "links": [{ "label": "Git Repo", "href": "https://github.com/seanpatrickmay/NQueensGeneticAlgorithms" }]
+    "links": [
+      {
+        "label": "Git Repo",
+        "href": "https://github.com/seanpatrickmay/NQueensGeneticAlgorithms"
+      }
+    ]
+  },
+  {
+    "title": "Hex Reversi",
+    "slug": "hex-reversi",
+    "emoji": "\ud83d\udd37",
+    "period": "Updated 2025",
+    "stack": [
+      "Java",
+      "Swing"
+    ],
+    "oneLiner": "Extensible hex-grid Reversi with GUI, modular strategies, and adapter support.",
+    "languages": [
+      "Java"
+    ],
+    "tags": [
+      "Algorithms",
+      "Game Theory"
+    ],
+    "coolness": 87,
+    "bullets": [
+      "Reversi on a hexagonal odd-r grid with configurable board shapes and starting states.",
+      "Extensible MVC design: model interfaces, pluggable text/GUI views, and a controller to orchestrate play.",
+      "Factory creator builds variants without exposing constructors; supports multiple player types (human/AI).",
+      "Modular strategies (minimax, capture-max, corners, avoid-near-corners) with combinators to compose heuristics."
+    ],
+    "links": [
+      {
+        "label": "Git Repo",
+        "href": "https://github.com/akul-sethi/hex-reversi"
+      }
+    ]
   },
   {
     "title": "Linux Shell (C)",
-    "emoji": "🖥️",
+    "slug": "linux-shell-c",
+    "emoji": "\ud83d\udda5\ufe0f",
     "period": "Oct 2024",
-    "stack": ["C", "Concurrency", "Data Structures"],
-    "oneLiner": "C Shell",
+    "stack": [
+      "C",
+      "Concurrency",
+      "Data Structures"
+    ],
+    "oneLiner": "Custom C shell with pipelines, signal handling, and a suite of built-in commands.",
+    "languages": [
+      "C"
+    ],
+    "tags": [
+      "Concurrency",
+      "Algorithms"
+    ],
+    "coolness": 85,
     "bullets": [
       "Fully operational shell: commands, piping, I/O redirection, signals.",
       "Child processes for sequential execution.",
