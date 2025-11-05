@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-04T13:32:24.927071Z",
+  "generated_at": "2025-11-05T13:30:32.609562Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 57,
-        "distance_km": 1229.94,
-        "time_hours": 44.07,
+        "activities_count": 58,
+        "distance_km": 1250.02,
+        "time_hours": 44.63,
         "longest_km": 161.11,
-        "calories_kcal": 31833.0
+        "calories_kcal": 32287.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20895061506,
+            "name": "top of z2",
+            "type": "virtual_ride",
+            "start": "2025-11-04 19:05:38",
+            "distance_km": 20.08,
+            "duration_min": 33.7,
+            "avg_speed_kmh": 35.71,
+            "calories_kcal": 454.0
+          },
           {
             "id": 20884085770,
             "name": "EASY WEEK",
@@ -606,16 +616,6 @@
             "duration_min": 7.7,
             "avg_speed_kmh": 16.63,
             "calories_kcal": 95.0
-          },
-          {
-            "id": 20582774119,
-            "name": "easy",
-            "type": "virtual_ride",
-            "start": "2025-10-04 00:31:33",
-            "distance_km": 30.07,
-            "duration_min": 60.4,
-            "avg_speed_kmh": 29.87,
-            "calories_kcal": 600.0
           }
         ]
       },
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-11-03",
             "week_end": "2025-11-09",
-            "distance_km": 43.58,
-            "time_hours": 1.3
+            "distance_km": 63.65,
+            "time_hours": 1.86
           }
         ]
       }
@@ -676,14 +676,24 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 46,
-        "distance_km": 1138.53,
-        "time_hours": 36.87,
+        "activities_count": 47,
+        "distance_km": 1158.61,
+        "time_hours": 37.43,
         "longest_km": 161.11,
-        "calories_kcal": 24625.0
+        "calories_kcal": 25079.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20895061506,
+            "name": "top of z2",
+            "type": "virtual_ride",
+            "start": "2025-11-04 19:05:38",
+            "distance_km": 20.08,
+            "duration_min": 33.7,
+            "avg_speed_kmh": 35.71,
+            "calories_kcal": 454.0
+          },
           {
             "id": 20884085770,
             "name": "EASY WEEK",
@@ -1273,16 +1283,6 @@
             "duration_min": 44.6,
             "avg_speed_kmh": 36.18,
             "calories_kcal": 594.0
-          },
-          {
-            "id": 20449478050,
-            "name": "long",
-            "type": "virtual_ride",
-            "start": "2025-09-20 13:24:02",
-            "distance_km": 103.12,
-            "duration_min": 180.6,
-            "avg_speed_kmh": 34.27,
-            "calories_kcal": 2339.0
           }
         ]
       },
@@ -1334,8 +1334,8 @@
           {
             "week_start": "2025-11-03",
             "week_end": "2025-11-09",
-            "distance_km": 43.58,
-            "time_hours": 1.3
+            "distance_km": 63.65,
+            "time_hours": 1.86
           }
         ]
       }
