@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-05T13:30:32.609562Z",
+  "generated_at": "2025-11-06T13:29:52.968056Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -10,13 +10,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 58,
-        "distance_km": 1250.02,
-        "time_hours": 44.63,
+        "distance_km": 1216.83,
+        "time_hours": 43.52,
         "longest_km": 161.11,
-        "calories_kcal": 32287.0
+        "calories_kcal": 31487.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20904930402,
+            "name": "warmup",
+            "type": "virtual_ride",
+            "start": "2025-11-05 18:11:34",
+            "distance_km": 13.11,
+            "duration_min": 25.2,
+            "avg_speed_kmh": 31.21,
+            "calories_kcal": 288.0
+          },
           {
             "id": 20895061506,
             "name": "top of z2",
@@ -606,16 +616,6 @@
             "duration_min": 53.3,
             "avg_speed_kmh": 12.6,
             "calories_kcal": 939.0
-          },
-          {
-            "id": 20590460456,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-10-04 16:54:20",
-            "distance_km": 2.12,
-            "duration_min": 7.7,
-            "avg_speed_kmh": 16.63,
-            "calories_kcal": 95.0
           }
         ]
       },
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-11-03",
             "week_end": "2025-11-09",
-            "distance_km": 63.65,
-            "time_hours": 1.86
+            "distance_km": 76.76,
+            "time_hours": 2.28
           }
         ]
       }
@@ -677,13 +677,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 47,
-        "distance_km": 1158.61,
-        "time_hours": 37.43,
+        "distance_km": 1125.42,
+        "time_hours": 36.32,
         "longest_km": 161.11,
-        "calories_kcal": 25079.0
+        "calories_kcal": 24279.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20904930402,
+            "name": "warmup",
+            "type": "virtual_ride",
+            "start": "2025-11-05 18:11:34",
+            "distance_km": 13.11,
+            "duration_min": 25.2,
+            "avg_speed_kmh": 31.21,
+            "calories_kcal": 288.0
+          },
           {
             "id": 20895061506,
             "name": "top of z2",
@@ -1273,16 +1283,6 @@
             "duration_min": 45.2,
             "avg_speed_kmh": 30.88,
             "calories_kcal": 460.0
-          },
-          {
-            "id": 20461470982,
-            "name": "wo",
-            "type": "virtual_ride",
-            "start": "2025-09-21 21:18:16",
-            "distance_km": 26.92,
-            "duration_min": 44.6,
-            "avg_speed_kmh": 36.18,
-            "calories_kcal": 594.0
           }
         ]
       },
@@ -1334,8 +1334,8 @@
           {
             "week_start": "2025-11-03",
             "week_end": "2025-11-09",
-            "distance_km": 63.65,
-            "time_hours": 1.86
+            "distance_km": 76.76,
+            "time_hours": 2.28
           }
         ]
       }
