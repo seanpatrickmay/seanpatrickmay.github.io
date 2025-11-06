@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-05T13:29:53.957Z",
+  "generated_at": "2025-11-06T13:29:34.323Z",
   "artists": [
     {
       "name": "Kid Cudi",
@@ -12,11 +12,6 @@
       "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
     },
     {
-      "name": "Cigarettes After Sex",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb1c312be98c615df97ea79a30",
-      "url": "https://open.spotify.com/artist/1QAJqy2dA3ihHBFIHRphZj"
-    },
-    {
       "name": "Jack Johnson",
       "image": "https://i.scdn.co/image/ab6761610000e5eb9555a0b3231117c8cde1fca7",
       "url": "https://open.spotify.com/artist/3GBPw9NK25X1Wt2OUvOwY3"
@@ -25,6 +20,11 @@
       "name": "Pink Floyd",
       "image": "https://i.scdn.co/image/ab6761610000e5eb97885ce689d644c91dfba05c",
       "url": "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9"
+    },
+    {
+      "name": "Adele",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
+      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     }
   ],
   "tracks": [
