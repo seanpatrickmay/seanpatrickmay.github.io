@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-06T13:29:34.323Z",
+  "generated_at": "2025-11-07T13:25:52.798Z",
   "artists": [
     {
       "name": "Kid Cudi",
@@ -12,6 +12,11 @@
       "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
     },
     {
+      "name": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebdee560c99d80399eb20c3147",
+      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
+    },
+    {
       "name": "Jack Johnson",
       "image": "https://i.scdn.co/image/ab6761610000e5eb9555a0b3231117c8cde1fca7",
       "url": "https://open.spotify.com/artist/3GBPw9NK25X1Wt2OUvOwY3"
@@ -20,20 +25,9 @@
       "name": "Pink Floyd",
       "image": "https://i.scdn.co/image/ab6761610000e5eb97885ce689d644c91dfba05c",
       "url": "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9"
-    },
-    {
-      "name": "Adele",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
-      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     }
   ],
   "tracks": [
-    {
-      "name": "Upside Down",
-      "artist": "Jack Johnson",
-      "image": "https://i.scdn.co/image/ab67616d0000b2731e0232d637e8313d3ef4923e",
-      "url": "https://open.spotify.com/track/6shRGWCtBUOPFLFTTqXZIC"
-    },
     {
       "name": "Welcome To Japan",
       "artist": "The Strokes",
@@ -41,16 +35,10 @@
       "url": "https://open.spotify.com/track/7bfocP7GYoLOutUYpTI8tx"
     },
     {
-      "name": "Won't Go Home Without You",
-      "artist": "Maroon 5",
-      "image": "https://i.scdn.co/image/ab67616d0000b273515b72d7c72fc65b017a87ea",
-      "url": "https://open.spotify.com/track/6WEBwvsmpaoGxka0tSh5a7"
-    },
-    {
-      "name": "Never Know",
+      "name": "Upside Down",
       "artist": "Jack Johnson",
-      "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
-      "url": "https://open.spotify.com/track/2BnTUxzWAcv0qerzESIunY"
+      "image": "https://i.scdn.co/image/ab67616d0000b2731e0232d637e8313d3ef4923e",
+      "url": "https://open.spotify.com/track/6shRGWCtBUOPFLFTTqXZIC"
     },
     {
       "name": "The Bay",
@@ -59,22 +47,10 @@
       "url": "https://open.spotify.com/track/2akjLHnHjDGsgqxuf48VYs"
     },
     {
-      "name": "My Same",
-      "artist": "Adele",
-      "image": "https://i.scdn.co/image/ab67616d0000b27389d0ff2366a208016b6e9c6e",
-      "url": "https://open.spotify.com/track/6McbSHjAKqf0fjsLDRzgr5"
-    },
-    {
-      "name": "Cigarette Daydreams",
-      "artist": "Cage The Elephant",
-      "image": "https://i.scdn.co/image/ab67616d0000b273fb1cb900d28642e668d77b12",
-      "url": "https://open.spotify.com/track/2tznHmp70DxMyr2XhWLOW0"
-    },
-    {
-      "name": "Blue Hair",
-      "artist": "TV Girl",
-      "image": "https://i.scdn.co/image/ab67616d0000b2731556d166d0ed059b34a00e1b",
-      "url": "https://open.spotify.com/track/39sDitIeCMrVX2QyXHY46t"
+      "name": "Won't Go Home Without You",
+      "artist": "Maroon 5",
+      "image": "https://i.scdn.co/image/ab67616d0000b273515b72d7c72fc65b017a87ea",
+      "url": "https://open.spotify.com/track/6WEBwvsmpaoGxka0tSh5a7"
     },
     {
       "name": "Frequency",
@@ -87,6 +63,30 @@
       "artist": "Billy Joel",
       "image": "https://i.scdn.co/image/ab67616d0000b2736ce61113662ecf693b605ee5",
       "url": "https://open.spotify.com/track/16GUMo6u3D2qo9a19AkYct"
+    },
+    {
+      "name": "Never Know",
+      "artist": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273628dba01c669d89586967dc5",
+      "url": "https://open.spotify.com/track/2BnTUxzWAcv0qerzESIunY"
+    },
+    {
+      "name": "The Great Gig in the Sky",
+      "artist": "Pink Floyd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27317cb878012a0c769091e8045",
+      "url": "https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d"
+    },
+    {
+      "name": "Harvey",
+      "artist": "Her's",
+      "image": "https://i.scdn.co/image/ab67616d0000b273280a001e43c93792dd1e27c7",
+      "url": "https://open.spotify.com/track/1zFbBrZmJr1Z49HYe84dBg"
+    },
+    {
+      "name": "The Adults Are Talking",
+      "artist": "The Strokes",
+      "image": "https://i.scdn.co/image/ab67616d0000b273bfa99afb5ef0d26d5064b23b",
+      "url": "https://open.spotify.com/track/5ruzrDWcT0vuJIOMW7gMnW"
     }
   ]
 }
