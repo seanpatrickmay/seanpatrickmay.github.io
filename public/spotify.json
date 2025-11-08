@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-07T13:25:52.798Z",
+  "generated_at": "2025-11-08T13:21:41.082Z",
   "artists": [
     {
       "name": "Kid Cudi",
@@ -17,14 +17,14 @@
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
-      "name": "Jack Johnson",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb9555a0b3231117c8cde1fca7",
-      "url": "https://open.spotify.com/artist/3GBPw9NK25X1Wt2OUvOwY3"
-    },
-    {
       "name": "Pink Floyd",
       "image": "https://i.scdn.co/image/ab6761610000e5eb97885ce689d644c91dfba05c",
       "url": "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9"
+    },
+    {
+      "name": "Adele",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
+      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     }
   ],
   "tracks": [
@@ -33,12 +33,6 @@
       "artist": "The Strokes",
       "image": "https://i.scdn.co/image/ab67616d0000b273f07ef193e0bb6a238ea37f0a",
       "url": "https://open.spotify.com/track/7bfocP7GYoLOutUYpTI8tx"
-    },
-    {
-      "name": "Upside Down",
-      "artist": "Jack Johnson",
-      "image": "https://i.scdn.co/image/ab67616d0000b2731e0232d637e8313d3ef4923e",
-      "url": "https://open.spotify.com/track/6shRGWCtBUOPFLFTTqXZIC"
     },
     {
       "name": "The Bay",
@@ -75,6 +69,12 @@
       "artist": "Pink Floyd",
       "image": "https://i.scdn.co/image/ab67616d0000b27317cb878012a0c769091e8045",
       "url": "https://open.spotify.com/track/2TjdnqlpwOjhijHCwHCP2d"
+    },
+    {
+      "name": "Upside Down",
+      "artist": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab67616d0000b2731e0232d637e8313d3ef4923e",
+      "url": "https://open.spotify.com/track/6shRGWCtBUOPFLFTTqXZIC"
     },
     {
       "name": "Harvey",
