@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-08T13:21:41.082Z",
+  "generated_at": "2025-11-09T13:21:37.440Z",
   "artists": [
     {
       "name": "Kid Cudi",
@@ -22,9 +22,9 @@
       "url": "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9"
     },
     {
-      "name": "Adele",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
-      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
+      "name": "Nirvana",
+      "image": "https://i.scdn.co/image/84282c28d851a700132356381fcfbadc67ff498b",
+      "url": "https://open.spotify.com/artist/6olE6TJLqED3rqDCT0FyPh"
     }
   ],
   "tracks": [
@@ -33,12 +33,6 @@
       "artist": "The Strokes",
       "image": "https://i.scdn.co/image/ab67616d0000b273f07ef193e0bb6a238ea37f0a",
       "url": "https://open.spotify.com/track/7bfocP7GYoLOutUYpTI8tx"
-    },
-    {
-      "name": "The Bay",
-      "artist": "Metronomy",
-      "image": "https://i.scdn.co/image/ab67616d0000b2738ca7d89456553e4bbbf3c981",
-      "url": "https://open.spotify.com/track/2akjLHnHjDGsgqxuf48VYs"
     },
     {
       "name": "Won't Go Home Without You",
@@ -87,6 +81,12 @@
       "artist": "The Strokes",
       "image": "https://i.scdn.co/image/ab67616d0000b273bfa99afb5ef0d26d5064b23b",
       "url": "https://open.spotify.com/track/5ruzrDWcT0vuJIOMW7gMnW"
+    },
+    {
+      "name": "The Bay",
+      "artist": "Metronomy",
+      "image": "https://i.scdn.co/image/ab67616d0000b2738ca7d89456553e4bbbf3c981",
+      "url": "https://open.spotify.com/track/2akjLHnHjDGsgqxuf48VYs"
     }
   ]
 }
