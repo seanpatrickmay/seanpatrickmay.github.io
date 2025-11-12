@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-11T13:28:53.697340Z",
+  "generated_at": "2025-11-12T13:31:18.638559Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -10,13 +10,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 56,
-        "distance_km": 1182.93,
-        "time_hours": 43.07,
+        "distance_km": 1180.45,
+        "time_hours": 41.75,
         "longest_km": 161.11,
-        "calories_kcal": 31605.0
+        "calories_kcal": 30296.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20961602950,
+            "name": "easy",
+            "type": "virtual_ride",
+            "start": "2025-11-11 14:53:52",
+            "distance_km": 18.83,
+            "duration_min": 30.9,
+            "avg_speed_kmh": 36.61,
+            "calories_kcal": 390.0
+          },
           {
             "id": 20953488404,
             "name": "Boston Course à pied",
@@ -33,8 +43,8 @@
             "type": "running",
             "start": "2025-11-10 20:28:03",
             "distance_km": 11.29,
-            "duration_min": 49.5,
-            "avg_speed_kmh": 13.69,
+            "duration_min": 48.8,
+            "avg_speed_kmh": 13.9,
             "calories_kcal": 908.0
           },
           {
@@ -606,16 +616,6 @@
             "duration_min": 92.6,
             "avg_speed_kmh": 32.49,
             "calories_kcal": 914.0
-          },
-          {
-            "id": 20642351038,
-            "name": "recovery",
-            "type": "virtual_ride",
-            "start": "2025-10-09 20:05:19",
-            "distance_km": 44.12,
-            "duration_min": 90.6,
-            "avg_speed_kmh": 29.22,
-            "calories_kcal": 898.0
           }
         ]
       },
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-11-10",
             "week_end": "2025-11-16",
-            "distance_km": 35.57,
-            "time_hours": 1.96
+            "distance_km": 54.4,
+            "time_hours": 2.46
           }
         ]
       }
@@ -676,14 +676,24 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 43,
-        "distance_km": 1072.39,
-        "time_hours": 34.2,
+        "activities_count": 44,
+        "distance_km": 1091.22,
+        "time_hours": 34.72,
         "longest_km": 161.11,
-        "calories_kcal": 22908.0
+        "calories_kcal": 23298.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20961602950,
+            "name": "easy",
+            "type": "virtual_ride",
+            "start": "2025-11-11 14:53:52",
+            "distance_km": 18.83,
+            "duration_min": 30.9,
+            "avg_speed_kmh": 36.61,
+            "calories_kcal": 390.0
+          },
           {
             "id": 20952850385,
             "name": "warmup",
@@ -1273,16 +1283,6 @@
             "duration_min": 60.1,
             "avg_speed_kmh": 27.9,
             "calories_kcal": 564.0
-          },
-          {
-            "id": 20482318536,
-            "name": "steady",
-            "type": "virtual_ride",
-            "start": "2025-09-23 20:41:12",
-            "distance_km": 74.02,
-            "duration_min": 140.9,
-            "avg_speed_kmh": 31.52,
-            "calories_kcal": 1607.0
           }
         ]
       },
@@ -1334,8 +1334,8 @@
           {
             "week_start": "2025-11-10",
             "week_end": "2025-11-16",
-            "distance_km": 18.33,
-            "time_hours": 0.51
+            "distance_km": 37.16,
+            "time_hours": 1.03
           }
         ]
       }
@@ -1343,11 +1343,11 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 12,
-        "distance_km": 110.54,
-        "time_hours": 8.86,
-        "longest_km": 21.31,
-        "calories_kcal": 8696.0
+        "activities_count": 11,
+        "distance_km": 89.23,
+        "time_hours": 7.03,
+        "longest_km": 14.61,
+        "calories_kcal": 6997.0
       },
       "recent": {
         "last60": [
@@ -1367,8 +1367,8 @@
             "type": "running",
             "start": "2025-11-10 20:28:03",
             "distance_km": 11.29,
-            "duration_min": 49.5,
-            "avg_speed_kmh": 13.69,
+            "duration_min": 48.8,
+            "avg_speed_kmh": 13.9,
             "calories_kcal": 908.0
           },
           {
@@ -1572,7 +1572,7 @@
             "week_start": "2025-11-10",
             "week_end": "2025-11-16",
             "distance_km": 17.24,
-            "time_hours": 1.45
+            "time_hours": 1.44
           }
         ]
       }
