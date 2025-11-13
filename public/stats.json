@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-12T13:31:18.638559Z",
+  "generated_at": "2025-11-13T13:31:19.546266Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 56,
-        "distance_km": 1180.45,
-        "time_hours": 41.75,
+        "activities_count": 55,
+        "distance_km": 1153.6,
+        "time_hours": 40.63,
         "longest_km": 161.11,
-        "calories_kcal": 30296.0
+        "calories_kcal": 29837.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20973475982,
+            "name": "zone 2",
+            "type": "virtual_ride",
+            "start": "2025-11-12 20:21:55",
+            "distance_km": 36.34,
+            "duration_min": 61.7,
+            "avg_speed_kmh": 35.33,
+            "calories_kcal": 789.0
+          },
           {
             "id": 20961602950,
             "name": "easy",
@@ -606,16 +616,6 @@
             "duration_min": 10.4,
             "avg_speed_kmh": 32.35,
             "calories_kcal": 106.0
-          },
-          {
-            "id": 20651343081,
-            "name": "easy",
-            "type": "virtual_ride",
-            "start": "2025-10-10 19:41:52",
-            "distance_km": 50.13,
-            "duration_min": 92.6,
-            "avg_speed_kmh": 32.49,
-            "calories_kcal": 914.0
           }
         ]
       },
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-11-10",
             "week_end": "2025-11-16",
-            "distance_km": 54.4,
-            "time_hours": 2.46
+            "distance_km": 90.74,
+            "time_hours": 3.49
           }
         ]
       }
@@ -676,14 +676,24 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 44,
-        "distance_km": 1091.22,
-        "time_hours": 34.72,
+        "activities_count": 43,
+        "distance_km": 1064.38,
+        "time_hours": 33.59,
         "longest_km": 161.11,
-        "calories_kcal": 23298.0
+        "calories_kcal": 22839.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 20973475982,
+            "name": "zone 2",
+            "type": "virtual_ride",
+            "start": "2025-11-12 20:21:55",
+            "distance_km": 36.34,
+            "duration_min": 61.7,
+            "avg_speed_kmh": 35.33,
+            "calories_kcal": 789.0
+          },
           {
             "id": 20961602950,
             "name": "easy",
@@ -1273,16 +1283,6 @@
             "duration_min": 30.4,
             "avg_speed_kmh": 28.29,
             "calories_kcal": 334.0
-          },
-          {
-            "id": 20492270508,
-            "name": "recovery",
-            "type": "virtual_ride",
-            "start": "2025-09-24 21:06:38",
-            "distance_km": 27.95,
-            "duration_min": 60.1,
-            "avg_speed_kmh": 27.9,
-            "calories_kcal": 564.0
           }
         ]
       },
@@ -1334,8 +1334,8 @@
           {
             "week_start": "2025-11-10",
             "week_end": "2025-11-16",
-            "distance_km": 37.16,
-            "time_hours": 1.03
+            "distance_km": 73.5,
+            "time_hours": 2.06
           }
         ]
       }
