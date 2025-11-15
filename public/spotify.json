@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-14T13:27:49.325Z",
+  "generated_at": "2025-11-15T13:21:54.136Z",
   "artists": [
     {
       "name": "Kid Cudi",
@@ -59,12 +59,6 @@
       "url": "https://open.spotify.com/track/1zFbBrZmJr1Z49HYe84dBg"
     },
     {
-      "name": "Movin' Out (Anthony's Song)",
-      "artist": "Billy Joel",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736ce61113662ecf693b605ee5",
-      "url": "https://open.spotify.com/track/16GUMo6u3D2qo9a19AkYct"
-    },
-    {
       "name": "Does It",
       "artist": "Kid Cudi",
       "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
@@ -87,6 +81,12 @@
       "artist": "Camille Saint-Saëns, Stéphane Tétreault, Fabien Gabel, Orchestre Symphonique De Québec",
       "image": "https://i.scdn.co/image/ab67616d0000b27318a83f747b59018eeba12b88",
       "url": "https://open.spotify.com/track/59eTbibtvvBIGj27eN3zqq"
+    },
+    {
+      "name": "Won't Go Home Without You",
+      "artist": "Maroon 5",
+      "image": "https://i.scdn.co/image/ab67616d0000b273515b72d7c72fc65b017a87ea",
+      "url": "https://open.spotify.com/track/6WEBwvsmpaoGxka0tSh5a7"
     }
   ]
 }
