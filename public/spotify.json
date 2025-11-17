@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-16T13:21:31.348Z",
+  "generated_at": "2025-11-17T13:29:46.171Z",
   "artists": [
     {
       "name": "Kid Cudi",
@@ -12,14 +12,14 @@
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
-      "name": "Nirvana",
-      "image": "https://i.scdn.co/image/84282c28d851a700132356381fcfbadc67ff498b",
-      "url": "https://open.spotify.com/artist/6olE6TJLqED3rqDCT0FyPh"
-    },
-    {
       "name": "Maroon 5",
       "image": "https://i.scdn.co/image/ab6761610000e5ebf8349dfb619a7f842242de77",
       "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
+    },
+    {
+      "name": "Nirvana",
+      "image": "https://i.scdn.co/image/84282c28d851a700132356381fcfbadc67ff498b",
+      "url": "https://open.spotify.com/artist/6olE6TJLqED3rqDCT0FyPh"
     },
     {
       "name": "Pink Floyd",
