@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-18T13:30:27.354756Z",
+  "generated_at": "2025-11-19T13:30:22.287432Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 51,
-        "distance_km": 1074.22,
-        "time_hours": 38.44,
+        "activities_count": 49,
+        "distance_km": 1078.44,
+        "time_hours": 38.56,
         "longest_km": 161.11,
-        "calories_kcal": 28689.0
+        "calories_kcal": 28571.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21029656936,
+            "name": "prog",
+            "type": "virtual_ride",
+            "start": "2025-11-18 21:08:21",
+            "distance_km": 31.61,
+            "duration_min": 84.6,
+            "avg_speed_kmh": 22.43,
+            "calories_kcal": 1153.0
+          },
           {
             "id": 21019439138,
             "name": "Vélo d'intérieur",
@@ -606,16 +616,6 @@
             "duration_min": 60.3,
             "avg_speed_kmh": 25.98,
             "calories_kcal": 699.0
-          },
-          {
-            "id": 20691822253,
-            "name": "ssteady",
-            "type": "virtual_ride",
-            "start": "2025-10-14 18:16:33",
-            "distance_km": 61.02,
-            "duration_min": 112.0,
-            "avg_speed_kmh": 32.68,
-            "calories_kcal": 1332.0
           }
         ]
       },
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-11-17",
             "week_end": "2025-11-23",
-            "distance_km": 0.0,
-            "time_hours": 0.78
+            "distance_km": 31.61,
+            "time_hours": 2.19
           }
         ]
       }
@@ -677,13 +677,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 39,
-        "distance_km": 975.79,
-        "time_hours": 30.62,
+        "distance_km": 990.83,
+        "time_hours": 31.54,
         "longest_km": 161.11,
-        "calories_kcal": 20942.0
+        "calories_kcal": 21694.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21029656936,
+            "name": "prog",
+            "type": "virtual_ride",
+            "start": "2025-11-18 21:08:21",
+            "distance_km": 31.61,
+            "duration_min": 84.6,
+            "avg_speed_kmh": 22.43,
+            "calories_kcal": 1153.0
+          },
           {
             "id": 21019439138,
             "name": "Vélo d'intérieur",
@@ -1273,16 +1283,6 @@
             "duration_min": 60.4,
             "avg_speed_kmh": 29.87,
             "calories_kcal": 600.0
-          },
-          {
-            "id": 20576616353,
-            "name": "recovery :D",
-            "type": "virtual_ride",
-            "start": "2025-10-03 07:40:13",
-            "distance_km": 22.19,
-            "duration_min": 43.5,
-            "avg_speed_kmh": 30.61,
-            "calories_kcal": 394.0
           }
         ]
       },
@@ -1334,8 +1334,8 @@
           {
             "week_start": "2025-11-17",
             "week_end": "2025-11-23",
-            "distance_km": 0.0,
-            "time_hours": 0.78
+            "distance_km": 31.61,
+            "time_hours": 2.19
           }
         ]
       }
@@ -1343,11 +1343,11 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 12,
-        "distance_km": 98.43,
-        "time_hours": 7.83,
+        "activities_count": 10,
+        "distance_km": 87.6,
+        "time_hours": 7.02,
         "longest_km": 14.61,
-        "calories_kcal": 7747.0
+        "calories_kcal": 6877.0
       },
       "recent": {
         "last60": [
