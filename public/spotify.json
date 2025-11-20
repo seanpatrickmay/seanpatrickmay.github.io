@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-19T13:29:49.121Z",
+  "generated_at": "2025-11-20T13:28:15.736Z",
   "artists": [
     {
       "name": "Kid Cudi",
@@ -17,9 +17,9 @@
       "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
     },
     {
-      "name": "Pink Floyd",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb97885ce689d644c91dfba05c",
-      "url": "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9"
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
       "name": "Cigarettes After Sex",
@@ -47,12 +47,6 @@
       "url": "https://open.spotify.com/track/7iqsSrwZqc8vpdvbyK74pQ"
     },
     {
-      "name": "Cheer Me On",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
-    },
-    {
       "name": "Does It",
       "artist": "Kid Cudi",
       "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
@@ -63,6 +57,18 @@
       "artist": "Kid Cudi",
       "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
       "url": "https://open.spotify.com/track/36ltVroxdokt4IVqNh4EEO"
+    },
+    {
+      "name": "Dance 4 Eternity",
+      "artist": "Kid Cudi",
+      "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
+      "url": "https://open.spotify.com/track/4VOUXdkDN3USHfEtBjCUPS"
+    },
+    {
+      "name": "Cheer Me On",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
     },
     {
       "name": "Kitchen",
@@ -81,12 +87,6 @@
       "artist": "Kid Cudi, Pharrell Williams",
       "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
       "url": "https://open.spotify.com/track/0gnYo3z19PzAVikI7doinv"
-    },
-    {
-      "name": "Around the World",
-      "artist": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab67616d0000b2738ac778cc7d88779f74d33311",
-      "url": "https://open.spotify.com/track/1pKYYY0dkg23sQQXi0Q5zN"
     }
   ]
 }
