@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-22T13:21:55.394238Z",
+  "generated_at": "2025-11-23T13:21:51.797203Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -10,13 +10,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 45,
-        "distance_km": 872.0,
-        "time_hours": 31.6,
+        "distance_km": 853.44,
+        "time_hours": 30.93,
         "longest_km": 86.66,
-        "calories_kcal": 23992.0
+        "calories_kcal": 23636.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21064894594,
+            "name": "threshold",
+            "type": "virtual_ride",
+            "start": "2025-11-22 20:23:36",
+            "distance_km": 20.97,
+            "duration_min": 31.5,
+            "avg_speed_kmh": 39.99,
+            "calories_kcal": 521.0
+          },
           {
             "id": 21029656936,
             "name": "prog",
@@ -606,16 +616,6 @@
             "duration_min": 35.0,
             "avg_speed_kmh": 11.68,
             "calories_kcal": 266.0
-          },
-          {
-            "id": 20702714735,
-            "name": "strides ig",
-            "type": "virtual_ride",
-            "start": "2025-10-15 21:45:25",
-            "distance_km": 26.12,
-            "duration_min": 60.3,
-            "avg_speed_kmh": 25.98,
-            "calories_kcal": 699.0
           }
         ]
       },
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-11-17",
             "week_end": "2025-11-23",
-            "distance_km": 31.61,
-            "time_hours": 2.19
+            "distance_km": 52.58,
+            "time_hours": 2.71
           }
         ]
       }
@@ -677,13 +677,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 36,
-        "distance_km": 794.67,
-        "time_hours": 25.38,
+        "distance_km": 776.11,
+        "time_hours": 24.71,
         "longest_km": 86.66,
-        "calories_kcal": 17917.0
+        "calories_kcal": 17561.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21064894594,
+            "name": "threshold",
+            "type": "virtual_ride",
+            "start": "2025-11-22 20:23:36",
+            "distance_km": 20.97,
+            "duration_min": 31.5,
+            "avg_speed_kmh": 39.99,
+            "calories_kcal": 521.0
+          },
           {
             "id": 21029656936,
             "name": "prog",
@@ -1273,16 +1283,6 @@
             "duration_min": 7.7,
             "avg_speed_kmh": 16.63,
             "calories_kcal": 95.0
-          },
-          {
-            "id": 20582774119,
-            "name": "easy",
-            "type": "virtual_ride",
-            "start": "2025-10-04 00:31:33",
-            "distance_km": 30.07,
-            "duration_min": 60.4,
-            "avg_speed_kmh": 29.87,
-            "calories_kcal": 600.0
           }
         ]
       },
@@ -1334,8 +1334,8 @@
           {
             "week_start": "2025-11-17",
             "week_end": "2025-11-23",
-            "distance_km": 31.61,
-            "time_hours": 2.19
+            "distance_km": 52.58,
+            "time_hours": 2.71
           }
         ]
       }
