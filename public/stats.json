@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-24T13:31:43.971170Z",
+  "generated_at": "2025-11-25T13:32:27.845209Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,34 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 47,
-        "distance_km": 860.82,
-        "time_hours": 31.93,
+        "activities_count": 46,
+        "distance_km": 839.46,
+        "time_hours": 30.92,
         "longest_km": 86.66,
-        "calories_kcal": 24497.0
+        "calories_kcal": 23548.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21083414891,
+            "name": "recovery",
+            "type": "virtual_ride",
+            "start": "2025-11-24 23:26:05",
+            "distance_km": 10.41,
+            "duration_min": 22.9,
+            "avg_speed_kmh": 27.26,
+            "calories_kcal": 211.0
+          },
+          {
+            "id": 21083325515,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-11-24 21:53:42",
+            "distance_km": 9.0,
+            "duration_min": 30.9,
+            "avg_speed_kmh": 17.46,
+            "calories_kcal": 457.0
+          },
           {
             "id": 21073855062,
             "name": "cd",
@@ -596,26 +616,6 @@
             "duration_min": 60.5,
             "avg_speed_kmh": 31.29,
             "calories_kcal": 720.0
-          },
-          {
-            "id": 20716155570,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-10-17 08:46:50",
-            "distance_km": 1.97,
-            "duration_min": 6.8,
-            "avg_speed_kmh": 17.42,
-            "calories_kcal": 96.0
-          },
-          {
-            "id": 20712430674,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-10-16 21:55:34",
-            "distance_km": 2.98,
-            "duration_min": 16.6,
-            "avg_speed_kmh": 10.76,
-            "calories_kcal": 204.0
           }
         ]
       },
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-11-24",
             "week_end": "2025-11-30",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 19.42,
+            "time_hours": 0.9
           }
         ]
       }
@@ -677,13 +677,33 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 37,
-        "distance_km": 772.19,
-        "time_hours": 24.88,
+        "distance_km": 763.79,
+        "time_hours": 24.82,
         "longest_km": 86.66,
-        "calories_kcal": 17524.0
+        "calories_kcal": 17576.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21083414891,
+            "name": "recovery",
+            "type": "virtual_ride",
+            "start": "2025-11-24 23:26:05",
+            "distance_km": 10.41,
+            "duration_min": 22.9,
+            "avg_speed_kmh": 27.26,
+            "calories_kcal": 211.0
+          },
+          {
+            "id": 21083325515,
+            "name": "Boston Cyclisme",
+            "type": "cycling",
+            "start": "2025-11-24 21:53:42",
+            "distance_km": 9.0,
+            "duration_min": 30.9,
+            "avg_speed_kmh": 17.46,
+            "calories_kcal": 457.0
+          },
           {
             "id": 21073855062,
             "name": "cd",
@@ -1263,26 +1283,6 @@
             "duration_min": 30.3,
             "avg_speed_kmh": 34.54,
             "calories_kcal": 383.0
-          },
-          {
-            "id": 20621450523,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-10-07 19:28:52",
-            "distance_km": 2.76,
-            "duration_min": 9.0,
-            "avg_speed_kmh": 18.47,
-            "calories_kcal": 128.0
-          },
-          {
-            "id": 20621078590,
-            "name": "steady",
-            "type": "virtual_ride",
-            "start": "2025-10-07 17:39:52",
-            "distance_km": 34.0,
-            "duration_min": 61.6,
-            "avg_speed_kmh": 33.1,
-            "calories_kcal": 775.0
           }
         ]
       },
@@ -1334,8 +1334,8 @@
           {
             "week_start": "2025-11-24",
             "week_end": "2025-11-30",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 19.42,
+            "time_hours": 0.9
           }
         ]
       }
@@ -1343,11 +1343,11 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 10,
-        "distance_km": 88.63,
-        "time_hours": 7.05,
+        "activities_count": 9,
+        "distance_km": 75.66,
+        "time_hours": 6.1,
         "longest_km": 14.61,
-        "calories_kcal": 6973.0
+        "calories_kcal": 5972.0
       },
       "recent": {
         "last60": [
@@ -1530,16 +1530,6 @@
             "duration_min": 55.4,
             "avg_speed_kmh": 10.55,
             "calories_kcal": 839.0
-          },
-          {
-            "id": 20376638390,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-09-13 15:04:39",
-            "distance_km": 7.03,
-            "duration_min": 36.6,
-            "avg_speed_kmh": 11.51,
-            "calories_kcal": 631.0
           }
         ]
       },
