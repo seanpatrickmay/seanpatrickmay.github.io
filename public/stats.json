@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-25T13:32:27.845209Z",
+  "generated_at": "2025-11-26T13:33:00.786477Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,34 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 46,
-        "distance_km": 839.46,
-        "time_hours": 30.92,
+        "activities_count": 47,
+        "distance_km": 846.03,
+        "time_hours": 31.7,
         "longest_km": 86.66,
-        "calories_kcal": 23548.0
+        "calories_kcal": 24428.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21092674619,
+            "name": "Boston Course à pied",
+            "type": "running",
+            "start": "2025-11-25 22:30:36",
+            "distance_km": 1.51,
+            "duration_min": 7.3,
+            "avg_speed_kmh": 12.45,
+            "calories_kcal": 121.0
+          },
+          {
+            "id": 21092674393,
+            "name": "Boston Course à pied",
+            "type": "running",
+            "start": "2025-11-25 21:22:30",
+            "distance_km": 12.69,
+            "duration_min": 62.1,
+            "avg_speed_kmh": 12.26,
+            "calories_kcal": 997.0
+          },
           {
             "id": 21083414891,
             "name": "recovery",
@@ -596,26 +616,6 @@
             "duration_min": 29.2,
             "avg_speed_kmh": 34.05,
             "calories_kcal": 401.0
-          },
-          {
-            "id": 20721229973,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-10-17 20:50:52",
-            "distance_km": 2.65,
-            "duration_min": 9.8,
-            "avg_speed_kmh": 16.19,
-            "calories_kcal": 129.0
-          },
-          {
-            "id": 20720704284,
-            "name": "steady",
-            "type": "virtual_ride",
-            "start": "2025-10-17 18:12:27",
-            "distance_km": 31.54,
-            "duration_min": 60.5,
-            "avg_speed_kmh": 31.29,
-            "calories_kcal": 720.0
           }
         ]
       },
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-11-24",
             "week_end": "2025-11-30",
-            "distance_km": 19.42,
-            "time_hours": 0.9
+            "distance_km": 33.62,
+            "time_hours": 2.05
           }
         ]
       }
@@ -676,11 +676,11 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 37,
-        "distance_km": 763.79,
-        "time_hours": 24.82,
+        "activities_count": 36,
+        "distance_km": 756.16,
+        "time_hours": 24.44,
         "longest_km": 86.66,
-        "calories_kcal": 17576.0
+        "calories_kcal": 17338.0
       },
       "recent": {
         "last60": [
@@ -1343,14 +1343,34 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 9,
-        "distance_km": 75.66,
-        "time_hours": 6.1,
+        "activities_count": 11,
+        "distance_km": 89.87,
+        "time_hours": 7.26,
         "longest_km": 14.61,
-        "calories_kcal": 5972.0
+        "calories_kcal": 7090.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21092674619,
+            "name": "Boston Course à pied",
+            "type": "running",
+            "start": "2025-11-25 22:30:36",
+            "distance_km": 1.51,
+            "duration_min": 7.3,
+            "avg_speed_kmh": 12.45,
+            "calories_kcal": 121.0
+          },
+          {
+            "id": 21092674393,
+            "name": "Boston Course à pied",
+            "type": "running",
+            "start": "2025-11-25 21:22:30",
+            "distance_km": 12.69,
+            "duration_min": 62.1,
+            "avg_speed_kmh": 12.26,
+            "calories_kcal": 997.0
+          },
           {
             "id": 21073717722,
             "name": "Boston Course à pied",
@@ -1581,8 +1601,8 @@
           {
             "week_start": "2025-11-24",
             "week_end": "2025-11-30",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 14.2,
+            "time_hours": 1.16
           }
         ]
       }
