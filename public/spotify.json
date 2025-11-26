@@ -1,15 +1,15 @@
 {
-  "generated_at": "2025-11-25T13:31:51.497Z",
+  "generated_at": "2025-11-26T13:32:35.456Z",
   "artists": [
-    {
-      "name": "Kid Cudi",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb5f00bb6dd7a7008d14156630",
-      "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
-    },
     {
       "name": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebdee560c99d80399eb20c3147",
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
+    },
+    {
+      "name": "Kid Cudi",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb5f00bb6dd7a7008d14156630",
+      "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
     },
     {
       "name": "Maroon 5",
@@ -22,9 +22,9 @@
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+      "name": "The Marías",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaf586afa2b397f1288683a76",
+      "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
     }
   ],
   "tracks": [
@@ -47,28 +47,16 @@
       "url": "https://open.spotify.com/track/7iqsSrwZqc8vpdvbyK74pQ"
     },
     {
-      "name": "Frequency",
-      "artist": "Kid Cudi",
-      "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
-      "url": "https://open.spotify.com/track/0O6jl8Zamz6TGF0nUwMQsF"
+      "name": "Walk to Class",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/6KBzft33aLJTLiTcAoJrKK"
     },
     {
-      "name": "Does It",
-      "artist": "Kid Cudi",
-      "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
-      "url": "https://open.spotify.com/track/1Bta6k7sXqUJfebYppG7Mq"
-    },
-    {
-      "name": "Dance 4 Eternity",
-      "artist": "Kid Cudi",
-      "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
-      "url": "https://open.spotify.com/track/4VOUXdkDN3USHfEtBjCUPS"
-    },
-    {
-      "name": "Distant Fantasies",
-      "artist": "Kid Cudi",
-      "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
-      "url": "https://open.spotify.com/track/0dBXCFV75G0mdi5fo7eO9v"
+      "name": "Bleed (feat. Omar Apollo)",
+      "artist": "Malcolm Todd, Omar Apollo",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/2TAKt1x0k9AltDJm31GhEu"
     },
     {
       "name": "Run Away",
@@ -77,16 +65,28 @@
       "url": "https://open.spotify.com/track/6doY5sLPHdE4g7RUQdYSz6"
     },
     {
-      "name": "Kitchen",
+      "name": "Does It",
       "artist": "Kid Cudi",
       "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
-      "url": "https://open.spotify.com/track/0Jcij1eWd5bDMU5iPbxe2i"
+      "url": "https://open.spotify.com/track/1Bta6k7sXqUJfebYppG7Mq"
     },
     {
-      "name": "ILLusions",
+      "name": "Lying",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/3M4tj3UMHFmMoD3BNvDIkY"
+    },
+    {
+      "name": "Dance 4 Eternity",
       "artist": "Kid Cudi",
       "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
-      "url": "https://open.spotify.com/track/36ltVroxdokt4IVqNh4EEO"
+      "url": "https://open.spotify.com/track/4VOUXdkDN3USHfEtBjCUPS"
+    },
+    {
+      "name": "Good Job Malcolm",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/5i0bim89t8ca2wX5g9umpr"
     }
   ]
 }
