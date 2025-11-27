@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-26T13:32:35.456Z",
+  "generated_at": "2025-11-27T13:29:57.077Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -12,11 +12,6 @@
       "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
     },
     {
-      "name": "Maroon 5",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebf8349dfb619a7f842242de77",
-      "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
-    },
-    {
       "name": "Daft Punk",
       "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
@@ -25,6 +20,11 @@
       "name": "The Marías",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaf586afa2b397f1288683a76",
       "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
+    },
+    {
+      "name": "Zedd",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
+      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     }
   ],
   "tracks": [
@@ -35,16 +35,10 @@
       "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
     },
     {
-      "name": "Surfin'",
-      "artist": "Kid Cudi, Pharrell Williams",
-      "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
-      "url": "https://open.spotify.com/track/1uHb5qa69lHLcFT38fIfUG"
-    },
-    {
-      "name": "The Commander",
-      "artist": "Kid Cudi",
-      "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
-      "url": "https://open.spotify.com/track/7iqsSrwZqc8vpdvbyK74pQ"
+      "name": "Lying",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/3M4tj3UMHFmMoD3BNvDIkY"
     },
     {
       "name": "Walk to Class",
@@ -53,40 +47,46 @@
       "url": "https://open.spotify.com/track/6KBzft33aLJTLiTcAoJrKK"
     },
     {
+      "name": "Surfin'",
+      "artist": "Kid Cudi, Pharrell Williams",
+      "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
+      "url": "https://open.spotify.com/track/1uHb5qa69lHLcFT38fIfUG"
+    },
+    {
       "name": "Bleed (feat. Omar Apollo)",
       "artist": "Malcolm Todd, Omar Apollo",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/2TAKt1x0k9AltDJm31GhEu"
     },
     {
-      "name": "Run Away",
-      "artist": "Chezile",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739322a3456567f51d42bd5ea4",
-      "url": "https://open.spotify.com/track/6doY5sLPHdE4g7RUQdYSz6"
-    },
-    {
-      "name": "Does It",
-      "artist": "Kid Cudi",
-      "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
-      "url": "https://open.spotify.com/track/1Bta6k7sXqUJfebYppG7Mq"
-    },
-    {
-      "name": "Lying",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/3M4tj3UMHFmMoD3BNvDIkY"
-    },
-    {
-      "name": "Dance 4 Eternity",
-      "artist": "Kid Cudi",
-      "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
-      "url": "https://open.spotify.com/track/4VOUXdkDN3USHfEtBjCUPS"
-    },
-    {
       "name": "Good Job Malcolm",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/5i0bim89t8ca2wX5g9umpr"
+    },
+    {
+      "name": "Doll",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/7Ma0mqJh1fjOL3ACpAWtTP"
+    },
+    {
+      "name": "The Commander",
+      "artist": "Kid Cudi",
+      "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
+      "url": "https://open.spotify.com/track/7iqsSrwZqc8vpdvbyK74pQ"
+    },
+    {
+      "name": "I'll Come Back For You",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/2i4bDOV0cKTyPOoEHNzoFR"
+    },
+    {
+      "name": "Original",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
+      "url": "https://open.spotify.com/track/4C2VgkK31XEllBMUGu7bPN"
     }
   ]
 }
