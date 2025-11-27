@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-26T13:33:00.786477Z",
+  "generated_at": "2025-11-27T13:30:32.932931Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 47,
-        "distance_km": 846.03,
-        "time_hours": 31.7,
+        "activities_count": 44,
+        "distance_km": 809.6,
+        "time_hours": 30.65,
         "longest_km": 86.66,
-        "calories_kcal": 24428.0
+        "calories_kcal": 23570.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21101538650,
+            "name": "Zwift - 40 easy 190 on Volcano Flat in Watopia",
+            "type": "virtual_ride",
+            "start": "2025-11-26 19:50:09",
+            "distance_km": 22.4,
+            "duration_min": 40.2,
+            "avg_speed_kmh": 33.39,
+            "calories_kcal": 436.0
+          },
           {
             "id": 21092674619,
             "name": "Boston Course à pied",
@@ -606,16 +616,6 @@
             "duration_min": 40.2,
             "avg_speed_kmh": 13.64,
             "calories_kcal": 723.0
-          },
-          {
-            "id": 20739936037,
-            "name": "threshold warmup",
-            "type": "virtual_ride",
-            "start": "2025-10-19 14:55:25",
-            "distance_km": 16.56,
-            "duration_min": 29.2,
-            "avg_speed_kmh": 34.05,
-            "calories_kcal": 401.0
           }
         ]
       },
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-11-24",
             "week_end": "2025-11-30",
-            "distance_km": 33.62,
-            "time_hours": 2.05
+            "distance_km": 56.02,
+            "time_hours": 2.72
           }
         ]
       }
@@ -676,14 +676,24 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 36,
-        "distance_km": 756.16,
-        "time_hours": 24.44,
+        "activities_count": 33,
+        "distance_km": 719.74,
+        "time_hours": 23.39,
         "longest_km": 86.66,
-        "calories_kcal": 17338.0
+        "calories_kcal": 16480.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21101538650,
+            "name": "Zwift - 40 easy 190 on Volcano Flat in Watopia",
+            "type": "virtual_ride",
+            "start": "2025-11-26 19:50:09",
+            "distance_km": 22.4,
+            "duration_min": 40.2,
+            "avg_speed_kmh": 33.39,
+            "calories_kcal": 436.0
+          },
           {
             "id": 21083414891,
             "name": "recovery",
@@ -1273,16 +1283,6 @@
             "duration_min": 90.6,
             "avg_speed_kmh": 29.22,
             "calories_kcal": 898.0
-          },
-          {
-            "id": 20631556735,
-            "name": "warmup",
-            "type": "virtual_ride",
-            "start": "2025-10-08 18:11:15",
-            "distance_km": 17.44,
-            "duration_min": 30.3,
-            "avg_speed_kmh": 34.54,
-            "calories_kcal": 383.0
           }
         ]
       },
@@ -1334,8 +1334,8 @@
           {
             "week_start": "2025-11-24",
             "week_end": "2025-11-30",
-            "distance_km": 19.42,
-            "time_hours": 0.9
+            "distance_km": 41.82,
+            "time_hours": 1.57
           }
         ]
       }
