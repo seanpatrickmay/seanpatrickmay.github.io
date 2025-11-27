@@ -38,26 +38,27 @@
     "emoji": "\ud83d\udcca",
     "period": "Updated Oct 2025",
     "stack": [
-      "Next.js",
-      "Supabase",
-      "Google Cloud Run",
-      "Stripe",
-      "Vertex AI"
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "React",
+      "Vertex AI Gemini"
     ],
-    "oneLiner": "Cloud-run personal ops hub linking Supabase data, billing, and AI coaching.",
+    "oneLiner": "Self-hosted, AI-powered wellness + life dashboard that ingests Garmin wearable data, computes daily readiness scores, and surfaces Monet-inspired insights, nutrition coaching, and to-dos via a React/TypeScript UI backed by a FastAPI + PostgreSQL + Vertex AI/Gemini stack.",
     "languages": [
-      "JavaScript"
+      "Python",
+      "TypeScript"
     ],
     "tags": [
       "Full-stack",
-      "Cloud/Infra",
-      "Agentic AI"
+      "Agentic AI",
+      "Data Engineering"
     ],
-    "coolness": 88,
+    "coolness": 100,
     "bullets": [
-      "Vercel-hosted Next.js frontend pairs with Cloud Run services, Supabase Postgres/RLS, and Stripe billing.",
-      "Garmin + Withings webhooks stream quantified-self data into Supabase, seeded by scripts/seed.ts for demos.",
-      "Vertex AI coaching insights, pnpm-driven tooling, and Terraform automation round out production-ready infra."
+      "FastAPI backend ingests Garmin HRV, resting HR, sleep, and training load into a PostgreSQL time-series schema using async SQLAlchemy, Alembic migrations, and JSONB for traceability.",
+      "Metric pipeline computes rolling training load, sleep seconds, and HRV/RHR baselines to drive a Vertex AI–powered Monet-style daily readiness narrative and 1–100 score.",
+      "React/TypeScript dashboard surfaces HRV, RHR, sleep, training load, nutrition workflows, and intelligent to-dos with React Query, Recharts visualizations, and scheduled Garmin refresh flows."
     ],
     "links": [
       {
@@ -86,11 +87,12 @@
     "tags": [
       "Full-stack",
       "NLP",
+      "Data Engineering",
       "Cloud/Infra",
       "Agentic AI",
       "Concurrency"
     ],
-    "coolness": 100,
+    "coolness": 99,
     "bullets": [
       "Back end chunks French PDFs, calls Gemini for scene summaries, and layers sentence-level translations plus vocab.",
       "Streaming ingestion API uploads books and persists scenes, questions, and glossary terms into SQLite/Postgres.",
@@ -122,6 +124,7 @@
     ],
     "tags": [
       "Full-stack",
+      "Data Engineering",
       "Agentic AI",
       "Concurrency"
     ],
@@ -159,7 +162,8 @@
       "Machine Learning",
       "Computer Vision",
       "Algorithms",
-      "Full-stack"
+      "Full-stack",
+      "Data Engineering"
     ],
     "coolness": 98,
     "bullets": [

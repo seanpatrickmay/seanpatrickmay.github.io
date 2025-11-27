@@ -16,7 +16,9 @@ export default function Section({ id, title, icon, children, className = '', ...
     .join(' ');
   const titleClassName = [
     'text-2xl font-semibold transition-colors duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)]',
-    isExpanded ? 'text-white' : 'text-white/90',
+    isExpanded
+      ? 'text-slate-900 dark:text-slate-50'
+      : 'text-slate-700 dark:text-slate-200',
   ]
     .filter(Boolean)
     .join(' ');

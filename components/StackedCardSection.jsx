@@ -147,7 +147,7 @@ export default function StackedCardSection({
         data-expanded={isActive ? 'true' : 'false'}
         aria-expanded={isActive}
       >
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-sm text-white/70 dark:border-white/10 dark:bg-white/5">
+        <div className="rounded-3xl border border-slate-200 bg-white/70 p-6 text-sm text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-200">
           Nothing to display yet.
         </div>
       </Section>
@@ -239,4 +239,3 @@ export default function StackedCardSection({
     </Section>
   );
 }
-
