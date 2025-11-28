@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-27T13:30:32.932931Z",
+  "generated_at": "2025-11-28T13:28:56.659751Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 44,
-        "distance_km": 809.6,
-        "time_hours": 30.65,
+        "activities_count": 41,
+        "distance_km": 736.01,
+        "time_hours": 27.85,
         "longest_km": 86.66,
-        "calories_kcal": 23570.0
+        "calories_kcal": 21714.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21105451098,
+            "name": "Howard County Course à pied",
+            "type": "running",
+            "start": "2025-11-27 08:30:12",
+            "distance_km": 5.03,
+            "duration_min": 19.7,
+            "avg_speed_kmh": 15.31,
+            "calories_kcal": 345.0
+          },
           {
             "id": 21101538650,
             "name": "Zwift - 40 easy 190 on Volcano Flat in Watopia",
@@ -606,16 +616,6 @@
             "duration_min": 8.3,
             "avg_speed_kmh": 12.26,
             "calories_kcal": 147.0
-          },
-          {
-            "id": 20740566811,
-            "name": "Boston - 10x3m",
-            "type": "running",
-            "start": "2025-10-19 15:47:47",
-            "distance_km": 9.14,
-            "duration_min": 40.2,
-            "avg_speed_kmh": 13.64,
-            "calories_kcal": 723.0
           }
         ]
       },
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-11-24",
             "week_end": "2025-11-30",
-            "distance_km": 56.02,
-            "time_hours": 2.72
+            "distance_km": 61.04,
+            "time_hours": 3.05
           }
         ]
       }
@@ -676,11 +676,11 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 33,
-        "distance_km": 719.74,
-        "time_hours": 23.39,
+        "activities_count": 30,
+        "distance_km": 652.43,
+        "time_hours": 21.13,
         "longest_km": 86.66,
-        "calories_kcal": 16480.0
+        "calories_kcal": 15138.0
       },
       "recent": {
         "last60": [
@@ -1344,13 +1344,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 11,
-        "distance_km": 89.87,
-        "time_hours": 7.26,
+        "distance_km": 83.58,
+        "time_hours": 6.71,
         "longest_km": 14.61,
-        "calories_kcal": 7090.0
+        "calories_kcal": 6576.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21105451098,
+            "name": "Howard County Course à pied",
+            "type": "running",
+            "start": "2025-11-27 08:30:12",
+            "distance_km": 5.03,
+            "duration_min": 19.7,
+            "avg_speed_kmh": 15.31,
+            "calories_kcal": 345.0
+          },
           {
             "id": 21092674619,
             "name": "Boston Course à pied",
@@ -1601,8 +1611,8 @@
           {
             "week_start": "2025-11-24",
             "week_end": "2025-11-30",
-            "distance_km": 14.2,
-            "time_hours": 1.16
+            "distance_km": 19.23,
+            "time_hours": 1.48
           }
         ]
       }
