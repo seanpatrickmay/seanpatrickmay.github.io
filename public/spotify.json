@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-28T13:28:21.993Z",
+  "generated_at": "2025-11-29T13:24:00.317Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -22,9 +22,9 @@
       "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
     },
     {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+      "name": "Lorde",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaa69380a8d5203257611662d",
+      "url": "https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm"
     }
   ],
   "tracks": [
@@ -47,16 +47,16 @@
       "url": "https://open.spotify.com/track/6KBzft33aLJTLiTcAoJrKK"
     },
     {
-      "name": "Surfin'",
-      "artist": "Kid Cudi, Pharrell Williams",
-      "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
-      "url": "https://open.spotify.com/track/1uHb5qa69lHLcFT38fIfUG"
-    },
-    {
       "name": "Bleed (feat. Omar Apollo)",
       "artist": "Malcolm Todd, Omar Apollo",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/2TAKt1x0k9AltDJm31GhEu"
+    },
+    {
+      "name": "Make Me a Better Man",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
     },
     {
       "name": "Good Job Malcolm",
@@ -71,22 +71,22 @@
       "url": "https://open.spotify.com/track/7Ma0mqJh1fjOL3ACpAWtTP"
     },
     {
-      "name": "The Commander",
-      "artist": "Kid Cudi",
-      "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
-      "url": "https://open.spotify.com/track/7iqsSrwZqc8vpdvbyK74pQ"
-    },
-    {
       "name": "I'll Come Back For You",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/2i4bDOV0cKTyPOoEHNzoFR"
     },
     {
-      "name": "Original",
+      "name": "Who's the Fool",
       "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
-      "url": "https://open.spotify.com/track/4C2VgkK31XEllBMUGu7bPN"
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/5hGZ18fF81kgGwukiJOKGm"
+    },
+    {
+      "name": "Surfin'",
+      "artist": "Kid Cudi, Pharrell Williams",
+      "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
+      "url": "https://open.spotify.com/track/1uHb5qa69lHLcFT38fIfUG"
     }
   ]
 }
