@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-29T13:24:53.229137Z",
+  "generated_at": "2025-11-30T13:24:44.163634Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -10,13 +10,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 39,
-        "distance_km": 695.81,
-        "time_hours": 26.58,
+        "distance_km": 699.29,
+        "time_hours": 27.09,
         "longest_km": 86.66,
-        "calories_kcal": 20881.0
+        "calories_kcal": 21268.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21125458177,
+            "name": "Columbia Course à pied",
+            "type": "running",
+            "start": "2025-11-29 14:22:09",
+            "distance_km": 4.87,
+            "duration_min": 36.0,
+            "avg_speed_kmh": 8.12,
+            "calories_kcal": 437.0
+          },
           {
             "id": 21105451098,
             "name": "Howard County Course à pied",
@@ -606,16 +616,6 @@
             "duration_min": 287.8,
             "avg_speed_kmh": 33.59,
             "calories_kcal": 3002.0
-          },
-          {
-            "id": 20740567240,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-10-19 16:47:30",
-            "distance_km": 1.69,
-            "duration_min": 8.3,
-            "avg_speed_kmh": 12.26,
-            "calories_kcal": 147.0
           }
         ]
       },
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-11-24",
             "week_end": "2025-11-30",
-            "distance_km": 61.04,
-            "time_hours": 3.05
+            "distance_km": 65.91,
+            "time_hours": 3.65
           }
         ]
       }
@@ -676,11 +676,11 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 28,
-        "distance_km": 612.23,
-        "time_hours": 19.86,
+        "activities_count": 27,
+        "distance_km": 610.84,
+        "time_hours": 19.78,
         "longest_km": 86.66,
-        "calories_kcal": 14305.0
+        "calories_kcal": 14255.0
       },
       "recent": {
         "last60": [
@@ -1343,14 +1343,24 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 11,
-        "distance_km": 83.58,
-        "time_hours": 6.71,
+        "activities_count": 12,
+        "distance_km": 88.45,
+        "time_hours": 7.31,
         "longest_km": 14.61,
-        "calories_kcal": 6576.0
+        "calories_kcal": 7013.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21125458177,
+            "name": "Columbia Course à pied",
+            "type": "running",
+            "start": "2025-11-29 14:22:09",
+            "distance_km": 4.87,
+            "duration_min": 36.0,
+            "avg_speed_kmh": 8.12,
+            "calories_kcal": 437.0
+          },
           {
             "id": 21105451098,
             "name": "Howard County Course à pied",
@@ -1611,8 +1621,8 @@
           {
             "week_start": "2025-11-24",
             "week_end": "2025-11-30",
-            "distance_km": 19.23,
-            "time_hours": 1.48
+            "distance_km": 24.1,
+            "time_hours": 2.08
           }
         ]
       }
