@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-29T13:24:00.317Z",
+  "generated_at": "2025-11-30T13:23:32.968Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -17,14 +17,14 @@
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
-      "name": "The Marías",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebaf586afa2b397f1288683a76",
-      "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
-    },
-    {
       "name": "Lorde",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaa69380a8d5203257611662d",
       "url": "https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm"
+    },
+    {
+      "name": "The Marías",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaf586afa2b397f1288683a76",
+      "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
     }
   ],
   "tracks": [
@@ -53,18 +53,6 @@
       "url": "https://open.spotify.com/track/2TAKt1x0k9AltDJm31GhEu"
     },
     {
-      "name": "Make Me a Better Man",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
-    },
-    {
-      "name": "Good Job Malcolm",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/5i0bim89t8ca2wX5g9umpr"
-    },
-    {
       "name": "Doll",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
@@ -77,16 +65,28 @@
       "url": "https://open.spotify.com/track/2i4bDOV0cKTyPOoEHNzoFR"
     },
     {
+      "name": "Concrete",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/2x0He9oNZea2wj5XaO4iF6"
+    },
+    {
       "name": "Who's the Fool",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/5hGZ18fF81kgGwukiJOKGm"
     },
     {
-      "name": "Surfin'",
-      "artist": "Kid Cudi, Pharrell Williams",
-      "image": "https://i.scdn.co/image/ab67616d0000b2735c8d9ad991d2a23eb039d8dd",
-      "url": "https://open.spotify.com/track/1uHb5qa69lHLcFT38fIfUG"
+      "name": "Make Me a Better Man",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
+    },
+    {
+      "name": "Florence",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/0SLzbfio38k2vmWujFVIM6"
     }
   ]
 }
