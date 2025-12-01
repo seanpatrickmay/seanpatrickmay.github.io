@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-11-30T13:24:44.163634Z",
+  "generated_at": "2025-12-01T13:34:07.565027Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,11 +9,11 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 39,
-        "distance_km": 699.29,
-        "time_hours": 27.09,
-        "longest_km": 86.66,
-        "calories_kcal": 21268.0
+        "activities_count": 36,
+        "distance_km": 606.54,
+        "time_hours": 24.34,
+        "longest_km": 66.64,
+        "calories_kcal": 19457.0
       },
       "recent": {
         "last60": [
@@ -623,12 +623,6 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-10-06",
-            "week_end": "2025-10-12",
-            "distance_km": 251.83,
-            "time_hours": 9.89
-          },
-          {
             "week_start": "2025-10-13",
             "week_end": "2025-10-19",
             "distance_km": 255.97,
@@ -669,6 +663,12 @@
             "week_end": "2025-11-30",
             "distance_km": 65.91,
             "time_hours": 3.65
+          },
+          {
+            "week_start": "2025-12-01",
+            "week_end": "2025-12-07",
+            "distance_km": 0.0,
+            "time_hours": 0.0
           }
         ]
       }
@@ -676,11 +676,11 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 27,
-        "distance_km": 610.84,
-        "time_hours": 19.78,
-        "longest_km": 86.66,
-        "calories_kcal": 14255.0
+        "activities_count": 24,
+        "distance_km": 518.09,
+        "time_hours": 17.03,
+        "longest_km": 66.64,
+        "calories_kcal": 12444.0
       },
       "recent": {
         "last60": [
@@ -1290,12 +1290,6 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-10-06",
-            "week_end": "2025-10-12",
-            "distance_km": 217.8,
-            "time_hours": 7.03
-          },
-          {
             "week_start": "2025-10-13",
             "week_end": "2025-10-19",
             "distance_km": 245.14,
@@ -1336,6 +1330,12 @@
             "week_end": "2025-11-30",
             "distance_km": 41.82,
             "time_hours": 1.57
+          },
+          {
+            "week_start": "2025-12-01",
+            "week_end": "2025-12-07",
+            "distance_km": 0.0,
+            "time_hours": 0.0
           }
         ]
       }
@@ -1577,12 +1577,6 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-10-06",
-            "week_end": "2025-10-12",
-            "distance_km": 34.03,
-            "time_hours": 2.86
-          },
-          {
             "week_start": "2025-10-13",
             "week_end": "2025-10-19",
             "distance_km": 10.83,
@@ -1623,6 +1617,12 @@
             "week_end": "2025-11-30",
             "distance_km": 24.1,
             "time_hours": 2.08
+          },
+          {
+            "week_start": "2025-12-01",
+            "week_end": "2025-12-07",
+            "distance_km": 0.0,
+            "time_hours": 0.0
           }
         ]
       }
@@ -1642,12 +1642,6 @@
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-10-06",
-            "week_end": "2025-10-12",
-            "distance_km": 0.0,
-            "time_hours": 0.0
-          },
           {
             "week_start": "2025-10-13",
             "week_end": "2025-10-19",
@@ -1687,6 +1681,12 @@
           {
             "week_start": "2025-11-24",
             "week_end": "2025-11-30",
+            "distance_km": 0.0,
+            "time_hours": 0.0
+          },
+          {
+            "week_start": "2025-12-01",
+            "week_end": "2025-12-07",
             "distance_km": 0.0,
             "time_hours": 0.0
           }
