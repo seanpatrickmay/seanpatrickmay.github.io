@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-02T13:35:26.294525Z",
+  "generated_at": "2025-12-03T13:34:28.629206Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 35,
-        "distance_km": 602.74,
-        "time_hours": 24.25,
-        "longest_km": 66.64,
-        "calories_kcal": 19299.0
+        "activities_count": 34,
+        "distance_km": 603.86,
+        "time_hours": 24.03,
+        "longest_km": 71.46,
+        "calories_kcal": 19144.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21154506416,
+            "name": "easy",
+            "type": "virtual_ride",
+            "start": "2025-12-02 18:45:35",
+            "distance_km": 71.46,
+            "duration_min": 119.6,
+            "avg_speed_kmh": 35.86,
+            "calories_kcal": 1286.0
+          },
           {
             "id": 21144932058,
             "name": "Boston Course à pied",
@@ -606,16 +616,6 @@
             "duration_min": 71.6,
             "avg_speed_kmh": 33.12,
             "calories_kcal": 877.0
-          },
-          {
-            "id": 20770931096,
-            "name": "recovery",
-            "type": "virtual_ride",
-            "start": "2025-10-22 21:08:20",
-            "distance_km": 33.04,
-            "duration_min": 74.9,
-            "avg_speed_kmh": 26.48,
-            "calories_kcal": 716.0
           }
         ]
       },
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-12-01",
             "week_end": "2025-12-07",
-            "distance_km": 11.11,
-            "time_hours": 1.01
+            "distance_km": 82.57,
+            "time_hours": 3.0
           }
         ]
       }
@@ -676,14 +676,24 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 23,
-        "distance_km": 515.18,
-        "time_hours": 16.83,
-        "longest_km": 66.64,
-        "calories_kcal": 12287.0
+        "activities_count": 22,
+        "distance_km": 516.3,
+        "time_hours": 16.62,
+        "longest_km": 71.46,
+        "calories_kcal": 12132.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21154506416,
+            "name": "easy",
+            "type": "virtual_ride",
+            "start": "2025-12-02 18:45:35",
+            "distance_km": 71.46,
+            "duration_min": 119.6,
+            "avg_speed_kmh": 35.86,
+            "calories_kcal": 1286.0
+          },
           {
             "id": 21101538650,
             "name": "Zwift - 40 easy 190 on Volcano Flat in Watopia",
@@ -1273,16 +1283,6 @@
             "duration_min": 92.6,
             "avg_speed_kmh": 32.49,
             "calories_kcal": 914.0
-          },
-          {
-            "id": 20642351038,
-            "name": "recovery",
-            "type": "virtual_ride",
-            "start": "2025-10-09 20:05:19",
-            "distance_km": 44.12,
-            "duration_min": 90.6,
-            "avg_speed_kmh": 29.22,
-            "calories_kcal": 898.0
           }
         ]
       },
@@ -1334,8 +1334,8 @@
           {
             "week_start": "2025-12-01",
             "week_end": "2025-12-07",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 71.46,
+            "time_hours": 1.99
           }
         ]
       }
