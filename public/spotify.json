@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-03T13:33:34.064Z",
+  "generated_at": "2025-12-04T13:34:37.883Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -47,6 +47,12 @@
       "url": "https://open.spotify.com/track/6KBzft33aLJTLiTcAoJrKK"
     },
     {
+      "name": "Who's the Fool",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/5hGZ18fF81kgGwukiJOKGm"
+    },
+    {
       "name": "Bleed (feat. Omar Apollo)",
       "artist": "Malcolm Todd, Omar Apollo",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
@@ -59,10 +65,10 @@
       "url": "https://open.spotify.com/track/7Ma0mqJh1fjOL3ACpAWtTP"
     },
     {
-      "name": "I'll Come Back For You",
+      "name": "Florence",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/2i4bDOV0cKTyPOoEHNzoFR"
+      "url": "https://open.spotify.com/track/0SLzbfio38k2vmWujFVIM6"
     },
     {
       "name": "Concrete",
@@ -71,22 +77,16 @@
       "url": "https://open.spotify.com/track/2x0He9oNZea2wj5XaO4iF6"
     },
     {
-      "name": "Who's the Fool",
+      "name": "Good Job Malcolm",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/5hGZ18fF81kgGwukiJOKGm"
+      "url": "https://open.spotify.com/track/5i0bim89t8ca2wX5g9umpr"
     },
     {
-      "name": "Make Me a Better Man",
+      "name": "I'll Come Back For You",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
-    },
-    {
-      "name": "Florence",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/0SLzbfio38k2vmWujFVIM6"
+      "url": "https://open.spotify.com/track/2i4bDOV0cKTyPOoEHNzoFR"
     }
   ]
 }
