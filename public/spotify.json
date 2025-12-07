@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-06T13:24:09.397Z",
+  "generated_at": "2025-12-07T13:22:46.811Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -35,6 +35,12 @@
       "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
     },
     {
+      "name": "Who's the Fool",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/5hGZ18fF81kgGwukiJOKGm"
+    },
+    {
       "name": "Lying",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
@@ -47,22 +53,16 @@
       "url": "https://open.spotify.com/track/0SLzbfio38k2vmWujFVIM6"
     },
     {
-      "name": "Walk to Class",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/6KBzft33aLJTLiTcAoJrKK"
-    },
-    {
-      "name": "Who's the Fool",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/5hGZ18fF81kgGwukiJOKGm"
-    },
-    {
       "name": "Bleed (feat. Omar Apollo)",
       "artist": "Malcolm Todd, Omar Apollo",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/2TAKt1x0k9AltDJm31GhEu"
+    },
+    {
+      "name": "Walk to Class",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/6KBzft33aLJTLiTcAoJrKK"
     },
     {
       "name": "Concrete",
@@ -71,22 +71,22 @@
       "url": "https://open.spotify.com/track/2x0He9oNZea2wj5XaO4iF6"
     },
     {
+      "name": "Zip Up My Fly",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
+      "url": "https://open.spotify.com/track/37nwfPGR24VGbOUWvzbZs1"
+    },
+    {
+      "name": "Good Job Malcolm",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/5i0bim89t8ca2wX5g9umpr"
+    },
+    {
       "name": "Doll",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/7Ma0mqJh1fjOL3ACpAWtTP"
-    },
-    {
-      "name": "I'll Come Back For You",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/2i4bDOV0cKTyPOoEHNzoFR"
-    },
-    {
-      "name": "Harry Styles",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
     }
   ]
 }
