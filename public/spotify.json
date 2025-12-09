@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-08T13:33:07.958Z",
+  "generated_at": "2025-12-09T13:33:54.429Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -59,6 +59,12 @@
       "url": "https://open.spotify.com/track/2TAKt1x0k9AltDJm31GhEu"
     },
     {
+      "name": "Zip Up My Fly",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
+      "url": "https://open.spotify.com/track/37nwfPGR24VGbOUWvzbZs1"
+    },
+    {
       "name": "Walk to Class",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
@@ -69,12 +75,6 @@
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/2x0He9oNZea2wj5XaO4iF6"
-    },
-    {
-      "name": "Zip Up My Fly",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
-      "url": "https://open.spotify.com/track/37nwfPGR24VGbOUWvzbZs1"
     },
     {
       "name": "Good Job Malcolm",
