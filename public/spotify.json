@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-10T13:34:54.037Z",
+  "generated_at": "2025-12-11T13:36:31.185Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -17,14 +17,14 @@
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
+      "name": "C418",
+      "image": "https://i.scdn.co/image/ab6761610000e5eba9b8234e3071836212561d19",
+      "url": "https://open.spotify.com/artist/4uFZsG1vXrPcvnZ4iSQyrx"
+    },
+    {
       "name": "Lorde",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaa69380a8d5203257611662d",
       "url": "https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm"
-    },
-    {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     }
   ],
   "tracks": [
