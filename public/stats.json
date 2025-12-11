@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-10T13:35:34.903088Z",
+  "generated_at": "2025-12-11T13:37:22.567760Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 37,
-        "distance_km": 753.86,
-        "time_hours": 28.91,
+        "activities_count": 35,
+        "distance_km": 764.55,
+        "time_hours": 28.65,
         "longest_km": 87.53,
-        "calories_kcal": 23106.0
+        "calories_kcal": 22483.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21225549157,
+            "name": "z2 - start w/ MUMA",
+            "type": "virtual_ride",
+            "start": "2025-12-10 19:26:15",
+            "distance_km": 46.26,
+            "duration_min": 101.4,
+            "avg_speed_kmh": 27.36,
+            "calories_kcal": 1184.0
+          },
           {
             "id": 21215819429,
             "name": "cd",
@@ -606,16 +616,6 @@
             "duration_min": 60.4,
             "avg_speed_kmh": 29.61,
             "calories_kcal": 532.0
-          },
-          {
-            "id": 20826201915,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-10-28 18:41:06",
-            "distance_km": 3.28,
-            "duration_min": 14.8,
-            "avg_speed_kmh": 13.31,
-            "calories_kcal": 153.0
           }
         ]
       },
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-12-08",
             "week_end": "2025-12-14",
-            "distance_km": 39.37,
-            "time_hours": 1.69
+            "distance_km": 85.63,
+            "time_hours": 3.38
           }
         ]
       }
@@ -677,13 +677,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 23,
-        "distance_km": 655.47,
-        "time_hours": 20.9,
+        "distance_km": 683.41,
+        "time_hours": 22.08,
         "longest_km": 87.53,
-        "calories_kcal": 15187.0
+        "calories_kcal": 15981.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21225549157,
+            "name": "z2 - start w/ MUMA",
+            "type": "virtual_ride",
+            "start": "2025-12-10 19:26:15",
+            "distance_km": 46.26,
+            "duration_min": 101.4,
+            "avg_speed_kmh": 27.36,
+            "calories_kcal": 1184.0
+          },
           {
             "id": 21215819429,
             "name": "cd",
@@ -1273,16 +1283,6 @@
             "duration_min": 16.6,
             "avg_speed_kmh": 10.76,
             "calories_kcal": 204.0
-          },
-          {
-            "id": 20712261651,
-            "name": "treshold intervals",
-            "type": "virtual_ride",
-            "start": "2025-10-16 20:21:48",
-            "distance_km": 32.29,
-            "duration_min": 60.3,
-            "avg_speed_kmh": 32.12,
-            "calories_kcal": 834.0
           }
         ]
       },
@@ -1334,8 +1334,8 @@
           {
             "week_start": "2025-12-08",
             "week_end": "2025-12-14",
-            "distance_km": 26.26,
-            "time_hours": 0.78
+            "distance_km": 72.53,
+            "time_hours": 2.47
           }
         ]
       }
@@ -1343,11 +1343,11 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 14,
-        "distance_km": 98.39,
-        "time_hours": 8.0,
+        "activities_count": 12,
+        "distance_km": 81.15,
+        "time_hours": 6.57,
         "longest_km": 12.69,
-        "calories_kcal": 7919.0
+        "calories_kcal": 6502.0
       },
       "recent": {
         "last60": [
@@ -1600,16 +1600,6 @@
             "duration_min": 62.5,
             "avg_speed_kmh": 12.2,
             "calories_kcal": 1055.0
-          },
-          {
-            "id": 20591368754,
-            "name": "Boston - 10x3m",
-            "type": "running",
-            "start": "2025-10-04 19:50:28",
-            "distance_km": 11.19,
-            "duration_min": 53.3,
-            "avg_speed_kmh": 12.6,
-            "calories_kcal": 939.0
           }
         ]
       },
