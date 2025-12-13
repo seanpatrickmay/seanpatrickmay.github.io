@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-12T13:32:16.677Z",
+  "generated_at": "2025-12-13T13:24:44.338Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -17,23 +17,17 @@
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
+      "name": "C418",
+      "image": "https://i.scdn.co/image/ab6761610000e5eba9b8234e3071836212561d19",
+      "url": "https://open.spotify.com/artist/4uFZsG1vXrPcvnZ4iSQyrx"
+    },
+    {
       "name": "Lorde",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaa69380a8d5203257611662d",
       "url": "https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm"
-    },
-    {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     }
   ],
   "tracks": [
-    {
-      "name": "Cheer Me On",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
-    },
     {
       "name": "Lying",
       "artist": "Malcolm Todd",
@@ -47,10 +41,10 @@
       "url": "https://open.spotify.com/track/5hGZ18fF81kgGwukiJOKGm"
     },
     {
-      "name": "Florence",
+      "name": "Cheer Me On",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/0SLzbfio38k2vmWujFVIM6"
+      "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
     },
     {
       "name": "Bleed (feat. Omar Apollo)",
@@ -59,22 +53,16 @@
       "url": "https://open.spotify.com/track/2TAKt1x0k9AltDJm31GhEu"
     },
     {
+      "name": "Florence",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/0SLzbfio38k2vmWujFVIM6"
+    },
+    {
       "name": "Zip Up My Fly",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
       "url": "https://open.spotify.com/track/37nwfPGR24VGbOUWvzbZs1"
-    },
-    {
-      "name": "Walk to Class",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/6KBzft33aLJTLiTcAoJrKK"
-    },
-    {
-      "name": "Concrete",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/2x0He9oNZea2wj5XaO4iF6"
     },
     {
       "name": "Good Job Malcolm",
@@ -87,6 +75,18 @@
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/7Ma0mqJh1fjOL3ACpAWtTP"
+    },
+    {
+      "name": "Walk to Class",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/6KBzft33aLJTLiTcAoJrKK"
+    },
+    {
+      "name": "Concrete",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/2x0He9oNZea2wj5XaO4iF6"
     }
   ]
 }
