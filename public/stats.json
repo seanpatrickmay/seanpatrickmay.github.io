@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-16T13:36:57.837712Z",
+  "generated_at": "2025-12-17T13:32:33.881695Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -10,13 +10,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 37,
-        "distance_km": 866.08,
-        "time_hours": 34.16,
+        "distance_km": 883.29,
+        "time_hours": 34.68,
         "longest_km": 142.34,
-        "calories_kcal": 25569.0
+        "calories_kcal": 25999.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21277502236,
+            "name": "threshold before winter break :D",
+            "type": "virtual_ride",
+            "start": "2025-12-16 20:40:42",
+            "distance_km": 29.59,
+            "duration_min": 51.7,
+            "avg_speed_kmh": 34.36,
+            "calories_kcal": 724.0
+          },
           {
             "id": 21260079604,
             "name": "dumb",
@@ -606,16 +616,6 @@
             "duration_min": 145.3,
             "avg_speed_kmh": 35.79,
             "calories_kcal": 1716.0
-          },
-          {
-            "id": 20853594711,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-10-31 17:13:15",
-            "distance_km": 3.56,
-            "duration_min": 12.3,
-            "avg_speed_kmh": 17.41,
-            "calories_kcal": 63.0
           }
         ]
       },
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-12-15",
             "week_end": "2025-12-21",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 29.59,
+            "time_hours": 0.86
           }
         ]
       }
@@ -677,13 +677,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 24,
-        "distance_km": 783.91,
-        "time_hours": 27.13,
+        "distance_km": 801.12,
+        "time_hours": 27.65,
         "longest_km": 142.34,
-        "calories_kcal": 18811.0
+        "calories_kcal": 19241.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21277502236,
+            "name": "threshold before winter break :D",
+            "type": "virtual_ride",
+            "start": "2025-12-16 20:40:42",
+            "distance_km": 29.59,
+            "duration_min": 51.7,
+            "avg_speed_kmh": 34.36,
+            "calories_kcal": 724.0
+          },
           {
             "id": 21260079604,
             "name": "dumb",
@@ -1273,16 +1283,6 @@
             "duration_min": 287.8,
             "avg_speed_kmh": 33.59,
             "calories_kcal": 3002.0
-          },
-          {
-            "id": 20739936037,
-            "name": "threshold warmup",
-            "type": "virtual_ride",
-            "start": "2025-10-19 14:55:25",
-            "distance_km": 16.56,
-            "duration_min": 29.2,
-            "avg_speed_kmh": 34.05,
-            "calories_kcal": 401.0
           }
         ]
       },
@@ -1334,8 +1334,8 @@
           {
             "week_start": "2025-12-15",
             "week_end": "2025-12-21",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 29.59,
+            "time_hours": 0.86
           }
         ]
       }
