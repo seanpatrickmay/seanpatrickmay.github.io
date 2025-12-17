@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-16T13:36:21.459Z",
+  "generated_at": "2025-12-17T13:31:38.441Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -12,11 +12,6 @@
       "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
     },
     {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
-    },
-    {
       "name": "C418",
       "image": "https://i.scdn.co/image/ab6761610000e5eba9b8234e3071836212561d19",
       "url": "https://open.spotify.com/artist/4uFZsG1vXrPcvnZ4iSQyrx"
@@ -25,6 +20,11 @@
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+    },
+    {
+      "name": "Itzhak Perlman",
+      "image": "https://i.scdn.co/image/f1658bc66d1f99ab6d118f26a2abaf7dc33a272f",
+      "url": "https://open.spotify.com/artist/0hIG9FXgjQxT8fKaYceFbA"
     }
   ],
   "tracks": [
@@ -47,16 +47,16 @@
       "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
     },
     {
-      "name": "Sibelius: Violin Concerto in D Minor, Op. 47: I. Allegro moderato",
-      "artist": "Jean Sibelius, Itzhak Perlman, André Previn, Pittsburgh Symphony Orchestra",
-      "image": "https://i.scdn.co/image/ab67616d0000b273b83be0ae8c4f48ce7773b1ed",
-      "url": "https://open.spotify.com/track/0UcJBP9pHDrearhGphbh8V"
-    },
-    {
       "name": "Bleed (feat. Omar Apollo)",
       "artist": "Malcolm Todd, Omar Apollo",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/2TAKt1x0k9AltDJm31GhEu"
+    },
+    {
+      "name": "Sibelius: Violin Concerto in D Minor, Op. 47: I. Allegro moderato",
+      "artist": "Jean Sibelius, Itzhak Perlman, André Previn, Pittsburgh Symphony Orchestra",
+      "image": "https://i.scdn.co/image/ab67616d0000b273b83be0ae8c4f48ce7773b1ed",
+      "url": "https://open.spotify.com/track/0UcJBP9pHDrearhGphbh8V"
     },
     {
       "name": "Florence",
@@ -71,10 +71,10 @@
       "url": "https://open.spotify.com/track/2x0He9oNZea2wj5XaO4iF6"
     },
     {
-      "name": "Zip Up My Fly",
+      "name": "Harry Styles",
       "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
-      "url": "https://open.spotify.com/track/37nwfPGR24VGbOUWvzbZs1"
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
     },
     {
       "name": "Good Job Malcolm",
