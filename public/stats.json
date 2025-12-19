@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-18T13:34:53.222068Z",
+  "generated_at": "2025-12-19T13:31:34.413337Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,34 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 35,
-        "distance_km": 883.29,
-        "time_hours": 33.9,
+        "activities_count": 36,
+        "distance_km": 873.67,
+        "time_hours": 33.93,
         "longest_km": 142.34,
-        "calories_kcal": 25288.0
+        "calories_kcal": 24815.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21292805909,
+            "name": "Okemo Ski",
+            "type": "resort_skiing",
+            "start": "2025-12-18 13:55:28",
+            "distance_km": 17.74,
+            "duration_min": 65.4,
+            "avg_speed_kmh": 16.27,
+            "calories_kcal": 356.0
+          },
+          {
+            "id": 21292804549,
+            "name": "Fremont Course à pied",
+            "type": "running",
+            "start": "2025-12-17 20:15:58",
+            "distance_km": 4.25,
+            "duration_min": 20.8,
+            "avg_speed_kmh": 12.28,
+            "calories_kcal": 324.0
+          },
           {
             "id": 21277502236,
             "name": "threshold before winter break :D",
@@ -596,26 +616,6 @@
             "duration_min": 20.5,
             "avg_speed_kmh": 12.2,
             "calories_kcal": 345.0
-          },
-          {
-            "id": 20858736276,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-11-01 08:35:29",
-            "distance_km": 2.91,
-            "duration_min": 11.7,
-            "avg_speed_kmh": 14.97,
-            "calories_kcal": 157.0
-          },
-          {
-            "id": 20854459534,
-            "name": "z2",
-            "type": "virtual_ride",
-            "start": "2025-10-31 18:35:49",
-            "distance_km": 86.66,
-            "duration_min": 145.3,
-            "avg_speed_kmh": 35.79,
-            "calories_kcal": 1716.0
           }
         ]
       },
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-12-15",
             "week_end": "2025-12-21",
-            "distance_km": 29.59,
-            "time_hours": 0.86
+            "distance_km": 51.58,
+            "time_hours": 2.3
           }
         ]
       }
@@ -676,11 +676,11 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 22,
-        "distance_km": 801.12,
-        "time_hours": 26.88,
+        "activities_count": 21,
+        "distance_km": 769.51,
+        "time_hours": 25.47,
         "longest_km": 142.34,
-        "calories_kcal": 18530.0
+        "calories_kcal": 17377.0
       },
       "recent": {
         "last60": [
@@ -1343,14 +1343,24 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 12,
-        "distance_km": 82.17,
-        "time_hours": 6.66,
+        "activities_count": 13,
+        "distance_km": 86.42,
+        "time_hours": 7.01,
         "longest_km": 12.69,
-        "calories_kcal": 6579.0
+        "calories_kcal": 6903.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21292804549,
+            "name": "Fremont Course à pied",
+            "type": "running",
+            "start": "2025-12-17 20:15:58",
+            "distance_km": 4.25,
+            "duration_min": 20.8,
+            "avg_speed_kmh": 12.28,
+            "calories_kcal": 324.0
+          },
           {
             "id": 21242263755,
             "name": "Boston Course à pied",
@@ -1651,8 +1661,8 @@
           {
             "week_start": "2025-12-15",
             "week_end": "2025-12-21",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 4.25,
+            "time_hours": 0.35
           }
         ]
       }
