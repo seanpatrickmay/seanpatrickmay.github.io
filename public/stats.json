@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-19T13:31:34.413337Z",
+  "generated_at": "2025-12-20T13:25:32.678360Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 36,
-        "distance_km": 873.67,
-        "time_hours": 33.93,
+        "activities_count": 37,
+        "distance_km": 883.79,
+        "time_hours": 34.79,
         "longest_km": 142.34,
-        "calories_kcal": 24815.0
+        "calories_kcal": 25635.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21301375333,
+            "name": "Howard County Running",
+            "type": "running",
+            "start": "2025-12-19 16:43:19",
+            "distance_km": 10.12,
+            "duration_min": 51.8,
+            "avg_speed_kmh": 11.72,
+            "calories_kcal": 820.0
+          },
           {
             "id": 21292805909,
             "name": "Okemo Ski",
@@ -606,16 +616,6 @@
             "duration_min": 18.6,
             "avg_speed_kmh": 15.93,
             "calories_kcal": 338.0
-          },
-          {
-            "id": 20859357552,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-11-01 09:24:46",
-            "distance_km": 4.16,
-            "duration_min": 20.5,
-            "avg_speed_kmh": 12.2,
-            "calories_kcal": 345.0
           }
         ]
       },
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-12-15",
             "week_end": "2025-12-21",
-            "distance_km": 51.58,
-            "time_hours": 2.3
+            "distance_km": 61.7,
+            "time_hours": 3.16
           }
         ]
       }
@@ -1343,14 +1343,24 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 13,
-        "distance_km": 86.42,
-        "time_hours": 7.01,
+        "activities_count": 14,
+        "distance_km": 96.54,
+        "time_hours": 7.87,
         "longest_km": 12.69,
-        "calories_kcal": 6903.0
+        "calories_kcal": 7723.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21301375333,
+            "name": "Howard County Running",
+            "type": "running",
+            "start": "2025-12-19 16:43:19",
+            "distance_km": 10.12,
+            "duration_min": 51.8,
+            "avg_speed_kmh": 11.72,
+            "calories_kcal": 820.0
+          },
           {
             "id": 21292804549,
             "name": "Fremont Course à pied",
@@ -1600,16 +1610,6 @@
             "duration_min": 40.2,
             "avg_speed_kmh": 13.64,
             "calories_kcal": 723.0
-          },
-          {
-            "id": 20671400872,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-10-12 17:25:23",
-            "distance_km": 21.31,
-            "duration_min": 109.1,
-            "avg_speed_kmh": 11.72,
-            "calories_kcal": 1699.0
           }
         ]
       },
@@ -1661,8 +1661,8 @@
           {
             "week_start": "2025-12-15",
             "week_end": "2025-12-21",
-            "distance_km": 4.25,
-            "time_hours": 0.35
+            "distance_km": 14.37,
+            "time_hours": 1.21
           }
         ]
       }
