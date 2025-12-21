@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-20T13:25:32.678360Z",
+  "generated_at": "2025-12-21T13:26:20.456444Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,34 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 37,
+        "activities_count": 39,
         "distance_km": 883.79,
-        "time_hours": 34.79,
+        "time_hours": 36.66,
         "longest_km": 142.34,
-        "calories_kcal": 25635.0
+        "calories_kcal": 26923.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21307936527,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2025-12-20 10:41:00",
+            "distance_km": 0.0,
+            "duration_min": 62.7,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 694.0
+          },
+          {
+            "id": 21307241813,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2025-12-19 19:03:22",
+            "distance_km": 0.0,
+            "duration_min": 49.4,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 594.0
+          },
           {
             "id": 21301375333,
             "name": "Howard County Running",
@@ -596,26 +616,6 @@
             "duration_min": 121.0,
             "avg_speed_kmh": 33.04,
             "calories_kcal": 1383.0
-          },
-          {
-            "id": 20860206914,
-            "name": "Cambridge Course à pied",
-            "type": "running",
-            "start": "2025-11-01 10:46:08",
-            "distance_km": 2.89,
-            "duration_min": 15.3,
-            "avg_speed_kmh": 11.36,
-            "calories_kcal": 238.0
-          },
-          {
-            "id": 20859715920,
-            "name": "Cambridge Course à pied",
-            "type": "running",
-            "start": "2025-11-01 10:00:29",
-            "distance_km": 4.95,
-            "duration_min": 18.6,
-            "avg_speed_kmh": 15.93,
-            "calories_kcal": 338.0
           }
         ]
       },
@@ -668,7 +668,7 @@
             "week_start": "2025-12-15",
             "week_end": "2025-12-21",
             "distance_km": 61.7,
-            "time_hours": 3.16
+            "time_hours": 5.03
           }
         ]
       }
@@ -676,14 +676,34 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 21,
+        "activities_count": 23,
         "distance_km": 769.51,
-        "time_hours": 25.47,
+        "time_hours": 27.34,
         "longest_km": 142.34,
-        "calories_kcal": 17377.0
+        "calories_kcal": 18665.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21307936527,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2025-12-20 10:41:00",
+            "distance_km": 0.0,
+            "duration_min": 62.7,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 694.0
+          },
+          {
+            "id": 21307241813,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2025-12-19 19:03:22",
+            "distance_km": 0.0,
+            "duration_min": 49.4,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 594.0
+          },
           {
             "id": 21277502236,
             "name": "threshold before winter break :D",
@@ -1263,26 +1283,6 @@
             "duration_min": 74.9,
             "avg_speed_kmh": 26.48,
             "calories_kcal": 716.0
-          },
-          {
-            "id": 20760237086,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-10-21 19:09:01",
-            "distance_km": 2.01,
-            "duration_min": 6.9,
-            "avg_speed_kmh": 17.63,
-            "calories_kcal": 59.0
-          },
-          {
-            "id": 20750922301,
-            "name": "imperial century :D",
-            "type": "virtual_ride",
-            "start": "2025-10-20 17:39:52",
-            "distance_km": 161.11,
-            "duration_min": 287.8,
-            "avg_speed_kmh": 33.59,
-            "calories_kcal": 3002.0
           }
         ]
       },
@@ -1335,7 +1335,7 @@
             "week_start": "2025-12-15",
             "week_end": "2025-12-21",
             "distance_km": 29.59,
-            "time_hours": 0.86
+            "time_hours": 2.73
           }
         ]
       }
