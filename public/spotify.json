@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-20T13:25:17.063Z",
+  "generated_at": "2025-12-21T13:25:26.487Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -12,11 +12,6 @@
       "url": "https://open.spotify.com/artist/4uFZsG1vXrPcvnZ4iSQyrx"
     },
     {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
-    {
       "name": "Kid Cudi",
       "image": "https://i.scdn.co/image/ab6761610000e5eb5f00bb6dd7a7008d14156630",
       "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
@@ -25,9 +20,26 @@
       "name": "Itzhak Perlman",
       "image": "https://i.scdn.co/image/f1658bc66d1f99ab6d118f26a2abaf7dc33a272f",
       "url": "https://open.spotify.com/artist/0hIG9FXgjQxT8fKaYceFbA"
+    },
+    {
+      "name": "Lorde",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaa69380a8d5203257611662d",
+      "url": "https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm"
     }
   ],
   "tracks": [
+    {
+      "name": "Zip Up My Fly",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
+      "url": "https://open.spotify.com/track/37nwfPGR24VGbOUWvzbZs1"
+    },
+    {
+      "name": "Harry Styles",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
+    },
     {
       "name": "Lying",
       "artist": "Malcolm Todd",
@@ -47,16 +59,22 @@
       "url": "https://open.spotify.com/track/2TAKt1x0k9AltDJm31GhEu"
     },
     {
-      "name": "Zip Up My Fly",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
-      "url": "https://open.spotify.com/track/37nwfPGR24VGbOUWvzbZs1"
-    },
-    {
-      "name": "Harry Styles",
+      "name": "I'll Come Back For You",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
+      "url": "https://open.spotify.com/track/2i4bDOV0cKTyPOoEHNzoFR"
+    },
+    {
+      "name": "Doll",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/7Ma0mqJh1fjOL3ACpAWtTP"
+    },
+    {
+      "name": "Sibelius: Violin Concerto in D Minor, Op. 47: I. Allegro moderato",
+      "artist": "Jean Sibelius, Itzhak Perlman, André Previn, Pittsburgh Symphony Orchestra",
+      "image": "https://i.scdn.co/image/ab67616d0000b273b83be0ae8c4f48ce7773b1ed",
+      "url": "https://open.spotify.com/track/0UcJBP9pHDrearhGphbh8V"
     },
     {
       "name": "Cheer Me On",
@@ -69,24 +87,6 @@
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/2x0He9oNZea2wj5XaO4iF6"
-    },
-    {
-      "name": "Good Job Malcolm",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/5i0bim89t8ca2wX5g9umpr"
-    },
-    {
-      "name": "Doll",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/7Ma0mqJh1fjOL3ACpAWtTP"
-    },
-    {
-      "name": "Florence",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/0SLzbfio38k2vmWujFVIM6"
     }
   ]
 }
