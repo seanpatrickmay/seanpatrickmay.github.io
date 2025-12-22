@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-21T13:25:26.487Z",
+  "generated_at": "2025-12-22T13:32:17.291Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -29,12 +29,6 @@
   ],
   "tracks": [
     {
-      "name": "Zip Up My Fly",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
-      "url": "https://open.spotify.com/track/37nwfPGR24VGbOUWvzbZs1"
-    },
-    {
       "name": "Harry Styles",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
@@ -53,16 +47,16 @@
       "url": "https://open.spotify.com/track/5hGZ18fF81kgGwukiJOKGm"
     },
     {
+      "name": "Zip Up My Fly",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
+      "url": "https://open.spotify.com/track/37nwfPGR24VGbOUWvzbZs1"
+    },
+    {
       "name": "Bleed (feat. Omar Apollo)",
       "artist": "Malcolm Todd, Omar Apollo",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/2TAKt1x0k9AltDJm31GhEu"
-    },
-    {
-      "name": "I'll Come Back For You",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/2i4bDOV0cKTyPOoEHNzoFR"
     },
     {
       "name": "Doll",
@@ -87,6 +81,12 @@
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/2x0He9oNZea2wj5XaO4iF6"
+    },
+    {
+      "name": "Good Job Malcolm",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/5i0bim89t8ca2wX5g9umpr"
     }
   ]
 }
