@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-22T13:32:47.072452Z",
+  "generated_at": "2025-12-23T13:34:34.372527Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -10,13 +10,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 39,
-        "distance_km": 883.79,
-        "time_hours": 36.66,
+        "distance_km": 867.84,
+        "time_hours": 36.55,
         "longest_km": 142.34,
-        "calories_kcal": 26923.0
+        "calories_kcal": 26826.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21326551044,
+            "name": "Howard County Running",
+            "type": "running",
+            "start": "2025-12-22 16:03:46",
+            "distance_km": 5.02,
+            "duration_min": 24.8,
+            "avg_speed_kmh": 12.17,
+            "calories_kcal": 424.0
+          },
           {
             "id": 21307936527,
             "name": "Indoor Cycling",
@@ -606,16 +616,6 @@
             "duration_min": 11.3,
             "avg_speed_kmh": 19.64,
             "calories_kcal": 58.0
-          },
-          {
-            "id": 20873292851,
-            "name": "recovery",
-            "type": "virtual_ride",
-            "start": "2025-11-02 12:52:01",
-            "distance_km": 66.64,
-            "duration_min": 121.0,
-            "avg_speed_kmh": 33.04,
-            "calories_kcal": 1383.0
           }
         ]
       },
@@ -667,8 +667,8 @@
           {
             "week_start": "2025-12-22",
             "week_end": "2025-12-28",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 5.02,
+            "time_hours": 0.41
           }
         ]
       }
@@ -676,11 +676,11 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 23,
-        "distance_km": 769.51,
-        "time_hours": 27.34,
+        "activities_count": 22,
+        "distance_km": 748.54,
+        "time_hours": 26.81,
         "longest_km": 142.34,
-        "calories_kcal": 18665.0
+        "calories_kcal": 18144.0
       },
       "recent": {
         "last60": [
@@ -1343,14 +1343,24 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 14,
-        "distance_km": 96.54,
-        "time_hours": 7.87,
+        "activities_count": 15,
+        "distance_km": 101.56,
+        "time_hours": 8.29,
         "longest_km": 12.69,
-        "calories_kcal": 7723.0
+        "calories_kcal": 8147.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21326551044,
+            "name": "Howard County Running",
+            "type": "running",
+            "start": "2025-12-22 16:03:46",
+            "distance_km": 5.02,
+            "duration_min": 24.8,
+            "avg_speed_kmh": 12.17,
+            "calories_kcal": 424.0
+          },
           {
             "id": 21301375333,
             "name": "Howard County Running",
@@ -1661,8 +1671,8 @@
           {
             "week_start": "2025-12-22",
             "week_end": "2025-12-28",
-            "distance_km": 0.0,
-            "time_hours": 0.0
+            "distance_km": 5.02,
+            "time_hours": 0.41
           }
         ]
       }
