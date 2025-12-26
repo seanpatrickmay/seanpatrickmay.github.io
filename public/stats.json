@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-25T13:30:31.983301Z",
+  "generated_at": "2025-12-26T13:31:10.774421Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 34,
-        "distance_km": 813.89,
-        "time_hours": 33.95,
+        "activities_count": 33,
+        "distance_km": 799.69,
+        "time_hours": 33.32,
         "longest_km": 142.34,
-        "calories_kcal": 24648.0
+        "calories_kcal": 23947.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21351442672,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2025-12-25 22:20:04",
+            "distance_km": 0.0,
+            "duration_min": 31.8,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 417.0
+          },
           {
             "id": 21326551044,
             "name": "Howard County Running",
@@ -606,16 +616,6 @@
             "duration_min": 4.7,
             "avg_speed_kmh": 20.32,
             "calories_kcal": 33.0
-          },
-          {
-            "id": 20875125934,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-11-02 21:37:25",
-            "distance_km": 3.7,
-            "duration_min": 11.3,
-            "avg_speed_kmh": 19.64,
-            "calories_kcal": 58.0
           }
         ]
       },
@@ -668,7 +668,7 @@
             "week_start": "2025-12-22",
             "week_end": "2025-12-28",
             "distance_km": 5.02,
-            "time_hours": 0.41
+            "time_hours": 0.94
           }
         ]
       }
@@ -676,14 +676,24 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 18,
+        "activities_count": 19,
         "distance_km": 705.89,
-        "time_hours": 25.04,
+        "time_hours": 25.57,
         "longest_km": 142.34,
-        "calories_kcal": 16864.0
+        "calories_kcal": 17281.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21351442672,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2025-12-25 22:20:04",
+            "distance_km": 0.0,
+            "duration_min": 31.8,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 417.0
+          },
           {
             "id": 21307936527,
             "name": "Indoor Cycling",
@@ -1273,16 +1283,6 @@
             "duration_min": 71.6,
             "avg_speed_kmh": 33.12,
             "calories_kcal": 877.0
-          },
-          {
-            "id": 20770931096,
-            "name": "recovery",
-            "type": "virtual_ride",
-            "start": "2025-10-22 21:08:20",
-            "distance_km": 33.04,
-            "duration_min": 74.9,
-            "avg_speed_kmh": 26.48,
-            "calories_kcal": 716.0
           }
         ]
       },
@@ -1335,7 +1335,7 @@
             "week_start": "2025-12-22",
             "week_end": "2025-12-28",
             "distance_km": 0.0,
-            "time_hours": 0.0
+            "time_hours": 0.53
           }
         ]
       }
@@ -1343,11 +1343,11 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 14,
-        "distance_km": 90.26,
-        "time_hours": 7.45,
-        "longest_km": 12.69,
-        "calories_kcal": 7249.0
+        "activities_count": 12,
+        "distance_km": 76.06,
+        "time_hours": 6.3,
+        "longest_km": 12.33,
+        "calories_kcal": 6131.0
       },
       "recent": {
         "last60": [
