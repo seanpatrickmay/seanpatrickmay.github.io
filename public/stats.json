@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-26T13:31:10.774421Z",
+  "generated_at": "2025-12-27T13:26:57.155781Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,34 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 33,
-        "distance_km": 799.69,
-        "time_hours": 33.32,
+        "activities_count": 34,
+        "distance_km": 777.29,
+        "time_hours": 33.5,
         "longest_km": 142.34,
-        "calories_kcal": 23947.0
+        "calories_kcal": 24026.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21356368634,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2025-12-26 09:11:00",
+            "distance_km": 0.0,
+            "duration_min": 33.1,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 398.0
+          },
+          {
+            "id": 21355523842,
+            "name": "Musculation",
+            "type": "strength_training",
+            "start": "2025-12-26 08:50:35",
+            "distance_km": 0.0,
+            "duration_min": 18.0,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 117.0
+          },
           {
             "id": 21351442672,
             "name": "Indoor Cycling",
@@ -596,26 +616,6 @@
             "duration_min": 61.9,
             "avg_speed_kmh": 37.29,
             "calories_kcal": 743.0
-          },
-          {
-            "id": 20880274349,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-11-03 10:59:03",
-            "distance_km": 3.53,
-            "duration_min": 11.5,
-            "avg_speed_kmh": 18.4,
-            "calories_kcal": 67.0
-          },
-          {
-            "id": 20879040480,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-11-03 08:44:16",
-            "distance_km": 1.57,
-            "duration_min": 4.7,
-            "avg_speed_kmh": 20.32,
-            "calories_kcal": 33.0
           }
         ]
       },
@@ -668,7 +668,7 @@
             "week_start": "2025-12-22",
             "week_end": "2025-12-28",
             "distance_km": 5.02,
-            "time_hours": 0.94
+            "time_hours": 1.79
           }
         ]
       }
@@ -677,13 +677,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 19,
-        "distance_km": 705.89,
-        "time_hours": 25.57,
+        "distance_km": 683.49,
+        "time_hours": 25.46,
         "longest_km": 142.34,
-        "calories_kcal": 17281.0
+        "calories_kcal": 17243.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21356368634,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2025-12-26 09:11:00",
+            "distance_km": 0.0,
+            "duration_min": 33.1,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 398.0
+          },
           {
             "id": 21351442672,
             "name": "Indoor Cycling",
@@ -1273,16 +1283,6 @@
             "duration_min": 42.2,
             "avg_speed_kmh": 38.63,
             "calories_kcal": 649.0
-          },
-          {
-            "id": 20780050168,
-            "name": "easy",
-            "type": "virtual_ride",
-            "start": "2025-10-23 21:48:40",
-            "distance_km": 39.53,
-            "duration_min": 71.6,
-            "avg_speed_kmh": 33.12,
-            "calories_kcal": 877.0
           }
         ]
       },
@@ -1335,7 +1335,7 @@
             "week_start": "2025-12-22",
             "week_end": "2025-12-28",
             "distance_km": 0.0,
-            "time_hours": 0.53
+            "time_hours": 1.08
           }
         ]
       }
