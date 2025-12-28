@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-27T13:26:07.579Z",
+  "generated_at": "2025-12-28T13:27:21.048Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -17,17 +17,23 @@
       "url": "https://open.spotify.com/artist/0hIG9FXgjQxT8fKaYceFbA"
     },
     {
-      "name": "Lorde",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebaa69380a8d5203257611662d",
-      "url": "https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm"
-    },
-    {
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+    },
+    {
+      "name": "Lady Gaga",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
+      "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
     }
   ],
   "tracks": [
+    {
+      "name": "Zip Up My Fly",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
+      "url": "https://open.spotify.com/track/37nwfPGR24VGbOUWvzbZs1"
+    },
     {
       "name": "Harry Styles",
       "artist": "Malcolm Todd",
@@ -39,12 +45,6 @@
       "artist": "Jean Sibelius, Itzhak Perlman, André Previn, Pittsburgh Symphony Orchestra",
       "image": "https://i.scdn.co/image/ab67616d0000b273b83be0ae8c4f48ce7773b1ed",
       "url": "https://open.spotify.com/track/0UcJBP9pHDrearhGphbh8V"
-    },
-    {
-      "name": "Zip Up My Fly",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
-      "url": "https://open.spotify.com/track/37nwfPGR24VGbOUWvzbZs1"
     },
     {
       "name": "Who's the Fool",
@@ -59,6 +59,18 @@
       "url": "https://open.spotify.com/track/5pSvjjfsh34sLrkYSNGCl4"
     },
     {
+      "name": "Chest Pain (I Love)",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/2XUx8PCXGpP1XhZJMGiUol"
+    },
+    {
+      "name": "Original",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
+      "url": "https://open.spotify.com/track/4C2VgkK31XEllBMUGu7bPN"
+    },
+    {
       "name": "Bleed (feat. Omar Apollo)",
       "artist": "Malcolm Todd, Omar Apollo",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
@@ -71,22 +83,10 @@
       "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
     },
     {
-      "name": "Chest Pain (I Love)",
+      "name": "Good Job Malcolm",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/2XUx8PCXGpP1XhZJMGiUol"
-    },
-    {
-      "name": "I'll Come Back For You",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/2i4bDOV0cKTyPOoEHNzoFR"
-    },
-    {
-      "name": "Concrete",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/2x0He9oNZea2wj5XaO4iF6"
+      "url": "https://open.spotify.com/track/5i0bim89t8ca2wX5g9umpr"
     }
   ]
 }
