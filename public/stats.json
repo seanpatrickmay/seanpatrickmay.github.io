@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-28T13:27:42.198200Z",
+  "generated_at": "2025-12-29T13:35:58.934415Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 33,
+        "activities_count": 34,
         "distance_km": 772.26,
-        "time_hours": 33.17,
+        "time_hours": 33.68,
         "longest_km": 142.34,
-        "calories_kcal": 23681.0
+        "calories_kcal": 24141.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21378905303,
+            "name": "Indoor Rowing",
+            "type": "indoor_rowing",
+            "start": "2025-12-28 19:01:11",
+            "distance_km": 0.0,
+            "duration_min": 30.2,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 460.0
+          },
           {
             "id": 21356368634,
             "name": "Indoor Cycling",
@@ -606,28 +616,12 @@
             "duration_min": 33.7,
             "avg_speed_kmh": 35.71,
             "calories_kcal": 454.0
-          },
-          {
-            "id": 20884085770,
-            "name": "EASY WEEK",
-            "type": "virtual_ride",
-            "start": "2025-11-03 17:26:04",
-            "distance_km": 38.47,
-            "duration_min": 61.9,
-            "avg_speed_kmh": 37.29,
-            "calories_kcal": 743.0
           }
         ]
       },
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-11-03",
-            "week_end": "2025-11-09",
-            "distance_km": 191.51,
-            "time_hours": 6.41
-          },
           {
             "week_start": "2025-11-10",
             "week_end": "2025-11-16",
@@ -668,7 +662,13 @@
             "week_start": "2025-12-22",
             "week_end": "2025-12-28",
             "distance_km": 5.02,
-            "time_hours": 1.79
+            "time_hours": 2.3
+          },
+          {
+            "week_start": "2025-12-29",
+            "week_end": "2026-01-04",
+            "distance_km": 0.0,
+            "time_hours": 0.0
           }
         ]
       }
@@ -1290,12 +1290,6 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-11-03",
-            "week_end": "2025-11-09",
-            "distance_km": 176.91,
-            "time_hours": 5.16
-          },
-          {
             "week_start": "2025-11-10",
             "week_end": "2025-11-16",
             "distance_km": 150.3,
@@ -1336,6 +1330,12 @@
             "week_end": "2025-12-28",
             "distance_km": 0.0,
             "time_hours": 1.08
+          },
+          {
+            "week_start": "2025-12-29",
+            "week_end": "2026-01-04",
+            "distance_km": 0.0,
+            "time_hours": 0.0
           }
         ]
       }
@@ -1627,12 +1627,6 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-11-03",
-            "week_end": "2025-11-09",
-            "distance_km": 14.61,
-            "time_hours": 1.25
-          },
-          {
             "week_start": "2025-11-10",
             "week_end": "2025-11-16",
             "distance_km": 26.45,
@@ -1673,6 +1667,12 @@
             "week_end": "2025-12-28",
             "distance_km": 5.02,
             "time_hours": 0.41
+          },
+          {
+            "week_start": "2025-12-29",
+            "week_end": "2026-01-04",
+            "distance_km": 0.0,
+            "time_hours": 0.0
           }
         ]
       }
@@ -1692,12 +1692,6 @@
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-11-03",
-            "week_end": "2025-11-09",
-            "distance_km": 0.0,
-            "time_hours": 0.0
-          },
           {
             "week_start": "2025-11-10",
             "week_end": "2025-11-16",
@@ -1737,6 +1731,12 @@
           {
             "week_start": "2025-12-22",
             "week_end": "2025-12-28",
+            "distance_km": 0.0,
+            "time_hours": 0.0
+          },
+          {
+            "week_start": "2025-12-29",
+            "week_end": "2026-01-04",
             "distance_km": 0.0,
             "time_hours": 0.0
           }
