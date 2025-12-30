@@ -2,8 +2,8 @@
   {
     "title": "seanpatrickmay.github.io",
     "slug": "seanpatrickmay-github-io",
-    "emoji": "\ud83c\udf10",
-    "period": "2024 \u2013 Present",
+    "emoji": "🌐",
+    "period": "2024 – Present",
     "stack": [
       "Next.js",
       "React",
@@ -12,6 +12,7 @@
       "Spotify API"
     ],
     "oneLiner": "Static portfolio with live activity dashboards and data hooks.",
+    "cardDescription": "Static portfolio with live Garmin + Spotify dashboards and responsive card navigation.",
     "languages": [
       "JavaScript",
       "Python"
@@ -35,16 +36,19 @@
   {
     "title": "Life-Dashboard",
     "slug": "life-dashboard",
-    "emoji": "\ud83d\udcca",
-    "period": "Updated Oct 2025",
+    "emoji": "📊",
+    "period": "Sep 2025 – Dec 2025",
     "stack": [
       "Python",
       "FastAPI",
       "PostgreSQL",
       "React",
+      "TypeScript",
       "Vertex AI Gemini"
     ],
-    "oneLiner": "Self-hosted, AI-powered wellness + life dashboard that ingests Garmin wearable data, computes daily readiness scores, and surfaces Monet-inspired insights, nutrition coaching, and to-dos via a React/TypeScript UI backed by a FastAPI + PostgreSQL + Vertex AI/Gemini stack.",
+    "oneLiner": "Self-hosted wellness dashboard that turns Garmin biometrics + nutrition logs into agentic insights, readiness scoring, and actionable to-dos.",
+    "featuredDescription": "Wellness dashboard turning Garmin + nutrition into actionable insights.",
+    "cardDescription": "Wellness dashboard turning Garmin + nutrition into actionable insights.",
     "languages": [
       "Python",
       "TypeScript"
@@ -56,9 +60,10 @@
     ],
     "coolness": 100,
     "bullets": [
-      "FastAPI backend ingests Garmin HRV, resting HR, sleep, and training load into a PostgreSQL time-series schema using async SQLAlchemy, Alembic migrations, and JSONB for traceability.",
-      "Metric pipeline computes rolling training load, sleep seconds, and HRV/RHR baselines to drive a Vertex AI–powered Monet-style daily readiness narrative and 1–100 score.",
-      "React/TypeScript dashboard surfaces HRV, RHR, sleep, training load, nutrition workflows, and intelligent to-dos with React Query, Recharts visualizations, and scheduled Garmin refresh flows."
+      "Designed an agentic nutrition workflow that decomposes natural language into recipes + ingredients, uses web search to normalize/cache nutrition facts, and tracks intake vs personalized goals (with 95% CIs).",
+      "Preprocessed 14-day time series of biometric data from the Garmin API to drive AI-curated recovery insights (sleep, HRV, RHR, training load).",
+      "FastAPI backend ingests Garmin HRV, resting HR, sleep, and training load into PostgreSQL using async SQLAlchemy + Alembic migrations.",
+      "React/TypeScript dashboard surfaces training trends, nutrition workflows, and intelligent to-dos with scheduled Garmin refresh flows."
     ],
     "links": [
       {
@@ -70,7 +75,7 @@
   {
     "title": "LecteurAide",
     "slug": "lecteuraide",
-    "emoji": "\ud83d\udcda",
+    "emoji": "📚",
     "period": "Updated Oct 2025",
     "stack": [
       "Python",
@@ -80,6 +85,8 @@
       "Next.js"
     ],
     "oneLiner": "French reading companion that segments scenes, translates sentences, and quizzes vocab.",
+    "featuredDescription": "French reading companion with translations, vocab, and scene summaries.",
+    "cardDescription": "French reading companion with translations, vocab, and scene summaries.",
     "languages": [
       "Python",
       "JavaScript"
@@ -108,7 +115,7 @@
   {
     "title": "study-buddy",
     "slug": "study-buddy",
-    "emoji": "\ud83e\udde0",
+    "emoji": "🧠",
     "period": "Updated Sep 2025",
     "stack": [
       "Python",
@@ -118,6 +125,7 @@
       "ChromaDB"
     ],
     "oneLiner": "Agentic study workflow turning class materials and Anki decks into flashcards and cheat sheets.",
+    "cardDescription": "Agentic study workflow that turns notes + decks into flashcards and cheat sheets.",
     "languages": [
       "Python",
       "JavaScript"
@@ -144,8 +152,8 @@
   {
     "title": "Human Digit Classification",
     "slug": "human-digit-classification",
-    "emoji": "\ud83d\udd22",
-    "period": "Jan \u2013 Mar 2025",
+    "emoji": "🔢",
+    "period": "Jan – Mar 2025",
     "stack": [
       "Python",
       "JavaScript",
@@ -154,6 +162,8 @@
       "ML"
     ],
     "oneLiner": "Computer-vision pipeline that detects hands, counts digits, and serves a web demo.",
+    "featuredDescription": "CV pipeline for hand detection and digit-count classification.",
+    "cardDescription": "CV pipeline for hand detection and digit-count classification.",
     "languages": [
       "Python",
       "JavaScript"
@@ -167,9 +177,9 @@
     ],
     "coolness": 98,
     "bullets": [
-      "Built a computer vision web app with CNNs.",
-      "Two-model pipeline: bounding box \u2192 digit count classifier.",
-      "Custom image annotation tool for rapid dataset creation."
+      "Built a two-stage CNN pipeline in PyTorch: bounding-box regression with Generalized IoU loss → digit-count classification; improved F1-score through iterative evaluation.",
+      "Created a custom, fully annotated dataset of 10,000+ images from scratch using home-grown labeling tools.",
+      "Applied image + annotation transformations for data augmentation and robustness."
     ],
     "links": [
       {
@@ -181,14 +191,15 @@
   {
     "title": "Counterfactual Regret Exploration (CFR-Min)",
     "slug": "cfr-exploration",
-    "emoji": "\u265f\ufe0f",
-    "period": "Nov 2024 \u2013 Present",
+    "emoji": "♟️",
+    "period": "Nov 2024 – Present",
     "stack": [
       "Jupyter",
       "NumPy",
       "Reinforcement Learning"
     ],
     "oneLiner": "Research notebooks applying CFR-Min techniques to imperfect-information strategy games.",
+    "cardDescription": "CFR-Min research notebooks exploring equilibria in imperfect-information games.",
     "languages": [
       "Python"
     ],
@@ -211,16 +222,17 @@
     ]
   },
   {
-    "title": "NLHE Alpha-Beta Pruning",
+    "title": "No-Limit Hold’em Alpha-Beta Pruning",
     "slug": "nlhe-alpha-beta",
-    "emoji": "\ud83c\udccf",
-    "period": "Aug \u2013 Dec 2024",
+    "emoji": "🃏",
+    "period": "Aug – Dec 2024",
     "stack": [
       "Python",
       "NumPy",
       "Monte Carlo"
     ],
-    "oneLiner": "Alpha-beta search experiments for simplified No-Limit Hold\u2019em decision trees.",
+    "oneLiner": "Alpha-beta search experiments for simplified No-Limit Hold’em decision trees.",
+    "cardDescription": "Alpha–beta + Monte Carlo approximations for simplified Hold’em decision trees.",
     "languages": [
       "Python"
     ],
@@ -230,9 +242,8 @@
     ],
     "coolness": 96,
     "bullets": [
-      "Adversarial search with alpha\u2013beta pruning over game tree.",
-      "Hand bucketing + probabilistic range model to reduce space.",
-      "Transforming NLHE into deterministic, complete-information variant."
+      "Employed adversarial search with alpha–beta pruning to navigate simplified no-limit Hold’em decision trees, reducing computational complexity by 2+ orders of magnitude in early-game positions.",
+      "Reduced the game space to < 1e-6 of the original via Monte Carlo rollouts, hand bucketing, action limiting, and a probabilistic hand-range model (complete-information approximation)."
     ],
     "links": [
       {
@@ -244,7 +255,7 @@
   {
     "title": "Maze-Game",
     "slug": "maze-game",
-    "emoji": "\ud83c\udf00",
+    "emoji": "🌀",
     "period": "Updated Feb 2025",
     "stack": [
       "Java",
@@ -252,6 +263,7 @@
       "javalib.worldimages"
     ],
     "oneLiner": "Interactive maze generator and solver with DFS/BFS playback and player mode in Java.",
+    "cardDescription": "Java maze generator/solver with BFS/DFS playback and an interactive player mode.",
     "languages": [
       "Java"
     ],
@@ -274,13 +286,14 @@
   {
     "title": "NQueensGeneticAlgorithms",
     "slug": "nqueens-genetic-algorithms",
-    "emoji": "\u265b",
+    "emoji": "♛",
     "period": "Updated Feb 2025",
     "stack": [
       "Python",
       "Genetic Algorithms"
     ],
     "oneLiner": "Genetic algorithm playground evolving conflict-free N-Queens boards.",
+    "cardDescription": "Genetic algorithm playground evolving conflict-free N-Queens boards.",
     "languages": [
       "Python"
     ],
@@ -303,13 +316,14 @@
   {
     "title": "Hex Reversi",
     "slug": "hex-reversi",
-    "emoji": "\ud83d\udd37",
+    "emoji": "🔷",
     "period": "Updated 2025",
     "stack": [
       "Java",
       "Swing"
     ],
     "oneLiner": "Extensible hex-grid Reversi with GUI, modular strategies, and adapter support.",
+    "cardDescription": "Hex-grid Reversi with GUI, MVC architecture, and pluggable strategies.",
     "languages": [
       "Java"
     ],
@@ -334,7 +348,7 @@
   {
     "title": "Linux Shell (C)",
     "slug": "linux-shell-c",
-    "emoji": "\ud83d\udda5\ufe0f",
+    "emoji": "🖥️",
     "period": "Oct 2024",
     "stack": [
       "C",
@@ -342,6 +356,7 @@
       "Data Structures"
     ],
     "oneLiner": "Custom C shell with pipelines, signal handling, and a suite of built-in commands.",
+    "cardDescription": "Custom C shell supporting pipelines, redirection, signals, and built-in commands.",
     "languages": [
       "C"
     ],

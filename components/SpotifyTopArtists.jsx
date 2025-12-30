@@ -1,27 +1,20 @@
-import React from 'react';
+import AutoScrollList from '@/components/AutoScrollList';
 
-export default function SpotifyTopArtists({ artists = [] }) {
-  if (!artists.length) return null;
+export default function SpotifyTopArtists({ artists = [], ...props }) {
+  const items = artists.slice(0, 10).map((artist, index) => ({
+    id: artist.url || artist.name || `artist-${index}`,
+    title: artist.name,
+    image: artist.image,
+    url: artist.url,
+  }));
+
   return (
-    <div className="flex justify-center items-center gap-4 h-full">
-      {artists.map((a) => (
-        <a
-          key={a.name}
-          href={a.url}
-          className="text-center space-y-2 flex flex-col items-center"
-          target="_blank"
-          rel="noreferrer"
-        >
-          {a.image && (
-            <img
-              src={a.image}
-              alt={a.name}
-              className="w-24 h-24 object-cover rounded-full"
-            />
-          )}
-          <div className="text-sm font-medium">{a.name}</div>
-        </a>
-      ))}
-    </div>
+    <AutoScrollList
+      items={items}
+      ariaLabel="Top Spotify Artists"
+      emptyMessage="No top artists yet"
+      {...props}
+    />
   );
 }
+

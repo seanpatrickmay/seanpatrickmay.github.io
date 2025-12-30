@@ -4,8 +4,9 @@ export default function PillLink({ href, children, icon: Icon, variant = 'outlin
   const variantClass =
     ({
       solid: 'pill-accent',
-      outline: 'pill-accent',
-    }[variant]) ?? 'pill-accent';
+      outline: 'pill-outline',
+      ghost: 'pill-ghost',
+    }[variant]) ?? 'pill-outline';
   const classes = `${variantClass} ${className}`.trim();
 
   if (external) {

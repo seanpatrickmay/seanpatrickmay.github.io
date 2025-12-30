@@ -40,7 +40,7 @@ function formatRelativeDays(startDate) {
   return `${days}d`;
 }
 
-export default function RecentActivities({ activities = [] }) {
+export default function RecentActivities({ activities = [], enableLinks = false }) {
   const now = Date.now();
 
   const items = activities
@@ -64,7 +64,7 @@ export default function RecentActivities({ activities = [] }) {
         title: activity.name || activity.type || "Activity",
         subtitle: activity.type ? activity.type.replace(/_/g, " ") : "",
         info: details,
-        url: activity.id ? `https://connect.garmin.com/modern/activity/${activity.id}` : undefined,
+        url: enableLinks && activity.id ? `https://connect.garmin.com/modern/activity/${activity.id}` : undefined,
         emoji: activityEmoji(activity.type || ""),
         trailing: formatRelativeDays(start),
       };

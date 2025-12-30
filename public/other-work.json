@@ -1,27 +1,48 @@
 [
   {
-    "org": "Self-Employed",
-    "role": "Semi-Professional Poker (NLHE)",
-    "location": "Remote/Travel",
-    "period": "May 2024 - Present",
-    "emoji": "🃏",
-    "oneLiner": "NLHE Poker",
+    "org": "Northeastern University Systematic Alpha",
+    "role": "Quantitative Researcher",
+    "location": "Boston, MA",
+    "period": "Sep 2025 – Present",
+    "emoji": "📈",
+    "oneLiner": "Systematic Alpha",
     "bullets": [
-      "Applied probabilistic reasoning and risk management in competitive play.",
-      "Tracked results and reviewed hands with peers to improve decision-making.",
-      "Travel and play in study groups (Miami, Maryland, New Haven, Providence, Boston, Montreal)"
+      "Research systematic strategies (alternative data, sentiment-markets) and present findings among teammates."
+    ]
+  },
+  {
+    "org": "Northeastern University — College of Science",
+    "role": "Calculus III Grader",
+    "location": "Boston, MA",
+    "period": "Jan 2026 – May 2026",
+    "emoji": "📝",
+    "oneLiner": "Calc III Grader",
+    "bullets": [
+      "Grade assignments/exams and deliver consistent, rubric-aligned feedback to support student learning."
     ]
   },
   {
     "org": "Private",
-    "role": "Computer Science Tutor (CSA)",
+    "role": "Computer Science Tutor",
     "location": "Remote",
     "period": "Jul 2025 – Present",
     "emoji": "👨‍🏫",
     "oneLiner": "CS Tutor",
     "bullets": [
-      "Mentoring on fundamentals and problem-solving patterns.",
-      "Introduce project-building workflows to strengthen portfolio storytelling."
+      "Tutor AP CSA: teach Java fundamentals, algorithm basics, and mentor problem-solving patterns while helping students build resume-ready projects."
+    ]
+  },
+  {
+    "org": "Independent",
+    "role": "Semi-Professional Poker Player (NLHE)",
+    "location": "Remote/Travel",
+    "period": "Jun 2023 – Present",
+    "emoji": "🃏",
+    "oneLiner": "NLHE Poker",
+    "bullets": [
+      "Study solver-based approaches, observe opponents, and analyze hands/results with peers to refine decision-making.",
+      "Applied probabilistic reasoning and risk management in competitive play.",
+      "Travel and play in study groups (Miami, Maryland, New Haven, Providence, Boston, Montreal)"
     ]
   }
 ]

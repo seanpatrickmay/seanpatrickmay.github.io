@@ -41,12 +41,12 @@ export default function ProjectDetail({ project }) {
   return (
     <>
       <Head>
-        <title>{title} — Projects — Sean P. May</title>
+        <title>{`${title} — Projects — Sean P. May`}</title>
         <meta name="description" content={oneLiner || summary || title} />
       </Head>
       <main className="section-container pt-24 pb-16 space-y-8">
         <div>
-          <a href="/projects" className="text-sm text-slate-600 hover:underline dark:text-slate-300">← All projects</a>
+          <a href="/projects/" className="text-sm text-slate-600 hover:underline dark:text-slate-300">← All projects</a>
         </div>
         <header className="flex items-start justify-between gap-4">
           <div className="space-y-2">
@@ -57,11 +57,6 @@ export default function ProjectDetail({ project }) {
             <div className="text-slate-600 dark:text-slate-300">
               {period}
             </div>
-            {typeof project.coolness === 'number' && (
-              <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
-                Coolness score: {project.coolness}
-              </div>
-            )}
             {!!stack.length && (
               <div className="flex flex-wrap gap-2 pt-1">
                 {stack.map(s => <span key={s} className="badge">{s}</span>)}

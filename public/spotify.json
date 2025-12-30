@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-27T13:26:07.579Z",
+  "generated_at": "2025-12-29T23:09:42.866Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -17,17 +17,48 @@
       "url": "https://open.spotify.com/artist/0hIG9FXgjQxT8fKaYceFbA"
     },
     {
-      "name": "Lorde",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebaa69380a8d5203257611662d",
-      "url": "https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm"
-    },
-    {
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+    },
+    {
+      "name": "Lady Gaga",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
+      "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
+    },
+    {
+      "name": "The Beatles",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe9348cc01ff5d55971b22433",
+      "url": "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
+    },
+    {
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+    },
+    {
+      "name": "Lamp",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb0200ae3b8094a3b795e51f59",
+      "url": "https://open.spotify.com/artist/0rFHElzeddB9ymDjgpBENX"
+    },
+    {
+      "name": "Maroon 5",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebf8349dfb619a7f842242de77",
+      "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
+    },
+    {
+      "name": "Kid Cudi",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb5f00bb6dd7a7008d14156630",
+      "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
     }
   ],
   "tracks": [
+    {
+      "name": "Sibelius: Violin Concerto in D Minor, Op. 47: I. Allegro moderato",
+      "artist": "Jean Sibelius, Itzhak Perlman, André Previn, Pittsburgh Symphony Orchestra",
+      "image": "https://i.scdn.co/image/ab67616d0000b273b83be0ae8c4f48ce7773b1ed",
+      "url": "https://open.spotify.com/track/0UcJBP9pHDrearhGphbh8V"
+    },
     {
       "name": "Harry Styles",
       "artist": "Malcolm Todd",
@@ -35,10 +66,10 @@
       "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
     },
     {
-      "name": "Sibelius: Violin Concerto in D Minor, Op. 47: I. Allegro moderato",
-      "artist": "Jean Sibelius, Itzhak Perlman, André Previn, Pittsburgh Symphony Orchestra",
-      "image": "https://i.scdn.co/image/ab67616d0000b273b83be0ae8c4f48ce7773b1ed",
-      "url": "https://open.spotify.com/track/0UcJBP9pHDrearhGphbh8V"
+      "name": "Down Under",
+      "artist": "Men At Work",
+      "image": "https://i.scdn.co/image/ab67616d0000b273e768618ac278b1fcb0204e7a",
+      "url": "https://open.spotify.com/track/5pSvjjfsh34sLrkYSNGCl4"
     },
     {
       "name": "Zip Up My Fly",
@@ -53,10 +84,10 @@
       "url": "https://open.spotify.com/track/5hGZ18fF81kgGwukiJOKGm"
     },
     {
-      "name": "Down Under",
-      "artist": "Men At Work",
-      "image": "https://i.scdn.co/image/ab67616d0000b273e768618ac278b1fcb0204e7a",
-      "url": "https://open.spotify.com/track/5pSvjjfsh34sLrkYSNGCl4"
+      "name": "Chest Pain (I Love)",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/2XUx8PCXGpP1XhZJMGiUol"
     },
     {
       "name": "Bleed (feat. Omar Apollo)",
@@ -71,22 +102,16 @@
       "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
     },
     {
-      "name": "Chest Pain (I Love)",
+      "name": "Original",
       "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/2XUx8PCXGpP1XhZJMGiUol"
+      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
+      "url": "https://open.spotify.com/track/4C2VgkK31XEllBMUGu7bPN"
     },
     {
-      "name": "I'll Come Back For You",
+      "name": "Good Job Malcolm",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/2i4bDOV0cKTyPOoEHNzoFR"
-    },
-    {
-      "name": "Concrete",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/2x0He9oNZea2wj5XaO4iF6"
+      "url": "https://open.spotify.com/track/5i0bim89t8ca2wX5g9umpr"
     }
   ]
 }

@@ -32,6 +32,20 @@ body { @apply min-h-screen bg-gradient-to-b from-white to-slate-50 text-slate-90
   @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-400;
   @apply dark:focus-visible:outline-white/70;
 }
+.pill-outline {
+  @apply pill inline-flex items-center gap-2 font-medium border shadow-sm transition-colors;
+  @apply border-slate-200 bg-white text-slate-700 hover:bg-slate-50 hover:border-slate-300;
+  @apply dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800 dark:hover:border-slate-500;
+  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-400;
+  @apply dark:focus-visible:outline-white/70;
+}
+.pill-ghost {
+  @apply pill inline-flex items-center gap-2 font-medium border border-transparent transition-colors;
+  @apply bg-transparent text-slate-600 hover:bg-slate-100 hover:text-slate-900;
+  @apply dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white;
+  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-400;
+  @apply dark:focus-visible:outline-white/70;
+}
 .section-container { @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8; }
 
 /* Hide scrollbars but allow scrolling */
@@ -43,4 +57,3 @@ body { @apply min-h-screen bg-gradient-to-b from-white to-slate-50 text-slate-90
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
-

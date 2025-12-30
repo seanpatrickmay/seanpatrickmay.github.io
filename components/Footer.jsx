@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, FileText } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import PillLink from '@/components/ui/PillLink';
 
 export default function Footer({ links }) {
@@ -18,12 +18,8 @@ export default function Footer({ links }) {
           <PillLink href={links.email} icon={Mail}>
             Email
           </PillLink>
-          <PillLink href={links.resume} icon={FileText} external variant="solid">
-            Resume
-          </PillLink>
         </div>
       </div>
     </footer>
   );
 }
-

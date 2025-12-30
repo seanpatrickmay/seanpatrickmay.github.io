@@ -294,7 +294,7 @@ def main() -> None:
             })
 
         # Weekly aggregates
-        weekly = defaultdict(lambda: {"meters": 0.0, "seconds": 0.0})
+        weekly = defaultdict(lambda: {"meters": 0.0, "seconds": 0.0, "calories": 0.0})
         for a in acts:
             start = parse_dt(a.get("startTimeLocal") or a.get("startTimeGMT"))
             if not start or start < cutoff_weekly:
@@ -302,6 +302,7 @@ def main() -> None:
             wk = week_key(start)
             weekly[wk]["meters"] += meters(a)
             weekly[wk]["seconds"] += seconds(a)
+            weekly[wk]["calories"] += calories(a)
 
         weekly_rows: List[Dict[str, Any]] = []
         current_monday = today_dt - timedelta(days=today_dt.weekday())
@@ -311,11 +312,13 @@ def main() -> None:
             wk = week_key(wk_dt)
             m = weekly[wk]["meters"] if wk in weekly else 0.0
             s = weekly[wk]["seconds"] if wk in weekly else 0.0
+            c = weekly[wk]["calories"] if wk in weekly else 0.0
             weekly_rows.append({
                 "week_start": wk[0],
                 "week_end": wk[1],
                 "distance_km": round(m / 1000.0, 2),
                 "time_hours": round(s / 3600.0, 2),
+                "calories_kcal": round(c, 1),
             })
 
         stats_by_type[sport] = {

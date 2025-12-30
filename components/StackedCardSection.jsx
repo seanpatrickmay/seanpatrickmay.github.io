@@ -67,7 +67,12 @@ export default function StackedCardSection({
 
   const handlePointerLeave = useCallback(
     event => {
-      if (containerRef.current?.contains(event.relatedTarget)) {
+      const nextTarget = event.relatedTarget;
+      if (!(nextTarget instanceof Node)) {
+        deactivate();
+        return;
+      }
+      if (containerRef.current?.contains(nextTarget)) {
         return;
       }
       deactivate();
@@ -81,7 +86,12 @@ export default function StackedCardSection({
 
   const handleBlurCapture = useCallback(
     event => {
-      if (containerRef.current?.contains(event.relatedTarget)) {
+      const nextTarget = event.relatedTarget;
+      if (!(nextTarget instanceof Node)) {
+        deactivate();
+        return;
+      }
+      if (containerRef.current?.contains(nextTarget)) {
         return;
       }
       deactivate();

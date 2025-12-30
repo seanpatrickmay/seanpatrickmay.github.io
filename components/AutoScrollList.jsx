@@ -4,10 +4,12 @@ import React, { useEffect, useRef } from "react";
 export default function AutoScrollList({
   items = [], // [{ id, title, subtitle, image, emoji, url, info, trailing }]
   visibleCount = 5,
+  fillHeight = false,
   speed = 10,
   resumeDelayMs = 2000,
   ariaLabel = "Auto scrolling list",
   emptyMessage = "No items",
+  className = "",
 }) {
   const containerRef = useRef(null);
   const measureRef = useRef(null);
@@ -44,6 +46,12 @@ export default function AutoScrollList({
       }
       oneListHeightRef.current = oneH;
 
+      if (fillHeight) {
+        container.style.height = "100%";
+        lastSetContainerHRef.current = container.getBoundingClientRect().height;
+        return;
+      }
+
       // Height of visible window (visibleCount rows)
       let visH = 0;
       for (let i = 0; i < Math.min(visibleCount, nodes.length); i++) {
@@ -62,6 +70,12 @@ export default function AutoScrollList({
     // Initial measure
     measure();
 
+    let ro = null;
+    if (typeof ResizeObserver === "function") {
+      ro = new ResizeObserver(() => measure());
+      ro.observe(container);
+    }
+
     // Debounced window resize
     let resizeTimer = 0;
     const onResize = () => {
@@ -72,9 +86,10 @@ export default function AutoScrollList({
 
     return () => {
       window.removeEventListener("resize", onResize);
+      ro?.disconnect();
       clearTimeout(resizeTimer);
     };
-  }, [items, visibleCount]);
+  }, [items, visibleCount, fillHeight]);
 
   // Animation + interaction
   useEffect(() => {
@@ -82,7 +97,18 @@ export default function AutoScrollList({
     const runner = runnerRef.current;
     if (!container || !runner) return;
 
-    const pxPerMs = Math.max(0, speed) / 1000;
+    const prefersReducedMotion =
+      typeof window !== "undefined" &&
+      typeof window.matchMedia === "function" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const effectiveSpeed = prefersReducedMotion ? 0 : speed;
+    const pxPerMs = Math.max(0, effectiveSpeed) / 1000;
+
+    if (!pxPerMs || top10.length <= 1) {
+      runner.style.transform = "translate3d(0, 0, 0)";
+      return;
+    }
 
     const tick = (ts) => {
       const oneH = oneListHeightRef.current || 0;
@@ -115,67 +141,63 @@ export default function AutoScrollList({
       pausedHoverRef.current = false;
       userActiveUntilRef.current = performance.now() + resumeDelayMs;
     };
-    const nudge = (deltaY) => {
-      const oneH = oneListHeightRef.current || 0;
-      if (!oneH) return;
-      offsetRef.current = ((offsetRef.current + deltaY) % oneH + oneH) % oneH;
-      userActiveUntilRef.current = performance.now() + resumeDelayMs;
-    };
-
-    // Non-passive to trap scroll inside component
-    const onWheel = (e) => {
-      e.preventDefault();
-      nudge(e.deltaY);
-    };
-
-    // Touch scrolling
-    let lastTouchY = 0;
-    const onTouchStart = (e) => {
-      if (e.touches?.length) lastTouchY = e.touches[0].clientY;
-      userActiveUntilRef.current = performance.now() + resumeDelayMs;
-    };
-    const onTouchMove = (e) => {
-      if (!e.touches?.length) return;
-      const y = e.touches[0].clientY;
-      const dy = lastTouchY - y;
-      lastTouchY = y;
-      e.preventDefault();
-      nudge(dy);
-    };
-    const onTouchEnd = () => {
-      userActiveUntilRef.current = performance.now() + resumeDelayMs;
-    };
 
     container.addEventListener("mouseenter", pauseOnHover);
     container.addEventListener("mouseleave", resumeAfterHover);
-    container.addEventListener("wheel", onWheel, { passive: false });
-    container.addEventListener("touchstart", onTouchStart, { passive: false });
-    container.addEventListener("touchmove", onTouchMove, { passive: false });
-    container.addEventListener("touchend", onTouchEnd, { passive: false });
 
     return () => {
       cancelAnimationFrame(rafRef.current);
       container.removeEventListener("mouseenter", pauseOnHover);
       container.removeEventListener("mouseleave", resumeAfterHover);
-      container.removeEventListener("wheel", onWheel);
-      container.removeEventListener("touchstart", onTouchStart);
-      container.removeEventListener("touchmove", onTouchMove);
-      container.removeEventListener("touchend", onTouchEnd);
     };
-  }, [items, speed, resumeDelayMs]);
+  }, [top10.length, speed, resumeDelayMs]);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    const runner = runnerRef.current;
+    if (!container || !runner) return;
+
+    const onWheel = (event) => {
+      if (top10.length <= 1) return;
+      const oneH = oneListHeightRef.current || 0;
+      const visH = lastSetContainerHRef.current || 0;
+      if (!oneH || oneH <= visH + 1) return;
+      if (!event.deltaY) return;
+
+      event.preventDefault();
+
+      let delta = event.deltaY;
+      if (event.deltaMode === 1) delta *= 16;
+      if (event.deltaMode === 2) delta *= Math.max(container.clientHeight, 1);
+
+      offsetRef.current += delta;
+      offsetRef.current = ((offsetRef.current % oneH) + oneH) % oneH;
+      runner.style.transform = `translate3d(0, ${-offsetRef.current}px, 0)`;
+      userActiveUntilRef.current = performance.now() + resumeDelayMs;
+    };
+
+    container.addEventListener("wheel", onWheel, { passive: false });
+
+    return () => {
+      container.removeEventListener("wheel", onWheel);
+    };
+  }, [top10.length, resumeDelayMs]);
 
   // ---- Render ----
   return (
     <div
       ref={containerRef}
       data-autoscroll
-      className="relative overflow-hidden select-none"
+      className={`relative overflow-hidden select-none min-h-0 ${fillHeight ? "h-full" : ""} ${className}`.trim()}
       aria-label={ariaLabel}
     >
       {top10.length === 0 ? (
         <div className="text-sm opacity-60 p-2">{emptyMessage}</div>
       ) : (
-        <div ref={runnerRef} className="will-change-transform">
+        <div
+          ref={runnerRef}
+          className={`will-change-transform ${fillHeight ? "absolute inset-x-0 top-0" : ""}`.trim()}
+        >
           {/* List A (measure & display) */}
           <ul ref={measureRef} className="space-y-2">
             {top10.map((item, i) => (
@@ -226,7 +248,7 @@ export default function AutoScrollList({
           </ul>
 
           {/* List B (duplicate for seamless loop) */}
-          <ul className="space-y-2">
+          <ul className="space-y-2" aria-hidden="true">
             {top10.map((item, i) => (
               <li
                 key={`${item.id || item.title}-B-${i}`}
@@ -282,7 +304,7 @@ export default function AutoScrollList({
 
       <style jsx>{`
         .will-change-transform { will-change: transform; }
-        div[data-autoscroll] { overscroll-behavior: contain; touch-action: none; }
+        div[data-autoscroll] { overscroll-behavior: auto; touch-action: pan-y; }
       `}</style>
     </div>
   );

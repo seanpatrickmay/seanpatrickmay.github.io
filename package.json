@@ -3,10 +3,13 @@
   "version": "1.2.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/clean.mjs --next-dev",
     "dev": "next dev",
+    "prebuild": "node scripts/clean.mjs --out --next-prod",
     "build": "next build",
-    "start": "next start",
+    "start": "npm run preview",
     "preview": "npx serve out -l 4321",
+    "clean": "node scripts/clean.mjs --all",
     "normalize-logos": "node scripts/normalize-logos.mjs"
   },
   "dependencies": {

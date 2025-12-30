@@ -4,12 +4,21 @@ import StackedCardPreview from './StackedCardPreview';
 export default function ExperienceItem({ job, mode = 'expanded' }) {
   const { role, org, location, period, bullets = [], img, emoji, oneLiner } = job;
   const isPreview = mode === 'preview';
-  const previewLabel = oneLiner || [role, org].filter(Boolean).join(' — ');
+  const previewLabel = [role, org].filter(Boolean).join(' — ');
+  const previewMeta = period || location;
   const imageAlt = img ? `${org} logo` : undefined;
   const hasMeta = Boolean(location || period);
 
   if (isPreview) {
-    return <StackedCardPreview img={img} alt={imageAlt} emoji={emoji} label={previewLabel} />;
+    return (
+      <StackedCardPreview
+        img={img}
+        alt={imageAlt}
+        emoji={emoji}
+        label={previewLabel || oneLiner || org}
+        meta={previewMeta}
+      />
+    );
   }
 
   return (
