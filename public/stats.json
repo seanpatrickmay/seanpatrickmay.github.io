@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-29T13:35:58.934415Z",
+  "generated_at": "2025-12-30T13:34:33.650698Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,11 +9,11 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 34,
-        "distance_km": 772.26,
-        "time_hours": 33.68,
+        "activities_count": 33,
+        "distance_km": 767.39,
+        "time_hours": 33.08,
         "longest_km": 142.34,
-        "calories_kcal": 24141.0
+        "calories_kcal": 23704.0
       },
       "recent": {
         "last60": [
@@ -626,49 +626,57 @@
             "week_start": "2025-11-10",
             "week_end": "2025-11-16",
             "distance_km": 176.75,
-            "time_hours": 6.56
+            "time_hours": 6.56,
+            "calories_kcal": 5408.0
           },
           {
             "week_start": "2025-11-17",
             "week_end": "2025-11-23",
             "distance_km": 87.11,
-            "time_hours": 4.42
+            "time_hours": 4.42,
+            "calories_kcal": 3895.0
           },
           {
             "week_start": "2025-11-24",
             "week_end": "2025-11-30",
             "distance_km": 65.91,
-            "time_hours": 3.65
+            "time_hours": 3.65,
+            "calories_kcal": 3004.0
           },
           {
             "week_start": "2025-12-01",
             "week_end": "2025-12-07",
             "distance_km": 384.72,
-            "time_hours": 12.59
+            "time_hours": 12.59,
+            "calories_kcal": 9280.0
           },
           {
             "week_start": "2025-12-08",
             "week_end": "2025-12-14",
             "distance_km": 315.95,
-            "time_hours": 13.16
+            "time_hours": 13.16,
+            "calories_kcal": 9096.0
           },
           {
             "week_start": "2025-12-15",
             "week_end": "2025-12-21",
             "distance_km": 61.7,
-            "time_hours": 5.03
+            "time_hours": 5.03,
+            "calories_kcal": 3512.0
           },
           {
             "week_start": "2025-12-22",
             "week_end": "2025-12-28",
             "distance_km": 5.02,
-            "time_hours": 2.3
+            "time_hours": 2.3,
+            "calories_kcal": 1816.0
           },
           {
             "week_start": "2025-12-29",
             "week_end": "2026-01-04",
             "distance_km": 0.0,
-            "time_hours": 0.0
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -1293,49 +1301,57 @@
             "week_start": "2025-11-10",
             "week_end": "2025-11-16",
             "distance_km": 150.3,
-            "time_hours": 4.32
+            "time_hours": 4.32,
+            "calories_kcal": 3241.0
           },
           {
             "week_start": "2025-11-17",
             "week_end": "2025-11-23",
             "distance_km": 75.81,
-            "time_hours": 3.58
+            "time_hours": 3.58,
+            "calories_kcal": 2997.0
           },
           {
             "week_start": "2025-11-24",
             "week_end": "2025-11-30",
             "distance_km": 41.82,
-            "time_hours": 1.57
+            "time_hours": 1.57,
+            "calories_kcal": 1104.0
           },
           {
             "week_start": "2025-12-01",
             "week_end": "2025-12-07",
             "distance_km": 361.28,
-            "time_hours": 10.65
+            "time_hours": 10.65,
+            "calories_kcal": 7373.0
           },
           {
             "week_start": "2025-12-08",
             "week_end": "2025-12-14",
             "distance_km": 292.62,
-            "time_hours": 10.99
+            "time_hours": 10.99,
+            "calories_kcal": 7043.0
           },
           {
             "week_start": "2025-12-15",
             "week_end": "2025-12-21",
             "distance_km": 29.59,
-            "time_hours": 2.73
+            "time_hours": 2.73,
+            "calories_kcal": 2012.0
           },
           {
             "week_start": "2025-12-22",
             "week_end": "2025-12-28",
             "distance_km": 0.0,
-            "time_hours": 1.08
+            "time_hours": 1.08,
+            "calories_kcal": 815.0
           },
           {
             "week_start": "2025-12-29",
             "week_end": "2026-01-04",
             "distance_km": 0.0,
-            "time_hours": 0.0
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -1343,11 +1359,11 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 11,
-        "distance_km": 71.03,
-        "time_hours": 5.97,
+        "activities_count": 10,
+        "distance_km": 66.16,
+        "time_hours": 5.37,
         "longest_km": 12.33,
-        "calories_kcal": 5786.0
+        "calories_kcal": 5349.0
       },
       "recent": {
         "last60": [
@@ -1630,49 +1646,57 @@
             "week_start": "2025-11-10",
             "week_end": "2025-11-16",
             "distance_km": 26.45,
-            "time_hours": 2.24
+            "time_hours": 2.24,
+            "calories_kcal": 2167.0
           },
           {
             "week_start": "2025-11-17",
             "week_end": "2025-11-23",
             "distance_km": 11.3,
-            "time_hours": 0.83
+            "time_hours": 0.83,
+            "calories_kcal": 898.0
           },
           {
             "week_start": "2025-11-24",
             "week_end": "2025-11-30",
             "distance_km": 24.1,
-            "time_hours": 2.08
+            "time_hours": 2.08,
+            "calories_kcal": 1900.0
           },
           {
             "week_start": "2025-12-01",
             "week_end": "2025-12-07",
             "distance_km": 23.44,
-            "time_hours": 1.94
+            "time_hours": 1.94,
+            "calories_kcal": 1907.0
           },
           {
             "week_start": "2025-12-08",
             "week_end": "2025-12-14",
             "distance_km": 23.33,
-            "time_hours": 1.81
+            "time_hours": 1.81,
+            "calories_kcal": 1874.0
           },
           {
             "week_start": "2025-12-15",
             "week_end": "2025-12-21",
             "distance_km": 14.37,
-            "time_hours": 1.21
+            "time_hours": 1.21,
+            "calories_kcal": 1144.0
           },
           {
             "week_start": "2025-12-22",
             "week_end": "2025-12-28",
             "distance_km": 5.02,
-            "time_hours": 0.41
+            "time_hours": 0.41,
+            "calories_kcal": 424.0
           },
           {
             "week_start": "2025-12-29",
             "week_end": "2026-01-04",
             "distance_km": 0.0,
-            "time_hours": 0.0
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -1696,49 +1720,57 @@
             "week_start": "2025-11-10",
             "week_end": "2025-11-16",
             "distance_km": 0.0,
-            "time_hours": 0.0
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           },
           {
             "week_start": "2025-11-17",
             "week_end": "2025-11-23",
             "distance_km": 0.0,
-            "time_hours": 0.0
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           },
           {
             "week_start": "2025-11-24",
             "week_end": "2025-11-30",
             "distance_km": 0.0,
-            "time_hours": 0.0
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           },
           {
             "week_start": "2025-12-01",
             "week_end": "2025-12-07",
             "distance_km": 0.0,
-            "time_hours": 0.0
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           },
           {
             "week_start": "2025-12-08",
             "week_end": "2025-12-14",
             "distance_km": 0.0,
-            "time_hours": 0.0
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           },
           {
             "week_start": "2025-12-15",
             "week_end": "2025-12-21",
             "distance_km": 0.0,
-            "time_hours": 0.0
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           },
           {
             "week_start": "2025-12-22",
             "week_end": "2025-12-28",
             "distance_km": 0.0,
-            "time_hours": 0.0
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           },
           {
             "week_start": "2025-12-29",
             "week_end": "2026-01-04",
             "distance_km": 0.0,
-            "time_hours": 0.0
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
