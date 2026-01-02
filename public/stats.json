@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-31T13:31:15.444520Z",
+  "generated_at": "2026-01-02T13:31:29.396530Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,34 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 33,
-        "distance_km": 767.39,
-        "time_hours": 33.08,
+        "activities_count": 31,
+        "distance_km": 697.19,
+        "time_hours": 32.19,
         "longest_km": 142.34,
-        "calories_kcal": 23704.0
+        "calories_kcal": 22832.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21406511793,
+            "name": "Hardy County Walking",
+            "type": "walking",
+            "start": "2025-12-31 13:13:10",
+            "distance_km": 5.85,
+            "duration_min": 87.6,
+            "avg_speed_kmh": 4.01,
+            "calories_kcal": 719.0
+          },
+          {
+            "id": 21404825202,
+            "name": "Hardy County Running",
+            "type": "running",
+            "start": "2025-12-31 11:02:14",
+            "distance_km": 6.52,
+            "duration_min": 39.2,
+            "avg_speed_kmh": 9.98,
+            "calories_kcal": 615.0
+          },
           {
             "id": 21378905303,
             "name": "Indoor Rowing",
@@ -596,26 +616,6 @@
             "duration_min": 75.2,
             "avg_speed_kmh": 11.66,
             "calories_kcal": 1127.0
-          },
-          {
-            "id": 20904930402,
-            "name": "warmup",
-            "type": "virtual_ride",
-            "start": "2025-11-05 18:11:34",
-            "distance_km": 13.11,
-            "duration_min": 25.2,
-            "avg_speed_kmh": 31.21,
-            "calories_kcal": 288.0
-          },
-          {
-            "id": 20895061506,
-            "name": "top of z2",
-            "type": "virtual_ride",
-            "start": "2025-11-04 19:05:38",
-            "distance_km": 20.08,
-            "duration_min": 33.7,
-            "avg_speed_kmh": 35.71,
-            "calories_kcal": 454.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2025-12-29",
             "week_end": "2026-01-04",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
+            "distance_km": 12.37,
+            "time_hours": 2.11,
+            "calories_kcal": 1334.0
           }
         ]
       }
@@ -684,11 +684,11 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 19,
-        "distance_km": 683.49,
-        "time_hours": 25.46,
+        "activities_count": 18,
+        "distance_km": 612.03,
+        "time_hours": 23.46,
         "longest_km": 142.34,
-        "calories_kcal": 17243.0
+        "calories_kcal": 15957.0
       },
       "recent": {
         "last60": [
@@ -1359,14 +1359,24 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 10,
-        "distance_km": 66.16,
-        "time_hours": 5.37,
+        "activities_count": 8,
+        "distance_km": 61.58,
+        "time_hours": 5.02,
         "longest_km": 12.33,
-        "calories_kcal": 5349.0
+        "calories_kcal": 5044.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21404825202,
+            "name": "Hardy County Running",
+            "type": "running",
+            "start": "2025-12-31 11:02:14",
+            "distance_km": 6.52,
+            "duration_min": 39.2,
+            "avg_speed_kmh": 9.98,
+            "calories_kcal": 615.0
+          },
           {
             "id": 21326551044,
             "name": "Howard County Running",
@@ -1694,9 +1704,9 @@
           {
             "week_start": "2025-12-29",
             "week_end": "2026-01-04",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
+            "distance_km": 6.52,
+            "time_hours": 0.65,
+            "calories_kcal": 615.0
           }
         ]
       }
