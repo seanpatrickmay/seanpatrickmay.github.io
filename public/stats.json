@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-04T13:28:06.071234Z",
+  "generated_at": "2026-01-05T13:39:07.503368Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,44 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 29,
-        "distance_km": 564.46,
-        "time_hours": 28.63,
+        "activities_count": 30,
+        "distance_km": 550.46,
+        "time_hours": 30.21,
         "longest_km": 142.34,
-        "calories_kcal": 20117.0
+        "calories_kcal": 21302.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21446898705,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-01-04 16:37:35",
+            "distance_km": 5.62,
+            "duration_min": 61.1,
+            "avg_speed_kmh": 5.52,
+            "calories_kcal": 773.0
+          },
+          {
+            "id": 21446898341,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-01-03 14:31:17",
+            "distance_km": 5.55,
+            "duration_min": 60.2,
+            "avg_speed_kmh": 5.53,
+            "calories_kcal": 859.0
+          },
+          {
+            "id": 21446898008,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-01-02 17:04:29",
+            "distance_km": 5.48,
+            "duration_min": 60.2,
+            "avg_speed_kmh": 5.45,
+            "calories_kcal": 877.0
+          },
           {
             "id": 21406511793,
             "name": "Hardy County Walking",
@@ -586,49 +616,12 @@
             "duration_min": 30.7,
             "avg_speed_kmh": 35.8,
             "calories_kcal": 390.0
-          },
-          {
-            "id": 20933593779,
-            "name": "easy waiting for worlds",
-            "type": "virtual_ride",
-            "start": "2025-11-08 18:35:20",
-            "distance_km": 52.37,
-            "duration_min": 90.2,
-            "avg_speed_kmh": 34.84,
-            "calories_kcal": 988.0
-          },
-          {
-            "id": 20924856103,
-            "name": "easy",
-            "type": "virtual_ride",
-            "start": "2025-11-08 00:04:16",
-            "distance_km": 47.78,
-            "duration_min": 82.2,
-            "avg_speed_kmh": 34.89,
-            "calories_kcal": 931.0
-          },
-          {
-            "id": 20911937173,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-11-05 19:08:11",
-            "distance_km": 14.61,
-            "duration_min": 75.2,
-            "avg_speed_kmh": 11.66,
-            "calories_kcal": 1127.0
           }
         ]
       },
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-11-10",
-            "week_end": "2025-11-16",
-            "distance_km": 176.75,
-            "time_hours": 6.56,
-            "calories_kcal": 5408.0
-          },
           {
             "week_start": "2025-11-17",
             "week_end": "2025-11-23",
@@ -674,9 +667,16 @@
           {
             "week_start": "2025-12-29",
             "week_end": "2026-01-04",
-            "distance_km": 12.37,
-            "time_hours": 2.11,
-            "calories_kcal": 1334.0
+            "distance_km": 29.02,
+            "time_hours": 5.14,
+            "calories_kcal": 3843.0
+          },
+          {
+            "week_start": "2026-01-05",
+            "week_end": "2026-01-11",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -684,11 +684,11 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 16,
-        "distance_km": 479.3,
-        "time_hours": 19.9,
+        "activities_count": 15,
+        "distance_km": 460.98,
+        "time_hours": 19.38,
         "longest_km": 142.34,
-        "calories_kcal": 13242.0
+        "calories_kcal": 12905.0
       },
       "recent": {
         "last60": [
@@ -1298,13 +1298,6 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-11-10",
-            "week_end": "2025-11-16",
-            "distance_km": 150.3,
-            "time_hours": 4.32,
-            "calories_kcal": 3241.0
-          },
-          {
             "week_start": "2025-11-17",
             "week_end": "2025-11-23",
             "distance_km": 75.81,
@@ -1352,6 +1345,13 @@
             "distance_km": 0.0,
             "time_hours": 0.0,
             "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-01-05",
+            "week_end": "2026-01-11",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -1359,14 +1359,44 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 8,
-        "distance_km": 61.58,
-        "time_hours": 5.02,
-        "longest_km": 12.33,
-        "calories_kcal": 5044.0
+        "activities_count": 10,
+        "distance_km": 65.9,
+        "time_hours": 7.11,
+        "longest_km": 11.89,
+        "calories_kcal": 6566.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21446898705,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-01-04 16:37:35",
+            "distance_km": 5.62,
+            "duration_min": 61.1,
+            "avg_speed_kmh": 5.52,
+            "calories_kcal": 773.0
+          },
+          {
+            "id": 21446898341,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-01-03 14:31:17",
+            "distance_km": 5.55,
+            "duration_min": 60.2,
+            "avg_speed_kmh": 5.53,
+            "calories_kcal": 859.0
+          },
+          {
+            "id": 21446898008,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-01-02 17:04:29",
+            "distance_km": 5.48,
+            "duration_min": 60.2,
+            "avg_speed_kmh": 5.45,
+            "calories_kcal": 877.0
+          },
           {
             "id": 21404825202,
             "name": "Hardy County Running",
@@ -1653,13 +1683,6 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-11-10",
-            "week_end": "2025-11-16",
-            "distance_km": 26.45,
-            "time_hours": 2.24,
-            "calories_kcal": 2167.0
-          },
-          {
             "week_start": "2025-11-17",
             "week_end": "2025-11-23",
             "distance_km": 11.3,
@@ -1704,9 +1727,16 @@
           {
             "week_start": "2025-12-29",
             "week_end": "2026-01-04",
-            "distance_km": 6.52,
-            "time_hours": 0.65,
-            "calories_kcal": 615.0
+            "distance_km": 23.17,
+            "time_hours": 3.68,
+            "calories_kcal": 3124.0
+          },
+          {
+            "week_start": "2026-01-05",
+            "week_end": "2026-01-11",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -1726,13 +1756,6 @@
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-11-10",
-            "week_end": "2025-11-16",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
           {
             "week_start": "2025-11-17",
             "week_end": "2025-11-23",
@@ -1778,6 +1801,13 @@
           {
             "week_start": "2025-12-29",
             "week_end": "2026-01-04",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-01-05",
+            "week_end": "2026-01-11",
             "distance_km": 0.0,
             "time_hours": 0.0,
             "calories_kcal": 0.0
