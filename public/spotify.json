@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-05T13:38:29.864Z",
+  "generated_at": "2026-01-06T13:35:32.766Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -32,11 +32,6 @@
       "url": "https://open.spotify.com/artist/0hIG9FXgjQxT8fKaYceFbA"
     },
     {
-      "name": "Lamp",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb0200ae3b8094a3b795e51f59",
-      "url": "https://open.spotify.com/artist/0rFHElzeddB9ymDjgpBENX"
-    },
-    {
       "name": "Jeff Buckley",
       "image": "https://i.scdn.co/image/67779606c7f151618a28f62b1d24fb514d39dacf",
       "url": "https://open.spotify.com/artist/3nnQpaTvKb5jCQabZefACI"
@@ -50,6 +45,11 @@
       "name": "Kid Cudi",
       "image": "https://i.scdn.co/image/ab6761610000e5eb5f00bb6dd7a7008d14156630",
       "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
+    },
+    {
+      "name": "Lamp",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb0200ae3b8094a3b795e51f59",
+      "url": "https://open.spotify.com/artist/0rFHElzeddB9ymDjgpBENX"
     }
   ],
   "tracks": [
@@ -60,28 +60,22 @@
       "url": "https://open.spotify.com/track/5pSvjjfsh34sLrkYSNGCl4"
     },
     {
-      "name": "Comfort Me",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27367fd900586544a0cd454d57f",
-      "url": "https://open.spotify.com/track/3dAk7Z16rv38qRM3MIhCIX"
-    },
-    {
       "name": "Harry Styles",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
     },
     {
-      "name": "Zip Up My Fly",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
-      "url": "https://open.spotify.com/track/37nwfPGR24VGbOUWvzbZs1"
-    },
-    {
       "name": "Lover, You Should've Come Over",
       "artist": "Jeff Buckley",
       "image": "https://i.scdn.co/image/ab67616d0000b273afc2d1d2c8703a10aeded0af",
       "url": "https://open.spotify.com/track/6Jv7kjGkhY2fT4yuBF3aTz"
+    },
+    {
+      "name": "Chest Pain (I Love)",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/2XUx8PCXGpP1XhZJMGiUol"
     },
     {
       "name": "Make Me a Better Man",
@@ -96,22 +90,28 @@
       "url": "https://open.spotify.com/track/0UcJBP9pHDrearhGphbh8V"
     },
     {
-      "name": "Cheer Me On",
+      "name": "Zip Up My Fly",
       "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
+      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
+      "url": "https://open.spotify.com/track/37nwfPGR24VGbOUWvzbZs1"
     },
     {
-      "name": "Chest Pain (I Love)",
+      "name": "Lying",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/2XUx8PCXGpP1XhZJMGiUol"
+      "url": "https://open.spotify.com/track/3M4tj3UMHFmMoD3BNvDIkY"
     },
     {
-      "name": "Ladygirl",
+      "name": "Comfort Me",
       "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
-      "url": "https://open.spotify.com/track/3R1XKFgSo7a8paa77cZCM0"
+      "image": "https://i.scdn.co/image/ab67616d0000b27367fd900586544a0cd454d57f",
+      "url": "https://open.spotify.com/track/3dAk7Z16rv38qRM3MIhCIX"
+    },
+    {
+      "name": "Who's the Fool",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/5hGZ18fF81kgGwukiJOKGm"
     }
   ]
 }
