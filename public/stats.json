@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-09T13:36:27.597383Z",
+  "generated_at": "2026-01-10T13:27:28.973417Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 28,
-        "distance_km": 446.64,
-        "time_hours": 27.88,
+        "activities_count": 29,
+        "distance_km": 411.5,
+        "time_hours": 28.22,
         "longest_km": 142.34,
-        "calories_kcal": 19956.0
+        "calories_kcal": 20411.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21496926381,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-01-09 19:01:05",
+            "distance_km": 5.69,
+            "duration_min": 60.4,
+            "avg_speed_kmh": 5.65,
+            "calories_kcal": 801.0
+          },
           {
             "id": 21486957552,
             "name": "Zwift - Turf N Surf in Makuri Islands",
@@ -26,6 +36,16 @@
             "duration_min": 45.6,
             "avg_speed_kmh": 32.46,
             "calories_kcal": 527.0
+          },
+          {
+            "id": 21495169377,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-01-08 14:44:32",
+            "distance_km": 5.43,
+            "duration_min": 61.0,
+            "avg_speed_kmh": 5.34,
+            "calories_kcal": 838.0
           },
           {
             "id": 21478456613,
@@ -596,26 +616,6 @@
             "duration_min": 20.2,
             "avg_speed_kmh": 36.85,
             "calories_kcal": 294.0
-          },
-          {
-            "id": 21000019339,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-11-15 16:19:09",
-            "distance_km": 9.21,
-            "duration_min": 48.0,
-            "avg_speed_kmh": 11.52,
-            "calories_kcal": 750.0
-          },
-          {
-            "id": 20983045957,
-            "name": "steady",
-            "type": "virtual_ride",
-            "start": "2025-11-13 19:42:39",
-            "distance_km": 64.42,
-            "duration_min": 115.8,
-            "avg_speed_kmh": 33.39,
-            "calories_kcal": 1378.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2026-01-05",
             "week_end": "2026-01-11",
-            "distance_km": 74.31,
-            "time_hours": 3.94,
-            "calories_kcal": 3208.0
+            "distance_km": 85.44,
+            "time_hours": 5.97,
+            "calories_kcal": 4847.0
           }
         ]
       }
@@ -684,11 +684,11 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 13,
-        "distance_km": 353.74,
-        "time_hours": 15.94,
+        "activities_count": 12,
+        "distance_km": 307.48,
+        "time_hours": 14.25,
         "longest_km": 142.34,
-        "calories_kcal": 10913.0
+        "calories_kcal": 9729.0
       },
       "recent": {
         "last60": [
@@ -1359,14 +1359,34 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 10,
-        "distance_km": 69.32,
-        "time_hours": 8.23,
+        "activities_count": 12,
+        "distance_km": 80.44,
+        "time_hours": 10.25,
         "longest_km": 11.12,
-        "calories_kcal": 7212.0
+        "calories_kcal": 8851.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21496926381,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-01-09 19:01:05",
+            "distance_km": 5.69,
+            "duration_min": 60.4,
+            "avg_speed_kmh": 5.65,
+            "calories_kcal": 801.0
+          },
+          {
+            "id": 21495169377,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-01-08 14:44:32",
+            "distance_km": 5.43,
+            "duration_min": 61.0,
+            "avg_speed_kmh": 5.34,
+            "calories_kcal": 838.0
+          },
           {
             "id": 21478456613,
             "name": "Boston Running",
@@ -1724,9 +1744,9 @@
           {
             "week_start": "2026-01-05",
             "week_end": "2026-01-11",
-            "distance_km": 16.53,
-            "time_hours": 2.03,
-            "calories_kcal": 1693.0
+            "distance_km": 27.65,
+            "time_hours": 4.05,
+            "calories_kcal": 3332.0
           }
         ]
       }
