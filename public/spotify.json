@@ -1,15 +1,10 @@
 {
-  "generated_at": "2026-01-09T13:35:46.410Z",
+  "generated_at": "2026-01-10T13:27:04.813Z",
   "artists": [
     {
       "name": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebdee560c99d80399eb20c3147",
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
-    },
-    {
-      "name": "C418",
-      "image": "https://i.scdn.co/image/ab6761610000e5eba9b8234e3071836212561d19",
-      "url": "https://open.spotify.com/artist/4uFZsG1vXrPcvnZ4iSQyrx"
     },
     {
       "name": "Lady Gaga",
@@ -37,6 +32,16 @@
       "url": "https://open.spotify.com/artist/3nnQpaTvKb5jCQabZefACI"
     },
     {
+      "name": "C418",
+      "image": "https://i.scdn.co/image/ab6761610000e5eba9b8234e3071836212561d19",
+      "url": "https://open.spotify.com/artist/4uFZsG1vXrPcvnZ4iSQyrx"
+    },
+    {
+      "name": "Maroon 5",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebf8349dfb619a7f842242de77",
+      "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
+    },
+    {
       "name": "Kid Cudi",
       "image": "https://i.scdn.co/image/ab6761610000e5eb5f00bb6dd7a7008d14156630",
       "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
@@ -45,20 +50,9 @@
       "name": "beabadoobee",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe7c6cea0c83857388127fced",
       "url": "https://open.spotify.com/artist/35l9BRT7MXmM8bv2WDQiyB"
-    },
-    {
-      "name": "Maroon 5",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebf8349dfb619a7f842242de77",
-      "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
     }
   ],
   "tracks": [
-    {
-      "name": "Harry Styles",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
-    },
     {
       "name": "Lover, You Should've Come Over",
       "artist": "Jeff Buckley",
@@ -72,22 +66,16 @@
       "url": "https://open.spotify.com/track/4C2VgkK31XEllBMUGu7bPN"
     },
     {
-      "name": "Chest Pain (I Love)",
+      "name": "Harry Styles",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/2XUx8PCXGpP1XhZJMGiUol"
+      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
     },
     {
       "name": "Zip Up My Fly",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
       "url": "https://open.spotify.com/track/37nwfPGR24VGbOUWvzbZs1"
-    },
-    {
-      "name": "Make Me a Better Man",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
     },
     {
       "name": "Sibelius: Violin Concerto in D Minor, Op. 47: I. Allegro moderato",
@@ -102,6 +90,12 @@
       "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
     },
     {
+      "name": "Chest Pain (I Love)",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/2XUx8PCXGpP1XhZJMGiUol"
+    },
+    {
       "name": "I'll Come Back For You",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
@@ -112,6 +106,12 @@
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/2x0He9oNZea2wj5XaO4iF6"
+    },
+    {
+      "name": "Lying",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/3M4tj3UMHFmMoD3BNvDIkY"
     }
   ]
 }
