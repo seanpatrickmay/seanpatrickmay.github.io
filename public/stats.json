@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-10T13:27:28.973417Z",
+  "generated_at": "2026-01-11T13:28:30.395067Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 29,
-        "distance_km": 411.5,
-        "time_hours": 28.22,
+        "activities_count": 30,
+        "distance_km": 431.54,
+        "time_hours": 28.76,
         "longest_km": 142.34,
-        "calories_kcal": 20411.0
+        "calories_kcal": 20929.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21505227052,
+            "name": "Zwift - Ocean Lava Cliffside Loop in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-01-10 13:20:54",
+            "distance_km": 20.04,
+            "duration_min": 32.5,
+            "avg_speed_kmh": 37.01,
+            "calories_kcal": 518.0
+          },
           {
             "id": 21496926381,
             "name": "Treadmill Running",
@@ -606,16 +616,6 @@
             "duration_min": 15.3,
             "avg_speed_kmh": 0.0,
             "calories_kcal": 230.0
-          },
-          {
-            "id": 21009945406,
-            "name": "short thresh",
-            "type": "virtual_ride",
-            "start": "2025-11-16 17:50:08",
-            "distance_km": 12.39,
-            "duration_min": 20.2,
-            "avg_speed_kmh": 36.85,
-            "calories_kcal": 294.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2026-01-05",
             "week_end": "2026-01-11",
-            "distance_km": 85.44,
-            "time_hours": 5.97,
-            "calories_kcal": 4847.0
+            "distance_km": 105.47,
+            "time_hours": 6.51,
+            "calories_kcal": 5365.0
           }
         ]
       }
@@ -684,14 +684,24 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 12,
-        "distance_km": 307.48,
-        "time_hours": 14.25,
+        "activities_count": 13,
+        "distance_km": 327.52,
+        "time_hours": 14.79,
         "longest_km": 142.34,
-        "calories_kcal": 9729.0
+        "calories_kcal": 10247.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21505227052,
+            "name": "Zwift - Ocean Lava Cliffside Loop in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-01-10 13:20:54",
+            "distance_km": 20.04,
+            "duration_min": 32.5,
+            "avg_speed_kmh": 37.01,
+            "calories_kcal": 518.0
+          },
           {
             "id": 21486957552,
             "name": "Zwift - Turf N Surf in Makuri Islands",
@@ -1281,16 +1291,6 @@
             "duration_min": 6.0,
             "avg_speed_kmh": 20.52,
             "calories_kcal": 29.0
-          },
-          {
-            "id": 20806926599,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-10-26 17:26:12",
-            "distance_km": 7.63,
-            "duration_min": 22.6,
-            "avg_speed_kmh": 20.23,
-            "calories_kcal": 238.0
           }
         ]
       },
@@ -1349,9 +1349,9 @@
           {
             "week_start": "2026-01-05",
             "week_end": "2026-01-11",
-            "distance_km": 57.79,
-            "time_hours": 1.91,
-            "calories_kcal": 1515.0
+            "distance_km": 77.83,
+            "time_hours": 2.45,
+            "calories_kcal": 2033.0
           }
         ]
       }
