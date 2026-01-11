@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-10T13:27:04.813Z",
+  "generated_at": "2026-01-11T13:27:44.654Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -12,11 +12,6 @@
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
     },
     {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
-    {
       "name": "The Beatles",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe9348cc01ff5d55971b22433",
       "url": "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
@@ -27,14 +22,14 @@
       "url": "https://open.spotify.com/artist/0hIG9FXgjQxT8fKaYceFbA"
     },
     {
+      "name": "Zedd",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
+      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+    },
+    {
       "name": "Jeff Buckley",
       "image": "https://i.scdn.co/image/67779606c7f151618a28f62b1d24fb514d39dacf",
       "url": "https://open.spotify.com/artist/3nnQpaTvKb5jCQabZefACI"
-    },
-    {
-      "name": "C418",
-      "image": "https://i.scdn.co/image/ab6761610000e5eba9b8234e3071836212561d19",
-      "url": "https://open.spotify.com/artist/4uFZsG1vXrPcvnZ4iSQyrx"
     },
     {
       "name": "Maroon 5",
@@ -50,6 +45,11 @@
       "name": "beabadoobee",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe7c6cea0c83857388127fced",
       "url": "https://open.spotify.com/artist/35l9BRT7MXmM8bv2WDQiyB"
+    },
+    {
+      "name": "Nujabes",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb57f19d2f179b00207bfb3155",
+      "url": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
     }
   ],
   "tracks": [
@@ -72,10 +72,22 @@
       "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
     },
     {
+      "name": "Comfort Me",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27367fd900586544a0cd454d57f",
+      "url": "https://open.spotify.com/track/3dAk7Z16rv38qRM3MIhCIX"
+    },
+    {
       "name": "Zip Up My Fly",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
       "url": "https://open.spotify.com/track/37nwfPGR24VGbOUWvzbZs1"
+    },
+    {
+      "name": "Concrete",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/2x0He9oNZea2wj5XaO4iF6"
     },
     {
       "name": "Sibelius: Violin Concerto in D Minor, Op. 47: I. Allegro moderato",
@@ -90,28 +102,16 @@
       "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
     },
     {
-      "name": "Chest Pain (I Love)",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/2XUx8PCXGpP1XhZJMGiUol"
-    },
-    {
       "name": "I'll Come Back For You",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/2i4bDOV0cKTyPOoEHNzoFR"
     },
     {
-      "name": "Concrete",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/2x0He9oNZea2wj5XaO4iF6"
-    },
-    {
-      "name": "Lying",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/3M4tj3UMHFmMoD3BNvDIkY"
+      "name": "Tchaikovsky: Swan Lake, Op. 20, Act 1: Introduction - No. 1, Scene. Allegro giusto",
+      "artist": "Pyotr Ilyich Tchaikovsky, André Previn, London Symphony Orchestra",
+      "image": "https://i.scdn.co/image/ab67616d0000b2731d9c6602aa95abd8c5b146da",
+      "url": "https://open.spotify.com/track/5tNUaNoIMdJcdHGj25a7gD"
     }
   ]
 }
