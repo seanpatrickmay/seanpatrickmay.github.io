@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-11T13:27:44.654Z",
+  "generated_at": "2026-01-12T13:39:55.540Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -32,24 +32,24 @@
       "url": "https://open.spotify.com/artist/3nnQpaTvKb5jCQabZefACI"
     },
     {
-      "name": "Maroon 5",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebf8349dfb619a7f842242de77",
-      "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
-    },
-    {
       "name": "Kid Cudi",
       "image": "https://i.scdn.co/image/ab6761610000e5eb5f00bb6dd7a7008d14156630",
       "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
     },
     {
-      "name": "beabadoobee",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe7c6cea0c83857388127fced",
-      "url": "https://open.spotify.com/artist/35l9BRT7MXmM8bv2WDQiyB"
+      "name": "Maroon 5",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebf8349dfb619a7f842242de77",
+      "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
     },
     {
       "name": "Nujabes",
       "image": "https://i.scdn.co/image/ab6761610000e5eb57f19d2f179b00207bfb3155",
       "url": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+    },
+    {
+      "name": "Philippe Entremont",
+      "image": "https://i.scdn.co/image/8db7814a886461b6097e359f6488533d230086e3",
+      "url": "https://open.spotify.com/artist/4x2fCu6MNErew0pb64yOBO"
     }
   ],
   "tracks": [
