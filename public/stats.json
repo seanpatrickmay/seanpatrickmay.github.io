@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-12T13:40:25.076755Z",
+  "generated_at": "2026-01-12T18:58:01.376303Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 30,
-        "distance_km": 443.07,
-        "time_hours": 28.54,
+        "activities_count": 31,
+        "distance_km": 466.79,
+        "time_hours": 29.23,
         "longest_km": 142.34,
-        "calories_kcal": 20962.0
+        "calories_kcal": 21488.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21525401859,
+            "name": "Zwift - BRAEk-fast Crits and Grits in Scotland",
+            "type": "virtual_ride",
+            "start": "2026-01-12 13:14:43",
+            "distance_km": 23.72,
+            "duration_min": 41.5,
+            "avg_speed_kmh": 34.25,
+            "calories_kcal": 526.0
+          },
           {
             "id": 21517504756,
             "name": "Zwift - Easy Threshold on Tempus Fugit in Watopia",
@@ -606,16 +616,6 @@
             "duration_min": 31.5,
             "avg_speed_kmh": 39.99,
             "calories_kcal": 521.0
-          },
-          {
-            "id": 21029656936,
-            "name": "prog",
-            "type": "virtual_ride",
-            "start": "2025-11-18 21:08:21",
-            "distance_km": 31.61,
-            "duration_min": 84.6,
-            "avg_speed_kmh": 22.43,
-            "calories_kcal": 1153.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2026-01-12",
             "week_end": "2026-01-18",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
+            "distance_km": 23.72,
+            "time_hours": 0.69,
+            "calories_kcal": 526.0
           }
         ]
       }
@@ -684,14 +684,24 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 13,
-        "distance_km": 339.77,
-        "time_hours": 14.8,
+        "activities_count": 14,
+        "distance_km": 363.49,
+        "time_hours": 15.49,
         "longest_km": 142.34,
-        "calories_kcal": 10390.0
+        "calories_kcal": 10916.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21525401859,
+            "name": "Zwift - BRAEk-fast Crits and Grits in Scotland",
+            "type": "virtual_ride",
+            "start": "2026-01-12 13:14:43",
+            "distance_km": 23.72,
+            "duration_min": 41.5,
+            "avg_speed_kmh": 34.25,
+            "calories_kcal": 526.0
+          },
           {
             "id": 21517504756,
             "name": "Zwift - Easy Threshold on Tempus Fugit in Watopia",
@@ -1281,16 +1291,6 @@
             "duration_min": 31.3,
             "avg_speed_kmh": 32.27,
             "calories_kcal": 467.0
-          },
-          {
-            "id": 20816358199,
-            "name": "warmup",
-            "type": "virtual_ride",
-            "start": "2025-10-27 19:00:18",
-            "distance_km": 19.51,
-            "duration_min": 30.3,
-            "avg_speed_kmh": 38.6,
-            "calories_kcal": 393.0
           }
         ]
       },
@@ -1349,9 +1349,9 @@
           {
             "week_start": "2026-01-12",
             "week_end": "2026-01-18",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
+            "distance_km": 23.72,
+            "time_hours": 0.69,
+            "calories_kcal": 526.0
           }
         ]
       }
