@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-11T13:28:30.395067Z",
+  "generated_at": "2026-01-12T13:40:25.076755Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -10,13 +10,33 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 30,
-        "distance_km": 431.54,
-        "time_hours": 28.76,
+        "distance_km": 443.07,
+        "time_hours": 28.54,
         "longest_km": 142.34,
-        "calories_kcal": 20929.0
+        "calories_kcal": 20962.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21517504756,
+            "name": "Zwift - Easy Threshold on Tempus Fugit in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-01-11 17:38:20",
+            "distance_km": 20.68,
+            "duration_min": 30.9,
+            "avg_speed_kmh": 40.22,
+            "calories_kcal": 496.0
+          },
+          {
+            "id": 21515774000,
+            "name": "Boston Running",
+            "type": "running",
+            "start": "2026-01-11 12:40:40",
+            "distance_km": 9.5,
+            "duration_min": 40.3,
+            "avg_speed_kmh": 14.15,
+            "calories_kcal": 717.0
+          },
           {
             "id": 21505227052,
             "name": "Zwift - Ocean Lava Cliffside Loop in Watopia",
@@ -596,39 +616,12 @@
             "duration_min": 84.6,
             "avg_speed_kmh": 22.43,
             "calories_kcal": 1153.0
-          },
-          {
-            "id": 21019439138,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-11-17 19:31:28",
-            "distance_km": 0.0,
-            "duration_min": 31.4,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 481.0
-          },
-          {
-            "id": 21019438819,
-            "name": "Vélo d'intérieur",
-            "type": "indoor_cycling",
-            "start": "2025-11-17 18:52:19",
-            "distance_km": 0.0,
-            "duration_min": 15.3,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 230.0
           }
         ]
       },
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-11-17",
-            "week_end": "2025-11-23",
-            "distance_km": 87.11,
-            "time_hours": 4.42,
-            "calories_kcal": 3895.0
-          },
           {
             "week_start": "2025-11-24",
             "week_end": "2025-11-30",
@@ -674,9 +667,16 @@
           {
             "week_start": "2026-01-05",
             "week_end": "2026-01-11",
-            "distance_km": 105.47,
-            "time_hours": 6.51,
-            "calories_kcal": 5365.0
+            "distance_km": 135.65,
+            "time_hours": 7.69,
+            "calories_kcal": 6578.0
+          },
+          {
+            "week_start": "2026-01-12",
+            "week_end": "2026-01-18",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -685,13 +685,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 13,
-        "distance_km": 327.52,
-        "time_hours": 14.79,
+        "distance_km": 339.77,
+        "time_hours": 14.8,
         "longest_km": 142.34,
-        "calories_kcal": 10247.0
+        "calories_kcal": 10390.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21517504756,
+            "name": "Zwift - Easy Threshold on Tempus Fugit in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-01-11 17:38:20",
+            "distance_km": 20.68,
+            "duration_min": 30.9,
+            "avg_speed_kmh": 40.22,
+            "calories_kcal": 496.0
+          },
           {
             "id": 21505227052,
             "name": "Zwift - Ocean Lava Cliffside Loop in Watopia",
@@ -1281,29 +1291,12 @@
             "duration_min": 30.3,
             "avg_speed_kmh": 38.6,
             "calories_kcal": 393.0
-          },
-          {
-            "id": 20811208983,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-10-27 08:48:10",
-            "distance_km": 2.05,
-            "duration_min": 6.0,
-            "avg_speed_kmh": 20.52,
-            "calories_kcal": 29.0
           }
         ]
       },
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-11-17",
-            "week_end": "2025-11-23",
-            "distance_km": 75.81,
-            "time_hours": 3.58,
-            "calories_kcal": 2997.0
-          },
           {
             "week_start": "2025-11-24",
             "week_end": "2025-11-30",
@@ -1349,9 +1342,16 @@
           {
             "week_start": "2026-01-05",
             "week_end": "2026-01-11",
-            "distance_km": 77.83,
-            "time_hours": 2.45,
-            "calories_kcal": 2033.0
+            "distance_km": 98.51,
+            "time_hours": 2.97,
+            "calories_kcal": 2529.0
+          },
+          {
+            "week_start": "2026-01-12",
+            "week_end": "2026-01-18",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -1360,13 +1360,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 12,
-        "distance_km": 80.44,
-        "time_hours": 10.25,
+        "distance_km": 79.71,
+        "time_hours": 10.03,
         "longest_km": 11.12,
-        "calories_kcal": 8851.0
+        "calories_kcal": 8741.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21515774000,
+            "name": "Boston Running",
+            "type": "running",
+            "start": "2026-01-11 12:40:40",
+            "distance_km": 9.5,
+            "duration_min": 40.3,
+            "avg_speed_kmh": 14.15,
+            "calories_kcal": 717.0
+          },
           {
             "id": 21496926381,
             "name": "Treadmill Running",
@@ -1676,29 +1686,12 @@
             "duration_min": 52.2,
             "avg_speed_kmh": 12.99,
             "calories_kcal": 859.0
-          },
-          {
-            "id": 20796938580,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-10-25 17:01:42",
-            "distance_km": 12.97,
-            "duration_min": 57.1,
-            "avg_speed_kmh": 13.62,
-            "calories_kcal": 1001.0
           }
         ]
       },
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-11-17",
-            "week_end": "2025-11-23",
-            "distance_km": 11.3,
-            "time_hours": 0.83,
-            "calories_kcal": 898.0
-          },
           {
             "week_start": "2025-11-24",
             "week_end": "2025-11-30",
@@ -1744,9 +1737,16 @@
           {
             "week_start": "2026-01-05",
             "week_end": "2026-01-11",
-            "distance_km": 27.65,
-            "time_hours": 4.05,
-            "calories_kcal": 3332.0
+            "distance_km": 37.14,
+            "time_hours": 4.73,
+            "calories_kcal": 4049.0
+          },
+          {
+            "week_start": "2026-01-12",
+            "week_end": "2026-01-18",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -1766,13 +1766,6 @@
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-11-17",
-            "week_end": "2025-11-23",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
           {
             "week_start": "2025-11-24",
             "week_end": "2025-11-30",
@@ -1818,6 +1811,13 @@
           {
             "week_start": "2026-01-05",
             "week_end": "2026-01-11",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-01-12",
+            "week_end": "2026-01-18",
             "distance_km": 0.0,
             "time_hours": 0.0,
             "calories_kcal": 0.0
