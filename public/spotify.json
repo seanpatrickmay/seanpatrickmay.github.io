@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-13T13:39:13.059Z",
+  "generated_at": "2026-01-14T13:38:06.513Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -47,9 +47,9 @@
       "url": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
     },
     {
-      "name": "The Strokes",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebc3b137793230f4043feb0089",
-      "url": "https://open.spotify.com/artist/0epOFNiUfyON9EYx7Tpr6V"
+      "name": "Kendrick Lamar",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb39ba6dcd4355c03de0b50918",
+      "url": "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg"
     }
   ],
   "tracks": [
@@ -66,12 +66,6 @@
       "url": "https://open.spotify.com/track/4C2VgkK31XEllBMUGu7bPN"
     },
     {
-      "name": "Harry Styles",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
-    },
-    {
       "name": "Comfort Me",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27367fd900586544a0cd454d57f",
@@ -84,16 +78,10 @@
       "url": "https://open.spotify.com/track/37nwfPGR24VGbOUWvzbZs1"
     },
     {
-      "name": "Cheer Me On",
+      "name": "Harry Styles",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
-    },
-    {
-      "name": "I'll Come Back For You",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/2i4bDOV0cKTyPOoEHNzoFR"
+      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
     },
     {
       "name": "Tchaikovsky: Swan Lake, Op. 20, Act 1: Introduction - No. 1, Scene. Allegro giusto",
@@ -108,10 +96,22 @@
       "url": "https://open.spotify.com/track/6ppu8ECkNhZIqQAqbP7u5o"
     },
     {
-      "name": "Make Me a Better Man",
+      "name": "Cheer Me On",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
+      "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
+    },
+    {
+      "name": "TOES (feat. Lil Baby & Moneybagg Yo)",
+      "artist": "DaBaby, Lil Baby, Moneybagg Yo",
+      "image": "https://i.scdn.co/image/ab67616d0000b273f2b94b2fda4f08836d6371ba",
+      "url": "https://open.spotify.com/track/2FvD20Z8aoWIePi7PoN8sG"
+    },
+    {
+      "name": "I'll Come Back For You",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/2i4bDOV0cKTyPOoEHNzoFR"
     }
   ]
 }
