@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-14T13:38:37.150776Z",
+  "generated_at": "2026-01-15T13:38:12.608956Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 29,
-        "distance_km": 266.19,
-        "time_hours": 22.63,
+        "activities_count": 30,
+        "distance_km": 271.93,
+        "time_hours": 23.63,
         "longest_km": 33.1,
-        "calories_kcal": 17824.0
+        "calories_kcal": 18661.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21550832747,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-01-14 19:36:17",
+            "distance_km": 5.74,
+            "duration_min": 60.2,
+            "avg_speed_kmh": 5.72,
+            "calories_kcal": 837.0
+          },
           {
             "id": 21540155946,
             "name": "Treadmill Running",
@@ -606,16 +616,6 @@
             "duration_min": 15.5,
             "avg_speed_kmh": 27.82,
             "calories_kcal": 109.0
-          },
-          {
-            "id": 21073717722,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-11-23 18:14:22",
-            "distance_km": 11.3,
-            "duration_min": 50.1,
-            "avg_speed_kmh": 13.54,
-            "calories_kcal": 898.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2026-01-12",
             "week_end": "2026-01-18",
-            "distance_km": 34.8,
-            "time_hours": 2.47,
-            "calories_kcal": 2075.0
+            "distance_km": 40.54,
+            "time_hours": 3.47,
+            "calories_kcal": 2912.0
           }
         ]
       }
@@ -1359,14 +1359,24 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 14,
-        "distance_km": 90.79,
-        "time_hours": 11.8,
+        "activities_count": 15,
+        "distance_km": 96.53,
+        "time_hours": 12.8,
         "longest_km": 11.12,
-        "calories_kcal": 10290.0
+        "calories_kcal": 11127.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21550832747,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-01-14 19:36:17",
+            "distance_km": 5.74,
+            "duration_min": 60.2,
+            "avg_speed_kmh": 5.72,
+            "calories_kcal": 837.0
+          },
           {
             "id": 21540155946,
             "name": "Treadmill Running",
@@ -1764,9 +1774,9 @@
           {
             "week_start": "2026-01-12",
             "week_end": "2026-01-18",
-            "distance_km": 11.08,
-            "time_hours": 1.77,
-            "calories_kcal": 1549.0
+            "distance_km": 16.82,
+            "time_hours": 2.78,
+            "calories_kcal": 2386.0
           }
         ]
       }
