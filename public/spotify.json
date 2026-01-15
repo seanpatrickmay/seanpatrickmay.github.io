@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-14T13:38:06.513Z",
+  "generated_at": "2026-01-15T13:37:33.938Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -37,19 +37,19 @@
       "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
     },
     {
-      "name": "Maroon 5",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebf8349dfb619a7f842242de77",
-      "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
+      "name": "BTS",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd642648235ebf3460d2d1f6a",
+      "url": "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"
     },
     {
-      "name": "Nujabes",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb57f19d2f179b00207bfb3155",
-      "url": "https://open.spotify.com/artist/3Rq3YOF9YG9YfCWD4D56RZ"
+      "name": "ILLIT",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb169a757a7d0ba53a33984416",
+      "url": "https://open.spotify.com/artist/36cgvBn0aadzOijnjjwqMN"
     },
     {
-      "name": "Kendrick Lamar",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb39ba6dcd4355c03de0b50918",
-      "url": "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg"
+      "name": "Jung Kook",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb40a7268dd742e5f63759b960",
+      "url": "https://open.spotify.com/artist/6HaGTQPmzraVmaVxvz6EUc"
     }
   ],
   "tracks": [
@@ -60,22 +60,22 @@
       "url": "https://open.spotify.com/track/6Jv7kjGkhY2fT4yuBF3aTz"
     },
     {
-      "name": "Original",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
-      "url": "https://open.spotify.com/track/4C2VgkK31XEllBMUGu7bPN"
-    },
-    {
       "name": "Comfort Me",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27367fd900586544a0cd454d57f",
       "url": "https://open.spotify.com/track/3dAk7Z16rv38qRM3MIhCIX"
     },
     {
-      "name": "Zip Up My Fly",
+      "name": "Original",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
-      "url": "https://open.spotify.com/track/37nwfPGR24VGbOUWvzbZs1"
+      "url": "https://open.spotify.com/track/4C2VgkK31XEllBMUGu7bPN"
+    },
+    {
+      "name": "Still With You",
+      "artist": "Jung Kook",
+      "image": "https://i.scdn.co/image/ab67616d0000b273a7f42c375578df426b37638d",
+      "url": "https://open.spotify.com/track/0eFMbKCRw8KByXyWBw8WO7"
     },
     {
       "name": "Harry Styles",
