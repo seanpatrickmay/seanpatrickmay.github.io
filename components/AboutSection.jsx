@@ -95,17 +95,17 @@ export default function AboutSection({ interests, featuredActivities = [] }) {
     {
       title: 'Triathlon',
       emoji: '🏊‍♂️',
-      description: 'Consistency over time—training load, recovery, and finding small wins week to week.',
+      description: 'I love steady state and eating',
     },
     {
       title: 'Français',
       emoji: '🇫🇷',
-      description: 'Learning through reading and conversation; always happy to take book/podcast recs.',
+      description: 'Larping as a frenchman',
     },
     {
       title: 'Escape Rooms',
       emoji: '🗝️',
-      description: 'Puzzle hunts under pressure—logic, teamwork, and a little chaos.',
+      description: 'Look up "Escape Simulator" on Steam',
     },
   ];
 

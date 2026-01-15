@@ -4,6 +4,9 @@
     "slug": "seanpatrickmay-github-io",
     "emoji": "🌐",
     "period": "2024 – Present",
+    "startDate": "2024-01-01",
+    "endDate": null,
+    "updatedAt": "2025-12-01",
     "stack": [
       "Next.js",
       "React",
@@ -21,6 +24,34 @@
       "Full-stack"
     ],
     "coolness": 89,
+    "showcaseTag": "Full-stack",
+    "showcaseTech": "Next.js",
+    "proofPoints": [
+      "Static export optimized for GitHub Pages",
+      "Automated Garmin + Spotify refresh workflows",
+      "Card-based navigation + responsive layouts"
+    ],
+    "overview": "This site is a static-exported Next.js portfolio that pulls in live Garmin and Spotify summaries via scheduled refresh scripts. The goal is a clean, fast UI that still feels alive with real data instead of placeholder widgets.",
+    "whatIBuilt": [
+      "Static-exported Next.js site with multiple content sections and responsive layout rules",
+      "Data ingestion scripts + workflows for Garmin and Spotify JSON refreshes",
+      "Reusable UI primitives for cards, pills, stacked sections, and scrolling lists"
+    ],
+    "howItWorks": [
+      "Scheduled scripts fetch and write JSON into public/",
+      "Pages read those JSON files client-side for lightweight dashboards",
+      "The site is exported to static HTML and deployed via GitHub Pages"
+    ],
+    "results": [
+      "Fast static site with dynamic-feeling dashboards",
+      "Shareable /projects/ + /projects/<slug>/ routes compatible with static export"
+    ],
+    "nextSteps": [
+      "Add lightweight per-project cover images and tighter case study templates",
+      "Add Live links where appropriate"
+    ],
+    "coverImage": null,
+    "gallery": [],
     "bullets": [
       "Static-exported Next.js site with stacked card navigation and responsive layouts.",
       "Live training + music dashboards powered by Garmin and Spotify refresh scripts.",
@@ -28,8 +59,14 @@
     ],
     "links": [
       {
+        "label": "Live Site",
+        "href": "https://seanpatrickmay.github.io/",
+        "kind": "live"
+      },
+      {
         "label": "Git Repo",
-        "href": "https://github.com/seanpatrickmay/seanpatrickmay.github.io"
+        "href": "https://github.com/seanpatrickmay/seanpatrickmay.github.io",
+        "kind": "repo"
       }
     ]
   },
@@ -38,6 +75,9 @@
     "slug": "life-dashboard",
     "emoji": "📊",
     "period": "Sep 2025 – Dec 2025",
+    "startDate": "2025-09-01",
+    "endDate": "2025-12-01",
+    "updatedAt": "2025-12-01",
     "stack": [
       "Python",
       "FastAPI",
@@ -59,6 +99,39 @@
       "Data Engineering"
     ],
     "coolness": 100,
+    "caseStudyRank": 1,
+    "showcaseTag": "Agentic AI",
+    "showcaseTech": "PostgreSQL",
+    "proofPoints": [
+      "Agentic nutrition workflow (recipes → ingredients → normalized facts)",
+      "Garmin biometrics ingestion + trend features",
+      "Full-stack app: FastAPI + Postgres + React/TS"
+    ],
+    "overview": "Life-Dashboard is a self-hosted wellness app that combines Garmin biometrics with nutrition logging and agentic workflows. It keeps the data normalized, computes targets with uncertainty (95% CIs), and turns the result into simple, actionable to-dos instead of dashboards you ignore.",
+    "whatIBuilt": [
+      "Agentic nutrition workflow that parses natural language into ingredients + normalized nutrition facts",
+      "Garmin data ingestion pipeline (HRV, RHR, sleep, training load) into Postgres",
+      "React/TypeScript UI for trends, workflows, and structured to-dos"
+    ],
+    "howItWorks": [
+      "Fetch Garmin biometrics on a schedule and store them in Postgres",
+      "Preprocess 14-day time-series features for recovery/readiness signals",
+      "Run agent workflows to translate logs into targets + next actions",
+      "Render trends and recommendations in a React/TypeScript dashboard"
+    ],
+    "results": [
+      "End-to-end pipeline from raw biometrics → stored history → actionable outputs",
+      "Clean separation between ingestion, modeling, and UI"
+    ],
+    "nextSteps": [
+      "Add tighter evals for agent outputs and recommendation quality",
+      "Expand readiness scoring into training plan adjustments"
+    ],
+    "coverImage": {
+      "src": "/projects/life-dashboard/life-dashboard-cover.png",
+      "alt": "Life-Dashboard wellness dashboard overview"
+    },
+    "gallery": [],
     "bullets": [
       "Designed an agentic nutrition workflow that decomposes natural language into recipes + ingredients, uses web search to normalize/cache nutrition facts, and tracks intake vs personalized goals (with 95% CIs).",
       "Preprocessed 14-day time series of biometric data from the Garmin API to drive AI-curated recovery insights (sleep, HRV, RHR, training load).",
@@ -67,8 +140,14 @@
     ],
     "links": [
       {
+        "label": "Live Site",
+        "href": "https://lifedashboard.tech",
+        "kind": "live"
+      },
+      {
         "label": "Git Repo",
-        "href": "https://github.com/seanpatrickmay/Life-Dashboard"
+        "href": "https://github.com/seanpatrickmay/Life-Dashboard",
+        "kind": "repo"
       }
     ]
   },
@@ -77,6 +156,9 @@
     "slug": "lecteuraide",
     "emoji": "📚",
     "period": "Updated Oct 2025",
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2025-10-01",
     "stack": [
       "Python",
       "FastAPI",
@@ -100,6 +182,40 @@
       "Concurrency"
     ],
     "coolness": 99,
+    "caseStudyRank": 2,
+    "showcaseTag": "NLP",
+    "showcaseTech": "Cloud Translation",
+    "proofPoints": [
+      "Scene chunking + LLM summaries for long PDFs",
+      "Sentence-level translation + vocabulary extraction",
+      "Streaming ingestion API + Next.js reader UI"
+    ],
+    "overview": "LecteurAide is a French reading companion for long-form PDFs. It chunks content into scenes, generates summaries, overlays sentence-level translation and vocabulary, and adds lightweight quizzes so the reading loop is actually productive.",
+    "whatIBuilt": [
+      "Back end that chunks PDFs and calls Gemini for scene summaries",
+      "Translation + vocabulary layer (sentence-level) using Cloud Translation + NLP prompts",
+      "Streaming ingestion API that persists scenes, questions, and glossary entries",
+      "Next.js reader UI for scene-by-scene reading, vocab highlighting, and quizzes"
+    ],
+    "howItWorks": [
+      "Upload a French PDF via ingestion API",
+      "Chunk into scenes and generate a summary per scene",
+      "Compute sentence translations + vocab terms and persist results",
+      "Render a reader that layers translations, vocab, and quick checks"
+    ],
+    "results": [
+      "Turns a static PDF into an interactive reading workflow",
+      "Designed for long documents and incremental ingestion"
+    ],
+    "nextSteps": [
+      "Add spaced repetition for saved vocabulary",
+      "Add offline export for highlights + glossary"
+    ],
+    "coverImage": {
+      "src": "/projects/lecteuraide/lecteur-aide-cover.png",
+      "alt": "LecteurAide reading interface"
+    },
+    "gallery": [],
     "bullets": [
       "Back end chunks French PDFs, calls Gemini for scene summaries, and layers sentence-level translations plus vocab.",
       "Streaming ingestion API uploads books and persists scenes, questions, and glossary terms into SQLite/Postgres.",
@@ -108,7 +224,8 @@
     "links": [
       {
         "label": "Git Repo",
-        "href": "https://github.com/seanpatrickmay/LecteurAide"
+        "href": "https://github.com/seanpatrickmay/LecteurAide",
+        "kind": "repo"
       }
     ]
   },
@@ -117,6 +234,9 @@
     "slug": "study-buddy",
     "emoji": "🧠",
     "period": "Updated Sep 2025",
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2025-09-01",
     "stack": [
       "Python",
       "FastAPI",
@@ -137,6 +257,36 @@
       "Concurrency"
     ],
     "coolness": 94,
+    "caseStudyRank": 4,
+    "showcaseTag": "Agentic AI",
+    "showcaseTech": "CrewAI",
+    "proofPoints": [
+      "Agents generate flashcards + cheat sheets from raw notes",
+      "RAG-backed revisions built from Anki exports",
+      "FastAPI + ChromaDB pipeline with simple upload/download UI"
+    ],
+    "overview": "study-buddy is an agentic workflow for turning class materials into useful outputs: flashcards, cheat sheets, and structured review. It leans on retrieval (ChromaDB) so generations stay anchored in your source material, and it loops Anki exports back in to guide revisions.",
+    "whatIBuilt": [
+      "CrewAI agent pipeline to expand notes and draft study artifacts",
+      "RAG layer using ChromaDB to keep generations grounded",
+      "Two-step workflow that incorporates Anki exports for difficulty-weighted revisions",
+      "FastAPI service + minimal UI for uploading material and downloading outputs"
+    ],
+    "howItWorks": [
+      "Upload notes/decks",
+      "Index key chunks into ChromaDB",
+      "Agents generate flashcards/cheat sheets with retrieval context",
+      "Optionally loop Anki exports back in to drive revisions"
+    ],
+    "results": [
+      "Repeatable workflow from messy notes to structured study material"
+    ],
+    "nextSteps": [
+      "Add lightweight evaluation for artifact quality (coverage, correctness, redundancy)",
+      "Add an opinionated study plan mode (time-boxed reviews)"
+    ],
+    "coverImage": null,
+    "gallery": [],
     "bullets": [
       "CrewAI-powered agents ingest notes, expand key concepts, and assemble flashcards plus cheat sheets.",
       "Two-step workflow loops Anki exports back in to build difficulty-weighted revisions with RAG context.",
@@ -145,7 +295,8 @@
     "links": [
       {
         "label": "Git Repo",
-        "href": "https://github.com/seanpatrickmay/study-buddy"
+        "href": "https://github.com/seanpatrickmay/study-buddy",
+        "kind": "repo"
       }
     ]
   },
@@ -154,6 +305,9 @@
     "slug": "human-digit-classification",
     "emoji": "🔢",
     "period": "Jan – Mar 2025",
+    "startDate": "2025-01-01",
+    "endDate": "2025-03-01",
+    "updatedAt": "2025-03-01",
     "stack": [
       "Python",
       "JavaScript",
@@ -176,6 +330,35 @@
       "Data Engineering"
     ],
     "coolness": 98,
+    "caseStudyRank": 3,
+    "showcaseTag": "Computer Vision",
+    "showcaseTech": "PyTorch",
+    "proofPoints": [
+      "10,000+ custom-labeled images",
+      "Two-stage CNN: bbox regression → digit-count classification",
+      "Augmentation + evaluation loop to improve robustness"
+    ],
+    "overview": "This project builds a two-stage computer vision pipeline: detect a hand region and then classify the number of digits being shown. I built the dataset, labeling tooling, and training loop end-to-end, then wired it into a simple web demo.",
+    "whatIBuilt": [
+      "Two-stage CNN pipeline in PyTorch (bbox regression + digit-count classification)",
+      "Custom dataset + home-grown labeling tooling (10,000+ annotated images)",
+      "Augmentation pipeline applying transforms to both images and annotations"
+    ],
+    "howItWorks": [
+      "Train a bounding-box regressor with Generalized IoU loss",
+      "Crop and standardize the detected hand region",
+      "Run a digit-count classifier on the cropped region",
+      "Iterate via evaluation + targeted augmentation"
+    ],
+    "results": [
+      "Improved F1 through iterative evaluation and augmentation"
+    ],
+    "nextSteps": [
+      "Try modern detector backbones (YOLO-style) for robustness",
+      "Add clearer demo outputs (confidence, failure modes)"
+    ],
+    "coverImage": null,
+    "gallery": [],
     "bullets": [
       "Built a two-stage CNN pipeline in PyTorch: bounding-box regression with Generalized IoU loss → digit-count classification; improved F1-score through iterative evaluation.",
       "Created a custom, fully annotated dataset of 10,000+ images from scratch using home-grown labeling tools.",
@@ -184,7 +367,8 @@
     "links": [
       {
         "label": "Git Repo",
-        "href": "https://github.com/seanpatrickmay/Human-Digit-Recognition"
+        "href": "https://github.com/seanpatrickmay/Human-Digit-Recognition",
+        "kind": "repo"
       }
     ]
   },
@@ -193,6 +377,9 @@
     "slug": "cfr-exploration",
     "emoji": "♟️",
     "period": "Nov 2024 – Present",
+    "startDate": "2024-11-01",
+    "endDate": null,
+    "updatedAt": null,
     "stack": [
       "Jupyter",
       "NumPy",
@@ -209,6 +396,32 @@
       "Machine Learning"
     ],
     "coolness": 86,
+    "showcaseTag": "Game Theory",
+    "showcaseTech": "NumPy",
+    "proofPoints": [
+      "CFR-Min notebooks for imperfect-information games",
+      "Worked examples: Kuhn Poker, Colonel Blotto",
+      "Exploration toward general sequential games"
+    ],
+    "overview": "A set of research notebooks exploring CFR-Min for finding equilibria in imperfect-information settings. The focus is on building intuition through worked examples and gradually generalizing toward more complex sequential games.",
+    "whatIBuilt": [
+      "Notebooks implementing and experimenting with CFR-Min ideas",
+      "Worked examples for small games (Kuhn Poker, Colonel Blotto)",
+      "A playground to test abstractions and convergence behavior"
+    ],
+    "howItWorks": [
+      "Define game representation and information sets",
+      "Run CFR-Min iterations to update regrets/strategies",
+      "Track convergence signals and compare variants",
+      "Extend to additional worked examples as the framework stabilizes"
+    ],
+    "results": [],
+    "nextSteps": [
+      "Add more consistent experiment logging and plots",
+      "Extend toward larger sequential games with abstractions"
+    ],
+    "coverImage": null,
+    "gallery": [],
     "bullets": [
       "Exploring CFR-Min for Nash equilibria in imperfect-information games.",
       "Worked examples: Colonel Blotto, Kuhn Poker.",
@@ -217,7 +430,8 @@
     "links": [
       {
         "label": "Git Repo",
-        "href": "https://github.com/seanpatrickmay/CFR-Exploration"
+        "href": "https://github.com/seanpatrickmay/CFR-Exploration",
+        "kind": "repo"
       }
     ]
   },
@@ -226,6 +440,9 @@
     "slug": "nlhe-alpha-beta",
     "emoji": "🃏",
     "period": "Aug – Dec 2024",
+    "startDate": "2024-08-01",
+    "endDate": "2024-12-01",
+    "updatedAt": "2024-12-01",
     "stack": [
       "Python",
       "NumPy",
@@ -241,6 +458,35 @@
       "Algorithms"
     ],
     "coolness": 96,
+    "showcaseTag": "Game Theory",
+    "showcaseTech": "Monte Carlo",
+    "proofPoints": [
+      "2+ orders of magnitude complexity reduction via alpha–beta pruning",
+      "Reduced game space to < 1e-6 using abstractions + rollouts",
+      "Decision-tree exploration for simplified NLHE"
+    ],
+    "overview": "This project explores adversarial search for simplified no-limit Hold’em decision trees. The emphasis is on computational tractability: reduce branching aggressively with alpha–beta pruning and abstractions, then use Monte Carlo rollouts to approximate the remaining space.",
+    "whatIBuilt": [
+      "Alpha–beta pruning over simplified NLHE decision trees",
+      "Monte Carlo rollouts for approximating outcomes in large spaces",
+      "State/action abstractions (bucketing, action limiting, range modeling)"
+    ],
+    "howItWorks": [
+      "Represent NLHE states with simplified assumptions",
+      "Use alpha–beta pruning to cut branches early",
+      "Approximate remaining leaf outcomes via Monte Carlo rollouts",
+      "Evaluate search behavior and tune abstractions"
+    ],
+    "results": [
+      "Reduced computational complexity by 2+ orders of magnitude in early-game positions",
+      "Reduced game space to < 1e-6 of the original via abstractions and rollouts"
+    ],
+    "nextSteps": [
+      "Explore stronger abstractions for ranges and bet sizing",
+      "Benchmark against alternative search variants"
+    ],
+    "coverImage": null,
+    "gallery": [],
     "bullets": [
       "Employed adversarial search with alpha–beta pruning to navigate simplified no-limit Hold’em decision trees, reducing computational complexity by 2+ orders of magnitude in early-game positions.",
       "Reduced the game space to < 1e-6 of the original via Monte Carlo rollouts, hand bucketing, action limiting, and a probabilistic hand-range model (complete-information approximation)."
@@ -248,7 +494,8 @@
     "links": [
       {
         "label": "Git Repo",
-        "href": "https://github.com/seanpatrickmay/PokerML"
+        "href": "https://github.com/seanpatrickmay/PokerML",
+        "kind": "repo"
       }
     ]
   },
@@ -257,6 +504,9 @@
     "slug": "maze-game",
     "emoji": "🌀",
     "period": "Updated Feb 2025",
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2025-02-01",
     "stack": [
       "Java",
       "javalib.impworld",
@@ -271,6 +521,32 @@
       "Algorithms"
     ],
     "coolness": 83,
+    "showcaseTag": "Algorithms",
+    "showcaseTech": "Java",
+    "proofPoints": [
+      "Maze generation with guaranteed solvability",
+      "BFS/DFS solver visualization + playback",
+      "Interactive player mode with controls + collision"
+    ],
+    "overview": "A Java maze generator and solver with multiple modes: generate mazes, watch BFS/DFS solve them, or play through manually. Built to make pathfinding mechanics tangible instead of abstract.",
+    "whatIBuilt": [
+      "Maze generator with adjustable difficulty/layout",
+      "BFS/DFS solver overlays and playback visualization",
+      "Interactive mode with keyboard controls and collision handling"
+    ],
+    "howItWorks": [
+      "Generate a maze with a chosen layout/difficulty",
+      "Run BFS/DFS to compute a path",
+      "Render solver overlays to visualize the algorithm’s progress",
+      "Optionally play through the maze in manual mode"
+    ],
+    "results": [],
+    "nextSteps": [
+      "Add more maze generation variants and heuristics",
+      "Add performance metrics for solver comparisons"
+    ],
+    "coverImage": null,
+    "gallery": [],
     "bullets": [
       "Generates solvable mazes with adjustable difficulty and layouts.",
       "Interactive run mode with keyboard controls and collision handling.",
@@ -279,7 +555,8 @@
     "links": [
       {
         "label": "Git Repo",
-        "href": "https://github.com/seanpatrickmay/Maze-Game"
+        "href": "https://github.com/seanpatrickmay/Maze-Game",
+        "kind": "repo"
       }
     ]
   },
@@ -288,6 +565,9 @@
     "slug": "nqueens-genetic-algorithms",
     "emoji": "♛",
     "period": "Updated Feb 2025",
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2025-02-01",
     "stack": [
       "Python",
       "Genetic Algorithms"
@@ -301,6 +581,32 @@
       "Algorithms"
     ],
     "coolness": 84,
+    "showcaseTag": "Algorithms",
+    "showcaseTech": "Genetic Algorithms",
+    "proofPoints": [
+      "Tournament selection + crossover toward zero conflicts",
+      "Adaptive mutation rate by board size",
+      "CLI/.env configurable experiments"
+    ],
+    "overview": "A genetic algorithm playground for evolving conflict-free N-Queens boards. The focus is on experimenting with selection, crossover, mutation schedules, and configuration knobs to see how convergence changes.",
+    "whatIBuilt": [
+      "Genetic search with tournament selection and single-point crossover",
+      "Mutation schedule that scales with board size",
+      "CLI + .env configuration for quick experimentation"
+    ],
+    "howItWorks": [
+      "Initialize a population of candidate boards",
+      "Score fitness based on queen conflicts",
+      "Select parents and apply crossover + mutation",
+      "Iterate until convergence or iteration cap"
+    ],
+    "results": [],
+    "nextSteps": [
+      "Add clearer run logs/plots to compare parameter settings",
+      "Try alternate encodings for board representation"
+    ],
+    "coverImage": null,
+    "gallery": [],
     "bullets": [
       "Tournament selection and single-point crossover push populations toward zero-collision layouts.",
       "Mutation rate scales automatically with board size for balanced exploration and convergence.",
@@ -309,7 +615,8 @@
     "links": [
       {
         "label": "Git Repo",
-        "href": "https://github.com/seanpatrickmay/NQueensGeneticAlgorithms"
+        "href": "https://github.com/seanpatrickmay/NQueensGeneticAlgorithms",
+        "kind": "repo"
       }
     ]
   },
@@ -318,6 +625,9 @@
     "slug": "hex-reversi",
     "emoji": "🔷",
     "period": "Updated 2025",
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2025-01-01",
     "stack": [
       "Java",
       "Swing"
@@ -332,6 +642,32 @@
       "Game Theory"
     ],
     "coolness": 87,
+    "showcaseTag": "Game Theory",
+    "showcaseTech": "Swing",
+    "proofPoints": [
+      "Hex-grid Reversi engine with configurable board shapes",
+      "MVC architecture with pluggable views/controllers",
+      "Composable AI strategies (minimax + heuristics)"
+    ],
+    "overview": "Hex Reversi is an extensible Reversi/Othello implementation on a hexagonal grid. The core emphasis is software design: clean MVC separation, adapters for different play modes, and modular AI strategies that can be mixed and matched.",
+    "whatIBuilt": [
+      "Hex-grid Reversi engine with configurable board shapes and starting states",
+      "MVC architecture with GUI + text views and a controller layer",
+      "Strategy system including minimax and composable heuristics"
+    ],
+    "howItWorks": [
+      "Represent the board on an odd-r hex coordinate system",
+      "Validate moves and apply flips according to Reversi rules",
+      "Run players (human/AI) through a controller loop",
+      "Plug different strategies into the AI player"
+    ],
+    "results": [],
+    "nextSteps": [
+      "Add stronger evaluation heuristics and time controls",
+      "Improve UI polish and strategy visualization"
+    ],
+    "coverImage": null,
+    "gallery": [],
     "bullets": [
       "Reversi on a hexagonal odd-r grid with configurable board shapes and starting states.",
       "Extensible MVC design: model interfaces, pluggable text/GUI views, and a controller to orchestrate play.",
@@ -341,15 +677,19 @@
     "links": [
       {
         "label": "Git Repo",
-        "href": "https://github.com/akul-sethi/hex-reversi"
+        "href": "https://github.com/seanpatrickmay/Hex-Reversi",
+        "kind": "repo"
       }
     ]
   },
   {
     "title": "Linux Shell (C)",
     "slug": "linux-shell-c",
-    "emoji": "🖥️",
+    "emoji": "🐚",
     "period": "Oct 2024",
+    "startDate": "2024-10-01",
+    "endDate": "2024-10-01",
+    "updatedAt": "2024-10-01",
     "stack": [
       "C",
       "Concurrency",
@@ -365,11 +705,43 @@
       "Algorithms"
     ],
     "coolness": 85,
+    "showcaseTag": "Concurrency",
+    "showcaseTech": "C",
+    "proofPoints": [
+      "Pipelines + redirection + signal handling",
+      "Built-ins: source, prev, cd, help, verbose",
+      "Process orchestration for sequential execution"
+    ],
+    "overview": "A custom shell written in C with support for command execution, piping, redirection, and signals. The project focuses on process control and correctness under typical shell behaviors.",
+    "whatIBuilt": [
+      "Command execution with piping and I/O redirection",
+      "Signal handling and process orchestration",
+      "Built-in commands (source, prev, cd, help, verbose toggle)"
+    ],
+    "howItWorks": [
+      "Parse input into commands and pipeline segments",
+      "Fork/exec child processes and wire pipes between them",
+      "Apply redirections and handle signals appropriately",
+      "Track history for built-ins like prev"
+    ],
+    "results": [],
+    "nextSteps": [
+      "Add job control (fg/bg) if desired",
+      "Harden parsing for edge cases and quoting rules"
+    ],
+    "coverImage": null,
+    "gallery": [],
     "bullets": [
       "Fully operational shell: commands, piping, I/O redirection, signals.",
       "Child processes for sequential execution.",
       "Custom commands: source, prev, cd, help, verbose toggle."
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Git Repo",
+        "href": "https://github.com/seanpatrickmay/Linux-Shell",
+        "kind": "repo"
+      }
+    ]
   }
 ]
