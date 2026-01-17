@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-16T13:35:36.249Z",
+  "generated_at": "2026-01-17T13:26:44.757Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -78,12 +78,6 @@
       "url": "https://open.spotify.com/track/0eFMbKCRw8KByXyWBw8WO7"
     },
     {
-      "name": "Harry Styles",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
-    },
-    {
       "name": "Tchaikovsky: Swan Lake, Op. 20, Act 1: Introduction - No. 1, Scene. Allegro giusto",
       "artist": "Pyotr Ilyich Tchaikovsky, André Previn, London Symphony Orchestra",
       "image": "https://i.scdn.co/image/ab67616d0000b2731d9c6602aa95abd8c5b146da",
@@ -96,10 +90,10 @@
       "url": "https://open.spotify.com/track/6ppu8ECkNhZIqQAqbP7u5o"
     },
     {
-      "name": "Cheer Me On",
+      "name": "Make Me a Better Man",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
+      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
     },
     {
       "name": "TOES (feat. Lil Baby & Moneybagg Yo)",
@@ -112,6 +106,12 @@
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/2i4bDOV0cKTyPOoEHNzoFR"
+    },
+    {
+      "name": "Zip Up My Fly",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
+      "url": "https://open.spotify.com/track/37nwfPGR24VGbOUWvzbZs1"
     }
   ]
 }
