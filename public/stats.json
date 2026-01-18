@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-17T13:27:12.159975Z",
+  "generated_at": "2026-01-18T13:27:05.318910Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -10,13 +10,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 29,
-        "distance_km": 243.63,
-        "time_hours": 23.43,
-        "longest_km": 33.1,
-        "calories_kcal": 18475.0
+        "distance_km": 284.23,
+        "time_hours": 24.04,
+        "longest_km": 58.34,
+        "calories_kcal": 19503.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21580918194,
+            "name": "WITH MUMA",
+            "type": "virtual_ride",
+            "start": "2026-01-17 16:00:21",
+            "distance_km": 58.34,
+            "duration_min": 102.3,
+            "avg_speed_kmh": 34.2,
+            "calories_kcal": 1384.0
+          },
           {
             "id": 21570665946,
             "name": "Treadmill Running",
@@ -606,16 +616,6 @@
             "duration_min": 22.9,
             "avg_speed_kmh": 27.26,
             "calories_kcal": 211.0
-          },
-          {
-            "id": 21083325515,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-11-24 21:53:42",
-            "distance_km": 9.0,
-            "duration_min": 30.9,
-            "avg_speed_kmh": 17.46,
-            "calories_kcal": 457.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2026-01-12",
             "week_end": "2026-01-18",
-            "distance_km": 46.08,
-            "time_hours": 4.47,
-            "calories_kcal": 3774.0
+            "distance_km": 104.42,
+            "time_hours": 6.18,
+            "calories_kcal": 5158.0
           }
         ]
       }
@@ -684,14 +684,24 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 10,
-        "distance_km": 122.23,
-        "time_hours": 6.61,
-        "longest_km": 33.1,
-        "calories_kcal": 5158.0
+        "activities_count": 11,
+        "distance_km": 180.56,
+        "time_hours": 8.32,
+        "longest_km": 58.34,
+        "calories_kcal": 6542.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21580918194,
+            "name": "WITH MUMA",
+            "type": "virtual_ride",
+            "start": "2026-01-17 16:00:21",
+            "distance_km": 58.34,
+            "duration_min": 102.3,
+            "avg_speed_kmh": 34.2,
+            "calories_kcal": 1384.0
+          },
           {
             "id": 21525401859,
             "name": "Zwift - BRAEk-fast Crits and Grits in Scotland",
@@ -1271,16 +1281,6 @@
             "duration_min": 14.8,
             "avg_speed_kmh": 13.31,
             "calories_kcal": 153.0
-          },
-          {
-            "id": 20816820889,
-            "name": "still doing laundry",
-            "type": "virtual_ride",
-            "start": "2025-10-27 20:29:38",
-            "distance_km": 20.42,
-            "duration_min": 35.6,
-            "avg_speed_kmh": 34.38,
-            "calories_kcal": 405.0
           }
         ]
       },
@@ -1339,9 +1339,9 @@
           {
             "week_start": "2026-01-12",
             "week_end": "2026-01-18",
-            "distance_km": 23.72,
-            "time_hours": 0.69,
-            "calories_kcal": 526.0
+            "distance_km": 82.05,
+            "time_hours": 2.4,
+            "calories_kcal": 1910.0
           }
         ]
       }
