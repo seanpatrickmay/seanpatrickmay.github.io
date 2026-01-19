@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-18T13:26:36.924Z",
+  "generated_at": "2026-01-19T13:42:42.196Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -47,9 +47,9 @@
       "url": "https://open.spotify.com/artist/36cgvBn0aadzOijnjjwqMN"
     },
     {
-      "name": "Jung Kook",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb40a7268dd742e5f63759b960",
-      "url": "https://open.spotify.com/artist/6HaGTQPmzraVmaVxvz6EUc"
+      "name": "Kanye West",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
+      "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
     }
   ],
   "tracks": [
@@ -60,22 +60,16 @@
       "url": "https://open.spotify.com/track/6Jv7kjGkhY2fT4yuBF3aTz"
     },
     {
-      "name": "Comfort Me",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27367fd900586544a0cd454d57f",
-      "url": "https://open.spotify.com/track/3dAk7Z16rv38qRM3MIhCIX"
-    },
-    {
       "name": "Still With You",
       "artist": "Jung Kook",
       "image": "https://i.scdn.co/image/ab67616d0000b273a7f42c375578df426b37638d",
       "url": "https://open.spotify.com/track/0eFMbKCRw8KByXyWBw8WO7"
     },
     {
-      "name": "Original",
+      "name": "Comfort Me",
       "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
-      "url": "https://open.spotify.com/track/4C2VgkK31XEllBMUGu7bPN"
+      "image": "https://i.scdn.co/image/ab67616d0000b27367fd900586544a0cd454d57f",
+      "url": "https://open.spotify.com/track/3dAk7Z16rv38qRM3MIhCIX"
     },
     {
       "name": "Tchaikovsky: Swan Lake, Op. 20, Act 1: Introduction - No. 1, Scene. Allegro giusto",
@@ -90,6 +84,18 @@
       "url": "https://open.spotify.com/track/6ppu8ECkNhZIqQAqbP7u5o"
     },
     {
+      "name": "Avril 14th",
+      "artist": "Aphex Twin",
+      "image": "https://i.scdn.co/image/ab67616d0000b2732e261a0b1b19d0ff95e346b3",
+      "url": "https://open.spotify.com/track/1uaGSDFsLdReQgg8p7Obwh"
+    },
+    {
+      "name": "Original",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
+      "url": "https://open.spotify.com/track/4C2VgkK31XEllBMUGu7bPN"
+    },
+    {
       "name": "Make Me a Better Man",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
@@ -102,16 +108,10 @@
       "url": "https://open.spotify.com/track/2FvD20Z8aoWIePi7PoN8sG"
     },
     {
-      "name": "Going To The Ceremony",
-      "artist": "Kid Cudi",
-      "image": "https://i.scdn.co/image/ab67616d0000b273a8a0f65c9c3183cd5bdfa10d",
-      "url": "https://open.spotify.com/track/37zhT9G4T7JPaFZGFjdunz"
-    },
-    {
-      "name": "Cinderella Man",
-      "artist": "Eminem",
-      "image": "https://i.scdn.co/image/ab67616d0000b273c08d5fa5c0f1a834acef5100",
-      "url": "https://open.spotify.com/track/4SE4yewyGpOYfxfx59Yjc5"
+      "name": "Liebestraum",
+      "artist": "Franz Liszt, Arthur Rubinstein",
+      "image": "https://i.scdn.co/image/ab67616d0000b273cc7dd392cd6cb06d952fa4bc",
+      "url": "https://open.spotify.com/track/3Nd9wTStUxHHBWkbrENCVL"
     }
   ]
 }
