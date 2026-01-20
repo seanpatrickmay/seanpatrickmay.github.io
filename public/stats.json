@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-19T13:43:23.448861Z",
+  "generated_at": "2026-01-20T13:44:49.606049Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -10,13 +10,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 27,
-        "distance_km": 274.12,
-        "time_hours": 22.36,
+        "distance_km": 279.08,
+        "time_hours": 21.81,
         "longest_km": 58.34,
-        "calories_kcal": 18089.0
+        "calories_kcal": 17791.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21599608228,
+            "name": "Track Running",
+            "type": "track_running",
+            "start": "2026-01-19 12:40:13",
+            "distance_km": 4.96,
+            "duration_min": 30.1,
+            "avg_speed_kmh": 9.88,
+            "calories_kcal": 396.0
+          },
           {
             "id": 21580918194,
             "name": "WITH MUMA",
@@ -606,16 +616,6 @@
             "duration_min": 62.1,
             "avg_speed_kmh": 12.26,
             "calories_kcal": 997.0
-          },
-          {
-            "id": 21083414891,
-            "name": "recovery",
-            "type": "virtual_ride",
-            "start": "2025-11-24 23:26:05",
-            "distance_km": 10.41,
-            "duration_min": 22.9,
-            "avg_speed_kmh": 27.26,
-            "calories_kcal": 211.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2026-01-19",
             "week_end": "2026-01-25",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
+            "distance_km": 4.96,
+            "time_hours": 0.5,
+            "calories_kcal": 396.0
           }
         ]
       }
@@ -684,11 +684,11 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 10,
+        "activities_count": 9,
         "distance_km": 180.56,
-        "time_hours": 7.49,
+        "time_hours": 6.45,
         "longest_km": 58.34,
-        "calories_kcal": 5948.0
+        "calories_kcal": 5254.0
       },
       "recent": {
         "last60": [
@@ -1349,14 +1349,24 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 14,
-        "distance_km": 87.7,
-        "time_hours": 12.6,
+        "activities_count": 15,
+        "distance_km": 92.66,
+        "time_hours": 13.1,
         "longest_km": 11.12,
-        "calories_kcal": 10845.0
+        "calories_kcal": 11241.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21599608228,
+            "name": "Track Running",
+            "type": "track_running",
+            "start": "2026-01-19 12:40:13",
+            "distance_km": 4.96,
+            "duration_min": 30.1,
+            "avg_speed_kmh": 9.88,
+            "calories_kcal": 396.0
+          },
           {
             "id": 21570665946,
             "name": "Treadmill Running",
@@ -1706,16 +1716,6 @@
             "duration_min": 20.5,
             "avg_speed_kmh": 12.2,
             "calories_kcal": 345.0
-          },
-          {
-            "id": 20826019591,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-10-28 17:30:04",
-            "distance_km": 11.31,
-            "duration_min": 52.2,
-            "avg_speed_kmh": 12.99,
-            "calories_kcal": 859.0
           }
         ]
       },
@@ -1774,9 +1774,9 @@
           {
             "week_start": "2026-01-19",
             "week_end": "2026-01-25",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
+            "distance_km": 4.96,
+            "time_hours": 0.5,
+            "calories_kcal": 396.0
           }
         ]
       }
