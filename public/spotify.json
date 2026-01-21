@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-20T13:43:42.742Z",
+  "generated_at": "2026-01-21T13:42:32.707Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -10,6 +10,11 @@
       "name": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
+    },
+    {
+      "name": "BTS",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd642648235ebf3460d2d1f6a",
+      "url": "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"
     },
     {
       "name": "Enya",
@@ -27,38 +32,27 @@
       "url": "https://open.spotify.com/artist/3nnQpaTvKb5jCQabZefACI"
     },
     {
+      "name": "The Beatles",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe9348cc01ff5d55971b22433",
+      "url": "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
+    },
+    {
       "name": "Kanye West",
       "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
       "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
     },
     {
-      "name": "Kid Cudi",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb5f00bb6dd7a7008d14156630",
-      "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
+      "name": "IVE",
+      "image": "https://i.scdn.co/image/ab6761610000e5eba9c8608865ca7eded5520359",
+      "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
     },
     {
       "name": "Toshifumi Hinata",
       "image": "https://i.scdn.co/image/ab6761610000e5eb1d5fb5b560b966ca1177aefe",
       "url": "https://open.spotify.com/artist/08tfDO4dSrwxax35a3HIMC"
-    },
-    {
-      "name": "BTS",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd642648235ebf3460d2d1f6a",
-      "url": "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"
-    },
-    {
-      "name": "ILLIT",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb169a757a7d0ba53a33984416",
-      "url": "https://open.spotify.com/artist/36cgvBn0aadzOijnjjwqMN"
     }
   ],
   "tracks": [
-    {
-      "name": "Comfort Me",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27367fd900586544a0cd454d57f",
-      "url": "https://open.spotify.com/track/3dAk7Z16rv38qRM3MIhCIX"
-    },
     {
       "name": "Lover, You Should've Come Over",
       "artist": "Jeff Buckley",
@@ -88,6 +82,12 @@
       "artist": "Pyotr Ilyich Tchaikovsky, Itzhak Perlman, Philadelphia Orchestra, Eugene Ormandy",
       "image": "https://i.scdn.co/image/ab67616d0000b27349958762ff3c53717d503a52",
       "url": "https://open.spotify.com/track/6ppu8ECkNhZIqQAqbP7u5o"
+    },
+    {
+      "name": "Comfort Me",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27367fd900586544a0cd454d57f",
+      "url": "https://open.spotify.com/track/3dAk7Z16rv38qRM3MIhCIX"
     },
     {
       "name": "Original",
