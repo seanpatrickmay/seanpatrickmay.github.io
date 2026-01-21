@@ -24,6 +24,11 @@ const featuredProjects = [...projects]
   .sort((a, b) => (b.coolness ?? -Infinity) - (a.coolness ?? -Infinity))
   .slice(0, 3);
 
+const lifeDashboardProject =
+  projects.find(project => project.slug === 'life-dashboard') ?? null;
+const lecteurAideProject =
+  projects.find(project => project.slug === 'lecteuraide') ?? null;
+
 const links = {
   github: 'https://github.com/seanpatrickmay',
   linkedin: 'https://linkedin.com/in/seanpatrickmay',
@@ -84,7 +89,11 @@ export default function Home() {
         <Header links={links} />
         <main className="flex-1 space-y-12 pt-32 pb-24 sm:pt-28 md:pt-24 lg:min-w-0 lg:pt-16 xl:pt-20">
           <Hero links={links} featuredProjects={featuredProjects} />
-          <AboutSection interests={interests} featuredActivities={otherWork} />
+          <AboutSection
+            interests={interests}
+            featuredActivities={otherWork}
+            projectHighlights={[lifeDashboardProject, lecteurAideProject].filter(Boolean)}
+          />
 
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
             <StackedCardSection

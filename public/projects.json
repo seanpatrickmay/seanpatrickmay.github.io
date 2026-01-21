@@ -105,6 +105,7 @@
     "proofPoints": [
       "Agentic nutrition workflow (recipes → ingredients → normalized facts)",
       "Garmin biometrics ingestion + trend features",
+      "Turns insights into daily to-dos + journaling for follow-through",
       "Full-stack app: FastAPI + Postgres + React/TS"
     ],
     "overview": "Life-Dashboard is a self-hosted wellness app that combines Garmin biometrics with nutrition logging and agentic workflows. It keeps the data normalized, computes targets with uncertainty (95% CIs), and turns the result into simple, actionable to-dos instead of dashboards you ignore.",

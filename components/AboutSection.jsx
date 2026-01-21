@@ -5,6 +5,7 @@ import SpotifyTopArtists from '@/components/SpotifyTopArtists';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import Section from '@/components/ui/Section';
 import HobbySpotlight from '@/components/HobbySpotlight';
+import CaseStudyCard from '@/components/projects/CaseStudyCard';
 import LineSparkline from '@/components/ui/LineSparkline';
 import { getBostonJourneyEquivalence } from '@/lib/journeyEquivalents';
 import { Sparkles, TrendingUp, Music, ClipboardList, Users } from 'lucide-react';
@@ -31,10 +32,18 @@ function useSpotify() {
   return data;
 }
 
-export default function AboutSection({ interests, featuredActivities = [] }) {
+export default function AboutSection({
+  interests,
+  featuredActivities = [],
+  projectHighlights = [],
+  projectHighlight = null,
+}) {
   const stats = useStats();
   const spotify = useSpotify();
   const activities = Array.isArray(featuredActivities) ? featuredActivities : [];
+  const highlights = Array.isArray(projectHighlights) ? projectHighlights.filter(Boolean) : [];
+  if (highlights.length === 0 && projectHighlight) highlights.push(projectHighlight);
+  const hasHighlights = highlights.length > 0;
 
   const combined = stats?.stats?.combined;
   const weeklySeries = Array.isArray(combined?.weekly?.series) ? combined.weekly.series : [];
@@ -241,24 +250,46 @@ export default function AboutSection({ interests, featuredActivities = [] }) {
           </div>
 
           <div className="space-y-4">
-            <div className="flex items-center justify-between gap-4">
-              <h3 className="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-50">
-                Off the clock
-              </h3>
+            <div className="space-y-4">
+              <div className="flex items-center justify-between gap-4">
+                <h3 className="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-50">
+                  Off the clock
+                </h3>
+                {extraInterests.length > 0 && (
+                  <div className="hidden sm:flex flex-wrap justify-end gap-2">
+                    {extraInterests.map(item => (
+                      <Badge key={item}>{item}</Badge>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              <HobbySpotlight hobbies={hobbySpotlights} />
+
               {extraInterests.length > 0 && (
-                <div className="hidden sm:flex flex-wrap justify-end gap-2">
+                <div className="flex flex-wrap gap-2 sm:hidden">
                   {extraInterests.map(item => (
                     <Badge key={item}>{item}</Badge>
                   ))}
                 </div>
               )}
             </div>
-            <HobbySpotlight hobbies={hobbySpotlights} />
-            {extraInterests.length > 0 && (
-              <div className="flex flex-wrap gap-2 sm:hidden">
-                {extraInterests.map(item => (
-                  <Badge key={item}>{item}</Badge>
-                ))}
+
+            {hasHighlights && (
+              <div className="space-y-4">
+                <h3 className="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-50">
+                  Project spotlights
+                </h3>
+                <div className="grid gap-6 md:grid-cols-2">
+                  {highlights.map(project => (
+                    <CaseStudyCard
+                      key={project.slug || project.title}
+                      project={project}
+                      variant="compact"
+                      className="bg-white/70 shadow-sm dark:bg-slate-900/60"
+                    />
+                  ))}
+                </div>
               </div>
             )}
           </div>
