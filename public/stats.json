@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-14T13:38:37.150776Z",
+  "generated_at": "2026-01-20T13:44:49.606049Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,54 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 29,
-        "distance_km": 266.19,
-        "time_hours": 22.63,
-        "longest_km": 33.1,
-        "calories_kcal": 17824.0
+        "activities_count": 27,
+        "distance_km": 279.08,
+        "time_hours": 21.81,
+        "longest_km": 58.34,
+        "calories_kcal": 17791.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21599608228,
+            "name": "Track Running",
+            "type": "track_running",
+            "start": "2026-01-19 12:40:13",
+            "distance_km": 4.96,
+            "duration_min": 30.1,
+            "avg_speed_kmh": 9.88,
+            "calories_kcal": 396.0
+          },
+          {
+            "id": 21580918194,
+            "name": "WITH MUMA",
+            "type": "virtual_ride",
+            "start": "2026-01-17 16:00:21",
+            "distance_km": 58.34,
+            "duration_min": 102.3,
+            "avg_speed_kmh": 34.2,
+            "calories_kcal": 1384.0
+          },
+          {
+            "id": 21570665946,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-01-16 18:21:18",
+            "distance_km": 5.55,
+            "duration_min": 60.2,
+            "avg_speed_kmh": 5.52,
+            "calories_kcal": 862.0
+          },
+          {
+            "id": 21550832747,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-01-14 19:36:17",
+            "distance_km": 5.74,
+            "duration_min": 60.2,
+            "avg_speed_kmh": 5.72,
+            "calories_kcal": 837.0
+          },
           {
             "id": 21540155946,
             "name": "Treadmill Running",
@@ -576,59 +616,12 @@
             "duration_min": 62.1,
             "avg_speed_kmh": 12.26,
             "calories_kcal": 997.0
-          },
-          {
-            "id": 21083414891,
-            "name": "recovery",
-            "type": "virtual_ride",
-            "start": "2025-11-24 23:26:05",
-            "distance_km": 10.41,
-            "duration_min": 22.9,
-            "avg_speed_kmh": 27.26,
-            "calories_kcal": 211.0
-          },
-          {
-            "id": 21083325515,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-11-24 21:53:42",
-            "distance_km": 9.0,
-            "duration_min": 30.9,
-            "avg_speed_kmh": 17.46,
-            "calories_kcal": 457.0
-          },
-          {
-            "id": 21073855062,
-            "name": "cd",
-            "type": "virtual_ride",
-            "start": "2025-11-23 19:32:58",
-            "distance_km": 7.19,
-            "duration_min": 15.5,
-            "avg_speed_kmh": 27.82,
-            "calories_kcal": 109.0
-          },
-          {
-            "id": 21073717722,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-11-23 18:14:22",
-            "distance_km": 11.3,
-            "duration_min": 50.1,
-            "avg_speed_kmh": 13.54,
-            "calories_kcal": 898.0
           }
         ]
       },
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-11-24",
-            "week_end": "2025-11-30",
-            "distance_km": 65.91,
-            "time_hours": 3.65,
-            "calories_kcal": 3004.0
-          },
           {
             "week_start": "2025-12-01",
             "week_end": "2025-12-07",
@@ -674,9 +667,16 @@
           {
             "week_start": "2026-01-12",
             "week_end": "2026-01-18",
-            "distance_km": 34.8,
-            "time_hours": 2.47,
-            "calories_kcal": 2075.0
+            "distance_km": 104.42,
+            "time_hours": 6.18,
+            "calories_kcal": 5158.0
+          },
+          {
+            "week_start": "2026-01-19",
+            "week_end": "2026-01-25",
+            "distance_km": 4.96,
+            "time_hours": 0.5,
+            "calories_kcal": 396.0
           }
         ]
       }
@@ -684,14 +684,24 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 11,
-        "distance_km": 151.82,
-        "time_hours": 7.47,
-        "longest_km": 33.1,
-        "calories_kcal": 5882.0
+        "activities_count": 9,
+        "distance_km": 180.56,
+        "time_hours": 6.45,
+        "longest_km": 58.34,
+        "calories_kcal": 5254.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21580918194,
+            "name": "WITH MUMA",
+            "type": "virtual_ride",
+            "start": "2026-01-17 16:00:21",
+            "distance_km": 58.34,
+            "duration_min": 102.3,
+            "avg_speed_kmh": 34.2,
+            "calories_kcal": 1384.0
+          },
           {
             "id": 21525401859,
             "name": "Zwift - BRAEk-fast Crits and Grits in Scotland",
@@ -1271,39 +1281,12 @@
             "duration_min": 14.8,
             "avg_speed_kmh": 13.31,
             "calories_kcal": 153.0
-          },
-          {
-            "id": 20816820889,
-            "name": "still doing laundry",
-            "type": "virtual_ride",
-            "start": "2025-10-27 20:29:38",
-            "distance_km": 20.42,
-            "duration_min": 35.6,
-            "avg_speed_kmh": 34.38,
-            "calories_kcal": 405.0
-          },
-          {
-            "id": 20816610183,
-            "name": "doing laundry",
-            "type": "virtual_ride",
-            "start": "2025-10-27 19:46:28",
-            "distance_km": 16.85,
-            "duration_min": 31.3,
-            "avg_speed_kmh": 32.27,
-            "calories_kcal": 467.0
           }
         ]
       },
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-11-24",
-            "week_end": "2025-11-30",
-            "distance_km": 41.82,
-            "time_hours": 1.57,
-            "calories_kcal": 1104.0
-          },
           {
             "week_start": "2025-12-01",
             "week_end": "2025-12-07",
@@ -1349,9 +1332,16 @@
           {
             "week_start": "2026-01-12",
             "week_end": "2026-01-18",
-            "distance_km": 23.72,
-            "time_hours": 0.69,
-            "calories_kcal": 526.0
+            "distance_km": 82.05,
+            "time_hours": 2.4,
+            "calories_kcal": 1910.0
+          },
+          {
+            "week_start": "2026-01-19",
+            "week_end": "2026-01-25",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -1359,14 +1349,44 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 14,
-        "distance_km": 90.79,
-        "time_hours": 11.8,
+        "activities_count": 15,
+        "distance_km": 92.66,
+        "time_hours": 13.1,
         "longest_km": 11.12,
-        "calories_kcal": 10290.0
+        "calories_kcal": 11241.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21599608228,
+            "name": "Track Running",
+            "type": "track_running",
+            "start": "2026-01-19 12:40:13",
+            "distance_km": 4.96,
+            "duration_min": 30.1,
+            "avg_speed_kmh": 9.88,
+            "calories_kcal": 396.0
+          },
+          {
+            "id": 21570665946,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-01-16 18:21:18",
+            "distance_km": 5.55,
+            "duration_min": 60.2,
+            "avg_speed_kmh": 5.52,
+            "calories_kcal": 862.0
+          },
+          {
+            "id": 21550832747,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-01-14 19:36:17",
+            "distance_km": 5.74,
+            "duration_min": 60.2,
+            "avg_speed_kmh": 5.72,
+            "calories_kcal": 837.0
+          },
           {
             "id": 21540155946,
             "name": "Treadmill Running",
@@ -1696,29 +1716,12 @@
             "duration_min": 20.5,
             "avg_speed_kmh": 12.2,
             "calories_kcal": 345.0
-          },
-          {
-            "id": 20826019591,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-10-28 17:30:04",
-            "distance_km": 11.31,
-            "duration_min": 52.2,
-            "avg_speed_kmh": 12.99,
-            "calories_kcal": 859.0
           }
         ]
       },
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-11-24",
-            "week_end": "2025-11-30",
-            "distance_km": 24.1,
-            "time_hours": 2.08,
-            "calories_kcal": 1900.0
-          },
           {
             "week_start": "2025-12-01",
             "week_end": "2025-12-07",
@@ -1764,9 +1767,16 @@
           {
             "week_start": "2026-01-12",
             "week_end": "2026-01-18",
-            "distance_km": 11.08,
-            "time_hours": 1.77,
-            "calories_kcal": 1549.0
+            "distance_km": 22.36,
+            "time_hours": 3.78,
+            "calories_kcal": 3248.0
+          },
+          {
+            "week_start": "2026-01-19",
+            "week_end": "2026-01-25",
+            "distance_km": 4.96,
+            "time_hours": 0.5,
+            "calories_kcal": 396.0
           }
         ]
       }
@@ -1786,13 +1796,6 @@
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-11-24",
-            "week_end": "2025-11-30",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
           {
             "week_start": "2025-12-01",
             "week_end": "2025-12-07",
@@ -1838,6 +1841,13 @@
           {
             "week_start": "2026-01-12",
             "week_end": "2026-01-18",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-01-19",
+            "week_end": "2026-01-25",
             "distance_km": 0.0,
             "time_hours": 0.0,
             "calories_kcal": 0.0
