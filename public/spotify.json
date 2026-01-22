@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-21T13:42:32.707Z",
+  "generated_at": "2026-01-22T13:43:43.404Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -42,14 +42,14 @@
       "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
     },
     {
+      "name": "Joe Dassin",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb78c62552534c9f2cf9151f8c",
+      "url": "https://open.spotify.com/artist/64LCTpIu9Iji2EPaxxPpxF"
+    },
+    {
       "name": "IVE",
       "image": "https://i.scdn.co/image/ab6761610000e5eba9c8608865ca7eded5520359",
       "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
-    },
-    {
-      "name": "Toshifumi Hinata",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb1d5fb5b560b966ca1177aefe",
-      "url": "https://open.spotify.com/artist/08tfDO4dSrwxax35a3HIMC"
     }
   ],
   "tracks": [
