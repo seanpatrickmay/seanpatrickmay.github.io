@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-23T13:41:04.278575Z",
+  "generated_at": "2026-01-24T13:29:27.283400Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 27,
-        "distance_km": 280.77,
-        "time_hours": 21.71,
+        "activities_count": 28,
+        "distance_km": 282.32,
+        "time_hours": 22.38,
         "longest_km": 58.34,
-        "calories_kcal": 17697.0
+        "calories_kcal": 18347.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21643701872,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-01-23 16:00:16",
+            "distance_km": 1.55,
+            "duration_min": 40.3,
+            "avg_speed_kmh": 2.31,
+            "calories_kcal": 650.0
+          },
           {
             "id": 21631749933,
             "name": "Zwift - Mountain Mash in Watopia",
@@ -606,16 +616,6 @@
             "duration_min": 40.2,
             "avg_speed_kmh": 33.39,
             "calories_kcal": 436.0
-          },
-          {
-            "id": 21092674619,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-11-25 22:30:36",
-            "distance_km": 1.51,
-            "duration_min": 7.3,
-            "avg_speed_kmh": 12.45,
-            "calories_kcal": 121.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2026-01-19",
             "week_end": "2026-01-25",
-            "distance_km": 11.67,
-            "time_hours": 0.81,
-            "calories_kcal": 726.0
+            "distance_km": 13.23,
+            "time_hours": 1.48,
+            "calories_kcal": 1376.0
           }
         ]
       }
@@ -1271,16 +1271,6 @@
             "duration_min": 60.3,
             "avg_speed_kmh": 34.05,
             "calories_kcal": 657.0
-          },
-          {
-            "id": 20826663310,
-            "name": "steady w MUMA",
-            "type": "virtual_ride",
-            "start": "2025-10-28 19:15:01",
-            "distance_km": 29.83,
-            "duration_min": 60.4,
-            "avg_speed_kmh": 29.61,
-            "calories_kcal": 532.0
           }
         ]
       },
@@ -1349,14 +1339,24 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 14,
-        "distance_km": 87.64,
-        "time_hours": 12.69,
+        "activities_count": 15,
+        "distance_km": 89.19,
+        "time_hours": 13.36,
         "longest_km": 11.12,
-        "calories_kcal": 10817.0
+        "calories_kcal": 11467.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21643701872,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-01-23 16:00:16",
+            "distance_km": 1.55,
+            "duration_min": 40.3,
+            "avg_speed_kmh": 2.31,
+            "calories_kcal": 650.0
+          },
           {
             "id": 21599608228,
             "name": "Track Running",
@@ -1774,9 +1774,9 @@
           {
             "week_start": "2026-01-19",
             "week_end": "2026-01-25",
-            "distance_km": 4.96,
-            "time_hours": 0.5,
-            "calories_kcal": 396.0
+            "distance_km": 6.51,
+            "time_hours": 1.17,
+            "calories_kcal": 1046.0
           }
         ]
       }
