@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-23T13:40:20.062Z",
+  "generated_at": "2026-01-24T13:28:37.609Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -7,9 +7,9 @@
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
-      "name": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
-      "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
+      "name": "Zedd",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
+      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
       "name": "BTS",
@@ -20,11 +20,6 @@
       "name": "Enya",
       "image": "https://i.scdn.co/image/ab6761610000e5eb9ce996547e0b307c94f662e6",
       "url": "https://open.spotify.com/artist/6uothxMWeLWIhsGeF7cyo4"
-    },
-    {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
       "name": "Jeff Buckley",
@@ -50,6 +45,11 @@
       "name": "Stromae",
       "image": "https://i.scdn.co/image/ab6761610000e5ebcc129f1c9b5047760d66aae2",
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
+    },
+    {
+      "name": "IVE",
+      "image": "https://i.scdn.co/image/ab6761610000e5eba9c8608865ca7eded5520359",
+      "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
     }
   ],
   "tracks": [
@@ -58,6 +58,12 @@
       "artist": "Jeff Buckley",
       "image": "https://i.scdn.co/image/ab67616d0000b273afc2d1d2c8703a10aeded0af",
       "url": "https://open.spotify.com/track/6Jv7kjGkhY2fT4yuBF3aTz"
+    },
+    {
+      "name": "Tchaikovsky: Swan Lake, Op. 20, Act 1: Introduction - No. 1, Scene. Allegro giusto",
+      "artist": "Pyotr Ilyich Tchaikovsky, André Previn, London Symphony Orchestra",
+      "image": "https://i.scdn.co/image/ab67616d0000b2731d9c6602aa95abd8c5b146da",
+      "url": "https://open.spotify.com/track/5tNUaNoIMdJcdHGj25a7gD"
     },
     {
       "name": "Still With You",
@@ -72,12 +78,6 @@
       "url": "https://open.spotify.com/track/1uaGSDFsLdReQgg8p7Obwh"
     },
     {
-      "name": "Tchaikovsky: Swan Lake, Op. 20, Act 1: Introduction - No. 1, Scene. Allegro giusto",
-      "artist": "Pyotr Ilyich Tchaikovsky, André Previn, London Symphony Orchestra",
-      "image": "https://i.scdn.co/image/ab67616d0000b2731d9c6602aa95abd8c5b146da",
-      "url": "https://open.spotify.com/track/5tNUaNoIMdJcdHGj25a7gD"
-    },
-    {
       "name": "Tchaikovsky: Violin Concerto in D Major, Op. 35: I. Allegro moderato",
       "artist": "Pyotr Ilyich Tchaikovsky, Itzhak Perlman, Philadelphia Orchestra, Eugene Ormandy",
       "image": "https://i.scdn.co/image/ab67616d0000b27349958762ff3c53717d503a52",
@@ -90,16 +90,16 @@
       "url": "https://open.spotify.com/track/3dAk7Z16rv38qRM3MIhCIX"
     },
     {
-      "name": "Original",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
-      "url": "https://open.spotify.com/track/4C2VgkK31XEllBMUGu7bPN"
+      "name": "Le Cygne",
+      "artist": "Camille Saint-Saëns, Stéphane Tétreault, Fabien Gabel, Orchestre Symphonique De Québec",
+      "image": "https://i.scdn.co/image/ab67616d0000b27318a83f747b59018eeba12b88",
+      "url": "https://open.spotify.com/track/59eTbibtvvBIGj27eN3zqq"
     },
     {
-      "name": "Make Me a Better Man",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
+      "name": "Hourglass",
+      "artist": "Zedd, LIZ",
+      "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
+      "url": "https://open.spotify.com/track/6NwrXtcFbc8OX7wJyBqE89"
     },
     {
       "name": "Menuet",
@@ -108,10 +108,10 @@
       "url": "https://open.spotify.com/track/0NxCQL5OFodinhM1GO5dxi"
     },
     {
-      "name": "L'autre Valse D'amelie",
-      "artist": "Jairos",
-      "image": "https://i.scdn.co/image/ab67616d0000b273ee1e7efc0f756e135cd07fe0",
-      "url": "https://open.spotify.com/track/10G9lKoNilxlZhMUxPUfwx"
+      "name": "Liebestraum",
+      "artist": "Franz Liszt, Arthur Rubinstein",
+      "image": "https://i.scdn.co/image/ab67616d0000b273cc7dd392cd6cb06d952fa4bc",
+      "url": "https://open.spotify.com/track/3Nd9wTStUxHHBWkbrENCVL"
     }
   ]
 }
