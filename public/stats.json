@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-24T13:29:27.283400Z",
+  "generated_at": "2026-01-25T13:30:45.275572Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,11 +9,11 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 28,
+        "activities_count": 27,
         "distance_km": 282.32,
-        "time_hours": 22.38,
+        "time_hours": 21.85,
         "longest_km": 58.34,
-        "calories_kcal": 18347.0
+        "calories_kcal": 17930.0
       },
       "recent": {
         "last60": [
@@ -684,11 +684,11 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 10,
+        "activities_count": 9,
         "distance_km": 187.28,
-        "time_hours": 6.75,
+        "time_hours": 6.22,
         "longest_km": 58.34,
-        "calories_kcal": 5584.0
+        "calories_kcal": 5167.0
       },
       "recent": {
         "last60": [
