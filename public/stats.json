@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-25T13:30:45.275572Z",
+  "generated_at": "2026-01-26T13:42:17.859668Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 27,
-        "distance_km": 282.32,
-        "time_hours": 21.85,
+        "activities_count": 26,
+        "distance_km": 338.87,
+        "time_hours": 22.55,
         "longest_km": 58.34,
-        "calories_kcal": 17930.0
+        "calories_kcal": 18670.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21663015408,
+            "name": "Zwift - Knights of the Roundabout in France",
+            "type": "virtual_ride",
+            "start": "2026-01-25 11:17:19",
+            "distance_km": 56.55,
+            "duration_min": 92.9,
+            "avg_speed_kmh": 36.51,
+            "calories_kcal": 1255.0
+          },
           {
             "id": 21643701872,
             "name": "Treadmill Running",
@@ -606,29 +616,12 @@
             "duration_min": 19.7,
             "avg_speed_kmh": 15.31,
             "calories_kcal": 345.0
-          },
-          {
-            "id": 21101538650,
-            "name": "Zwift - 40 easy 190 on Volcano Flat in Watopia",
-            "type": "virtual_ride",
-            "start": "2025-11-26 19:50:09",
-            "distance_km": 22.4,
-            "duration_min": 40.2,
-            "avg_speed_kmh": 33.39,
-            "calories_kcal": 436.0
           }
         ]
       },
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-12-01",
-            "week_end": "2025-12-07",
-            "distance_km": 384.72,
-            "time_hours": 12.59,
-            "calories_kcal": 9280.0
-          },
           {
             "week_start": "2025-12-08",
             "week_end": "2025-12-14",
@@ -674,9 +667,16 @@
           {
             "week_start": "2026-01-19",
             "week_end": "2026-01-25",
-            "distance_km": 13.23,
-            "time_hours": 1.48,
-            "calories_kcal": 1376.0
+            "distance_km": 69.78,
+            "time_hours": 3.03,
+            "calories_kcal": 2631.0
+          },
+          {
+            "week_start": "2026-01-26",
+            "week_end": "2026-02-01",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -685,13 +685,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 9,
-        "distance_km": 187.28,
-        "time_hours": 6.22,
+        "distance_km": 243.83,
+        "time_hours": 7.22,
         "longest_km": 58.34,
-        "calories_kcal": 5167.0
+        "calories_kcal": 6024.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21663015408,
+            "name": "Zwift - Knights of the Roundabout in France",
+            "type": "virtual_ride",
+            "start": "2026-01-25 11:17:19",
+            "distance_km": 56.55,
+            "duration_min": 92.9,
+            "avg_speed_kmh": 36.51,
+            "calories_kcal": 1255.0
+          },
           {
             "id": 21631749933,
             "name": "Zwift - Mountain Mash in Watopia",
@@ -1261,29 +1271,12 @@
             "duration_min": 13.5,
             "avg_speed_kmh": 16.94,
             "calories_kcal": 50.0
-          },
-          {
-            "id": 20827034517,
-            "name": "easy",
-            "type": "virtual_ride",
-            "start": "2025-10-28 20:43:13",
-            "distance_km": 34.21,
-            "duration_min": 60.3,
-            "avg_speed_kmh": 34.05,
-            "calories_kcal": 657.0
           }
         ]
       },
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-12-01",
-            "week_end": "2025-12-07",
-            "distance_km": 361.28,
-            "time_hours": 10.65,
-            "calories_kcal": 7373.0
-          },
           {
             "week_start": "2025-12-08",
             "week_end": "2025-12-14",
@@ -1329,9 +1322,16 @@
           {
             "week_start": "2026-01-19",
             "week_end": "2026-01-25",
-            "distance_km": 6.71,
-            "time_hours": 0.31,
-            "calories_kcal": 330.0
+            "distance_km": 63.27,
+            "time_hours": 1.85,
+            "calories_kcal": 1585.0
+          },
+          {
+            "week_start": "2026-01-26",
+            "week_end": "2026-02-01",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -1723,13 +1723,6 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-12-01",
-            "week_end": "2025-12-07",
-            "distance_km": 23.44,
-            "time_hours": 1.94,
-            "calories_kcal": 1907.0
-          },
-          {
             "week_start": "2025-12-08",
             "week_end": "2025-12-14",
             "distance_km": 23.33,
@@ -1777,6 +1770,13 @@
             "distance_km": 6.51,
             "time_hours": 1.17,
             "calories_kcal": 1046.0
+          },
+          {
+            "week_start": "2026-01-26",
+            "week_end": "2026-02-01",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -1796,13 +1796,6 @@
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-12-01",
-            "week_end": "2025-12-07",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
           {
             "week_start": "2025-12-08",
             "week_end": "2025-12-14",
@@ -1848,6 +1841,13 @@
           {
             "week_start": "2026-01-19",
             "week_end": "2026-01-25",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-01-26",
+            "week_end": "2026-02-01",
             "distance_km": 0.0,
             "time_hours": 0.0,
             "calories_kcal": 0.0
