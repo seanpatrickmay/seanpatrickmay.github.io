@@ -1,10 +1,15 @@
 {
-  "generated_at": "2026-01-25T13:30:21.369Z",
+  "generated_at": "2026-01-26T13:41:45.520Z",
   "artists": [
     {
       "name": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebdee560c99d80399eb20c3147",
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
+    },
+    {
+      "name": "Yoshihisa Hirano",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb50ad32967efe1f761967dff1",
+      "url": "https://open.spotify.com/artist/496DwthDgbHUwWycngajrJ"
     },
     {
       "name": "Zedd",
@@ -45,11 +50,6 @@
       "name": "Stromae",
       "image": "https://i.scdn.co/image/ab6761610000e5ebcc129f1c9b5047760d66aae2",
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
-    },
-    {
-      "name": "IVE",
-      "image": "https://i.scdn.co/image/ab6761610000e5eba9c8608865ca7eded5520359",
-      "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
     }
   ],
   "tracks": [
@@ -72,16 +72,10 @@
       "url": "https://open.spotify.com/track/1uaGSDFsLdReQgg8p7Obwh"
     },
     {
-      "name": "Tchaikovsky: Violin Concerto in D Major, Op. 35: I. Allegro moderato",
-      "artist": "Pyotr Ilyich Tchaikovsky, Itzhak Perlman, Philadelphia Orchestra, Eugene Ormandy",
-      "image": "https://i.scdn.co/image/ab67616d0000b27349958762ff3c53717d503a52",
-      "url": "https://open.spotify.com/track/6ppu8ECkNhZIqQAqbP7u5o"
-    },
-    {
-      "name": "Tchaikovsky: Swan Lake, Op. 20, Act 1: Introduction - No. 1, Scene. Allegro giusto",
-      "artist": "Pyotr Ilyich Tchaikovsky, André Previn, London Symphony Orchestra",
-      "image": "https://i.scdn.co/image/ab67616d0000b2731d9c6602aa95abd8c5b146da",
-      "url": "https://open.spotify.com/track/5tNUaNoIMdJcdHGj25a7gD"
+      "name": "je sais pas danser",
+      "artist": "Pomme",
+      "image": "https://i.scdn.co/image/ab67616d0000b27330bc1c0c2e0d7cb718f856f2",
+      "url": "https://open.spotify.com/track/7FMDhuPk4KiG2Y1DV7y56c"
     },
     {
       "name": "Hourglass",
@@ -94,6 +88,12 @@
       "artist": "Camille Saint-Saëns, Stéphane Tétreault, Fabien Gabel, Orchestre Symphonique De Québec",
       "image": "https://i.scdn.co/image/ab67616d0000b27318a83f747b59018eeba12b88",
       "url": "https://open.spotify.com/track/59eTbibtvvBIGj27eN3zqq"
+    },
+    {
+      "name": "Tchaikovsky: Violin Concerto in D Major, Op. 35: I. Allegro moderato",
+      "artist": "Pyotr Ilyich Tchaikovsky, Itzhak Perlman, Philadelphia Orchestra, Eugene Ormandy",
+      "image": "https://i.scdn.co/image/ab67616d0000b27349958762ff3c53717d503a52",
+      "url": "https://open.spotify.com/track/6ppu8ECkNhZIqQAqbP7u5o"
     },
     {
       "name": "Comfort Me",
