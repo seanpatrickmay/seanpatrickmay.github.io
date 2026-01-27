@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-26T13:41:45.520Z",
+  "generated_at": "2026-01-27T13:43:40.574Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -37,14 +37,14 @@
       "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
     },
     {
-      "name": "The Beatles",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe9348cc01ff5d55971b22433",
-      "url": "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
-    },
-    {
       "name": "NewJeans",
       "image": "https://i.scdn.co/image/ab6761610000e5eb80668ba2b15094d083780ea9",
       "url": "https://open.spotify.com/artist/6HvZYsbFfjnjFrWF950C9d"
+    },
+    {
+      "name": "The Beatles",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe9348cc01ff5d55971b22433",
+      "url": "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
     },
     {
       "name": "Stromae",
