@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-27T13:43:40.574Z",
+  "generated_at": "2026-01-28T13:45:24.456Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -37,33 +37,33 @@
       "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
     },
     {
+      "name": "TWICE",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb3d8820046fd455b38d644864",
+      "url": "https://open.spotify.com/artist/7n2Ycct7Beij7Dj7meI4X0"
+    },
+    {
       "name": "NewJeans",
       "image": "https://i.scdn.co/image/ab6761610000e5eb80668ba2b15094d083780ea9",
       "url": "https://open.spotify.com/artist/6HvZYsbFfjnjFrWF950C9d"
     },
     {
-      "name": "The Beatles",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe9348cc01ff5d55971b22433",
-      "url": "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
-    },
-    {
-      "name": "Stromae",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebcc129f1c9b5047760d66aae2",
-      "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
+      "name": "Kendrick Lamar",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb39ba6dcd4355c03de0b50918",
+      "url": "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg"
     }
   ],
   "tracks": [
-    {
-      "name": "Lover, You Should've Come Over",
-      "artist": "Jeff Buckley",
-      "image": "https://i.scdn.co/image/ab67616d0000b273afc2d1d2c8703a10aeded0af",
-      "url": "https://open.spotify.com/track/6Jv7kjGkhY2fT4yuBF3aTz"
-    },
     {
       "name": "Still With You",
       "artist": "Jung Kook",
       "image": "https://i.scdn.co/image/ab67616d0000b273a7f42c375578df426b37638d",
       "url": "https://open.spotify.com/track/0eFMbKCRw8KByXyWBw8WO7"
+    },
+    {
+      "name": "Lover, You Should've Come Over",
+      "artist": "Jeff Buckley",
+      "image": "https://i.scdn.co/image/ab67616d0000b273afc2d1d2c8703a10aeded0af",
+      "url": "https://open.spotify.com/track/6Jv7kjGkhY2fT4yuBF3aTz"
     },
     {
       "name": "Avril 14th",
