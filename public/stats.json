@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-27T13:44:54.831559Z",
+  "generated_at": "2026-01-28T13:46:45.877014Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,11 +9,11 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 26,
+        "activities_count": 25,
         "distance_km": 338.87,
-        "time_hours": 22.55,
+        "time_hours": 22.04,
         "longest_km": 58.34,
-        "calories_kcal": 18670.0
+        "calories_kcal": 18210.0
       },
       "recent": {
         "last60": [
