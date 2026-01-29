@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-28T13:46:45.877014Z",
+  "generated_at": "2026-01-29T13:58:41.211657Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 25,
-        "distance_km": 338.87,
-        "time_hours": 22.04,
+        "activities_count": 26,
+        "distance_km": 380.21,
+        "time_hours": 23.22,
         "longest_km": 58.34,
-        "calories_kcal": 18210.0
+        "calories_kcal": 19325.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21691857330,
+            "name": "Zwift - Triple Loops in London",
+            "type": "virtual_ride",
+            "start": "2026-01-28 09:46:29",
+            "distance_km": 41.34,
+            "duration_min": 70.5,
+            "avg_speed_kmh": 35.2,
+            "calories_kcal": 1115.0
+          },
           {
             "id": 21663015408,
             "name": "Zwift - Knights of the Roundabout in France",
@@ -606,16 +616,6 @@
             "duration_min": 36.0,
             "avg_speed_kmh": 8.12,
             "calories_kcal": 437.0
-          },
-          {
-            "id": 21105451098,
-            "name": "Howard County Course à pied",
-            "type": "running",
-            "start": "2025-11-27 08:30:12",
-            "distance_km": 5.03,
-            "duration_min": 19.7,
-            "avg_speed_kmh": 15.31,
-            "calories_kcal": 345.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2026-01-26",
             "week_end": "2026-02-01",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
+            "distance_km": 41.34,
+            "time_hours": 1.17,
+            "calories_kcal": 1115.0
           }
         ]
       }
@@ -684,14 +684,24 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 9,
-        "distance_km": 243.83,
-        "time_hours": 7.22,
+        "activities_count": 10,
+        "distance_km": 285.17,
+        "time_hours": 8.4,
         "longest_km": 58.34,
-        "calories_kcal": 6024.0
+        "calories_kcal": 7139.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21691857330,
+            "name": "Zwift - Triple Loops in London",
+            "type": "virtual_ride",
+            "start": "2026-01-28 09:46:29",
+            "distance_km": 41.34,
+            "duration_min": 70.5,
+            "avg_speed_kmh": 35.2,
+            "calories_kcal": 1115.0
+          },
           {
             "id": 21663015408,
             "name": "Zwift - Knights of the Roundabout in France",
@@ -1261,16 +1271,6 @@
             "duration_min": 62.8,
             "avg_speed_kmh": 34.79,
             "calories_kcal": 783.0
-          },
-          {
-            "id": 20832211639,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-10-29 11:21:02",
-            "distance_km": 3.81,
-            "duration_min": 13.5,
-            "avg_speed_kmh": 16.94,
-            "calories_kcal": 50.0
           }
         ]
       },
@@ -1329,9 +1329,9 @@
           {
             "week_start": "2026-01-26",
             "week_end": "2026-02-01",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
+            "distance_km": 41.34,
+            "time_hours": 1.17,
+            "calories_kcal": 1115.0
           }
         ]
       }
