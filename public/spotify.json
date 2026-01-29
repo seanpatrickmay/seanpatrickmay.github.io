@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-28T13:45:24.456Z",
+  "generated_at": "2026-01-29T13:58:11.426Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -20,6 +20,11 @@
       "name": "BTS",
       "image": "https://i.scdn.co/image/ab6761610000e5ebd642648235ebf3460d2d1f6a",
       "url": "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"
+    },
+    {
+      "name": "Wallows",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebfde4e7d59f6d8868e2ffdaf5",
+      "url": "https://open.spotify.com/artist/0NIPkIjTV8mB795yEIiPYL"
     },
     {
       "name": "Enya",
@@ -45,11 +50,6 @@
       "name": "NewJeans",
       "image": "https://i.scdn.co/image/ab6761610000e5eb80668ba2b15094d083780ea9",
       "url": "https://open.spotify.com/artist/6HvZYsbFfjnjFrWF950C9d"
-    },
-    {
-      "name": "Kendrick Lamar",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb39ba6dcd4355c03de0b50918",
-      "url": "https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg"
     }
   ],
   "tracks": [
@@ -60,16 +60,22 @@
       "url": "https://open.spotify.com/track/0eFMbKCRw8KByXyWBw8WO7"
     },
     {
+      "name": "Avril 14th",
+      "artist": "Aphex Twin",
+      "image": "https://i.scdn.co/image/ab67616d0000b2732e261a0b1b19d0ff95e346b3",
+      "url": "https://open.spotify.com/track/1uaGSDFsLdReQgg8p7Obwh"
+    },
+    {
       "name": "Lover, You Should've Come Over",
       "artist": "Jeff Buckley",
       "image": "https://i.scdn.co/image/ab67616d0000b273afc2d1d2c8703a10aeded0af",
       "url": "https://open.spotify.com/track/6Jv7kjGkhY2fT4yuBF3aTz"
     },
     {
-      "name": "Avril 14th",
-      "artist": "Aphex Twin",
-      "image": "https://i.scdn.co/image/ab67616d0000b2732e261a0b1b19d0ff95e346b3",
-      "url": "https://open.spotify.com/track/1uaGSDFsLdReQgg8p7Obwh"
+      "name": "Band On The Run - 2010 Remaster",
+      "artist": "Paul McCartney, Wings",
+      "image": "https://i.scdn.co/image/ab67616d0000b273be7a3a1e2d663eea2918e5a3",
+      "url": "https://open.spotify.com/track/1H4idkmruFoJBg1DvUv2tY"
     },
     {
       "name": "je sais pas danser",
@@ -88,12 +94,6 @@
       "artist": "Camille Saint-Saëns, Stéphane Tétreault, Fabien Gabel, Orchestre Symphonique De Québec",
       "image": "https://i.scdn.co/image/ab67616d0000b27318a83f747b59018eeba12b88",
       "url": "https://open.spotify.com/track/59eTbibtvvBIGj27eN3zqq"
-    },
-    {
-      "name": "Tchaikovsky: Violin Concerto in D Major, Op. 35: I. Allegro moderato",
-      "artist": "Pyotr Ilyich Tchaikovsky, Itzhak Perlman, Philadelphia Orchestra, Eugene Ormandy",
-      "image": "https://i.scdn.co/image/ab67616d0000b27349958762ff3c53717d503a52",
-      "url": "https://open.spotify.com/track/6ppu8ECkNhZIqQAqbP7u5o"
     },
     {
       "name": "Comfort Me",
