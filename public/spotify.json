@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-30T13:53:30.825Z",
+  "generated_at": "2026-01-31T13:38:23.164Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -27,6 +27,11 @@
       "url": "https://open.spotify.com/artist/0NIPkIjTV8mB795yEIiPYL"
     },
     {
+      "name": "Steely Dan",
+      "image": "https://i.scdn.co/image/9d01e4e9aac39b891d684d3d1a5b3a451d7c72bd",
+      "url": "https://open.spotify.com/artist/6P7H3ai06vU1sGvdpBwDmE"
+    },
+    {
       "name": "Enya",
       "image": "https://i.scdn.co/image/ab6761610000e5eb9ce996547e0b307c94f662e6",
       "url": "https://open.spotify.com/artist/6uothxMWeLWIhsGeF7cyo4"
@@ -45,11 +50,6 @@
       "name": "TWICE",
       "image": "https://i.scdn.co/image/ab6761610000e5eb3d8820046fd455b38d644864",
       "url": "https://open.spotify.com/artist/7n2Ycct7Beij7Dj7meI4X0"
-    },
-    {
-      "name": "NewJeans",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb80668ba2b15094d083780ea9",
-      "url": "https://open.spotify.com/artist/6HvZYsbFfjnjFrWF950C9d"
     }
   ],
   "tracks": [
