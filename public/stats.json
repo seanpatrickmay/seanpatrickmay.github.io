@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-31T13:39:38.589228Z",
+  "generated_at": "2026-02-01T13:41:12.374786Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 24,
-        "distance_km": 367.83,
-        "time_hours": 21.1,
+        "activities_count": 25,
+        "distance_km": 425.91,
+        "time_hours": 28.12,
         "longest_km": 58.34,
-        "calories_kcal": 17991.0
+        "calories_kcal": 20098.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21724478279,
+            "name": "Okemo Ski",
+            "type": "resort_skiing",
+            "start": "2026-01-31 09:05:13",
+            "distance_km": 58.08,
+            "duration_min": 421.3,
+            "avg_speed_kmh": 8.27,
+            "calories_kcal": 2107.0
+          },
           {
             "id": 21691857330,
             "name": "Zwift - Triple Loops in London",
@@ -606,16 +616,6 @@
             "duration_min": 12.8,
             "avg_speed_kmh": 12.71,
             "calories_kcal": 227.0
-          },
-          {
-            "id": 21125458177,
-            "name": "Columbia Course à pied",
-            "type": "running",
-            "start": "2025-11-29 14:22:09",
-            "distance_km": 4.87,
-            "duration_min": 36.0,
-            "avg_speed_kmh": 8.12,
-            "calories_kcal": 437.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2026-01-26",
             "week_end": "2026-02-01",
-            "distance_km": 41.34,
-            "time_hours": 1.17,
-            "calories_kcal": 1115.0
+            "distance_km": 99.41,
+            "time_hours": 8.2,
+            "calories_kcal": 3222.0
           }
         ]
       }
@@ -1261,16 +1261,6 @@
             "duration_min": 5.1,
             "avg_speed_kmh": 16.29,
             "calories_kcal": 50.0
-          },
-          {
-            "id": 20836244100,
-            "name": "easy",
-            "type": "virtual_ride",
-            "start": "2025-10-29 18:42:20",
-            "distance_km": 36.39,
-            "duration_min": 62.8,
-            "avg_speed_kmh": 34.79,
-            "calories_kcal": 783.0
           }
         ]
       },
