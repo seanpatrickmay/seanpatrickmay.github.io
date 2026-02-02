@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-01T13:41:12.374786Z",
+  "generated_at": "2026-02-02T14:01:36.554675Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,11 +9,11 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 25,
-        "distance_km": 425.91,
-        "time_hours": 28.12,
+        "activities_count": 24,
+        "distance_km": 420.43,
+        "time_hours": 27.12,
         "longest_km": 58.34,
-        "calories_kcal": 20098.0
+        "calories_kcal": 19221.0
       },
       "recent": {
         "last60": [
@@ -623,13 +623,6 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-12-08",
-            "week_end": "2025-12-14",
-            "distance_km": 315.95,
-            "time_hours": 13.16,
-            "calories_kcal": 9096.0
-          },
-          {
             "week_start": "2025-12-15",
             "week_end": "2025-12-21",
             "distance_km": 61.7,
@@ -677,6 +670,13 @@
             "distance_km": 99.41,
             "time_hours": 8.2,
             "calories_kcal": 3222.0
+          },
+          {
+            "week_start": "2026-02-02",
+            "week_end": "2026-02-08",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -1268,13 +1268,6 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-12-08",
-            "week_end": "2025-12-14",
-            "distance_km": 292.62,
-            "time_hours": 10.99,
-            "calories_kcal": 7043.0
-          },
-          {
             "week_start": "2025-12-15",
             "week_end": "2025-12-21",
             "distance_km": 29.59,
@@ -1322,6 +1315,13 @@
             "distance_km": 41.34,
             "time_hours": 1.17,
             "calories_kcal": 1115.0
+          },
+          {
+            "week_start": "2026-02-02",
+            "week_end": "2026-02-08",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -1329,11 +1329,11 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 14,
-        "distance_km": 82.67,
-        "time_hours": 12.7,
+        "activities_count": 13,
+        "distance_km": 77.19,
+        "time_hours": 11.7,
         "longest_km": 11.12,
-        "calories_kcal": 10852.0
+        "calories_kcal": 9975.0
       },
       "recent": {
         "last60": [
@@ -1713,13 +1713,6 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-12-08",
-            "week_end": "2025-12-14",
-            "distance_km": 23.33,
-            "time_hours": 1.81,
-            "calories_kcal": 1874.0
-          },
-          {
             "week_start": "2025-12-15",
             "week_end": "2025-12-21",
             "distance_km": 14.37,
@@ -1767,6 +1760,13 @@
             "distance_km": 0.0,
             "time_hours": 0.0,
             "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-02-02",
+            "week_end": "2026-02-08",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -1786,13 +1786,6 @@
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-12-08",
-            "week_end": "2025-12-14",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
           {
             "week_start": "2025-12-15",
             "week_end": "2025-12-21",
@@ -1838,6 +1831,13 @@
           {
             "week_start": "2026-01-26",
             "week_end": "2026-02-01",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-02-02",
+            "week_end": "2026-02-08",
             "distance_km": 0.0,
             "time_hours": 0.0,
             "calories_kcal": 0.0
