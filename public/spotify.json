@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-01T13:40:42.221Z",
+  "generated_at": "2026-02-02T14:00:33.690Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -37,11 +37,6 @@
       "url": "https://open.spotify.com/artist/6uothxMWeLWIhsGeF7cyo4"
     },
     {
-      "name": "Jeff Buckley",
-      "image": "https://i.scdn.co/image/67779606c7f151618a28f62b1d24fb514d39dacf",
-      "url": "https://open.spotify.com/artist/3nnQpaTvKb5jCQabZefACI"
-    },
-    {
       "name": "Kanye West",
       "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
       "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
@@ -50,6 +45,11 @@
       "name": "TWICE",
       "image": "https://i.scdn.co/image/ab6761610000e5eb3d8820046fd455b38d644864",
       "url": "https://open.spotify.com/artist/7n2Ycct7Beij7Dj7meI4X0"
+    },
+    {
+      "name": "NewJeans",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb8dae71b664393f38ba91f891",
+      "url": "https://open.spotify.com/artist/6HvZYsbFfjnjFrWF950C9d"
     }
   ],
   "tracks": [
@@ -64,12 +64,6 @@
       "artist": "Aphex Twin",
       "image": "https://i.scdn.co/image/ab67616d0000b2732e261a0b1b19d0ff95e346b3",
       "url": "https://open.spotify.com/track/1uaGSDFsLdReQgg8p7Obwh"
-    },
-    {
-      "name": "Lover, You Should've Come Over",
-      "artist": "Jeff Buckley",
-      "image": "https://i.scdn.co/image/ab67616d0000b273afc2d1d2c8703a10aeded0af",
-      "url": "https://open.spotify.com/track/6Jv7kjGkhY2fT4yuBF3aTz"
     },
     {
       "name": "Band On The Run - 2010 Remaster",
@@ -94,6 +88,12 @@
       "artist": "Camille Saint-Saëns, Stéphane Tétreault, Fabien Gabel, Orchestre Symphonique De Québec",
       "image": "https://i.scdn.co/image/ab67616d0000b27318a83f747b59018eeba12b88",
       "url": "https://open.spotify.com/track/59eTbibtvvBIGj27eN3zqq"
+    },
+    {
+      "name": "Bodhisattva",
+      "artist": "Steely Dan",
+      "image": "https://i.scdn.co/image/ab67616d0000b273f08f479a9dcdf7db7c85e3a8",
+      "url": "https://open.spotify.com/track/0j8zJzaQ2g86y5MzvMocRP"
     },
     {
       "name": "Comfort Me",
