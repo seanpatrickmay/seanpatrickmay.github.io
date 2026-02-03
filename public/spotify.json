@@ -1,20 +1,15 @@
 {
-  "generated_at": "2026-02-02T14:00:33.690Z",
+  "generated_at": "2026-02-03T14:02:47.497Z",
   "artists": [
-    {
-      "name": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebdee560c99d80399eb20c3147",
-      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
-    },
     {
       "name": "Yoshihisa Hirano",
       "image": "https://i.scdn.co/image/ab6761610000e5eb50ad32967efe1f761967dff1",
       "url": "https://open.spotify.com/artist/496DwthDgbHUwWycngajrJ"
     },
     {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+      "name": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebdee560c99d80399eb20c3147",
+      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
       "name": "BTS",
@@ -22,9 +17,14 @@
       "url": "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"
     },
     {
-      "name": "Wallows",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebfde4e7d59f6d8868e2ffdaf5",
-      "url": "https://open.spotify.com/artist/0NIPkIjTV8mB795yEIiPYL"
+      "name": "King Crimson",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb7c1c2fcf5a73dbfa60a40a18",
+      "url": "https://open.spotify.com/artist/7M1FPw29m5FbicYzS2xdpi"
+    },
+    {
+      "name": "Zedd",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
+      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
       "name": "Steely Dan",
@@ -32,24 +32,24 @@
       "url": "https://open.spotify.com/artist/6P7H3ai06vU1sGvdpBwDmE"
     },
     {
+      "name": "Wallows",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebfde4e7d59f6d8868e2ffdaf5",
+      "url": "https://open.spotify.com/artist/0NIPkIjTV8mB795yEIiPYL"
+    },
+    {
+      "name": "Lady Gaga",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
+      "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
+    },
+    {
       "name": "Enya",
       "image": "https://i.scdn.co/image/ab6761610000e5eb9ce996547e0b307c94f662e6",
       "url": "https://open.spotify.com/artist/6uothxMWeLWIhsGeF7cyo4"
     },
     {
-      "name": "Kanye West",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
-      "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
-    },
-    {
-      "name": "TWICE",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb3d8820046fd455b38d644864",
-      "url": "https://open.spotify.com/artist/7n2Ycct7Beij7Dj7meI4X0"
-    },
-    {
-      "name": "NewJeans",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb8dae71b664393f38ba91f891",
-      "url": "https://open.spotify.com/artist/6HvZYsbFfjnjFrWF950C9d"
+      "name": "Khalid",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb8f77c3eddc1869e9542b04bc",
+      "url": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
     }
   ],
   "tracks": [
@@ -78,16 +78,16 @@
       "url": "https://open.spotify.com/track/7FMDhuPk4KiG2Y1DV7y56c"
     },
     {
-      "name": "Hourglass",
-      "artist": "Zedd, LIZ",
-      "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
-      "url": "https://open.spotify.com/track/6NwrXtcFbc8OX7wJyBqE89"
-    },
-    {
       "name": "Le Cygne",
       "artist": "Camille Saint-Saëns, Stéphane Tétreault, Fabien Gabel, Orchestre Symphonique De Québec",
       "image": "https://i.scdn.co/image/ab67616d0000b27318a83f747b59018eeba12b88",
       "url": "https://open.spotify.com/track/59eTbibtvvBIGj27eN3zqq"
+    },
+    {
+      "name": "Hourglass",
+      "artist": "Zedd, LIZ",
+      "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
+      "url": "https://open.spotify.com/track/6NwrXtcFbc8OX7wJyBqE89"
     },
     {
       "name": "Bodhisattva",
