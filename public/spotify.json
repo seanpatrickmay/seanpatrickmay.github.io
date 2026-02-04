@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-03T14:02:47.497Z",
+  "generated_at": "2026-02-04T14:01:18.553Z",
   "artists": [
     {
       "name": "Yoshihisa Hirano",
@@ -42,14 +42,14 @@
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
     },
     {
+      "name": "Kanye West",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
+      "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
+    },
+    {
       "name": "Enya",
       "image": "https://i.scdn.co/image/ab6761610000e5eb9ce996547e0b307c94f662e6",
       "url": "https://open.spotify.com/artist/6uothxMWeLWIhsGeF7cyo4"
-    },
-    {
-      "name": "Khalid",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb8f77c3eddc1869e9542b04bc",
-      "url": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
     }
   ],
   "tracks": [
