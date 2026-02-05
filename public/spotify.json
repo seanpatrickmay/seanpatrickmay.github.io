@@ -1,20 +1,15 @@
 {
-  "generated_at": "2026-02-04T14:01:18.553Z",
+  "generated_at": "2026-02-05T14:04:10.053Z",
   "artists": [
-    {
-      "name": "Yoshihisa Hirano",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb50ad32967efe1f761967dff1",
-      "url": "https://open.spotify.com/artist/496DwthDgbHUwWycngajrJ"
-    },
-    {
-      "name": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebdee560c99d80399eb20c3147",
-      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
-    },
     {
       "name": "BTS",
       "image": "https://i.scdn.co/image/ab6761610000e5ebd642648235ebf3460d2d1f6a",
       "url": "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"
+    },
+    {
+      "name": "Yoshihisa Hirano",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb50ad32967efe1f761967dff1",
+      "url": "https://open.spotify.com/artist/496DwthDgbHUwWycngajrJ"
     },
     {
       "name": "King Crimson",
@@ -27,6 +22,11 @@
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
+      "name": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebdee560c99d80399eb20c3147",
+      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
+    },
+    {
       "name": "Steely Dan",
       "image": "https://i.scdn.co/image/9d01e4e9aac39b891d684d3d1a5b3a451d7c72bd",
       "url": "https://open.spotify.com/artist/6P7H3ai06vU1sGvdpBwDmE"
@@ -37,14 +37,14 @@
       "url": "https://open.spotify.com/artist/0NIPkIjTV8mB795yEIiPYL"
     },
     {
-      "name": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
-      "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
-    },
-    {
       "name": "Kanye West",
       "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
       "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
+    },
+    {
+      "name": "Lady Gaga",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
+      "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
     },
     {
       "name": "Enya",
@@ -90,6 +90,18 @@
       "url": "https://open.spotify.com/track/6NwrXtcFbc8OX7wJyBqE89"
     },
     {
+      "name": "Take What You Want (feat. Ozzy Osbourne & Travis Scott)",
+      "artist": "Post Malone, Ozzy Osbourne, Travis Scott",
+      "image": "https://i.scdn.co/image/ab67616d0000b2739478c87599550dd73bfa7e02",
+      "url": "https://open.spotify.com/track/7CZyCXKG6d5ALeq41sLzbw"
+    },
+    {
+      "name": "Pied Piper",
+      "artist": "BTS",
+      "image": "https://i.scdn.co/image/ab67616d0000b273829305487c8f3b96a1d955b3",
+      "url": "https://open.spotify.com/track/1ZPeaPDjQOOC8hw1mNjyjF"
+    },
+    {
       "name": "Bodhisattva",
       "artist": "Steely Dan",
       "image": "https://i.scdn.co/image/ab67616d0000b273f08f479a9dcdf7db7c85e3a8",
@@ -100,18 +112,6 @@
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27367fd900586544a0cd454d57f",
       "url": "https://open.spotify.com/track/3dAk7Z16rv38qRM3MIhCIX"
-    },
-    {
-      "name": "Menuet",
-      "artist": "Toshifumi Hinata",
-      "image": "https://i.scdn.co/image/ab67616d0000b273fb4aac6e97e78983ac5f6280",
-      "url": "https://open.spotify.com/track/0NxCQL5OFodinhM1GO5dxi"
-    },
-    {
-      "name": "Sonata for Violin and Guitar in A Minor, Op. 2, No. 6, MS 26: Tempo di Walzer",
-      "artist": "Niccolò Paganini, Scott St. John, Simon Wynberg",
-      "image": "https://i.scdn.co/image/ab67616d0000b273bcf3df9985c0d33f79b49f6a",
-      "url": "https://open.spotify.com/track/0Z8N2t2ESzixtZAOOiQYEu"
     }
   ]
 }
