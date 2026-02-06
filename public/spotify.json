@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-05T14:04:10.053Z",
+  "generated_at": "2026-02-06T13:59:58.258Z",
   "artists": [
     {
       "name": "BTS",
@@ -17,14 +17,14 @@
       "url": "https://open.spotify.com/artist/7M1FPw29m5FbicYzS2xdpi"
     },
     {
+      "name": "Lady Gaga",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
+      "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
+    },
+    {
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
-    {
-      "name": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebdee560c99d80399eb20c3147",
-      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
       "name": "Steely Dan",
@@ -42,14 +42,14 @@
       "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
     },
     {
-      "name": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
-      "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
-    },
-    {
       "name": "Enya",
       "image": "https://i.scdn.co/image/ab6761610000e5eb9ce996547e0b307c94f662e6",
       "url": "https://open.spotify.com/artist/6uothxMWeLWIhsGeF7cyo4"
+    },
+    {
+      "name": "Khalid",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb8f77c3eddc1869e9542b04bc",
+      "url": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
     }
   ],
   "tracks": [
@@ -60,10 +60,10 @@
       "url": "https://open.spotify.com/track/0eFMbKCRw8KByXyWBw8WO7"
     },
     {
-      "name": "Avril 14th",
-      "artist": "Aphex Twin",
-      "image": "https://i.scdn.co/image/ab67616d0000b2732e261a0b1b19d0ff95e346b3",
-      "url": "https://open.spotify.com/track/1uaGSDFsLdReQgg8p7Obwh"
+      "name": "Bodhisattva",
+      "artist": "Steely Dan",
+      "image": "https://i.scdn.co/image/ab67616d0000b273f08f479a9dcdf7db7c85e3a8",
+      "url": "https://open.spotify.com/track/0j8zJzaQ2g86y5MzvMocRP"
     },
     {
       "name": "Band On The Run - 2010 Remaster",
@@ -72,10 +72,28 @@
       "url": "https://open.spotify.com/track/1H4idkmruFoJBg1DvUv2tY"
     },
     {
+      "name": "Avril 14th",
+      "artist": "Aphex Twin",
+      "image": "https://i.scdn.co/image/ab67616d0000b2732e261a0b1b19d0ff95e346b3",
+      "url": "https://open.spotify.com/track/1uaGSDFsLdReQgg8p7Obwh"
+    },
+    {
+      "name": "I Talk To The Wind",
+      "artist": "King Crimson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273da7b326bd7ffa7b6b95b0660",
+      "url": "https://open.spotify.com/track/1T0CdfKPKb1gJi4vCKpZ9C"
+    },
+    {
       "name": "je sais pas danser",
       "artist": "Pomme",
       "image": "https://i.scdn.co/image/ab67616d0000b27330bc1c0c2e0d7cb718f856f2",
       "url": "https://open.spotify.com/track/7FMDhuPk4KiG2Y1DV7y56c"
+    },
+    {
+      "name": "Green",
+      "artist": "Hiroshi Yoshimura",
+      "image": "https://i.scdn.co/image/ab67616d0000b273a3e5bbdf5dc3ce666926342e",
+      "url": "https://open.spotify.com/track/1osR4MmVEDVk2FXw5xr5Xv"
     },
     {
       "name": "Le Cygne",
@@ -84,34 +102,16 @@
       "url": "https://open.spotify.com/track/59eTbibtvvBIGj27eN3zqq"
     },
     {
+      "name": "California",
+      "artist": "Joni Mitchell",
+      "image": "https://i.scdn.co/image/ab67616d0000b273e79dc1438d650f426b5e99a7",
+      "url": "https://open.spotify.com/track/5eM6Rrk8rwLpUhrh7Kk5R1"
+    },
+    {
       "name": "Hourglass",
       "artist": "Zedd, LIZ",
       "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
       "url": "https://open.spotify.com/track/6NwrXtcFbc8OX7wJyBqE89"
-    },
-    {
-      "name": "Take What You Want (feat. Ozzy Osbourne & Travis Scott)",
-      "artist": "Post Malone, Ozzy Osbourne, Travis Scott",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739478c87599550dd73bfa7e02",
-      "url": "https://open.spotify.com/track/7CZyCXKG6d5ALeq41sLzbw"
-    },
-    {
-      "name": "Pied Piper",
-      "artist": "BTS",
-      "image": "https://i.scdn.co/image/ab67616d0000b273829305487c8f3b96a1d955b3",
-      "url": "https://open.spotify.com/track/1ZPeaPDjQOOC8hw1mNjyjF"
-    },
-    {
-      "name": "Bodhisattva",
-      "artist": "Steely Dan",
-      "image": "https://i.scdn.co/image/ab67616d0000b273f08f479a9dcdf7db7c85e3a8",
-      "url": "https://open.spotify.com/track/0j8zJzaQ2g86y5MzvMocRP"
-    },
-    {
-      "name": "Comfort Me",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27367fd900586544a0cd454d57f",
-      "url": "https://open.spotify.com/track/3dAk7Z16rv38qRM3MIhCIX"
     }
   ]
 }
