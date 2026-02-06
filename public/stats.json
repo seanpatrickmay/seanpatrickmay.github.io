@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-05T14:04:33.827386Z",
+  "generated_at": "2026-02-06T14:01:41.205468Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 20,
-        "distance_km": 403.86,
-        "time_hours": 23.79,
+        "activities_count": 21,
+        "distance_km": 434.43,
+        "time_hours": 24.75,
         "longest_km": 58.34,
-        "calories_kcal": 16511.0
+        "calories_kcal": 17428.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21778759778,
+            "name": "Zwift - Mountain Route in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-02-05 20:47:18",
+            "distance_km": 30.57,
+            "duration_min": 57.1,
+            "avg_speed_kmh": 32.1,
+            "calories_kcal": 917.0
+          },
           {
             "id": 21724478279,
             "name": "Okemo Ski",
@@ -606,16 +616,6 @@
             "duration_min": 35.0,
             "avg_speed_kmh": 9.72,
             "calories_kcal": 477.0
-          },
-          {
-            "id": 21144931006,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-12-01 19:21:12",
-            "distance_km": 2.72,
-            "duration_min": 12.8,
-            "avg_speed_kmh": 12.71,
-            "calories_kcal": 227.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2026-02-02",
             "week_end": "2026-02-08",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
+            "distance_km": 30.57,
+            "time_hours": 0.95,
+            "calories_kcal": 917.0
           }
         ]
       }
@@ -684,14 +684,24 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 9,
-        "distance_km": 285.17,
-        "time_hours": 8.15,
+        "activities_count": 10,
+        "distance_km": 315.74,
+        "time_hours": 9.1,
         "longest_km": 58.34,
-        "calories_kcal": 6890.0
+        "calories_kcal": 7807.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21778759778,
+            "name": "Zwift - Mountain Route in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-02-05 20:47:18",
+            "distance_km": 30.57,
+            "duration_min": 57.1,
+            "avg_speed_kmh": 32.1,
+            "calories_kcal": 917.0
+          },
           {
             "id": 21691857330,
             "name": "Zwift - Triple Loops in London",
@@ -1251,16 +1261,6 @@
             "duration_min": 7.5,
             "avg_speed_kmh": 20.13,
             "calories_kcal": 32.0
-          },
-          {
-            "id": 20845512979,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-10-30 19:08:07",
-            "distance_km": 1.39,
-            "duration_min": 5.1,
-            "avg_speed_kmh": 16.29,
-            "calories_kcal": 50.0
           }
         ]
       },
@@ -1319,9 +1319,9 @@
           {
             "week_start": "2026-02-02",
             "week_end": "2026-02-08",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
+            "distance_km": 30.57,
+            "time_hours": 0.95,
+            "calories_kcal": 917.0
           }
         ]
       }
