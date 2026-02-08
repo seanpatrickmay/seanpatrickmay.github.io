@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-07T13:41:09.439Z",
+  "generated_at": "2026-02-08T13:41:50.806Z",
   "artists": [
     {
       "name": "BTS",
@@ -22,11 +22,6 @@
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
     },
     {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
-    {
       "name": "Steely Dan",
       "image": "https://i.scdn.co/image/9d01e4e9aac39b891d684d3d1a5b3a451d7c72bd",
       "url": "https://open.spotify.com/artist/6P7H3ai06vU1sGvdpBwDmE"
@@ -47,6 +42,11 @@
       "url": "https://open.spotify.com/artist/6uothxMWeLWIhsGeF7cyo4"
     },
     {
+      "name": "Zedd",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
+      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+    },
+    {
       "name": "Khalid",
       "image": "https://i.scdn.co/image/ab6761610000e5eb8f77c3eddc1869e9542b04bc",
       "url": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
@@ -58,6 +58,12 @@
       "artist": "Jung Kook",
       "image": "https://i.scdn.co/image/ab67616d0000b273a7f42c375578df426b37638d",
       "url": "https://open.spotify.com/track/0eFMbKCRw8KByXyWBw8WO7"
+    },
+    {
+      "name": "Avril 14th",
+      "artist": "Aphex Twin",
+      "image": "https://i.scdn.co/image/ab67616d0000b2732e261a0b1b19d0ff95e346b3",
+      "url": "https://open.spotify.com/track/1uaGSDFsLdReQgg8p7Obwh"
     },
     {
       "name": "Bodhisattva",
@@ -78,10 +84,10 @@
       "url": "https://open.spotify.com/track/7FMDhuPk4KiG2Y1DV7y56c"
     },
     {
-      "name": "Avril 14th",
-      "artist": "Aphex Twin",
-      "image": "https://i.scdn.co/image/ab67616d0000b2732e261a0b1b19d0ff95e346b3",
-      "url": "https://open.spotify.com/track/1uaGSDFsLdReQgg8p7Obwh"
+      "name": "Le Cygne",
+      "artist": "Camille Saint-Saëns, Stéphane Tétreault, Fabien Gabel, Orchestre Symphonique De Québec",
+      "image": "https://i.scdn.co/image/ab67616d0000b27318a83f747b59018eeba12b88",
+      "url": "https://open.spotify.com/track/59eTbibtvvBIGj27eN3zqq"
     },
     {
       "name": "I Talk To The Wind",
@@ -96,22 +102,16 @@
       "url": "https://open.spotify.com/track/1osR4MmVEDVk2FXw5xr5Xv"
     },
     {
-      "name": "Le Cygne",
-      "artist": "Camille Saint-Saëns, Stéphane Tétreault, Fabien Gabel, Orchestre Symphonique De Québec",
-      "image": "https://i.scdn.co/image/ab67616d0000b27318a83f747b59018eeba12b88",
-      "url": "https://open.spotify.com/track/59eTbibtvvBIGj27eN3zqq"
-    },
-    {
       "name": "California",
       "artist": "Joni Mitchell",
       "image": "https://i.scdn.co/image/ab67616d0000b273e79dc1438d650f426b5e99a7",
       "url": "https://open.spotify.com/track/5eM6Rrk8rwLpUhrh7Kk5R1"
     },
     {
-      "name": "Hourglass",
-      "artist": "Zedd, LIZ",
-      "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
-      "url": "https://open.spotify.com/track/6NwrXtcFbc8OX7wJyBqE89"
+      "name": "Money Honey",
+      "artist": "Lady Gaga",
+      "image": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
+      "url": "https://open.spotify.com/track/6gknJVkbQb8jkAXbXx0SYA"
     }
   ]
 }
