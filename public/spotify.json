@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-08T13:41:50.806Z",
+  "generated_at": "2026-02-09T14:12:57.988Z",
   "artists": [
     {
       "name": "BTS",
@@ -20,6 +20,11 @@
       "name": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
+    },
+    {
+      "name": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebdee560c99d80399eb20c3147",
+      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
       "name": "Steely Dan",
@@ -45,11 +50,6 @@
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
-    {
-      "name": "Khalid",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb8f77c3eddc1869e9542b04bc",
-      "url": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
     }
   ],
   "tracks": [
@@ -78,12 +78,6 @@
       "url": "https://open.spotify.com/track/1H4idkmruFoJBg1DvUv2tY"
     },
     {
-      "name": "je sais pas danser",
-      "artist": "Pomme",
-      "image": "https://i.scdn.co/image/ab67616d0000b27330bc1c0c2e0d7cb718f856f2",
-      "url": "https://open.spotify.com/track/7FMDhuPk4KiG2Y1DV7y56c"
-    },
-    {
       "name": "Le Cygne",
       "artist": "Camille Saint-Saëns, Stéphane Tétreault, Fabien Gabel, Orchestre Symphonique De Québec",
       "image": "https://i.scdn.co/image/ab67616d0000b27318a83f747b59018eeba12b88",
@@ -96,22 +90,28 @@
       "url": "https://open.spotify.com/track/1T0CdfKPKb1gJi4vCKpZ9C"
     },
     {
+      "name": "je sais pas danser",
+      "artist": "Pomme",
+      "image": "https://i.scdn.co/image/ab67616d0000b27330bc1c0c2e0d7cb718f856f2",
+      "url": "https://open.spotify.com/track/7FMDhuPk4KiG2Y1DV7y56c"
+    },
+    {
       "name": "Green",
       "artist": "Hiroshi Yoshimura",
       "image": "https://i.scdn.co/image/ab67616d0000b273a3e5bbdf5dc3ce666926342e",
       "url": "https://open.spotify.com/track/1osR4MmVEDVk2FXw5xr5Xv"
     },
     {
-      "name": "California",
-      "artist": "Joni Mitchell",
-      "image": "https://i.scdn.co/image/ab67616d0000b273e79dc1438d650f426b5e99a7",
-      "url": "https://open.spotify.com/track/5eM6Rrk8rwLpUhrh7Kk5R1"
+      "name": "Serenade in C Major, Op. 48: III. Elegie",
+      "artist": "Pyotr Ilyich Tchaikovsky, Vienna Chamber Orchestra, Philippe Entremont",
+      "image": "https://i.scdn.co/image/ab67616d0000b273233bfb7032ec7ca7af65156f",
+      "url": "https://open.spotify.com/track/1iKTPTFJJDMbq7Y6m8Qv1A"
     },
     {
-      "name": "Money Honey",
-      "artist": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
-      "url": "https://open.spotify.com/track/6gknJVkbQb8jkAXbXx0SYA"
+      "name": "21st Century Schizoid Man - Including \"Mirrors\"",
+      "artist": "King Crimson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273da7b326bd7ffa7b6b95b0660",
+      "url": "https://open.spotify.com/track/2MfrET7Nc3StKQcGoZKqr9"
     }
   ]
 }
