@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-09T14:12:57.988Z",
+  "generated_at": "2026-02-10T14:19:40.316Z",
   "artists": [
     {
       "name": "BTS",
@@ -42,14 +42,14 @@
       "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
     },
     {
-      "name": "Enya",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb9ce996547e0b307c94f662e6",
-      "url": "https://open.spotify.com/artist/6uothxMWeLWIhsGeF7cyo4"
-    },
-    {
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+    },
+    {
+      "name": "Khalid",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb8f77c3eddc1869e9542b04bc",
+      "url": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
     }
   ],
   "tracks": [
@@ -96,6 +96,12 @@
       "url": "https://open.spotify.com/track/7FMDhuPk4KiG2Y1DV7y56c"
     },
     {
+      "name": "Right As Rain",
+      "artist": "Adele",
+      "image": "https://i.scdn.co/image/ab67616d0000b27389d0ff2366a208016b6e9c6e",
+      "url": "https://open.spotify.com/track/6OLudcGaT6HQ5bXH54kI8i"
+    },
+    {
       "name": "Green",
       "artist": "Hiroshi Yoshimura",
       "image": "https://i.scdn.co/image/ab67616d0000b273a3e5bbdf5dc3ce666926342e",
@@ -106,12 +112,6 @@
       "artist": "Pyotr Ilyich Tchaikovsky, Vienna Chamber Orchestra, Philippe Entremont",
       "image": "https://i.scdn.co/image/ab67616d0000b273233bfb7032ec7ca7af65156f",
       "url": "https://open.spotify.com/track/1iKTPTFJJDMbq7Y6m8Qv1A"
-    },
-    {
-      "name": "21st Century Schizoid Man - Including \"Mirrors\"",
-      "artist": "King Crimson",
-      "image": "https://i.scdn.co/image/ab67616d0000b273da7b326bd7ffa7b6b95b0660",
-      "url": "https://open.spotify.com/track/2MfrET7Nc3StKQcGoZKqr9"
     }
   ]
 }
