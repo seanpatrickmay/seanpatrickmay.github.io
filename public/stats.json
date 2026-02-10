@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-09T14:13:24.847652Z",
+  "generated_at": "2026-02-10T14:20:07.242032Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -10,13 +10,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 16,
-        "distance_km": 354.39,
-        "time_hours": 20.08,
+        "distance_km": 358.36,
+        "time_hours": 20.37,
         "longest_km": 58.34,
-        "calories_kcal": 13659.0
+        "calories_kcal": 13580.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21820176465,
+            "name": "Zwift - Jurassic Coast in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-02-09 23:30:09",
+            "distance_km": 24.0,
+            "duration_min": 49.8,
+            "avg_speed_kmh": 28.93,
+            "calories_kcal": 439.0
+          },
           {
             "id": 21778759778,
             "name": "Zwift - Mountain Route in Watopia",
@@ -606,16 +616,6 @@
             "duration_min": 12.5,
             "avg_speed_kmh": 13.06,
             "calories_kcal": 216.0
-          },
-          {
-            "id": 21144931521,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-12-01 19:49:03",
-            "distance_km": 5.67,
-            "duration_min": 35.0,
-            "avg_speed_kmh": 9.72,
-            "calories_kcal": 477.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2026-02-09",
             "week_end": "2026-02-15",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
+            "distance_km": 24.0,
+            "time_hours": 0.83,
+            "calories_kcal": 439.0
           }
         ]
       }
@@ -685,13 +685,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 8,
-        "distance_km": 257.95,
-        "time_hours": 7.44,
+        "distance_km": 261.91,
+        "time_hours": 7.72,
         "longest_km": 58.34,
-        "calories_kcal": 6541.0
+        "calories_kcal": 6462.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21820176465,
+            "name": "Zwift - Jurassic Coast in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-02-09 23:30:09",
+            "distance_km": 24.0,
+            "duration_min": 49.8,
+            "avg_speed_kmh": 28.93,
+            "calories_kcal": 439.0
+          },
           {
             "id": 21778759778,
             "name": "Zwift - Mountain Route in Watopia",
@@ -1251,16 +1261,6 @@
             "duration_min": 12.3,
             "avg_speed_kmh": 17.41,
             "calories_kcal": 63.0
-          },
-          {
-            "id": 20849236237,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-10-31 08:12:41",
-            "distance_km": 2.53,
-            "duration_min": 7.5,
-            "avg_speed_kmh": 20.13,
-            "calories_kcal": 32.0
           }
         ]
       },
@@ -1319,9 +1319,9 @@
           {
             "week_start": "2026-02-09",
             "week_end": "2026-02-15",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
+            "distance_km": 24.0,
+            "time_hours": 0.83,
+            "calories_kcal": 439.0
           }
         ]
       }
