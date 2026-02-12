@@ -1,11 +1,6 @@
 {
-  "generated_at": "2026-02-11T14:14:15.365Z",
+  "generated_at": "2026-02-12T14:09:01.212Z",
   "artists": [
-    {
-      "name": "BTS",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd642648235ebf3460d2d1f6a",
-      "url": "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"
-    },
     {
       "name": "Yoshihisa Hirano",
       "image": "https://i.scdn.co/image/ab6761610000e5eb50ad32967efe1f761967dff1",
@@ -15,6 +10,11 @@
       "name": "King Crimson",
       "image": "https://i.scdn.co/image/ab6761610000e5eb7c1c2fcf5a73dbfa60a40a18",
       "url": "https://open.spotify.com/artist/7M1FPw29m5FbicYzS2xdpi"
+    },
+    {
+      "name": "BTS",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd642648235ebf3460d2d1f6a",
+      "url": "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"
     },
     {
       "name": "Lady Gaga",
@@ -37,6 +37,11 @@
       "url": "https://open.spotify.com/artist/0NIPkIjTV8mB795yEIiPYL"
     },
     {
+      "name": "Adele",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
+      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
+    },
+    {
       "name": "Kanye West",
       "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
       "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
@@ -45,11 +50,6 @@
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
-    {
-      "name": "Khalid",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb8f77c3eddc1869e9542b04bc",
-      "url": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
     }
   ],
   "tracks": [
@@ -58,12 +58,6 @@
       "artist": "Aphex Twin",
       "image": "https://i.scdn.co/image/ab67616d0000b2732e261a0b1b19d0ff95e346b3",
       "url": "https://open.spotify.com/track/1uaGSDFsLdReQgg8p7Obwh"
-    },
-    {
-      "name": "Still With You",
-      "artist": "Jung Kook",
-      "image": "https://i.scdn.co/image/ab67616d0000b273a7f42c375578df426b37638d",
-      "url": "https://open.spotify.com/track/0eFMbKCRw8KByXyWBw8WO7"
     },
     {
       "name": "Bodhisattva",
@@ -96,22 +90,28 @@
       "url": "https://open.spotify.com/track/7FMDhuPk4KiG2Y1DV7y56c"
     },
     {
+      "name": "Still With You",
+      "artist": "Jung Kook",
+      "image": "https://i.scdn.co/image/ab67616d0000b273a7f42c375578df426b37638d",
+      "url": "https://open.spotify.com/track/0eFMbKCRw8KByXyWBw8WO7"
+    },
+    {
       "name": "Right As Rain",
       "artist": "Adele",
       "image": "https://i.scdn.co/image/ab67616d0000b27389d0ff2366a208016b6e9c6e",
       "url": "https://open.spotify.com/track/6OLudcGaT6HQ5bXH54kI8i"
     },
     {
-      "name": "Green",
-      "artist": "Hiroshi Yoshimura",
-      "image": "https://i.scdn.co/image/ab67616d0000b273a3e5bbdf5dc3ce666926342e",
-      "url": "https://open.spotify.com/track/1osR4MmVEDVk2FXw5xr5Xv"
+      "name": "Upside Down",
+      "artist": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab67616d0000b2731e0232d637e8313d3ef4923e",
+      "url": "https://open.spotify.com/track/6shRGWCtBUOPFLFTTqXZIC"
     },
     {
-      "name": "Serenade in C Major, Op. 48: III. Elegie",
-      "artist": "Pyotr Ilyich Tchaikovsky, Vienna Chamber Orchestra, Philippe Entremont",
-      "image": "https://i.scdn.co/image/ab67616d0000b273233bfb7032ec7ca7af65156f",
-      "url": "https://open.spotify.com/track/1iKTPTFJJDMbq7Y6m8Qv1A"
+      "name": "Show Me How",
+      "artist": "Men I Trust",
+      "image": "https://i.scdn.co/image/ab67616d0000b273deeb617204bc14f4ee87b057",
+      "url": "https://open.spotify.com/track/75IQVo8hqI1iwVZyvkN2VT"
     }
   ]
 }
