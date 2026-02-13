@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-12T14:09:01.212Z",
+  "generated_at": "2026-02-13T14:00:30.736Z",
   "artists": [
     {
       "name": "Yoshihisa Hirano",
@@ -22,6 +22,11 @@
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
     },
     {
+      "name": "Adele",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
+      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
+    },
+    {
       "name": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebdee560c99d80399eb20c3147",
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
@@ -37,19 +42,14 @@
       "url": "https://open.spotify.com/artist/0NIPkIjTV8mB795yEIiPYL"
     },
     {
-      "name": "Adele",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
-      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
-    },
-    {
       "name": "Kanye West",
       "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
       "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
     },
     {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     }
   ],
   "tracks": [
