@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-15T13:42:49.295Z",
+  "generated_at": "2026-02-16T14:04:03.103Z",
   "artists": [
     {
       "name": "Yoshihisa Hirano",
@@ -22,6 +22,11 @@
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
     },
     {
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+    },
+    {
       "name": "Adele",
       "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
@@ -37,19 +42,14 @@
       "url": "https://open.spotify.com/artist/0NIPkIjTV8mB795yEIiPYL"
     },
     {
-      "name": "Kanye West",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
-      "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
-    },
-    {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
-    },
-    {
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+    },
+    {
+      "name": "Khalid",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb8f77c3eddc1869e9542b04bc",
+      "url": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
     }
   ],
   "tracks": [
@@ -58,12 +58,6 @@
       "artist": "King Crimson",
       "image": "https://i.scdn.co/image/ab67616d0000b273da7b326bd7ffa7b6b95b0660",
       "url": "https://open.spotify.com/track/1T0CdfKPKb1gJi4vCKpZ9C"
-    },
-    {
-      "name": "Avril 14th",
-      "artist": "Aphex Twin",
-      "image": "https://i.scdn.co/image/ab67616d0000b2732e261a0b1b19d0ff95e346b3",
-      "url": "https://open.spotify.com/track/1uaGSDFsLdReQgg8p7Obwh"
     },
     {
       "name": "Bodhisattva",
@@ -78,12 +72,6 @@
       "url": "https://open.spotify.com/track/1H4idkmruFoJBg1DvUv2tY"
     },
     {
-      "name": "Le Cygne",
-      "artist": "Camille Saint-Saëns, Stéphane Tétreault, Fabien Gabel, Orchestre Symphonique De Québec",
-      "image": "https://i.scdn.co/image/ab67616d0000b27318a83f747b59018eeba12b88",
-      "url": "https://open.spotify.com/track/59eTbibtvvBIGj27eN3zqq"
-    },
-    {
       "name": "je sais pas danser",
       "artist": "Pomme",
       "image": "https://i.scdn.co/image/ab67616d0000b27330bc1c0c2e0d7cb718f856f2",
@@ -94,6 +82,12 @@
       "artist": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
       "url": "https://open.spotify.com/track/6gknJVkbQb8jkAXbXx0SYA"
+    },
+    {
+      "name": "Le Cygne",
+      "artist": "Camille Saint-Saëns, Stéphane Tétreault, Fabien Gabel, Orchestre Symphonique De Québec",
+      "image": "https://i.scdn.co/image/ab67616d0000b27318a83f747b59018eeba12b88",
+      "url": "https://open.spotify.com/track/59eTbibtvvBIGj27eN3zqq"
     },
     {
       "name": "Still With You",
@@ -112,6 +106,12 @@
       "artist": "Adele",
       "image": "https://i.scdn.co/image/ab67616d0000b27389d0ff2366a208016b6e9c6e",
       "url": "https://open.spotify.com/track/6OLudcGaT6HQ5bXH54kI8i"
+    },
+    {
+      "name": "Upside Down",
+      "artist": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab67616d0000b2731e0232d637e8313d3ef4923e",
+      "url": "https://open.spotify.com/track/6shRGWCtBUOPFLFTTqXZIC"
     }
   ]
 }
