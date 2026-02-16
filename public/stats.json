@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-15T13:43:06.501797Z",
+  "generated_at": "2026-02-16T14:04:25.850588Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -10,13 +10,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 11,
-        "distance_km": 307.44,
-        "time_hours": 16.47,
+        "distance_km": 358.51,
+        "time_hours": 17.15,
         "longest_km": 58.34,
-        "calories_kcal": 9866.0
+        "calories_kcal": 10190.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21880787373,
+            "name": "Zwift - Out And Back Again in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-02-15 16:22:15",
+            "distance_km": 56.62,
+            "duration_min": 100.9,
+            "avg_speed_kmh": 33.68,
+            "calories_kcal": 1186.0
+          },
           {
             "id": 21829397825,
             "name": "Zwift - Downtown Eruption in Watopia",
@@ -606,29 +616,12 @@
             "duration_min": 120.3,
             "avg_speed_kmh": 38.08,
             "calories_kcal": 1652.0
-          },
-          {
-            "id": 21154506416,
-            "name": "easy",
-            "type": "virtual_ride",
-            "start": "2025-12-02 18:45:35",
-            "distance_km": 71.46,
-            "duration_min": 119.6,
-            "avg_speed_kmh": 35.86,
-            "calories_kcal": 1286.0
           }
         ]
       },
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-12-22",
-            "week_end": "2025-12-28",
-            "distance_km": 5.02,
-            "time_hours": 2.3,
-            "calories_kcal": 1816.0
-          },
           {
             "week_start": "2025-12-29",
             "week_end": "2026-01-04",
@@ -674,9 +667,16 @@
           {
             "week_start": "2026-02-09",
             "week_end": "2026-02-15",
-            "distance_km": 43.79,
-            "time_hours": 1.59,
-            "calories_kcal": 850.0
+            "distance_km": 100.41,
+            "time_hours": 3.27,
+            "calories_kcal": 2036.0
+          },
+          {
+            "week_start": "2026-02-16",
+            "week_end": "2026-02-22",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -684,14 +684,24 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 7,
-        "distance_km": 237.3,
-        "time_hours": 7.27,
+        "activities_count": 8,
+        "distance_km": 293.92,
+        "time_hours": 8.96,
         "longest_km": 58.34,
-        "calories_kcal": 5851.0
+        "calories_kcal": 7037.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21880787373,
+            "name": "Zwift - Out And Back Again in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-02-15 16:22:15",
+            "distance_km": 56.62,
+            "duration_min": 100.9,
+            "avg_speed_kmh": 33.68,
+            "calories_kcal": 1186.0
+          },
           {
             "id": 21829397825,
             "name": "Zwift - Downtown Eruption in Watopia",
@@ -1251,29 +1261,12 @@
             "duration_min": 11.7,
             "avg_speed_kmh": 14.97,
             "calories_kcal": 157.0
-          },
-          {
-            "id": 20854459534,
-            "name": "z2",
-            "type": "virtual_ride",
-            "start": "2025-10-31 18:35:49",
-            "distance_km": 86.66,
-            "duration_min": 145.3,
-            "avg_speed_kmh": 35.79,
-            "calories_kcal": 1716.0
           }
         ]
       },
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-12-22",
-            "week_end": "2025-12-28",
-            "distance_km": 0.0,
-            "time_hours": 1.08,
-            "calories_kcal": 815.0
-          },
           {
             "week_start": "2025-12-29",
             "week_end": "2026-01-04",
@@ -1319,9 +1312,16 @@
           {
             "week_start": "2026-02-09",
             "week_end": "2026-02-15",
-            "distance_km": 43.79,
-            "time_hours": 1.59,
-            "calories_kcal": 850.0
+            "distance_km": 100.41,
+            "time_hours": 3.27,
+            "calories_kcal": 2036.0
+          },
+          {
+            "week_start": "2026-02-16",
+            "week_end": "2026-02-22",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -1329,11 +1329,11 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 3,
-        "distance_km": 12.06,
-        "time_hours": 2.18,
-        "longest_km": 5.55,
-        "calories_kcal": 1908.0
+        "activities_count": 2,
+        "distance_km": 6.51,
+        "time_hours": 1.17,
+        "longest_km": 4.96,
+        "calories_kcal": 1046.0
       },
       "recent": {
         "last60": [
@@ -1713,13 +1713,6 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-12-22",
-            "week_end": "2025-12-28",
-            "distance_km": 5.02,
-            "time_hours": 0.41,
-            "calories_kcal": 424.0
-          },
-          {
             "week_start": "2025-12-29",
             "week_end": "2026-01-04",
             "distance_km": 23.17,
@@ -1767,6 +1760,13 @@
             "distance_km": 0.0,
             "time_hours": 0.0,
             "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-02-16",
+            "week_end": "2026-02-22",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -1786,13 +1786,6 @@
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2025-12-22",
-            "week_end": "2025-12-28",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
           {
             "week_start": "2025-12-29",
             "week_end": "2026-01-04",
@@ -1838,6 +1831,13 @@
           {
             "week_start": "2026-02-09",
             "week_end": "2026-02-15",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-02-16",
+            "week_end": "2026-02-22",
             "distance_km": 0.0,
             "time_hours": 0.0,
             "calories_kcal": 0.0
