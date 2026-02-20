@@ -1,10 +1,15 @@
 {
-  "generated_at": "2026-02-19T14:07:13.124Z",
+  "generated_at": "2026-02-20T13:58:52.141Z",
   "artists": [
     {
       "name": "Yoshihisa Hirano",
       "image": "https://i.scdn.co/image/ab6761610000e5eb50ad32967efe1f761967dff1",
       "url": "https://open.spotify.com/artist/496DwthDgbHUwWycngajrJ"
+    },
+    {
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
       "name": "King Crimson",
@@ -20,11 +25,6 @@
       "name": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
-    },
-    {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
       "name": "Morgan Wallen",
@@ -72,12 +72,6 @@
       "url": "https://open.spotify.com/track/1H4idkmruFoJBg1DvUv2tY"
     },
     {
-      "name": "je sais pas danser",
-      "artist": "Pomme",
-      "image": "https://i.scdn.co/image/ab67616d0000b27330bc1c0c2e0d7cb718f856f2",
-      "url": "https://open.spotify.com/track/7FMDhuPk4KiG2Y1DV7y56c"
-    },
-    {
       "name": "Money Honey",
       "artist": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
@@ -112,6 +106,12 @@
       "artist": "Men I Trust",
       "image": "https://i.scdn.co/image/ab67616d0000b273deeb617204bc14f4ee87b057",
       "url": "https://open.spotify.com/track/75IQVo8hqI1iwVZyvkN2VT"
+    },
+    {
+      "name": "Green",
+      "artist": "Hiroshi Yoshimura",
+      "image": "https://i.scdn.co/image/ab67616d0000b273a3e5bbdf5dc3ce666926342e",
+      "url": "https://open.spotify.com/track/1osR4MmVEDVk2FXw5xr5Xv"
     }
   ]
 }
