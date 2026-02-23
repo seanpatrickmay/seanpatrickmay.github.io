@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-22T13:40:51.221Z",
+  "generated_at": "2026-02-23T14:06:07.181Z",
   "artists": [
     {
       "name": "Daft Punk",
@@ -96,12 +96,6 @@
       "url": "https://open.spotify.com/track/2MfrET7Nc3StKQcGoZKqr9"
     },
     {
-      "name": "Upside Down",
-      "artist": "Jack Johnson",
-      "image": "https://i.scdn.co/image/ab67616d0000b2731e0232d637e8313d3ef4923e",
-      "url": "https://open.spotify.com/track/6shRGWCtBUOPFLFTTqXZIC"
-    },
-    {
       "name": "Show Me How",
       "artist": "Men I Trust",
       "image": "https://i.scdn.co/image/ab67616d0000b273deeb617204bc14f4ee87b057",
@@ -112,6 +106,12 @@
       "artist": "Hiroshi Yoshimura",
       "image": "https://i.scdn.co/image/ab67616d0000b273a3e5bbdf5dc3ce666926342e",
       "url": "https://open.spotify.com/track/1osR4MmVEDVk2FXw5xr5Xv"
+    },
+    {
+      "name": "All of Me",
+      "artist": "John Legend",
+      "image": "https://i.scdn.co/image/ab67616d0000b273bdcc3b587b5249932bc415c2",
+      "url": "https://open.spotify.com/track/3U4isOIWM3VvDubwSI3y7a"
     }
   ]
 }
