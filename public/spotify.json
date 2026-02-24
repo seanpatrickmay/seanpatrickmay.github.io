@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-23T14:06:07.181Z",
+  "generated_at": "2026-02-24T14:09:17.225Z",
   "artists": [
     {
       "name": "Daft Punk",
@@ -108,10 +108,10 @@
       "url": "https://open.spotify.com/track/1osR4MmVEDVk2FXw5xr5Xv"
     },
     {
-      "name": "All of Me",
-      "artist": "John Legend",
-      "image": "https://i.scdn.co/image/ab67616d0000b273bdcc3b587b5249932bc415c2",
-      "url": "https://open.spotify.com/track/3U4isOIWM3VvDubwSI3y7a"
+      "name": "Suite bergamasque, L. 75: Clair de lune",
+      "artist": "Claude Debussy, Alexis Weissenberg",
+      "image": "https://i.scdn.co/image/ab67616d0000b273909d196836b4b21cd3ae7748",
+      "url": "https://open.spotify.com/track/3aOT5GxCXzMTJU6UPrip6T"
     }
   ]
 }
