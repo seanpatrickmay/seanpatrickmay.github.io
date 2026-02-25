@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-24T14:09:17.225Z",
+  "generated_at": "2026-02-25T14:07:50.063Z",
   "artists": [
     {
       "name": "Daft Punk",
@@ -27,11 +27,6 @@
       "url": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
     },
     {
-      "name": "Steely Dan",
-      "image": "https://i.scdn.co/image/9d01e4e9aac39b891d684d3d1a5b3a451d7c72bd",
-      "url": "https://open.spotify.com/artist/6P7H3ai06vU1sGvdpBwDmE"
-    },
-    {
       "name": "Wallows",
       "image": "https://i.scdn.co/image/ab6761610000e5ebfde4e7d59f6d8868e2ffdaf5",
       "url": "https://open.spotify.com/artist/0NIPkIjTV8mB795yEIiPYL"
@@ -40,6 +35,11 @@
       "name": "Adele",
       "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
+    },
+    {
+      "name": "Steely Dan",
+      "image": "https://i.scdn.co/image/9d01e4e9aac39b891d684d3d1a5b3a451d7c72bd",
+      "url": "https://open.spotify.com/artist/6P7H3ai06vU1sGvdpBwDmE"
     },
     {
       "name": "The Marías",
@@ -54,22 +54,16 @@
   ],
   "tracks": [
     {
-      "name": "Bodhisattva",
-      "artist": "Steely Dan",
-      "image": "https://i.scdn.co/image/ab67616d0000b273f08f479a9dcdf7db7c85e3a8",
-      "url": "https://open.spotify.com/track/0j8zJzaQ2g86y5MzvMocRP"
-    },
-    {
       "name": "I Talk To The Wind",
       "artist": "King Crimson",
       "image": "https://i.scdn.co/image/ab67616d0000b273da7b326bd7ffa7b6b95b0660",
       "url": "https://open.spotify.com/track/1T0CdfKPKb1gJi4vCKpZ9C"
     },
     {
-      "name": "Band On The Run - 2010 Remaster",
-      "artist": "Paul McCartney, Wings",
-      "image": "https://i.scdn.co/image/ab67616d0000b273be7a3a1e2d663eea2918e5a3",
-      "url": "https://open.spotify.com/track/1H4idkmruFoJBg1DvUv2tY"
+      "name": "Bodhisattva",
+      "artist": "Steely Dan",
+      "image": "https://i.scdn.co/image/ab67616d0000b273f08f479a9dcdf7db7c85e3a8",
+      "url": "https://open.spotify.com/track/0j8zJzaQ2g86y5MzvMocRP"
     },
     {
       "name": "Money Honey",
@@ -112,6 +106,12 @@
       "artist": "Claude Debussy, Alexis Weissenberg",
       "image": "https://i.scdn.co/image/ab67616d0000b273909d196836b4b21cd3ae7748",
       "url": "https://open.spotify.com/track/3aOT5GxCXzMTJU6UPrip6T"
+    },
+    {
+      "name": "All of Me",
+      "artist": "John Legend",
+      "image": "https://i.scdn.co/image/ab67616d0000b273bdcc3b587b5249932bc415c2",
+      "url": "https://open.spotify.com/track/3U4isOIWM3VvDubwSI3y7a"
     }
   ]
 }
