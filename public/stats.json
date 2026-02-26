@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-25T14:08:16.295825Z",
+  "generated_at": "2026-02-26T14:08:33.090767Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 6,
-        "distance_km": 230.39,
-        "time_hours": 12.42,
+        "activities_count": 7,
+        "distance_km": 261.24,
+        "time_hours": 13.34,
         "longest_km": 58.08,
-        "calories_kcal": 6175.0
+        "calories_kcal": 6769.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21987507426,
+            "name": "Zwift - Waisted 8 in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-02-25 18:52:14",
+            "distance_km": 30.85,
+            "duration_min": 55.6,
+            "avg_speed_kmh": 33.3,
+            "calories_kcal": 594.0
+          },
           {
             "id": 21880787373,
             "name": "Zwift - Out And Back Again in Watopia",
@@ -606,16 +616,6 @@
             "duration_min": 93.3,
             "avg_speed_kmh": 36.24,
             "calories_kcal": 1063.0
-          },
-          {
-            "id": 21163557645,
-            "name": "end threshold",
-            "type": "virtual_ride",
-            "start": "2025-12-03 18:03:32",
-            "distance_km": 76.39,
-            "duration_min": 120.3,
-            "avg_speed_kmh": 38.08,
-            "calories_kcal": 1652.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2026-02-23",
             "week_end": "2026-03-01",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
+            "distance_km": 30.85,
+            "time_hours": 0.93,
+            "calories_kcal": 594.0
           }
         ]
       }
@@ -684,14 +684,24 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 5,
-        "distance_km": 172.32,
-        "time_hours": 5.39,
+        "activities_count": 6,
+        "distance_km": 203.16,
+        "time_hours": 6.32,
         "longest_km": 56.62,
-        "calories_kcal": 4068.0
+        "calories_kcal": 4662.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 21987507426,
+            "name": "Zwift - Waisted 8 in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-02-25 18:52:14",
+            "distance_km": 30.85,
+            "duration_min": 55.6,
+            "avg_speed_kmh": 33.3,
+            "calories_kcal": 594.0
+          },
           {
             "id": 21880787373,
             "name": "Zwift - Out And Back Again in Watopia",
@@ -1251,16 +1261,6 @@
             "duration_min": 121.0,
             "avg_speed_kmh": 33.04,
             "calories_kcal": 1383.0
-          },
-          {
-            "id": 20858736276,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-11-01 08:35:29",
-            "distance_km": 2.91,
-            "duration_min": 11.7,
-            "avg_speed_kmh": 14.97,
-            "calories_kcal": 157.0
           }
         ]
       },
@@ -1319,9 +1319,9 @@
           {
             "week_start": "2026-02-23",
             "week_end": "2026-03-01",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
+            "distance_km": 30.85,
+            "time_hours": 0.93,
+            "calories_kcal": 594.0
           }
         ]
       }
