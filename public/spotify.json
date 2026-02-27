@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-02-26T14:08:08.851Z",
+  "generated_at": "2026-02-27T13:58:09.178Z",
   "artists": [
-    {
-      "name": "King Crimson",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb7c1c2fcf5a73dbfa60a40a18",
-      "url": "https://open.spotify.com/artist/7M1FPw29m5FbicYzS2xdpi"
-    },
     {
       "name": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
+    },
+    {
+      "name": "King Crimson",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb7c1c2fcf5a73dbfa60a40a18",
+      "url": "https://open.spotify.com/artist/7M1FPw29m5FbicYzS2xdpi"
     },
     {
       "name": "Daft Punk",
@@ -22,14 +22,14 @@
       "url": "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"
     },
     {
+      "name": "Barry Wordsworth",
+      "image": "https://i.scdn.co/image/b5b05560a51b368cca8b3420e4e3536586720aa8",
+      "url": "https://open.spotify.com/artist/5sjJnaI3YhaO8KylpJk3gN"
+    },
+    {
       "name": "Morgan Wallen",
       "image": "https://i.scdn.co/image/ab6761610000e5eb4245b1652fcc23f2b76ccd07",
       "url": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-    },
-    {
-      "name": "Wallows",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebfde4e7d59f6d8868e2ffdaf5",
-      "url": "https://open.spotify.com/artist/0NIPkIjTV8mB795yEIiPYL"
     },
     {
       "name": "Adele",
@@ -72,6 +72,12 @@
       "url": "https://open.spotify.com/track/0j8zJzaQ2g86y5MzvMocRP"
     },
     {
+      "name": "Summerboy",
+      "artist": "Lady Gaga",
+      "image": "https://i.scdn.co/image/ab67616d0000b273613aaa3ae566d9f36008aed0",
+      "url": "https://open.spotify.com/track/1c31md8UrbHONSycrFi3Jy"
+    },
+    {
       "name": "Serenade for Strings in C Major, Op. 48: III. Elegie",
       "artist": "Pyotr Ilyich Tchaikovsky, Wiener KammerOrchester, Philippe Entremont",
       "image": "https://i.scdn.co/image/ab67616d0000b27391db6fb6533a60a7fd6ae402",
@@ -90,6 +96,12 @@
       "url": "https://open.spotify.com/track/2MfrET7Nc3StKQcGoZKqr9"
     },
     {
+      "name": "The Fame",
+      "artist": "Lady Gaga",
+      "image": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
+      "url": "https://open.spotify.com/track/3HhAZV8ngUOOt4eUHovhud"
+    },
+    {
       "name": "Show Me How",
       "artist": "Men I Trust",
       "image": "https://i.scdn.co/image/ab67616d0000b273deeb617204bc14f4ee87b057",
@@ -100,18 +112,6 @@
       "artist": "Hiroshi Yoshimura",
       "image": "https://i.scdn.co/image/ab67616d0000b273a3e5bbdf5dc3ce666926342e",
       "url": "https://open.spotify.com/track/1osR4MmVEDVk2FXw5xr5Xv"
-    },
-    {
-      "name": "Summerboy",
-      "artist": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab67616d0000b273613aaa3ae566d9f36008aed0",
-      "url": "https://open.spotify.com/track/1c31md8UrbHONSycrFi3Jy"
-    },
-    {
-      "name": "Suite bergamasque, L. 75: Clair de lune",
-      "artist": "Claude Debussy, Alexis Weissenberg",
-      "image": "https://i.scdn.co/image/ab67616d0000b273909d196836b4b21cd3ae7748",
-      "url": "https://open.spotify.com/track/3aOT5GxCXzMTJU6UPrip6T"
     }
   ]
 }
