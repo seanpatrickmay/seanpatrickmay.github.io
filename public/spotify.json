@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-27T13:58:09.178Z",
+  "generated_at": "2026-02-28T13:34:23.482Z",
   "artists": [
     {
       "name": "Lady Gaga",
@@ -37,11 +37,6 @@
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     },
     {
-      "name": "Steely Dan",
-      "image": "https://i.scdn.co/image/9d01e4e9aac39b891d684d3d1a5b3a451d7c72bd",
-      "url": "https://open.spotify.com/artist/6P7H3ai06vU1sGvdpBwDmE"
-    },
-    {
       "name": "The Marías",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaf586afa2b397f1288683a76",
       "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
@@ -50,6 +45,11 @@
       "name": "Khalid",
       "image": "https://i.scdn.co/image/ab6761610000e5eb8f77c3eddc1869e9542b04bc",
       "url": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+    },
+    {
+      "name": "The Smiths",
+      "image": "https://i.scdn.co/image/481b980af463122013e4578c08fb8c5cbfaed1e9",
+      "url": "https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8"
     }
   ],
   "tracks": [
