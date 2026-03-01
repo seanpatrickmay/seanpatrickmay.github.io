@@ -1,10 +1,15 @@
 {
-  "generated_at": "2026-02-28T13:34:23.482Z",
+  "generated_at": "2026-03-01T13:36:30.688Z",
   "artists": [
     {
       "name": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
+    },
+    {
+      "name": "ConcernedApe",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe17351c781f0cd9ae4b6442e",
+      "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
     },
     {
       "name": "King Crimson",
@@ -45,11 +50,6 @@
       "name": "Khalid",
       "image": "https://i.scdn.co/image/ab6761610000e5eb8f77c3eddc1869e9542b04bc",
       "url": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
-    },
-    {
-      "name": "The Smiths",
-      "image": "https://i.scdn.co/image/481b980af463122013e4578c08fb8c5cbfaed1e9",
-      "url": "https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8"
     }
   ],
   "tracks": [
@@ -72,28 +72,22 @@
       "url": "https://open.spotify.com/track/0j8zJzaQ2g86y5MzvMocRP"
     },
     {
+      "name": "Stateside + Zara Larsson",
+      "artist": "PinkPantheress, Zara Larsson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273684ecc5bc1b724d0106ad694",
+      "url": "https://open.spotify.com/track/1DwscornXpj8fmOmYVlqZt"
+    },
+    {
       "name": "Summerboy",
       "artist": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab67616d0000b273613aaa3ae566d9f36008aed0",
       "url": "https://open.spotify.com/track/1c31md8UrbHONSycrFi3Jy"
     },
     {
-      "name": "Serenade for Strings in C Major, Op. 48: III. Elegie",
-      "artist": "Pyotr Ilyich Tchaikovsky, Wiener KammerOrchester, Philippe Entremont",
-      "image": "https://i.scdn.co/image/ab67616d0000b27391db6fb6533a60a7fd6ae402",
-      "url": "https://open.spotify.com/track/54XNZXsAglK8jXAdglltjO"
-    },
-    {
       "name": "California",
       "artist": "Joni Mitchell",
-      "image": "https://i.scdn.co/image/ab67616d0000b273e79dc1438d650f426b5e99a7",
-      "url": "https://open.spotify.com/track/5eM6Rrk8rwLpUhrh7Kk5R1"
-    },
-    {
-      "name": "21st Century Schizoid Man - Including \"Mirrors\"",
-      "artist": "King Crimson",
-      "image": "https://i.scdn.co/image/ab67616d0000b273da7b326bd7ffa7b6b95b0660",
-      "url": "https://open.spotify.com/track/2MfrET7Nc3StKQcGoZKqr9"
+      "image": "https://i.scdn.co/image/ab67616d0000b273b7771d5c933e81206aed3ed3",
+      "url": "https://open.spotify.com/track/303BVC9OOydzYaXptwymcR"
     },
     {
       "name": "The Fame",
@@ -102,16 +96,22 @@
       "url": "https://open.spotify.com/track/3HhAZV8ngUOOt4eUHovhud"
     },
     {
-      "name": "Show Me How",
-      "artist": "Men I Trust",
-      "image": "https://i.scdn.co/image/ab67616d0000b273deeb617204bc14f4ee87b057",
-      "url": "https://open.spotify.com/track/75IQVo8hqI1iwVZyvkN2VT"
+      "name": "21st Century Schizoid Man - Including \"Mirrors\"",
+      "artist": "King Crimson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273da7b326bd7ffa7b6b95b0660",
+      "url": "https://open.spotify.com/track/2MfrET7Nc3StKQcGoZKqr9"
     },
     {
-      "name": "Green",
-      "artist": "Hiroshi Yoshimura",
-      "image": "https://i.scdn.co/image/ab67616d0000b273a3e5bbdf5dc3ce666926342e",
-      "url": "https://open.spotify.com/track/1osR4MmVEDVk2FXw5xr5Xv"
+      "name": "Serenade for Strings in C Major, Op. 48: III. Elegie",
+      "artist": "Pyotr Ilyich Tchaikovsky, Wiener KammerOrchester, Philippe Entremont",
+      "image": "https://i.scdn.co/image/ab67616d0000b27391db6fb6533a60a7fd6ae402",
+      "url": "https://open.spotify.com/track/54XNZXsAglK8jXAdglltjO"
+    },
+    {
+      "name": "Abracadabra",
+      "artist": "Lady Gaga",
+      "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
+      "url": "https://open.spotify.com/track/2LHNTC9QZxsL3nWpt8iaSR"
     }
   ]
 }
