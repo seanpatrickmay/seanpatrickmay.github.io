@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-01T13:37:30.912309Z",
+  "generated_at": "2026-03-02T13:59:23.396423Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 6,
-        "distance_km": 219.9,
-        "time_hours": 12.17,
+        "activities_count": 10,
+        "distance_km": 232.4,
+        "time_hours": 14.34,
         "longest_km": 58.08,
-        "calories_kcal": 5654.0
+        "calories_kcal": 7398.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 22034976886,
+            "name": "Boston Running",
+            "type": "running",
+            "start": "2026-02-28 12:23:34",
+            "distance_km": 12.49,
+            "duration_min": 74.5,
+            "avg_speed_kmh": 10.06,
+            "calories_kcal": 1058.0
+          },
           {
             "id": 21987507426,
             "name": "Zwift - Waisted 8 in Watopia",
@@ -66,6 +76,36 @@
             "duration_min": 57.1,
             "avg_speed_kmh": 32.1,
             "calories_kcal": 917.0
+          },
+          {
+            "id": 22034975998,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-02-01 20:33:26",
+            "distance_km": 0.0,
+            "duration_min": 16.4,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 282.0
+          },
+          {
+            "id": 22034975684,
+            "name": "Musculation",
+            "type": "strength_training",
+            "start": "2026-02-01 20:08:11",
+            "distance_km": 0.0,
+            "duration_min": 24.2,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 187.0
+          },
+          {
+            "id": 22034975350,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-02-01 19:50:19",
+            "distance_km": 0.0,
+            "duration_min": 15.3,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 217.0
           },
           {
             "id": 21724478279,
@@ -576,59 +616,12 @@
             "duration_min": 71.4,
             "avg_speed_kmh": 35.97,
             "calories_kcal": 897.0
-          },
-          {
-            "id": 21187697508,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-12-06 13:03:20",
-            "distance_km": 8.43,
-            "duration_min": 48.1,
-            "avg_speed_kmh": 10.51,
-            "calories_kcal": 570.0
-          },
-          {
-            "id": 21180517783,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-12-05 17:48:24",
-            "distance_km": 12.33,
-            "duration_min": 55.9,
-            "avg_speed_kmh": 13.23,
-            "calories_kcal": 987.0
-          },
-          {
-            "id": 21179411101,
-            "name": "warmup",
-            "type": "virtual_ride",
-            "start": "2025-12-05 16:58:50",
-            "distance_km": 18.33,
-            "duration_min": 31.2,
-            "avg_speed_kmh": 35.26,
-            "calories_kcal": 337.0
-          },
-          {
-            "id": 21171379001,
-            "name": "easy",
-            "type": "virtual_ride",
-            "start": "2025-12-04 15:43:32",
-            "distance_km": 56.34,
-            "duration_min": 93.3,
-            "avg_speed_kmh": 36.24,
-            "calories_kcal": 1063.0
           }
         ]
       },
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2026-01-05",
-            "week_end": "2026-01-11",
-            "distance_km": 135.65,
-            "time_hours": 7.69,
-            "calories_kcal": 6578.0
-          },
           {
             "week_start": "2026-01-12",
             "week_end": "2026-01-18",
@@ -647,8 +640,8 @@
             "week_start": "2026-01-26",
             "week_end": "2026-02-01",
             "distance_km": 99.41,
-            "time_hours": 8.2,
-            "calories_kcal": 3222.0
+            "time_hours": 9.13,
+            "calories_kcal": 3908.0
           },
           {
             "week_start": "2026-02-02",
@@ -674,9 +667,16 @@
           {
             "week_start": "2026-02-23",
             "week_end": "2026-03-01",
-            "distance_km": 30.85,
-            "time_hours": 0.93,
-            "calories_kcal": 594.0
+            "distance_km": 43.34,
+            "time_hours": 2.17,
+            "calories_kcal": 1652.0
+          },
+          {
+            "week_start": "2026-03-02",
+            "week_end": "2026-03-08",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -684,11 +684,11 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 5,
+        "activities_count": 7,
         "distance_km": 161.83,
-        "time_hours": 5.15,
+        "time_hours": 5.67,
         "longest_km": 56.62,
-        "calories_kcal": 3547.0
+        "calories_kcal": 4046.0
       },
       "recent": {
         "last60": [
@@ -741,6 +741,26 @@
             "duration_min": 57.1,
             "avg_speed_kmh": 32.1,
             "calories_kcal": 917.0
+          },
+          {
+            "id": 22034975998,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-02-01 20:33:26",
+            "distance_km": 0.0,
+            "duration_min": 16.4,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 282.0
+          },
+          {
+            "id": 22034975350,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-02-01 19:50:19",
+            "distance_km": 0.0,
+            "duration_min": 15.3,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 217.0
           },
           {
             "id": 21691857330,
@@ -1251,29 +1271,12 @@
             "duration_min": 11.3,
             "avg_speed_kmh": 19.64,
             "calories_kcal": 58.0
-          },
-          {
-            "id": 20873292851,
-            "name": "recovery",
-            "type": "virtual_ride",
-            "start": "2025-11-02 12:52:01",
-            "distance_km": 66.64,
-            "duration_min": 121.0,
-            "avg_speed_kmh": 33.04,
-            "calories_kcal": 1383.0
           }
         ]
       },
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2026-01-05",
-            "week_end": "2026-01-11",
-            "distance_km": 98.51,
-            "time_hours": 2.97,
-            "calories_kcal": 2529.0
-          },
           {
             "week_start": "2026-01-12",
             "week_end": "2026-01-18",
@@ -1292,8 +1295,8 @@
             "week_start": "2026-01-26",
             "week_end": "2026-02-01",
             "distance_km": 41.34,
-            "time_hours": 1.17,
-            "calories_kcal": 1115.0
+            "time_hours": 1.7,
+            "calories_kcal": 1614.0
           },
           {
             "week_start": "2026-02-02",
@@ -1322,6 +1325,13 @@
             "distance_km": 30.85,
             "time_hours": 0.93,
             "calories_kcal": 594.0
+          },
+          {
+            "week_start": "2026-03-02",
+            "week_end": "2026-03-08",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -1329,14 +1339,24 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 0,
-        "distance_km": 0.0,
-        "time_hours": 0.0,
-        "longest_km": 0.0,
-        "calories_kcal": 0
+        "activities_count": 1,
+        "distance_km": 12.49,
+        "time_hours": 1.24,
+        "longest_km": 12.49,
+        "calories_kcal": 1058.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 22034976886,
+            "name": "Boston Running",
+            "type": "running",
+            "start": "2026-02-28 12:23:34",
+            "distance_km": 12.49,
+            "duration_min": 74.5,
+            "avg_speed_kmh": 10.06,
+            "calories_kcal": 1058.0
+          },
           {
             "id": 21643701872,
             "name": "Treadmill Running",
@@ -1676,49 +1696,12 @@
             "duration_min": 75.2,
             "avg_speed_kmh": 11.66,
             "calories_kcal": 1127.0
-          },
-          {
-            "id": 20860206914,
-            "name": "Cambridge Course à pied",
-            "type": "running",
-            "start": "2025-11-01 10:46:08",
-            "distance_km": 2.89,
-            "duration_min": 15.3,
-            "avg_speed_kmh": 11.36,
-            "calories_kcal": 238.0
-          },
-          {
-            "id": 20859715920,
-            "name": "Cambridge Course à pied",
-            "type": "running",
-            "start": "2025-11-01 10:00:29",
-            "distance_km": 4.95,
-            "duration_min": 18.6,
-            "avg_speed_kmh": 15.93,
-            "calories_kcal": 338.0
-          },
-          {
-            "id": 20859357552,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-11-01 09:24:46",
-            "distance_km": 4.16,
-            "duration_min": 20.5,
-            "avg_speed_kmh": 12.2,
-            "calories_kcal": 345.0
           }
         ]
       },
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2026-01-05",
-            "week_end": "2026-01-11",
-            "distance_km": 37.14,
-            "time_hours": 4.73,
-            "calories_kcal": 4049.0
-          },
           {
             "week_start": "2026-01-12",
             "week_end": "2026-01-18",
@@ -1764,6 +1747,13 @@
           {
             "week_start": "2026-02-23",
             "week_end": "2026-03-01",
+            "distance_km": 12.49,
+            "time_hours": 1.24,
+            "calories_kcal": 1058.0
+          },
+          {
+            "week_start": "2026-03-02",
+            "week_end": "2026-03-08",
             "distance_km": 0.0,
             "time_hours": 0.0,
             "calories_kcal": 0.0
@@ -1786,13 +1776,6 @@
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2026-01-05",
-            "week_end": "2026-01-11",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
           {
             "week_start": "2026-01-12",
             "week_end": "2026-01-18",
@@ -1838,6 +1821,13 @@
           {
             "week_start": "2026-02-23",
             "week_end": "2026-03-01",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-03-02",
+            "week_end": "2026-03-08",
             "distance_km": 0.0,
             "time_hours": 0.0,
             "calories_kcal": 0.0
