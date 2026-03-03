@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-02T13:58:29.710Z",
+  "generated_at": "2026-03-03T13:57:38.628Z",
   "artists": [
     {
       "name": "Lady Gaga",
@@ -10,11 +10,6 @@
       "name": "ConcernedApe",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe17351c781f0cd9ae4b6442e",
       "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
-    },
-    {
-      "name": "King Crimson",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb7c1c2fcf5a73dbfa60a40a18",
-      "url": "https://open.spotify.com/artist/7M1FPw29m5FbicYzS2xdpi"
     },
     {
       "name": "Daft Punk",
@@ -47,9 +42,14 @@
       "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
     },
     {
-      "name": "Khalid",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb8f77c3eddc1869e9542b04bc",
-      "url": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny"
+      "name": "The Smiths",
+      "image": "https://i.scdn.co/image/481b980af463122013e4578c08fb8c5cbfaed1e9",
+      "url": "https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8"
+    },
+    {
+      "name": "Billy Joel",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebb34057d59275011032ef8bc8",
+      "url": "https://open.spotify.com/artist/6zFYqv1mOsgBRQbae3JJ9e"
     }
   ],
   "tracks": [
@@ -70,12 +70,6 @@
       "artist": "PinkPantheress, Zara Larsson",
       "image": "https://i.scdn.co/image/ab67616d0000b273684ecc5bc1b724d0106ad694",
       "url": "https://open.spotify.com/track/1DwscornXpj8fmOmYVlqZt"
-    },
-    {
-      "name": "Summerboy",
-      "artist": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab67616d0000b273613aaa3ae566d9f36008aed0",
-      "url": "https://open.spotify.com/track/1c31md8UrbHONSycrFi3Jy"
     },
     {
       "name": "California",
@@ -108,10 +102,16 @@
       "url": "https://open.spotify.com/track/54XNZXsAglK8jXAdglltjO"
     },
     {
-      "name": "Green",
-      "artist": "Hiroshi Yoshimura",
-      "image": "https://i.scdn.co/image/ab67616d0000b273a3e5bbdf5dc3ce666926342e",
-      "url": "https://open.spotify.com/track/1osR4MmVEDVk2FXw5xr5Xv"
+      "name": "Abracadabra",
+      "artist": "Lady Gaga",
+      "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
+      "url": "https://open.spotify.com/track/2LHNTC9QZxsL3nWpt8iaSR"
+    },
+    {
+      "name": "Show Me How",
+      "artist": "Men I Trust",
+      "image": "https://i.scdn.co/image/ab67616d0000b273deeb617204bc14f4ee87b057",
+      "url": "https://open.spotify.com/track/75IQVo8hqI1iwVZyvkN2VT"
     }
   ]
 }
