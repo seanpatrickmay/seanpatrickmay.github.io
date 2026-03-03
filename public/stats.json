@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-02T13:59:23.396423Z",
+  "generated_at": "2026-03-03T13:58:31.393681Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,34 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 10,
-        "distance_km": 232.4,
-        "time_hours": 14.34,
-        "longest_km": 58.08,
-        "calories_kcal": 7398.0
+        "activities_count": 11,
+        "distance_km": 192.36,
+        "time_hours": 13.48,
+        "longest_km": 56.62,
+        "calories_kcal": 7634.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 22041890446,
+            "name": "Cabezas Kayaking",
+            "type": "kayaking_v2",
+            "start": "2026-03-02 20:19:03",
+            "distance_km": 2.73,
+            "duration_min": 73.8,
+            "avg_speed_kmh": 2.22,
+            "calories_kcal": 417.0
+          },
+          {
+            "id": 22040159075,
+            "name": "Mameyes II Walking",
+            "type": "walking",
+            "start": "2026-03-02 11:29:43",
+            "distance_km": 15.31,
+            "duration_min": 295.6,
+            "avg_speed_kmh": 3.11,
+            "calories_kcal": 1926.0
+          },
           {
             "id": 22034976886,
             "name": "Boston Running",
@@ -596,26 +616,6 @@
             "duration_min": 30.3,
             "avg_speed_kmh": 36.89,
             "calories_kcal": 356.0
-          },
-          {
-            "id": 21197980704,
-            "name": "han",
-            "type": "virtual_ride",
-            "start": "2025-12-07 18:27:07",
-            "distance_km": 87.53,
-            "duration_min": 155.2,
-            "avg_speed_kmh": 33.84,
-            "calories_kcal": 1568.0
-          },
-          {
-            "id": 21197154262,
-            "name": "wu",
-            "type": "virtual_ride",
-            "start": "2025-12-07 15:51:48",
-            "distance_km": 42.8,
-            "duration_min": 71.4,
-            "avg_speed_kmh": 35.97,
-            "calories_kcal": 897.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2026-03-02",
             "week_end": "2026-03-08",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
+            "distance_km": 18.04,
+            "time_hours": 6.16,
+            "calories_kcal": 2343.0
           }
         ]
       }
@@ -1251,26 +1251,6 @@
             "duration_min": 11.5,
             "avg_speed_kmh": 18.4,
             "calories_kcal": 67.0
-          },
-          {
-            "id": 20879040480,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-11-03 08:44:16",
-            "distance_km": 1.57,
-            "duration_min": 4.7,
-            "avg_speed_kmh": 20.32,
-            "calories_kcal": 33.0
-          },
-          {
-            "id": 20875125934,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-11-02 21:37:25",
-            "distance_km": 3.7,
-            "duration_min": 11.3,
-            "avg_speed_kmh": 19.64,
-            "calories_kcal": 58.0
           }
         ]
       },
