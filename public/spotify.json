@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-05T13:59:49.552Z",
+  "generated_at": "2026-03-06T13:52:53.042Z",
   "artists": [
     {
       "name": "Lady Gaga",
@@ -17,11 +17,6 @@
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
-      "name": "BTS",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd642648235ebf3460d2d1f6a",
-      "url": "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"
-    },
-    {
       "name": "Barry Wordsworth",
       "image": "https://i.scdn.co/image/b5b05560a51b368cca8b3420e4e3536586720aa8",
       "url": "https://open.spotify.com/artist/5sjJnaI3YhaO8KylpJk3gN"
@@ -37,6 +32,11 @@
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     },
     {
+      "name": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb4b20970e43b262a4d1534607",
+      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
+    },
+    {
       "name": "The Marías",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaf586afa2b397f1288683a76",
       "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
@@ -47,12 +47,18 @@
       "url": "https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8"
     },
     {
-      "name": "Billy Joel",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebb34057d59275011032ef8bc8",
-      "url": "https://open.spotify.com/artist/6zFYqv1mOsgBRQbae3JJ9e"
+      "name": "King Crimson",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb7c1c2fcf5a73dbfa60a40a18",
+      "url": "https://open.spotify.com/artist/7M1FPw29m5FbicYzS2xdpi"
     }
   ],
   "tracks": [
+    {
+      "name": "Stateside + Zara Larsson",
+      "artist": "PinkPantheress, Zara Larsson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273684ecc5bc1b724d0106ad694",
+      "url": "https://open.spotify.com/track/1DwscornXpj8fmOmYVlqZt"
+    },
     {
       "name": "Money Honey",
       "artist": "Lady Gaga",
@@ -66,28 +72,10 @@
       "url": "https://open.spotify.com/track/1T0CdfKPKb1gJi4vCKpZ9C"
     },
     {
-      "name": "Stateside + Zara Larsson",
-      "artist": "PinkPantheress, Zara Larsson",
-      "image": "https://i.scdn.co/image/ab67616d0000b273684ecc5bc1b724d0106ad694",
-      "url": "https://open.spotify.com/track/1DwscornXpj8fmOmYVlqZt"
-    },
-    {
-      "name": "California",
-      "artist": "Joni Mitchell",
-      "image": "https://i.scdn.co/image/ab67616d0000b273b7771d5c933e81206aed3ed3",
-      "url": "https://open.spotify.com/track/303BVC9OOydzYaXptwymcR"
-    },
-    {
       "name": "The Fame",
       "artist": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
       "url": "https://open.spotify.com/track/3HhAZV8ngUOOt4eUHovhud"
-    },
-    {
-      "name": "Bodhisattva",
-      "artist": "Steely Dan",
-      "image": "https://i.scdn.co/image/ab67616d0000b273f08f479a9dcdf7db7c85e3a8",
-      "url": "https://open.spotify.com/track/0j8zJzaQ2g86y5MzvMocRP"
     },
     {
       "name": "21st Century Schizoid Man - Including \"Mirrors\"",
@@ -112,6 +100,18 @@
       "artist": "Men I Trust",
       "image": "https://i.scdn.co/image/ab67616d0000b273deeb617204bc14f4ee87b057",
       "url": "https://open.spotify.com/track/75IQVo8hqI1iwVZyvkN2VT"
+    },
+    {
+      "name": "Summerboy",
+      "artist": "Lady Gaga",
+      "image": "https://i.scdn.co/image/ab67616d0000b273613aaa3ae566d9f36008aed0",
+      "url": "https://open.spotify.com/track/1c31md8UrbHONSycrFi3Jy"
+    },
+    {
+      "name": "California",
+      "artist": "Joni Mitchell",
+      "image": "https://i.scdn.co/image/ab67616d0000b273b7771d5c933e81206aed3ed3",
+      "url": "https://open.spotify.com/track/303BVC9OOydzYaXptwymcR"
     }
   ]
 }
