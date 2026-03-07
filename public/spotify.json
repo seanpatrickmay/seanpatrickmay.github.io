@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-06T13:52:53.042Z",
+  "generated_at": "2026-03-07T13:36:33.330Z",
   "artists": [
     {
       "name": "Lady Gaga",
@@ -27,19 +27,19 @@
       "url": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
     },
     {
+      "name": "The Marías",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaf586afa2b397f1288683a76",
+      "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
+    },
+    {
       "name": "Adele",
       "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     },
     {
       "name": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb4b20970e43b262a4d1534607",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb9f6f7c2d12975d2a4b3a0fd8",
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
-    },
-    {
-      "name": "The Marías",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebaf586afa2b397f1288683a76",
-      "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
     },
     {
       "name": "The Smiths",
@@ -60,6 +60,18 @@
       "url": "https://open.spotify.com/track/1DwscornXpj8fmOmYVlqZt"
     },
     {
+      "name": "Abracadabra",
+      "artist": "Lady Gaga",
+      "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
+      "url": "https://open.spotify.com/track/2LHNTC9QZxsL3nWpt8iaSR"
+    },
+    {
+      "name": "Serenade for Strings in C Major, Op. 48: III. Elegie",
+      "artist": "Pyotr Ilyich Tchaikovsky, Wiener KammerOrchester, Philippe Entremont",
+      "image": "https://i.scdn.co/image/ab67616d0000b27391db6fb6533a60a7fd6ae402",
+      "url": "https://open.spotify.com/track/54XNZXsAglK8jXAdglltjO"
+    },
+    {
       "name": "Money Honey",
       "artist": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
@@ -78,40 +90,28 @@
       "url": "https://open.spotify.com/track/3HhAZV8ngUOOt4eUHovhud"
     },
     {
-      "name": "21st Century Schizoid Man - Including \"Mirrors\"",
-      "artist": "King Crimson",
-      "image": "https://i.scdn.co/image/ab67616d0000b273da7b326bd7ffa7b6b95b0660",
-      "url": "https://open.spotify.com/track/2MfrET7Nc3StKQcGoZKqr9"
-    },
-    {
-      "name": "Serenade for Strings in C Major, Op. 48: III. Elegie",
-      "artist": "Pyotr Ilyich Tchaikovsky, Wiener KammerOrchester, Philippe Entremont",
-      "image": "https://i.scdn.co/image/ab67616d0000b27391db6fb6533a60a7fd6ae402",
-      "url": "https://open.spotify.com/track/54XNZXsAglK8jXAdglltjO"
-    },
-    {
-      "name": "Abracadabra",
-      "artist": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
-      "url": "https://open.spotify.com/track/2LHNTC9QZxsL3nWpt8iaSR"
-    },
-    {
       "name": "Show Me How",
       "artist": "Men I Trust",
       "image": "https://i.scdn.co/image/ab67616d0000b273deeb617204bc14f4ee87b057",
       "url": "https://open.spotify.com/track/75IQVo8hqI1iwVZyvkN2VT"
     },
     {
-      "name": "Summerboy",
-      "artist": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab67616d0000b273613aaa3ae566d9f36008aed0",
-      "url": "https://open.spotify.com/track/1c31md8UrbHONSycrFi3Jy"
+      "name": "21st Century Schizoid Man - Including \"Mirrors\"",
+      "artist": "King Crimson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273da7b326bd7ffa7b6b95b0660",
+      "url": "https://open.spotify.com/track/2MfrET7Nc3StKQcGoZKqr9"
     },
     {
-      "name": "California",
-      "artist": "Joni Mitchell",
-      "image": "https://i.scdn.co/image/ab67616d0000b273b7771d5c933e81206aed3ed3",
-      "url": "https://open.spotify.com/track/303BVC9OOydzYaXptwymcR"
+      "name": "Suite bergamasque, L. 75: Clair de lune",
+      "artist": "Claude Debussy, Alexis Weissenberg",
+      "image": "https://i.scdn.co/image/ab67616d0000b273909d196836b4b21cd3ae7748",
+      "url": "https://open.spotify.com/track/3aOT5GxCXzMTJU6UPrip6T"
+    },
+    {
+      "name": "Dark Red",
+      "artist": "Steve Lacy",
+      "image": "https://i.scdn.co/image/ab67616d0000b2733d2dfa42f771cd458b194979",
+      "url": "https://open.spotify.com/track/3EaJDYHA0KnX88JvDhL9oa"
     }
   ]
 }
