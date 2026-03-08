@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-07T13:36:58.977356Z",
+  "generated_at": "2026-03-08T13:38:00.166473Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -10,13 +10,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 9,
-        "distance_km": 206.97,
-        "time_hours": 13.96,
+        "distance_km": 218.59,
+        "time_hours": 14.6,
         "longest_km": 56.62,
-        "calories_kcal": 8244.0
+        "calories_kcal": 8299.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 22098172741,
+            "name": "Zwift - Three Step Sisters in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-03-07 19:49:52",
+            "distance_km": 42.2,
+            "duration_min": 95.8,
+            "avg_speed_kmh": 26.42,
+            "calories_kcal": 972.0
+          },
           {
             "id": 22087413034,
             "name": "Boston Running",
@@ -606,16 +616,6 @@
             "duration_min": 6.0,
             "avg_speed_kmh": 12.06,
             "calories_kcal": 104.0
-          },
-          {
-            "id": 21215657982,
-            "name": "Boston - 10x3m",
-            "type": "running",
-            "start": "2025-12-09 17:34:00",
-            "distance_km": 11.89,
-            "duration_min": 48.7,
-            "avg_speed_kmh": 14.66,
-            "calories_kcal": 943.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2026-03-02",
             "week_end": "2026-03-08",
-            "distance_km": 32.64,
-            "time_hours": 7.57,
-            "calories_kcal": 3639.0
+            "distance_km": 74.84,
+            "time_hours": 9.17,
+            "calories_kcal": 4611.0
           }
         ]
       }
@@ -685,13 +685,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 5,
-        "distance_km": 161.83,
-        "time_hours": 5.15,
+        "distance_km": 173.45,
+        "time_hours": 5.79,
         "longest_km": 56.62,
-        "calories_kcal": 3547.0
+        "calories_kcal": 3602.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 22098172741,
+            "name": "Zwift - Three Step Sisters in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-03-07 19:49:52",
+            "distance_km": 42.2,
+            "duration_min": 95.8,
+            "avg_speed_kmh": 26.42,
+            "calories_kcal": 972.0
+          },
           {
             "id": 21987507426,
             "name": "Zwift - Waisted 8 in Watopia",
@@ -1231,16 +1241,6 @@
             "duration_min": 33.7,
             "avg_speed_kmh": 35.71,
             "calories_kcal": 454.0
-          },
-          {
-            "id": 20884085770,
-            "name": "EASY WEEK",
-            "type": "virtual_ride",
-            "start": "2025-11-03 17:26:04",
-            "distance_km": 38.47,
-            "duration_min": 61.9,
-            "avg_speed_kmh": 37.29,
-            "calories_kcal": 743.0
           }
         ]
       },
@@ -1299,9 +1299,9 @@
           {
             "week_start": "2026-03-02",
             "week_end": "2026-03-08",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
+            "distance_km": 42.2,
+            "time_hours": 1.6,
+            "calories_kcal": 972.0
           }
         ]
       }
