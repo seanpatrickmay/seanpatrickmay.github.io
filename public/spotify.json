@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-08T13:37:37.063Z",
+  "generated_at": "2026-03-09T14:04:19.384Z",
   "artists": [
     {
       "name": "Lady Gaga",
@@ -12,14 +12,14 @@
       "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
     },
     {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
-    },
-    {
       "name": "Barry Wordsworth",
       "image": "https://i.scdn.co/image/b5b05560a51b368cca8b3420e4e3536586720aa8",
       "url": "https://open.spotify.com/artist/5sjJnaI3YhaO8KylpJk3gN"
+    },
+    {
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
       "name": "Morgan Wallen",
@@ -27,14 +27,14 @@
       "url": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
     },
     {
-      "name": "The Marías",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebaf586afa2b397f1288683a76",
-      "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
-    },
-    {
       "name": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab6761610000e5eb9f6f7c2d12975d2a4b3a0fd8",
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
+    },
+    {
+      "name": "The Marías",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaf586afa2b397f1288683a76",
+      "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
     },
     {
       "name": "Adele",
@@ -42,14 +42,14 @@
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     },
     {
-      "name": "King Crimson",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb7c1c2fcf5a73dbfa60a40a18",
-      "url": "https://open.spotify.com/artist/7M1FPw29m5FbicYzS2xdpi"
-    },
-    {
       "name": "The Smiths",
       "image": "https://i.scdn.co/image/481b980af463122013e4578c08fb8c5cbfaed1e9",
       "url": "https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8"
+    },
+    {
+      "name": "TV Girl",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd80695211689a9c8c3fee3b0",
+      "url": "https://open.spotify.com/artist/0Y6dVaC9DZtPNH4591M42W"
     }
   ],
   "tracks": [
@@ -70,12 +70,6 @@
       "artist": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
       "url": "https://open.spotify.com/track/6gknJVkbQb8jkAXbXx0SYA"
-    },
-    {
-      "name": "I Talk To The Wind",
-      "artist": "King Crimson",
-      "image": "https://i.scdn.co/image/ab67616d0000b273da7b326bd7ffa7b6b95b0660",
-      "url": "https://open.spotify.com/track/1T0CdfKPKb1gJi4vCKpZ9C"
     },
     {
       "name": "The Fame",
@@ -112,6 +106,12 @@
       "artist": "Steve Lacy",
       "image": "https://i.scdn.co/image/ab67616d0000b2733d2dfa42f771cd458b194979",
       "url": "https://open.spotify.com/track/3EaJDYHA0KnX88JvDhL9oa"
+    },
+    {
+      "name": "Stardew Valley Overture",
+      "artist": "ConcernedApe",
+      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
+      "url": "https://open.spotify.com/track/2q2Z2A0Mt8AsWyQEdB6wuu"
     }
   ]
 }
