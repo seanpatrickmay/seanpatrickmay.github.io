@@ -6,7 +6,7 @@
     "period": "2024 – Present",
     "startDate": "2024-01-01",
     "endDate": null,
-    "updatedAt": "2025-12-01",
+    "updatedAt": "2026-03-10",
     "stack": [
       "Next.js",
       "React",
@@ -14,8 +14,8 @@
       "Garmin API",
       "Spotify API"
     ],
-    "oneLiner": "Static portfolio with live activity dashboards and data hooks.",
-    "cardDescription": "Static portfolio with live Garmin + Spotify dashboards and responsive card navigation.",
+    "oneLiner": "Static portfolio with live Garmin and Spotify widgets plus project case studies.",
+    "cardDescription": "Static portfolio with live Garmin + Spotify dashboards and a dedicated project archive.",
     "languages": [
       "JavaScript",
       "Python"
@@ -28,34 +28,34 @@
     "showcaseTech": "Next.js",
     "proofPoints": [
       "Static export optimized for GitHub Pages",
-      "Automated Garmin + Spotify refresh workflows",
-      "Card-based navigation + responsive layouts"
+      "Scheduled Garmin + Spotify refresh workflows",
+      "Project archive + detail pages driven by a JSON catalog"
     ],
-    "overview": "This site is a static-exported Next.js portfolio that pulls in live Garmin and Spotify summaries via scheduled refresh scripts. The goal is a clean, fast UI that still feels alive with real data instead of placeholder widgets.",
+    "overview": "This site is a static-exported Next.js portfolio that combines hand-curated project writeups with lightweight live data feeds. The goal is a fast personal site that still feels current without depending on a permanent backend.",
     "whatIBuilt": [
-      "Static-exported Next.js site with multiple content sections and responsive layout rules",
-      "Data ingestion scripts + workflows for Garmin and Spotify JSON refreshes",
-      "Reusable UI primitives for cards, pills, stacked sections, and scrolling lists"
+      "Static-exported Next.js site with homepage, project archive, and per-project routes",
+      "Data refresh scripts and workflows for Garmin and Spotify summaries",
+      "Reusable UI primitives for cards, pills, filters, and long-form project pages"
     ],
     "howItWorks": [
-      "Scheduled scripts fetch and write JSON into public/",
-      "Pages read those JSON files client-side for lightweight dashboards",
-      "The site is exported to static HTML and deployed via GitHub Pages"
+      "Scheduled scripts write JSON data into public/",
+      "Pages import static JSON directly during build time",
+      "GitHub Pages serves the exported site as static HTML"
     ],
     "results": [
-      "Fast static site with dynamic-feeling dashboards",
+      "Fast static site with dynamic-feeling activity widgets",
       "Shareable /projects/ + /projects/<slug>/ routes compatible with static export"
     ],
     "nextSteps": [
-      "Add lightweight per-project cover images and tighter case study templates",
-      "Add Live links where appropriate"
+      "Replace manual project metadata entry with a GitHub-informed sync path",
+      "Add screenshots and richer evidence to more project pages"
     ],
     "coverImage": null,
     "gallery": [],
     "bullets": [
-      "Static-exported Next.js site with stacked card navigation and responsive layouts.",
-      "Live training + music dashboards powered by Garmin and Spotify refresh scripts.",
-      "Long-form about section with auto-scrolling highlights and rich data visualizations."
+      "Static-exported Next.js site with a dedicated project archive and detail pages.",
+      "Live Garmin and Spotify widgets powered by scheduled JSON refresh scripts.",
+      "Structured project metadata model that drives homepage featuring, filters, and case studies."
     ],
     "links": [
       {
@@ -74,10 +74,10 @@
     "title": "Life-Dashboard",
     "slug": "life-dashboard",
     "emoji": "📊",
-    "period": "Sep 2025 – Dec 2025",
+    "period": "Sep 2025 – Present",
     "startDate": "2025-09-01",
-    "endDate": "2025-12-01",
-    "updatedAt": "2025-12-01",
+    "endDate": null,
+    "updatedAt": "2026-03-10",
     "stack": [
       "Python",
       "FastAPI",
@@ -86,7 +86,7 @@
       "TypeScript",
       "Vertex AI Gemini"
     ],
-    "oneLiner": "Self-hosted wellness dashboard that turns Garmin biometrics + nutrition logs into agentic insights, readiness scoring, and actionable to-dos.",
+    "oneLiner": "Self-hosted wellness dashboard that turns Garmin biometrics and nutrition logs into actionable daily insights.",
     "featuredDescription": "Wellness dashboard turning Garmin + nutrition into actionable insights.",
     "cardDescription": "Wellness dashboard turning Garmin + nutrition into actionable insights.",
     "languages": [
@@ -103,30 +103,28 @@
     "showcaseTag": "Agentic AI",
     "showcaseTech": "PostgreSQL",
     "proofPoints": [
-      "Agentic nutrition workflow (recipes → ingredients → normalized facts)",
-      "Garmin biometrics ingestion + trend features",
-      "Turns insights into daily to-dos + journaling for follow-through",
+      "Garmin ingestion + trend modeling pipeline",
+      "Agentic nutrition workflow with structured goals and to-dos",
       "Full-stack app: FastAPI + Postgres + React/TS"
     ],
-    "overview": "Life-Dashboard is a self-hosted wellness app that combines Garmin biometrics with nutrition logging and agentic workflows. It keeps the data normalized, computes targets with uncertainty (95% CIs), and turns the result into simple, actionable to-dos instead of dashboards you ignore.",
+    "overview": "Life-Dashboard is a self-hosted wellness app that combines Garmin biometrics, nutrition tracking, and AI-generated guidance into a calm, Monet-inspired interface. It is designed to turn raw health data into concrete daily actions rather than passive dashboard views.",
     "whatIBuilt": [
-      "Agentic nutrition workflow that parses natural language into ingredients + normalized nutrition facts",
-      "Garmin data ingestion pipeline (HRV, RHR, sleep, training load) into Postgres",
-      "React/TypeScript UI for trends, workflows, and structured to-dos"
+      "FastAPI backend for Garmin ingestion, insight generation, and structured wellness workflows",
+      "React/Vite frontend for dashboard views, trends, nutrition, and assistant-style interaction",
+      "Postgres-backed data model for biometrics, nutrition logs, insights, and to-do generation"
     ],
     "howItWorks": [
-      "Fetch Garmin biometrics on a schedule and store them in Postgres",
-      "Preprocess 14-day time-series features for recovery/readiness signals",
-      "Run agent workflows to translate logs into targets + next actions",
-      "Render trends and recommendations in a React/TypeScript dashboard"
+      "Pull Garmin activities and recovery metrics into Postgres",
+      "Aggregate recent trends and generate readiness-style summaries with Vertex AI",
+      "Surface metrics, recommendations, and nutrition context through a React interface"
     ],
     "results": [
-      "End-to-end pipeline from raw biometrics → stored history → actionable outputs",
-      "Clean separation between ingestion, modeling, and UI"
+      "End-to-end wellness pipeline from raw biometrics to actionable outputs",
+      "Clean separation between ingestion, modeling, and product UI"
     ],
     "nextSteps": [
-      "Add tighter evals for agent outputs and recommendation quality",
-      "Expand readiness scoring into training plan adjustments"
+      "Add tighter evals for AI recommendations",
+      "Expand training-readiness logic into more personalized planning"
     ],
     "coverImage": {
       "src": "/projects/life-dashboard/life-dashboard-cover.png",
@@ -134,10 +132,9 @@
     },
     "gallery": [],
     "bullets": [
-      "Designed an agentic nutrition workflow that decomposes natural language into recipes + ingredients, uses web search to normalize/cache nutrition facts, and tracks intake vs personalized goals (with 95% CIs).",
-      "Preprocessed 14-day time series of biometric data from the Garmin API to drive AI-curated recovery insights (sleep, HRV, RHR, training load).",
-      "FastAPI backend ingests Garmin HRV, resting HR, sleep, and training load into PostgreSQL using async SQLAlchemy + Alembic migrations.",
-      "React/TypeScript dashboard surfaces training trends, nutrition workflows, and intelligent to-dos with scheduled Garmin refresh flows."
+      "Self-hosted FastAPI + React application for Garmin, nutrition, and wellness workflows.",
+      "Agentic pipeline turns health context into summaries, readiness-style insights, and to-dos.",
+      "Monet-inspired UI direction gives the product a distinct visual identity beyond a default dashboard."
     ],
     "links": [
       {
@@ -156,10 +153,10 @@
     "title": "LecteurAide",
     "slug": "lecteuraide",
     "emoji": "📚",
-    "period": "Updated Oct 2025",
+    "period": "Updated Nov 2025",
     "startDate": null,
     "endDate": null,
-    "updatedAt": "2025-10-01",
+    "updatedAt": "2025-11-02",
     "stack": [
       "Python",
       "FastAPI",
@@ -167,50 +164,47 @@
       "Cloud Translation",
       "Next.js"
     ],
-    "oneLiner": "French reading companion that segments scenes, translates sentences, and quizzes vocab.",
+    "oneLiner": "French reading companion that turns long-form PDFs into scene-based translations, vocabulary, and quizzes.",
     "featuredDescription": "French reading companion with translations, vocab, and scene summaries.",
     "cardDescription": "French reading companion with translations, vocab, and scene summaries.",
     "languages": [
       "Python",
-      "JavaScript"
+      "TypeScript"
     ],
     "tags": [
       "Full-stack",
       "NLP",
       "Data Engineering",
       "Cloud/Infra",
-      "Agentic AI",
-      "Concurrency"
+      "Agentic AI"
     ],
     "coolness": 99,
     "caseStudyRank": 2,
     "showcaseTag": "NLP",
     "showcaseTech": "Cloud Translation",
     "proofPoints": [
-      "Scene chunking + LLM summaries for long PDFs",
-      "Sentence-level translation + vocabulary extraction",
-      "Streaming ingestion API + Next.js reader UI"
+      "Scene segmentation + LLM summaries for long PDFs",
+      "Sentence-level translation and vocabulary extraction",
+      "FastAPI ingestion API + Next.js reader UI"
     ],
-    "overview": "LecteurAide is a French reading companion for long-form PDFs. It chunks content into scenes, generates summaries, overlays sentence-level translation and vocabulary, and adds lightweight quizzes so the reading loop is actually productive.",
+    "overview": "LecteurAide is a French reading companion for long-form PDFs. It ingests a book, segments it into scenes, translates sentences, extracts vocabulary, and generates comprehension questions before presenting everything in a purpose-built reading interface.",
     "whatIBuilt": [
-      "Back end that chunks PDFs and calls Gemini for scene summaries",
-      "Translation + vocabulary layer (sentence-level) using Cloud Translation + NLP prompts",
-      "Streaming ingestion API that persists scenes, questions, and glossary entries",
-      "Next.js reader UI for scene-by-scene reading, vocab highlighting, and quizzes"
+      "FastAPI backend for book upload, scene segmentation, translation, vocabulary extraction, and persistence",
+      "Next.js frontend for upload, library browsing, and scene-by-scene reading",
+      "Vertex AI and Google Cloud Translation pipeline for turning raw PDFs into guided reading experiences"
     ],
     "howItWorks": [
-      "Upload a French PDF via ingestion API",
-      "Chunk into scenes and generate a summary per scene",
-      "Compute sentence translations + vocab terms and persist results",
-      "Render a reader that layers translations, vocab, and quick checks"
+      "Upload a French PDF and title via the ingestion API",
+      "Segment the text into scenes and annotate it with translations, vocab, and questions",
+      "Persist the processed book and render it through the web reader"
     ],
     "results": [
-      "Turns a static PDF into an interactive reading workflow",
-      "Designed for long documents and incremental ingestion"
+      "Turns static PDFs into an interactive reading workflow",
+      "Combines document ingestion, translation, and reader UX in one end-to-end product"
     ],
     "nextSteps": [
-      "Add spaced repetition for saved vocabulary",
-      "Add offline export for highlights + glossary"
+      "Add screenshots and a richer sample book walkthrough",
+      "Expand the reader with stronger review and spaced-repetition loops"
     ],
     "coverImage": {
       "src": "/projects/lecteuraide/lecteur-aide-cover.png",
@@ -218,14 +212,370 @@
     },
     "gallery": [],
     "bullets": [
-      "Back end chunks French PDFs, calls Gemini for scene summaries, and layers sentence-level translations plus vocab.",
-      "Streaming ingestion API uploads books and persists scenes, questions, and glossary terms into SQLite/Postgres.",
-      "Next.js reader surfaces scene-by-scene translations, highlighted vocabulary, and comprehension quizzes."
+      "FastAPI ingestion pipeline converts French PDFs into scene-structured reading content.",
+      "Sentence-level translation, vocabulary extraction, and comprehension questions create a guided study loop.",
+      "Next.js reader UI supports upload, library browsing, and scene-by-scene reading."
     ],
     "links": [
       {
         "label": "Git Repo",
         "href": "https://github.com/seanpatrickmay/LecteurAide",
+        "kind": "repo"
+      }
+    ]
+  },
+  {
+    "title": "Human Digit Recognition",
+    "slug": "human-digit-classification",
+    "emoji": "🔢",
+    "period": "Updated Dec 2025",
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2025-12-04",
+    "stack": [
+      "Python",
+      "Flask",
+      "PyTorch",
+      "Computer Vision",
+      "HTML"
+    ],
+    "oneLiner": "Two-stage computer-vision pipeline that detects hands and predicts digit counts from webcam imagery.",
+    "featuredDescription": "Two-stage hand detection + finger-count classification pipeline with a Flask demo.",
+    "cardDescription": "Two-stage hand detection + finger-count classification pipeline with a Flask demo.",
+    "languages": [
+      "Python"
+    ],
+    "tags": [
+      "Machine Learning",
+      "Computer Vision",
+      "Algorithms"
+    ],
+    "coolness": 96,
+    "caseStudyRank": 3,
+    "showcaseTag": "Computer Vision",
+    "showcaseTech": "PyTorch",
+    "proofPoints": [
+      "Two-stage pipeline: hand localization -> digit-count classification",
+      "Custom annotation and training workflow",
+      "Flask API + browser-facing demo"
+    ],
+    "overview": "Human Digit Recognition is a two-stage perception project that detects a hand region in an image and then classifies how many digits are raised. It includes the modeling workflow, annotation tooling, pretrained weights, and a lightweight Flask-based demo path.",
+    "whatIBuilt": [
+      "PyTorch models for hand-box detection and digit-count classification",
+      "Annotation tooling and notebooks for training and evaluation",
+      "Flask inference server and browser-facing prediction flow"
+    ],
+    "howItWorks": [
+      "Capture or upload an image frame",
+      "Predict a hand bounding box from the full frame",
+      "Crop the detected region and run digit classification",
+      "Return the predicted count through the Flask API"
+    ],
+    "results": [
+      "End-to-end perception workflow from annotation to serving",
+      "Demonstrates staged CV inference rather than a single-model toy demo"
+    ],
+    "nextSteps": [
+      "Package dependencies more cleanly for reproducible setup",
+      "Add screenshots and clearer example outputs to the repo and portfolio"
+    ],
+    "coverImage": {
+      "src": "/projects/human-digit-classification/cover.svg",
+      "alt": "Human Digit Recognition overview"
+    },
+    "gallery": [
+      {
+        "src": "/projects/human-digit-classification/01-demo.svg",
+        "alt": "Demo flow",
+        "caption": "Flask-backed demo and prediction flow."
+      },
+      {
+        "src": "/projects/human-digit-classification/02-dataset.svg",
+        "alt": "Dataset workflow",
+        "caption": "Annotation and dataset creation workflow."
+      },
+      {
+        "src": "/projects/human-digit-classification/03-training.svg",
+        "alt": "Training pipeline",
+        "caption": "Two-stage training setup for detection and classification."
+      }
+    ],
+    "bullets": [
+      "Two-stage PyTorch pipeline isolates a hand and then predicts the digit count.",
+      "Custom annotation workflow and training notebooks support model iteration.",
+      "Flask demo path makes the CV pipeline usable from a browser rather than just notebooks."
+    ],
+    "links": [
+      {
+        "label": "Git Repo",
+        "href": "https://github.com/seanpatrickmay/Human-Digit-Recognition",
+        "kind": "repo"
+      }
+    ]
+  },
+  {
+    "title": "Wildfire Modeling",
+    "slug": "wildfire-modeling",
+    "emoji": "🔥",
+    "period": "Updated Feb 2026",
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2026-02-12",
+    "stack": [
+      "Python",
+      "JavaScript",
+      "R",
+      "Earth Engine",
+      "scikit-learn"
+    ],
+    "oneLiner": "Research workflow for wildfire data ingestion, GOFER-style conversion, and locational regression modeling.",
+    "cardDescription": "Wildfire data + regression workflow spanning Earth Engine downloads, normalization, and local modeling.",
+    "languages": [
+      "Python",
+      "JavaScript"
+    ],
+    "tags": [
+      "Data Engineering",
+      "Machine Learning",
+      "Cloud/Infra"
+    ],
+    "coolness": 92,
+    "showcaseTag": "Machine Learning",
+    "showcaseTech": "Earth Engine",
+    "proofPoints": [
+      "Earth Engine download and normalization pipeline",
+      "Locational spread + continuation regression workflows",
+      "Lightweight local viewer for GOFER-style JSON outputs"
+    ],
+    "overview": "Wildfire Modeling is a research workflow for collecting wildfire-related geospatial data, converting it into GOFER-style JSON, and running local regression analyses over fire spread and continuation. It sits between raw remote-sensing data and downstream modeling experiments.",
+    "whatIBuilt": [
+      "CLI scripts for downloading GOES confidence stacks and aligned RTMA meteorology",
+      "Conversion tools that normalize geospatial outputs into modeling-friendly JSON",
+      "Regression workflows and notebooks for single-fire and multi-fire analysis"
+    ],
+    "howItWorks": [
+      "Download wildfire confidence stacks and aligned meteorology",
+      "Convert outputs into GOFER-style JSON time series",
+      "Run locational regressions and inspect outputs through notebooks or the local viewer"
+    ],
+    "results": [
+      "Repeatable research workflow from Earth Engine exports to regression outputs",
+      "Supports both single-fire analysis and broader multi-fire experiments"
+    ],
+    "nextSteps": [
+      "Tighten environment bootstrapping and add clearer example outputs",
+      "Expand the multiresolution data path and result visualization"
+    ],
+    "coverImage": null,
+    "gallery": [],
+    "bullets": [
+      "Research workflow bridges remote-sensing downloads, normalization, and wildfire modeling.",
+      "Supports GOFER-style JSON generation, RTMA alignment, and locational logistic regressions.",
+      "Includes a lightweight local web viewer for inspecting time-series wildfire data outputs."
+    ],
+    "links": [
+      {
+        "label": "Git Repo",
+        "href": "https://github.com/seanpatrickmay/wildfire-modeling",
+        "kind": "repo"
+      }
+    ]
+  },
+  {
+    "title": "Sentiment Market Arb",
+    "slug": "sentiment-market-arb",
+    "emoji": "📈",
+    "period": "Updated Dec 2025",
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2025-12-11",
+    "stack": [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "React",
+      "TypeScript",
+      "Docker"
+    ],
+    "oneLiner": "Full-stack prototype for ingesting prediction-market data and scanning for covered-outcome arbitrage.",
+    "cardDescription": "Prediction-market arbitrage prototype with FastAPI ingestion, Postgres storage, and a React operator console.",
+    "languages": [
+      "Python",
+      "TypeScript"
+    ],
+    "tags": [
+      "Full-stack",
+      "Data Engineering",
+      "Algorithms",
+      "Cloud/Infra"
+    ],
+    "coolness": 91,
+    "showcaseTag": "Algorithms",
+    "showcaseTech": "PostgreSQL",
+    "proofPoints": [
+      "Venue ingestion for Kalshi and Polymarket",
+      "Canonical sports-event mapping workflow",
+      "Arbitrage scanning backend + operator console"
+    ],
+    "overview": "Sentiment Market Arb is a full-stack prototype for ingesting venue data from prediction markets, normalizing it into a shared sports-event schema, and scanning for pure arbitrage opportunities across covered outcomes.",
+    "whatIBuilt": [
+      "FastAPI backend with ingestion routes, mappings, quote storage, and arbitrage scan endpoints",
+      "Postgres-backed schema for events, markets, mapping candidates, quotes, and arbitrage outputs",
+      "React operator console for ingestion, mapping review, and arbitrage inspection"
+    ],
+    "howItWorks": [
+      "Ingest venue markets and quotes from supported platforms",
+      "Map venue-specific markets onto canonical sports events",
+      "Store normalized quotes and run arbitrage scans across compatible outcome groups"
+    ],
+    "results": [
+      "Prototype covers ingestion, normalization, review, and scan flows end-to-end",
+      "Provides a concrete full-stack environment for arbitrage research rather than a paper design"
+    ],
+    "nextSteps": [
+      "Tighten secrets/env documentation and add example outputs",
+      "Add more robust verification and benchmark flows for scan quality"
+    ],
+    "coverImage": null,
+    "gallery": [],
+    "bullets": [
+      "FastAPI + Postgres backend ingests venue data and stores normalized arbitrage context.",
+      "Mapping layer links venue-specific markets to canonical sports events before scanning.",
+      "React operator console exposes ingestion actions, mapping review, and arbitrage inspection."
+    ],
+    "links": [
+      {
+        "label": "Git Repo",
+        "href": "https://github.com/seanpatrickmay/sentiment-market-arb",
+        "kind": "repo"
+      }
+    ]
+  },
+  {
+    "title": "PokerML",
+    "slug": "nlhe-alpha-beta",
+    "emoji": "🃏",
+    "period": "Updated Nov 2025",
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2025-11-02",
+    "stack": [
+      "Python",
+      "NumPy",
+      "Monte Carlo",
+      "Minimax"
+    ],
+    "oneLiner": "Heads-up NLHE research engine combining range-aware search, abstractions, and heuristic action selection.",
+    "cardDescription": "Heads-up NLHE engine for search, abstraction, and poker strategy experiments.",
+    "languages": [
+      "Python"
+    ],
+    "tags": [
+      "Game Theory",
+      "Algorithms"
+    ],
+    "coolness": 90,
+    "showcaseTag": "Game Theory",
+    "showcaseTech": "Monte Carlo",
+    "proofPoints": [
+      "Range-aware game-state and equity tooling",
+      "Alpha-beta style search over poker nodes",
+      "Heuristic bet sizing and abstraction experiments"
+    ],
+    "overview": "PokerML is a research-oriented heads-up no-limit hold'em engine that models poker decision making as a configurable search problem. It focuses on making ranges, abstractions, and heuristic action logic easy to inspect and iterate on.",
+    "whatIBuilt": [
+      "Core card, deck, player, and node abstractions for modeling poker states",
+      "Search logic combining alpha-beta style pruning with range-aware heuristics",
+      "Sample river test harness for quickly validating a solver setup"
+    ],
+    "howItWorks": [
+      "Represent current stacks, pot, ranges, and board state as a poker node",
+      "Generate candidate actions and estimate outcomes through search and rollouts",
+      "Use heuristics and abstraction logic to keep the decision tree tractable"
+    ],
+    "results": [
+      "Created a modifiable research engine for poker strategy experimentation",
+      "Makes solver ideas inspectable without needing a full industrial poker stack"
+    ],
+    "nextSteps": [
+      "Add stronger experiment harnesses and example outputs",
+      "Layer in CFR and stronger abstraction strategies"
+    ],
+    "coverImage": null,
+    "gallery": [],
+    "bullets": [
+      "Research engine models heads-up NLHE with explicit ranges, search nodes, and abstractions.",
+      "Alpha-beta style search and Monte Carlo evaluation make the solver ideas tractable enough to iterate on.",
+      "Sample river harness provides a compact smoke test for the current solver setup."
+    ],
+    "links": [
+      {
+        "label": "Git Repo",
+        "href": "https://github.com/seanpatrickmay/PokerML",
+        "kind": "repo"
+      }
+    ]
+  },
+  {
+    "title": "MBTA Leave Now",
+    "slug": "mbta-leave-now",
+    "emoji": "🚇",
+    "period": "Updated Jan 2026",
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2026-01-14",
+    "stack": [
+      "Java",
+      "Spring Boot",
+      "Gradle",
+      "HTML"
+    ],
+    "oneLiner": "Spring Boot commute helper that answers when to leave based on live MBTA predictions.",
+    "cardDescription": "Spring Boot API and lightweight UI for stop-level leave-now guidance and a fixed office commute.",
+    "languages": [
+      "Java"
+    ],
+    "tags": [
+      "Full-stack"
+    ],
+    "coolness": 88,
+    "showcaseTag": "Full-stack",
+    "showcaseTech": "Spring Boot",
+    "proofPoints": [
+      "MBTA prediction-driven leave-now API",
+      "Fixed commute leave-by planner with transfer and walking buffers",
+      "Spring Boot + Gradle Kotlin DSL practice project"
+    ],
+    "overview": "MBTA Leave Now is a learning-focused Spring Boot project that answers a commuter question: when should I leave? It includes both a generic stop-level API and a more opinionated leave-by planner for a fixed commute to RTX BBN.",
+    "whatIBuilt": [
+      "Spring MVC endpoints for stop-level leave guidance and a fixed commute planner",
+      "MBTA API client using Java HttpClient and Jackson parsing",
+      "Minimal browser UI for entering a deadline and viewing leave-by guidance"
+    ],
+    "howItWorks": [
+      "Fetch upcoming MBTA predictions and schedules for relevant stops",
+      "Apply walk-time and transfer buffers to compute a leave-by recommendation",
+      "Expose results through a REST API and a lightweight static frontend"
+    ],
+    "results": [
+      "Concrete practice project for Gradle Kotlin DSL, Spring MVC, and test structure",
+      "Bridges backend API logic and a usable frontend in one small repo"
+    ],
+    "nextSteps": [
+      "Generalize the fixed commute planner into configurable routes",
+      "Add example responses and screenshots for easier onboarding"
+    ],
+    "coverImage": null,
+    "gallery": [],
+    "bullets": [
+      "Spring Boot app uses live MBTA predictions to compute leave-now guidance.",
+      "Includes a fixed commute planner that models transfer and walking buffers.",
+      "Good small-scale full-stack project for Java, Gradle, and HTTP API practice."
+    ],
+    "links": [
+      {
+        "label": "Git Repo",
+        "href": "https://github.com/seanpatrickmay/mbta-leave-now",
         "kind": "repo"
       }
     ]
@@ -237,7 +587,7 @@
     "period": "Updated Sep 2025",
     "startDate": null,
     "endDate": null,
-    "updatedAt": "2025-09-01",
+    "updatedAt": "2025-09-29",
     "stack": [
       "Python",
       "FastAPI",
@@ -245,8 +595,8 @@
       "CrewAI",
       "ChromaDB"
     ],
-    "oneLiner": "Agentic study workflow turning class materials and Anki decks into flashcards and cheat sheets.",
-    "cardDescription": "Agentic study workflow that turns notes + decks into flashcards and cheat sheets.",
+    "oneLiner": "Forked study workflow that turns notes and decks into flashcards, exports, and cheat sheets.",
+    "cardDescription": "Forked agentic study workflow for flashcards, Anki exports, and cheat sheets.",
     "languages": [
       "Python",
       "JavaScript"
@@ -254,44 +604,59 @@
     "tags": [
       "Full-stack",
       "Data Engineering",
-      "Agentic AI",
-      "Concurrency"
+      "Agentic AI"
     ],
-    "coolness": 94,
-    "caseStudyRank": 4,
+    "coolness": 87,
     "showcaseTag": "Agentic AI",
     "showcaseTech": "CrewAI",
     "proofPoints": [
-      "Agents generate flashcards + cheat sheets from raw notes",
-      "RAG-backed revisions built from Anki exports",
-      "FastAPI + ChromaDB pipeline with simple upload/download UI"
+      "Document ingestion -> flashcards -> cheat-sheet workflow",
+      "RAG-backed study flow using ChromaDB",
+      "FastAPI app with a focused single-page interface"
     ],
-    "overview": "study-buddy is an agentic workflow for turning class materials into useful outputs: flashcards, cheat sheets, and structured review. It leans on retrieval (ChromaDB) so generations stay anchored in your source material, and it loops Anki exports back in to guide revisions.",
+    "overview": "study-buddy is a forked study companion that turns lecture notes, research papers, and Anki exports into curated flashcards, decks, and cheat sheets. It combines LLM tooling, retrieval, and a simple web interface into one study workflow.",
     "whatIBuilt": [
-      "CrewAI agent pipeline to expand notes and draft study artifacts",
-      "RAG layer using ChromaDB to keep generations grounded",
-      "Two-step workflow that incorporates Anki exports for difficulty-weighted revisions",
-      "FastAPI service + minimal UI for uploading material and downloading outputs"
+      "Maintained and documented a forked workflow for study-material ingestion and artifact generation",
+      "FastAPI-backed flow for converting source material into flashcards and cheat sheets",
+      "RAG path using ChromaDB to keep generations anchored in the uploaded material"
     ],
     "howItWorks": [
-      "Upload notes/decks",
-      "Index key chunks into ChromaDB",
-      "Agents generate flashcards/cheat sheets with retrieval context",
-      "Optionally loop Anki exports back in to drive revisions"
+      "Upload notes, papers, or deck exports",
+      "Index material into a retrieval layer",
+      "Generate flashcards, exports, and cheat-sheet style outputs from the grounded context"
     ],
     "results": [
-      "Repeatable workflow from messy notes to structured study material"
+      "Prototype shows a concrete AI-assisted study loop from raw notes to review artifacts"
     ],
     "nextSteps": [
-      "Add lightweight evaluation for artifact quality (coverage, correctness, redundancy)",
-      "Add an opinionated study plan mode (time-boxed reviews)"
+      "Document fork-specific contributions more precisely",
+      "Add screenshots and example outputs to support portfolio presentation"
     ],
-    "coverImage": null,
-    "gallery": [],
+    "coverImage": {
+      "src": "/projects/study-buddy/cover.svg",
+      "alt": "study-buddy workflow overview"
+    },
+    "gallery": [
+      {
+        "src": "/projects/study-buddy/01-upload.svg",
+        "alt": "Upload flow",
+        "caption": "Upload and ingest study material."
+      },
+      {
+        "src": "/projects/study-buddy/02-output.svg",
+        "alt": "Output artifacts",
+        "caption": "Generated study artifacts and outputs."
+      },
+      {
+        "src": "/projects/study-buddy/03-workflow.svg",
+        "alt": "Workflow diagram",
+        "caption": "High-level workflow across ingestion, retrieval, and generation."
+      }
+    ],
     "bullets": [
-      "CrewAI-powered agents ingest notes, expand key concepts, and assemble flashcards plus cheat sheets.",
-      "Two-step workflow loops Anki exports back in to build difficulty-weighted revisions with RAG context.",
-      "FastAPI + Chroma backend with a focused single-page UI for uploading material and downloading artefacts."
+      "Forked study workflow turns notes and decks into flashcards, exports, and cheat sheets.",
+      "Uses retrieval-backed generation with ChromaDB to keep outputs grounded in source material.",
+      "FastAPI service and simple UI make the workflow usable outside a notebook setting."
     ],
     "links": [
       {
@@ -302,131 +667,59 @@
     ]
   },
   {
-    "title": "Human Digit Classification",
-    "slug": "human-digit-classification",
-    "emoji": "🔢",
-    "period": "Jan – Mar 2025",
-    "startDate": "2025-01-01",
-    "endDate": "2025-03-01",
-    "updatedAt": "2025-03-01",
-    "stack": [
-      "Python",
-      "JavaScript",
-      "HTML",
-      "PyTorch",
-      "ML"
-    ],
-    "oneLiner": "Computer-vision pipeline that detects hands, counts digits, and serves a web demo.",
-    "featuredDescription": "CV pipeline for hand detection and digit-count classification.",
-    "cardDescription": "CV pipeline for hand detection and digit-count classification.",
-    "languages": [
-      "Python",
-      "JavaScript"
-    ],
-    "tags": [
-      "Machine Learning",
-      "Computer Vision",
-      "Algorithms",
-      "Full-stack",
-      "Data Engineering"
-    ],
-    "coolness": 98,
-    "caseStudyRank": 3,
-    "showcaseTag": "Computer Vision",
-    "showcaseTech": "PyTorch",
-    "proofPoints": [
-      "10,000+ custom-labeled images",
-      "Two-stage CNN: bbox regression → digit-count classification",
-      "Augmentation + evaluation loop to improve robustness"
-    ],
-    "overview": "This project builds a two-stage computer vision pipeline: detect a hand region and then classify the number of digits being shown. I built the dataset, labeling tooling, and training loop end-to-end, then wired it into a simple web demo.",
-    "whatIBuilt": [
-      "Two-stage CNN pipeline in PyTorch (bbox regression + digit-count classification)",
-      "Custom dataset + home-grown labeling tooling (10,000+ annotated images)",
-      "Augmentation pipeline applying transforms to both images and annotations"
-    ],
-    "howItWorks": [
-      "Train a bounding-box regressor with Generalized IoU loss",
-      "Crop and standardize the detected hand region",
-      "Run a digit-count classifier on the cropped region",
-      "Iterate via evaluation + targeted augmentation"
-    ],
-    "results": [
-      "Improved F1 through iterative evaluation and augmentation"
-    ],
-    "nextSteps": [
-      "Try modern detector backbones (YOLO-style) for robustness",
-      "Add clearer demo outputs (confidence, failure modes)"
-    ],
-    "coverImage": null,
-    "gallery": [],
-    "bullets": [
-      "Built a two-stage CNN pipeline in PyTorch: bounding-box regression with Generalized IoU loss → digit-count classification; improved F1-score through iterative evaluation.",
-      "Created a custom, fully annotated dataset of 10,000+ images from scratch using home-grown labeling tools.",
-      "Applied image + annotation transformations for data augmentation and robustness."
-    ],
-    "links": [
-      {
-        "label": "Git Repo",
-        "href": "https://github.com/seanpatrickmay/Human-Digit-Recognition",
-        "kind": "repo"
-      }
-    ]
-  },
-  {
-    "title": "Counterfactual Regret Exploration (CFR-Min)",
+    "title": "Counterfactual Regret Exploration",
     "slug": "cfr-exploration",
     "emoji": "♟️",
-    "period": "Nov 2024 – Present",
-    "startDate": "2024-11-01",
+    "period": "Updated Sep 2025",
+    "startDate": null,
     "endDate": null,
-    "updatedAt": null,
+    "updatedAt": "2025-09-21",
     "stack": [
       "Jupyter",
-      "NumPy",
-      "Reinforcement Learning"
+      "Python",
+      "Game Theory"
     ],
-    "oneLiner": "Research notebooks applying CFR-Min techniques to imperfect-information strategy games.",
-    "cardDescription": "CFR-Min research notebooks exploring equilibria in imperfect-information games.",
+    "oneLiner": "Notebook-based exploration of Counterfactual Regret Minimization on simple imperfect-information games.",
+    "cardDescription": "CFR notebooks exploring regret updates and toy imperfect-information games.",
     "languages": [
       "Python"
     ],
     "tags": [
       "Game Theory",
-      "Algorithms",
-      "Machine Learning"
+      "Algorithms"
     ],
-    "coolness": 86,
+    "coolness": 85,
     "showcaseTag": "Game Theory",
-    "showcaseTech": "NumPy",
+    "showcaseTech": "Jupyter",
     "proofPoints": [
-      "CFR-Min notebooks for imperfect-information games",
-      "Worked examples: Kuhn Poker, Colonel Blotto",
-      "Exploration toward general sequential games"
+      "CFR notebooks for rock-paper-scissors and AKQ poker-style games",
+      "Learning-focused bridge from toy games to larger poker work",
+      "Notebook commentary that preserves the reasoning trail"
     ],
-    "overview": "A set of research notebooks exploring CFR-Min for finding equilibria in imperfect-information settings. The focus is on building intuition through worked examples and gradually generalizing toward more complex sequential games.",
+    "overview": "CFR-Exploration is a small notebook-first repo for understanding Counterfactual Regret Minimization through toy imperfect-information games. It captures the experimentation path and intuition-building that later informed larger poker work.",
     "whatIBuilt": [
-      "Notebooks implementing and experimenting with CFR-Min ideas",
-      "Worked examples for small games (Kuhn Poker, Colonel Blotto)",
-      "A playground to test abstractions and convergence behavior"
+      "Notebooks exploring CFR on rock-paper-scissors and simplified poker-style games",
+      "Commentary and experiments around regret updates and average-strategy behavior",
+      "A learning bridge between introductory CFR material and larger poker engines"
     ],
     "howItWorks": [
-      "Define game representation and information sets",
-      "Run CFR-Min iterations to update regrets/strategies",
-      "Track convergence signals and compare variants",
-      "Extend to additional worked examples as the framework stabilizes"
+      "Open the notebooks and run CFR iterations on toy games",
+      "Inspect strategy outputs and convergence behavior",
+      "Use the experiments to build intuition before scaling the ideas up"
     ],
-    "results": [],
+    "results": [
+      "Created a compact learning repo for imperfect-information game strategy experiments"
+    ],
     "nextSteps": [
-      "Add more consistent experiment logging and plots",
-      "Extend toward larger sequential games with abstractions"
+      "Add dependency pinning and exported result artifacts",
+      "Summarize notebook outcomes more explicitly in the repo and portfolio"
     ],
     "coverImage": null,
     "gallery": [],
     "bullets": [
-      "Exploring CFR-Min for Nash equilibria in imperfect-information games.",
-      "Worked examples: Colonel Blotto, Kuhn Poker.",
-      "Toward general application for sequential games (Risk, Poker)."
+      "Notebook-first exploration of CFR on simple imperfect-information games.",
+      "Useful bridge between introductory regret-matching exercises and larger poker projects.",
+      "Preserves the experimentation trail instead of only the final cleaned-up implementation."
     ],
     "links": [
       {
@@ -437,65 +730,63 @@
     ]
   },
   {
-    "title": "No-Limit Hold’em Alpha-Beta Pruning",
-    "slug": "nlhe-alpha-beta",
-    "emoji": "🃏",
-    "period": "Aug – Dec 2024",
-    "startDate": "2024-08-01",
-    "endDate": "2024-12-01",
-    "updatedAt": "2024-12-01",
+    "title": "N-Queens Genetic Algorithm",
+    "slug": "nqueens-genetic-algorithms",
+    "emoji": "♛",
+    "period": "Updated Nov 2025",
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2025-11-02",
     "stack": [
       "Python",
-      "NumPy",
-      "Monte Carlo"
+      "Genetic Algorithms"
     ],
-    "oneLiner": "Alpha-beta search experiments for simplified No-Limit Hold’em decision trees.",
-    "cardDescription": "Alpha–beta + Monte Carlo approximations for simplified Hold’em decision trees.",
+    "oneLiner": "Compact genetic algorithm solver for evolving conflict-free N-Queens boards.",
+    "cardDescription": "Genetic algorithm solver for evolving conflict-free N-Queens boards.",
     "languages": [
       "Python"
     ],
     "tags": [
-      "Game Theory",
       "Algorithms"
     ],
-    "coolness": 96,
-    "showcaseTag": "Game Theory",
-    "showcaseTech": "Monte Carlo",
+    "coolness": 84,
+    "showcaseTag": "Algorithms",
+    "showcaseTech": "Genetic Algorithms",
     "proofPoints": [
-      "2+ orders of magnitude complexity reduction via alpha–beta pruning",
-      "Reduced game space to < 1e-6 using abstractions + rollouts",
-      "Decision-tree exploration for simplified NLHE"
+      "Tournament selection + single-point crossover",
+      "Mutation schedule that scales with board size",
+      "CLI/.env configurable experiments"
     ],
-    "overview": "This project explores adversarial search for simplified no-limit Hold’em decision trees. The emphasis is on computational tractability: reduce branching aggressively with alpha–beta pruning and abstractions, then use Monte Carlo rollouts to approximate the remaining space.",
+    "overview": "This project explores the N-Queens puzzle through a compact genetic algorithm. It is intentionally small and transparent, making it easy to inspect how population size, mutation behavior, and iteration caps affect convergence.",
     "whatIBuilt": [
-      "Alpha–beta pruning over simplified NLHE decision trees",
-      "Monte Carlo rollouts for approximating outcomes in large spaces",
-      "State/action abstractions (bucketing, action limiting, range modeling)"
+      "Single-file genetic algorithm implementation with tournament selection and crossover",
+      "Collision-based fitness function for scoring candidate boards",
+      "CLI and .env configuration for quick experimentation"
     ],
     "howItWorks": [
-      "Represent NLHE states with simplified assumptions",
-      "Use alpha–beta pruning to cut branches early",
-      "Approximate remaining leaf outcomes via Monte Carlo rollouts",
-      "Evaluate search behavior and tune abstractions"
+      "Initialize a population of candidate boards",
+      "Score conflicts and select parents via tournaments",
+      "Apply crossover and mutation across generations",
+      "Stop when a zero-collision solution is found or iteration cap is hit"
     ],
     "results": [
-      "Reduced computational complexity by 2+ orders of magnitude in early-game positions",
-      "Reduced game space to < 1e-6 of the original via abstractions and rollouts"
+      "Good compact reference implementation for an evolutionary search workflow"
     ],
     "nextSteps": [
-      "Explore stronger abstractions for ranges and bet sizing",
-      "Benchmark against alternative search variants"
+      "Add seeded benchmarking and clearer example outputs",
+      "Try alternate encodings or hybrid local-search ideas"
     ],
     "coverImage": null,
     "gallery": [],
     "bullets": [
-      "Employed adversarial search with alpha–beta pruning to navigate simplified no-limit Hold’em decision trees, reducing computational complexity by 2+ orders of magnitude in early-game positions.",
-      "Reduced the game space to < 1e-6 of the original via Monte Carlo rollouts, hand bucketing, action limiting, and a probabilistic hand-range model (complete-information approximation)."
+      "Compact GA solver keeps the evolutionary search mechanics easy to read and modify.",
+      "Tournament selection, crossover, and mutation provide a clear baseline for experimentation.",
+      "Useful small repo for combinatorial optimization rather than a generic algorithm toy."
     ],
     "links": [
       {
         "label": "Git Repo",
-        "href": "https://github.com/seanpatrickmay/PokerML",
+        "href": "https://github.com/seanpatrickmay/NQueensGeneticAlgorithms",
         "kind": "repo"
       }
     ]
@@ -513,7 +804,7 @@
       "javalib.impworld",
       "javalib.worldimages"
     ],
-    "oneLiner": "Interactive maze generator and solver with DFS/BFS playback and player mode in Java.",
+    "oneLiner": "Interactive maze generator and solver with DFS/BFS playback and manual player mode in Java.",
     "cardDescription": "Java maze generator/solver with BFS/DFS playback and an interactive player mode.",
     "languages": [
       "Java"
@@ -525,98 +816,39 @@
     "showcaseTag": "Algorithms",
     "showcaseTech": "Java",
     "proofPoints": [
-      "Maze generation with guaranteed solvability",
-      "BFS/DFS solver visualization + playback",
-      "Interactive player mode with controls + collision"
+      "Maze generation via weighted graph + spanning tree ideas",
+      "BFS and DFS solver visualization",
+      "Interactive player mode with keyboard controls"
     ],
-    "overview": "A Java maze generator and solver with multiple modes: generate mazes, watch BFS/DFS solve them, or play through manually. Built to make pathfinding mechanics tangible instead of abstract.",
+    "overview": "Maze-Game is a Java world program that generates solvable mazes, animates breadth-first or depth-first search, and supports a manual play mode. It combines graph generation, search visualization, and event-driven interaction in one compact project.",
     "whatIBuilt": [
-      "Maze generator with adjustable difficulty/layout",
-      "BFS/DFS solver overlays and playback visualization",
-      "Interactive mode with keyboard controls and collision handling"
+      "Maze generator over a grid graph using weighted edges and union-find style logic",
+      "Solver playback for BFS and DFS so pathfinding is visible instead of abstract",
+      "Manual mode with movement, collision checks, and win detection"
     ],
     "howItWorks": [
-      "Generate a maze with a chosen layout/difficulty",
-      "Run BFS/DFS to compute a path",
-      "Render solver overlays to visualize the algorithm’s progress",
-      "Optionally play through the maze in manual mode"
+      "Generate a maze from weighted connections across a grid",
+      "Choose BFS or DFS to visualize a solver path",
+      "Optionally switch into manual mode and play through the maze"
     ],
-    "results": [],
+    "results": [
+      "Good early project for graph algorithms, search, and interactive Java state"
+    ],
     "nextSteps": [
-      "Add more maze generation variants and heuristics",
-      "Add performance metrics for solver comparisons"
+      "Add screenshots or GIFs of generation and solver playback",
+      "Document the course-library setup more precisely"
     ],
     "coverImage": null,
     "gallery": [],
     "bullets": [
-      "Generates solvable mazes with adjustable difficulty and layouts.",
-      "Interactive run mode with keyboard controls and collision handling.",
-      "Includes visual solver overlays to demonstrate path-finding tactics."
+      "Interactive Java project combines maze generation, search visualization, and manual play.",
+      "BFS and DFS modes make algorithm differences easy to see on the same generated maze.",
+      "Nice compact example of graph logic, world state, and event-driven UI in one file."
     ],
     "links": [
       {
         "label": "Git Repo",
         "href": "https://github.com/seanpatrickmay/Maze-Game",
-        "kind": "repo"
-      }
-    ]
-  },
-  {
-    "title": "NQueensGeneticAlgorithms",
-    "slug": "nqueens-genetic-algorithms",
-    "emoji": "♛",
-    "period": "Updated Feb 2025",
-    "startDate": null,
-    "endDate": null,
-    "updatedAt": "2025-02-01",
-    "stack": [
-      "Python",
-      "Genetic Algorithms"
-    ],
-    "oneLiner": "Genetic algorithm playground evolving conflict-free N-Queens boards.",
-    "cardDescription": "Genetic algorithm playground evolving conflict-free N-Queens boards.",
-    "languages": [
-      "Python"
-    ],
-    "tags": [
-      "Algorithms"
-    ],
-    "coolness": 84,
-    "showcaseTag": "Algorithms",
-    "showcaseTech": "Genetic Algorithms",
-    "proofPoints": [
-      "Tournament selection + crossover toward zero conflicts",
-      "Adaptive mutation rate by board size",
-      "CLI/.env configurable experiments"
-    ],
-    "overview": "A genetic algorithm playground for evolving conflict-free N-Queens boards. The focus is on experimenting with selection, crossover, mutation schedules, and configuration knobs to see how convergence changes.",
-    "whatIBuilt": [
-      "Genetic search with tournament selection and single-point crossover",
-      "Mutation schedule that scales with board size",
-      "CLI + .env configuration for quick experimentation"
-    ],
-    "howItWorks": [
-      "Initialize a population of candidate boards",
-      "Score fitness based on queen conflicts",
-      "Select parents and apply crossover + mutation",
-      "Iterate until convergence or iteration cap"
-    ],
-    "results": [],
-    "nextSteps": [
-      "Add clearer run logs/plots to compare parameter settings",
-      "Try alternate encodings for board representation"
-    ],
-    "coverImage": null,
-    "gallery": [],
-    "bullets": [
-      "Tournament selection and single-point crossover push populations toward zero-collision layouts.",
-      "Mutation rate scales automatically with board size for balanced exploration and convergence.",
-      ".env-configurable constants let you trial different populations, iteration caps, and board sizes from the CLI."
-    ],
-    "links": [
-      {
-        "label": "Git Repo",
-        "href": "https://github.com/seanpatrickmay/NQueensGeneticAlgorithms",
         "kind": "repo"
       }
     ]
@@ -671,9 +903,8 @@
     "gallery": [],
     "bullets": [
       "Reversi on a hexagonal odd-r grid with configurable board shapes and starting states.",
-      "Extensible MVC design: model interfaces, pluggable text/GUI views, and a controller to orchestrate play.",
-      "Factory creator builds variants without exposing constructors; supports multiple player types (human/AI).",
-      "Modular strategies (minimax, capture-max, corners, avoid-near-corners) with combinators to compose heuristics."
+      "Extensible MVC design with pluggable views, controllers, and player types.",
+      "Modular strategies support minimax and composable heuristic evaluation."
     ],
     "links": [
       {
@@ -733,9 +964,9 @@
     "coverImage": null,
     "gallery": [],
     "bullets": [
-      "Fully operational shell: commands, piping, I/O redirection, signals.",
-      "Child processes for sequential execution.",
-      "Custom commands: source, prev, cd, help, verbose toggle."
+      "Fully operational shell with commands, piping, redirection, and signal handling.",
+      "Uses child processes and process orchestration to support standard shell behavior.",
+      "Includes custom built-ins like source, prev, cd, help, and verbose mode."
     ],
     "links": [
       {
