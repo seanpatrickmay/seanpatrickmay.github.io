@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-09T14:05:08.610123Z",
+  "generated_at": "2026-03-10T14:00:49.299587Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,34 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 9,
-        "distance_km": 218.59,
-        "time_hours": 14.6,
+        "activities_count": 11,
+        "distance_km": 231.84,
+        "time_hours": 15.87,
         "longest_km": 56.62,
-        "calories_kcal": 8299.0
+        "calories_kcal": 9438.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 22126104824,
+            "name": "Boston Running",
+            "type": "running",
+            "start": "2026-03-09 19:35:09",
+            "distance_km": 2.81,
+            "duration_min": 15.7,
+            "avg_speed_kmh": 10.74,
+            "calories_kcal": 257.0
+          },
+          {
+            "id": 22126102514,
+            "name": "Boston Running",
+            "type": "running",
+            "start": "2026-03-09 16:25:05",
+            "distance_km": 10.44,
+            "duration_min": 60.4,
+            "avg_speed_kmh": 10.36,
+            "calories_kcal": 882.0
+          },
           {
             "id": 22098172741,
             "name": "Zwift - Three Step Sisters in Watopia",
@@ -596,26 +616,6 @@
             "duration_min": 101.4,
             "avg_speed_kmh": 27.36,
             "calories_kcal": 1184.0
-          },
-          {
-            "id": 21215819429,
-            "name": "cd",
-            "type": "virtual_ride",
-            "start": "2025-12-09 18:46:58",
-            "distance_km": 7.64,
-            "duration_min": 16.6,
-            "avg_speed_kmh": 27.72,
-            "calories_kcal": 116.0
-          },
-          {
-            "id": 21215658393,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-12-09 18:26:35",
-            "distance_km": 1.21,
-            "duration_min": 6.0,
-            "avg_speed_kmh": 12.06,
-            "calories_kcal": 104.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2026-03-09",
             "week_end": "2026-03-15",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
+            "distance_km": 13.25,
+            "time_hours": 1.27,
+            "calories_kcal": 1139.0
           }
         ]
       }
@@ -1221,26 +1221,6 @@
             "duration_min": 82.2,
             "avg_speed_kmh": 34.89,
             "calories_kcal": 931.0
-          },
-          {
-            "id": 20904930402,
-            "name": "warmup",
-            "type": "virtual_ride",
-            "start": "2025-11-05 18:11:34",
-            "distance_km": 13.11,
-            "duration_min": 25.2,
-            "avg_speed_kmh": 31.21,
-            "calories_kcal": 288.0
-          },
-          {
-            "id": 20895061506,
-            "name": "top of z2",
-            "type": "virtual_ride",
-            "start": "2025-11-04 19:05:38",
-            "distance_km": 20.08,
-            "duration_min": 33.7,
-            "avg_speed_kmh": 35.71,
-            "calories_kcal": 454.0
           }
         ]
       },
@@ -1309,14 +1289,34 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 2,
-        "distance_km": 27.1,
-        "time_hours": 2.66,
+        "activities_count": 4,
+        "distance_km": 40.34,
+        "time_hours": 3.93,
         "longest_km": 14.6,
-        "calories_kcal": 2354.0
+        "calories_kcal": 3493.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 22126104824,
+            "name": "Boston Running",
+            "type": "running",
+            "start": "2026-03-09 19:35:09",
+            "distance_km": 2.81,
+            "duration_min": 15.7,
+            "avg_speed_kmh": 10.74,
+            "calories_kcal": 257.0
+          },
+          {
+            "id": 22126102514,
+            "name": "Boston Running",
+            "type": "running",
+            "start": "2026-03-09 16:25:05",
+            "distance_km": 10.44,
+            "duration_min": 60.4,
+            "avg_speed_kmh": 10.36,
+            "calories_kcal": 882.0
+          },
           {
             "id": 22087413034,
             "name": "Boston Running",
@@ -1734,9 +1734,9 @@
           {
             "week_start": "2026-03-09",
             "week_end": "2026-03-15",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
+            "distance_km": 13.25,
+            "time_hours": 1.27,
+            "calories_kcal": 1139.0
           }
         ]
       }
