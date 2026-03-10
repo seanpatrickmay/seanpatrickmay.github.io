@@ -21,7 +21,7 @@ export default function Hero({ links, featuredProjects = [] }) {
           <div className="space-y-2 text-base md:text-lg text-slate-600 dark:text-slate-300">
             <p>I'm a CS &amp; Math student at Northeastern, always trying to get better at everything I do.</p>
             <p>
-              Most recently, I built an agentic AI tutor at NExT Consulting, and I'm currently doing quant research with NU Systematic Alpha.
+              Most recently, I built an agentic AI tutor at NExT Consulting. I'm currently doing quant research with NU Systematic Alpha, and this summer I'll be joining Capital One in Richmond as an incoming Software Engineer Intern.
             </p>
             <p>
               I love solving hard problems. If you have any for me, send me an email, I'd love to talk.
@@ -32,7 +32,7 @@ export default function Hero({ links, featuredProjects = [] }) {
               <Badge variant="outline" className="text-xs">🎓 Northeastern — B.S. CS &amp; Math (May 2027)</Badge>
               <Badge variant="outline" className="text-xs">📈 Quant Research — NU Systematic Alpha</Badge>
               <Badge variant="outline" className="text-xs">🧪 SWE Co-op — NExT Consulting (Fall 2025)</Badge>
-              <Badge variant="outline" className="text-xs">🔎 Summer/Fall 2026 SWE/ML roles</Badge>
+              <Badge variant="outline" className="text-xs">🏦 Incoming SWE Intern — Capital One (Richmond · June 1 – August 8, 2026)</Badge>
             </div>
           </div>
           <div className="flex flex-wrap gap-3 pt-2">

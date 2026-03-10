@@ -172,15 +172,17 @@ export default function Header({ links }) {
                   </div>
                   <div>
                     <div className="text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500">
-                      Looking for
+                      Upcoming
                     </div>
                     <div className="mt-3 flex items-start gap-2">
                       <span className="mt-0.5" aria-hidden="true">
-                        🔎
+                        🏦
                       </span>
                       <div className="min-w-0 leading-snug">
-                        <div className="font-medium text-slate-900 dark:text-slate-100">SWE/ML roles</div>
-                        <div className="text-xs text-slate-500 dark:text-slate-400">Summer/Fall 2026</div>
+                        <div className="font-medium text-slate-900 dark:text-slate-100">Incoming SWE Intern</div>
+                        <div className="text-xs text-slate-500 dark:text-slate-400">
+                          Capital One · Richmond, VA · June 1 – August 8, 2026
+                        </div>
                       </div>
                     </div>
                   </div>
