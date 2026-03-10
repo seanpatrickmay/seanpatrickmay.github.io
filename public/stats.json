@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-20T13:44:49.606049Z",
+  "generated_at": "2026-03-10T14:00:49.299587Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,214 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 27,
-        "distance_km": 279.08,
-        "time_hours": 21.81,
-        "longest_km": 58.34,
-        "calories_kcal": 17791.0
+        "activities_count": 11,
+        "distance_km": 231.84,
+        "time_hours": 15.87,
+        "longest_km": 56.62,
+        "calories_kcal": 9438.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 22126104824,
+            "name": "Boston Running",
+            "type": "running",
+            "start": "2026-03-09 19:35:09",
+            "distance_km": 2.81,
+            "duration_min": 15.7,
+            "avg_speed_kmh": 10.74,
+            "calories_kcal": 257.0
+          },
+          {
+            "id": 22126102514,
+            "name": "Boston Running",
+            "type": "running",
+            "start": "2026-03-09 16:25:05",
+            "distance_km": 10.44,
+            "duration_min": 60.4,
+            "avg_speed_kmh": 10.36,
+            "calories_kcal": 882.0
+          },
+          {
+            "id": 22098172741,
+            "name": "Zwift - Three Step Sisters in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-03-07 19:49:52",
+            "distance_km": 42.2,
+            "duration_min": 95.8,
+            "avg_speed_kmh": 26.42,
+            "calories_kcal": 972.0
+          },
+          {
+            "id": 22087413034,
+            "name": "Boston Running",
+            "type": "running",
+            "start": "2026-03-06 22:22:07",
+            "distance_km": 14.6,
+            "duration_min": 84.9,
+            "avg_speed_kmh": 10.32,
+            "calories_kcal": 1296.0
+          },
+          {
+            "id": 22041890446,
+            "name": "Cabezas Kayaking",
+            "type": "kayaking_v2",
+            "start": "2026-03-02 20:19:03",
+            "distance_km": 2.73,
+            "duration_min": 73.8,
+            "avg_speed_kmh": 2.22,
+            "calories_kcal": 417.0
+          },
+          {
+            "id": 22040159075,
+            "name": "Mameyes II Walking",
+            "type": "walking",
+            "start": "2026-03-02 11:29:43",
+            "distance_km": 15.31,
+            "duration_min": 295.6,
+            "avg_speed_kmh": 3.11,
+            "calories_kcal": 1926.0
+          },
+          {
+            "id": 22034976886,
+            "name": "Boston Running",
+            "type": "running",
+            "start": "2026-02-28 12:23:34",
+            "distance_km": 12.49,
+            "duration_min": 74.5,
+            "avg_speed_kmh": 10.06,
+            "calories_kcal": 1058.0
+          },
+          {
+            "id": 21987507426,
+            "name": "Zwift - Waisted 8 in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-02-25 18:52:14",
+            "distance_km": 30.85,
+            "duration_min": 55.6,
+            "avg_speed_kmh": 33.3,
+            "calories_kcal": 594.0
+          },
+          {
+            "id": 21880787373,
+            "name": "Zwift - Out And Back Again in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-02-15 16:22:15",
+            "distance_km": 56.62,
+            "duration_min": 100.9,
+            "avg_speed_kmh": 33.68,
+            "calories_kcal": 1186.0
+          },
+          {
+            "id": 21829397825,
+            "name": "Zwift - Downtown Eruption in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-02-10 16:58:03",
+            "distance_km": 19.79,
+            "duration_min": 45.4,
+            "avg_speed_kmh": 26.14,
+            "calories_kcal": 411.0
+          },
+          {
+            "id": 21820176465,
+            "name": "Zwift - Jurassic Coast in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-02-09 23:30:09",
+            "distance_km": 24.0,
+            "duration_min": 49.8,
+            "avg_speed_kmh": 28.93,
+            "calories_kcal": 439.0
+          },
+          {
+            "id": 21778759778,
+            "name": "Zwift - Mountain Route in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-02-05 20:47:18",
+            "distance_km": 30.57,
+            "duration_min": 57.1,
+            "avg_speed_kmh": 32.1,
+            "calories_kcal": 917.0
+          },
+          {
+            "id": 22034975998,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-02-01 20:33:26",
+            "distance_km": 0.0,
+            "duration_min": 16.4,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 282.0
+          },
+          {
+            "id": 22034975684,
+            "name": "Musculation",
+            "type": "strength_training",
+            "start": "2026-02-01 20:08:11",
+            "distance_km": 0.0,
+            "duration_min": 24.2,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 187.0
+          },
+          {
+            "id": 22034975350,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-02-01 19:50:19",
+            "distance_km": 0.0,
+            "duration_min": 15.3,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 217.0
+          },
+          {
+            "id": 21724478279,
+            "name": "Okemo Ski",
+            "type": "resort_skiing",
+            "start": "2026-01-31 09:05:13",
+            "distance_km": 58.08,
+            "duration_min": 421.3,
+            "avg_speed_kmh": 8.27,
+            "calories_kcal": 2107.0
+          },
+          {
+            "id": 21691857330,
+            "name": "Zwift - Triple Loops in London",
+            "type": "virtual_ride",
+            "start": "2026-01-28 09:46:29",
+            "distance_km": 41.34,
+            "duration_min": 70.5,
+            "avg_speed_kmh": 35.2,
+            "calories_kcal": 1115.0
+          },
+          {
+            "id": 21663015408,
+            "name": "Zwift - Knights of the Roundabout in France",
+            "type": "virtual_ride",
+            "start": "2026-01-25 11:17:19",
+            "distance_km": 56.55,
+            "duration_min": 92.9,
+            "avg_speed_kmh": 36.51,
+            "calories_kcal": 1255.0
+          },
+          {
+            "id": 21643701872,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-01-23 16:00:16",
+            "distance_km": 1.55,
+            "duration_min": 40.3,
+            "avg_speed_kmh": 2.31,
+            "calories_kcal": 650.0
+          },
+          {
+            "id": 21631749933,
+            "name": "Zwift - Mountain Mash in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-01-22 12:22:49",
+            "distance_km": 6.71,
+            "duration_min": 18.4,
+            "avg_speed_kmh": 21.93,
+            "calories_kcal": 330.0
+          },
           {
             "id": 21599608228,
             "name": "Track Running",
@@ -416,206 +616,6 @@
             "duration_min": 101.4,
             "avg_speed_kmh": 27.36,
             "calories_kcal": 1184.0
-          },
-          {
-            "id": 21215819429,
-            "name": "cd",
-            "type": "virtual_ride",
-            "start": "2025-12-09 18:46:58",
-            "distance_km": 7.64,
-            "duration_min": 16.6,
-            "avg_speed_kmh": 27.72,
-            "calories_kcal": 116.0
-          },
-          {
-            "id": 21215658393,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-12-09 18:26:35",
-            "distance_km": 1.21,
-            "duration_min": 6.0,
-            "avg_speed_kmh": 12.06,
-            "calories_kcal": 104.0
-          },
-          {
-            "id": 21215657982,
-            "name": "Boston - 10x3m",
-            "type": "running",
-            "start": "2025-12-09 17:34:00",
-            "distance_km": 11.89,
-            "duration_min": 48.7,
-            "avg_speed_kmh": 14.66,
-            "calories_kcal": 943.0
-          },
-          {
-            "id": 21215266524,
-            "name": "wu",
-            "type": "virtual_ride",
-            "start": "2025-12-09 16:54:19",
-            "distance_km": 18.62,
-            "duration_min": 30.3,
-            "avg_speed_kmh": 36.89,
-            "calories_kcal": 356.0
-          },
-          {
-            "id": 21197980704,
-            "name": "han",
-            "type": "virtual_ride",
-            "start": "2025-12-07 18:27:07",
-            "distance_km": 87.53,
-            "duration_min": 155.2,
-            "avg_speed_kmh": 33.84,
-            "calories_kcal": 1568.0
-          },
-          {
-            "id": 21197154262,
-            "name": "wu",
-            "type": "virtual_ride",
-            "start": "2025-12-07 15:51:48",
-            "distance_km": 42.8,
-            "duration_min": 71.4,
-            "avg_speed_kmh": 35.97,
-            "calories_kcal": 897.0
-          },
-          {
-            "id": 21187697508,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-12-06 13:03:20",
-            "distance_km": 8.43,
-            "duration_min": 48.1,
-            "avg_speed_kmh": 10.51,
-            "calories_kcal": 570.0
-          },
-          {
-            "id": 21180517783,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-12-05 17:48:24",
-            "distance_km": 12.33,
-            "duration_min": 55.9,
-            "avg_speed_kmh": 13.23,
-            "calories_kcal": 987.0
-          },
-          {
-            "id": 21179411101,
-            "name": "warmup",
-            "type": "virtual_ride",
-            "start": "2025-12-05 16:58:50",
-            "distance_km": 18.33,
-            "duration_min": 31.2,
-            "avg_speed_kmh": 35.26,
-            "calories_kcal": 337.0
-          },
-          {
-            "id": 21171379001,
-            "name": "easy",
-            "type": "virtual_ride",
-            "start": "2025-12-04 15:43:32",
-            "distance_km": 56.34,
-            "duration_min": 93.3,
-            "avg_speed_kmh": 36.24,
-            "calories_kcal": 1063.0
-          },
-          {
-            "id": 21163557645,
-            "name": "end threshold",
-            "type": "virtual_ride",
-            "start": "2025-12-03 18:03:32",
-            "distance_km": 76.39,
-            "duration_min": 120.3,
-            "avg_speed_kmh": 38.08,
-            "calories_kcal": 1652.0
-          },
-          {
-            "id": 21154506416,
-            "name": "easy",
-            "type": "virtual_ride",
-            "start": "2025-12-02 18:45:35",
-            "distance_km": 71.46,
-            "duration_min": 119.6,
-            "avg_speed_kmh": 35.86,
-            "calories_kcal": 1286.0
-          },
-          {
-            "id": 21144932058,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-12-01 20:55:05",
-            "distance_km": 2.72,
-            "duration_min": 12.5,
-            "avg_speed_kmh": 13.06,
-            "calories_kcal": 216.0
-          },
-          {
-            "id": 21144931521,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-12-01 19:49:03",
-            "distance_km": 5.67,
-            "duration_min": 35.0,
-            "avg_speed_kmh": 9.72,
-            "calories_kcal": 477.0
-          },
-          {
-            "id": 21144931006,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-12-01 19:21:12",
-            "distance_km": 2.72,
-            "duration_min": 12.8,
-            "avg_speed_kmh": 12.71,
-            "calories_kcal": 227.0
-          },
-          {
-            "id": 21125458177,
-            "name": "Columbia Course à pied",
-            "type": "running",
-            "start": "2025-11-29 14:22:09",
-            "distance_km": 4.87,
-            "duration_min": 36.0,
-            "avg_speed_kmh": 8.12,
-            "calories_kcal": 437.0
-          },
-          {
-            "id": 21105451098,
-            "name": "Howard County Course à pied",
-            "type": "running",
-            "start": "2025-11-27 08:30:12",
-            "distance_km": 5.03,
-            "duration_min": 19.7,
-            "avg_speed_kmh": 15.31,
-            "calories_kcal": 345.0
-          },
-          {
-            "id": 21101538650,
-            "name": "Zwift - 40 easy 190 on Volcano Flat in Watopia",
-            "type": "virtual_ride",
-            "start": "2025-11-26 19:50:09",
-            "distance_km": 22.4,
-            "duration_min": 40.2,
-            "avg_speed_kmh": 33.39,
-            "calories_kcal": 436.0
-          },
-          {
-            "id": 21092674619,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-11-25 22:30:36",
-            "distance_km": 1.51,
-            "duration_min": 7.3,
-            "avg_speed_kmh": 12.45,
-            "calories_kcal": 121.0
-          },
-          {
-            "id": 21092674393,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-11-25 21:22:30",
-            "distance_km": 12.69,
-            "duration_min": 62.1,
-            "avg_speed_kmh": 12.26,
-            "calories_kcal": 997.0
           }
         ]
       },
@@ -623,60 +623,60 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-12-01",
-            "week_end": "2025-12-07",
-            "distance_km": 384.72,
-            "time_hours": 12.59,
-            "calories_kcal": 9280.0
-          },
-          {
-            "week_start": "2025-12-08",
-            "week_end": "2025-12-14",
-            "distance_km": 315.95,
-            "time_hours": 13.16,
-            "calories_kcal": 9096.0
-          },
-          {
-            "week_start": "2025-12-15",
-            "week_end": "2025-12-21",
-            "distance_km": 61.7,
-            "time_hours": 5.03,
-            "calories_kcal": 3512.0
-          },
-          {
-            "week_start": "2025-12-22",
-            "week_end": "2025-12-28",
-            "distance_km": 5.02,
-            "time_hours": 2.3,
-            "calories_kcal": 1816.0
-          },
-          {
-            "week_start": "2025-12-29",
-            "week_end": "2026-01-04",
-            "distance_km": 29.02,
-            "time_hours": 5.14,
-            "calories_kcal": 3843.0
-          },
-          {
-            "week_start": "2026-01-05",
-            "week_end": "2026-01-11",
-            "distance_km": 135.65,
-            "time_hours": 7.69,
-            "calories_kcal": 6578.0
-          },
-          {
-            "week_start": "2026-01-12",
-            "week_end": "2026-01-18",
-            "distance_km": 104.42,
-            "time_hours": 6.18,
-            "calories_kcal": 5158.0
-          },
-          {
             "week_start": "2026-01-19",
             "week_end": "2026-01-25",
-            "distance_km": 4.96,
-            "time_hours": 0.5,
-            "calories_kcal": 396.0
+            "distance_km": 69.78,
+            "time_hours": 3.03,
+            "calories_kcal": 2631.0
+          },
+          {
+            "week_start": "2026-01-26",
+            "week_end": "2026-02-01",
+            "distance_km": 99.41,
+            "time_hours": 9.13,
+            "calories_kcal": 3908.0
+          },
+          {
+            "week_start": "2026-02-02",
+            "week_end": "2026-02-08",
+            "distance_km": 30.57,
+            "time_hours": 0.95,
+            "calories_kcal": 917.0
+          },
+          {
+            "week_start": "2026-02-09",
+            "week_end": "2026-02-15",
+            "distance_km": 100.41,
+            "time_hours": 3.27,
+            "calories_kcal": 2036.0
+          },
+          {
+            "week_start": "2026-02-16",
+            "week_end": "2026-02-22",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-02-23",
+            "week_end": "2026-03-01",
+            "distance_km": 43.34,
+            "time_hours": 2.17,
+            "calories_kcal": 1652.0
+          },
+          {
+            "week_start": "2026-03-02",
+            "week_end": "2026-03-08",
+            "distance_km": 74.84,
+            "time_hours": 9.17,
+            "calories_kcal": 4611.0
+          },
+          {
+            "week_start": "2026-03-09",
+            "week_end": "2026-03-15",
+            "distance_km": 13.25,
+            "time_hours": 1.27,
+            "calories_kcal": 1139.0
           }
         ]
       }
@@ -684,14 +684,124 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 9,
-        "distance_km": 180.56,
-        "time_hours": 6.45,
-        "longest_km": 58.34,
-        "calories_kcal": 5254.0
+        "activities_count": 5,
+        "distance_km": 173.45,
+        "time_hours": 5.79,
+        "longest_km": 56.62,
+        "calories_kcal": 3602.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 22098172741,
+            "name": "Zwift - Three Step Sisters in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-03-07 19:49:52",
+            "distance_km": 42.2,
+            "duration_min": 95.8,
+            "avg_speed_kmh": 26.42,
+            "calories_kcal": 972.0
+          },
+          {
+            "id": 21987507426,
+            "name": "Zwift - Waisted 8 in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-02-25 18:52:14",
+            "distance_km": 30.85,
+            "duration_min": 55.6,
+            "avg_speed_kmh": 33.3,
+            "calories_kcal": 594.0
+          },
+          {
+            "id": 21880787373,
+            "name": "Zwift - Out And Back Again in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-02-15 16:22:15",
+            "distance_km": 56.62,
+            "duration_min": 100.9,
+            "avg_speed_kmh": 33.68,
+            "calories_kcal": 1186.0
+          },
+          {
+            "id": 21829397825,
+            "name": "Zwift - Downtown Eruption in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-02-10 16:58:03",
+            "distance_km": 19.79,
+            "duration_min": 45.4,
+            "avg_speed_kmh": 26.14,
+            "calories_kcal": 411.0
+          },
+          {
+            "id": 21820176465,
+            "name": "Zwift - Jurassic Coast in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-02-09 23:30:09",
+            "distance_km": 24.0,
+            "duration_min": 49.8,
+            "avg_speed_kmh": 28.93,
+            "calories_kcal": 439.0
+          },
+          {
+            "id": 21778759778,
+            "name": "Zwift - Mountain Route in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-02-05 20:47:18",
+            "distance_km": 30.57,
+            "duration_min": 57.1,
+            "avg_speed_kmh": 32.1,
+            "calories_kcal": 917.0
+          },
+          {
+            "id": 22034975998,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-02-01 20:33:26",
+            "distance_km": 0.0,
+            "duration_min": 16.4,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 282.0
+          },
+          {
+            "id": 22034975350,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-02-01 19:50:19",
+            "distance_km": 0.0,
+            "duration_min": 15.3,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 217.0
+          },
+          {
+            "id": 21691857330,
+            "name": "Zwift - Triple Loops in London",
+            "type": "virtual_ride",
+            "start": "2026-01-28 09:46:29",
+            "distance_km": 41.34,
+            "duration_min": 70.5,
+            "avg_speed_kmh": 35.2,
+            "calories_kcal": 1115.0
+          },
+          {
+            "id": 21663015408,
+            "name": "Zwift - Knights of the Roundabout in France",
+            "type": "virtual_ride",
+            "start": "2026-01-25 11:17:19",
+            "distance_km": 56.55,
+            "duration_min": 92.9,
+            "avg_speed_kmh": 36.51,
+            "calories_kcal": 1255.0
+          },
+          {
+            "id": 21631749933,
+            "name": "Zwift - Mountain Mash in Watopia",
+            "type": "virtual_ride",
+            "start": "2026-01-22 12:22:49",
+            "distance_km": 6.71,
+            "duration_min": 18.4,
+            "avg_speed_kmh": 21.93,
+            "calories_kcal": 330.0
+          },
           {
             "id": 21580918194,
             "name": "WITH MUMA",
@@ -1111,176 +1221,6 @@
             "duration_min": 82.2,
             "avg_speed_kmh": 34.89,
             "calories_kcal": 931.0
-          },
-          {
-            "id": 20904930402,
-            "name": "warmup",
-            "type": "virtual_ride",
-            "start": "2025-11-05 18:11:34",
-            "distance_km": 13.11,
-            "duration_min": 25.2,
-            "avg_speed_kmh": 31.21,
-            "calories_kcal": 288.0
-          },
-          {
-            "id": 20895061506,
-            "name": "top of z2",
-            "type": "virtual_ride",
-            "start": "2025-11-04 19:05:38",
-            "distance_km": 20.08,
-            "duration_min": 33.7,
-            "avg_speed_kmh": 35.71,
-            "calories_kcal": 454.0
-          },
-          {
-            "id": 20884085770,
-            "name": "EASY WEEK",
-            "type": "virtual_ride",
-            "start": "2025-11-03 17:26:04",
-            "distance_km": 38.47,
-            "duration_min": 61.9,
-            "avg_speed_kmh": 37.29,
-            "calories_kcal": 743.0
-          },
-          {
-            "id": 20880274349,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-11-03 10:59:03",
-            "distance_km": 3.53,
-            "duration_min": 11.5,
-            "avg_speed_kmh": 18.4,
-            "calories_kcal": 67.0
-          },
-          {
-            "id": 20879040480,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-11-03 08:44:16",
-            "distance_km": 1.57,
-            "duration_min": 4.7,
-            "avg_speed_kmh": 20.32,
-            "calories_kcal": 33.0
-          },
-          {
-            "id": 20875125934,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-11-02 21:37:25",
-            "distance_km": 3.7,
-            "duration_min": 11.3,
-            "avg_speed_kmh": 19.64,
-            "calories_kcal": 58.0
-          },
-          {
-            "id": 20873292851,
-            "name": "recovery",
-            "type": "virtual_ride",
-            "start": "2025-11-02 12:52:01",
-            "distance_km": 66.64,
-            "duration_min": 121.0,
-            "avg_speed_kmh": 33.04,
-            "calories_kcal": 1383.0
-          },
-          {
-            "id": 20858736276,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-11-01 08:35:29",
-            "distance_km": 2.91,
-            "duration_min": 11.7,
-            "avg_speed_kmh": 14.97,
-            "calories_kcal": 157.0
-          },
-          {
-            "id": 20854459534,
-            "name": "z2",
-            "type": "virtual_ride",
-            "start": "2025-10-31 18:35:49",
-            "distance_km": 86.66,
-            "duration_min": 145.3,
-            "avg_speed_kmh": 35.79,
-            "calories_kcal": 1716.0
-          },
-          {
-            "id": 20853594711,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-10-31 17:13:15",
-            "distance_km": 3.56,
-            "duration_min": 12.3,
-            "avg_speed_kmh": 17.41,
-            "calories_kcal": 63.0
-          },
-          {
-            "id": 20849236237,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-10-31 08:12:41",
-            "distance_km": 2.53,
-            "duration_min": 7.5,
-            "avg_speed_kmh": 20.13,
-            "calories_kcal": 32.0
-          },
-          {
-            "id": 20845512979,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-10-30 19:08:07",
-            "distance_km": 1.39,
-            "duration_min": 5.1,
-            "avg_speed_kmh": 16.29,
-            "calories_kcal": 50.0
-          },
-          {
-            "id": 20836244100,
-            "name": "easy",
-            "type": "virtual_ride",
-            "start": "2025-10-29 18:42:20",
-            "distance_km": 36.39,
-            "duration_min": 62.8,
-            "avg_speed_kmh": 34.79,
-            "calories_kcal": 783.0
-          },
-          {
-            "id": 20832211639,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-10-29 11:21:02",
-            "distance_km": 3.81,
-            "duration_min": 13.5,
-            "avg_speed_kmh": 16.94,
-            "calories_kcal": 50.0
-          },
-          {
-            "id": 20827034517,
-            "name": "easy",
-            "type": "virtual_ride",
-            "start": "2025-10-28 20:43:13",
-            "distance_km": 34.21,
-            "duration_min": 60.3,
-            "avg_speed_kmh": 34.05,
-            "calories_kcal": 657.0
-          },
-          {
-            "id": 20826663310,
-            "name": "steady w MUMA",
-            "type": "virtual_ride",
-            "start": "2025-10-28 19:15:01",
-            "distance_km": 29.83,
-            "duration_min": 60.4,
-            "avg_speed_kmh": 29.61,
-            "calories_kcal": 532.0
-          },
-          {
-            "id": 20826201915,
-            "name": "Boston Cyclisme",
-            "type": "cycling",
-            "start": "2025-10-28 18:41:06",
-            "distance_km": 3.28,
-            "duration_min": 14.8,
-            "avg_speed_kmh": 13.31,
-            "calories_kcal": 153.0
           }
         ]
       },
@@ -1288,57 +1228,57 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-12-01",
-            "week_end": "2025-12-07",
-            "distance_km": 361.28,
-            "time_hours": 10.65,
-            "calories_kcal": 7373.0
+            "week_start": "2026-01-19",
+            "week_end": "2026-01-25",
+            "distance_km": 63.27,
+            "time_hours": 1.85,
+            "calories_kcal": 1585.0
           },
           {
-            "week_start": "2025-12-08",
-            "week_end": "2025-12-14",
-            "distance_km": 292.62,
-            "time_hours": 10.99,
-            "calories_kcal": 7043.0
+            "week_start": "2026-01-26",
+            "week_end": "2026-02-01",
+            "distance_km": 41.34,
+            "time_hours": 1.7,
+            "calories_kcal": 1614.0
           },
           {
-            "week_start": "2025-12-15",
-            "week_end": "2025-12-21",
-            "distance_km": 29.59,
-            "time_hours": 2.73,
-            "calories_kcal": 2012.0
+            "week_start": "2026-02-02",
+            "week_end": "2026-02-08",
+            "distance_km": 30.57,
+            "time_hours": 0.95,
+            "calories_kcal": 917.0
           },
           {
-            "week_start": "2025-12-22",
-            "week_end": "2025-12-28",
-            "distance_km": 0.0,
-            "time_hours": 1.08,
-            "calories_kcal": 815.0
+            "week_start": "2026-02-09",
+            "week_end": "2026-02-15",
+            "distance_km": 100.41,
+            "time_hours": 3.27,
+            "calories_kcal": 2036.0
           },
           {
-            "week_start": "2025-12-29",
-            "week_end": "2026-01-04",
+            "week_start": "2026-02-16",
+            "week_end": "2026-02-22",
             "distance_km": 0.0,
             "time_hours": 0.0,
             "calories_kcal": 0.0
           },
           {
-            "week_start": "2026-01-05",
-            "week_end": "2026-01-11",
-            "distance_km": 98.51,
-            "time_hours": 2.97,
-            "calories_kcal": 2529.0
+            "week_start": "2026-02-23",
+            "week_end": "2026-03-01",
+            "distance_km": 30.85,
+            "time_hours": 0.93,
+            "calories_kcal": 594.0
           },
           {
-            "week_start": "2026-01-12",
-            "week_end": "2026-01-18",
-            "distance_km": 82.05,
-            "time_hours": 2.4,
-            "calories_kcal": 1910.0
+            "week_start": "2026-03-02",
+            "week_end": "2026-03-08",
+            "distance_km": 42.2,
+            "time_hours": 1.6,
+            "calories_kcal": 972.0
           },
           {
-            "week_start": "2026-01-19",
-            "week_end": "2026-01-25",
+            "week_start": "2026-03-09",
+            "week_end": "2026-03-15",
             "distance_km": 0.0,
             "time_hours": 0.0,
             "calories_kcal": 0.0
@@ -1349,14 +1289,64 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 15,
-        "distance_km": 92.66,
-        "time_hours": 13.1,
-        "longest_km": 11.12,
-        "calories_kcal": 11241.0
+        "activities_count": 4,
+        "distance_km": 40.34,
+        "time_hours": 3.93,
+        "longest_km": 14.6,
+        "calories_kcal": 3493.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 22126104824,
+            "name": "Boston Running",
+            "type": "running",
+            "start": "2026-03-09 19:35:09",
+            "distance_km": 2.81,
+            "duration_min": 15.7,
+            "avg_speed_kmh": 10.74,
+            "calories_kcal": 257.0
+          },
+          {
+            "id": 22126102514,
+            "name": "Boston Running",
+            "type": "running",
+            "start": "2026-03-09 16:25:05",
+            "distance_km": 10.44,
+            "duration_min": 60.4,
+            "avg_speed_kmh": 10.36,
+            "calories_kcal": 882.0
+          },
+          {
+            "id": 22087413034,
+            "name": "Boston Running",
+            "type": "running",
+            "start": "2026-03-06 22:22:07",
+            "distance_km": 14.6,
+            "duration_min": 84.9,
+            "avg_speed_kmh": 10.32,
+            "calories_kcal": 1296.0
+          },
+          {
+            "id": 22034976886,
+            "name": "Boston Running",
+            "type": "running",
+            "start": "2026-02-28 12:23:34",
+            "distance_km": 12.49,
+            "duration_min": 74.5,
+            "avg_speed_kmh": 10.06,
+            "calories_kcal": 1058.0
+          },
+          {
+            "id": 21643701872,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-01-23 16:00:16",
+            "distance_km": 1.55,
+            "duration_min": 40.3,
+            "avg_speed_kmh": 2.31,
+            "calories_kcal": 650.0
+          },
           {
             "id": 21599608228,
             "name": "Track Running",
@@ -1686,36 +1676,6 @@
             "duration_min": 75.2,
             "avg_speed_kmh": 11.66,
             "calories_kcal": 1127.0
-          },
-          {
-            "id": 20860206914,
-            "name": "Cambridge Course à pied",
-            "type": "running",
-            "start": "2025-11-01 10:46:08",
-            "distance_km": 2.89,
-            "duration_min": 15.3,
-            "avg_speed_kmh": 11.36,
-            "calories_kcal": 238.0
-          },
-          {
-            "id": 20859715920,
-            "name": "Cambridge Course à pied",
-            "type": "running",
-            "start": "2025-11-01 10:00:29",
-            "distance_km": 4.95,
-            "duration_min": 18.6,
-            "avg_speed_kmh": 15.93,
-            "calories_kcal": 338.0
-          },
-          {
-            "id": 20859357552,
-            "name": "Boston Course à pied",
-            "type": "running",
-            "start": "2025-11-01 09:24:46",
-            "distance_km": 4.16,
-            "duration_min": 20.5,
-            "avg_speed_kmh": 12.2,
-            "calories_kcal": 345.0
           }
         ]
       },
@@ -1723,60 +1683,60 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-12-01",
-            "week_end": "2025-12-07",
-            "distance_km": 23.44,
-            "time_hours": 1.94,
-            "calories_kcal": 1907.0
-          },
-          {
-            "week_start": "2025-12-08",
-            "week_end": "2025-12-14",
-            "distance_km": 23.33,
-            "time_hours": 1.81,
-            "calories_kcal": 1874.0
-          },
-          {
-            "week_start": "2025-12-15",
-            "week_end": "2025-12-21",
-            "distance_km": 14.37,
-            "time_hours": 1.21,
-            "calories_kcal": 1144.0
-          },
-          {
-            "week_start": "2025-12-22",
-            "week_end": "2025-12-28",
-            "distance_km": 5.02,
-            "time_hours": 0.41,
-            "calories_kcal": 424.0
-          },
-          {
-            "week_start": "2025-12-29",
-            "week_end": "2026-01-04",
-            "distance_km": 23.17,
-            "time_hours": 3.68,
-            "calories_kcal": 3124.0
-          },
-          {
-            "week_start": "2026-01-05",
-            "week_end": "2026-01-11",
-            "distance_km": 37.14,
-            "time_hours": 4.73,
-            "calories_kcal": 4049.0
-          },
-          {
-            "week_start": "2026-01-12",
-            "week_end": "2026-01-18",
-            "distance_km": 22.36,
-            "time_hours": 3.78,
-            "calories_kcal": 3248.0
-          },
-          {
             "week_start": "2026-01-19",
             "week_end": "2026-01-25",
-            "distance_km": 4.96,
-            "time_hours": 0.5,
-            "calories_kcal": 396.0
+            "distance_km": 6.51,
+            "time_hours": 1.17,
+            "calories_kcal": 1046.0
+          },
+          {
+            "week_start": "2026-01-26",
+            "week_end": "2026-02-01",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-02-02",
+            "week_end": "2026-02-08",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-02-09",
+            "week_end": "2026-02-15",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-02-16",
+            "week_end": "2026-02-22",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-02-23",
+            "week_end": "2026-03-01",
+            "distance_km": 12.49,
+            "time_hours": 1.24,
+            "calories_kcal": 1058.0
+          },
+          {
+            "week_start": "2026-03-02",
+            "week_end": "2026-03-08",
+            "distance_km": 14.6,
+            "time_hours": 1.41,
+            "calories_kcal": 1296.0
+          },
+          {
+            "week_start": "2026-03-09",
+            "week_end": "2026-03-15",
+            "distance_km": 13.25,
+            "time_hours": 1.27,
+            "calories_kcal": 1139.0
           }
         ]
       }
@@ -1797,57 +1757,57 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2025-12-01",
-            "week_end": "2025-12-07",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
-          {
-            "week_start": "2025-12-08",
-            "week_end": "2025-12-14",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
-          {
-            "week_start": "2025-12-15",
-            "week_end": "2025-12-21",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
-          {
-            "week_start": "2025-12-22",
-            "week_end": "2025-12-28",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
-          {
-            "week_start": "2025-12-29",
-            "week_end": "2026-01-04",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
-          {
-            "week_start": "2026-01-05",
-            "week_end": "2026-01-11",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
-          {
-            "week_start": "2026-01-12",
-            "week_end": "2026-01-18",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
-          {
             "week_start": "2026-01-19",
             "week_end": "2026-01-25",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-01-26",
+            "week_end": "2026-02-01",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-02-02",
+            "week_end": "2026-02-08",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-02-09",
+            "week_end": "2026-02-15",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-02-16",
+            "week_end": "2026-02-22",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-02-23",
+            "week_end": "2026-03-01",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-03-02",
+            "week_end": "2026-03-08",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-03-09",
+            "week_end": "2026-03-15",
             "distance_km": 0.0,
             "time_hours": 0.0,
             "calories_kcal": 0.0
