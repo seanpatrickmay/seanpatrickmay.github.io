@@ -1,0 +1,6 @@
+[GET] http://localhost:4321/stats.json => [200] OK
+[GET] http://localhost:4321/spotify.json => [200] OK
+[GET] http://localhost:4321/_next/data/RMCsNo_DifISk9_j0M6Jw/projects/life-dashboard.json?slug=life-dashboard => [200] OK
+[GET] http://localhost:4321/_next/data/RMCsNo_DifISk9_j0M6Jw/projects/lecteuraide.json?slug=lecteuraide => [200] OK
+[GET] http://localhost:4321/_next/data/RMCsNo_DifISk9_j0M6Jw/projects/human-digit-classification.json?slug=human-digit-classification => [200] OK
+[GET] http://localhost:4321/_next/data/RMCsNo_DifISk9_j0M6Jw/projects/life-dashboard.json?slug=life-dashboard => [200] OK

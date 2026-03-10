@@ -18,13 +18,14 @@ const SORT_OPTIONS = [
 ];
 
 const QUICK_FILTERS = [
-  { label: 'Agentic AI', tags: ['Agentic AI'] },
-  { label: 'Full-stack', tags: ['Full-stack'] },
-  { label: 'ML', tags: ['Machine Learning', 'Computer Vision', 'NLP'] },
-  { label: 'Systems', tags: ['Cloud/Infra', 'Concurrency'] },
-  { label: 'Game Theory', tags: ['Game Theory'] },
-  { label: 'Algorithms', tags: ['Algorithms'] },
+  { value: 'agentic-ai', label: 'Agentic AI', tags: ['Agentic AI'] },
+  { value: 'full-stack', label: 'Full-stack', tags: ['Full-stack'] },
+  { value: 'ml', label: 'ML', tags: ['Machine Learning', 'Computer Vision', 'NLP'] },
+  { value: 'systems', label: 'Systems', tags: ['Cloud/Infra', 'Concurrency'] },
+  { value: 'game-theory', label: 'Game Theory', tags: ['Game Theory'] },
+  { value: 'algorithms', label: 'Algorithms', tags: ['Algorithms'] },
 ];
+const QUICK_FILTER_VALUES = QUICK_FILTERS.map(filter => filter.value);
 
 function projectTimestamp(project) {
   const dateCandidates = [project.updatedAt, project.endDate, project.startDate];
@@ -63,20 +64,25 @@ export default function ProjectsIndex() {
   const [query, setQuery] = useState('');
   const [selectedTags, setSelectedTags] = useState([]);
   const [selectedLanguages, setSelectedLanguages] = useState([]);
+  const [selectedQuickFilters, setSelectedQuickFilters] = useState([]);
   const [sortOption, setSortOption] = useState('coolness');
   const [filtersOpen, setFiltersOpen] = useState(false);
 
   // Hydrate state from URL query once
   useEffect(() => {
     if (!router.isReady || hydratedRef.current) return;
-    const { q, tags, langs, sort } = router.query;
+    const { q, tags, langs, quick, sort } = router.query;
 
     setQuery(typeof q === 'string' ? q : '');
     const initialTags = parseListParam(tags).filter(tag => PROJECT_TAGS.includes(tag));
     const initialLanguages = parseListParam(langs).filter(lang => PROJECT_LANGUAGES.includes(lang));
+    const initialQuickFilters = QUICK_FILTERS
+      .filter(filter => parseListParam(quick).includes(filter.value))
+      .map(filter => filter.value);
 
     setSelectedTags(initialTags.sort((a, b) => a.localeCompare(b)));
     setSelectedLanguages(initialLanguages.sort((a, b) => a.localeCompare(b)));
+    setSelectedQuickFilters(initialQuickFilters);
     const sortValue = typeof sort === 'string' ? sort : '';
     const validSort = SORT_OPTIONS.some(option => option.value === sortValue);
     setSortOption(validSort ? sortValue : 'coolness');
@@ -113,6 +119,7 @@ export default function ProjectsIndex() {
     if (query.trim()) nextQuery.q = query.trim();
     if (selectedTags.length) nextQuery.tags = selectedTags.join(',');
     if (selectedLanguages.length) nextQuery.langs = selectedLanguages.join(',');
+    if (selectedQuickFilters.length) nextQuery.quick = selectedQuickFilters.join(',');
     if (sortOption !== 'coolness') nextQuery.sort = sortOption;
 
     const basePath = router.asPath.split('?')[0] || router.pathname;
@@ -121,12 +128,13 @@ export default function ProjectsIndex() {
     if (router.asPath === nextPath) return;
 
     router.replace(nextPath, undefined, { shallow: true });
-  }, [query, selectedTags, selectedLanguages, sortOption, router]);
+  }, [query, selectedTags, selectedLanguages, selectedQuickFilters, sortOption, router]);
 
   const filteredProjects = useMemo(() => {
     const text = query.trim().toLowerCase();
     const tagSet = new Set(selectedTags);
     const langSet = new Set(selectedLanguages);
+    const quickFilters = QUICK_FILTERS.filter(filter => selectedQuickFilters.includes(filter.value));
 
     const matches = projects.filter(project => {
       if (text) {
@@ -164,6 +172,16 @@ export default function ProjectsIndex() {
         }
       }
 
+      if (quickFilters.length) {
+        const projectTags = project.tags || [];
+        for (const filter of quickFilters) {
+          const matchesQuickFilter = filter.tags.some(tag => projectTags.includes(tag));
+          if (!matchesQuickFilter) {
+            return false;
+          }
+        }
+      }
+
       return true;
     });
 
@@ -187,32 +205,32 @@ export default function ProjectsIndex() {
     }
 
     return sorted;
-  }, [query, selectedTags, selectedLanguages, sortOption]);
+  }, [query, selectedTags, selectedLanguages, selectedQuickFilters, sortOption]);
 
   const hasActiveFilters = Boolean(
-    query.trim() || selectedTags.length || selectedLanguages.length,
+    query.trim() || selectedTags.length || selectedLanguages.length || selectedQuickFilters.length,
   );
 
-  const activeFacetCount = selectedTags.length + selectedLanguages.length;
+  const activeFacetCount =
+    selectedTags.length + selectedLanguages.length + selectedQuickFilters.length;
 
-  const toggleQuickFilter = (tags = []) => {
-    const next = new Set(selectedTags);
-    const filteredTags = tags.filter(tag => PROJECT_TAGS.includes(tag));
-    if (!filteredTags.length) return;
+  const toggleQuickFilter = value => {
+    if (!QUICK_FILTER_VALUES.includes(value)) return;
 
-    const allSelected = filteredTags.every(tag => next.has(tag));
-    if (allSelected) {
-      filteredTags.forEach(tag => next.delete(tag));
-    } else {
-      filteredTags.forEach(tag => next.add(tag));
-    }
-    setSelectedTags([...next].sort((a, b) => a.localeCompare(b)));
+    const next = selectedQuickFilters.includes(value)
+      ? selectedQuickFilters.filter(item => item !== value)
+      : [...selectedQuickFilters, value];
+
+    setSelectedQuickFilters(
+      QUICK_FILTERS.filter(filter => next.includes(filter.value)).map(filter => filter.value),
+    );
   };
 
   const handleClearFilters = () => {
     setQuery('');
     setSelectedTags([]);
     setSelectedLanguages([]);
+    setSelectedQuickFilters([]);
     setSortOption('coolness');
   };
 
@@ -328,12 +346,12 @@ export default function ProjectsIndex() {
                 Quick filters
               </span>
               {QUICK_FILTERS.map(filter => {
-                const isActive = filter.tags.every(tag => selectedTags.includes(tag));
+                const isActive = selectedQuickFilters.includes(filter.value);
                 return (
                   <button
-                    key={filter.label}
+                    key={filter.value}
                     type="button"
-                    onClick={() => toggleQuickFilter(filter.tags)}
+                    onClick={() => toggleQuickFilter(filter.value)}
                     aria-pressed={isActive}
                     className={`rounded-full border px-3 py-1 text-xs font-medium transition ${
                       isActive

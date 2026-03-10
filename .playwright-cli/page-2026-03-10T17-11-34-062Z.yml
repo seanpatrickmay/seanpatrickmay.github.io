@@ -1,0 +1,58 @@
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - link "← All projects" [ref=e5] [cursor=pointer]:
+      - /url: /projects/
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - heading "Life-Dashboard" [level=1] [ref=e9]:
+            - generic [ref=e10]: 📊
+            - text: Life-Dashboard
+          - generic [ref=e11]: Sep 2025 – Dec 2025
+          - generic [ref=e12]:
+            - generic [ref=e13]: Python
+            - generic [ref=e14]: FastAPI
+            - generic [ref=e15]: PostgreSQL
+            - generic [ref=e16]: React
+            - generic [ref=e17]: TypeScript
+            - generic [ref=e18]: Vertex AI Gemini
+        - generic [ref=e19]:
+          - link "Live Site" [ref=e20] [cursor=pointer]:
+            - /url: https://lifedashboard.tech
+          - link "Git Repo" [ref=e21] [cursor=pointer]:
+            - /url: https://github.com/seanpatrickmay/Life-Dashboard
+      - img "Life-Dashboard wellness dashboard overview" [ref=e23]
+    - generic [ref=e24]:
+      - heading "Overview" [level=3] [ref=e26]
+      - paragraph [ref=e28]: Life-Dashboard is a self-hosted wellness app that combines Garmin biometrics with nutrition logging and agentic workflows. It keeps the data normalized, computes targets with uncertainty (95% CIs), and turns the result into simple, actionable to-dos instead of dashboards you ignore.
+    - generic [ref=e29]:
+      - heading "Proof points" [level=3] [ref=e31]
+      - list [ref=e33]:
+        - listitem [ref=e34]: • Agentic nutrition workflow (recipes → ingredients → normalized facts)
+        - listitem [ref=e35]: • Garmin biometrics ingestion + trend features
+        - listitem [ref=e36]: • Turns insights into daily to-dos + journaling for follow-through
+        - listitem [ref=e37]: "• Full-stack app: FastAPI + Postgres + React/TS"
+    - generic [ref=e38]:
+      - heading "What I built" [level=3] [ref=e40]
+      - list [ref=e42]:
+        - listitem [ref=e43]: Agentic nutrition workflow that parses natural language into ingredients + normalized nutrition facts
+        - listitem [ref=e44]: Garmin data ingestion pipeline (HRV, RHR, sleep, training load) into Postgres
+        - listitem [ref=e45]: React/TypeScript UI for trends, workflows, and structured to-dos
+    - generic [ref=e46]:
+      - heading "How it works" [level=3] [ref=e48]
+      - list [ref=e50]:
+        - listitem [ref=e51]: Fetch Garmin biometrics on a schedule and store them in Postgres
+        - listitem [ref=e52]: Preprocess 14-day time-series features for recovery/readiness signals
+        - listitem [ref=e53]: Run agent workflows to translate logs into targets + next actions
+        - listitem [ref=e54]: Render trends and recommendations in a React/TypeScript dashboard
+    - generic [ref=e55]:
+      - heading "Results" [level=3] [ref=e57]
+      - list [ref=e59]:
+        - listitem [ref=e60]: End-to-end pipeline from raw biometrics → stored history → actionable outputs
+        - listitem [ref=e61]: Clean separation between ingestion, modeling, and UI
+    - generic [ref=e62]:
+      - heading "Next steps" [level=3] [ref=e64]
+      - list [ref=e66]:
+        - listitem [ref=e67]: Add tighter evals for agent outputs and recommendation quality
+        - listitem [ref=e68]: Expand readiness scoring into training plan adjustments
+  - alert [ref=e69]

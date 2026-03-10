@@ -1,0 +1,33 @@
+- generic [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - heading "Projects" [level=1] [ref=e6]
+        - paragraph [ref=e7]: Case studies up top. Everything else is in the archive below.
+      - link "Home" [ref=e8] [cursor=pointer]:
+        - /url: /
+    - generic [ref=e102]:
+      - generic [ref=e103]:
+        - generic [ref=e104]:
+          - generic [ref=e105]: Search projects
+          - searchbox "Search projects" [ref=e106]
+        - generic [ref=e107]:
+          - generic [ref=e108]:
+            - generic [ref=e109]: Sort
+            - button "Featured" [pressed] [ref=e110] [cursor=pointer]
+            - button "Date" [ref=e111] [cursor=pointer]
+            - button "Title (A–Z)" [ref=e112] [cursor=pointer]
+          - button "More filters (3)" [ref=e250] [cursor=pointer]
+          - button "Clear" [ref=e251] [cursor=pointer]
+      - generic [ref=e114]:
+        - generic [ref=e115]: Quick filters
+        - button "Agentic AI" [ref=e116] [cursor=pointer]
+        - button "Full-stack" [ref=e117] [cursor=pointer]
+        - button "ML" [active] [pressed] [ref=e118] [cursor=pointer]
+        - button "Systems" [ref=e119] [cursor=pointer]
+        - button "Game Theory" [ref=e120] [cursor=pointer]
+        - button "Algorithms" [ref=e121] [cursor=pointer]
+    - generic [ref=e122]:
+      - generic [ref=e124]: 0 projects
+      - generic [ref=e125]: No projects match those filters. Try adjusting your search or clearing selections.
+  - alert [ref=e249]: Projects — Sean P. May

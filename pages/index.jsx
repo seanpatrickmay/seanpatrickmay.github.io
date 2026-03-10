@@ -79,10 +79,6 @@ export default function Home() {
           name="description"
           content="Projects, experience, and education of Sean P. May (CS/Math, Northeastern University)."
         />
-        <link
-          rel="icon"
-          href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👽</text></svg>"
-        />
       </Head>
 
       <div className="lg:mx-auto lg:flex lg:max-w-screen-2xl lg:items-start lg:justify-center lg:gap-10 lg:px-12 xl:px-16">

@@ -1,0 +1,253 @@
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - heading "Projects" [level=1] [ref=e6]
+        - paragraph [ref=e7]: Case studies up top. Everything else is in the archive below.
+      - link "Home" [ref=e8] [cursor=pointer]:
+        - /url: /
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - heading "Deep Dives" [level=2] [ref=e11]
+        - generic [ref=e12]: 4 projects
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - img "Life-Dashboard wellness dashboard overview" [ref=e16]
+          - generic [ref=e17]:
+            - generic [ref=e18]:
+              - generic [ref=e20]:
+                - link "📊 Life-Dashboard" [ref=e21] [cursor=pointer]:
+                  - /url: /projects/life-dashboard/
+                - generic [ref=e22]: Sep 2025 – Dec 2025
+              - paragraph [ref=e23]: Wellness dashboard turning Garmin + nutrition into actionable insights.
+            - generic [ref=e24]:
+              - generic [ref=e25]: Agentic AI
+              - generic [ref=e26]: PostgreSQL
+            - list [ref=e27]:
+              - listitem [ref=e28]: • Agentic nutrition workflow (recipes → ingredients → normalized facts)
+              - listitem [ref=e29]: • Garmin biometrics ingestion + trend features
+            - generic [ref=e30]:
+              - link "Deep dive" [ref=e31] [cursor=pointer]:
+                - /url: /projects/life-dashboard/
+              - link "Live Site" [ref=e32] [cursor=pointer]:
+                - /url: https://lifedashboard.tech
+              - link "Git Repo" [ref=e33] [cursor=pointer]:
+                - /url: https://github.com/seanpatrickmay/Life-Dashboard
+                - img [ref=e34]
+                - text: Git Repo
+        - generic [ref=e37]:
+          - img "LecteurAide reading interface" [ref=e39]
+          - generic [ref=e40]:
+            - generic [ref=e41]:
+              - generic [ref=e43]:
+                - link "📚 LecteurAide" [ref=e44] [cursor=pointer]:
+                  - /url: /projects/lecteuraide/
+                - generic [ref=e45]: Updated Oct 2025
+              - paragraph [ref=e46]: French reading companion with translations, vocab, and scene summaries.
+            - generic [ref=e47]:
+              - generic [ref=e48]: NLP
+              - generic [ref=e49]: Cloud Translation
+            - list [ref=e50]:
+              - listitem [ref=e51]: • Scene chunking + LLM summaries for long PDFs
+              - listitem [ref=e52]: • Sentence-level translation + vocabulary extraction
+            - generic [ref=e53]:
+              - link "Deep dive" [ref=e54] [cursor=pointer]:
+                - /url: /projects/lecteuraide/
+              - link "Git Repo" [ref=e55] [cursor=pointer]:
+                - /url: https://github.com/seanpatrickmay/LecteurAide
+                - img [ref=e56]
+                - text: Git Repo
+        - generic [ref=e61]:
+          - generic [ref=e62]:
+            - generic [ref=e64]:
+              - link "🔢 Human Digit Classification" [ref=e65] [cursor=pointer]:
+                - /url: /projects/human-digit-classification/
+              - generic [ref=e66]: Jan – Mar 2025
+            - paragraph [ref=e67]: CV pipeline for hand detection and digit-count classification.
+          - generic [ref=e68]:
+            - generic [ref=e69]: Computer Vision
+            - generic [ref=e70]: PyTorch
+          - list [ref=e71]:
+            - listitem [ref=e72]: • 10,000+ custom-labeled images
+            - listitem [ref=e73]: "• Two-stage CNN: bbox regression → digit-count classification"
+          - generic [ref=e74]:
+            - link "Deep dive" [ref=e75] [cursor=pointer]:
+              - /url: /projects/human-digit-classification/
+            - link "Git Repo" [ref=e76] [cursor=pointer]:
+              - /url: https://github.com/seanpatrickmay/Human-Digit-Recognition
+              - img [ref=e77]
+              - text: Git Repo
+        - generic [ref=e82]:
+          - generic [ref=e83]:
+            - generic [ref=e85]:
+              - link "🧠 study-buddy" [ref=e86] [cursor=pointer]:
+                - /url: /projects/study-buddy/
+              - generic [ref=e87]: Updated Sep 2025
+            - paragraph [ref=e88]: Agentic study workflow that turns notes + decks into flashcards and cheat sheets.
+          - generic [ref=e89]:
+            - generic [ref=e90]: Agentic AI
+            - generic [ref=e91]: CrewAI
+          - list [ref=e92]:
+            - listitem [ref=e93]: • Agents generate flashcards + cheat sheets from raw notes
+            - listitem [ref=e94]: • RAG-backed revisions built from Anki exports
+          - generic [ref=e95]:
+            - link "Deep dive" [ref=e96] [cursor=pointer]:
+              - /url: /projects/study-buddy/
+            - link "Git Repo" [ref=e97] [cursor=pointer]:
+              - /url: https://github.com/seanpatrickmay/study-buddy
+              - img [ref=e98]
+              - text: Git Repo
+    - generic [ref=e102]:
+      - generic [ref=e103]:
+        - generic [ref=e104]:
+          - generic [ref=e105]: Search projects
+          - searchbox "Search projects" [ref=e106]
+        - generic [ref=e107]:
+          - generic [ref=e108]:
+            - generic [ref=e109]: Sort
+            - button "Featured" [pressed] [ref=e110] [cursor=pointer]
+            - button "Date" [ref=e111] [cursor=pointer]
+            - button "Title (A–Z)" [ref=e112] [cursor=pointer]
+          - button "More filters" [ref=e113] [cursor=pointer]
+      - generic [ref=e114]:
+        - generic [ref=e115]: Quick filters
+        - button "Agentic AI" [ref=e116] [cursor=pointer]
+        - button "Full-stack" [ref=e117] [cursor=pointer]
+        - button "ML" [ref=e118] [cursor=pointer]
+        - button "Systems" [ref=e119] [cursor=pointer]
+        - button "Game Theory" [ref=e120] [cursor=pointer]
+        - button "Algorithms" [ref=e121] [cursor=pointer]
+    - generic [ref=e122]:
+      - generic [ref=e124]: 11 projects
+      - generic [ref=e125]:
+        - generic [ref=e126]:
+          - heading "Project Archive" [level=2] [ref=e127]
+          - generic [ref=e128]: 7 projects
+        - generic [ref=e129]:
+          - generic [ref=e130]:
+            - generic [ref=e131]:
+              - generic [ref=e132]: 🃏
+              - generic [ref=e133]:
+                - heading "No-Limit Hold’em Alpha-Beta Pruning" [level=3] [ref=e134]
+                - generic [ref=e135]: Aug – Dec 2024
+            - generic [ref=e136]:
+              - generic [ref=e137]: Alpha–beta + Monte Carlo approximations for simplified Hold’em decision trees.
+              - generic [ref=e138]:
+                - generic [ref=e139]: Game Theory
+                - generic [ref=e140]: Monte Carlo
+              - generic [ref=e141]:
+                - link "Details" [ref=e142] [cursor=pointer]:
+                  - /url: /projects/nlhe-alpha-beta/
+                - link "Git Repo" [ref=e143] [cursor=pointer]:
+                  - /url: https://github.com/seanpatrickmay/PokerML
+                  - img [ref=e144]
+                  - text: Git Repo
+          - generic [ref=e147]:
+            - generic [ref=e148]:
+              - generic [ref=e149]: 🌐
+              - generic [ref=e150]:
+                - heading "seanpatrickmay.github.io" [level=3] [ref=e151]
+                - generic [ref=e152]: 2024 – Present
+            - generic [ref=e153]:
+              - generic [ref=e154]: Static portfolio with live Garmin + Spotify dashboards and responsive card navigation.
+              - generic [ref=e155]:
+                - generic [ref=e156]: Full-stack
+                - generic [ref=e157]: Next.js
+              - generic [ref=e158]:
+                - link "Details" [ref=e159] [cursor=pointer]:
+                  - /url: /projects/seanpatrickmay-github-io/
+                - link "Git Repo" [ref=e160] [cursor=pointer]:
+                  - /url: https://github.com/seanpatrickmay/seanpatrickmay.github.io
+                  - img [ref=e161]
+                  - text: Git Repo
+          - generic [ref=e164]:
+            - generic [ref=e165]:
+              - generic [ref=e166]: 🔷
+              - generic [ref=e167]:
+                - heading "Hex Reversi" [level=3] [ref=e168]
+                - generic [ref=e169]: Updated 2025
+            - generic [ref=e170]:
+              - generic [ref=e171]: Hex-grid Reversi with GUI, MVC architecture, and pluggable strategies.
+              - generic [ref=e172]:
+                - generic [ref=e173]: Game Theory
+                - generic [ref=e174]: Swing
+              - generic [ref=e175]:
+                - link "Details" [ref=e176] [cursor=pointer]:
+                  - /url: /projects/hex-reversi/
+                - link "Git Repo" [ref=e177] [cursor=pointer]:
+                  - /url: https://github.com/seanpatrickmay/Hex-Reversi
+                  - img [ref=e178]
+                  - text: Git Repo
+          - generic [ref=e181]:
+            - generic [ref=e182]:
+              - generic [ref=e183]: ♟️
+              - generic [ref=e184]:
+                - heading "Counterfactual Regret Exploration (CFR-Min)" [level=3] [ref=e185]
+                - generic [ref=e186]: Nov 2024 – Present
+            - generic [ref=e187]:
+              - generic [ref=e188]: CFR-Min research notebooks exploring equilibria in imperfect-information games.
+              - generic [ref=e189]:
+                - generic [ref=e190]: Game Theory
+                - generic [ref=e191]: NumPy
+              - generic [ref=e192]:
+                - link "Details" [ref=e193] [cursor=pointer]:
+                  - /url: /projects/cfr-exploration/
+                - link "Git Repo" [ref=e194] [cursor=pointer]:
+                  - /url: https://github.com/seanpatrickmay/CFR-Exploration
+                  - img [ref=e195]
+                  - text: Git Repo
+          - generic [ref=e198]:
+            - generic [ref=e199]:
+              - generic [ref=e200]: 🐚
+              - generic [ref=e201]:
+                - heading "Linux Shell (C)" [level=3] [ref=e202]
+                - generic [ref=e203]: Oct 2024
+            - generic [ref=e204]:
+              - generic [ref=e205]: Custom C shell supporting pipelines, redirection, signals, and built-in commands.
+              - generic [ref=e206]:
+                - generic [ref=e207]: Concurrency
+                - generic [ref=e208]: C
+              - generic [ref=e209]:
+                - link "Details" [ref=e210] [cursor=pointer]:
+                  - /url: /projects/linux-shell-c/
+                - link "Git Repo" [ref=e211] [cursor=pointer]:
+                  - /url: https://github.com/seanpatrickmay/Linux-Shell
+                  - img [ref=e212]
+                  - text: Git Repo
+          - generic [ref=e215]:
+            - generic [ref=e216]:
+              - generic [ref=e217]: ♛
+              - generic [ref=e218]:
+                - heading "NQueensGeneticAlgorithms" [level=3] [ref=e219]
+                - generic [ref=e220]: Updated Feb 2025
+            - generic [ref=e221]:
+              - generic [ref=e222]: Genetic algorithm playground evolving conflict-free N-Queens boards.
+              - generic [ref=e223]:
+                - generic [ref=e224]: Algorithms
+                - generic [ref=e225]: Genetic Algorithms
+              - generic [ref=e226]:
+                - link "Details" [ref=e227] [cursor=pointer]:
+                  - /url: /projects/nqueens-genetic-algorithms/
+                - link "Git Repo" [ref=e228] [cursor=pointer]:
+                  - /url: https://github.com/seanpatrickmay/NQueensGeneticAlgorithms
+                  - img [ref=e229]
+                  - text: Git Repo
+          - generic [ref=e232]:
+            - generic [ref=e233]:
+              - generic [ref=e234]: 🌀
+              - generic [ref=e235]:
+                - heading "Maze-Game" [level=3] [ref=e236]
+                - generic [ref=e237]: Updated Feb 2025
+            - generic [ref=e238]:
+              - generic [ref=e239]: Java maze generator/solver with BFS/DFS playback and an interactive player mode.
+              - generic [ref=e240]:
+                - generic [ref=e241]: Algorithms
+                - generic [ref=e242]: Java
+              - generic [ref=e243]:
+                - link "Details" [ref=e244] [cursor=pointer]:
+                  - /url: /projects/maze-game/
+                - link "Git Repo" [ref=e245] [cursor=pointer]:
+                  - /url: https://github.com/seanpatrickmay/Maze-Game
+                  - img [ref=e246]
+                  - text: Git Repo
+  - alert [ref=e249]

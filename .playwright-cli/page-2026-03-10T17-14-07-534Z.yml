@@ -1,0 +1,576 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "Sean P. May" [ref=e6] [cursor=pointer]:
+          - /url: "#home"
+        - button "Toggle theme" [ref=e8] [cursor=pointer]:
+          - img [ref=e9]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Home" [ref=e13] [cursor=pointer]:
+            - /url: "#home"
+          - link "About" [ref=e14] [cursor=pointer]:
+            - /url: "#about"
+          - link "Projects" [ref=e15] [cursor=pointer]:
+            - /url: /projects/
+          - link "Work Experience" [ref=e16] [cursor=pointer]:
+            - /url: "#experience"
+          - link "Education" [ref=e17] [cursor=pointer]:
+            - /url: "#education"
+          - link "Leadership & Activities" [ref=e18] [cursor=pointer]:
+            - /url: "#other-work"
+    - main [ref=e19]:
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - img [ref=e24]
+            - text: Boston, MA
+          - heading "CS & Math @ NU SWE + AI" [level=1] [ref=e27]:
+            - generic [ref=e28]: CS & Math @ NU
+            - generic [ref=e29]: SWE + AI
+          - generic [ref=e30]:
+            - paragraph [ref=e31]: I'm a CS & Math student at Northeastern, always trying to get better at everything I do.
+            - paragraph [ref=e32]: Most recently, I built an agentic AI tutor at NExT Consulting, and I'm currently doing quant research with NU Systematic Alpha.
+            - paragraph [ref=e33]: I love solving hard problems. If you have any for me, send me an email, I'd love to talk.
+          - generic [ref=e35]:
+            - generic [ref=e36]: 🎓 Northeastern — B.S. CS & Math (May 2027)
+            - generic [ref=e37]: 📈 Quant Research — NU Systematic Alpha
+            - generic [ref=e38]: 🧪 SWE Co-op — NExT Consulting (Fall 2025)
+            - generic [ref=e39]: 🔎 Summer/Fall 2026 SWE/ML roles
+          - generic [ref=e40]:
+            - link "GitHub" [ref=e41] [cursor=pointer]:
+              - /url: https://github.com/seanpatrickmay
+              - img [ref=e42]
+              - text: GitHub
+            - link "LinkedIn" [ref=e45] [cursor=pointer]:
+              - /url: https://linkedin.com/in/seanpatrickmay
+              - img [ref=e46]
+              - text: LinkedIn
+            - link "✉️ Contact" [ref=e50] [cursor=pointer]:
+              - /url: mailto:maypatricksean@gmail.com
+        - generic [ref=e53]:
+          - heading "Featured Projects" [level=3] [ref=e55]:
+            - img [ref=e56]
+            - text: Featured Projects
+          - generic [ref=e62]:
+            - generic [ref=e63]:
+              - link "Life-Dashboard Wellness dashboard turning Garmin + nutrition into actionable insights. →" [ref=e64] [cursor=pointer]:
+                - /url: /projects/life-dashboard/
+                - generic [ref=e65]:
+                  - generic [ref=e66]: 📊
+                  - generic [ref=e67]:
+                    - generic [ref=e68]: Life-Dashboard
+                    - generic [ref=e69]: Wellness dashboard turning Garmin + nutrition into actionable insights.
+                  - generic [ref=e70]: →
+              - link "LecteurAide French reading companion with translations, vocab, and scene summaries. →" [ref=e71] [cursor=pointer]:
+                - /url: /projects/lecteuraide/
+                - generic [ref=e72]:
+                  - generic [ref=e73]: 📚
+                  - generic [ref=e74]:
+                    - generic [ref=e75]: LecteurAide
+                    - generic [ref=e76]: French reading companion with translations, vocab, and scene summaries.
+                  - generic [ref=e77]: →
+              - link "Human Digit Classification CV pipeline for hand detection and digit-count classification. →" [ref=e78] [cursor=pointer]:
+                - /url: /projects/human-digit-classification/
+                - generic [ref=e79]:
+                  - generic [ref=e80]: 🔢
+                  - generic [ref=e81]:
+                    - generic [ref=e82]: Human Digit Classification
+                    - generic [ref=e83]: CV pipeline for hand detection and digit-count classification.
+                  - generic [ref=e84]: →
+            - link "🚀 Browse projects" [ref=e85] [cursor=pointer]:
+              - /url: /projects/
+      - generic [ref=e86]:
+        - generic [ref=e87]:
+          - img [ref=e89]
+          - heading "About me" [level=2] [ref=e91]
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - heading "Leadership & Activities" [level=3] [ref=e97]:
+                - img [ref=e98]
+                - text: Leadership & Activities
+              - generic [ref=e101]:
+                - link "Quantitative Researcher Northeastern University Systematic Alpha →" [ref=e102] [cursor=pointer]:
+                  - /url: "#other-work"
+                  - generic [ref=e103]:
+                    - generic [ref=e104]: 📈
+                    - generic [ref=e105]:
+                      - generic [ref=e106]: Quantitative Researcher
+                      - generic [ref=e107]: Northeastern University Systematic Alpha
+                    - generic [ref=e108]: →
+                - link "Calculus III Grader Northeastern University — College of Science →" [ref=e109] [cursor=pointer]:
+                  - /url: "#other-work"
+                  - generic [ref=e110]:
+                    - generic [ref=e111]: 📝
+                    - generic [ref=e112]:
+                      - generic [ref=e113]: Calculus III Grader
+                      - generic [ref=e114]: Northeastern University — College of Science
+                    - generic [ref=e115]: →
+                - link "Computer Science Tutor Private →" [ref=e116] [cursor=pointer]:
+                  - /url: "#other-work"
+                  - generic [ref=e117]:
+                    - generic [ref=e118]: 👨‍🏫
+                    - generic [ref=e119]:
+                      - generic [ref=e120]: Computer Science Tutor
+                      - generic [ref=e121]: Private
+                    - generic [ref=e122]: →
+                - link "Semi-Professional Poker Player (NLHE) Independent →" [ref=e123] [cursor=pointer]:
+                  - /url: "#other-work"
+                  - generic [ref=e124]:
+                    - generic [ref=e125]: 🃏
+                    - generic [ref=e126]:
+                      - generic [ref=e127]: Semi-Professional Poker Player (NLHE)
+                      - generic [ref=e128]: Independent
+                    - generic [ref=e129]: →
+            - generic [ref=e130]:
+              - generic [ref=e131]:
+                - heading "Training (8 weeks)" [level=3] [ref=e133]:
+                  - img [ref=e134]
+                  - text: Training (8 weeks)
+                - generic [ref=e138]:
+                  - generic [ref=e139]:
+                    - generic [ref=e140]: Cumulative hours
+                    - generic [ref=e141]: 29.0h
+                  - img [ref=e143]
+                  - generic [ref=e147]: Jan 18 → Mar 14
+                  - generic [ref=e148]:
+                    - generic [ref=e149]:
+                      - generic [ref=e150]: Total KM
+                      - generic [ref=e151]: "432"
+                      - generic [ref=e152]: Equivalent to ~99% of the way to Philadelphia
+                    - 'generic "Rough conversion: 1 cup milk ≈ 150 kcal" [ref=e153]':
+                      - generic [ref=e154]: Total Calories
+                      - generic [ref=e155]: 16,894
+                      - generic [ref=e156]: Equivalent to ~113 cups milk
+              - generic [ref=e157]:
+                - heading "Top Artists" [level=3] [ref=e159]:
+                  - img [ref=e160]
+                  - text: Top Artists
+                - generic [ref=e165]:
+                  - generic "Top Spotify Artists":
+                    - generic [ref=e166]:
+                      - list [ref=e167]:
+                        - listitem [ref=e168]:
+                          - link "Lady Gaga" [ref=e170] [cursor=pointer]:
+                            - /url: https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms
+                          - generic [ref=e171]: "#1"
+                        - listitem [ref=e172]:
+                          - link "ConcernedApe" [ref=e174] [cursor=pointer]:
+                            - /url: https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2
+                          - generic [ref=e175]: "#2"
+                        - listitem [ref=e176]:
+                          - link "Barry Wordsworth" [ref=e178] [cursor=pointer]:
+                            - /url: https://open.spotify.com/artist/5sjJnaI3YhaO8KylpJk3gN
+                          - generic [ref=e179]: "#3"
+                        - listitem [ref=e180]:
+                          - link "Daft Punk" [ref=e182] [cursor=pointer]:
+                            - /url: https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi
+                          - generic [ref=e183]: "#4"
+                        - listitem [ref=e184]:
+                          - link "Morgan Wallen" [ref=e186] [cursor=pointer]:
+                            - /url: https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM
+                          - generic [ref=e187]: "#5"
+                        - listitem [ref=e188]:
+                          - link "Malcolm Todd" [ref=e190] [cursor=pointer]:
+                            - /url: https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz
+                          - generic [ref=e191]: "#6"
+                        - listitem [ref=e192]:
+                          - link "The Marías" [ref=e194] [cursor=pointer]:
+                            - /url: https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx
+                          - generic [ref=e195]: "#7"
+                        - listitem [ref=e196]:
+                          - link "Adele" [ref=e198] [cursor=pointer]:
+                            - /url: https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY
+                          - generic [ref=e199]: "#8"
+                        - listitem [ref=e200]:
+                          - link "The Smiths" [ref=e202] [cursor=pointer]:
+                            - /url: https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8
+                          - generic [ref=e203]: "#9"
+                        - listitem [ref=e204]:
+                          - link "TV Girl" [ref=e206] [cursor=pointer]:
+                            - /url: https://open.spotify.com/artist/0Y6dVaC9DZtPNH4591M42W
+                          - generic [ref=e207]: "#10"
+                      - list [ref=e208]:
+                        - listitem [ref=e209]:
+                          - link [ref=e211] [cursor=pointer]:
+                            - /url: https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms
+                            - text: Lady Gaga
+                          - generic [ref=e212]: "#1"
+                        - listitem [ref=e213]:
+                          - link [ref=e215] [cursor=pointer]:
+                            - /url: https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2
+                            - text: ConcernedApe
+                          - generic [ref=e216]: "#2"
+                        - listitem [ref=e217]:
+                          - link [ref=e219] [cursor=pointer]:
+                            - /url: https://open.spotify.com/artist/5sjJnaI3YhaO8KylpJk3gN
+                            - text: Barry Wordsworth
+                          - generic [ref=e220]: "#3"
+                        - listitem [ref=e221]:
+                          - link [ref=e223] [cursor=pointer]:
+                            - /url: https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi
+                            - text: Daft Punk
+                          - generic [ref=e224]: "#4"
+                        - listitem [ref=e225]:
+                          - link [ref=e227] [cursor=pointer]:
+                            - /url: https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM
+                            - text: Morgan Wallen
+                          - generic [ref=e228]: "#5"
+                        - listitem [ref=e229]:
+                          - link [ref=e231] [cursor=pointer]:
+                            - /url: https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz
+                            - text: Malcolm Todd
+                          - generic [ref=e232]: "#6"
+                        - listitem [ref=e233]:
+                          - link [ref=e235] [cursor=pointer]:
+                            - /url: https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx
+                            - text: The Marías
+                          - generic [ref=e236]: "#7"
+                        - listitem [ref=e237]:
+                          - link [ref=e239] [cursor=pointer]:
+                            - /url: https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY
+                            - text: Adele
+                          - generic [ref=e240]: "#8"
+                        - listitem [ref=e241]:
+                          - link [ref=e243] [cursor=pointer]:
+                            - /url: https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8
+                            - text: The Smiths
+                          - generic [ref=e244]: "#9"
+                        - listitem [ref=e245]:
+                          - link [ref=e247] [cursor=pointer]:
+                            - /url: https://open.spotify.com/artist/0Y6dVaC9DZtPNH4591M42W
+                            - text: TV Girl
+                          - generic [ref=e248]: "#10"
+              - generic [ref=e249]:
+                - heading "Top Tracks" [level=3] [ref=e251]:
+                  - img [ref=e252]
+                  - text: Top Tracks
+                - generic [ref=e256]:
+                  - generic "Top Spotify Tracks":
+                    - generic [ref=e257]:
+                      - list [ref=e258]:
+                        - listitem [ref=e259]:
+                          - link "Stateside + Zara Larsson – PinkPantheress, Zara Larsson" [ref=e261] [cursor=pointer]:
+                            - /url: https://open.spotify.com/track/1DwscornXpj8fmOmYVlqZt
+                          - generic [ref=e262]: "#1"
+                        - listitem [ref=e263]:
+                          - link "Abracadabra – Lady Gaga" [ref=e265] [cursor=pointer]:
+                            - /url: https://open.spotify.com/track/2LHNTC9QZxsL3nWpt8iaSR
+                          - generic [ref=e266]: "#2"
+                        - listitem [ref=e267]:
+                          - link "Money Honey – Lady Gaga" [ref=e269] [cursor=pointer]:
+                            - /url: https://open.spotify.com/track/6gknJVkbQb8jkAXbXx0SYA
+                          - generic [ref=e270]: "#3"
+                        - listitem [ref=e271]:
+                          - link "The Fame – Lady Gaga" [ref=e273] [cursor=pointer]:
+                            - /url: https://open.spotify.com/track/3HhAZV8ngUOOt4eUHovhud
+                          - generic [ref=e274]: "#4"
+                        - listitem [ref=e275]:
+                          - link "Garden Of Eden – Lady Gaga" [ref=e277] [cursor=pointer]:
+                            - /url: https://open.spotify.com/track/4mUR5Tv0CvJtpmnUtzeIgd
+                          - generic [ref=e278]: "#5"
+                        - listitem [ref=e279]:
+                          - 'link "Serenade for Strings in C Major, Op. 48: III. Elegie – Pyotr Ilyich Tchaikovsky, Wiener KammerOrchester, Philippe Entremont" [ref=e281] [cursor=pointer]':
+                            - /url: https://open.spotify.com/track/54XNZXsAglK8jXAdglltjO
+                          - generic [ref=e282]: "#6"
+                        - listitem [ref=e283]:
+                          - link "Die With A Smile – Lady Gaga, Bruno Mars" [ref=e285] [cursor=pointer]:
+                            - /url: https://open.spotify.com/track/7so0lgd0zP2Sbgs2d7a1SZ
+                          - generic [ref=e286]: "#7"
+                        - listitem [ref=e287]:
+                          - link "Perfect Celebrity – Lady Gaga" [ref=e289] [cursor=pointer]:
+                            - /url: https://open.spotify.com/track/0Tqn5Th0wk55eLdga96vZM
+                          - generic [ref=e290]: "#8"
+                        - listitem [ref=e291]:
+                          - link "Dark Red – Steve Lacy" [ref=e293] [cursor=pointer]:
+                            - /url: https://open.spotify.com/track/3EaJDYHA0KnX88JvDhL9oa
+                          - generic [ref=e294]: "#9"
+                        - listitem [ref=e295]:
+                          - link "Stardew Valley Overture – ConcernedApe" [ref=e297] [cursor=pointer]:
+                            - /url: https://open.spotify.com/track/2q2Z2A0Mt8AsWyQEdB6wuu
+                          - generic [ref=e298]: "#10"
+                      - list [ref=e299]:
+                        - listitem [ref=e300]:
+                          - link [ref=e302] [cursor=pointer]:
+                            - /url: https://open.spotify.com/track/1DwscornXpj8fmOmYVlqZt
+                            - text: Stateside + Zara Larsson – PinkPantheress, Zara Larsson
+                          - generic [ref=e303]: "#1"
+                        - listitem [ref=e304]:
+                          - link [ref=e306] [cursor=pointer]:
+                            - /url: https://open.spotify.com/track/2LHNTC9QZxsL3nWpt8iaSR
+                            - text: Abracadabra – Lady Gaga
+                          - generic [ref=e307]: "#2"
+                        - listitem [ref=e308]:
+                          - link [ref=e310] [cursor=pointer]:
+                            - /url: https://open.spotify.com/track/6gknJVkbQb8jkAXbXx0SYA
+                            - text: Money Honey – Lady Gaga
+                          - generic [ref=e311]: "#3"
+                        - listitem [ref=e312]:
+                          - link [ref=e314] [cursor=pointer]:
+                            - /url: https://open.spotify.com/track/3HhAZV8ngUOOt4eUHovhud
+                            - text: The Fame – Lady Gaga
+                          - generic [ref=e315]: "#4"
+                        - listitem [ref=e316]:
+                          - link [ref=e318] [cursor=pointer]:
+                            - /url: https://open.spotify.com/track/4mUR5Tv0CvJtpmnUtzeIgd
+                            - text: Garden Of Eden – Lady Gaga
+                          - generic [ref=e319]: "#5"
+                        - listitem [ref=e320]:
+                          - link [ref=e322] [cursor=pointer]:
+                            - /url: https://open.spotify.com/track/54XNZXsAglK8jXAdglltjO
+                            - text: "Serenade for Strings in C Major, Op. 48: III. Elegie – Pyotr Ilyich Tchaikovsky, Wiener KammerOrchester, Philippe Entremont"
+                          - generic [ref=e323]: "#6"
+                        - listitem [ref=e324]:
+                          - link [ref=e326] [cursor=pointer]:
+                            - /url: https://open.spotify.com/track/7so0lgd0zP2Sbgs2d7a1SZ
+                            - text: Die With A Smile – Lady Gaga, Bruno Mars
+                          - generic [ref=e327]: "#7"
+                        - listitem [ref=e328]:
+                          - link [ref=e330] [cursor=pointer]:
+                            - /url: https://open.spotify.com/track/0Tqn5Th0wk55eLdga96vZM
+                            - text: Perfect Celebrity – Lady Gaga
+                          - generic [ref=e331]: "#8"
+                        - listitem [ref=e332]:
+                          - link [ref=e334] [cursor=pointer]:
+                            - /url: https://open.spotify.com/track/3EaJDYHA0KnX88JvDhL9oa
+                            - text: Dark Red – Steve Lacy
+                          - generic [ref=e335]: "#9"
+                        - listitem [ref=e336]:
+                          - link [ref=e338] [cursor=pointer]:
+                            - /url: https://open.spotify.com/track/2q2Z2A0Mt8AsWyQEdB6wuu
+                            - text: Stardew Valley Overture – ConcernedApe
+                          - generic [ref=e339]: "#10"
+          - generic [ref=e340]:
+            - generic [ref=e341]:
+              - heading "Off the clock" [level=3] [ref=e343]
+              - generic [ref=e344]:
+                - generic [ref=e345]:
+                  - heading "Triathlon" [level=3] [ref=e347]:
+                    - generic [ref=e348]: 🏊‍♂️
+                    - text: Triathlon
+                  - paragraph [ref=e350]: I love steady state and eating
+                - generic [ref=e351]:
+                  - heading "Français" [level=3] [ref=e353]:
+                    - generic [ref=e354]: 🇫🇷
+                    - text: Français
+                  - paragraph [ref=e356]: Larping as a frenchman
+                - generic [ref=e357]:
+                  - heading "Escape Rooms" [level=3] [ref=e359]:
+                    - generic [ref=e360]: 🗝️
+                    - text: Escape Rooms
+                  - paragraph [ref=e362]: Look up "Escape Simulator" on Steam
+            - generic [ref=e363]:
+              - heading "Project spotlights" [level=3] [ref=e364]
+              - generic [ref=e365]:
+                - generic [ref=e366]:
+                  - img "Life-Dashboard wellness dashboard overview" [ref=e368]
+                  - generic [ref=e369]:
+                    - generic [ref=e370]:
+                      - generic [ref=e372]:
+                        - link "📊 Life-Dashboard" [ref=e373] [cursor=pointer]:
+                          - /url: /projects/life-dashboard/
+                        - generic [ref=e374]: Sep 2025 – Dec 2025
+                      - paragraph [ref=e375]: Wellness dashboard turning Garmin + nutrition into actionable insights.
+                    - generic [ref=e376]:
+                      - generic [ref=e377]: Agentic AI
+                      - generic [ref=e378]: Postgres
+                      - generic [ref=e379]: TypeScript
+                    - list [ref=e380]:
+                      - listitem [ref=e381]: • Agentic nutrition workflow (recipes → ingredients → normalized facts)
+                      - listitem [ref=e382]: • Garmin biometrics ingestion + trend features
+                      - listitem [ref=e383]: • Turns insights into daily to-dos + journaling for follow-through
+                    - generic [ref=e384]:
+                      - link "Deep dive" [ref=e385] [cursor=pointer]:
+                        - /url: /projects/life-dashboard/
+                      - link "Live Site" [ref=e386] [cursor=pointer]:
+                        - /url: https://lifedashboard.tech
+                      - link "Git Repo" [ref=e387] [cursor=pointer]:
+                        - /url: https://github.com/seanpatrickmay/Life-Dashboard
+                        - img [ref=e388]
+                        - text: Git Repo
+                - generic [ref=e391]:
+                  - img "LecteurAide reading interface" [ref=e393]
+                  - generic [ref=e394]:
+                    - generic [ref=e395]:
+                      - generic [ref=e397]:
+                        - link "📚 LecteurAide" [ref=e398] [cursor=pointer]:
+                          - /url: /projects/lecteuraide/
+                        - generic [ref=e399]: Updated Oct 2025
+                      - paragraph [ref=e400]: French reading companion with translations, vocab, and scene summaries.
+                    - generic [ref=e401]:
+                      - generic [ref=e402]: NLP
+                      - generic [ref=e403]: Cloud Translation
+                    - list [ref=e404]:
+                      - listitem [ref=e405]: • Scene chunking + LLM summaries for long PDFs
+                      - listitem [ref=e406]: • Sentence-level translation + vocabulary extraction
+                      - listitem [ref=e407]: • Streaming ingestion API + Next.js reader UI
+                    - generic [ref=e408]:
+                      - link "Deep dive" [ref=e409] [cursor=pointer]:
+                        - /url: /projects/lecteuraide/
+                      - link "Git Repo" [ref=e410] [cursor=pointer]:
+                        - /url: https://github.com/seanpatrickmay/LecteurAide
+                        - img [ref=e411]
+                        - text: Git Repo
+      - generic [ref=e414]:
+        - generic [ref=e415]:
+          - generic [ref=e416]:
+            - img [ref=e418]
+            - heading "Work Experience" [level=2] [ref=e421]
+          - generic [ref=e424]:
+            - tablist [ref=e425]:
+              - tab "NExT Consulting logo Software Engineering Co-op — NExT Consulting Sep 2025 – Dec 2025" [selected] [ref=e426] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img "NExT Consulting logo"
+                      - generic:
+                        - generic: Software Engineering Co-op — NExT Consulting
+                        - generic: Sep 2025 – Dec 2025
+              - tab "General Dynamics Electric Boat logo Software Development Co-op — General Dynamics Electric Boat Jan – Jul 2024" [ref=e427] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img "General Dynamics Electric Boat logo"
+                      - generic:
+                        - generic: Software Development Co-op — General Dynamics Electric Boat
+                        - generic: Jan – Jul 2024
+              - tab "Defense Information Systems Agency (DISA) logo Administrative Assistant — Defense Information Systems Agency (DISA) Jun – Sep 2023" [ref=e428] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img "Defense Information Systems Agency (DISA) logo"
+                      - generic:
+                        - generic: Administrative Assistant — Defense Information Systems Agency (DISA)
+                        - generic: Jun – Sep 2023
+            - generic [ref=e429]:
+              - tabpanel "NExT Consulting logo Software Engineering Co-op — NExT Consulting Sep 2025 – Dec 2025" [ref=e430]:
+                - generic [ref=e432]:
+                  - generic [ref=e433]:
+                    - generic [ref=e434]:
+                      - img "NExT Consulting logo" [ref=e435]
+                      - heading "Software Engineering Co-op — NExT Consulting" [level=3] [ref=e436]
+                    - generic [ref=e437]:
+                      - generic [ref=e438]: Boston, MA
+                      - generic [ref=e439]: •
+                      - generic [ref=e440]: Sep 2025 – Dec 2025
+                  - list [ref=e442]:
+                    - listitem [ref=e443]: Built and shipped Winston, an agentic AI tutoring platform for institutional deployment (course-aware tutoring, persistent personalization, proactive support).
+                    - listitem [ref=e444]: "Implemented the core tutoring pipeline: RAG over instructor content, embedding-based retrieval + topic suggestions, and LLM + HITL rubric generation and FRQ grading."
+                    - listitem [ref=e445]: "Productionized and shaped product direction: long-term memory with ARQ workers, prompt versioning/evals in Arize Phoenix, Postgres + pgvector, plus weekly client briefs and competitive/academic research."
+              - tabpanel "General Dynamics Electric Boat logo Software Development Co-op — General Dynamics Electric Boat Jan – Jul 2024"
+              - tabpanel "Defense Information Systems Agency (DISA) logo Administrative Assistant — Defense Information Systems Agency (DISA) Jun – Sep 2023"
+        - generic [ref=e446]:
+          - generic [ref=e447]:
+            - img [ref=e449]
+            - heading "Education" [level=2] [ref=e452]
+          - generic [ref=e455]:
+            - tablist [ref=e456]:
+              - tab "Northeastern University — Khoury College of Computer Sciences logo BS CS+Math" [selected] [ref=e457] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img "Northeastern University — Khoury College of Computer Sciences logo"
+                      - generic:
+                        - generic: BS CS+Math
+              - tab "Corvinus University of Budapest — Mathematical Heritage of Budapest logo Math Dialogue" [ref=e458] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img "Corvinus University of Budapest — Mathematical Heritage of Budapest logo"
+                      - generic:
+                        - generic: Math Dialogue
+            - generic [ref=e459]:
+              - tabpanel "Northeastern University — Khoury College of Computer Sciences logo BS CS+Math" [ref=e460]:
+                - generic [ref=e462]:
+                  - generic [ref=e463]:
+                    - generic [ref=e464]:
+                      - img "Northeastern University — Khoury College of Computer Sciences logo" [ref=e465]
+                      - heading "Northeastern University — Khoury College of Computer Sciences" [level=3] [ref=e466]
+                    - generic [ref=e467]: B.S. in Computer Science & Mathematics (Expected May 2027)
+                  - list [ref=e469]:
+                    - listitem [ref=e470]: Sep 2022 - Present (Boston, MA)
+                    - listitem [ref=e471]: GPA 3.64/4.0; Dean’s Scholarship; Dean’s List (Fall 2024, Spring 2025)
+                    - listitem [ref=e472]: "Activities: Bridge to Calculus Tutor, Calculus Field Day Volunteer, Math Club, Putnam Club, Running Club"
+                    - listitem [ref=e473]: "Relevant coursework: Artificial Intelligence, Matrix Methods for Machine Learning, Algorithms & Data Structures, Software Engineering, Computer Systems, Probability & Statistics, Quantitative Finance"
+              - tabpanel "Corvinus University of Budapest — Mathematical Heritage of Budapest logo Math Dialogue"
+        - generic [ref=e474]:
+          - generic [ref=e475]:
+            - img [ref=e477]
+            - heading "Leadership & Activities" [level=2] [ref=e480]
+          - generic [ref=e483]:
+            - tablist [ref=e484]:
+              - tab "Quantitative Researcher — Northeastern University Systematic Alpha Sep 2025 – Present" [selected] [ref=e485] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: 📈
+                      - generic:
+                        - generic: Quantitative Researcher — Northeastern University Systematic Alpha
+                        - generic: Sep 2025 – Present
+              - tab "Calculus III Grader — Northeastern University — College of Science Jan 2026 – May 2026" [ref=e486] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: 📝
+                      - generic:
+                        - generic: Calculus III Grader — Northeastern University — College of Science
+                        - generic: Jan 2026 – May 2026
+              - tab "Computer Science Tutor — Private Jul 2025 – Present" [ref=e487] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: 👨‍🏫
+                      - generic:
+                        - generic: Computer Science Tutor — Private
+                        - generic: Jul 2025 – Present
+              - tab "Semi-Professional Poker Player (NLHE) — Independent Jun 2023 – Present" [ref=e488] [cursor=pointer]:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: 🃏
+                      - generic:
+                        - generic: Semi-Professional Poker Player (NLHE) — Independent
+                        - generic: Jun 2023 – Present
+            - generic [ref=e489]:
+              - tabpanel "Quantitative Researcher — Northeastern University Systematic Alpha Sep 2025 – Present" [ref=e490]:
+                - generic [ref=e492]:
+                  - generic [ref=e493]:
+                    - generic [ref=e494]:
+                      - generic [ref=e495]: 📈
+                      - heading "Quantitative Researcher — Northeastern University Systematic Alpha" [level=3] [ref=e496]
+                    - generic [ref=e497]:
+                      - generic [ref=e498]: Boston, MA
+                      - generic [ref=e499]: •
+                      - generic [ref=e500]: Sep 2025 – Present
+                  - list [ref=e502]:
+                    - listitem [ref=e503]: Research systematic strategies (alternative data, sentiment-markets) and present findings among teammates.
+              - tabpanel "Calculus III Grader — Northeastern University — College of Science Jan 2026 – May 2026"
+              - tabpanel "Computer Science Tutor — Private Jul 2025 – Present"
+              - tabpanel "Semi-Professional Poker Player (NLHE) — Independent Jun 2023 – Present"
+      - generic [ref=e505]:
+        - paragraph [ref=e506]: © 2026 Sean P. May. All rights reserved.
+        - generic [ref=e507]:
+          - link "GitHub" [ref=e508] [cursor=pointer]:
+            - /url: https://github.com/seanpatrickmay
+            - img [ref=e509]
+            - text: GitHub
+          - link "LinkedIn" [ref=e512] [cursor=pointer]:
+            - /url: https://linkedin.com/in/seanpatrickmay
+            - img [ref=e513]
+            - text: LinkedIn
+          - link "Email" [ref=e517] [cursor=pointer]:
+            - /url: mailto:maypatricksean@gmail.com
+            - img [ref=e518]
+            - text: Email
+  - alert [ref=e521]

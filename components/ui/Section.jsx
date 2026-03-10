@@ -1,7 +1,7 @@
 export default function Section({ id, title, icon, children, className = '', ...props }) {
   const Icon = icon;
   const isExpanded = props['data-expanded'] === 'true';
-  const sectionClassName = `section-container py-10 scroll-mt-16 ${className}`.trim();
+  const sectionClassName = `section-container py-10 scroll-mt-36 lg:scroll-mt-16 ${className}`.trim();
   const headingClassName = [
     'flex items-center gap-3 mb-6 transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)]',
     isExpanded ? 'translate-y-0 opacity-100' : 'translate-y-1 opacity-90',

@@ -1,0 +1,2 @@
+[   33050ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4321/_next/data/RMCsNo_DifISk9_j0M6Jw/projects/human-digit-classification.json?slug=human-digit-classification:0
+[   33100ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:4321/_next/data/RMCsNo_DifISk9_j0M6Jw/projects/lecteuraide.json?slug=lecteuraide:0

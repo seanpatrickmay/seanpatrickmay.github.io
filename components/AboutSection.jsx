@@ -10,6 +10,24 @@ import LineSparkline from '@/components/ui/LineSparkline';
 import { getBostonJourneyEquivalence } from '@/lib/journeyEquivalents';
 import { Sparkles, TrendingUp, Music, ClipboardList, Users } from 'lucide-react';
 
+function parseDateOnlyLocal(value) {
+  if (typeof value !== 'string') return null;
+  const match = value.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!match) return null;
+
+  const year = Number(match[1]);
+  const month = Number(match[2]) - 1;
+  const day = Number(match[3]);
+  const date = new Date(year, month, day);
+
+  return Number.isNaN(date.getTime()) ? null : date;
+}
+
+function startOfLocalDay(date) {
+  if (!(date instanceof Date) || Number.isNaN(date.getTime())) return null;
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+}
+
 function useStats() {
   const [stats, setStats] = useState(null);
   useEffect(() => {
@@ -94,9 +112,15 @@ export default function AboutSection({
     const first = weeklySeries[0];
     const last = weeklySeries[weeklySeries.length - 1];
     if (!first?.week_start || !last?.week_end) return null;
-    const start = new Date(first.week_start);
-    const end = new Date(last.week_end);
-    if (Number.isNaN(start.getTime()) || Number.isNaN(end.getTime())) return null;
+
+    const start = parseDateOnlyLocal(first.week_start);
+    const weekEnd = parseDateOnlyLocal(last.week_end);
+    const generatedAtDay = startOfLocalDay(generatedAt);
+    if (!start || !weekEnd || !generatedAtDay) return null;
+
+    const end = weekEnd.getTime() > generatedAtDay.getTime() ? generatedAtDay : weekEnd;
+    if (end.getTime() < start.getTime()) return null;
+
     return `${start.toLocaleDateString(undefined, { month: 'short', day: 'numeric' })} → ${end.toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}`;
   })();
 

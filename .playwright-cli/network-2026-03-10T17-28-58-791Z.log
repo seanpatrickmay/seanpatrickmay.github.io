@@ -1,0 +1,4 @@
+[GET] http://localhost:4321/_next/data/z7gVesc6J6km-TajHbQAS/projects/life-dashboard.json?slug=life-dashboard => [200] OK
+[GET] http://localhost:4321/_next/data/z7gVesc6J6km-TajHbQAS/projects/lecteuraide.json?slug=lecteuraide => [200] OK
+[GET] http://localhost:4321/_next/data/z7gVesc6J6km-TajHbQAS/projects/human-digit-classification.json?slug=human-digit-classification => [200] OK
+[GET] http://localhost:4321/_next/data/z7gVesc6J6km-TajHbQAS/projects/study-buddy.json?slug=study-buddy => [200] OK
