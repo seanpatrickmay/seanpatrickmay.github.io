@@ -1,0 +1,59 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a1628"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <!-- Transit lines -->
+  <!-- Red Line (vertical-ish, left side) -->
+  <polyline points="280,40 280,150 300,200 340,280 380,340 400,420 380,500 360,580 340,660" fill="none" stroke="#ef4444" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  <!-- Orange Line (diagonal) -->
+  <polyline points="120,200 220,250 340,280 480,300 580,340 680,360 780,340" fill="none" stroke="#f97316" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  <!-- Green Line (horizontal, curves) -->
+  <polyline points="80,420 180,400 300,380 420,360 540,340 600,340 680,360 760,400 860,420 960,400 1060,360 1140,340" fill="none" stroke="#22c55e" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  <!-- Blue Line (right side, vertical) -->
+  <polyline points="780,40 780,120 760,200 740,280 760,340 780,340 820,400 860,480 880,560 900,660" fill="none" stroke="#3b82f6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  <!-- Station dots -->
+  <g>
+    <!-- Red Line stations -->
+    <circle cx="280" cy="150" r="6" fill="#0f172a" stroke="#ef4444" stroke-width="3"/>
+    <circle cx="340" cy="280" r="8" fill="#0f172a" stroke="#e2e8f0" stroke-width="3"/>
+    <circle cx="380" cy="340" r="6" fill="#0f172a" stroke="#ef4444" stroke-width="3"/>
+    <circle cx="400" cy="420" r="6" fill="#0f172a" stroke="#ef4444" stroke-width="3"/>
+    <!-- Orange Line stations -->
+    <circle cx="220" cy="250" r="6" fill="#0f172a" stroke="#f97316" stroke-width="3"/>
+    <circle cx="480" cy="300" r="6" fill="#0f172a" stroke="#f97316" stroke-width="3"/>
+    <circle cx="680" cy="360" r="8" fill="#0f172a" stroke="#e2e8f0" stroke-width="3"/>
+    <!-- Green Line stations -->
+    <circle cx="180" cy="400" r="6" fill="#0f172a" stroke="#22c55e" stroke-width="3"/>
+    <circle cx="420" cy="360" r="6" fill="#0f172a" stroke="#22c55e" stroke-width="3"/>
+    <circle cx="540" cy="340" r="8" fill="#0f172a" stroke="#e2e8f0" stroke-width="3"/>
+    <circle cx="860" cy="420" r="6" fill="#0f172a" stroke="#22c55e" stroke-width="3"/>
+    <circle cx="1060" cy="360" r="6" fill="#0f172a" stroke="#22c55e" stroke-width="3"/>
+    <!-- Blue Line stations -->
+    <circle cx="780" cy="120" r="6" fill="#0f172a" stroke="#3b82f6" stroke-width="3"/>
+    <circle cx="760" cy="340" r="8" fill="#0f172a" stroke="#e2e8f0" stroke-width="3"/>
+    <circle cx="860" cy="480" r="6" fill="#0f172a" stroke="#3b82f6" stroke-width="3"/>
+  </g>
+  <!-- Transfer stations (larger, white) - Downtown Crossing, Park St area -->
+  <circle cx="540" cy="340" r="12" fill="#0f172a" stroke="#e2e8f0" stroke-width="3"/>
+  <circle cx="540" cy="340" r="5" fill="#e2e8f0"/>
+  <!-- Location pin (user) -->
+  <g transform="translate(600, 180)">
+    <circle cx="0" cy="0" r="24" fill="#6366f1" opacity="0.15"/>
+    <circle cx="0" cy="0" r="16" fill="#6366f1" opacity="0.25"/>
+    <circle cx="0" cy="0" r="8" fill="#6366f1"/>
+    <circle cx="0" cy="0" r="3" fill="#e2e8f0"/>
+  </g>
+  <!-- Walking path from user to nearest station (dashed) -->
+  <line x1="600" y1="200" x2="540" y2="330" stroke="#6366f1" stroke-width="2" stroke-dasharray="6,4" opacity="0.5"/>
+  <!-- Clock hint (top right) -->
+  <g transform="translate(1050, 100)">
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#475569" stroke-width="2" opacity="0.3"/>
+    <line x1="0" y1="0" x2="0" y2="-25" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+    <line x1="0" y1="0" x2="18" y2="8" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+    <circle cx="0" cy="0" r="3" fill="#94a3b8" opacity="0.4"/>
+  </g>
+</svg>

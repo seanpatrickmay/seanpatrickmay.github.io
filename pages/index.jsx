@@ -9,6 +9,7 @@ import { validateWork } from '@/lib/work';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import AboutSection from '@/components/AboutSection';
+import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import StackedCardSection from '@/components/StackedCardSection';
 import ExperienceItem from '@/components/ExperienceItem';
@@ -77,7 +78,7 @@ export default function Home() {
         <title>Sean P. May — Portfolio</title>
         <meta
           name="description"
-          content="Projects, experience, and education of Sean P. May (CS/Math, Northeastern University)."
+          content="Software engineer and mathematician with a thing for problems that don't have obvious answers. Projects, experience, and more."
         />
       </Head>
 
@@ -129,6 +130,7 @@ export default function Home() {
             />
           </div>
 
+          <ContactSection links={links} />
           <Footer links={links} />
         </main>
       </div>

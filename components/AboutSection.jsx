@@ -126,6 +126,11 @@ export default function AboutSection({
 
   const hobbySpotlights = [
     {
+      title: 'Prompting',
+      emoji: '✨',
+      description: 'Token-maxxing. This site was vibe-coded.',
+    },
+    {
       title: 'Triathlon',
       emoji: '🏊‍♂️',
       description: 'I love steady state and eating',
@@ -159,44 +164,6 @@ export default function AboutSection({
         />
         <div className="space-y-10">
           <div className="space-y-6">
-            {!!activities.length && (
-              <Card className="bg-white/70 shadow-sm dark:bg-slate-900/60">
-                <CardHeader>
-                  <CardTitle icon={ClipboardList}>Leadership &amp; Activities</CardTitle>
-                </CardHeader>
-                <CardContent className="grid gap-3 sm:grid-cols-2">
-                  {activities.map(item => (
-                    <a
-                      key={`${item.org}-${item.role}`}
-                      href="#other-work"
-                      className="group block h-full rounded-2xl border border-slate-200/60 bg-white/60 p-3 shadow-sm transition hover:bg-white dark:border-slate-800/60 dark:bg-slate-950/50 dark:hover:bg-slate-900/60"
-                    >
-                      <div className="flex items-start gap-3">
-                        {item?.emoji && (
-                          <span className="text-xl leading-none" aria-hidden="true">
-                            {item.emoji}
-                          </span>
-                        )}
-                        <div className="min-w-0 flex-1">
-                          <div className="font-semibold text-slate-900 dark:text-slate-50 leading-snug break-words">
-                            {item?.role ?? 'Activity'}
-                          </div>
-                          {!!item?.org && (
-                            <div className="mt-1 text-xs text-slate-600 dark:text-slate-300 leading-snug break-words">
-                              {item.org}
-                            </div>
-                          )}
-                        </div>
-                        <span className="text-slate-400 transition group-hover:text-slate-600 dark:group-hover:text-slate-300">
-                          →
-                        </span>
-                      </div>
-                    </a>
-                  ))}
-                </CardContent>
-              </Card>
-            )}
-
             <div className="grid gap-6 lg:grid-cols-3">
               <Card className="bg-white/70 shadow-sm dark:bg-slate-900/60 h-full">
                 <CardHeader>

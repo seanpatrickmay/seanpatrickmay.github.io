@@ -1,0 +1,52 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a0f28"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <!-- Hexagonal grid -->
+  <g transform="translate(600, 337)" fill="none" stroke="#334155" stroke-width="1.5">
+    <!-- Hex function: flat-top hex at (col, row), size=36 -->
+    <!-- Ring 0 (center) -->
+    <polygon points="31,0 15.5,27 -15.5,27 -31,0 -15.5,-27 15.5,-27" fill="#3b82f6" fill-opacity="0.6"/>
+    <!-- Ring 1 -->
+    <polygon points="93,0 77.5,27 46.5,27 31,0 46.5,-27 77.5,-27" fill="#1e293b" stroke="#334155"/>
+    <polygon points="46.5,54 31,81 0,81 -15.5,54 0,27 31,27" fill="#e2e8f0" fill-opacity="0.8"/>
+    <polygon points="-15.5,54 -31,81 -62,81 -77.5,54 -62,27 -31,27" fill="#1e293b" stroke="#334155"/>
+    <polygon points="-93,0 -77.5,27 -108.5,27 -124,0 -108.5,-27 -77.5,-27" fill="#3b82f6" fill-opacity="0.4"/>
+    <polygon points="-46.5,-54 -31,-81 0,-81 15.5,-54 0,-27 -31,-27" fill="#1e293b" stroke="#334155"/>
+    <polygon points="46.5,-54 31,-81 62,-81 77.5,-54 62,-27 31,-27" fill="#e2e8f0" fill-opacity="0.8"/>
+    <!-- Ring 2 -->
+    <polygon points="155,0 139.5,27 108.5,27 93,0 108.5,-27 139.5,-27" fill="#e2e8f0" fill-opacity="0.6"/>
+    <polygon points="124,54 108.5,81 77.5,81 62,54 77.5,27 108.5,27" fill="#1e293b" stroke="#334155"/>
+    <polygon points="62,108 46.5,135 15.5,135 0,108 15.5,81 46.5,81" fill="#3b82f6" fill-opacity="0.5"/>
+    <polygon points="-31,108 -46.5,135 -77.5,135 -93,108 -77.5,81 -46.5,81" fill="#1e293b" stroke="#334155"/>
+    <polygon points="-124,54 -108.5,81 -139.5,81 -155,54 -139.5,27 -108.5,27" fill="#e2e8f0" fill-opacity="0.5"/>
+    <polygon points="-155,0 -139.5,-27 -108.5,-27 -93,0 -108.5,27 -139.5,27" fill="#3b82f6" fill-opacity="0.3"/>
+    <polygon points="-124,-54 -108.5,-81 -77.5,-81 -62,-54 -77.5,-27 -108.5,-27" fill="#1e293b" stroke="#334155"/>
+    <polygon points="-31,-108 -46.5,-135 -15.5,-135 0,-108 -15.5,-81 -46.5,-81" fill="#e2e8f0" fill-opacity="0.7"/>
+    <polygon points="62,-108 46.5,-135 77.5,-135 93,-108 77.5,-81 46.5,-81" fill="#3b82f6" fill-opacity="0.5"/>
+    <polygon points="124,-54 108.5,-81 139.5,-81 155,-54 139.5,-27 108.5,-27" fill="#1e293b" stroke="#334155"/>
+    <polygon points="31,-108 15.5,-135 46.5,-135 62,-108 46.5,-81 15.5,-81" fill="#1e293b" stroke="#334155"/>
+    <polygon points="-62,-108 -77.5,-135 -46.5,-135 -31,-108 -46.5,-81 -77.5,-81" fill="#3b82f6" fill-opacity="0.4"/>
+    <!-- Ring 3 (outer, sparser) -->
+    <polygon points="217,0 201.5,27 170.5,27 155,0 170.5,-27 201.5,-27" fill="#1e293b" stroke="#334155" opacity="0.6"/>
+    <polygon points="186,54 170.5,81 139.5,81 124,54 139.5,27 170.5,27" fill="#3b82f6" fill-opacity="0.2"/>
+    <polygon points="93,162 77.5,189 46.5,189 31,162 46.5,135 77.5,135" fill="#1e293b" stroke="#334155" opacity="0.6"/>
+    <polygon points="-93,162 -108.5,189 -139.5,189 -155,162 -139.5,135 -108.5,135" fill="#e2e8f0" fill-opacity="0.3"/>
+    <polygon points="-217,0 -201.5,27 -232.5,27 -248,0 -232.5,-27 -201.5,-27" fill="#1e293b" stroke="#334155" opacity="0.6"/>
+    <polygon points="-186,-54 -170.5,-81 -139.5,-81 -124,-54 -139.5,-27 -170.5,-27" fill="#e2e8f0" fill-opacity="0.3"/>
+    <polygon points="186,-54 170.5,-81 201.5,-81 217,-54 201.5,-27 170.5,-27" fill="#e2e8f0" fill-opacity="0.4"/>
+    <polygon points="93,-162 77.5,-189 108.5,-189 124,-162 108.5,-135 77.5,-135" fill="#3b82f6" fill-opacity="0.3"/>
+    <polygon points="-93,-162 -108.5,-189 -77.5,-189 -62,-162 -77.5,-135 -108.5,-135" fill="#1e293b" stroke="#334155" opacity="0.6"/>
+  </g>
+  <!-- Strategy indicator arrows -->
+  <g stroke="#3b82f6" stroke-width="1.5" opacity="0.2" marker-end="none">
+    <line x1="200" y1="200" x2="350" y2="280"/>
+    <line x1="1000" y1="200" x2="850" y2="280"/>
+    <line x1="200" y1="475" x2="350" y2="395"/>
+    <line x1="1000" y1="475" x2="850" y2="395"/>
+  </g>
+</svg>

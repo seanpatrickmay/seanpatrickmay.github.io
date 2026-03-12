@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import rawProjects from '@/public/projects.json' assert { type: 'json' };
 import { validateProjects } from '@/lib/projects';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import PillLink from '@/components/ui/PillLink';
 import { sortProjectLinks } from '@/lib/projectDisplay';
 
@@ -55,26 +54,29 @@ export default function ProjectDetail({ project }) {
         <title>{`${title} — Projects — Sean P. May`}</title>
         <meta name="description" content={overviewText || title} />
       </Head>
-      <main className="section-container pt-24 pb-16 space-y-8">
-        <div>
-          <a href="/projects/" className="text-sm text-slate-600 hover:underline dark:text-slate-300">← All projects</a>
+      <main className="section-container pt-24 pb-16">
+        <div className="mb-8">
+          <a href="/projects/" className="text-sm text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400 transition-colors">
+            &larr; All projects
+          </a>
         </div>
-        <header className="space-y-4">
+
+        {/* ── Hero: cover + title + overview + proof points ── */}
+        <header className="space-y-6 mb-12">
+          {coverImage?.src && (
+            <div className="rounded-2xl overflow-hidden border border-slate-200/70 dark:border-slate-800/60 shadow-sm">
+              <img src={coverImage.src} alt={coverImage.alt || ''} className="w-full h-auto" />
+            </div>
+          )}
+
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tight flex items-center gap-3">
+              <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight flex items-center gap-3">
                 {emoji && <span className="text-3xl" aria-hidden="true">{emoji}</span>}
                 {title}
               </h1>
               {period && (
-                <div className="text-slate-600 dark:text-slate-300">
-                  {period}
-                </div>
-              )}
-              {!!stack.length && (
-                <div className="flex flex-wrap gap-2 pt-1">
-                  {stack.map(s => <span key={s} className="badge">{s}</span>)}
-                </div>
+                <p className="text-slate-500 dark:text-slate-400">{period}</p>
               )}
             </div>
             {sortedLinks.length > 0 && (
@@ -93,92 +95,122 @@ export default function ProjectDetail({ project }) {
             )}
           </div>
 
-          {coverImage?.src && (
-            <div className="rounded-3xl overflow-hidden border border-slate-200/70 bg-white/60 shadow-sm dark:border-slate-800/60 dark:bg-slate-900/60">
-              <img src={coverImage.src} alt={coverImage.alt || ''} className="w-full h-auto" />
+          {!!stack.length && (
+            <div className="flex flex-wrap gap-2">
+              {stack.map(s => <span key={s} className="badge">{s}</span>)}
+            </div>
+          )}
+
+          {overviewText && (
+            <p className="text-lg text-slate-700 dark:text-slate-200 leading-relaxed max-w-3xl">
+              {overviewText}
+            </p>
+          )}
+
+          {proofList.length > 0 && (
+            <div className="grid gap-3 sm:grid-cols-3 pt-2">
+              {proofList.map((point, i) => (
+                <div
+                  key={i}
+                  className="rounded-xl border border-indigo-100 bg-indigo-50/50 px-4 py-3 dark:border-indigo-500/20 dark:bg-indigo-950/30"
+                >
+                  <p className="text-sm text-slate-700 dark:text-slate-200 leading-snug">{point}</p>
+                </div>
+              ))}
             </div>
           )}
         </header>
 
-        {overviewText && (
-          <Card>
-            <CardHeader><CardTitle>Overview</CardTitle></CardHeader>
-            <CardContent>
-              <p className="text-slate-700 dark:text-slate-200">{overviewText}</p>
-            </CardContent>
-          </Card>
+        {/* ── Two-column: What I Built + How It Works ── */}
+        {(builtList.length > 0 || howList.length > 0) && (
+          <section className="mb-12">
+            <div className={`grid gap-8 ${builtList.length > 0 && howList.length > 0 ? 'lg:grid-cols-2' : ''}`}>
+              {builtList.length > 0 && (
+                <div>
+                  <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-50 mb-4">
+                    What I built
+                  </h2>
+                  <ul className="space-y-3">
+                    {builtList.map((item, i) => (
+                      <li key={i} className="flex gap-3 text-slate-700 dark:text-slate-300">
+                        <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-indigo-500" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {howList.length > 0 && (
+                <div>
+                  <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-50 mb-4">
+                    How it works
+                  </h2>
+                  <ol className="space-y-3">
+                    {howList.map((item, i) => (
+                      <li key={i} className="flex gap-3 text-slate-700 dark:text-slate-300">
+                        <span className="mt-0.5 flex-shrink-0 w-6 h-6 rounded-full bg-slate-100 dark:bg-slate-800 text-xs font-semibold text-slate-600 dark:text-slate-300 flex items-center justify-center">
+                          {i + 1}
+                        </span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              )}
+            </div>
+          </section>
         )}
 
-        {proofList.length > 0 && (
-          <Card>
-            <CardHeader><CardTitle>Proof points</CardTitle></CardHeader>
-            <CardContent>
-              <ul className="grid gap-2 sm:grid-cols-2">
-                {proofList.map((point, i) => (
-                  <li key={i} className="text-sm text-slate-700 dark:text-slate-200">• {point}</li>
-                ))}
-              </ul>
-            </CardContent>
-          </Card>
-        )}
-
-        {builtList.length > 0 && (
-          <Card>
-            <CardHeader><CardTitle>What I built</CardTitle></CardHeader>
-            <CardContent>
-              <ul className="list-disc pl-5 space-y-2">
-                {builtList.map((item, i) => <li key={i}>{item}</li>)}
-              </ul>
-            </CardContent>
-          </Card>
-        )}
-
-        {howList.length > 0 && (
-          <Card>
-            <CardHeader><CardTitle>How it works</CardTitle></CardHeader>
-            <CardContent>
-              <ol className="list-decimal pl-5 space-y-2">
-                {howList.map((item, i) => <li key={i}>{item}</li>)}
-              </ol>
-            </CardContent>
-          </Card>
-        )}
-
+        {/* ── Results: callout style ── */}
         {resultsList.length > 0 && (
-          <Card>
-            <CardHeader><CardTitle>Results</CardTitle></CardHeader>
-            <CardContent>
-              <ul className="list-disc pl-5 space-y-2">
-                {resultsList.map((item, i) => <li key={i}>{item}</li>)}
-              </ul>
-            </CardContent>
-          </Card>
+          <section className="mb-12 rounded-2xl border border-slate-200/70 bg-gradient-to-br from-slate-50 to-white p-6 dark:border-slate-800/60 dark:from-slate-900 dark:to-slate-900/80">
+            <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-50 mb-4">
+              Results
+            </h2>
+            <ul className="space-y-2">
+              {resultsList.map((item, i) => (
+                <li key={i} className="flex gap-3 text-slate-700 dark:text-slate-300">
+                  <span className="text-indigo-500 mt-0.5 flex-shrink-0">&#10003;</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
         )}
 
-        {nextList.length > 0 && (
-          <Card>
-            <CardHeader><CardTitle>Next steps</CardTitle></CardHeader>
-            <CardContent>
-              <ul className="list-disc pl-5 space-y-2">
-                {nextList.map((item, i) => <li key={i}>{item}</li>)}
-              </ul>
-            </CardContent>
-          </Card>
-        )}
-
+        {/* ── Gallery ── */}
         {galleryList.length > 0 && (
-          <section className="space-y-3">
-            <h2 className="text-xl font-semibold">Screenshots</h2>
+          <section className="mb-12">
+            <h2 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-50 mb-4">
+              Screenshots
+            </h2>
             <div className="grid gap-4 sm:grid-cols-2">
               {galleryList.map((img, i) => (
-                <figure key={i} className="rounded-xl overflow-hidden border border-white/10 bg-white/60 dark:bg-slate-900/60">
+                <figure key={i} className="rounded-xl overflow-hidden border border-slate-200/70 bg-white/60 dark:border-slate-800/60 dark:bg-slate-900/60">
                   <img src={img.src} alt={img.alt || ''} className="w-full h-auto" />
                   {img.caption && (
-                    <figcaption className="p-2 text-sm text-slate-600 dark:text-slate-400">{img.caption}</figcaption>
+                    <figcaption className="p-3 text-sm text-slate-500 dark:text-slate-400">{img.caption}</figcaption>
                   )}
                 </figure>
               ))}
             </div>
+          </section>
+        )}
+
+        {/* ── Next steps: subtle, at the bottom ── */}
+        {nextList.length > 0 && (
+          <section className="mb-12 border-t border-slate-200/70 dark:border-slate-800/60 pt-8">
+            <h2 className="text-sm font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
+              Next steps
+            </h2>
+            <ul className="space-y-1">
+              {nextList.map((item, i) => (
+                <li key={i} className="text-sm text-slate-500 dark:text-slate-400">
+                  {item}
+                </li>
+              ))}
+            </ul>
           </section>
         )}
       </main>

@@ -6,6 +6,15 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <meta property="og:title" content="Sean P. May — Portfolio" />
+        <meta property="og:description" content="Software engineer and mathematician with a thing for problems that don't have obvious answers." />
+        <meta property="og:image" content="https://seanpatrickmay.me/images/headshot.png" />
+        <meta property="og:url" content="https://seanpatrickmay.me" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Sean P. May — Portfolio" />
+        <meta name="twitter:description" content="Software engineer and mathematician with a thing for problems that don't have obvious answers." />
+        <meta name="twitter:image" content="https://seanpatrickmay.me/images/headshot.png" />
       </Head>
       <Component {...pageProps} />
     </>

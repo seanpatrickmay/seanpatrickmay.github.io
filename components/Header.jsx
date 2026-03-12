@@ -93,23 +93,24 @@ export default function Header({ links }) {
               style={{ transform: `translateY(${scrollOffset}px)` }}
             >
               <section className="rounded-3xl border border-slate-200/80 bg-white/90 p-6 shadow-xl backdrop-blur dark:border-slate-800/70 dark:bg-slate-950/70">
-                <div className="flex items-start justify-between gap-3">
-                  <div className="space-y-2">
-                    <a
-                      href="#home"
-                      className="text-2xl font-bold tracking-tight text-slate-900 transition hover:text-slate-700 dark:text-slate-100 dark:hover:text-slate-300"
-                    >
-                      Sean P. May
-                    </a>
-                    <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
-                      CS & Math @ NU.
-                      <br />
-                      SWE + AI.
-                    </p>
-                  </div>
-                  <div className="flex-shrink-0">
-                    <ThemeToggle />
-                  </div>
+                <div className="flex items-start justify-between">
+                  <img
+                    src="/images/headshot.png"
+                    alt=""
+                    className="w-14 h-14 rounded-full object-cover object-top ring-2 ring-slate-200/60 dark:ring-slate-700/60"
+                  />
+                  <ThemeToggle />
+                </div>
+                <div className="mt-3 space-y-1">
+                  <a
+                    href="#home"
+                    className="text-2xl font-bold tracking-tight text-slate-900 transition hover:text-slate-700 dark:text-slate-100 dark:hover:text-slate-300"
+                  >
+                    Sean P. May
+                  </a>
+                  <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                    Software engineer &amp; mathematician.
+                  </p>
                 </div>
                 <div className="mt-4 space-y-4 text-sm text-slate-600 dark:text-slate-300">
                   <div>
@@ -150,6 +151,17 @@ export default function Header({ links }) {
                           </div>
                         </div>
                       </li>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-0.5" aria-hidden="true">
+                          💼
+                        </span>
+                        <div className="min-w-0 leading-snug">
+                          <div className="font-medium text-slate-900 dark:text-slate-100">Freelance SWE</div>
+                          <div className="text-xs text-slate-500 dark:text-slate-400">
+                            Comic Book Grading App
+                          </div>
+                        </div>
+                      </li>
                     </ul>
                   </div>
                   <div>
@@ -165,6 +177,17 @@ export default function Header({ links }) {
                           <div className="font-medium text-slate-900 dark:text-slate-100">SWE Co-op</div>
                           <div className="text-xs text-slate-500 dark:text-slate-400">
                             NExT Consulting · Fall 2025
+                          </div>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-0.5" aria-hidden="true">
+                          🔧
+                        </span>
+                        <div className="min-w-0 leading-snug">
+                          <div className="font-medium text-slate-900 dark:text-slate-100">SDE Co-op</div>
+                          <div className="text-xs text-slate-500 dark:text-slate-400">
+                            General Dynamics Electric Boat · 2024
                           </div>
                         </div>
                       </li>

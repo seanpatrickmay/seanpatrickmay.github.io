@@ -253,7 +253,7 @@ export default function ProjectsIndex() {
           <div>
             <h1 className="text-3xl font-bold tracking-tight">Projects</h1>
             <p className="text-slate-600 dark:text-slate-300 mt-2 max-w-2xl">
-              Case studies up top. Everything else is in the archive below.
+              A few projects I&apos;m proud of, and a few more I learned a lot from.
             </p>
           </div>
           <PillLink href="/" variant="outline" className="px-4">
@@ -279,95 +279,83 @@ export default function ProjectsIndex() {
           </section>
         )}
 
-        <section className="rounded-3xl border border-slate-200/60 bg-white/80 p-5 shadow-sm backdrop-blur dark:border-slate-800/60 dark:bg-slate-950/60 lg:sticky lg:top-6 lg:z-20">
-          <div className="flex flex-col gap-4">
-            <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-              <div className="flex-1">
-                <label className="sr-only" htmlFor="project-search">
-                  Search projects
-                </label>
-                <input
-                  id="project-search"
-                  type="search"
-                  placeholder="Search projects..."
-                  value={query}
-                  onChange={event => setQuery(event.target.value)}
-                  className="w-full rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-slate-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100"
-                />
-              </div>
-
-              <div className="flex flex-wrap items-center gap-3 text-sm">
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="text-sm font-semibold text-slate-600 dark:text-slate-300">
-                    Sort
-                  </span>
-                  {SORT_OPTIONS.map(option => {
-                    const isActive = sortOption === option.value;
-                    return (
-                      <button
-                        key={option.value}
-                        type="button"
-                        onClick={() => setSortOption(option.value)}
-                        aria-pressed={isActive}
-                        className={`rounded-full border px-3 py-1 text-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
-                          isActive
-                            ? 'border-slate-900 bg-slate-900 text-white dark:border-white dark:bg-white dark:text-slate-900'
-                            : 'border-slate-200 bg-white text-slate-600 hover:border-slate-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-slate-500'
-                        }`}
-                      >
-                        {option.label}
-                      </button>
-                    );
-                  })}
-                </div>
-
-                <button
-                  type="button"
-                  onClick={() => setFiltersOpen(previous => !previous)}
-                  className="rounded-full border border-slate-200 bg-white px-3 py-1 text-sm font-medium text-slate-700 transition hover:border-slate-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-slate-500"
-                >
-                  More filters{activeFacetCount ? ` (${activeFacetCount})` : ''}
-                </button>
-
-                {hasActiveFilters && (
-                  <button
-                    type="button"
-                    onClick={handleClearFilters}
-                    className="text-sm font-medium text-slate-600 underline-offset-4 hover:underline dark:text-slate-300"
-                  >
-                    Clear
-                  </button>
-                )}
-              </div>
+        <section className="rounded-2xl border border-slate-200/60 bg-white/80 px-4 py-3 shadow-sm backdrop-blur dark:border-slate-800/60 dark:bg-slate-950/60 lg:sticky lg:top-6 lg:z-20">
+          <div className="flex flex-wrap items-center gap-3">
+            <div className="flex-1 min-w-[200px]">
+              <label className="sr-only" htmlFor="project-search">
+                Search projects
+              </label>
+              <input
+                id="project-search"
+                type="search"
+                placeholder="Search projects..."
+                value={query}
+                onChange={event => setQuery(event.target.value)}
+                className="w-full rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100"
+              />
             </div>
 
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
-                Quick filters
-              </span>
-              {QUICK_FILTERS.map(filter => {
-                const isActive = selectedQuickFilters.includes(filter.value);
+            <div className="flex flex-wrap items-center gap-2 text-sm">
+              {SORT_OPTIONS.map(option => {
+                const isActive = sortOption === option.value;
                 return (
                   <button
-                    key={filter.value}
+                    key={option.value}
                     type="button"
-                    onClick={() => toggleQuickFilter(filter.value)}
+                    onClick={() => setSortOption(option.value)}
                     aria-pressed={isActive}
-                    className={`rounded-full border px-3 py-1 text-xs font-medium transition ${
+                    className={`rounded-full border px-3 py-1 text-xs font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
                       isActive
-                        ? 'border-slate-900 bg-slate-900 text-white dark:border-white dark:bg-white dark:text-slate-900'
+                        ? 'border-indigo-600 bg-indigo-600 text-white dark:border-indigo-400 dark:bg-indigo-500 dark:text-white'
                         : 'border-slate-200 bg-white text-slate-600 hover:border-slate-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-slate-500'
                     }`}
                   >
-                    {filter.label}
+                    {option.label}
                   </button>
                 );
               })}
+              <button
+                type="button"
+                onClick={() => setFiltersOpen(previous => !previous)}
+                className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700 transition hover:border-slate-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-slate-500"
+              >
+                Filters{activeFacetCount ? ` (${activeFacetCount})` : ''}
+              </button>
+              {hasActiveFilters && (
+                <button
+                  type="button"
+                  onClick={handleClearFilters}
+                  className="text-xs font-medium text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400 transition-colors"
+                >
+                  Clear
+                </button>
+              )}
             </div>
           </div>
 
+          <div className="flex flex-wrap items-center gap-2 mt-2">
+            {QUICK_FILTERS.map(filter => {
+              const isActive = selectedQuickFilters.includes(filter.value);
+              return (
+                <button
+                  key={filter.value}
+                  type="button"
+                  onClick={() => toggleQuickFilter(filter.value)}
+                  aria-pressed={isActive}
+                  className={`rounded-full border px-2.5 py-0.5 text-xs font-medium transition ${
+                    isActive
+                      ? 'border-indigo-600 bg-indigo-600 text-white dark:border-indigo-400 dark:bg-indigo-500 dark:text-white'
+                      : 'border-slate-200 bg-white text-slate-500 hover:border-slate-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-400 dark:hover:border-slate-500'
+                  }`}
+                >
+                  {filter.label}
+                </button>
+              );
+            })}
+          </div>
+
           {filtersOpen && (
-            <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            <div className="mt-3 grid gap-3 sm:grid-cols-2">
               <MultiSelect
                 label="Tags"
                 options={PROJECT_TAGS}

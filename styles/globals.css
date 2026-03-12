@@ -27,10 +27,10 @@ body { @apply min-h-screen bg-gradient-to-b from-white to-slate-50 text-slate-90
 .pill { @apply px-3 py-2 rounded-full; }
 .pill-accent {
   @apply pill inline-flex items-center gap-2 font-medium border border-transparent shadow-sm transition-colors;
-  @apply bg-slate-900 text-white hover:bg-slate-700;
-  @apply dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200;
-  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-400;
-  @apply dark:focus-visible:outline-white/70;
+  @apply bg-indigo-600 text-white hover:bg-indigo-700;
+  @apply dark:bg-indigo-500 dark:text-white dark:hover:bg-indigo-400;
+  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400;
+  @apply dark:focus-visible:outline-indigo-300;
 }
 .pill-outline {
   @apply pill inline-flex items-center gap-2 font-medium border shadow-sm transition-colors;

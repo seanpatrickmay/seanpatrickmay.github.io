@@ -1,0 +1,80 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1a0f20"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <!-- Chessboard (centered) -->
+  <g transform="translate(300, 77)">
+    <!-- 8x8 board -->
+    <g>
+      <rect x="0" y="0" width="600" height="520" rx="8" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+      <!-- Dark squares -->
+      <g fill="#334155" opacity="0.5">
+        <!-- Row 0 --><rect x="65" y="0" width="65" height="65"/><rect x="195" y="0" width="65" height="65"/><rect x="325" y="0" width="65" height="65"/><rect x="455" y="0" width="65" height="65"/>
+        <!-- Row 1 --><rect x="0" y="65" width="65" height="65"/><rect x="130" y="65" width="65" height="65"/><rect x="260" y="65" width="65" height="65"/><rect x="390" y="65" width="65" height="65"/>
+        <!-- Row 2 --><rect x="65" y="130" width="65" height="65"/><rect x="195" y="130" width="65" height="65"/><rect x="325" y="130" width="65" height="65"/><rect x="455" y="130" width="65" height="65"/>
+        <!-- Row 3 --><rect x="0" y="195" width="65" height="65"/><rect x="130" y="195" width="65" height="65"/><rect x="260" y="195" width="65" height="65"/><rect x="390" y="195" width="65" height="65"/>
+        <!-- Row 4 --><rect x="65" y="260" width="65" height="65"/><rect x="195" y="260" width="65" height="65"/><rect x="325" y="260" width="65" height="65"/><rect x="455" y="260" width="65" height="65"/>
+        <!-- Row 5 --><rect x="0" y="325" width="65" height="65"/><rect x="130" y="325" width="65" height="65"/><rect x="260" y="325" width="65" height="65"/><rect x="390" y="325" width="65" height="65"/>
+        <!-- Row 6 --><rect x="65" y="390" width="65" height="65"/><rect x="195" y="390" width="65" height="65"/><rect x="325" y="390" width="65" height="65"/><rect x="455" y="390" width="65" height="65"/>
+        <!-- Row 7 --><rect x="0" y="455" width="65" height="65"/><rect x="130" y="455" width="65" height="65"/><rect x="260" y="455" width="65" height="65"/><rect x="390" y="455" width="65" height="65"/>
+      </g>
+      <!-- Queens (valid 8-queens solution) placed at: (0,0), (1,4), (2,7), (3,5), (4,2), (5,6), (6,1), (7,3) -->
+      <g font-family="Arial" font-size="38" text-anchor="middle" fill="#ec4899">
+        <text x="32" y="48">&#9819;</text>
+        <text x="292" y="113">&#9819;</text>
+        <text x="487" y="178">&#9819;</text>
+        <text x="357" y="243">&#9819;</text>
+        <text x="162" y="308">&#9819;</text>
+        <text x="422" y="373">&#9819;</text>
+        <text x="97" y="438">&#9819;</text>
+        <text x="227" y="503">&#9819;</text>
+      </g>
+      <!-- Attack lines (subtle, showing non-attacking property) -->
+      <g stroke="#ec4899" stroke-width="0.5" opacity="0.1" stroke-dasharray="3,3">
+        <!-- Horizontal lines through queens -->
+        <line x1="0" y1="32" x2="520" y2="32"/>
+        <line x1="0" y1="97" x2="520" y2="97"/>
+        <line x1="0" y1="162" x2="520" y2="162"/>
+        <line x1="0" y1="227" x2="520" y2="227"/>
+        <line x1="0" y1="292" x2="520" y2="292"/>
+        <line x1="0" y1="357" x2="520" y2="357"/>
+        <line x1="0" y1="422" x2="520" y2="422"/>
+        <line x1="0" y1="487" x2="520" y2="487"/>
+      </g>
+    </g>
+  </g>
+  <!-- DNA helix (left side) -->
+  <g transform="translate(100, 100)" opacity="0.25">
+    <g stroke="#ec4899" stroke-width="2" fill="none">
+      <!-- Left strand -->
+      <path d="M0,0 Q30,30 0,60 Q-30,90 0,120 Q30,150 0,180 Q-30,210 0,240 Q30,270 0,300 Q-30,330 0,360 Q30,390 0,420 Q-30,450 0,480"/>
+      <!-- Right strand -->
+      <path d="M40,0 Q10,30 40,60 Q70,90 40,120 Q10,150 40,180 Q70,210 40,240 Q10,270 40,300 Q70,330 40,360 Q10,390 40,420 Q70,450 40,480"/>
+    </g>
+    <!-- Crossbars -->
+    <g stroke="#ec4899" stroke-width="1.5" opacity="0.4">
+      <line x1="5" y1="30" x2="35" y2="30"/><line x1="-5" y1="90" x2="45" y2="90"/>
+      <line x1="5" y1="150" x2="35" y2="150"/><line x1="-5" y1="210" x2="45" y2="210"/>
+      <line x1="5" y1="270" x2="35" y2="270"/><line x1="-5" y1="330" x2="45" y2="330"/>
+      <line x1="5" y1="390" x2="35" y2="390"/><line x1="-5" y1="450" x2="45" y2="450"/>
+    </g>
+  </g>
+  <!-- DNA helix (right side) -->
+  <g transform="translate(1060, 80)" opacity="0.2">
+    <g stroke="#ec4899" stroke-width="2" fill="none">
+      <path d="M0,0 Q25,25 0,50 Q-25,75 0,100 Q25,125 0,150 Q-25,175 0,200 Q25,225 0,250 Q-25,275 0,300 Q25,325 0,350 Q-25,375 0,400 Q25,425 0,450 Q-25,475 0,500"/>
+      <path d="M35,0 Q10,25 35,50 Q60,75 35,100 Q10,125 35,150 Q60,175 35,200 Q10,225 35,250 Q60,275 35,300 Q10,325 35,350 Q60,375 35,400 Q10,425 35,450 Q60,475 35,500"/>
+    </g>
+    <g stroke="#ec4899" stroke-width="1.5" opacity="0.3">
+      <line x1="5" y1="25" x2="30" y2="25"/><line x1="-5" y1="75" x2="40" y2="75"/>
+      <line x1="5" y1="125" x2="30" y2="125"/><line x1="-5" y1="175" x2="40" y2="175"/>
+      <line x1="5" y1="225" x2="30" y2="225"/><line x1="-5" y1="275" x2="40" y2="275"/>
+      <line x1="5" y1="325" x2="30" y2="325"/><line x1="-5" y1="375" x2="40" y2="375"/>
+      <line x1="5" y1="425" x2="30" y2="425"/><line x1="-5" y1="475" x2="40" y2="475"/>
+    </g>
+  </g>
+</svg>

@@ -1,7 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="675" fill="#0f172a"/>
-  <rect x="36" y="36" width="1128" height="603" rx="28" fill="#111827" stroke="#334155" stroke-width="4"/>
-  <text x="600" y="330" text-anchor="middle" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="40">Human Digit Classification / Cover</text>
-  <text x="600" y="380" text-anchor="middle" fill="#94a3b8" font-family="Arial, sans-serif" font-size="22">Placeholder image</text>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <!-- Subtle grid -->
+  <g opacity="0.06" stroke="#94a3b8" stroke-width="1">
+    <line x1="0" y1="0" x2="0" y2="675"/><line x1="60" y1="0" x2="60" y2="675"/><line x1="120" y1="0" x2="120" y2="675"/><line x1="180" y1="0" x2="180" y2="675"/><line x1="240" y1="0" x2="240" y2="675"/><line x1="300" y1="0" x2="300" y2="675"/><line x1="360" y1="0" x2="360" y2="675"/><line x1="420" y1="0" x2="420" y2="675"/><line x1="480" y1="0" x2="480" y2="675"/><line x1="540" y1="0" x2="540" y2="675"/><line x1="600" y1="0" x2="600" y2="675"/><line x1="660" y1="0" x2="660" y2="675"/><line x1="720" y1="0" x2="720" y2="675"/><line x1="780" y1="0" x2="780" y2="675"/><line x1="840" y1="0" x2="840" y2="675"/><line x1="900" y1="0" x2="900" y2="675"/><line x1="960" y1="0" x2="960" y2="675"/><line x1="1020" y1="0" x2="1020" y2="675"/><line x1="1080" y1="0" x2="1080" y2="675"/><line x1="1140" y1="0" x2="1140" y2="675"/><line x1="1200" y1="0" x2="1200" y2="675"/>
+    <line x1="0" y1="0" x2="1200" y2="0"/><line x1="0" y1="60" x2="1200" y2="60"/><line x1="0" y1="120" x2="1200" y2="120"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="240" x2="1200" y2="240"/><line x1="0" y1="300" x2="1200" y2="300"/><line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="420" x2="1200" y2="420"/><line x1="0" y1="480" x2="1200" y2="480"/><line x1="0" y1="540" x2="1200" y2="540"/><line x1="0" y1="600" x2="1200" y2="600"/><line x1="0" y1="660" x2="1200" y2="660"/>
+  </g>
+  <!-- Neural network layers -->
+  <!-- Input layer (left) - 5 nodes -->
+  <g fill="#334155">
+    <circle cx="200" cy="135" r="22"/><circle cx="200" cy="235" r="22"/><circle cx="200" cy="337" r="22"/><circle cx="200" cy="435" r="22"/><circle cx="200" cy="535" r="22"/>
+  </g>
+  <!-- Hidden layer 1 - 6 nodes -->
+  <g fill="#475569">
+    <circle cx="420" cy="100" r="18"/><circle cx="420" cy="195" r="18"/><circle cx="420" cy="290" r="18"/><circle cx="420" cy="385" r="18"/><circle cx="420" cy="480" r="18"/><circle cx="420" cy="575" r="18"/>
+  </g>
+  <!-- Hidden layer 2 - 4 nodes -->
+  <g fill="#10b981" opacity="0.7">
+    <circle cx="640" cy="170" r="20"/><circle cx="640" cy="280" r="20"/><circle cx="640" cy="390" r="20"/><circle cx="640" cy="500" r="20"/>
+  </g>
+  <!-- Output layer - 3 nodes -->
+  <g fill="#10b981">
+    <circle cx="860" cy="220" r="24"/><circle cx="860" cy="337" r="24"/><circle cx="860" cy="455" r="24"/>
+  </g>
+  <!-- Connections (selected, not all) -->
+  <g stroke="#10b981" stroke-width="1.5" opacity="0.15">
+    <line x1="222" y1="135" x2="402" y2="100"/><line x1="222" y1="135" x2="402" y2="290"/><line x1="222" y1="235" x2="402" y2="195"/><line x1="222" y1="235" x2="402" y2="385"/><line x1="222" y1="337" x2="402" y2="290"/><line x1="222" y1="337" x2="402" y2="480"/><line x1="222" y1="435" x2="402" y2="385"/><line x1="222" y1="435" x2="402" y2="575"/><line x1="222" y1="535" x2="402" y2="480"/><line x1="222" y1="535" x2="402" y2="195"/>
+    <line x1="438" y1="100" x2="620" y2="170"/><line x1="438" y1="195" x2="620" y2="280"/><line x1="438" y1="290" x2="620" y2="170"/><line x1="438" y1="290" x2="620" y2="390"/><line x1="438" y1="385" x2="620" y2="280"/><line x1="438" y1="385" x2="620" y2="500"/><line x1="438" y1="480" x2="620" y2="390"/><line x1="438" y1="575" x2="620" y2="500"/>
+    <line x1="660" y1="170" x2="836" y2="220"/><line x1="660" y1="280" x2="836" y2="337"/><line x1="660" y1="390" x2="836" y2="337"/><line x1="660" y1="390" x2="836" y2="455"/><line x1="660" y1="500" x2="836" y2="455"/>
+  </g>
+  <!-- Highlighted connection path -->
+  <g stroke="#10b981" stroke-width="2.5" opacity="0.5">
+    <line x1="222" y1="337" x2="402" y2="290"/><line x1="438" y1="290" x2="620" y2="280"/><line x1="660" y1="280" x2="836" y2="337"/>
+  </g>
+  <!-- Floating digits on the right -->
+  <g font-family="monospace" font-size="48" fill="#10b981" opacity="0.12">
+    <text x="950" y="120">3</text><text x="1020" y="200">7</text><text x="1080" y="310">1</text><text x="970" y="400">5</text><text x="1050" y="500">9</text><text x="1100" y="150">0</text><text x="990" y="560">4</text><text x="1060" y="420">8</text>
+  </g>
+  <!-- Hand silhouette hint (simplified) -->
+  <g transform="translate(60, 180)" fill="none" stroke="#10b981" stroke-width="2" opacity="0.2">
+    <path d="M40,200 Q30,160 35,120 Q38,90 50,80 Q62,90 58,120 L55,150 Q55,130 60,100 Q63,75 75,70 Q87,75 83,100 L78,150 Q80,120 85,90 Q88,65 100,60 Q112,65 108,90 L100,160 Q105,130 110,100 Q113,80 125,78 Q135,82 130,105 L118,180 Q140,150 155,140 Q165,138 168,148 Q165,160 145,190 L110,230 Q90,250 70,240 Z"/>
+  </g>
 </svg>

@@ -13,16 +13,17 @@
     "normalize-logos": "node scripts/normalize-logos.mjs"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.8",
     "lucide-react": "^0.447.0",
     "next": "^14.2.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "@headlessui/react": "^2.2.8",
     "sharp": "^0.33.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.41",
+    "puppeteer": "^24.39.0",
     "tailwindcss": "^3.4.10"
   }
 }

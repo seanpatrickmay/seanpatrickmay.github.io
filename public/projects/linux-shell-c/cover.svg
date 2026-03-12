@@ -1,0 +1,55 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0a0a0f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <!-- Terminal window -->
+  <g transform="translate(100, 50)">
+    <!-- Window chrome -->
+    <rect width="1000" height="575" rx="12" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <!-- Title bar -->
+    <rect x="1" y="1" width="998" height="40" rx="12" fill="#334155" opacity="0.6"/>
+    <!-- Traffic lights -->
+    <circle cx="24" cy="21" r="7" fill="#ef4444" opacity="0.8"/>
+    <circle cx="48" cy="21" r="7" fill="#f59e0b" opacity="0.8"/>
+    <circle cx="72" cy="21" r="7" fill="#22c55e" opacity="0.8"/>
+    <!-- Terminal content -->
+    <g font-family="monospace" font-size="16">
+      <!-- Prompt 1 -->
+      <text x="24" y="80" fill="#22c55e" opacity="0.8">sean@ubuntu</text><text x="150" y="80" fill="#475569">:</text><text x="158" y="80" fill="#3b82f6" opacity="0.8">~/projects</text><text x="280" y="80" fill="#475569">$</text>
+      <text x="296" y="80" fill="#e2e8f0" opacity="0.7">ls -la | grep ".c"</text>
+      <!-- Output -->
+      <text x="24" y="108" fill="#94a3b8" opacity="0.5">-rw-r--r--  1 sean sean  4096 Mar 10  shell.c</text>
+      <text x="24" y="132" fill="#94a3b8" opacity="0.5">-rw-r--r--  1 sean sean  2048 Mar 10  parser.c</text>
+      <text x="24" y="156" fill="#94a3b8" opacity="0.5">-rw-r--r--  1 sean sean  3072 Mar 10  executor.c</text>
+      <text x="24" y="180" fill="#94a3b8" opacity="0.5">-rw-r--r--  1 sean sean  1536 Mar 10  builtins.c</text>
+      <!-- Prompt 2 -->
+      <text x="24" y="216" fill="#22c55e" opacity="0.8">sean@ubuntu</text><text x="150" y="216" fill="#475569">:</text><text x="158" y="216" fill="#3b82f6" opacity="0.8">~/projects</text><text x="280" y="216" fill="#475569">$</text>
+      <text x="296" y="216" fill="#e2e8f0" opacity="0.7">./myshell</text>
+      <!-- Custom shell prompt -->
+      <text x="24" y="252" fill="#f59e0b" opacity="0.8">mysh&gt;</text>
+      <text x="80" y="252" fill="#e2e8f0" opacity="0.7">echo "hello world" | wc -w</text>
+      <text x="24" y="276" fill="#94a3b8" opacity="0.5">2</text>
+      <!-- Another command -->
+      <text x="24" y="312" fill="#f59e0b" opacity="0.8">mysh&gt;</text>
+      <text x="80" y="312" fill="#e2e8f0" opacity="0.7">cat file.txt &gt; output.txt &amp;&amp; echo "done"</text>
+      <text x="24" y="336" fill="#94a3b8" opacity="0.5">done</text>
+      <!-- Background process -->
+      <text x="24" y="372" fill="#f59e0b" opacity="0.8">mysh&gt;</text>
+      <text x="80" y="372" fill="#e2e8f0" opacity="0.7">sleep 10 &amp;</text>
+      <text x="24" y="396" fill="#94a3b8" opacity="0.5">[1] 12847</text>
+      <!-- Signal handling -->
+      <text x="24" y="432" fill="#f59e0b" opacity="0.8">mysh&gt;</text>
+      <text x="80" y="432" fill="#e2e8f0" opacity="0.7">cd .. &amp;&amp; pwd</text>
+      <text x="24" y="456" fill="#94a3b8" opacity="0.5">/home/sean</text>
+      <!-- Current prompt with cursor -->
+      <text x="24" y="492" fill="#f59e0b" opacity="0.8">mysh&gt;</text>
+      <rect x="80" y="478" width="10" height="18" fill="#e2e8f0" opacity="0.7">
+        <animate attributeName="opacity" values="0.7;0;0.7" dur="1.2s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+</svg>

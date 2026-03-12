@@ -1,10 +1,23 @@
 [
   {
+    "org": "Freelance",
+    "role": "Software Engineer",
+    "location": "Remote",
+    "period": "Jan 2026 – Present",
+    "emoji": "💼",
+    "oneLiner": "Comic book grading iOS app",
+    "bullets": [
+      "Building a comic book grading iOS application using computer vision, web scraping, and AWS infrastructure.",
+      "End-to-end development from CV model pipeline to mobile deployment."
+    ]
+  },
+  {
     "org": "Capital One",
     "role": "Incoming Software Engineer Intern",
     "location": "Richmond, VA",
     "period": "June 1 – August 8, 2026",
     "emoji": "🏦",
+    "img": "/logos/normalized/capitalone-logo.png",
     "oneLiner": "Incoming Capital One SWE Intern",
     "bullets": [
       "Joining Capital One in Richmond, Virginia as a Software Engineer Intern for Summer 2026.",
