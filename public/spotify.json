@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-11T14:03:57.601Z",
+  "generated_at": "2026-03-12T14:01:38.515Z",
   "artists": [
     {
       "name": "Lady Gaga",
@@ -27,29 +27,29 @@
       "url": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
     },
     {
-      "name": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb9f6f7c2d12975d2a4b3a0fd8",
-      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
-    },
-    {
       "name": "The Marías",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaf586afa2b397f1288683a76",
       "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
     },
     {
-      "name": "The Smiths",
-      "image": "https://i.scdn.co/image/481b980af463122013e4578c08fb8c5cbfaed1e9",
-      "url": "https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8"
-    },
-    {
-      "name": "TV Girl",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd80695211689a9c8c3fee3b0",
-      "url": "https://open.spotify.com/artist/0Y6dVaC9DZtPNH4591M42W"
-    },
-    {
       "name": "Super Guitar Bros",
       "image": "https://i.scdn.co/image/ab6761610000e5ebce399ad7547d8ee3b7fc86a0",
       "url": "https://open.spotify.com/artist/2WosnSaZPybvQfyGUvD3NX"
+    },
+    {
+      "name": "Janet Jackson",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb8b290c36cbc9e89827ff562a",
+      "url": "https://open.spotify.com/artist/4qwGe91Bz9K2T8jXTZ815W"
+    },
+    {
+      "name": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb9f6f7c2d12975d2a4b3a0fd8",
+      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
+    },
+    {
+      "name": "London Symphony Orchestra",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb5a5d168879568c94e86c61aa",
+      "url": "https://open.spotify.com/artist/5yxyJsFanEAuwSM5kOuZKc"
     }
   ],
   "tracks": [
