@@ -8,6 +8,7 @@ import HobbySpotlight from '@/components/HobbySpotlight';
 import CaseStudyCard from '@/components/projects/CaseStudyCard';
 import LineSparkline from '@/components/ui/LineSparkline';
 import { getBostonJourneyEquivalence } from '@/lib/journeyEquivalents';
+import GoodreadsCard from '@/components/GoodreadsCard';
 import { Sparkles, TrendingUp, Music, ClipboardList, Users } from 'lucide-react';
 
 function parseDateOnlyLocal(value) {
@@ -127,7 +128,7 @@ export default function AboutSection({
   const hobbySpotlights = [
     {
       title: 'Prompting',
-      emoji: '✨',
+      emoji: '🚀',
       description: 'Token-maxxing. This site was vibe-coded.',
     },
     {
@@ -164,7 +165,7 @@ export default function AboutSection({
         />
         <div className="space-y-10">
           <div className="space-y-6">
-            <div className="grid gap-6 lg:grid-cols-3">
+            <div className="grid gap-6 sm:grid-cols-2">
               <Card className="bg-white/70 shadow-sm dark:bg-slate-900/60 h-full">
                 <CardHeader>
                   <CardTitle icon={TrendingUp}>Training (8 weeks)</CardTitle>
@@ -220,21 +221,23 @@ export default function AboutSection({
                 </CardContent>
               </Card>
 
-              <Card className="bg-white/70 shadow-sm dark:bg-slate-900/60 h-full flex flex-col">
+              <GoodreadsCard />
+
+              <Card className="bg-white/70 shadow-sm dark:bg-slate-900/60 h-full">
                 <CardHeader>
                   <CardTitle icon={Users}>Top Artists</CardTitle>
                 </CardHeader>
-                <CardContent className="flex-1 min-h-0">
-                  <SpotifyTopArtists artists={spotify?.artists ?? []} fillHeight />
+                <CardContent>
+                  <SpotifyTopArtists artists={spotify?.artists ?? []} visibleCount={5} />
                 </CardContent>
               </Card>
 
-              <Card className="bg-white/70 shadow-sm dark:bg-slate-900/60 h-full flex flex-col">
+              <Card className="bg-white/70 shadow-sm dark:bg-slate-900/60 h-full">
                 <CardHeader>
                   <CardTitle icon={Music}>Top Tracks</CardTitle>
                 </CardHeader>
-                <CardContent className="flex-1 min-h-0">
-                  <SpotifyTopTracks tracks={spotify?.tracks ?? []} fillHeight />
+                <CardContent>
+                  <SpotifyTopTracks tracks={spotify?.tracks ?? []} visibleCount={5} />
                 </CardContent>
               </Card>
             </div>

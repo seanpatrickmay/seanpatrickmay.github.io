@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-03-12T05:52:41.443Z",
+  "currentlyReading": [
+    {
+      "title": "Wuthering Heights",
+      "author": "Emily Brontë",
+      "rating": 0,
+      "avgRating": 3.9,
+      "dateAdded": "Wed, 11 Mar 2026 22:39:15 -0700",
+      "published": "1847",
+      "numPages": 464,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388212715l/6185._SX98_.jpg",
+      "bookId": "6185",
+      "link": "https://www.goodreads.com/review/show/8425268149?utm_medium=api&utm_source=rss"
+    }
+  ],
+  "recentlyRead": [
+    {
+      "title": "Children of Dune (Dune #3)",
+      "author": "Frank Herbert",
+      "rating": 4,
+      "avgRating": 3.96,
+      "dateAdded": "Sat, 07 Mar 2026 10:54:12 -0800",
+      "published": "1976",
+      "numPages": 609,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1564783201l/44492286._SY160_.jpg",
+      "bookId": "44492286",
+      "link": "https://www.goodreads.com/review/show/8418072991?utm_medium=api&utm_source=rss"
+    },
+    {
+      "title": "Dune Messiah (Dune #2)",
+      "author": "Frank Herbert",
+      "rating": 4,
+      "avgRating": 3.89,
+      "dateAdded": "Sat, 07 Mar 2026 10:53:58 -0800",
+      "published": "1969",
+      "numPages": 336,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1577043824l/44492285._SY160_.jpg",
+      "bookId": "44492285",
+      "link": "https://www.goodreads.com/review/show/8418072429?utm_medium=api&utm_source=rss"
+    },
+    {
+      "title": "Dune (Dune, #1)",
+      "author": "Frank Herbert",
+      "rating": 5,
+      "avgRating": 4.33,
+      "dateAdded": "Sat, 07 Mar 2026 10:53:32 -0800",
+      "published": "1965",
+      "numPages": 658,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1555447414l/44767458._SX98_.jpg",
+      "bookId": "44767458",
+      "link": "https://www.goodreads.com/review/show/8418071378?utm_medium=api&utm_source=rss"
+    },
+    {
+      "title": "Atlas Shrugged",
+      "author": "Ayn Rand",
+      "rating": 5,
+      "avgRating": 3.67,
+      "dateAdded": "Sat, 07 Mar 2026 10:50:56 -0800",
+      "published": "1957",
+      "numPages": 1168,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1405868167l/662._SX98_.jpg",
+      "bookId": "662",
+      "link": "https://www.goodreads.com/review/show/8418065357?utm_medium=api&utm_source=rss"
+    },
+    {
+      "title": "Annihilation (Southern Reach, #1)",
+      "author": "Jeff Vandermeer",
+      "rating": 3,
+      "avgRating": 3.81,
+      "dateAdded": "Sat, 07 Mar 2026 10:47:39 -0800",
+      "published": "2014",
+      "numPages": 195,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1403941587l/17934530._SX98_.jpg",
+      "bookId": "17934530",
+      "link": "https://www.goodreads.com/review/show/8418057737?utm_medium=api&utm_source=rss"
+    }
+  ],
+  "totalPages": 2966,
+  "profileUrl": "https://www.goodreads.com/user/show/199381877"
+}
