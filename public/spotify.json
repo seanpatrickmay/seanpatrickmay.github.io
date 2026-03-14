@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-13T13:58:23.117Z",
+  "generated_at": "2026-03-14T13:42:56.330Z",
   "artists": [
     {
       "name": "Lady Gaga",
@@ -27,6 +27,11 @@
       "url": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
     },
     {
+      "name": "Kanye West",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
+      "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
+    },
+    {
       "name": "Super Guitar Bros",
       "image": "https://i.scdn.co/image/ab6761610000e5ebce399ad7547d8ee3b7fc86a0",
       "url": "https://open.spotify.com/artist/2WosnSaZPybvQfyGUvD3NX"
@@ -42,14 +47,9 @@
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
-      "name": "London Symphony Orchestra",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb5a5d168879568c94e86c61aa",
-      "url": "https://open.spotify.com/artist/5yxyJsFanEAuwSM5kOuZKc"
-    },
-    {
-      "name": "Toshifumi Hinata",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb1d5fb5b560b966ca1177aefe",
-      "url": "https://open.spotify.com/artist/08tfDO4dSrwxax35a3HIMC"
+      "name": "Gautier Capuçon",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb362a439492dad1d52a593c04",
+      "url": "https://open.spotify.com/artist/57ziOSBD3x0PhVbl7MXTgI"
     }
   ],
   "tracks": [
@@ -66,22 +66,10 @@
       "url": "https://open.spotify.com/track/2LHNTC9QZxsL3nWpt8iaSR"
     },
     {
-      "name": "The Fame",
-      "artist": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
-      "url": "https://open.spotify.com/track/3HhAZV8ngUOOt4eUHovhud"
-    },
-    {
       "name": "Garden Of Eden",
       "artist": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
       "url": "https://open.spotify.com/track/4mUR5Tv0CvJtpmnUtzeIgd"
-    },
-    {
-      "name": "Money Honey",
-      "artist": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
-      "url": "https://open.spotify.com/track/6gknJVkbQb8jkAXbXx0SYA"
     },
     {
       "name": "Die With A Smile",
@@ -112,6 +100,18 @@
       "artist": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
       "url": "https://open.spotify.com/track/0T3Hw3kPj9T2E4UoaSXmfn"
+    },
+    {
+      "name": "Somebody That I Used To Know",
+      "artist": "Gotye, Kimbra",
+      "image": "https://i.scdn.co/image/ab67616d0000b2738ac5768205ad97df3f4f4c0e",
+      "url": "https://open.spotify.com/track/1qDrWA6lyx8cLECdZE7TV7"
+    },
+    {
+      "name": "Carnival of the Animals: X. Aviary",
+      "artist": "Camille Saint-Saëns, Barry Wordsworth, London Symphony Orchestra",
+      "image": "https://i.scdn.co/image/ab67616d0000b273e1aa11db3009e6f62582803e",
+      "url": "https://open.spotify.com/track/263JmI8vPXqGpdw9NipjYo"
     }
   ]
 }
