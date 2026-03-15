@@ -89,9 +89,9 @@
       "TypeScript",
       "OpenAI"
     ],
-    "oneLiner": "Full-stack wellness app with Garmin biometric ingestion, 20+ nutrient tracking, and OpenAI-driven readiness insights rendered in a Monet-inspired pixel art interface.",
-    "featuredDescription": "Wellness dashboard turning Garmin biometrics + nutrition logs into AI-driven daily insights.",
-    "cardDescription": "Garmin biometrics, nutrition tracking, and AI readiness insights in a Monet pixel art UI.",
+    "oneLiner": "Full-stack personal OS with auto iMessage ingestion, calendar sync, project tracking, AI-powered todos, and Garmin biometrics—all rendered in a Monet-inspired pixel art interface.",
+    "featuredDescription": "Personal command center: auto iMessage ingestion, calendar + project integration, AI-generated todos, and biometric tracking.",
+    "cardDescription": "Auto iMessage ingestion, calendar sync, project tracking, AI todos, and Garmin biometrics in a Monet pixel art UI.",
     "languages": [
       "Python",
       "TypeScript"
@@ -106,28 +106,28 @@
     "showcaseTag": "Agentic AI",
     "showcaseTech": "PostgreSQL",
     "proofPoints": [
-      "Async Garmin ingestion pipeline for HRV, resting HR, sleep, training load, and energy data",
-      "17 API routers, 35 React components, 18 database migrations, and 110+ pixel art sprite assets",
-      "OpenAI Responses API generates structured readiness narratives with web search and tool routing"
+      "Auto iMessage ingestion pipeline that parses conversations into structured action items, reminders, and context for AI-driven task generation",
+      "Calendar + project integration that syncs events, deadlines, and repo activity into a unified daily command view",
+      "OpenAI Responses API generates prioritized todos and daily briefings from messages, calendar, project state, and Garmin biometrics"
     ],
-    "overview": "Life-Dashboard is a self-hosted wellness app that ingests Garmin HRV, resting heart rate, sleep, and training load data, tracks 20+ nutrients across meals, and generates AI-driven readiness insights—all rendered in a pixel art Monet theme that shifts with time of day.",
+    "overview": "Life-Dashboard is a self-hosted personal OS that auto-ingests iMessage conversations, syncs calendar events, tracks active projects, and generates AI-driven todos and daily briefings—all rendered in a pixel art Monet theme that shifts with time of day. Garmin biometrics provide a wellness baseline alongside the productivity layer.",
     "whatIBuilt": [
-      "FastAPI backend for Garmin ingestion, insight generation, and structured wellness workflows",
-      "React/Vite frontend for dashboard views, trends, nutrition, and assistant-style interaction",
-      "Postgres-backed data model for biometrics, nutrition logs, insights, and to-do generation"
+      "FastAPI backend for iMessage ingestion, calendar sync, project tracking, todo generation, and Garmin biometric pulls",
+      "React/Vite frontend for daily briefing, todo management, calendar view, project status, and assistant interaction",
+      "Postgres-backed data model for messages, calendar events, projects, todos, biometrics, and AI-generated insights"
     ],
     "howItWorks": [
-      "Pull Garmin activities and recovery metrics into Postgres",
-      "Aggregate recent trends and generate readiness-style summaries with OpenAI",
-      "Surface metrics, recommendations, and nutrition context through a React interface"
+      "Ingest iMessage conversations and calendar events into Postgres, extracting actionable items and deadlines",
+      "Aggregate messages, schedule, project activity, and biometrics into context for OpenAI-powered todo and briefing generation",
+      "Surface prioritized todos, daily briefings, and project status through a unified React dashboard"
     ],
     "results": [
-      "End-to-end wellness pipeline from raw biometrics to actionable outputs",
-      "Clean separation between ingestion, modeling, and product UI"
+      "End-to-end personal command center from raw messages and calendar through AI prioritization to actionable daily output",
+      "Clean separation between ingestion sources, AI reasoning, and product UI"
     ],
     "nextSteps": [
-      "Add tighter evals for AI recommendations",
-      "Expand training-readiness logic into more personalized planning"
+      "Add tighter evals for AI-generated todo relevance and priority accuracy",
+      "Expand project integration with deeper git activity and PR status tracking"
     ],
     "coverImage": {
       "src": "/projects/life-dashboard/life-dashboard-cover.png",
@@ -135,8 +135,8 @@
     },
     "gallery": [],
     "bullets": [
-      "Async Garmin pipeline ingests HRV, resting HR, sleep, training load, and energy across a 30-day lookback window.",
-      "OpenAI Responses API (gpt-5-mini) generates structured readiness narratives with web search and tool routing for nutrition parsing.",
+      "Auto iMessage ingestion parses conversations into structured action items, with calendar and project sync feeding a unified daily context window.",
+      "OpenAI Responses API generates prioritized todos and daily briefings from messages, schedule, project state, and Garmin biometrics.",
       "Monet pixel art theme with 110+ sprites, four time-of-day palettes (morning/noon/twilight/night), and layered compositing."
     ],
     "links": [
@@ -373,23 +373,24 @@
     ]
   },
   {
-    "title": "Sentiment Market Arb",
-    "slug": "sentiment-market-arb",
-    "emoji": "📈",
-    "period": "Updated Dec 2025",
+    "title": "Sentiment Market MM",
+    "slug": "sentiment-market-mm",
+    "emoji": "🏦",
+    "period": "Updated Mar 2026",
     "startDate": null,
     "endDate": null,
-    "updatedAt": "2025-12-11",
+    "updatedAt": "2026-03-14",
     "stack": [
       "Python",
       "FastAPI",
       "PostgreSQL",
+      "Redis",
       "React",
       "TypeScript",
       "Docker"
     ],
-    "oneLiner": "Arbitrage detection engine with 25+ API endpoints and 12 database models that ingests Kalshi and Polymarket odds, maps events via weighted scoring, and scans for covered-outcome opportunities.",
-    "cardDescription": "Full-stack arbitrage engine: Kalshi + Polymarket ingestion, weighted-score event mapping, 2-way and 3-way arb scanning, and a React operator console.",
+    "oneLiner": "Automated market-making engine for prediction markets that manages inventory risk, dynamically adjusts bid-ask spreads based on sentiment signals, and executes across Kalshi and Polymarket.",
+    "cardDescription": "Prediction market maker: real-time sentiment-driven spread pricing, inventory risk management, multi-venue quote execution, and a React monitoring dashboard.",
     "languages": [
       "Python",
       "TypeScript"
@@ -400,47 +401,47 @@
       "Algorithms",
       "Cloud/Infra"
     ],
-    "coolness": 91,
+    "coolness": 93,
     "showcaseTag": "Algorithms",
-    "showcaseTech": "PostgreSQL",
+    "showcaseTech": "Redis",
     "proofPoints": [
-      "Odds normalization across decimal, fractional, and moneyline formats with venue-specific fee models",
-      "Weighted event mapper (60% team match, 30% time proximity, 10% league) with auto-event creation fallback",
-      "2-way and 3-way arb detection with stake optimization, worst-case ROI filtering, and per-leg breakdown"
+      "Sentiment-weighted spread pricing that adjusts bid-ask width based on news flow, social volume, and order book imbalance signals",
+      "Inventory risk engine with position limits, Greeks-inspired exposure tracking, and dynamic skew to reduce directional risk",
+      "Multi-venue execution layer with order lifecycle management across Kalshi and Polymarket via unified abstraction"
     ],
-    "overview": "Sentiment Market Arb is a full-stack prototype for ingesting venue data from prediction markets, normalizing it into a shared sports-event schema, and scanning for pure arbitrage opportunities across covered outcomes.",
+    "overview": "Sentiment Market MM is a full-stack market-making system for prediction markets. It ingests real-time sentiment signals, prices two-sided quotes with dynamic spread adjustment, manages inventory exposure, and executes across multiple venues through a unified order management layer.",
     "whatIBuilt": [
-      "FastAPI backend with ingestion routes, mappings, quote storage, and arbitrage scan endpoints",
-      "Postgres-backed schema for events, markets, mapping candidates, quotes, and arbitrage outputs",
-      "React operator console for ingestion, mapping review, and arbitrage inspection"
+      "FastAPI backend with sentiment ingestion, spread pricing engine, order management, and position tracking endpoints",
+      "Postgres + Redis schema for markets, quotes, orders, fills, positions, and real-time sentiment state",
+      "React monitoring dashboard for live P&L, position exposure, spread visualization, and order flow"
     ],
     "howItWorks": [
-      "Ingest venue markets and quotes from supported platforms",
-      "Map venue-specific markets onto canonical sports events",
-      "Store normalized quotes and run arbitrage scans across compatible outcome groups"
+      "Ingest sentiment signals from news APIs, social feeds, and order book data into a scoring pipeline",
+      "Price two-sided quotes with spread width driven by sentiment confidence, volatility, and current inventory skew",
+      "Execute and manage order lifecycle across venues with fill tracking and position reconciliation"
     ],
     "results": [
-      "Prototype covers ingestion, normalization, review, and scan flows end-to-end",
-      "Provides a concrete full-stack environment for arbitrage research rather than a paper design"
+      "End-to-end market-making loop from signal ingestion through quote pricing to execution and risk tracking",
+      "Provides a working research environment for testing spread strategies against real prediction market dynamics"
     ],
     "nextSteps": [
-      "Tighten secrets/env documentation and add example outputs",
-      "Add more robust verification and benchmark flows for scan quality"
+      "Add backtesting harness to evaluate spread strategies against historical order book snapshots",
+      "Implement adaptive position sizing based on realized P&L and drawdown thresholds"
     ],
     "coverImage": {
-      "src": "/projects/sentiment-market-arb/cover.png",
-      "alt": "Sentiment Market Arb operator console"
+      "src": "/projects/sentiment-market-mm/cover.png",
+      "alt": "Sentiment Market MM monitoring dashboard"
     },
     "gallery": [],
     "bullets": [
-      "25+ FastAPI endpoints across 7 router groups with a 12-model Postgres schema for venues, events, markets, quotes, mappings, and arbs.",
-      "Weighted composite scorer (team match + time proximity + league) maps Kalshi/Polymarket markets to canonical events with auto-creation fallback.",
-      "Arb engine solves 2-way stake ratios algebraically and tests 3-way equal-unit heuristics, filtering by worst-case ROI threshold."
+      "Sentiment scoring pipeline aggregates news, social, and order-flow signals into a real-time confidence score that drives dynamic bid-ask spread width.",
+      "Inventory risk manager tracks net exposure per market with position limits, directional skew adjustment, and Greeks-style sensitivity metrics.",
+      "Unified execution layer abstracts Kalshi and Polymarket APIs behind a common order interface with fill tracking and position reconciliation."
     ],
     "links": [
       {
         "label": "Git Repo",
-        "href": "https://github.com/seanpatrickmay/sentiment-market-arb",
+        "href": "https://github.com/seanpatrickmay/sentiment-market-mm",
         "kind": "repo"
       }
     ]

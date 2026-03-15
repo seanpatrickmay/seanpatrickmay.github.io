@@ -1,0 +1,53 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0c1220"/>
+    </linearGradient>
+    <linearGradient id="spreadFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <!-- Grid -->
+  <g stroke="#334155" stroke-width="0.5" opacity="0.15">
+    <line x1="100" y1="80" x2="100" y2="600"/><line x1="200" y1="80" x2="200" y2="600"/><line x1="300" y1="80" x2="300" y2="600"/><line x1="400" y1="80" x2="400" y2="600"/><line x1="500" y1="80" x2="500" y2="600"/><line x1="600" y1="80" x2="600" y2="600"/><line x1="700" y1="80" x2="700" y2="600"/><line x1="800" y1="80" x2="800" y2="600"/><line x1="900" y1="80" x2="900" y2="600"/><line x1="1000" y1="80" x2="1000" y2="600"/><line x1="1100" y1="80" x2="1100" y2="600"/>
+    <line x1="100" y1="130" x2="1100" y2="130"/><line x1="100" y1="200" x2="1100" y2="200"/><line x1="100" y1="270" x2="1100" y2="270"/><line x1="100" y1="340" x2="1100" y2="340"/><line x1="100" y1="410" x2="1100" y2="410"/><line x1="100" y1="480" x2="1100" y2="480"/><line x1="100" y1="550" x2="1100" y2="550"/>
+  </g>
+  <!-- Axis -->
+  <line x1="100" y1="600" x2="1100" y2="600" stroke="#475569" stroke-width="1.5"/>
+  <line x1="100" y1="80" x2="100" y2="600" stroke="#475569" stroke-width="1.5"/>
+  <!-- Mid price line -->
+  <polyline points="120,380 180,370 240,360 300,340 360,330 420,310 480,320 540,300 600,290 660,280 720,270 780,260 840,250 900,240 960,230 1020,220 1080,210" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.5"/>
+  <!-- Ask line (upper, orange) -->
+  <polyline points="120,360 180,345 240,335 300,310 360,300 420,275 480,290 540,265 600,255 660,248 720,235 780,225 840,215 900,205 960,195 1020,185 1080,175" fill="none" stroke="#f97316" stroke-width="2.5" opacity="0.85"/>
+  <!-- Bid line (lower, green) -->
+  <polyline points="120,400 180,395 240,385 300,370 360,360 420,345 480,350 540,335 600,325 660,312 720,305 780,295 840,285 900,275 960,265 1020,255 1080,245" fill="none" stroke="#22c55e" stroke-width="2.5" opacity="0.85"/>
+  <!-- Spread fill between bid and ask -->
+  <polygon points="120,360 180,345 240,335 300,310 360,300 420,275 480,290 540,265 600,255 660,248 720,235 780,225 840,215 900,205 960,195 1020,185 1080,175 1080,245 1020,255 960,265 900,275 840,285 780,295 720,305 660,312 600,325 540,335 480,350 420,345 360,360 300,370 240,385 180,395 120,400" fill="url(#spreadFill)"/>
+  <!-- Spread width indicators -->
+  <g>
+    <line x1="420" y1="275" x2="420" y2="345" stroke="#eab308" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.6"/>
+    <text x="430" y="315" fill="#eab308" font-size="11" font-family="monospace" opacity="0.7">spread</text>
+    <line x1="780" y1="225" x2="780" y2="295" stroke="#eab308" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.6"/>
+    <text x="790" y="265" fill="#eab308" font-size="11" font-family="monospace" opacity="0.7">spread</text>
+  </g>
+  <!-- Fill markers at execution points -->
+  <g>
+    <circle cx="300" cy="310" r="5" fill="#f97316" stroke="#fff" stroke-width="1" opacity="0.9"/>
+    <circle cx="480" cy="350" r="5" fill="#22c55e" stroke="#fff" stroke-width="1" opacity="0.9"/>
+    <circle cx="660" cy="248" r="5" fill="#f97316" stroke="#fff" stroke-width="1" opacity="0.9"/>
+    <circle cx="840" cy="285" r="5" fill="#22c55e" stroke="#fff" stroke-width="1" opacity="0.9"/>
+    <circle cx="960" cy="195" r="5" fill="#f97316" stroke="#fff" stroke-width="1" opacity="0.9"/>
+  </g>
+  <!-- Inventory bar (right side) -->
+  <rect x="1130" y="250" width="30" height="200" fill="none" stroke="#475569" stroke-width="1" rx="3"/>
+  <rect x="1132" y="340" width="26" height="108" fill="#22c55e" opacity="0.3" rx="2"/>
+  <line x1="1130" y1="350" x2="1160" y2="350" stroke="#94a3b8" stroke-width="1" stroke-dasharray="2,2" opacity="0.5"/>
+  <text x="1145" y="240" fill="#94a3b8" font-size="9" font-family="monospace" text-anchor="middle" opacity="0.6">INV</text>
+  <!-- Legend -->
+  <circle cx="140" cy="50" r="6" fill="#22c55e"/><text x="155" y="55" fill="#94a3b8" font-size="12" font-family="monospace">Bid</text>
+  <circle cx="240" cy="50" r="6" fill="#f97316"/><text x="255" y="55" fill="#94a3b8" font-size="12" font-family="monospace">Ask</text>
+  <circle cx="340" cy="50" r="6" fill="#eab308" opacity="0.6"/><text x="355" y="55" fill="#94a3b8" font-size="12" font-family="monospace">Spread</text>
+</svg>
