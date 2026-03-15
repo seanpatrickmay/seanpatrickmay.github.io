@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-14T13:42:56.330Z",
+  "generated_at": "2026-03-15T13:43:55.437Z",
   "artists": [
     {
       "name": "Lady Gaga",
@@ -22,14 +22,14 @@
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
-      "name": "Morgan Wallen",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb47de0bbc22f08b5ebe14bd6e",
-      "url": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-    },
-    {
       "name": "Kanye West",
       "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
       "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
+    },
+    {
+      "name": "Morgan Wallen",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb47de0bbc22f08b5ebe14bd6e",
+      "url": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
     },
     {
       "name": "Super Guitar Bros",
