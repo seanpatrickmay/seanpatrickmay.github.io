@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-16T14:19:08.173Z",
+  "generated_at": "2026-03-17T14:16:52.987Z",
   "artists": [
     {
       "name": "Lady Gaga",
@@ -17,14 +17,14 @@
       "url": "https://open.spotify.com/artist/5sjJnaI3YhaO8KylpJk3gN"
     },
     {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
-    },
-    {
       "name": "Kanye West",
       "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
       "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
+    },
+    {
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
       "name": "Morgan Wallen",
@@ -90,12 +90,6 @@
       "url": "https://open.spotify.com/track/2q2Z2A0Mt8AsWyQEdB6wuu"
     },
     {
-      "name": "One More Time",
-      "artist": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab67616d0000b2731e81bff9807a9e629fce5ade",
-      "url": "https://open.spotify.com/track/0DiWol3AO6WpXZgp0goxAV"
-    },
-    {
       "name": "Disease",
       "artist": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
@@ -112,6 +106,12 @@
       "artist": "Camille Saint-Saëns, Barry Wordsworth, London Symphony Orchestra",
       "image": "https://i.scdn.co/image/ab67616d0000b273e1aa11db3009e6f62582803e",
       "url": "https://open.spotify.com/track/263JmI8vPXqGpdw9NipjYo"
+    },
+    {
+      "name": "Carnival of the Animals: XII. Fossils",
+      "artist": "Camille Saint-Saëns, Barry Wordsworth, London Symphony Orchestra",
+      "image": "https://i.scdn.co/image/ab67616d0000b273e1aa11db3009e6f62582803e",
+      "url": "https://open.spotify.com/track/2hyUZNd2OqIRD4LqAfdPYK"
     }
   ]
 }
