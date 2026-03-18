@@ -1,0 +1,41 @@
+name: Update Goodreads data
+
+on:
+  schedule:
+    - cron: "0 13 * * *"  # 13:00 UTC ~ 9:00 AM ET during DST
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "update-goodreads"
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch Goodreads data
+        run: node scripts/update_goodreads.mjs
+
+      - name: Commit & push changes
+        run: |
+          set -euo pipefail
+          if [[ -n "$(git status --porcelain public/goodreads.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add public/goodreads.json
+            git commit -m "chore(goodreads): daily refresh"
+            git push
+          else
+            echo "No changes to commit."
+          fi

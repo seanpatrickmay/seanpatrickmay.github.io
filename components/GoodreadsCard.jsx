@@ -21,10 +21,10 @@ export default function GoodreadsCard() {
       .catch(() => setData(null));
   }, []);
 
-  const current = data?.currentlyReading?.[0] ?? null;
+  const currentlyReading = data?.currentlyReading ?? [];
   const recent = data?.recentlyRead ?? [];
 
-  if (!data || (!current && !recent.length)) return null;
+  if (!data || (!currentlyReading.length && !recent.length)) return null;
 
   return (
     <Card className="bg-white/70 shadow-sm dark:bg-slate-900/60 h-full flex flex-col">
@@ -32,33 +32,39 @@ export default function GoodreadsCard() {
         <CardTitle icon={BookOpen}>Reading</CardTitle>
       </CardHeader>
       <CardContent className="flex-1 min-h-0 space-y-4">
-        {current && (
+        {currentlyReading.length > 0 && (
           <div>
             <div className="text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500 mb-2">
               Currently reading
             </div>
-            <a
-              href={current.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex gap-3 group"
-            >
-              {current.imageUrl && (
-                <img
-                  src={current.imageUrl}
-                  alt=""
-                  className="w-10 h-14 rounded object-cover flex-shrink-0 shadow-sm"
-                />
-              )}
-              <div className="min-w-0">
-                <div className="text-sm font-semibold text-slate-900 dark:text-slate-50 leading-snug group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
-                  {current.title}
-                </div>
-                <div className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                  {current.author}
-                </div>
-              </div>
-            </a>
+            <ul className="space-y-2.5">
+              {currentlyReading.map(book => (
+                <li key={book.bookId}>
+                  <a
+                    href={book.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex gap-3 group"
+                  >
+                    {book.imageUrl && (
+                      <img
+                        src={book.imageUrl}
+                        alt=""
+                        className="w-10 h-14 rounded object-cover flex-shrink-0 shadow-sm"
+                      />
+                    )}
+                    <div className="min-w-0">
+                      <div className="text-sm font-semibold text-slate-900 dark:text-slate-50 leading-snug group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                        {book.title}
+                      </div>
+                      <div className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                        {book.author}
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         )}
 
