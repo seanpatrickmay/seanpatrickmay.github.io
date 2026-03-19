@@ -24,7 +24,7 @@ export default function GoodreadsCard({ data = null }) {
       <CardContent className="flex-1 min-h-0 space-y-4">
         {currentlyReading.length > 0 && (
           <div>
-            <div className="text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500 mb-2">
+            <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-300 mb-2">
               Currently reading
             </div>
             <ul className="space-y-2.5">
@@ -48,7 +48,7 @@ export default function GoodreadsCard({ data = null }) {
                       <div className="text-sm font-semibold text-slate-900 dark:text-slate-50 leading-snug group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
                         {book.title}
                       </div>
-                      <div className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                      <div className="text-xs text-slate-500 dark:text-slate-300 mt-0.5">
                         {book.author}
                       </div>
                     </div>
@@ -61,7 +61,7 @@ export default function GoodreadsCard({ data = null }) {
 
         {recent.length > 0 && (
           <div>
-            <div className="text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500 mb-2">
+            <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-300 mb-2">
               Recently read
             </div>
             <ul className="space-y-2">
@@ -86,7 +86,7 @@ export default function GoodreadsCard({ data = null }) {
                         {book.title}
                       </div>
                       <div className="flex items-center gap-2 mt-0.5">
-                        <span className="text-xs text-slate-500 dark:text-slate-400 truncate">
+                        <span className="text-xs text-slate-500 dark:text-slate-300 truncate">
                           {book.author}
                         </span>
                         <StarRating rating={book.rating} />

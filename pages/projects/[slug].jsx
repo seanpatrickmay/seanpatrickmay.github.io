@@ -79,7 +79,7 @@ export default function ProjectDetail({ project }) {
                 {title}
               </h1>
               {period && (
-                <p className="text-slate-500 dark:text-slate-400">{period}</p>
+                <p className="text-slate-500 dark:text-slate-300">{period}</p>
               )}
             </div>
             {sortedLinks.length > 0 && (
@@ -193,7 +193,7 @@ export default function ProjectDetail({ project }) {
                 <figure key={i} className="rounded-xl overflow-hidden border border-slate-200/70 bg-white/60 dark:border-slate-800/60 dark:bg-slate-900/60">
                   <img src={img.src} alt={img.alt || ''} loading="lazy" className="w-full h-auto" />
                   {img.caption && (
-                    <figcaption className="p-3 text-sm text-slate-500 dark:text-slate-400">{img.caption}</figcaption>
+                    <figcaption className="p-3 text-sm text-slate-500 dark:text-slate-300">{img.caption}</figcaption>
                   )}
                 </figure>
               ))}
@@ -204,12 +204,12 @@ export default function ProjectDetail({ project }) {
         {/* ── Next steps: subtle, at the bottom ── */}
         {nextList.length > 0 && (
           <section className="mb-12 border-t border-slate-200/70 dark:border-slate-800/60 pt-8">
-            <h2 className="text-sm font-semibold uppercase tracking-widest text-slate-400 dark:text-slate-500 mb-3">
+            <h2 className="text-sm font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-300 mb-3">
               Next steps
             </h2>
             <ul className="space-y-1">
               {nextList.map((item, i) => (
-                <li key={i} className="text-sm text-slate-500 dark:text-slate-400">
+                <li key={i} className="text-sm text-slate-500 dark:text-slate-300">
                   {item}
                 </li>
               ))}

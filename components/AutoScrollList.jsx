@@ -1,5 +1,5 @@
 // components/AutoScrollList.jsx
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from 'react';
 
 export default function AutoScrollList({
   items = [], // [{ id, title, subtitle, image, emoji, url, info, trailing }]
@@ -216,13 +216,13 @@ export default function AutoScrollList({
             </span>
           )}
           {item.info && (
-            <span className="text-sm text-slate-500 dark:text-slate-400 shrink-0">
+            <span className="text-sm text-slate-500 dark:text-slate-300 shrink-0">
               {item.info}
             </span>
           )}
         </div>
         <span
-          className="text-sm text-slate-500 dark:text-slate-400 text-right shrink-0 w-6"
+          className="text-sm text-slate-500 dark:text-slate-300 text-right shrink-0 w-6"
         >
           {item.trailing || `#${i + 1}`}
         </span>
@@ -241,7 +241,7 @@ export default function AutoScrollList({
       }}
     >
       {top10.length === 0 ? (
-        <div className="text-sm text-slate-500 dark:text-slate-400 p-2">{emptyMessage}</div>
+        <div className="text-sm text-slate-500 dark:text-slate-300 p-2">{emptyMessage}</div>
       ) : (
         <div
           ref={runnerRef}

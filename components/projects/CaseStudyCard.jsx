@@ -49,7 +49,7 @@ export default function CaseStudyCard({ project, variant = 'default', className 
                 {project.emoji ? `${project.emoji} ${project.title}` : project.title}
               </Link>
               {project.period && (
-                <div className="mt-1 text-xs text-slate-500 dark:text-slate-400">{project.period}</div>
+                <div className="mt-1 text-xs text-slate-500 dark:text-slate-300">{project.period}</div>
               )}
             </div>
           </div>

@@ -15,13 +15,15 @@ export default function Hero({ links, featuredProjects = [] }) {
             <img
               src="/images/headshot.png"
               alt="Sean P. May"
+              width={400}
+              height={400}
               className="w-20 h-20 rounded-full object-cover object-top ring-2 ring-slate-200/80 dark:ring-slate-700/80 shadow-md flex-shrink-0"
             />
             <div>
               <h1 className="font-display text-3xl md:text-4xl tracking-tight text-slate-900 dark:text-white">
                 Sean P. May
               </h1>
-              <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">Boston, MA</p>
+              <p className="text-sm text-slate-500 dark:text-slate-300 mt-1">Boston, MA</p>
             </div>
           </div>
 
@@ -29,7 +31,7 @@ export default function Hero({ links, featuredProjects = [] }) {
             <p className="text-xl md:text-2xl font-semibold leading-snug text-slate-800 dark:text-slate-200">
               SWE &amp; Math.
             </p>
-            <p className="text-lg md:text-xl text-slate-500 dark:text-slate-400 mt-1">
+            <p className="text-lg md:text-xl text-slate-500 dark:text-slate-300 mt-1">
               Big fan of hard problems.
             </p>
           </div>

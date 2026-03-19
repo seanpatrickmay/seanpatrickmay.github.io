@@ -7,10 +7,7 @@ import {
   useState,
 } from 'react';
 import Section from '@/components/ui/Section';
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
-}
+import classNames from '@/lib/classNames';
 
 export default function StackedCardSection({
   id,
@@ -180,7 +177,7 @@ export default function StackedCardSection({
       >
         <Tab.Group selectedIndex={selectedIndex} onChange={setSelectedIndex} orientation="vertical">
           <div className="flex flex-col gap-6 lg:grid lg:grid-cols-[minmax(0,280px)_minmax(0,1fr)] lg:items-start lg:gap-8">
-            <Tab.List className="flex snap-x gap-4 overflow-x-auto pb-2 sm:grid sm:grid-cols-2 sm:gap-4 sm:overflow-visible lg:flex lg:flex-col">
+            <Tab.List className="flex gap-4 overflow-x-auto pb-2 sm:grid sm:grid-cols-2 sm:gap-4 sm:overflow-visible lg:flex lg:flex-col">
               {keyedItems.map(({ item, index, key }) => (
                 <Tab
                   key={key}
@@ -188,11 +185,11 @@ export default function StackedCardSection({
                   onFocus={() => handleTabHover(index)}
                   className={({ selected }) =>
                     classNames(
-                      'group relative flex min-w-[220px] flex-1 cursor-pointer items-stretch rounded-3xl border text-left transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2',
-                      'border-slate-200/60 bg-slate-50/50 dark:border-white/10 dark:bg-white/5',
+                      'group relative flex min-w-[220px] flex-1 cursor-pointer items-stretch rounded-3xl border text-left transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950',
+                      'border-slate-200/60 bg-slate-50/50 dark:border-slate-700/60 dark:bg-slate-800/50',
                       selected
-                        ? 'border-slate-300 bg-white shadow-xl ring-1 ring-slate-200/70 dark:border-white/20 dark:bg-white/10 dark:ring-white/25'
-                        : 'hover:border-slate-300 hover:bg-white dark:hover:border-white/20 dark:hover:bg-white/10'
+                        ? 'border-slate-300 bg-white shadow-xl ring-1 ring-slate-200/70 dark:border-slate-600 dark:bg-slate-800 dark:ring-slate-600/40'
+                        : 'hover:border-slate-300 hover:bg-white dark:hover:border-slate-600 dark:hover:bg-slate-800'
                     )
                   }
                 >

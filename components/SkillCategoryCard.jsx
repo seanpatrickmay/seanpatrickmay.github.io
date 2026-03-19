@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
-import StackedCardPreview from './StackedCardPreview';
+import StackedCardPreview from '@/components/StackedCardPreview';
 
 function splitIntoColumns(items = []) {
   if (items.length <= 6) {

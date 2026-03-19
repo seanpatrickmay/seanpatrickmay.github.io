@@ -1,5 +1,5 @@
-import { Card, CardHeader, CardTitle, CardContent } from './ui/Card';
-import StackedCardPreview from './StackedCardPreview';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
+import StackedCardPreview from '@/components/StackedCardPreview';
 
 export default function ExperienceItem({ job, mode = 'expanded' }) {
   const { role, org, location, period, bullets = [], img, emoji, oneLiner } = job;
@@ -36,7 +36,7 @@ export default function ExperienceItem({ job, mode = 'expanded' }) {
           </CardTitle>
         </div>
         {hasMeta && (
-          <div className="text-sm text-slate-500 dark:text-slate-400 flex flex-wrap items-center gap-2">
+          <div className="text-sm text-slate-500 dark:text-slate-300 flex flex-wrap items-center gap-2">
             {location && <span>{location}</span>}
             {location && period && <span aria-hidden="true">•</span>}
             {period && <span>{period}</span>}

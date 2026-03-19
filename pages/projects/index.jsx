@@ -270,7 +270,7 @@ export default function ProjectsIndex() {
               <h2 className="font-display text-xl tracking-tight text-slate-900 dark:text-slate-50">
                 Deep Dives
               </h2>
-              <div className="text-sm text-slate-500 dark:text-slate-400">
+              <div className="text-sm text-slate-500 dark:text-slate-300">
                 {caseStudies.length} project{caseStudies.length === 1 ? '' : 's'}
               </div>
             </div>
@@ -378,7 +378,7 @@ export default function ProjectsIndex() {
         </section>
 
         <section className="space-y-4">
-          <div className="flex items-center justify-between text-sm text-slate-500 dark:text-slate-400">
+          <div className="flex items-center justify-between text-sm text-slate-500 dark:text-slate-300">
             <span>
               {filteredProjects.length} project{filteredProjects.length === 1 ? '' : 's'}
             </span>
@@ -395,7 +395,7 @@ export default function ProjectsIndex() {
                   <h2 className="font-display text-xl tracking-tight text-slate-900 dark:text-slate-50">
                     Project Archive
                   </h2>
-                  <div className="text-sm text-slate-500 dark:text-slate-400">
+                  <div className="text-sm text-slate-500 dark:text-slate-300">
                     {archiveProjects.length} project{archiveProjects.length === 1 ? '' : 's'}
                   </div>
                 </div>

@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
-import StackedCardPreview from './StackedCardPreview';
+import StackedCardPreview from '@/components/StackedCardPreview';
 
 export default function EducationItem({ item, mode = 'expanded' }) {
   const { school, degree, extras = [], img, oneLiner, emoji } = item;
@@ -23,7 +23,7 @@ export default function EducationItem({ item, mode = 'expanded' }) {
           )}
           <CardTitle className="text-base sm:text-lg">{school}</CardTitle>
         </div>
-        {degree && <div className="text-sm text-slate-500 dark:text-slate-400">{degree}</div>}
+        {degree && <div className="text-sm text-slate-500 dark:text-slate-300">{degree}</div>}
       </CardHeader>
       <CardContent>
         <ul className="list-disc pl-5 space-y-2">

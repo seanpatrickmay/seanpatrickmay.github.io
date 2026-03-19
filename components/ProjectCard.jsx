@@ -1,7 +1,7 @@
-import Badge from './ui/Badge';
-import { Card, CardHeader, CardTitle, CardContent } from './ui/Card';
-import PillLink from './ui/PillLink';
-import StackedCardPreview from './StackedCardPreview';
+import Badge from '@/components/ui/Badge';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
+import PillLink from '@/components/ui/PillLink';
+import StackedCardPreview from '@/components/StackedCardPreview';
 
 export default function ProjectCard({ project, mode = 'expanded' }) {
   const { title, period, stack = [], bullets = [], links = [], emoji, oneLiner, slug } = project;

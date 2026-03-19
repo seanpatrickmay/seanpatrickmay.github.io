@@ -5,7 +5,7 @@ export default function StackedCardPreview({ img, alt, emoji, label, meta }) {
   return (
     <div className="flex h-full items-center gap-4 px-4 py-3 sm:px-5 sm:py-4">
       <div className="flex min-w-0 items-center gap-5">
-        <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-white/20 bg-white/70 text-2xl shadow-sm backdrop-blur-sm dark:border-white/10 dark:bg-white/10 dark:text-white">
+        <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 text-2xl shadow-sm dark:border-slate-700 dark:bg-slate-800 dark:text-white">
           {hasImage ? (
             <img src={img} alt={alt || ''} loading="lazy" className="h-full w-full object-contain" />
           ) : (
@@ -19,7 +19,7 @@ export default function StackedCardPreview({ img, alt, emoji, label, meta }) {
             {label}
           </div>
           {meta && (
-            <div className="mt-1 text-xs font-medium text-slate-500 dark:text-slate-400 sm:text-sm">
+            <div className="mt-1 text-xs font-medium text-slate-500 dark:text-slate-300 sm:text-sm">
               {meta}
             </div>
           )}

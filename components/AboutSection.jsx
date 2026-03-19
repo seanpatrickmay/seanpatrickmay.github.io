@@ -156,19 +156,19 @@ export default function AboutSection({
 
                     <LineSparkline values={cumulativeHours} height={56} className="text-slate-900 dark:text-white" label="Cumulative training hours over 8 weeks" />
                     {rangeLabel && (
-                      <div className="text-xs text-slate-500 dark:text-slate-400">{rangeLabel}</div>
+                      <div className="text-xs text-slate-500 dark:text-slate-300">{rangeLabel}</div>
                     )}
 
                     <div className="grid grid-cols-2 gap-4 pt-1">
                       <div className="text-center">
-                        <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+                        <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-300">
                           Total KM
                         </div>
                         <div className="text-xl font-extrabold text-slate-900 dark:text-white">
                           {totalKmLabel}
                         </div>
                         {kmJourney && (
-                          <div className="mt-1 text-xs text-slate-500 dark:text-slate-400 leading-snug">
+                          <div className="mt-1 text-xs text-slate-500 dark:text-slate-300 leading-snug">
                             ~{kmJourney.percent}% to {kmJourney.destination}
                           </div>
                         )}
@@ -177,14 +177,14 @@ export default function AboutSection({
                         className="text-center"
                         title={`Rough conversion: 1 cup milk ≈ ${MILK_KCAL_PER_CUP} kcal`}
                       >
-                        <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+                        <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-300">
                           Calories
                         </div>
                         <div className="text-xl font-extrabold text-slate-900 dark:text-white">
                           {totalCaloriesLabel}
                         </div>
                         {totalCalories8w != null && (
-                          <div className="mt-1 text-xs text-slate-500 dark:text-slate-400 leading-snug">
+                          <div className="mt-1 text-xs text-slate-500 dark:text-slate-300 leading-snug">
                             ~{totalMilkCupsLabel} cups milk
                           </div>
                         )}

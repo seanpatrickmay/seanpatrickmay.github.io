@@ -71,12 +71,18 @@ export default function Header({ links }) {
           </div>
         </div>
         <nav className="border-t border-slate-200/70 bg-white/90 py-3 backdrop-blur dark:border-slate-800/60 dark:bg-slate-950/80">
-          <div className="section-container flex gap-2 overflow-x-auto no-scrollbar">
+          <div
+            className="section-container flex gap-2 overflow-x-auto no-scrollbar"
+            style={{
+              maskImage: 'linear-gradient(to right, black calc(100% - 24px), transparent)',
+              WebkitMaskImage: 'linear-gradient(to right, black calc(100% - 24px), transparent)',
+            }}
+          >
             {navItems.map(({ id, label }) => (
               <a
                 key={id}
                 href={id === 'projects' ? '/projects/' : `#${id}`}
-                className="flex flex-none items-center rounded-full border border-transparent bg-slate-100 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-slate-700 dark:hover:bg-slate-800"
+                className="flex flex-none items-center rounded-full border border-transparent bg-slate-100 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-slate-700 dark:hover:bg-slate-800 dark:focus-visible:ring-offset-slate-950"
               >
                 {label}
               </a>
@@ -92,11 +98,13 @@ export default function Header({ links }) {
               className="flex w-72 flex-col gap-5 transition-transform duration-300 ease-out will-change-transform"
               style={{ transform: `translateY(${scrollOffset}px)` }}
             >
-              <section className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-lg dark:border-slate-800/70 dark:bg-slate-900">
+              <section aria-label="About" className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-lg dark:border-slate-800/70 dark:bg-slate-900">
                 <div className="flex items-start justify-between">
                   <img
                     src="/images/headshot.png"
                     alt="Sean P. May"
+                    width={400}
+                    height={400}
                     className="w-14 h-14 rounded-full object-cover object-top ring-2 ring-slate-200/60 dark:ring-slate-700/60"
                   />
                   <ThemeToggle />
@@ -108,13 +116,13 @@ export default function Header({ links }) {
                   >
                     Sean P. May
                   </a>
-                  <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                  <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
                     Software engineer &amp; mathematician.
                   </p>
                 </div>
                 <div className="mt-4 space-y-4 text-sm text-slate-600 dark:text-slate-300">
                   <div>
-                    <div className="text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500">
+                    <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-300">
                       Now
                     </div>
                     <ul className="mt-3 space-y-2">
@@ -124,7 +132,7 @@ export default function Header({ links }) {
                         </span>
                         <div className="min-w-0 leading-snug">
                           <div className="font-medium text-slate-900 dark:text-slate-100">B.S. CS &amp; Math</div>
-                          <div className="text-xs text-slate-500 dark:text-slate-400">
+                          <div className="text-xs text-slate-500 dark:text-slate-300">
                             Northeastern University · May 2027
                           </div>
                         </div>
@@ -135,7 +143,7 @@ export default function Header({ links }) {
                         </span>
                         <div className="min-w-0 leading-snug">
                           <div className="font-medium text-slate-900 dark:text-slate-100">Quant Research</div>
-                          <div className="text-xs text-slate-500 dark:text-slate-400">
+                          <div className="text-xs text-slate-500 dark:text-slate-300">
                             NU Systematic Alpha
                           </div>
                         </div>
@@ -146,7 +154,7 @@ export default function Header({ links }) {
                         </span>
                         <div className="min-w-0 leading-snug">
                           <div className="font-medium text-slate-900 dark:text-slate-100">Calc III Grader</div>
-                          <div className="text-xs text-slate-500 dark:text-slate-400">
+                          <div className="text-xs text-slate-500 dark:text-slate-300">
                             NU College of Science
                           </div>
                         </div>
@@ -157,7 +165,7 @@ export default function Header({ links }) {
                         </span>
                         <div className="min-w-0 leading-snug">
                           <div className="font-medium text-slate-900 dark:text-slate-100">Freelance SWE</div>
-                          <div className="text-xs text-slate-500 dark:text-slate-400">
+                          <div className="text-xs text-slate-500 dark:text-slate-300">
                             Comic Book Grading App
                           </div>
                         </div>
@@ -165,7 +173,7 @@ export default function Header({ links }) {
                     </ul>
                   </div>
                   <div>
-                    <div className="text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500">
+                    <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-300">
                       Previously
                     </div>
                     <ul className="mt-3 space-y-2">
@@ -175,7 +183,7 @@ export default function Header({ links }) {
                         </span>
                         <div className="min-w-0 leading-snug">
                           <div className="font-medium text-slate-900 dark:text-slate-100">SWE Co-op</div>
-                          <div className="text-xs text-slate-500 dark:text-slate-400">
+                          <div className="text-xs text-slate-500 dark:text-slate-300">
                             NExT Consulting · Fall 2025
                           </div>
                         </div>
@@ -186,7 +194,7 @@ export default function Header({ links }) {
                         </span>
                         <div className="min-w-0 leading-snug">
                           <div className="font-medium text-slate-900 dark:text-slate-100">SDE Co-op</div>
-                          <div className="text-xs text-slate-500 dark:text-slate-400">
+                          <div className="text-xs text-slate-500 dark:text-slate-300">
                             General Dynamics Electric Boat · 2024
                           </div>
                         </div>
@@ -194,7 +202,7 @@ export default function Header({ links }) {
                     </ul>
                   </div>
                   <div>
-                    <div className="text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500">
+                    <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-300">
                       Upcoming
                     </div>
                     <div className="mt-3 flex items-start gap-2">
@@ -203,7 +211,7 @@ export default function Header({ links }) {
                       </span>
                       <div className="min-w-0 leading-snug">
                         <div className="font-medium text-slate-900 dark:text-slate-100">Incoming SWE Intern</div>
-                        <div className="text-xs text-slate-500 dark:text-slate-400">
+                        <div className="text-xs text-slate-500 dark:text-slate-300">
                           Capital One · Richmond, VA · June 1 – August 8, 2026
                         </div>
                       </div>
@@ -212,8 +220,8 @@ export default function Header({ links }) {
                 </div>
               </section>
 
-              <section className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-lg dark:border-slate-800/70 dark:bg-slate-900">
-                <div className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500">
+              <section aria-label="Navigation" className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-lg dark:border-slate-800/70 dark:bg-slate-900">
+                <div className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-300">
                   Navigate
                 </div>
                 <nav aria-label="Primary" className="mt-4 space-y-1.5">
@@ -232,8 +240,8 @@ export default function Header({ links }) {
                 </nav>
               </section>
 
-              <section className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-lg dark:border-slate-800/70 dark:bg-slate-900">
-                <div className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500">
+              <section aria-label="Contact" className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-lg dark:border-slate-800/70 dark:bg-slate-900">
+                <div className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-300">
                   Get in touch
                 </div>
                 <div className="mt-4 flex flex-col gap-2">

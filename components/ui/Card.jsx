@@ -1,6 +1,6 @@
 export function Card({ children, className = '' }) {
   return (
-    <div className={`card rounded-2xl border bg-white dark:bg-slate-900 ${className}`}>{children}</div>
+    <div className={`card rounded-2xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900 ${className}`}>{children}</div>
   );
 }
 export const CardHeader = ({ children, action, className = '' }) => (

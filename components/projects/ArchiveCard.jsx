@@ -36,7 +36,7 @@ export default function ArchiveCard({ project }) {
             {project.title}
           </Link>
           {project.period && (
-            <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">{project.period}</div>
+            <div className="text-xs text-slate-500 dark:text-slate-300 mt-1">{project.period}</div>
           )}
         </div>
 

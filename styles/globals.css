@@ -10,6 +10,9 @@ html {
   html {
     scroll-behavior: auto;
   }
+  .animate-fade-up {
+    animation: none !important;
+  }
 }
 
 /* Light (default) */
