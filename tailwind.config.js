@@ -25,6 +25,9 @@ module.exports = {
       animation: {
         'fade-up': 'fade-up 600ms ease-out both',
       },
+      transitionDuration: {
+        '400': '400ms',
+      },
     },
   },
   plugins: [],

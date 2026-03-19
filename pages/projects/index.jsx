@@ -9,6 +9,8 @@ import PillLink from '@/components/ui/PillLink';
 import MultiSelect from '@/components/ui/MultiSelect';
 import CaseStudyCard from '@/components/projects/CaseStudyCard';
 import ArchiveCard from '@/components/projects/ArchiveCard';
+import ProjectHero from '@/components/projects/ProjectHero';
+import ProjectBinder from '@/components/projects/ProjectBinder';
 
 const projects = validateProjects(rawProjects) ? rawProjects : [];
 
@@ -251,7 +253,7 @@ export default function ProjectsIndex() {
       </Head>
       <ProjectPageHeader />
 
-      <main id="main-content" className="section-container pt-24 pb-16 space-y-8">
+      <main id="main-content" className="section-container pt-24 pb-16 space-y-12">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <h1 className="font-display text-4xl tracking-tight">Projects</h1>
@@ -265,20 +267,18 @@ export default function ProjectsIndex() {
         </div>
 
         {caseStudies.length > 0 && (
-          <section className="space-y-4">
-            <div className="flex items-baseline justify-between gap-4">
-              <h2 className="font-display text-xl tracking-tight text-slate-900 dark:text-slate-50">
-                Deep Dives
-              </h2>
-              <div className="text-sm text-slate-500 dark:text-slate-300">
-                {caseStudies.length} project{caseStudies.length === 1 ? '' : 's'}
-              </div>
-            </div>
-            <div className="grid gap-6 lg:grid-cols-2">
-              {caseStudies.map(project => (
-                <CaseStudyCard key={project.slug || project.title} project={project} />
-              ))}
-            </div>
+          <section className="space-y-8">
+            <h2 className="font-display text-xl tracking-tight text-slate-900 dark:text-slate-50">
+              Deep Dives
+            </h2>
+
+            {caseStudies.length > 0 && (
+              <ProjectHero project={caseStudies[0]} />
+            )}
+
+            {caseStudies.length > 1 && (
+              <ProjectBinder projects={caseStudies.slice(1)} />
+            )}
           </section>
         )}
 
