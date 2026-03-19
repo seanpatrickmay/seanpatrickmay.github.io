@@ -59,7 +59,7 @@ const links = {
   emailDisplay: 'maypatricksean@gmail.com',
   phone: 'tel:+14438982870',
   phoneDisplay: '(443) 898-2870',
-  website: 'https://seanpatrickmay.github.io',
+  website: 'https://seanpatrickmay.me',
 };
 
 const education = [

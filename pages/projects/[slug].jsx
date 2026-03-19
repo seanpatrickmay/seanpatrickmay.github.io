@@ -59,7 +59,7 @@ export default function ProjectDetail({ project }) {
 
       <main id="main-content" className="section-container pt-24 pb-16">
         <div className="mb-8">
-          <a href="/projects/" className="text-sm text-slate-500 hover:text-teal-600 dark:text-slate-400 dark:hover:text-teal-400 transition-colors">
+          <a href="/projects/" className="text-sm text-slate-500 hover:text-teal-600 dark:text-slate-300 dark:hover:text-teal-400 transition-colors">
             &larr; All projects
           </a>
         </div>
