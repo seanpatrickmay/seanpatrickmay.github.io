@@ -9,7 +9,7 @@ export default function ContactSection({ links }) {
           Let&apos;s talk.
         </h2>
         <p className="mt-3 text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-          I&apos;m always up for hard problems, poker strategy debates, or just
+          I&apos;m always up for hard problems, interesting projects, or just
           a good conversation. Worst case, you&apos;ll get a fast reply.
         </p>
         <div className="mt-6">

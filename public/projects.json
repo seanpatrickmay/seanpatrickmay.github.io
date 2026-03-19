@@ -48,7 +48,7 @@
     ],
     "nextSteps": [
       "Replace manual project metadata entry with a GitHub-informed sync path",
-      "Add screenshots and richer evidence to more project pages"
+      "Add per-project demo GIFs and before/after comparisons for audit improvements"
     ],
     "coverImage": {
       "src": "/projects/seanpatrickmay-github-io/cover.png",
@@ -63,7 +63,7 @@
     "links": [
       {
         "label": "Live Site",
-        "href": "https://seanpatrickmay.github.io/",
+        "href": "https://seanpatrickmay.me/",
         "kind": "live"
       },
       {
@@ -206,7 +206,7 @@
       "Combines document ingestion, translation, and reader UX in one end-to-end product"
     ],
     "nextSteps": [
-      "Add screenshots and a richer sample book walkthrough",
+      "Record a walkthrough video of the scene-by-scene reading flow",
       "Expand the reader with stronger review and spaced-repetition loops"
     ],
     "coverImage": {
@@ -280,7 +280,7 @@
     ],
     "nextSteps": [
       "Package dependencies more cleanly for reproducible setup",
-      "Add screenshots and clearer example outputs to the repo and portfolio"
+      "Capture inference demo GIF showing hand detection through digit classification"
     ],
     "coverImage": {
       "src": "/projects/human-digit-classification/cover.png",
@@ -585,7 +585,7 @@
     ]
   },
   {
-    "title": "study-buddy",
+    "title": "Study Buddy",
     "slug": "study-buddy",
     "emoji": "🧠",
     "period": "Updated Sep 2025",
@@ -633,8 +633,8 @@
       "Prototype shows a concrete AI-assisted study loop from raw notes to review artifacts"
     ],
     "nextSteps": [
-      "Add richer example outputs and onboarding documentation",
-      "Add screenshots and example outputs to support portfolio presentation"
+      "Show sample flashcard deck and cheat sheet outputs in the README",
+      "Add a one-click demo path with a bundled example PDF"
     ],
     "coverImage": {
       "src": "/projects/study-buddy/cover.png",
@@ -763,7 +763,7 @@
       "Good early project for graph algorithms, search, and interactive Java state"
     ],
     "nextSteps": [
-      "Add screenshots or GIFs of generation and solver playback",
+      "Record a GIF of maze generation and BFS/DFS solver animation",
       "Document the course-library setup more precisely"
     ],
     "coverImage": {

@@ -69,7 +69,7 @@ const education = [
     img: '/logos/normalized/nu-logo.png',
     oneLiner: 'BS CS+Math',
     extras: [
-      'Sep 2022 - Present (Boston, MA)',
+      'Sep 2022 – Present (Boston, MA)',
       'GPA 3.64/4.0; Dean’s Scholarship; Dean’s List (Fall 2024, Spring 2025)',
       'Activities: Bridge to Calculus Tutor, Calculus Field Day Volunteer, Math Club, Putnam Club, Running Club',
       'Relevant coursework: Artificial Intelligence, Matrix Methods for Machine Learning, Algorithms & Data Structures, Software Engineering, Computer Systems, Probability & Statistics, Quantitative Finance',
@@ -84,12 +84,6 @@ const education = [
   },
 ];
 
-const interests = [
-  'Français',
-  'Triathlon',
-  'Escape Rooms',
-];
-
 export default function Home({ statsData, spotifyData, goodreadsData }) {
   const [activeSectionId, setActiveSectionId] = useState(null);
 
@@ -100,7 +94,7 @@ export default function Home({ statsData, spotifyData, goodreadsData }) {
         <title>Sean P. May — Portfolio</title>
         <meta
           name="description"
-          content="Software engineer and mathematician with a thing for problems that don't have obvious answers. Projects, experience, and more."
+          content="Sean May — software engineer and mathematician at Northeastern University. Projects in AI, quant research, computer vision, and full-stack development."
         />
       </Head>
 
@@ -109,7 +103,6 @@ export default function Home({ statsData, spotifyData, goodreadsData }) {
         <main id="main-content" className="flex-1 space-y-12 pt-32 pb-24 sm:pt-28 md:pt-24 lg:min-w-0 lg:pt-16 xl:pt-20">
           <Hero links={links} featuredProjects={featuredProjects} />
           <AboutSection
-            interests={interests}
             featuredActivities={otherWork}
             projectHighlights={[lifeDashboardProject, lecteurAideProject].filter(Boolean)}
             statsData={statsData}

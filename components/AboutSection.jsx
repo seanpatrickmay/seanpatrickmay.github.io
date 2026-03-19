@@ -1,4 +1,3 @@
-import Badge from '@/components/ui/Badge';
 import SpotifyTopTracks from '@/components/SpotifyTopTracks';
 import SpotifyTopArtists from '@/components/SpotifyTopArtists';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
@@ -34,7 +33,6 @@ const MILK_FORMAT = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 })
 const MILK_KCAL_PER_CUP = 150;
 
 export default function AboutSection({
-  interests,
   featuredActivities = [],
   projectHighlights = [],
   projectHighlight = null,
@@ -128,11 +126,6 @@ export default function AboutSection({
     },
   ];
 
-  const hiddenInterests = new Set(['Poker', 'Triathlon', 'Français', 'Escape Rooms']);
-  const extraInterests = Array.isArray(interests)
-    ? interests.filter(item => !hiddenInterests.has(item))
-    : [];
-
   return (
     <Section id="about" title="About me" icon={Sparkles}>
       <div>
@@ -218,28 +211,11 @@ export default function AboutSection({
 
           <div className="space-y-4">
             <div className="space-y-4">
-              <div className="flex items-center justify-between gap-4">
-                <h3 className="font-display text-2xl tracking-tight text-slate-900 dark:text-slate-50">
-                  Off the clock
-                </h3>
-                {extraInterests.length > 0 && (
-                  <div className="hidden sm:flex flex-wrap justify-end gap-2">
-                    {extraInterests.map(item => (
-                      <Badge key={item}>{item}</Badge>
-                    ))}
-                  </div>
-                )}
-              </div>
+              <h3 className="font-display text-2xl tracking-tight text-slate-900 dark:text-slate-50">
+                Off the clock
+              </h3>
 
               <HobbySpotlight hobbies={hobbySpotlights} />
-
-              {extraInterests.length > 0 && (
-                <div className="flex flex-wrap gap-2 sm:hidden">
-                  {extraInterests.map(item => (
-                    <Badge key={item}>{item}</Badge>
-                  ))}
-                </div>
-              )}
             </div>
 
             {hasHighlights && (
