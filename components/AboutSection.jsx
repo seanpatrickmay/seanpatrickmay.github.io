@@ -1,13 +1,14 @@
 import SpotifyTopTracks from '@/components/SpotifyTopTracks';
 import SpotifyTopArtists from '@/components/SpotifyTopArtists';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import Section from '@/components/ui/Section';
 import HobbySpotlight from '@/components/HobbySpotlight';
-import CaseStudyCard from '@/components/projects/CaseStudyCard';
 import LineSparkline from '@/components/ui/LineSparkline';
 import { getBostonJourneyEquivalence } from '@/lib/journeyEquivalents';
 import GoodreadsCard from '@/components/GoodreadsCard';
-import { Sparkles, TrendingUp, Music, Users } from 'lucide-react';
+import Pinboard from '@/components/Pinboard';
+import PinCard from '@/components/PinCard';
+import ProjectPolaroid from '@/components/ProjectPolaroid';
+import { Sparkles } from 'lucide-react';
 
 function parseDateOnlyLocal(value) {
   if (typeof value !== 'string') return null;
@@ -42,7 +43,6 @@ export default function AboutSection({
 }) {
   const stats = statsData;
   const spotify = spotifyData;
-  const activities = Array.isArray(featuredActivities) ? featuredActivities : [];
   const highlights = Array.isArray(projectHighlights) ? projectHighlights.filter(Boolean) : [];
   if (highlights.length === 0 && projectHighlight) highlights.push(projectHighlight);
   const hasHighlights = highlights.length > 0;
@@ -104,141 +104,108 @@ export default function AboutSection({
   })();
 
   const hobbySpotlights = [
-    {
-      title: 'Prompting',
-      emoji: '🚀',
-      description: 'Token-maxxing. This site was vibe-coded.',
-    },
-    {
-      title: 'Triathlon',
-      emoji: '🏊‍♂️',
-      description: 'I love steady state and eating',
-    },
-    {
-      title: 'Français',
-      emoji: '🇫🇷',
-      description: 'Larping as a frenchman',
-    },
-    {
-      title: 'Escape Rooms',
-      emoji: '🗝️',
-      description: 'Look up "Escape Simulator" on Steam',
-    },
+    { title: 'Prompting', emoji: '🚀' },
+    { title: 'Triathlon', emoji: '🏊‍♂️' },
+    { title: 'Français', emoji: '🇫🇷' },
+    { title: 'Escape Rooms', emoji: '🗝️' },
   ];
 
   return (
-    <Section id="about" title="About me" icon={Sparkles}>
-      <div>
-        <div className="space-y-10">
-          <div className="space-y-6">
-            <div className="grid gap-6 sm:grid-cols-2">
-              <Card className="bg-white/70 shadow-sm dark:bg-slate-900/60 h-full">
-                <CardHeader>
-                  <CardTitle icon={TrendingUp}>Training (8 weeks)</CardTitle>
-                </CardHeader>
-                <CardContent className="pt-4">
-                  <div className="space-y-3">
-                    <div className="flex items-baseline justify-between gap-2">
-                      <div className="text-sm font-semibold text-slate-600 dark:text-slate-300">
-                        Cumulative hours
-                      </div>
-                      <div className="text-sm font-semibold text-slate-900 dark:text-white">
-                        {totalHours8w == null ? '—' : `${totalHours8w.toFixed(1)}h`}
-                      </div>
-                    </div>
+    <Section id="about" title="about me" icon={Sparkles}>
+      <Pinboard>
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
 
-                    <LineSparkline values={cumulativeHours} height={56} className="text-slate-900 dark:text-white" label="Cumulative training hours over 8 weeks" />
-                    {rangeLabel && (
-                      <div className="text-xs text-slate-500 dark:text-slate-300">{rangeLabel}</div>
-                    )}
+          {/* Training Stats */}
+          <PinCard rotation={-1.8} pinColor="red">
+            <div className="border border-stone-200 bg-white p-4 dark:border-stone-700 dark:bg-stone-800">
+              <div className="text-[10px] font-semibold uppercase tracking-widest text-stone-500 dark:text-stone-400">
+                training · 8 weeks
+              </div>
+              <div className="mt-1.5 flex items-baseline gap-2">
+                <span className="text-3xl font-extrabold leading-none text-stone-900 dark:text-white">
+                  {totalHours8w == null ? '—' : totalHours8w.toFixed(1)}
+                </span>
+                <span className="text-sm font-semibold text-stone-400 dark:text-stone-500">hours</span>
+              </div>
+              <div className="mt-1 flex flex-wrap gap-x-2 text-[11px] text-stone-500 dark:text-stone-400">
+                <span>{totalKmLabel} km</span>
+                <span>·</span>
+                <span>{totalCaloriesLabel} kcal</span>
+                <span>·</span>
+                <span>~{totalMilkCupsLabel} cups milk</span>
+              </div>
+              <LineSparkline
+                values={cumulativeHours}
+                height={40}
+                className="mt-3 text-stone-900 dark:text-white"
+                label="Cumulative training hours over 8 weeks"
+              />
+              {kmJourney && (
+                <div className="mt-1.5 text-[11px] font-medium text-teal-600 dark:text-teal-400">
+                  ~{kmJourney.percent}% of the way to {kmJourney.destination}
+                </div>
+              )}
+              {rangeLabel && (
+                <div className="mt-1 text-[10px] text-stone-400 dark:text-stone-500">{rangeLabel}</div>
+              )}
+            </div>
+          </PinCard>
 
-                    <div className="grid grid-cols-2 gap-4 pt-1">
-                      <div className="text-center">
-                        <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-300">
-                          Total KM
-                        </div>
-                        <div className="text-xl font-extrabold text-slate-900 dark:text-white">
-                          {totalKmLabel}
-                        </div>
-                        {kmJourney && (
-                          <div className="mt-1 text-xs text-slate-500 dark:text-slate-300 leading-snug">
-                            ~{kmJourney.percent}% to {kmJourney.destination}
-                          </div>
-                        )}
-                      </div>
-                      <div
-                        className="text-center"
-                        title={`Rough conversion: 1 cup milk ≈ ${MILK_KCAL_PER_CUP} kcal`}
-                      >
-                        <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-300">
-                          Calories
-                        </div>
-                        <div className="text-xl font-extrabold text-slate-900 dark:text-white">
-                          {totalCaloriesLabel}
-                        </div>
-                        {totalCalories8w != null && (
-                          <div className="mt-1 text-xs text-slate-500 dark:text-slate-300 leading-snug">
-                            ~{totalMilkCupsLabel} cups milk
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <GoodreadsCard data={goodreadsData} />
-
-              <Card className="bg-white/70 shadow-sm dark:bg-slate-900/60 h-full">
-                <CardHeader>
-                  <CardTitle icon={Users}>Top Artists</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <SpotifyTopArtists artists={spotify?.artists ?? []} visibleCount={5} />
-                </CardContent>
-              </Card>
-
-              <Card className="bg-white/70 shadow-sm dark:bg-slate-900/60 h-full">
-                <CardHeader>
-                  <CardTitle icon={Music}>Top Tracks</CardTitle>
-                </CardHeader>
-                <CardContent>
+          {/* Spotify (combined) */}
+          <PinCard rotation={1.5} pinColor="blue" pinPosition="right">
+            <div className="rounded-sm bg-slate-800 p-4 text-white dark:bg-slate-900">
+              <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-400">
+                🎵 top artists
+              </div>
+              <div className="mt-2">
+                <SpotifyTopArtists artists={spotify?.artists ?? []} visibleCount={5} />
+              </div>
+              <div className="mt-3 border-t border-slate-700 pt-3">
+                <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-400">
+                  🎧 top tracks
+                </div>
+                <div className="mt-2">
                   <SpotifyTopTracks tracks={spotify?.tracks ?? []} visibleCount={5} />
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-
-          <div className="space-y-4">
-            <div className="space-y-4">
-              <h3 className="font-display text-2xl tracking-tight text-slate-900 dark:text-slate-50">
-                when i'm not coding
-              </h3>
-
-              <HobbySpotlight hobbies={hobbySpotlights} />
-            </div>
-
-            {hasHighlights && (
-              <div className="space-y-4">
-                <h3 className="font-display text-2xl tracking-tight text-slate-900 dark:text-slate-50">
-                  projects worth showing
-                </h3>
-                <div className="grid gap-6 md:grid-cols-2">
-                  {highlights.map(project => (
-                    <CaseStudyCard
-                      key={project.slug || project.title}
-                      project={project}
-                      variant="compact"
-                      className="bg-white/70 shadow-sm dark:bg-slate-900/60"
-                    />
-                  ))}
                 </div>
               </div>
-            )}
+            </div>
+          </PinCard>
+
+          {/* Goodreads */}
+          <PinCard rotation={1} pinColor="green">
+            <div className="border border-stone-200 bg-white p-4 dark:border-stone-700 dark:bg-stone-800">
+              <GoodreadsCard data={goodreadsData} bare />
+            </div>
+          </PinCard>
+
+          {/* Project Polaroids */}
+          {hasHighlights && (
+            <div className="relative">
+              <ProjectPolaroid
+                project={highlights[0]}
+                rotation={-2}
+                pinColor="teal"
+              />
+              {highlights[1] && (
+                <div className="hidden sm:block">
+                  <ProjectPolaroid
+                    project={highlights[1]}
+                    rotation={3}
+                    pinColor="yellow"
+                    peek
+                  />
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Hobby stickers */}
+          <div className="sm:col-span-2 pt-2">
+            <HobbySpotlight hobbies={hobbySpotlights} />
           </div>
 
         </div>
-      </div>
+      </Pinboard>
     </Section>
   );
 }
