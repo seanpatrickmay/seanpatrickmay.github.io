@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-18T14:19:46.888Z",
+  "generated_at": "2026-03-19T14:06:21.534Z",
   "artists": [
     {
       "name": "Lady Gaga",
@@ -27,11 +27,6 @@
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
-      "name": "Morgan Wallen",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb47de0bbc22f08b5ebe14bd6e",
-      "url": "https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM"
-    },
-    {
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
@@ -50,6 +45,11 @@
       "name": "Janet Jackson",
       "image": "https://i.scdn.co/image/ab6761610000e5eb8b290c36cbc9e89827ff562a",
       "url": "https://open.spotify.com/artist/4qwGe91Bz9K2T8jXTZ815W"
+    },
+    {
+      "name": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb9f6f7c2d12975d2a4b3a0fd8",
+      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     }
   ],
   "tracks": [

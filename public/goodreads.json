@@ -1,17 +1,29 @@
 {
-  "generated_at": "2026-03-12T05:52:41.443Z",
+  "generated_at": "2026-03-19T14:09:53.484Z",
   "currentlyReading": [
+    {
+      "title": "The Brothers Karamazov",
+      "author": "Fyodor Dostoevsky",
+      "rating": 0,
+      "avgRating": 4.37,
+      "dateAdded": "Mon, 16 Mar 2026 20:49:45 -0700",
+      "published": "1880",
+      "numPages": 796,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1427728126l/4934._SX98_.jpg",
+      "bookId": "4934",
+      "link": "https://www.goodreads.com/review/show/8430600555?utm_medium=api&utm_source=rss"
+    },
     {
       "title": "Wuthering Heights",
       "author": "Emily Brontë",
       "rating": 0,
-      "avgRating": 3.9,
-      "dateAdded": "Wed, 11 Mar 2026 22:39:15 -0700",
+      "avgRating": 3.92,
+      "dateAdded": "Mon, 16 Mar 2026 20:48:15 -0700",
       "published": "1847",
-      "numPages": 464,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388212715l/6185._SX98_.jpg",
-      "bookId": "6185",
-      "link": "https://www.goodreads.com/review/show/8425268149?utm_medium=api&utm_source=rss"
+      "numPages": 359,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1478641029l/32929156._SX98_.jpg",
+      "bookId": "32929156",
+      "link": "https://www.goodreads.com/review/show/8418039770?utm_medium=api&utm_source=rss"
     }
   ],
   "recentlyRead": [
@@ -43,7 +55,7 @@
       "title": "Dune (Dune, #1)",
       "author": "Frank Herbert",
       "rating": 5,
-      "avgRating": 4.33,
+      "avgRating": 4.34,
       "dateAdded": "Sat, 07 Mar 2026 10:53:32 -0800",
       "published": "1965",
       "numPages": 658,
