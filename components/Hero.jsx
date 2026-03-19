@@ -152,7 +152,7 @@ export default function Hero({ links, featuredProjects = [] }) {
 
         {/* "see all" link below */}
         <div className="flex justify-end mt-6 md:mt-2 animate-fade-up [animation-delay:500ms]">
-          <PillLink href="/projects/" variant="solid" className="px-4 text-sm">
+          <PillLink href="#projects" variant="solid" className="px-4 text-sm">
             see all projects
           </PillLink>
         </div>

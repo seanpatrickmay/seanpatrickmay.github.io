@@ -13,6 +13,7 @@ import AboutSection from '@/components/AboutSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import MapSection from '@/components/MapSection';
+import ProjectsSection from '@/components/ProjectsSection';
 
 const projects = validateProjects(rawProjects) ? rawProjects : [];
 const experience = validateExperience(rawExperience) ? rawExperience : [];
@@ -104,6 +105,8 @@ export default function Home({ statsData, spotifyData, goodreadsData }) {
           />
 
           <MapSection />
+
+          <ProjectsSection />
 
           <ContactSection links={links} />
           <Footer links={links} />

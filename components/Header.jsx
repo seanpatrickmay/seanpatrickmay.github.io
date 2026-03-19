@@ -24,6 +24,7 @@ const navItems = [
 
 export default function Header({ links }) {
   const [scrollOffset, setScrollOffset] = useState(0);
+  const [sidebarHidden, setSidebarHidden] = useState(false);
   const lastScrollRef = useRef(0);
   const resetTimeoutRef = useRef(null);
 
@@ -59,6 +60,24 @@ export default function Header({ links }) {
     };
   }, []);
 
+  useEffect(() => {
+    if (typeof window === 'undefined') return undefined;
+
+    const projectsEl = document.getElementById('projects');
+    if (!projectsEl) return undefined;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setSidebarHidden(entry.isIntersecting);
+      },
+      { threshold: 0.05 },
+    );
+
+    observer.observe(projectsEl);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-40 border-b border-slate-200/70 bg-white/80 backdrop-blur dark:border-slate-800/60 dark:bg-slate-950/70 lg:hidden">
@@ -81,7 +100,7 @@ export default function Header({ links }) {
             {navItems.map(({ id, label }) => (
               <a
                 key={id}
-                href={id === 'projects' ? '/projects/' : `#${id}`}
+                href={`#${id}`}
                 className="flex flex-none items-center rounded-full border border-transparent bg-slate-100 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-slate-700 dark:hover:bg-slate-800 dark:focus-visible:ring-offset-slate-950"
               >
                 {label}
@@ -91,12 +110,21 @@ export default function Header({ links }) {
         </nav>
       </header>
 
-      <aside aria-label="Sidebar navigation" className="hidden lg:block lg:flex-none lg:self-stretch">
+      <aside
+        aria-label="Sidebar navigation"
+        className="hidden lg:block lg:flex-none lg:self-stretch overflow-hidden transition-all duration-500 ease-out"
+        style={{ width: sidebarHidden ? 0 : 288 }}
+      >
         <div className="sticky top-6">
           <div className="flex min-h-[calc(100vh_-_3rem)] flex-col justify-center py-6">
             <div
-              className="flex w-72 flex-col gap-5 transition-transform duration-300 ease-out will-change-transform"
-              style={{ transform: `translateY(${scrollOffset}px)` }}
+              className="flex w-72 flex-col gap-5 transition-all duration-500 ease-out will-change-transform"
+              style={{
+                transform: sidebarHidden
+                  ? `translateX(-120%) translateY(${scrollOffset}px)`
+                  : `translateY(${scrollOffset}px)`,
+                opacity: sidebarHidden ? 0 : 1,
+              }}
             >
               <section aria-label="About" className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-lg dark:border-slate-800/70 dark:bg-slate-900">
                 <div className="flex items-start justify-between">
@@ -228,7 +256,7 @@ export default function Header({ links }) {
                   {navItems.map(({ id, label, icon: Icon }) => (
                     <a
                       key={id}
-                      href={id === 'projects' ? '/projects/' : `#${id}`}
+                      href={`#${id}`}
                       className="group flex items-center gap-3 rounded-2xl px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 dark:text-slate-300 dark:hover:bg-slate-900 dark:hover:text-white"
                     >
                       <span className="flex h-8 w-8 items-center justify-center rounded-xl border border-transparent bg-slate-100 text-slate-600 transition group-hover:border-slate-300 group-hover:bg-white group-hover:text-slate-900 dark:bg-slate-900 dark:text-slate-400 dark:group-hover:border-slate-700 dark:group-hover:bg-slate-800 dark:group-hover:text-white">

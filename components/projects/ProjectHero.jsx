@@ -3,6 +3,7 @@ import { Github } from 'lucide-react';
 import Badge from '@/components/ui/Badge';
 import PillLink from '@/components/ui/PillLink';
 import { pickHighlightTag, pickHighlightTech, pickProofPoints, sortProjectLinks } from '@/lib/projectDisplay';
+import PinCard from '@/components/PinCard';
 
 export default function ProjectHero({ project }) {
   if (!project) return null;
@@ -17,6 +18,7 @@ export default function ProjectHero({ project }) {
   const repoLink = links.find(link => link.kind === 'repo');
 
   return (
+    <PinCard rotation={1.5} pinColor="teal">
     <section className="rounded-3xl border border-slate-200/80 bg-white overflow-hidden shadow-lg dark:border-slate-800/70 dark:bg-slate-900">
       <div className="grid lg:grid-cols-[1fr_1fr] items-stretch">
         {project.coverImage?.src ? (
@@ -81,5 +83,6 @@ export default function ProjectHero({ project }) {
         </div>
       </div>
     </section>
+    </PinCard>
   );
 }

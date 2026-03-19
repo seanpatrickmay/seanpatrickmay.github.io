@@ -27,28 +27,28 @@
     "showcaseTag": "Full-stack",
     "showcaseTech": "Next.js",
     "proofPoints": [
-      "16 project case-study pages generated from a structured JSON catalog",
-      "Scheduled scripts refresh Garmin activity stats and Spotify listening data into static JSON",
-      "Filterable project archive with search, multi-tag filters, and shareable URL query params"
+      "16 project pages all generated from one big JSON file",
+      "scheduled scripts pull fresh Garmin and Spotify data into static JSON",
+      "filterable project archive with search, tag filters, and shareable URL params"
     ],
-    "overview": "This site is a static-exported Next.js portfolio that combines hand-curated project writeups with lightweight live data feeds. The goal is a fast personal site that still feels current without depending on a permanent backend.",
+    "overview": "this is a static-exported next.js portfolio that mixes hand-written project writeups with live data feeds from my Garmin and Spotify. the whole point is a fast personal site that still feels current without needing a backend running somewhere.",
     "whatIBuilt": [
-      "Static-exported Next.js site with homepage, project archive, and per-project routes",
-      "Data refresh scripts and workflows for Garmin and Spotify summaries",
-      "Reusable UI primitives for cards, pills, filters, and long-form project pages"
+      "static next.js site with a homepage, project archive, and individual project pages",
+      "data refresh scripts that pull Garmin and Spotify summaries on a schedule",
+      "reusable UI components for cards, pills, filters, and the longer project writeups"
     ],
     "howItWorks": [
-      "Scheduled scripts write JSON data into public/",
-      "Pages import static JSON directly during build time",
-      "GitHub Pages serves the exported site as static HTML"
+      "scheduled scripts write JSON into public/",
+      "pages import that JSON at build time",
+      "github pages serves the whole thing as static HTML"
     ],
     "results": [
-      "Fast static site with dynamic-feeling activity widgets",
-      "Shareable /projects/ + /projects/<slug>/ routes compatible with static export"
+      "fast static site that still feels like it has live activity widgets",
+      "shareable /projects/ and /projects/<slug>/ routes that work with static export"
     ],
     "nextSteps": [
-      "Replace manual project metadata entry with a GitHub-informed sync path",
-      "Add per-project demo GIFs and before/after comparisons for audit improvements"
+      "replace manual project metadata with something that syncs from github",
+      "add demo GIFs and before/after screenshots for the audit improvements"
     ],
     "coverImage": {
       "src": "/projects/seanpatrickmay-github-io/cover.png",
@@ -90,7 +90,7 @@
       "OpenAI"
     ],
     "oneLiner": "my personal command center — it reads my iMessages, syncs my calendar, generates AI todos, tracks Garmin biometrics, and the whole thing is wrapped in a Monet-inspired pixel art UI",
-    "featuredDescription": "Personal command center: auto iMessage ingestion, calendar + project integration, AI-generated todos, and biometric tracking.",
+    "featuredDescription": "personal command center: auto iMessage ingestion, calendar + project integration, AI-generated todos, and biometric tracking",
     "cardDescription": "auto iMessage ingestion, calendar sync, AI-generated todos, and Garmin biometrics in a pixel art Monet theme",
     "languages": [
       "Python",
@@ -106,28 +106,28 @@
     "showcaseTag": "Agentic AI",
     "showcaseTech": "PostgreSQL",
     "proofPoints": [
-      "Auto iMessage ingestion pipeline that parses conversations into structured action items, reminders, and context for AI-driven task generation",
-      "Calendar + project integration that syncs events, deadlines, and repo activity into a unified daily command view",
-      "OpenAI Responses API generates prioritized todos and daily briefings from messages, calendar, project state, and Garmin biometrics"
+      "auto imessage ingestion that parses conversations into action items, reminders, and context for the AI task generation",
+      "calendar + project integration that pulls events, deadlines, and repo activity into one daily view",
+      "openai responses api generates prioritized todos and daily briefings from messages, calendar, project state, and garmin data"
     ],
-    "overview": "Life-Dashboard is a self-hosted personal OS that auto-ingests iMessage conversations, syncs calendar events, tracks active projects, and generates AI-driven todos and daily briefings—all rendered in a pixel art Monet theme that shifts with time of day. Garmin biometrics provide a wellness baseline alongside the productivity layer.",
+    "overview": "life-dashboard is basically a self-hosted personal OS. it auto-ingests my imessage conversations, syncs calendar events, tracks active projects, and generates AI-driven todos and daily briefings. the whole thing is rendered in this pixel art monet theme that shifts with time of day, and garmin biometrics give me a wellness baseline alongside the productivity stuff.",
     "whatIBuilt": [
-      "FastAPI backend for iMessage ingestion, calendar sync, project tracking, todo generation, and Garmin biometric pulls",
-      "React/Vite frontend for daily briefing, todo management, calendar view, project status, and assistant interaction",
-      "Postgres-backed data model for messages, calendar events, projects, todos, biometrics, and AI-generated insights"
+      "fastapi backend that handles imessage ingestion, calendar sync, project tracking, todo generation, and pulling garmin biometrics",
+      "react/vite frontend for the daily briefing, todo management, calendar view, project status, and chatting with the assistant",
+      "postgres data model for messages, calendar events, projects, todos, biometrics, and AI-generated insights"
     ],
     "howItWorks": [
-      "Ingest iMessage conversations and calendar events into Postgres, extracting actionable items and deadlines",
-      "Aggregate messages, schedule, project activity, and biometrics into context for OpenAI-powered todo and briefing generation",
-      "Surface prioritized todos, daily briefings, and project status through a unified React dashboard"
+      "ingest imessage conversations and calendar events into postgres, pulling out actionable items and deadlines",
+      "aggregate messages, schedule, project activity, and biometrics into context for openai-powered todo and briefing generation",
+      "surface prioritized todos, daily briefings, and project status through one react dashboard"
     ],
     "results": [
-      "End-to-end personal command center from raw messages and calendar through AI prioritization to actionable daily output",
-      "Clean separation between ingestion sources, AI reasoning, and product UI"
+      "the whole loop from raw messages and calendar through AI prioritization to actionable daily output",
+      "clean separation between ingestion sources, AI reasoning, and the actual UI"
     ],
     "nextSteps": [
-      "Add tighter evals for AI-generated todo relevance and priority accuracy",
-      "Expand project integration with deeper git activity and PR status tracking"
+      "add tighter evals for how relevant and well-prioritized the AI-generated todos actually are",
+      "pull in deeper git activity and PR status for the project integration"
     ],
     "coverImage": {
       "src": "/projects/life-dashboard/life-dashboard-cover.png",
@@ -186,28 +186,28 @@
     "showcaseTag": "NLP",
     "showcaseTech": "Cloud Translation",
     "proofPoints": [
-      "Six-stage pipeline: PDF extraction, heading stripping, sentence segmentation, Cloud Translation, chunking, and Gemini annotation",
-      "Context-aware scene segmentation that passes previous scene summaries to maintain narrative coherence across chunks",
-      "SSE-streaming upload progress, keyboard-navigable scene reader, and click-to-jump vocabulary highlighting"
+      "six-stage pipeline: PDF extraction, heading stripping, sentence segmentation, cloud translation, chunking, and gemini annotation",
+      "context-aware scene segmentation that passes previous scene summaries forward so the narrative stays coherent across chunks",
+      "SSE-streaming upload progress, keyboard-navigable scene reader, and click-to-jump vocab highlighting"
     ],
-    "overview": "LecteurAide is a French reading companion for long-form PDFs. It ingests a book, segments it into scenes, translates sentences, extracts vocabulary, and generates comprehension questions before presenting everything in a purpose-built reading interface.",
+    "overview": "lecteuraide is a french reading companion for long PDFs. you give it a book, it segments it into scenes, translates every sentence, extracts vocabulary, and generates comprehension questions, then presents everything in a purpose-built reading interface. i built it because looking up words one at a time was really painful.",
     "whatIBuilt": [
-      "FastAPI backend for book upload, scene segmentation, translation, vocabulary extraction, and persistence",
-      "Next.js frontend for upload, library browsing, and scene-by-scene reading",
-      "Vertex AI and Google Cloud Translation pipeline for turning raw PDFs into guided reading experiences"
+      "fastapi backend for book upload, scene segmentation, translation, vocab extraction, and persistence",
+      "next.js frontend for uploading, browsing the library, and reading scene by scene",
+      "vertex AI and google cloud translation pipeline that turns raw PDFs into guided reading experiences"
     ],
     "howItWorks": [
-      "Upload a French PDF and title via the ingestion API",
-      "Segment the text into scenes and annotate it with translations, vocab, and questions",
-      "Persist the processed book and render it through the web reader"
+      "upload a french PDF and title through the ingestion API",
+      "segment the text into scenes and annotate with translations, vocab, and questions",
+      "persist the processed book and render it through the web reader"
     ],
     "results": [
-      "Turns static PDFs into an interactive reading workflow",
-      "Combines document ingestion, translation, and reader UX in one end-to-end product"
+      "turns static PDFs into an interactive reading workflow",
+      "the whole thing from document ingestion through translation to reader UX in one product"
     ],
     "nextSteps": [
-      "Record a walkthrough video of the scene-by-scene reading flow",
-      "Expand the reader with stronger review and spaced-repetition loops"
+      "record a walkthrough video of the scene-by-scene reading flow",
+      "build out stronger review and spaced-repetition loops in the reader"
     ],
     "coverImage": {
       "src": "/projects/lecteuraide/lecteur-aide-cover.png",
@@ -258,29 +258,29 @@
     "showcaseTag": "Computer Vision",
     "showcaseTech": "PyTorch",
     "proofPoints": [
-      "Two CNNs (~7.5M params each): 4-layer conv stack + 9-layer dense head on 28x28 grayscale inputs",
-      "Custom dataset with canvas-based bounding-box annotation tool and albumentations augmentation",
-      "Cross-platform inference with automatic CUDA/MPS/CPU device detection"
+      "two CNNs (~7.5M params each): 4-layer conv stack + 9-layer dense head on 28x28 grayscale inputs",
+      "custom dataset with a canvas-based bounding-box annotation tool and albumentations augmentation",
+      "cross-platform inference with automatic CUDA/MPS/CPU device detection"
     ],
-    "overview": "Human Digit Recognition is a two-stage perception project that detects a hand region in an image and then classifies how many digits are raised. It includes the modeling workflow, annotation tooling, pretrained weights, and a lightweight Flask-based demo path.",
+    "overview": "this is a two-stage perception project, first it detects a hand region in an image, then classifies how many fingers are raised. i built the whole thing from the annotation tooling through training to a flask demo you can actually interact with.",
     "whatIBuilt": [
-      "PyTorch models for hand-box detection and digit-count classification",
-      "Annotation tooling and notebooks for training and evaluation",
-      "Flask inference server and browser-facing prediction flow"
+      "pytorch models for hand-box detection and digit-count classification",
+      "annotation tooling and notebooks for training and evaluation",
+      "flask inference server and browser-facing prediction flow"
     ],
     "howItWorks": [
-      "Capture or upload an image frame",
-      "Predict a hand bounding box from the full frame",
-      "Crop the detected region and run digit classification",
-      "Return the predicted count through the Flask API"
+      "capture or upload an image",
+      "predict a hand bounding box from the full frame",
+      "crop the detected region and run digit classification",
+      "return the predicted count through the flask API"
     ],
     "results": [
-      "End-to-end perception workflow from annotation to serving",
-      "Demonstrates staged CV inference rather than a single-model toy demo"
+      "the whole pipeline from labeling images to actually serving predictions",
+      "shows staged CV inference rather than just a single-model toy demo"
     ],
     "nextSteps": [
-      "Package dependencies more cleanly for reproducible setup",
-      "Capture inference demo GIF showing hand detection through digit classification"
+      "clean up dependencies for easier reproducible setup",
+      "capture an inference demo GIF showing hand detection through digit classification"
     ],
     "coverImage": {
       "src": "/projects/human-digit-classification/cover.png",
@@ -331,28 +331,28 @@
     "showcaseTag": "Machine Learning",
     "showcaseTech": "Earth Engine",
     "proofPoints": [
-      "Earth Engine download and normalization pipeline",
-      "Locational spread + continuation regression workflows",
-      "Lightweight local viewer for GOFER-style JSON outputs"
+      "earth engine download and normalization pipeline",
+      "locational spread + continuation regression workflows",
+      "lightweight local viewer for GOFER-style JSON outputs"
     ],
-    "overview": "Wildfire Modeling is a research workflow for collecting wildfire-related geospatial data, converting it into GOFER-style JSON, and running local regression analyses over fire spread and continuation. It sits between raw remote-sensing data and downstream modeling experiments.",
+    "overview": "this is a research workflow for collecting wildfire geospatial data, converting it into GOFER-style JSON, and running local regression analyses on fire spread and continuation. it basically sits between raw remote-sensing data and whatever modeling experiments i want to run downstream.",
     "whatIBuilt": [
       "CLI scripts for downloading GOES confidence stacks and aligned RTMA meteorology",
-      "Conversion tools that normalize geospatial outputs into modeling-friendly JSON",
-      "Regression workflows and notebooks for single-fire and multi-fire analysis"
+      "conversion tools that normalize geospatial outputs into modeling-friendly JSON",
+      "regression workflows and notebooks for single-fire and multi-fire analysis"
     ],
     "howItWorks": [
-      "Download wildfire confidence stacks and aligned meteorology",
-      "Convert outputs into GOFER-style JSON time series",
-      "Run locational regressions and inspect outputs through notebooks or the local viewer"
+      "download wildfire confidence stacks and aligned meteorology",
+      "convert outputs into GOFER-style JSON time series",
+      "run locational regressions and inspect outputs through notebooks or the local viewer"
     ],
     "results": [
-      "Repeatable research workflow from Earth Engine exports to regression outputs",
-      "Supports both single-fire analysis and broader multi-fire experiments"
+      "repeatable research workflow from earth engine exports to regression outputs",
+      "supports both single-fire analysis and broader multi-fire experiments"
     ],
     "nextSteps": [
-      "Tighten environment bootstrapping and add clearer example outputs",
-      "Expand the multiresolution data path and result visualization"
+      "tighten environment bootstrapping and add clearer example outputs",
+      "expand the multiresolution data path and result visualization"
     ],
     "coverImage": {
       "src": "/projects/wildfire-modeling/cover.png",
@@ -405,28 +405,28 @@
     "showcaseTag": "Algorithms",
     "showcaseTech": "Redis",
     "proofPoints": [
-      "Sentiment-weighted spread pricing that adjusts bid-ask width based on news flow, social volume, and order book imbalance signals",
-      "Inventory risk engine with position limits, Greeks-inspired exposure tracking, and dynamic skew to reduce directional risk",
-      "Multi-venue execution layer with order lifecycle management across Kalshi and Polymarket via unified abstraction"
+      "sentiment-weighted spread pricing that adjusts bid-ask width based on news flow, social volume, and order book imbalance",
+      "inventory risk engine with position limits, greeks-inspired exposure tracking, and dynamic skew to reduce directional risk",
+      "multi-venue execution layer with order lifecycle management across Kalshi and Polymarket"
     ],
-    "overview": "Sentiment Market MM is a full-stack market-making system for prediction markets. It ingests real-time sentiment signals, prices two-sided quotes with dynamic spread adjustment, manages inventory exposure, and executes across multiple venues through a unified order management layer.",
+    "overview": "this is a full-stack market-making system for prediction markets. it ingests real-time sentiment signals, prices two-sided quotes with dynamic spread adjustment, manages inventory exposure, and executes across multiple venues through a unified order management layer.",
     "whatIBuilt": [
-      "FastAPI backend with sentiment ingestion, spread pricing engine, order management, and position tracking endpoints",
-      "Postgres + Redis schema for markets, quotes, orders, fills, positions, and real-time sentiment state",
-      "React monitoring dashboard for live P&L, position exposure, spread visualization, and order flow"
+      "fastapi backend with sentiment ingestion, spread pricing engine, order management, and position tracking",
+      "postgres + redis schema for markets, quotes, orders, fills, positions, and real-time sentiment state",
+      "react monitoring dashboard for live P&L, position exposure, spread visualization, and order flow"
     ],
     "howItWorks": [
-      "Ingest sentiment signals from news APIs, social feeds, and order book data into a scoring pipeline",
-      "Price two-sided quotes with spread width driven by sentiment confidence, volatility, and current inventory skew",
-      "Execute and manage order lifecycle across venues with fill tracking and position reconciliation"
+      "ingest sentiment signals from news APIs, social feeds, and order book data into a scoring pipeline",
+      "price two-sided quotes with spread width driven by sentiment confidence, volatility, and current inventory skew",
+      "execute and manage order lifecycle across venues with fill tracking and position reconciliation"
     ],
     "results": [
-      "End-to-end market-making loop from signal ingestion through quote pricing to execution and risk tracking",
-      "Provides a working research environment for testing spread strategies against real prediction market dynamics"
+      "the whole market-making loop from signal ingestion through quote pricing to execution and risk tracking",
+      "gives me a sandbox for testing different spread strategies against real prediction market data"
     ],
     "nextSteps": [
-      "Add backtesting harness to evaluate spread strategies against historical order book snapshots",
-      "Implement adaptive position sizing based on realized P&L and drawdown thresholds"
+      "add a backtesting harness to evaluate spread strategies against historical order book snapshots",
+      "implement adaptive position sizing based on realized P&L and drawdown thresholds"
     ],
     "coverImage": {
       "src": "/projects/sentiment-market-mm/cover.png",
@@ -475,29 +475,29 @@
     "showcaseTech": "CFR+",
     "proofPoints": [
       "CFR+ with external sampling: 100K iterations, regret clamping, bucket-cached traversal across all 4 streets",
-      "K-means preflop abstraction (10 buckets) + empirical CDF postflop bucketing with sampled board completions",
-      "FastAPI web UI: play against the bot with a live 13x13 range heatmap showing action probabilities per hand"
+      "k-means preflop abstraction (10 buckets) + empirical CDF postflop bucketing with sampled board completions",
+      "fastapi web UI where you play against the bot with a live 13x13 range heatmap showing action probabilities per hand"
     ],
-    "overview": "PokerML is a heads-up no-limit hold'em solver built on CFR+ (Counterfactual Regret Minimization with regret clamping) and external sampling Monte Carlo. It trains over 100,000 iterations with k-means preflop bucketing and percentile-based postflop abstraction, then serves the converged strategy through a FastAPI web app where you can play against the bot and inspect its 13x13 range grid in real time.",
+    "overview": "this is a heads-up no-limit hold'em solver built on CFR+ and external sampling monte carlo. it trains over 100K iterations with k-means preflop bucketing and percentile-based postflop abstraction, then serves the converged strategy through a fastapi web app where you can play against the bot and see its 13x13 range grid in real time.",
     "whatIBuilt": [
       "CFR+ trainer with external sampling MCCFR, immutable game states, and per-iteration bucket caching for speed",
-      "Two-level card abstraction: k-means on preflop equity (169 hands to 10 buckets) and percentile CDF on postflop hand strength",
-      "Action abstraction with 50% and 100% pot bet sizings, fold/check/call, all-in, and a 4-raise-per-street cap",
-      "FastAPI server with session management, bot inference, and a 13x13 range grid API for the frontend"
+      "two-level card abstraction: k-means on preflop equity (169 hands to 10 buckets) and percentile CDF on postflop hand strength",
+      "action abstraction with 50% and 100% pot bet sizings, fold/check/call, all-in, and a 4-raise-per-street cap",
+      "fastapi server with session management, bot inference, and a 13x13 range grid API for the frontend"
     ],
     "howItWorks": [
-      "Deal hands and board, pre-cache card buckets for both players across all 4 streets",
-      "Traverse the game tree: enumerate all actions for the traversing player, sample one for the opponent",
-      "Update cumulative regrets (clamped to zero for CFR+) and accumulate strategy sums",
-      "After 100K iterations, compress the averaged strategy to JSON and serve it via FastAPI for live play"
+      "deal hands and board, pre-cache card buckets for both players across all 4 streets",
+      "traverse the game tree: enumerate all actions for the traversing player, sample one for the opponent",
+      "update cumulative regrets (clamped to zero for CFR+) and accumulate strategy sums",
+      "after 100K iterations, compress the averaged strategy to JSON and serve it via fastapi for live play"
     ],
     "results": [
-      "Converged strategy across ~1,173 lines of Python with 18.5 MB compressed strategy file",
-      "Interactive web UI lets you play full hands and inspect the bot's action distribution for any of 169 canonical hands"
+      "converged strategy across ~1,173 lines of python with an 18.5 MB compressed strategy file",
+      "interactive web UI where you can play full hands and inspect the bot's action distribution for any of 169 canonical hands"
     ],
     "nextSteps": [
-      "Add variance reduction techniques (pruning, warm starting)",
-      "Expand action abstraction with more bet sizings and raise depths"
+      "add variance reduction techniques like pruning and warm starting",
+      "expand action abstraction with more bet sizings and raise depths"
     ],
     "coverImage": {
       "src": "/projects/nlhe-alpha-beta/cover.png",
@@ -544,27 +544,27 @@
     "showcaseTech": "Spring Boot",
     "proofPoints": [
       "MBTA prediction-driven leave-now API",
-      "Fixed commute leave-by planner with transfer and walking buffers",
-      "Spring Boot + Gradle Kotlin DSL practice project"
+      "fixed commute leave-by planner with transfer and walking buffers",
+      "spring boot + gradle kotlin DSL practice project"
     ],
-    "overview": "MBTA Leave Now is a learning-focused Spring Boot project that answers a commuter question: when should I leave? It includes both a generic stop-level API and a more opinionated leave-by planner for a fixed commute to RTX BBN.",
+    "overview": "this is a spring boot project that answers a pretty simple commuter question: when should i leave? it has both a generic stop-level API and a more opinionated leave-by planner for my fixed commute. i mostly built it to get comfortable with spring and gradle.",
     "whatIBuilt": [
-      "Spring MVC endpoints for stop-level leave guidance and a fixed commute planner",
-      "MBTA API client using Java HttpClient and Jackson parsing",
-      "Minimal browser UI for entering a deadline and viewing leave-by guidance"
+      "spring MVC endpoints for stop-level leave guidance and a fixed commute planner",
+      "MBTA API client using java HttpClient and jackson parsing",
+      "minimal browser UI for entering a deadline and viewing leave-by guidance"
     ],
     "howItWorks": [
-      "Fetch upcoming MBTA predictions and schedules for relevant stops",
-      "Apply walk-time and transfer buffers to compute a leave-by recommendation",
-      "Expose results through a REST API and a lightweight static frontend"
+      "fetch upcoming MBTA predictions and schedules for the relevant stops",
+      "apply walk-time and transfer buffers to compute a leave-by recommendation",
+      "expose results through a REST API and a lightweight static frontend"
     ],
     "results": [
-      "Concrete practice project for Gradle Kotlin DSL, Spring MVC, and test structure",
-      "Bridges backend API logic and a usable frontend in one small repo"
+      "solid practice project for gradle kotlin DSL, spring MVC, and test structure",
+      "bridges backend API logic and a usable frontend in one small repo"
     ],
     "nextSteps": [
-      "Generalize the fixed commute planner into configurable routes",
-      "Add example responses and screenshots for easier onboarding"
+      "generalize the fixed commute planner into configurable routes",
+      "add example responses and screenshots for easier onboarding"
     ],
     "coverImage": {
       "src": "/projects/mbta-leave-now/cover.png",
@@ -614,27 +614,27 @@
     "showcaseTag": "Agentic AI",
     "showcaseTech": "CrewAI",
     "proofPoints": [
-      "Document ingestion -> flashcards -> cheat-sheet workflow",
+      "document ingestion -> flashcards -> cheat-sheet workflow",
       "RAG-backed study flow using ChromaDB",
-      "FastAPI app with a focused single-page interface"
+      "fastapi app with a focused single-page interface"
     ],
-    "overview": "study-buddy is a study companion that turns lecture notes, research papers, and Anki exports into curated flashcards, decks, and cheat sheets. It combines LLM tooling, retrieval, and a simple web interface into one study workflow.",
+    "overview": "study-buddy is a study companion that takes your lecture notes, research papers, and anki exports and turns them into curated flashcards, decks, and cheat sheets. it combines LLM tooling, retrieval, and a simple web interface into one study workflow.",
     "whatIBuilt": [
-      "Built the full ingestion-to-artifact pipeline for study-material processing and generation",
-      "FastAPI-backed flow for converting source material into flashcards and cheat sheets",
-      "RAG path using ChromaDB to keep generations anchored in the uploaded material"
+      "built the full ingestion-to-artifact pipeline for processing study materials and generating outputs",
+      "fastapi-backed flow for converting source material into flashcards and cheat sheets",
+      "RAG path using chromaDB to keep generations anchored in the uploaded material"
     ],
     "howItWorks": [
-      "Upload notes, papers, or deck exports",
-      "Index material into a retrieval layer",
-      "Generate flashcards, exports, and cheat-sheet style outputs from the grounded context"
+      "upload notes, papers, or deck exports",
+      "index material into a retrieval layer",
+      "generate flashcards, exports, and cheat-sheet style outputs from the grounded context"
     ],
     "results": [
-      "Prototype shows a concrete AI-assisted study loop from raw notes to review artifacts"
+      "working prototype that shows a concrete AI-assisted study loop from raw notes to review artifacts"
     ],
     "nextSteps": [
-      "Show sample flashcard deck and cheat sheet outputs in the README",
-      "Add a one-click demo path with a bundled example PDF"
+      "show sample flashcard deck and cheat sheet outputs in the readme",
+      "add a one-click demo path with a bundled example PDF"
     ],
     "coverImage": {
       "src": "/projects/study-buddy/cover.png",
@@ -678,28 +678,28 @@
     "showcaseTag": "Algorithms",
     "showcaseTech": "Genetic Algorithms",
     "proofPoints": [
-      "Tournament selection + single-point crossover",
-      "Mutation schedule that scales with board size",
+      "tournament selection + single-point crossover",
+      "mutation schedule that scales with board size",
       "CLI/.env configurable experiments"
     ],
-    "overview": "This project explores the N-Queens puzzle through a compact genetic algorithm. It is intentionally small and transparent, making it easy to inspect how population size, mutation behavior, and iteration caps affect convergence.",
+    "overview": "this project explores the n-queens puzzle through a compact genetic algorithm. it's intentionally small and transparent, so it's easy to see how population size, mutation behavior, and iteration caps affect convergence.",
     "whatIBuilt": [
-      "Single-file genetic algorithm implementation with tournament selection and crossover",
-      "Collision-based fitness function for scoring candidate boards",
+      "single-file genetic algorithm with tournament selection and crossover",
+      "collision-based fitness function for scoring candidate boards",
       "CLI and .env configuration for quick experimentation"
     ],
     "howItWorks": [
-      "Initialize a population of candidate boards",
-      "Score conflicts and select parents via tournaments",
-      "Apply crossover and mutation across generations",
-      "Stop when a zero-collision solution is found or iteration cap is hit"
+      "initialize a population of candidate boards",
+      "score conflicts and select parents via tournaments",
+      "apply crossover and mutation across generations",
+      "stop when a zero-collision solution is found or the iteration cap is hit"
     ],
     "results": [
-      "Good compact reference implementation for an evolutionary search workflow"
+      "nice compact reference implementation for an evolutionary search workflow"
     ],
     "nextSteps": [
-      "Add seeded benchmarking and clearer example outputs",
-      "Try alternate encodings or hybrid local-search ideas"
+      "add seeded benchmarking and clearer example outputs",
+      "try alternate encodings or hybrid local-search ideas"
     ],
     "coverImage": {
       "src": "/projects/nqueens-genetic-algorithms/cover.png",
@@ -744,27 +744,27 @@
     "showcaseTag": "Algorithms",
     "showcaseTech": "Java",
     "proofPoints": [
-      "Maze generation via weighted graph + spanning tree ideas",
+      "maze generation via weighted graph + spanning tree",
       "BFS and DFS solver visualization",
-      "Interactive player mode with keyboard controls"
+      "interactive player mode with keyboard controls"
     ],
-    "overview": "Maze-Game is a Java world program that generates solvable mazes, animates breadth-first or depth-first search, and supports a manual play mode. It combines graph generation, search visualization, and event-driven interaction in one compact project.",
+    "overview": "maze-game is a java world program that generates solvable mazes, animates breadth-first or depth-first search, and has a manual play mode. it's sort of a compact mix of graph generation, search visualization, and event-driven interaction.",
     "whatIBuilt": [
-      "Maze generator over a grid graph using weighted edges and union-find style logic",
-      "Solver playback for BFS and DFS so pathfinding is visible instead of abstract",
-      "Manual mode with movement, collision checks, and win detection"
+      "maze generator over a grid graph using weighted edges and union-find style logic",
+      "solver playback for BFS and DFS so you can actually watch pathfinding instead of just getting the answer",
+      "manual mode with movement, collision checks, and win detection"
     ],
     "howItWorks": [
-      "Generate a maze from weighted connections across a grid",
-      "Choose BFS or DFS to visualize a solver path",
-      "Optionally switch into manual mode and play through the maze"
+      "generate a maze from weighted connections across a grid",
+      "choose BFS or DFS to visualize a solver path",
+      "optionally switch into manual mode and play through the maze yourself"
     ],
     "results": [
-      "Good early project for graph algorithms, search, and interactive Java state"
+      "solid early project for graph algorithms, search, and interactive java state"
     ],
     "nextSteps": [
-      "Record a GIF of maze generation and BFS/DFS solver animation",
-      "Document the course-library setup more precisely"
+      "record a GIF of maze generation and BFS/DFS solver animation",
+      "document the course-library setup more precisely"
     ],
     "coverImage": {
       "src": "/projects/maze-game/cover.png",
@@ -809,26 +809,26 @@
     "showcaseTag": "Game Theory",
     "showcaseTech": "Swing",
     "proofPoints": [
-      "Cube-coordinate hex board (q+r+s=0) with odd-r offset conversion and configurable side length",
-      "TryTwo combinator chains strategies (corners → avoid-near-corners → minimax → capture-max) with fallible/infallible pattern",
-      "Four adapter classes bridge third-party provider code without modifying core—ReadOnly model, view, input, and strategy adapters"
+      "cube-coordinate hex board (q+r+s=0) with odd-r offset conversion and configurable side length",
+      "TryTwo combinator chains strategies (corners -> avoid-near-corners -> minimax -> capture-max) with fallible/infallible pattern",
+      "four adapter classes bridge third-party provider code without modifying core"
     ],
-    "overview": "Hex Reversi is an extensible Reversi/Othello implementation on a hexagonal grid. The core emphasis is software design: clean MVC separation, adapters for different play modes, and modular AI strategies that can be mixed and matched.",
+    "overview": "hex reversi is an extensible reversi/othello implementation on a hexagonal grid. the main emphasis is software design, clean MVC separation, adapters for different play modes, and modular AI strategies you can mix and match.",
     "whatIBuilt": [
-      "Hex-grid Reversi engine with configurable board shapes and starting states",
+      "hex-grid reversi engine with configurable board shapes and starting states",
       "MVC architecture with GUI + text views and a controller layer",
-      "Strategy system including minimax and composable heuristics"
+      "strategy system including minimax and composable heuristics"
     ],
     "howItWorks": [
-      "Represent the board on an odd-r hex coordinate system",
-      "Validate moves and apply flips according to Reversi rules",
-      "Run players (human/AI) through a controller loop",
-      "Plug different strategies into the AI player"
+      "represent the board on an odd-r hex coordinate system",
+      "validate moves and apply flips according to reversi rules",
+      "run players (human/AI) through a controller loop",
+      "plug different strategies into the AI player"
     ],
     "results": [],
     "nextSteps": [
-      "Add stronger evaluation heuristics and time controls",
-      "Improve UI polish and strategy visualization"
+      "add stronger evaluation heuristics and time controls",
+      "improve UI polish and strategy visualization"
     ],
     "coverImage": {
       "src": "/projects/hex-reversi/cover.png",
@@ -874,26 +874,26 @@
     "showcaseTag": "Concurrency",
     "showcaseTech": "C",
     "proofPoints": [
-      "Recursive pipe chaining supports arbitrary-depth pipelines via right-to-left parsing and fork/dup2 orchestration",
+      "recursive pipe chaining supports arbitrary-depth pipelines via right-to-left parsing and fork/dup2",
       "5 built-ins (cd, source, prev, help, verbose) communicate with parent via a dedicated global IPC pipe",
-      "Single-pass tokenizer handles quoted strings, special characters, and whitespace with a custom 2x-growth dynamic vector"
+      "single-pass tokenizer handles quoted strings, special characters, and whitespace with a custom 2x-growth dynamic vector"
     ],
-    "overview": "A custom shell written in C with support for command execution, piping, redirection, and signals. The project focuses on process control and correctness under typical shell behaviors.",
+    "overview": "a custom shell written in C with command execution, piping, redirection, and signal handling. the focus is on process control and getting correctness right under typical shell behaviors.",
     "whatIBuilt": [
-      "Command execution with piping and I/O redirection",
-      "Signal handling and process orchestration",
-      "Built-in commands (source, prev, cd, help, verbose toggle)"
+      "command execution with piping and I/O redirection",
+      "signal handling and process orchestration",
+      "built-in commands (source, prev, cd, help, verbose toggle)"
     ],
     "howItWorks": [
-      "Parse input into commands and pipeline segments",
-      "Fork/exec child processes and wire pipes between them",
-      "Apply redirections and handle signals appropriately",
-      "Track history for built-ins like prev"
+      "parse input into commands and pipeline segments",
+      "fork/exec child processes and wire pipes between them",
+      "apply redirections and handle signals",
+      "track history for built-ins like prev"
     ],
     "results": [],
     "nextSteps": [
-      "Add job control (fg/bg) if desired",
-      "Harden parsing for edge cases and quoting rules"
+      "add job control (fg/bg) if i feel like it",
+      "harden parsing for edge cases and quoting rules"
     ],
     "coverImage": {
       "src": "/projects/linux-shell-c/cover.svg",

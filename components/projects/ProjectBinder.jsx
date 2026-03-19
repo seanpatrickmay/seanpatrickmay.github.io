@@ -5,6 +5,10 @@ import Badge from '@/components/ui/Badge';
 import PillLink from '@/components/ui/PillLink';
 import { pickHighlightTag, pickHighlightTech, pickProofPoints, sortProjectLinks } from '@/lib/projectDisplay';
 import classNames from '@/lib/classNames';
+import PinCard from '@/components/PinCard';
+
+const BINDER_ROTATIONS = [-1, 1.2, -0.8, 1.5, -0.6];
+const BINDER_PIN_COLORS = ['red', 'blue', 'green', 'yellow', 'teal'];
 
 function BinderTab({ project, isSelected, onClick }) {
   const tag = pickHighlightTag(project);
@@ -165,15 +169,20 @@ export default function ProjectBinder({ projects = [] }) {
         ))}
       </div>
 
-      <div className="rounded-2xl border border-slate-200/80 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-900 -mt-px">
-        {projects.map((project, index) => (
-          <BinderPanel
-            key={project.slug || project.title}
-            project={project}
-            isOpen={selectedIndex === index}
-          />
-        ))}
-      </div>
+      <PinCard
+        rotation={BINDER_ROTATIONS[selectedIndex % BINDER_ROTATIONS.length]}
+        pinColor={BINDER_PIN_COLORS[selectedIndex % BINDER_PIN_COLORS.length]}
+      >
+        <div className="rounded-2xl border border-slate-200/80 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-900 -mt-px">
+          {projects.map((project, index) => (
+            <BinderPanel
+              key={project.slug || project.title}
+              project={project}
+              isOpen={selectedIndex === index}
+            />
+          ))}
+        </div>
+      </PinCard>
     </div>
   );
 }
