@@ -25,7 +25,7 @@ export default function ExperienceItem({ job, mode = 'expanded' }) {
     <Card className="h-full" data-mode={mode}>
       <CardHeader className="flex flex-col gap-3">
         <div className="flex items-center gap-5">
-          {img && <img src={img} alt={imageAlt} className="w-16 h-16 object-contain" />}
+          {img && <img src={img} alt={imageAlt} loading="lazy" className="w-16 h-16 object-contain" />}
           {!img && emoji && (
             <span className="text-3xl" aria-hidden="true">
               {emoji}
@@ -36,7 +36,7 @@ export default function ExperienceItem({ job, mode = 'expanded' }) {
           </CardTitle>
         </div>
         {hasMeta && (
-          <div className="text-sm opacity-70 flex flex-wrap items-center gap-2">
+          <div className="text-sm text-slate-500 dark:text-slate-400 flex flex-wrap items-center gap-2">
             {location && <span>{location}</span>}
             {location && period && <span aria-hidden="true">•</span>}
             {period && <span>{period}</span>}

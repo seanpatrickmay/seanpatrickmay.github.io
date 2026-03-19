@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import rawProjects from '@/public/projects.json' assert { type: 'json' };
 import { validateProjects } from '@/lib/projects';
+import ProjectPageHeader from '@/components/ProjectPageHeader';
 import PillLink from '@/components/ui/PillLink';
 import { sortProjectLinks } from '@/lib/projectDisplay';
 
@@ -54,7 +55,9 @@ export default function ProjectDetail({ project }) {
         <title>{`${title} — Projects — Sean P. May`}</title>
         <meta name="description" content={overviewText || title} />
       </Head>
-      <main className="section-container pt-24 pb-16">
+      <ProjectPageHeader />
+
+      <main id="main-content" className="section-container pt-24 pb-16">
         <div className="mb-8">
           <a href="/projects/" className="text-sm text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400 transition-colors">
             &larr; All projects
@@ -65,7 +68,7 @@ export default function ProjectDetail({ project }) {
         <header className="space-y-6 mb-12">
           {coverImage?.src && (
             <div className="rounded-2xl overflow-hidden border border-slate-200/70 dark:border-slate-800/60 shadow-sm">
-              <img src={coverImage.src} alt={coverImage.alt || ''} className="w-full h-auto" />
+              <img src={coverImage.src} alt={coverImage.alt || ''} loading="lazy" className="w-full h-auto" />
             </div>
           )}
 
@@ -188,7 +191,7 @@ export default function ProjectDetail({ project }) {
             <div className="grid gap-4 sm:grid-cols-2">
               {galleryList.map((img, i) => (
                 <figure key={i} className="rounded-xl overflow-hidden border border-slate-200/70 bg-white/60 dark:border-slate-800/60 dark:bg-slate-900/60">
-                  <img src={img.src} alt={img.alt || ''} className="w-full h-auto" />
+                  <img src={img.src} alt={img.alt || ''} loading="lazy" className="w-full h-auto" />
                   {img.caption && (
                     <figcaption className="p-3 text-sm text-slate-500 dark:text-slate-400">{img.caption}</figcaption>
                   )}

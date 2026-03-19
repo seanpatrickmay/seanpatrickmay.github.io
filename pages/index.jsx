@@ -84,7 +84,7 @@ export default function Home() {
 
       <div className="lg:mx-auto lg:flex lg:max-w-screen-2xl lg:items-start lg:justify-center lg:gap-10 lg:px-12 xl:px-16">
         <Header links={links} />
-        <main className="flex-1 space-y-12 pt-32 pb-24 sm:pt-28 md:pt-24 lg:min-w-0 lg:pt-16 xl:pt-20">
+        <main id="main-content" className="flex-1 space-y-12 pt-32 pb-24 sm:pt-28 md:pt-24 lg:min-w-0 lg:pt-16 xl:pt-20">
           <Hero links={links} featuredProjects={featuredProjects} />
           <AboutSection
             interests={interests}

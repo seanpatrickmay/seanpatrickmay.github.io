@@ -32,7 +32,7 @@ function startOfLocalDay(date) {
 function useStats() {
   const [stats, setStats] = useState(null);
   useEffect(() => {
-    fetch('/stats.json', { cache: 'no-cache' })
+    fetch('/stats.json')
       .then(r => (r.ok ? r.json() : null))
       .then(setStats)
       .catch(() => setStats(null));
@@ -43,13 +43,18 @@ function useStats() {
 function useSpotify() {
   const [data, setData] = useState(null);
   useEffect(() => {
-    fetch('/spotify.json', { cache: 'no-cache' })
+    fetch('/spotify.json')
       .then(r => (r.ok ? r.json() : null))
       .then(setData)
       .catch(() => setData(null));
   }, []);
   return data;
 }
+
+const KM_FORMAT = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
+const KCAL_FORMAT = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
+const MILK_FORMAT = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
+const MILK_KCAL_PER_CUP = 150;
 
 export default function AboutSection({
   interests,
@@ -95,11 +100,6 @@ export default function AboutSection({
 
   const totalCalories8w =
     totalCaloriesFromWeekly > 0 ? totalCaloriesFromWeekly : totalCaloriesFromRecent || null;
-
-  const KM_FORMAT = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
-  const KCAL_FORMAT = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
-  const MILK_KCAL_PER_CUP = 150;
-  const MILK_FORMAT = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
 
   const totalKmLabel = weeklySeries.length ? KM_FORMAT.format(Math.round(totalKm8w)) : '—';
   const totalKmRounded = weeklySeries.length ? Math.round(totalKm8w) : null;

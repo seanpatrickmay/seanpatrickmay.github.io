@@ -33,6 +33,7 @@ export default function CaseStudyCard({ project, variant = 'default', className 
           <img
             src={project.coverImage.src}
             alt={project.coverImage.alt || ''}
+            loading="lazy"
             className="h-full w-full object-cover"
           />
         </div>

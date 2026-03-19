@@ -7,7 +7,7 @@ export default function StackedCardPreview({ img, alt, emoji, label, meta }) {
       <div className="flex min-w-0 items-center gap-5">
         <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-white/20 bg-white/70 text-2xl shadow-sm backdrop-blur-sm dark:border-white/10 dark:bg-white/10 dark:text-white">
           {hasImage ? (
-            <img src={img} alt={alt || ''} className="h-full w-full object-contain" />
+            <img src={img} alt={alt || ''} loading="lazy" className="h-full w-full object-contain" />
           ) : (
             <span className="text-3xl" aria-hidden="true">
               {displayEmoji}

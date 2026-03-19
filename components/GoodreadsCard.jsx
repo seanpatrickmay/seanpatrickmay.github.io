@@ -15,7 +15,7 @@ export default function GoodreadsCard() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('/goodreads.json', { cache: 'no-cache' })
+    fetch('/goodreads.json')
       .then(r => (r.ok ? r.json() : null))
       .then(setData)
       .catch(() => setData(null));
@@ -50,6 +50,7 @@ export default function GoodreadsCard() {
                       <img
                         src={book.imageUrl}
                         alt=""
+                        loading="lazy"
                         className="w-10 h-14 rounded object-cover flex-shrink-0 shadow-sm"
                       />
                     )}
@@ -86,6 +87,7 @@ export default function GoodreadsCard() {
                       <img
                         src={book.imageUrl}
                         alt=""
+                        loading="lazy"
                         className="w-7 h-10 rounded object-cover flex-shrink-0"
                       />
                     )}

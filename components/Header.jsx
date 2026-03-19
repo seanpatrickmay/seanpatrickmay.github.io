@@ -96,7 +96,7 @@ export default function Header({ links }) {
                 <div className="flex items-start justify-between">
                   <img
                     src="/images/headshot.png"
-                    alt=""
+                    alt="Sean P. May"
                     className="w-14 h-14 rounded-full object-cover object-top ring-2 ring-slate-200/60 dark:ring-slate-700/60"
                   />
                   <ThemeToggle />

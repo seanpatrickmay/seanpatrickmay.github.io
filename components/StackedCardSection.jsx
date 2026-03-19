@@ -155,9 +155,8 @@ export default function StackedCardSection({
         icon={icon}
         className={sectionClassName}
         data-expanded={isActive ? 'true' : 'false'}
-        aria-expanded={isActive}
       >
-        <div className="rounded-3xl border border-slate-200 bg-white/70 p-6 text-sm text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-200">
+        <div className="rounded-2xl border border-slate-200 bg-white/70 p-6 text-sm text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-200">
           Nothing to display yet.
         </div>
       </Section>
@@ -171,7 +170,6 @@ export default function StackedCardSection({
       icon={icon}
       className={sectionClassName}
       data-expanded={isActive ? 'true' : 'false'}
-      aria-expanded={isActive}
     >
       <div
         ref={containerRef}
@@ -190,10 +188,11 @@ export default function StackedCardSection({
                   onFocus={() => handleTabHover(index)}
                   className={({ selected }) =>
                     classNames(
-                      'group relative flex min-w-[220px] flex-1 cursor-pointer items-stretch rounded-3xl border border-white/10 bg-white/5 text-left transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900/0 dark:border-white/10 dark:bg-white/5',
+                      'group relative flex min-w-[220px] flex-1 cursor-pointer items-stretch rounded-3xl border text-left transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2',
+                      'border-slate-200/60 bg-slate-50/50 dark:border-white/10 dark:bg-white/5',
                       selected
-                        ? 'border-white/40 bg-white/10 shadow-xl ring-1 ring-white/40 dark:border-white/20 dark:bg-white/10 dark:ring-white/25'
-                        : 'hover:border-white/20 hover:bg-white/10 dark:hover:border-white/20 dark:hover:bg-white/10'
+                        ? 'border-slate-300 bg-white shadow-xl ring-1 ring-slate-200/70 dark:border-white/20 dark:bg-white/10 dark:ring-white/25'
+                        : 'hover:border-slate-300 hover:bg-white dark:hover:border-white/20 dark:hover:bg-white/10'
                     )
                   }
                 >

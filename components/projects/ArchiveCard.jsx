@@ -22,6 +22,7 @@ export default function ArchiveCard({ project }) {
           <img
             src={project.coverImage.src}
             alt={project.coverImage.alt || ''}
+            loading="lazy"
             className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
           />
         </Link>

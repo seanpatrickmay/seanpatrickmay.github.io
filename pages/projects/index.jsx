@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import rawProjects from '@/public/projects.json' assert { type: 'json' };
 import { validateProjects } from '@/lib/projects';
 import { PROJECT_LANGUAGES, PROJECT_TAGS } from '@/lib/projectTaxonomy';
+import ProjectPageHeader from '@/components/ProjectPageHeader';
 import PillLink from '@/components/ui/PillLink';
 import MultiSelect from '@/components/ui/MultiSelect';
 import CaseStudyCard from '@/components/projects/CaseStudyCard';
@@ -248,7 +249,9 @@ export default function ProjectsIndex() {
         <title>Projects — Sean P. May</title>
         <meta name="description" content="Projects by Sean P. May" />
       </Head>
-      <main className="section-container pt-24 pb-16 space-y-8">
+      <ProjectPageHeader />
+
+      <main id="main-content" className="section-container pt-24 pb-16 space-y-8">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <h1 className="text-3xl font-bold tracking-tight">Projects</h1>
@@ -279,7 +282,7 @@ export default function ProjectsIndex() {
           </section>
         )}
 
-        <section className="rounded-2xl border border-slate-200/60 bg-white/80 px-4 py-3 shadow-sm backdrop-blur dark:border-slate-800/60 dark:bg-slate-950/60 lg:sticky lg:top-6 lg:z-20">
+        <section className="rounded-2xl border border-slate-200/60 bg-white/80 px-4 py-3 shadow-sm backdrop-blur dark:border-slate-800/60 dark:bg-slate-950/60 lg:sticky lg:top-20 lg:z-20">
           <div className="flex flex-wrap items-center gap-3">
             <div className="flex-1 min-w-[200px]">
               <label className="sr-only" htmlFor="project-search">
@@ -304,7 +307,7 @@ export default function ProjectsIndex() {
                     type="button"
                     onClick={() => setSortOption(option.value)}
                     aria-pressed={isActive}
-                    className={`rounded-full border px-3 py-1 text-xs font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
+                    className={`rounded-full border px-3 py-1.5 text-xs font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
                       isActive
                         ? 'border-indigo-600 bg-indigo-600 text-white dark:border-indigo-400 dark:bg-indigo-500 dark:text-white'
                         : 'border-slate-200 bg-white text-slate-600 hover:border-slate-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-slate-500'
@@ -317,7 +320,7 @@ export default function ProjectsIndex() {
               <button
                 type="button"
                 onClick={() => setFiltersOpen(previous => !previous)}
-                className="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700 transition hover:border-slate-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-slate-500"
+                className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700 transition hover:border-slate-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-slate-500"
               >
                 Filters{activeFacetCount ? ` (${activeFacetCount})` : ''}
               </button>
@@ -342,7 +345,7 @@ export default function ProjectsIndex() {
                   type="button"
                   onClick={() => toggleQuickFilter(filter.value)}
                   aria-pressed={isActive}
-                  className={`rounded-full border px-2.5 py-0.5 text-xs font-medium transition ${
+                  className={`rounded-full border px-3 py-1.5 text-xs font-medium transition ${
                     isActive
                       ? 'border-indigo-600 bg-indigo-600 text-white dark:border-indigo-400 dark:bg-indigo-500 dark:text-white'
                       : 'border-slate-200 bg-white text-slate-500 hover:border-slate-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-400 dark:hover:border-slate-500'
@@ -382,7 +385,7 @@ export default function ProjectsIndex() {
           </div>
 
           {filteredProjects.length === 0 ? (
-            <div className="rounded-3xl border border-dashed border-slate-300 bg-white/60 p-8 text-center text-sm text-slate-600 dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-300">
+            <div className="rounded-2xl border border-dashed border-slate-300 bg-white/60 p-8 text-center text-sm text-slate-600 dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-300">
               No projects match those filters. Try adjusting your search or clearing selections.
             </div>
           ) : (

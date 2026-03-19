@@ -164,8 +164,6 @@ export default function AutoScrollList({
       if (!oneH || oneH <= visH + 1) return;
       if (!event.deltaY) return;
 
-      event.preventDefault();
-
       let delta = event.deltaY;
       if (event.deltaMode === 1) delta *= 16;
       if (event.deltaMode === 2) delta *= Math.max(container.clientHeight, 1);
@@ -176,14 +174,61 @@ export default function AutoScrollList({
       userActiveUntilRef.current = performance.now() + resumeDelayMs;
     };
 
-    container.addEventListener("wheel", onWheel, { passive: false });
+    container.addEventListener("wheel", onWheel, { passive: true });
 
     return () => {
       container.removeEventListener("wheel", onWheel);
     };
   }, [top10.length, resumeDelayMs]);
 
-  // ---- Render ----
+  // ---- Render helpers ----
+  const renderListItems = (suffix) =>
+    top10.map((item, i) => (
+      <li
+        key={`${item.id || item.title}-${suffix}-${i}`}
+        className="flex items-center justify-between gap-2"
+      >
+        <div className="flex items-center gap-2 min-w-0 flex-1">
+          {item.image ? (
+            <img src={item.image} alt="" loading="lazy" className="w-8 h-8 rounded shrink-0" />
+          ) : item.emoji ? (
+            <span className="w-8 h-8 shrink-0 flex items-center justify-center">
+              {item.emoji}
+            </span>
+          ) : null}
+          {item.url ? (
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noreferrer"
+              className="text-sm truncate flex-1 min-w-0"
+              title={item.title}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <span className="font-semibold">{item.title}</span>
+            </a>
+          ) : (
+            <span
+              className="text-sm truncate flex-1 min-w-0"
+              title={item.title}
+            >
+              <span className="font-semibold">{item.title}</span>
+            </span>
+          )}
+          {item.info && (
+            <span className="text-sm text-slate-500 dark:text-slate-400 shrink-0">
+              {item.info}
+            </span>
+          )}
+        </div>
+        <span
+          className="text-sm text-slate-500 dark:text-slate-400 text-right shrink-0 w-6"
+        >
+          {item.trailing || `#${i + 1}`}
+        </span>
+      </li>
+    ));
+
   return (
     <div
       ref={containerRef}
@@ -192,108 +237,17 @@ export default function AutoScrollList({
       aria-label={ariaLabel}
     >
       {top10.length === 0 ? (
-        <div className="text-sm opacity-60 p-2">{emptyMessage}</div>
+        <div className="text-sm text-slate-500 dark:text-slate-400 p-2">{emptyMessage}</div>
       ) : (
         <div
           ref={runnerRef}
           className={`will-change-transform ${fillHeight ? "absolute inset-x-0 top-0" : ""}`.trim()}
         >
-          {/* List A (measure & display) */}
           <ul ref={measureRef} className="space-y-2">
-            {top10.map((item, i) => (
-              <li
-                key={`${item.id || item.title}-A-${i}`}
-                className="flex items-center justify-between gap-2"
-              >
-                <div className="flex items-center gap-2 min-w-0 flex-1">
-                  {item.image ? (
-                    <img src={item.image} alt="" className="w-8 h-8 rounded shrink-0" />
-                  ) : item.emoji ? (
-                    <span className="w-8 h-8 shrink-0 flex items-center justify-center">
-                      {item.emoji}
-                    </span>
-                  ) : null}
-                  {item.url ? (
-                    <a
-                      href={item.url}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-sm truncate flex-1 min-w-0"
-                      title={item.title}
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      <span className="font-semibold">{item.title}</span>
-                    </a>
-                  ) : (
-                    <span
-                      className="text-sm truncate flex-1 min-w-0"
-                      title={item.title}
-                    >
-                      <span className="font-semibold">{item.title}</span>
-                    </span>
-                  )}
-                  {item.info && (
-                    <span className="text-sm text-slate-500 dark:text-slate-400 shrink-0">
-                      {item.info}
-                    </span>
-                  )}
-                </div>
-                <span
-                  className="text-sm text-slate-500 dark:text-slate-400 text-right shrink-0 w-6"
-                >
-                  {item.trailing || `#${i + 1}`}
-                </span>
-              </li>
-            ))}
+            {renderListItems("A")}
           </ul>
-
-          {/* List B (duplicate for seamless loop) */}
           <ul className="space-y-2" aria-hidden="true">
-            {top10.map((item, i) => (
-              <li
-                key={`${item.id || item.title}-B-${i}`}
-                className="flex items-center justify-between gap-2"
-              >
-                <div className="flex items-center gap-2 min-w-0 flex-1">
-                  {item.image ? (
-                    <img src={item.image} alt="" className="w-8 h-8 rounded shrink-0" />
-                  ) : item.emoji ? (
-                    <span className="w-8 h-8 shrink-0 flex items-center justify-center">
-                      {item.emoji}
-                    </span>
-                  ) : null}
-                  {item.url ? (
-                    <a
-                      href={item.url}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-sm truncate flex-1 min-w-0"
-                      title={item.title}
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      <span className="font-semibold">{item.title}</span>
-                    </a>
-                  ) : (
-                    <span
-                      className="text-sm truncate flex-1 min-w-0"
-                      title={item.title}
-                    >
-                      <span className="font-semibold">{item.title}</span>
-                    </span>
-                  )}
-                  {item.info && (
-                    <span className="text-sm text-slate-500 dark:text-slate-400 shrink-0">
-                      {item.info}
-                    </span>
-                  )}
-                </div>
-                <span
-                  className="text-sm text-slate-500 dark:text-slate-400 text-right shrink-0 w-6"
-                >
-                  {item.trailing || `#${i + 1}`}
-                </span>
-              </li>
-            ))}
+            {renderListItems("B")}
           </ul>
         </div>
       )}
@@ -302,10 +256,6 @@ export default function AutoScrollList({
       <div className="pointer-events-none absolute inset-x-0 top-0 h-4 bg-gradient-to-b from-white/90 dark:from-slate-900/90 to-transparent" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-4 bg-gradient-to-t from-white/90 dark:from-slate-900/90 to-transparent" />
 
-      <style jsx>{`
-        .will-change-transform { will-change: transform; }
-        div[data-autoscroll] { overscroll-behavior: auto; touch-action: pan-y; }
-      `}</style>
     </div>
   );
 }

@@ -15,7 +15,7 @@ export default function EducationItem({ item, mode = 'expanded' }) {
     <Card className="h-full" data-mode={mode}>
       <CardHeader className="flex flex-col gap-3">
         <div className="flex items-center gap-5">
-          {img && <img src={img} alt={imageAlt} className="w-16 h-16 object-contain" />}
+          {img && <img src={img} alt={imageAlt} loading="lazy" className="w-16 h-16 object-contain" />}
           {!img && emoji && (
             <span className="text-3xl" aria-hidden="true">
               {emoji}
@@ -23,7 +23,7 @@ export default function EducationItem({ item, mode = 'expanded' }) {
           )}
           <CardTitle className="text-base sm:text-lg">{school}</CardTitle>
         </div>
-        {degree && <div className="text-sm opacity-70">{degree}</div>}
+        {degree && <div className="text-sm text-slate-500 dark:text-slate-400">{degree}</div>}
       </CardHeader>
       <CardContent>
         <ul className="list-disc pl-5 space-y-2">

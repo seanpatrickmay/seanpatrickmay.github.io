@@ -57,3 +57,9 @@ body { @apply min-h-screen bg-gradient-to-b from-white to-slate-50 text-slate-90
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+/* AutoScrollList */
+[data-autoscroll] {
+  overscroll-behavior: auto;
+  touch-action: pan-y;
+}
