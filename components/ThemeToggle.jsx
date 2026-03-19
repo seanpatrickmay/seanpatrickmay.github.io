@@ -8,7 +8,7 @@ export default function ThemeToggle() {
     <button onClick={toggle} aria-label="Toggle theme"
       className="pill-accent">
       {dark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-      <span className="hidden sm:inline">{dark ? "Light" : "Dark"}</span>
+      <span className="hidden sm:inline">{dark ? "light" : "dark"}</span>
     </button>
   );
 }

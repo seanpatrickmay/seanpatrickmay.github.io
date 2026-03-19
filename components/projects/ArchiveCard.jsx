@@ -27,7 +27,7 @@ export default function ArchiveCard({ project }) {
           />
         </Link>
       ) : (
-        <div className="h-32 bg-gradient-to-br from-slate-800 to-slate-700" />
+        <div className="h-32 bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900/40" />
       )}
       <div className="flex flex-1 flex-col gap-3 p-4">
         <div className="min-w-0">
@@ -56,7 +56,7 @@ export default function ArchiveCard({ project }) {
         <div className="mt-auto flex flex-wrap items-center gap-2 pt-1">
           {project.slug && (
             <PillLink href={href} variant="solid" className="px-4 text-sm">
-              Details
+              details
             </PillLink>
           )}
           {repoLink && (

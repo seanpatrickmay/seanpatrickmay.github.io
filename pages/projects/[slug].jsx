@@ -60,7 +60,7 @@ export default function ProjectDetail({ project }) {
       <main id="main-content" className="section-container pt-24 pb-16">
         <div className="mb-8">
           <a href="/projects/" className="text-sm text-slate-500 hover:text-teal-600 dark:text-slate-300 dark:hover:text-teal-400 transition-colors">
-            &larr; All projects
+            &larr; all projects
           </a>
         </div>
 
@@ -112,14 +112,19 @@ export default function ProjectDetail({ project }) {
 
           {proofList.length > 0 && (
             <div className="grid gap-3 sm:grid-cols-3 pt-2">
-              {proofList.map((point, i) => (
-                <div
-                  key={i}
-                  className="rounded-xl border border-teal-100 bg-teal-50/50 px-4 py-3 dark:border-teal-500/20 dark:bg-teal-950/30"
-                >
-                  <p className="text-sm text-slate-700 dark:text-slate-200 leading-snug">{point}</p>
-                </div>
-              ))}
+              {proofList.map((point, i) => {
+                const rotations = [-0.5, 0.3, -0.2, 0.4, -0.3];
+                const rotation = rotations[i % rotations.length];
+                return (
+                  <div
+                    key={i}
+                    className="rounded-xl border border-teal-200/80 bg-gradient-to-br from-teal-50/80 to-white px-4 py-3 shadow-sm dark:border-teal-500/20 dark:from-teal-950/30 dark:to-slate-900/50 motion-reduce:!rotate-0"
+                    style={{ transform: `rotate(${rotation}deg)` }}
+                  >
+                    <p className="text-sm text-slate-700 dark:text-slate-200 leading-snug">{point}</p>
+                  </div>
+                );
+              })}
             </div>
           )}
         </header>
@@ -131,7 +136,7 @@ export default function ProjectDetail({ project }) {
               {builtList.length > 0 && (
                 <div>
                   <h2 className="font-display text-xl tracking-tight text-slate-900 dark:text-slate-50 mb-4">
-                    What I built
+                    what i built
                   </h2>
                   <ul className="space-y-3">
                     {builtList.map((item, i) => (
@@ -147,17 +152,26 @@ export default function ProjectDetail({ project }) {
               {howList.length > 0 && (
                 <div>
                   <h2 className="font-display text-xl tracking-tight text-slate-900 dark:text-slate-50 mb-4">
-                    How it works
+                    how it works
                   </h2>
                   <ol className="space-y-3">
-                    {howList.map((item, i) => (
-                      <li key={i} className="flex gap-3 text-slate-700 dark:text-slate-300">
-                        <span className="mt-0.5 flex-shrink-0 w-6 h-6 rounded-full bg-slate-100 dark:bg-slate-800 text-xs font-semibold text-slate-600 dark:text-slate-300 flex items-center justify-center">
-                          {i + 1}
-                        </span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
+                    {howList.map((item, i) => {
+                      const colors = [
+                        'bg-teal-100 text-teal-700 dark:bg-teal-900/50 dark:text-teal-300',
+                        'bg-sky-100 text-sky-700 dark:bg-sky-900/50 dark:text-sky-300',
+                        'bg-amber-100 text-amber-700 dark:bg-amber-900/50 dark:text-amber-300',
+                        'bg-rose-100 text-rose-700 dark:bg-rose-900/50 dark:text-rose-300',
+                        'bg-violet-100 text-violet-700 dark:bg-violet-900/50 dark:text-violet-300',
+                      ];
+                      return (
+                        <li key={i} className="flex gap-3 text-slate-700 dark:text-slate-300">
+                          <span className={`mt-0.5 flex-shrink-0 w-6 h-6 rounded-full text-xs font-bold flex items-center justify-center ${colors[i % colors.length]}`}>
+                            {i + 1}
+                          </span>
+                          <span>{item}</span>
+                        </li>
+                      );
+                    })}
                   </ol>
                 </div>
               )}
@@ -167,14 +181,14 @@ export default function ProjectDetail({ project }) {
 
         {/* ── Results: callout style ── */}
         {resultsList.length > 0 && (
-          <section className="mb-12 rounded-2xl border border-slate-200/70 bg-gradient-to-br from-slate-50 to-white p-6 dark:border-slate-800/60 dark:from-slate-900 dark:to-slate-900/80">
+          <section className="mb-12 rounded-2xl border border-teal-200/60 bg-gradient-to-br from-teal-50/50 via-white to-sky-50/30 p-6 shadow-sm dark:border-teal-800/40 dark:from-teal-950/20 dark:via-slate-900 dark:to-slate-900/80">
             <h2 className="font-display text-xl tracking-tight text-slate-900 dark:text-slate-50 mb-4">
-              Results
+              results
             </h2>
             <ul className="space-y-2">
               {resultsList.map((item, i) => (
                 <li key={i} className="flex gap-3 text-slate-700 dark:text-slate-300">
-                  <span className="text-teal-500 mt-0.5 flex-shrink-0">&#10003;</span>
+                  <span className="text-teal-500 mt-0.5 flex-shrink-0 text-base">✓</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -186,17 +200,24 @@ export default function ProjectDetail({ project }) {
         {galleryList.length > 0 && (
           <section className="mb-12">
             <h2 className="font-display text-xl tracking-tight text-slate-900 dark:text-slate-50 mb-4">
-              Screenshots
+              screenshots
             </h2>
             <div className="grid gap-4 sm:grid-cols-2">
-              {galleryList.map((img, i) => (
-                <figure key={i} className="rounded-xl overflow-hidden border border-slate-200/70 bg-white/60 dark:border-slate-800/60 dark:bg-slate-900/60">
-                  <img src={img.src} alt={img.alt || ''} loading="lazy" className="w-full h-auto" />
-                  {img.caption && (
-                    <figcaption className="p-3 text-sm text-slate-500 dark:text-slate-300">{img.caption}</figcaption>
-                  )}
-                </figure>
-              ))}
+              {galleryList.map((img, i) => {
+                const rotations = [0.5, -0.8, 0.6, -0.4];
+                return (
+                  <figure
+                    key={i}
+                    className="rounded-xl overflow-hidden border border-slate-200/70 bg-white/60 shadow-sm transition-transform hover:scale-[1.01] dark:border-slate-800/60 dark:bg-slate-900/60 motion-reduce:!rotate-0 motion-reduce:hover:!scale-100"
+                    style={{ transform: `rotate(${rotations[i % rotations.length]}deg)` }}
+                  >
+                    <img src={img.src} alt={img.alt || ''} loading="lazy" className="w-full h-auto" />
+                    {img.caption && (
+                      <figcaption className="p-3 text-sm text-slate-500 dark:text-slate-300">{img.caption}</figcaption>
+                    )}
+                  </figure>
+                );
+              })}
             </div>
           </section>
         )}
@@ -204,8 +225,8 @@ export default function ProjectDetail({ project }) {
         {/* ── Next steps: subtle, at the bottom ── */}
         {nextList.length > 0 && (
           <section className="mb-12 border-t border-slate-200/70 dark:border-slate-800/60 pt-8">
-            <h2 className="text-sm font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-300 mb-3">
-              Next steps
+            <h2 className="text-sm font-semibold lowercase tracking-widest text-slate-500 dark:text-slate-300 mb-3">
+              what's next
             </h2>
             <ul className="space-y-1">
               {nextList.map((item, i) => (

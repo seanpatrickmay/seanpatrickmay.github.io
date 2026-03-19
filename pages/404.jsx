@@ -10,10 +10,19 @@ export default function NotFound() {
       </Head>
       <main className="flex min-h-screen items-center justify-center px-4">
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-teal-600 dark:text-teal-400">
-            404
-          </p>
-          <h1 className="mt-2 font-display text-4xl tracking-tight text-slate-900 dark:text-slate-50">
+          <div className="relative mx-auto mb-6 w-fit">
+            <span className="text-8xl font-extrabold tracking-tighter text-slate-200 dark:text-slate-800 select-none" aria-hidden="true">
+              404
+            </span>
+            <span
+              className="absolute inset-0 flex items-center justify-center text-5xl motion-reduce:!rotate-0"
+              style={{ transform: 'rotate(-6deg)' }}
+              aria-hidden="true"
+            >
+              🫠
+            </span>
+          </div>
+          <h1 className="font-display text-4xl tracking-tight text-slate-900 dark:text-slate-50">
             page not found
           </h1>
           <p className="mt-3 text-base text-slate-600 dark:text-slate-300">

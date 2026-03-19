@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Head from 'next/head';
 import fs from 'fs';
 import path from 'path';
@@ -13,10 +12,7 @@ import Hero from '@/components/Hero';
 import AboutSection from '@/components/AboutSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
-import StackedCardSection from '@/components/StackedCardSection';
-import ExperienceItem from '@/components/ExperienceItem';
-import EducationItem from '@/components/EducationItem';
-import { Briefcase, GraduationCap, ClipboardList } from 'lucide-react';
+import MapSection from '@/components/MapSection';
 
 const projects = validateProjects(rawProjects) ? rawProjects : [];
 const experience = validateExperience(rawExperience) ? rawExperience : [];
@@ -42,10 +38,10 @@ export async function getStaticProps() {
   };
 }
 
-const featuredProjects = [...projects]
-  .filter(project => typeof project.coolness === 'number')
-  .sort((a, b) => (b.coolness ?? -Infinity) - (a.coolness ?? -Infinity))
-  .slice(0, 3);
+const FEATURED_SLUGS = ['life-dashboard', 'nlhe-alpha-beta', 'lecteuraide'];
+const featuredProjects = FEATURED_SLUGS
+  .map(slug => projects.find(p => p.slug === slug))
+  .filter(Boolean);
 
 const lifeDashboardProject =
   projects.find(project => project.slug === 'life-dashboard') ?? null;
@@ -85,16 +81,13 @@ const education = [
 ];
 
 export default function Home({ statsData, spotifyData, goodreadsData }) {
-  const [activeSectionId, setActiveSectionId] = useState(null);
-
-
   return (
     <>
       <Head>
         <title>Sean P. May — Portfolio</title>
         <meta
           name="description"
-          content="Sean May — software engineer and mathematician at Northeastern University. Projects in AI, quant research, computer vision, and full-stack development."
+          content="Sean May — SWE and mathematician at Northeastern University. Projects in AI, quant research, computer vision, and full-stack development."
         />
       </Head>
 
@@ -110,43 +103,7 @@ export default function Home({ statsData, spotifyData, goodreadsData }) {
             goodreadsData={goodreadsData}
           />
 
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-            <StackedCardSection
-              id="experience"
-              title="Work Experience"
-              icon={Briefcase}
-              items={experience}
-              keyExtractor={job => job.org}
-              className="!py-6 !px-0"
-              renderItem={(job, _index, state) => <ExperienceItem job={job} mode={state.mode} />}
-              activeSectionId={activeSectionId}
-              onActiveSectionChange={setActiveSectionId}
-            />
-
-            <StackedCardSection
-              id="education"
-              title="Education"
-              icon={GraduationCap}
-              items={education}
-              keyExtractor={item => item.school}
-              className="!py-6 !px-0"
-              renderItem={(item, _index, state) => <EducationItem item={item} mode={state.mode} />}
-              activeSectionId={activeSectionId}
-              onActiveSectionChange={setActiveSectionId}
-            />
-
-            <StackedCardSection
-              id="other-work"
-              title="Leadership & Activities"
-              icon={ClipboardList}
-              items={otherWork}
-              keyExtractor={job => job.org}
-              className="!py-6 !px-0"
-              renderItem={(job, _index, state) => <ExperienceItem job={job} mode={state.mode} />}
-              activeSectionId={activeSectionId}
-              onActiveSectionChange={setActiveSectionId}
-            />
-          </div>
+          <MapSection />
 
           <ContactSection links={links} />
           <Footer links={links} />

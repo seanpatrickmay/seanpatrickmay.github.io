@@ -38,7 +38,7 @@ export default function CaseStudyCard({ project, variant = 'default', className 
           />
         </div>
       ) : (
-        <div className={`${coverHeightClass} bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700`} />
+        <div className={`${coverHeightClass} bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900/40`} />
       )}
 
       <div className={`flex flex-1 flex-col ${bodySpacingClass}`}>
@@ -84,7 +84,7 @@ export default function CaseStudyCard({ project, variant = 'default', className 
 
         <div className="mt-auto flex flex-wrap items-center gap-2">
           <PillLink href={href} variant="solid" className="px-4 text-sm">
-            Deep dive
+            deep dive
           </PillLink>
           {liveLink && (
             <PillLink href={liveLink.href} external variant="outline" className="px-4 text-sm">

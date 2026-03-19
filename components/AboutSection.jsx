@@ -3,11 +3,11 @@ import SpotifyTopArtists from '@/components/SpotifyTopArtists';
 import Section from '@/components/ui/Section';
 import HobbySpotlight from '@/components/HobbySpotlight';
 import LineSparkline from '@/components/ui/LineSparkline';
+import BarSparkline from '@/components/ui/BarSparkline';
 import { getBostonJourneyEquivalence } from '@/lib/journeyEquivalents';
 import GoodreadsCard from '@/components/GoodreadsCard';
 import Pinboard from '@/components/Pinboard';
 import PinCard from '@/components/PinCard';
-import ProjectPolaroid from '@/components/ProjectPolaroid';
 import { Sparkles } from 'lucide-react';
 
 function parseDateOnlyLocal(value) {
@@ -35,18 +35,12 @@ const MILK_KCAL_PER_CUP = 150;
 
 export default function AboutSection({
   featuredActivities = [],
-  projectHighlights = [],
-  projectHighlight = null,
   statsData = null,
   spotifyData = null,
   goodreadsData = null,
 }) {
   const stats = statsData;
   const spotify = spotifyData;
-  const highlights = Array.isArray(projectHighlights) ? projectHighlights.filter(Boolean) : [];
-  if (highlights.length === 0 && projectHighlight) highlights.push(projectHighlight);
-  const hasHighlights = highlights.length > 0;
-
   const combined = stats?.stats?.combined;
   const weeklySeries = Array.isArray(combined?.weekly?.series) ? combined.weekly.series : [];
   const recent = Array.isArray(combined?.recent?.last60) ? combined.recent.last60 : [];
@@ -110,12 +104,17 @@ export default function AboutSection({
     { title: 'Escape Rooms', emoji: '🗝️' },
   ];
 
+  const weekLabels = weeklySeries.map(row => {
+    const d = parseDateOnlyLocal(row?.week_start);
+    return d ? d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' }) : '';
+  });
+
   return (
     <Section id="about" title="about me" icon={Sparkles}>
       <Pinboard>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
 
-          {/* Training Stats */}
+          {/* Training Stats — expanded */}
           <PinCard rotation={-1.8} pinColor="red">
             <div className="border border-stone-200 bg-white p-4 dark:border-stone-700 dark:bg-stone-800">
               <div className="text-[10px] font-semibold uppercase tracking-widest text-stone-500 dark:text-stone-400">
@@ -134,14 +133,35 @@ export default function AboutSection({
                 <span>·</span>
                 <span>~{totalMilkCupsLabel} cups milk</span>
               </div>
+
+              {/* Cumulative sparkline */}
               <LineSparkline
                 values={cumulativeHours}
                 height={40}
                 className="mt-3 text-stone-900 dark:text-white"
                 label="Cumulative training hours over 8 weeks"
               />
+
+              {/* Weekly bar chart */}
+              {weeklyHours.length > 1 && (
+                <div className="mt-4 border-t border-stone-100 pt-3 dark:border-stone-700">
+                  <div className="text-[10px] font-semibold uppercase tracking-widest text-stone-500 dark:text-stone-400 mb-2">
+                    hours per week
+                  </div>
+                  <BarSparkline
+                    values={weeklyHours}
+                    height={48}
+                    labels={weekLabels}
+                    labelOrientation="stacked"
+                    labelClassName="text-[9px] text-stone-400 dark:text-stone-500"
+                    formatter={(v) => `${v.toFixed(1)} hrs`}
+                    className="text-teal-600 dark:text-teal-400"
+                  />
+                </div>
+              )}
+
               {kmJourney && (
-                <div className="mt-1.5 text-[11px] font-medium text-teal-600 dark:text-teal-400">
+                <div className="mt-2 text-[11px] font-medium text-teal-600 dark:text-teal-400">
                   ~{kmJourney.percent}% of the way to {kmJourney.destination}
                 </div>
               )}
@@ -151,22 +171,14 @@ export default function AboutSection({
             </div>
           </PinCard>
 
-          {/* Spotify (combined) */}
+          {/* Top Artists — own card */}
           <PinCard rotation={1.5} pinColor="blue" pinPosition="right">
             <div className="rounded-sm bg-slate-800 p-4 text-white dark:bg-slate-900">
               <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-400">
                 🎵 top artists
               </div>
               <div className="mt-2">
-                <SpotifyTopArtists artists={spotify?.artists ?? []} visibleCount={5} />
-              </div>
-              <div className="mt-3 border-t border-slate-700 pt-3">
-                <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-400">
-                  🎧 top tracks
-                </div>
-                <div className="mt-2">
-                  <SpotifyTopTracks tracks={spotify?.tracks ?? []} visibleCount={5} />
-                </div>
+                <SpotifyTopArtists artists={spotify?.artists ?? []} visibleCount={7} />
               </div>
             </div>
           </PinCard>
@@ -178,26 +190,17 @@ export default function AboutSection({
             </div>
           </PinCard>
 
-          {/* Project Polaroids */}
-          {hasHighlights && (
-            <div className="relative">
-              <ProjectPolaroid
-                project={highlights[0]}
-                rotation={-2}
-                pinColor="teal"
-              />
-              {highlights[1] && (
-                <div className="hidden sm:block">
-                  <ProjectPolaroid
-                    project={highlights[1]}
-                    rotation={3}
-                    pinColor="yellow"
-                    peek
-                  />
-                </div>
-              )}
+          {/* Top Tracks — own card */}
+          <PinCard rotation={-0.8} pinColor="yellow" pinPosition="left">
+            <div className="rounded-sm bg-slate-800 p-4 text-white dark:bg-slate-900">
+              <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-400">
+                🎧 top tracks
+              </div>
+              <div className="mt-2">
+                <SpotifyTopTracks tracks={spotify?.tracks ?? []} visibleCount={7} />
+              </div>
             </div>
-          )}
+          </PinCard>
 
           {/* Hobby stickers */}
           <div className="sm:col-span-2 pt-2">

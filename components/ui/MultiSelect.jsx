@@ -7,7 +7,7 @@ export default function MultiSelect({
   options = [],
   selected = [],
   onChange,
-  placeholder = 'Select…',
+  placeholder = 'select…',
 }) {
   const commit = values => {
     if (typeof onChange === 'function') {
@@ -59,7 +59,7 @@ export default function MultiSelect({
             <Listbox.Options className="absolute z-30 mt-2 max-h-56 w-full overflow-auto rounded-xl border border-slate-200 bg-white py-2 text-sm shadow-lg focus:outline-none dark:border-slate-700 dark:bg-slate-900">
               {options.length === 0 ? (
                 <div className="px-4 py-2 text-slate-500 dark:text-slate-300">
-                  Nothing to select.
+                  nothing to select
                 </div>
               ) : (
                 options.map(option => (

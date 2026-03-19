@@ -29,7 +29,7 @@ export default function ProjectHero({ project }) {
             />
           </Link>
         ) : (
-          <div className="h-56 sm:h-64 lg:h-full lg:min-h-[320px] bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700" />
+          <div className="h-56 sm:h-64 lg:h-full lg:min-h-[320px] bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900/40" />
         )}
 
         <div className="flex flex-col gap-5 p-6 sm:p-8 lg:p-10">
@@ -65,7 +65,7 @@ export default function ProjectHero({ project }) {
 
           <div className="mt-auto flex flex-wrap items-center gap-3 pt-2">
             <PillLink href={href} variant="solid" className="px-5">
-              Deep dive
+              deep dive
             </PillLink>
             {liveLink && (
               <PillLink href={liveLink.href} external variant="outline" className="px-4 text-sm">

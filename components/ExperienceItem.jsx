@@ -44,9 +44,12 @@ export default function ExperienceItem({ job, mode = 'expanded' }) {
         )}
       </CardHeader>
       <CardContent>
-        <ul className="list-disc pl-5 space-y-2">
+        <ul className="space-y-2">
           {bullets.map((b, i) => (
-            <li key={i}>{b}</li>
+            <li key={i} className="flex gap-3 text-slate-700 dark:text-slate-300">
+              <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-teal-500" />
+              <span>{b}</span>
+            </li>
           ))}
         </ul>
       </CardContent>

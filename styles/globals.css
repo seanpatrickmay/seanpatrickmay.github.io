@@ -13,11 +13,16 @@ html {
   .animate-fade-up {
     animation: none !important;
   }
+  /* Override inline rotation styles for reduced motion */
+  .pin-card,
+  [style*="rotate"] {
+    transform: none !important;
+  }
 }
 
 /* Light (default) */
 :root { color-scheme: light; }
-body { @apply min-h-screen bg-gradient-to-b from-white to-slate-50 text-slate-900; }
+body { @apply min-h-screen bg-gradient-to-b from-white via-slate-50/80 to-stone-50/50 text-slate-900; }
 
 /* Dark */
 .dark body { @apply min-h-screen bg-gradient-to-b from-slate-950 to-slate-900 text-slate-100; }
@@ -27,7 +32,9 @@ body { @apply min-h-screen bg-gradient-to-b from-white to-slate-50 text-slate-90
 /* Shared */
 .card { box-shadow: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06); }
 .badge { @apply inline-flex items-center px-3 py-1 rounded-full text-sm bg-slate-100; }
-.pill { @apply px-3 py-2 rounded-full; }
+.pill { @apply px-3 py-2 rounded-full; transition: transform 0.15s ease; }
+.pill:hover { transform: translateY(-1px); }
+@media (prefers-reduced-motion: reduce) { .pill:hover { transform: none; } }
 .pill-accent {
   @apply pill inline-flex items-center gap-2 font-medium border border-transparent shadow-sm transition-colors;
   @apply bg-teal-600 text-white hover:bg-teal-700;
@@ -59,6 +66,21 @@ body { @apply min-h-screen bg-gradient-to-b from-white to-slate-50 text-slate-90
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+/* Playful hover lift for cards */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.08), 0 2px 4px rgba(0,0,0,.06);
+}
+.dark .card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,.35), 0 2px 4px rgba(0,0,0,.25);
+}
+@media (prefers-reduced-motion: reduce) {
+  .card:hover { transform: none; }
 }
 
 /* AutoScrollList */

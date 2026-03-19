@@ -26,7 +26,7 @@ export default function ProjectPolaroid({
         className="absolute -bottom-2 -right-2 z-[5] w-[140px] border border-stone-200 bg-white p-1.5 pb-2.5 dark:border-stone-700 dark:bg-stone-800"
       >
         <div
-          className="h-[50px] w-full rounded-sm bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700"
+          className="h-[50px] w-full rounded-sm bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900/40"
           style={coverStyle}
         />
         <div className="px-1.5 pt-1.5">
@@ -46,7 +46,7 @@ export default function ProjectPolaroid({
       className="border border-stone-200 bg-white p-1.5 pb-3.5 dark:border-stone-700 dark:bg-stone-800"
     >
       <div
-        className="h-20 w-full rounded-sm bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 sm:h-24"
+        className="h-20 w-full rounded-sm bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900/40 sm:h-24"
         style={coverStyle}
       />
       <div className="px-2 pt-2">

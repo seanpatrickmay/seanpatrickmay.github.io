@@ -42,15 +42,25 @@ export default function SkillCategoryCard({ category, mode = 'expanded' }) {
         <div className={`grid gap-3 ${columns.length > 1 ? 'sm:grid-cols-2' : ''}`}>
           {columns.map((column, index) => (
             <ul key={index} className="space-y-2">
-              {column.map(item => (
-                <li
-                  key={item}
-                  className="flex items-center gap-2 rounded-xl border border-white/10 bg-white px-3 py-2 text-sm font-medium text-slate-900 shadow-sm dark:border-white/10 dark:bg-slate-900 dark:text-white"
-                >
-                  <span className="text-xs font-semibold text-slate-500 dark:text-white/60">•</span>
-                  <span>{item}</span>
-                </li>
-              ))}
+              {column.map((item, i) => {
+                const dotColors = [
+                  'text-teal-500',
+                  'text-sky-500',
+                  'text-amber-500',
+                  'text-rose-400',
+                  'text-violet-500',
+                  'text-emerald-500',
+                ];
+                return (
+                  <li
+                    key={item}
+                    className="flex items-center gap-2 rounded-xl border border-slate-100 bg-white px-3 py-2 text-sm font-medium text-slate-900 shadow-sm dark:border-slate-800 dark:bg-slate-900 dark:text-white"
+                  >
+                    <span className={`text-xs font-bold ${dotColors[(index * column.length + i) % dotColors.length]}`}>•</span>
+                    <span>{item}</span>
+                  </li>
+                );
+              })}
             </ul>
           ))}
         </div>

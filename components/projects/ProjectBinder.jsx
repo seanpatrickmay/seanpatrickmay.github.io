@@ -88,7 +88,7 @@ function BinderPanel({ project, isOpen }) {
                 />
               </Link>
             ) : (
-              <div className="h-48 sm:h-56 rounded-xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700" />
+              <div className="h-48 sm:h-56 rounded-xl bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900/40" />
             )}
 
             <div className="flex flex-col gap-4">
@@ -126,7 +126,7 @@ function BinderPanel({ project, isOpen }) {
 
               <div className="flex flex-wrap items-center gap-2 pt-1">
                 <PillLink href={href} variant="solid" className="px-4 text-sm">
-                  Deep dive
+                  deep dive
                 </PillLink>
                 {liveLink && (
                   <PillLink href={liveLink.href} external variant="outline" className="px-4 text-sm">

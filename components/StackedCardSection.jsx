@@ -154,7 +154,7 @@ export default function StackedCardSection({
         data-expanded={isActive ? 'true' : 'false'}
       >
         <div className="rounded-2xl border border-slate-200 bg-white/70 p-6 text-sm text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-200">
-          Nothing to display yet.
+          nothing here yet
         </div>
       </Section>
     );

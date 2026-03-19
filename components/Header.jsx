@@ -14,12 +14,12 @@ import {
 } from 'lucide-react';
 
 const navItems = [
-  { id: 'home', label: 'Home', icon: Home },
-  { id: 'about', label: 'About', icon: Sparkles },
-  { id: 'projects', label: 'Projects', icon: Trophy },
-  { id: 'experience', label: 'Work Experience', icon: Briefcase },
-  { id: 'education', label: 'Education', icon: GraduationCap },
-  { id: 'other-work', label: 'Leadership & Activities', icon: ClipboardList },
+  { id: 'home', label: 'home', icon: Home },
+  { id: 'about', label: 'about me', icon: Sparkles },
+  { id: 'projects', label: 'projects', icon: Trophy },
+  { id: 'experience', label: 'work', icon: Briefcase },
+  { id: 'education', label: 'education', icon: GraduationCap },
+  { id: 'other-work', label: 'other', icon: ClipboardList },
 ];
 
 export default function Header({ links }) {
@@ -64,7 +64,7 @@ export default function Header({ links }) {
       <header className="fixed inset-x-0 top-0 z-40 border-b border-slate-200/70 bg-white/80 backdrop-blur dark:border-slate-800/60 dark:bg-slate-950/70 lg:hidden">
         <div className="section-container flex h-16 items-center justify-between">
           <a href="#home" className="font-bold tracking-tight text-xl">
-            Sean P. May
+            sean p. may
           </a>
           <div className="flex items-center gap-2">
             <ThemeToggle />
@@ -117,13 +117,13 @@ export default function Header({ links }) {
                     Sean P. May
                   </a>
                   <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-                    i write software and do math
+                    i write code and do math
                   </p>
                 </div>
                 <div className="mt-4 space-y-4 text-sm text-slate-600 dark:text-slate-300">
                   <div>
-                    <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-300">
-                      Now
+                    <div className="text-xs font-semibold lowercase tracking-wide text-slate-500 dark:text-slate-300">
+                      now
                     </div>
                     <ul className="mt-3 space-y-2">
                       <li className="flex items-start gap-2">
@@ -173,8 +173,8 @@ export default function Header({ links }) {
                     </ul>
                   </div>
                   <div>
-                    <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-300">
-                      Previously
+                    <div className="text-xs font-semibold lowercase tracking-wide text-slate-500 dark:text-slate-300">
+                      previously
                     </div>
                     <ul className="mt-3 space-y-2">
                       <li className="flex items-start gap-2">
@@ -202,8 +202,8 @@ export default function Header({ links }) {
                     </ul>
                   </div>
                   <div>
-                    <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-300">
-                      Upcoming
+                    <div className="text-xs font-semibold lowercase tracking-wide text-slate-500 dark:text-slate-300">
+                      up next
                     </div>
                     <div className="mt-3 flex items-start gap-2">
                       <span className="mt-0.5" aria-hidden="true">
@@ -221,8 +221,8 @@ export default function Header({ links }) {
               </section>
 
               <section aria-label="Navigation" className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-lg dark:border-slate-800/70 dark:bg-slate-900">
-                <div className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-300">
-                  Navigate
+                <div className="text-xs font-semibold lowercase tracking-[0.2em] text-slate-500 dark:text-slate-300">
+                  navigate
                 </div>
                 <nav aria-label="Primary" className="mt-4 space-y-1.5">
                   {navItems.map(({ id, label, icon: Icon }) => (
@@ -241,8 +241,8 @@ export default function Header({ links }) {
               </section>
 
               <section aria-label="Contact" className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-lg dark:border-slate-800/70 dark:bg-slate-900">
-                <div className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-300">
-                  Get in touch
+                <div className="text-xs font-semibold lowercase tracking-[0.2em] text-slate-500 dark:text-slate-300">
+                  say hi
                 </div>
                 <div className="mt-4 flex flex-col gap-2">
                   <PillLink
@@ -251,7 +251,7 @@ export default function Header({ links }) {
                     variant="solid"
                     className="w-full justify-center px-4"
                   >
-                    Say Hello
+                    say hi
                   </PillLink>
                 </div>
                 <div className="mt-4 flex flex-wrap justify-center gap-3">

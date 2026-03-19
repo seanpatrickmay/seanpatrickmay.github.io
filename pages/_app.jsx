@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Sean P. May — Portfolio" />
-        <meta name="twitter:description" content="SWE &amp; math at Northeastern — AI tutoring, quant research, prediction markets, and more." />
+        <meta name="twitter:description" content="swe, math, and whatever looks interesting — AI tutoring, quant research, and more." />
         <meta name="twitter:image" content="https://seanpatrickmay.me/images/headshot.png" />
       </Head>
       <a

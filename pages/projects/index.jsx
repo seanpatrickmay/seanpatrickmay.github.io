@@ -256,20 +256,20 @@ export default function ProjectsIndex() {
       <main id="main-content" className="section-container pt-24 pb-16 space-y-12">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
-            <h1 className="font-display text-4xl tracking-tight">Projects</h1>
+            <h1 className="font-display text-4xl tracking-tight">projects</h1>
             <p className="text-slate-600 dark:text-slate-300 mt-2 max-w-2xl">
               things i've built — some i'm proud of, and some that taught me a lot
             </p>
           </div>
           <PillLink href="/" variant="outline" className="px-4">
-            Home
+            home
           </PillLink>
         </div>
 
         {caseStudies.length > 0 && (
           <section className="space-y-8">
             <h2 className="font-display text-xl tracking-tight text-slate-900 dark:text-slate-50">
-              Deep Dives
+              deep dives
             </h2>
 
             {caseStudies.length > 0 && (
@@ -291,7 +291,7 @@ export default function ProjectsIndex() {
               <input
                 id="project-search"
                 type="search"
-                placeholder="Search projects..."
+                placeholder="search projects..."
                 value={query}
                 onChange={event => setQuery(event.target.value)}
                 className="w-full rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100"
@@ -322,7 +322,7 @@ export default function ProjectsIndex() {
                 onClick={() => setFiltersOpen(previous => !previous)}
                 className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-slate-500"
               >
-                Filters{activeFacetCount ? ` (${activeFacetCount})` : ''}
+                filters{activeFacetCount ? ` (${activeFacetCount})` : ''}
               </button>
               {hasActiveFilters && (
                 <button
@@ -330,7 +330,7 @@ export default function ProjectsIndex() {
                   onClick={handleClearFilters}
                   className="px-3 py-2 text-sm font-medium text-slate-500 hover:text-teal-600 dark:text-slate-400 dark:hover:text-teal-400 transition-colors"
                 >
-                  Clear
+                  clear
                 </button>
               )}
             </div>
@@ -360,18 +360,18 @@ export default function ProjectsIndex() {
           {filtersOpen && (
             <div className="mt-3 grid gap-3 sm:grid-cols-2">
               <MultiSelect
-                label="Tags"
+                label="tags"
                 options={PROJECT_TAGS}
                 selected={selectedTags}
                 onChange={values => setSelectedTags([...values].sort((a, b) => a.localeCompare(b)))}
-                placeholder="Select tags"
+                placeholder="select tags"
               />
               <MultiSelect
-                label="Languages"
+                label="languages"
                 options={PROJECT_LANGUAGES}
                 selected={selectedLanguages}
                 onChange={values => setSelectedLanguages([...values].sort((a, b) => a.localeCompare(b)))}
-                placeholder="Select languages"
+                placeholder="select languages"
               />
             </div>
           )}
@@ -393,7 +393,7 @@ export default function ProjectsIndex() {
               <div className="space-y-4">
                 <div className="flex items-baseline justify-between gap-4">
                   <h2 className="font-display text-xl tracking-tight text-slate-900 dark:text-slate-50">
-                    Project Archive
+                    project archive
                   </h2>
                   <div className="text-sm text-slate-500 dark:text-slate-300">
                     {archiveProjects.length} project{archiveProjects.length === 1 ? '' : 's'}
