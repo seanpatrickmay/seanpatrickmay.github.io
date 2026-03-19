@@ -258,7 +258,7 @@ export default function ProjectsIndex() {
           <div>
             <h1 className="font-display text-4xl tracking-tight">Projects</h1>
             <p className="text-slate-600 dark:text-slate-300 mt-2 max-w-2xl">
-              A few projects I&apos;m proud of, and a few more I learned a lot from.
+              things i've built — some i'm proud of, and some that taught me a lot
             </p>
           </div>
           <PillLink href="/" variant="outline" className="px-4">
@@ -386,7 +386,7 @@ export default function ProjectsIndex() {
 
           {filteredProjects.length === 0 ? (
             <div className="rounded-2xl border border-dashed border-slate-300 bg-white/60 p-8 text-center text-sm text-slate-600 dark:border-slate-700 dark:bg-slate-900/60 dark:text-slate-300">
-              No projects match those filters. Try adjusting your search or clearing selections.
+              nothing matches those filters, try adjusting your search or clearing some
             </div>
           ) : (
             archiveProjects.length > 0 && (

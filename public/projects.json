@@ -14,8 +14,8 @@
       "Garmin API",
       "Spotify API"
     ],
-    "oneLiner": "Next.js portfolio with live Garmin training stats, Spotify feeds, and 16 project case studies—statically exported to GitHub Pages.",
-    "cardDescription": "Statically exported Next.js portfolio with live Garmin and Spotify data widgets, filterable project archive, and per-project case study pages.",
+    "oneLiner": "this site. pulls my Garmin and Spotify data live, has writeups for all my projects, and it's just static HTML on GitHub Pages",
+    "cardDescription": "my portfolio — live Garmin and Spotify widgets, a filterable project archive, and individual writeups for each project",
     "languages": [
       "JavaScript",
       "Python"
@@ -89,9 +89,9 @@
       "TypeScript",
       "OpenAI"
     ],
-    "oneLiner": "Full-stack personal OS with auto iMessage ingestion, calendar sync, project tracking, AI-powered todos, and Garmin biometrics—all rendered in a Monet-inspired pixel art interface.",
+    "oneLiner": "my personal command center — it reads my iMessages, syncs my calendar, generates AI todos, tracks Garmin biometrics, and the whole thing is wrapped in a Monet-inspired pixel art UI",
     "featuredDescription": "Personal command center: auto iMessage ingestion, calendar + project integration, AI-generated todos, and biometric tracking.",
-    "cardDescription": "Auto iMessage ingestion, calendar sync, project tracking, AI todos, and Garmin biometrics in a Monet pixel art UI.",
+    "cardDescription": "auto iMessage ingestion, calendar sync, AI-generated todos, and Garmin biometrics in a pixel art Monet theme",
     "languages": [
       "Python",
       "TypeScript"
@@ -167,9 +167,9 @@
       "Cloud Translation",
       "Next.js"
     ],
-    "oneLiner": "Six-stage NLP pipeline using Gemini 1.5 Pro and Cloud Translation that turns French PDFs into scene-segmented reading experiences with sentence-level translation, vocabulary extraction, and comprehension quizzes.",
-    "featuredDescription": "French reading companion: Gemini-powered scene segmentation, sentence-level translation, vocab extraction, and quizzes.",
-    "cardDescription": "Gemini-powered French reader with scene segmentation, translation, vocab, and quizzes.",
+    "oneLiner": "takes French PDFs and turns them into actual reading experiences — scene segmentation, sentence-by-sentence translation, vocab extraction, and quizzes. i built it because looking things up word by word was killing me",
+    "featuredDescription": "French reading companion — Gemini splits books into scenes with translation, vocab, and comprehension quizzes.",
+    "cardDescription": "French reading companion — Gemini splits books into scenes with translation, vocab, and comprehension quizzes",
     "languages": [
       "Python",
       "TypeScript"
@@ -242,9 +242,9 @@
       "Computer Vision",
       "HTML"
     ],
-    "oneLiner": "Two-stage PyTorch pipeline (~7.5M params each) that localizes a hand bounding box then classifies raised finger count, trained on a custom annotated dataset.",
-    "featuredDescription": "Two-stage PyTorch pipeline: hand localization then finger-count classification with a custom dataset and Flask demo.",
-    "cardDescription": "Two-stage PyTorch CV pipeline: hand detection then finger-count classification.",
+    "oneLiner": "two PyTorch CNNs — first one finds your hand in the frame, second one counts how many fingers you're holding up. trained on a dataset i annotated myself",
+    "featuredDescription": "two-stage CV pipeline: find the hand, then count the fingers. custom dataset and a Flask demo",
+    "cardDescription": "two-stage CV pipeline: find the hand, then count the fingers. custom dataset and a Flask demo",
     "languages": [
       "Python"
     ],
@@ -315,8 +315,8 @@
       "Earth Engine",
       "scikit-learn"
     ],
-    "oneLiner": "Multi-language pipeline (Python, JavaScript, R) that downloads GOES satellite imagery via Earth Engine, converts to GOFER-format JSON, and runs locational logistic regressions over fire spread.",
-    "cardDescription": "Wildfire research pipeline: Earth Engine satellite downloads, GOFER-format JSON normalization, scikit-learn logistic regressions, and a canvas-based fire viewer.",
+    "oneLiner": "research pipeline that pulls GOES satellite data through Earth Engine, converts it to GOFER-format JSON, and runs regressions on how fires spread. Python, JavaScript, and R all in one repo",
+    "cardDescription": "wildfire research — satellite data downloads, JSON normalization, logistic regressions, and a canvas viewer for the outputs",
     "languages": [
       "Python",
       "JavaScript"
@@ -389,8 +389,8 @@
       "TypeScript",
       "Docker"
     ],
-    "oneLiner": "Automated market-making engine for prediction markets that manages inventory risk, dynamically adjusts bid-ask spreads based on sentiment signals, and executes across Kalshi and Polymarket.",
-    "cardDescription": "Prediction market maker: real-time sentiment-driven spread pricing, inventory risk management, multi-venue quote execution, and a React monitoring dashboard.",
+    "oneLiner": "automated market maker for prediction markets — ingests sentiment signals, prices two-sided quotes, manages inventory risk, and executes across Kalshi and Polymarket",
+    "cardDescription": "prediction market MM with sentiment-driven spread pricing, inventory risk management, and a React dashboard for monitoring everything",
     "languages": [
       "Python",
       "TypeScript"
@@ -460,8 +460,8 @@
       "phevaluator",
       "CFR+"
     ],
-    "oneLiner": "CFR+ solver for heads-up NLHE with k-means card abstraction, external sampling, and a FastAPI web frontend with live 13x13 range visualization.",
-    "cardDescription": "CFR+ poker solver: 100K iterations of external sampling MCCFR, card bucketing, and a web UI with live range heatmaps.",
+    "oneLiner": "CFR+ solver for heads-up no limit — k-means card abstraction, 100K iterations of external sampling, and a web UI where you can play the bot and see its ranges live",
+    "cardDescription": "poker solver with 100K iterations of CFR+, card bucketing, and a web app with live 13x13 range heatmaps",
     "languages": [
       "Python"
     ],
@@ -531,8 +531,8 @@
       "Gradle",
       "HTML"
     ],
-    "oneLiner": "Spring Boot app that solves multi-leg MBTA commutes by matching trip IDs across lines, computing walk and transfer buffers, and serving leave-by times through a REST API.",
-    "cardDescription": "Spring Boot commute solver: multi-leg trip matching across MBTA lines with walk/transfer buffers and a leave-by planner UI.",
+    "oneLiner": "tells you when to leave for the T — matches trips across lines, adds walking and transfer time, and gives you a leave-by recommendation",
+    "cardDescription": "MBTA commute solver — multi-leg trip matching with walk and transfer buffers, plus a leave-by planner",
     "languages": [
       "Java"
     ],
@@ -599,8 +599,8 @@
       "CrewAI",
       "ChromaDB"
     ],
-    "oneLiner": "Agentic study pipeline using CrewAI and ChromaDB that converts PDFs and lecture notes into Anki flashcard decks and difficulty-weighted LaTeX cheat sheets.",
-    "cardDescription": "Agentic study pipeline: CrewAI agents + ChromaDB RAG turn PDFs into Anki flashcard decks and difficulty-weighted LaTeX cheat sheets.",
+    "oneLiner": "give it your PDFs and lecture notes, it gives you back Anki flashcard decks and LaTeX cheat sheets weighted by difficulty. built with CrewAI agents and ChromaDB for retrieval",
+    "cardDescription": "upload your notes, get back Anki decks and difficulty-weighted cheat sheets. CrewAI agents and ChromaDB under the hood",
     "languages": [
       "Python",
       "JavaScript"
@@ -666,8 +666,8 @@
       "Python",
       "Genetic Algorithms"
     ],
-    "oneLiner": "Genetic algorithm that solves N-Queens via tournament selection and adaptive 1/N mutation—finds conflict-free boards for N=8 in under 500 generations.",
-    "cardDescription": "N-Queens GA solver with tournament selection (k=3), single-point crossover, and 1/N adaptive mutation rate—solves N=8 in ~500 generations.",
+    "oneLiner": "genetic algorithm for N-Queens — tournament selection, adaptive mutation rate, solves N=8 in under 500 generations",
+    "cardDescription": "GA solver with tournament selection, single-point crossover, and adaptive mutation. solves N=8 in around 500 generations",
     "languages": [
       "Python"
     ],
@@ -732,8 +732,8 @@
       "javalib.impworld",
       "javalib.worldimages"
     ],
-    "oneLiner": "Java world program that generates mazes via Kruskal's algorithm on weighted grids, animates BFS and DFS solutions frame-by-frame, and supports manual keyboard play.",
-    "cardDescription": "Java maze generator using Kruskal's on weighted grids with tick-based BFS/DFS animation and an arrow-key manual play mode.",
+    "oneLiner": "generates mazes with Kruskal's algorithm, then you can watch BFS or DFS solve them frame by frame, or just play through it yourself with arrow keys",
+    "cardDescription": "maze generator with animated BFS and DFS solvers, plus a manual play mode with arrow keys",
     "languages": [
       "Java"
     ],
@@ -796,8 +796,8 @@
       "Java",
       "Swing"
     ],
-    "oneLiner": "Hex-grid Reversi in 48 classes with cube-coordinate geometry, a composable AI strategy framework (TryTwo combinator), and a Swing GUI—plus a full adapter layer for third-party provider integration.",
-    "cardDescription": "Hex-grid Reversi: 48-class MVC architecture with cube coordinates, composable AI strategies via TryTwo combinator, and adapter-pattern provider integration.",
+    "oneLiner": "Reversi on a hex grid — 48-class MVC architecture with cube coordinates, composable AI strategies, and a full adapter layer for plugging in third-party code",
+    "cardDescription": "hex Reversi with composable AI strategies, cube-coordinate geometry, and adapter-pattern integration for third-party providers",
     "languages": [
       "Java"
     ],
@@ -861,8 +861,8 @@
       "Concurrency",
       "Data Structures"
     ],
-    "oneLiner": "793-line C shell with recursive arbitrary-depth piping, I/O redirection, 5 built-ins, and a custom dynamic vector for tokenization.",
-    "cardDescription": "Custom C shell in 793 lines: recursive arbitrary-depth piping, input/output redirection, tokenizer with quote handling, and 5 built-in commands.",
+    "oneLiner": "custom shell in 793 lines of C — recursive piping at arbitrary depth, I/O redirection, and a hand-rolled dynamic vector for tokenization",
+    "cardDescription": "793-line C shell with recursive piping, I/O redirection, quote-aware tokenizer, and 5 built-in commands",
     "languages": [
       "C"
     ],

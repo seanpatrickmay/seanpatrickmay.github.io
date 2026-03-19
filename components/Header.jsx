@@ -117,7 +117,7 @@ export default function Header({ links }) {
                     Sean P. May
                   </a>
                   <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-                    Software engineer &amp; mathematician.
+                    i write software and do math
                   </p>
                 </div>
                 <div className="mt-4 space-y-4 text-sm text-slate-600 dark:text-slate-300">

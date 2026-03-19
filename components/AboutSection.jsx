@@ -212,7 +212,7 @@ export default function AboutSection({
           <div className="space-y-4">
             <div className="space-y-4">
               <h3 className="font-display text-2xl tracking-tight text-slate-900 dark:text-slate-50">
-                Off the clock
+                when i'm not coding
               </h3>
 
               <HobbySpotlight hobbies={hobbySpotlights} />
@@ -221,7 +221,7 @@ export default function AboutSection({
             {hasHighlights && (
               <div className="space-y-4">
                 <h3 className="font-display text-2xl tracking-tight text-slate-900 dark:text-slate-50">
-                  Project spotlights
+                  projects worth showing
                 </h3>
                 <div className="grid gap-6 md:grid-cols-2">
                   {highlights.map(project => (

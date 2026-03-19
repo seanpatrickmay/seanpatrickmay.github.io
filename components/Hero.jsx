@@ -29,10 +29,10 @@ export default function Hero({ links, featuredProjects = [] }) {
 
           <div className="animate-fade-up [animation-delay:100ms]">
             <p className="text-xl md:text-2xl font-semibold leading-snug text-slate-800 dark:text-slate-200">
-              SWE &amp; Math.
+              software, math, and whatever looks interesting
             </p>
             <p className="text-lg md:text-xl text-slate-500 dark:text-slate-300 mt-1">
-              Big fan of hard problems.
+              i really like hard problems
             </p>
           </div>
 
@@ -42,7 +42,7 @@ export default function Hero({ links, featuredProjects = [] }) {
           </div>
 
           <p className="text-base text-slate-600 dark:text-slate-300 leading-relaxed animate-fade-up [animation-delay:200ms]">
-            Built an agentic AI tutor at NExT, now doing quant research and heading to Capital One this summer. Triathlons, prompting, reading, and stacking some chips in between.
+            built an agentic AI tutor at NExT, now i'm doing quant research and heading to Capital One this summer. triathlons, prompting, reading, and stacking some chips in between
           </p>
 
           <div className="flex flex-wrap gap-3 pt-2 animate-fade-up [animation-delay:300ms]">
@@ -53,7 +53,7 @@ export default function Hero({ links, featuredProjects = [] }) {
               LinkedIn
             </PillLink>
             <PillLink href={links.email} variant="solid" icon={Mail} className="px-4">
-              Get in touch
+              say hi
             </PillLink>
           </div>
         </div>
@@ -101,7 +101,7 @@ export default function Hero({ links, featuredProjects = [] }) {
               </div>
 
               <PillLink href="/projects/" variant="solid" className="px-3 text-sm">
-                Browse all projects
+                see all projects
               </PillLink>
             </CardContent>
           </Card>
