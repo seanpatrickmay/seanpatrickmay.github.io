@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ExternalLink } from 'lucide-react';
 
 export default function PillLink({ href, children, icon: Icon, variant = 'outline', external = false, className = '' }) {
   const variantClass =
@@ -19,6 +20,8 @@ export default function PillLink({ href, children, icon: Icon, variant = 'outlin
       >
         {Icon && <Icon className="w-4 h-4" />}
         {children}
+        <ExternalLink className="w-3 h-3 opacity-50" aria-hidden="true" />
+        <span className="sr-only">(opens in new tab)</span>
       </a>
     );
   }

@@ -31,7 +31,7 @@ export default function ArchiveCard({ project }) {
       )}
       <div className="flex flex-1 flex-col gap-3 p-4">
         <div className="min-w-0">
-          <Link href={href} className="text-base font-semibold text-slate-900 dark:text-slate-50 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-2">
+          <Link href={href} className="text-base font-semibold text-slate-900 dark:text-slate-50 hover:text-teal-600 dark:hover:text-teal-400 transition-colors flex items-center gap-2">
             {project.emoji && <span aria-hidden="true">{project.emoji}</span>}
             {project.title}
           </Link>

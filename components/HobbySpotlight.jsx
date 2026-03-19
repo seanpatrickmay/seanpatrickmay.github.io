@@ -1,27 +1,5 @@
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
-
-export default function HobbySpotlight({ hobbies = [], layout = 'grid' }) {
+export default function HobbySpotlight({ hobbies = [] }) {
   if (!Array.isArray(hobbies) || hobbies.length === 0) return null;
-
-  const cards = hobbies.map(hobby => (
-    <Card key={hobby.title} className="bg-white/70 shadow-sm dark:bg-slate-900/60">
-      <CardHeader className="pb-0">
-        <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
-          <span className="text-xl" aria-hidden="true">
-            {hobby.emoji}
-          </span>
-          {hobby.title}
-        </CardTitle>
-      </CardHeader>
-      <CardContent className="pt-3">
-        <p className="text-sm text-slate-600 dark:text-slate-300">{hobby.description}</p>
-      </CardContent>
-    </Card>
-  ));
-
-  if (layout === 'stack') {
-    return <div className="flex flex-col gap-4">{cards}</div>;
-  }
 
   const lgColumnsClass = (() => {
     if (hobbies.length >= 4) return 'lg:grid-cols-4';
@@ -31,6 +9,23 @@ export default function HobbySpotlight({ hobbies = [], layout = 'grid' }) {
   })();
 
   return (
-    <div className={`grid gap-4 sm:grid-cols-2 ${lgColumnsClass}`}>{cards}</div>
+    <div className={`grid gap-4 sm:grid-cols-2 ${lgColumnsClass}`}>
+      {hobbies.map(hobby => (
+        <div
+          key={hobby.title}
+          className="flex items-start gap-3 rounded-xl border border-slate-200/60 bg-white/50 px-4 py-3 dark:border-slate-800/50 dark:bg-slate-900/30"
+        >
+          <span className="text-xl mt-0.5" aria-hidden="true">{hobby.emoji}</span>
+          <div className="min-w-0">
+            <div className="text-sm font-semibold text-slate-900 dark:text-slate-50">
+              {hobby.title}
+            </div>
+            <p className="text-sm text-slate-600 dark:text-slate-300 mt-0.5">
+              {hobby.description}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
   );
 }

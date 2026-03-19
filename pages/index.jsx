@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import Head from 'next/head';
+import fs from 'fs';
+import path from 'path';
 import rawProjects from '@/public/projects.json' assert { type: 'json' };
 import rawExperience from '@/public/experience.json' assert { type: 'json' };
 import rawOtherWork from '@/public/other-work.json' assert { type: 'json' };
@@ -19,6 +21,26 @@ import { Briefcase, GraduationCap, ClipboardList } from 'lucide-react';
 const projects = validateProjects(rawProjects) ? rawProjects : [];
 const experience = validateExperience(rawExperience) ? rawExperience : [];
 const otherWork = validateWork(rawOtherWork) ? rawOtherWork : [];
+
+function readJsonSafe(filename) {
+  try {
+    const filePath = path.join(process.cwd(), 'public', filename);
+    const raw = fs.readFileSync(filePath, 'utf-8');
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      statsData: readJsonSafe('stats.json'),
+      spotifyData: readJsonSafe('spotify.json'),
+      goodreadsData: readJsonSafe('goodreads.json'),
+    },
+  };
+}
 
 const featuredProjects = [...projects]
   .filter(project => typeof project.coolness === 'number')
@@ -68,7 +90,7 @@ const interests = [
   'Escape Rooms',
 ];
 
-export default function Home() {
+export default function Home({ statsData, spotifyData, goodreadsData }) {
   const [activeSectionId, setActiveSectionId] = useState(null);
 
 
@@ -90,6 +112,9 @@ export default function Home() {
             interests={interests}
             featuredActivities={otherWork}
             projectHighlights={[lifeDashboardProject, lecteurAideProject].filter(Boolean)}
+            statsData={statsData}
+            spotifyData={spotifyData}
+            goodreadsData={goodreadsData}
           />
 
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">

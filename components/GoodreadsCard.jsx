@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import { BookOpen } from 'lucide-react';
 
@@ -11,16 +10,7 @@ function StarRating({ rating }) {
   );
 }
 
-export default function GoodreadsCard() {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    fetch('/goodreads.json')
-      .then(r => (r.ok ? r.json() : null))
-      .then(setData)
-      .catch(() => setData(null));
-  }, []);
-
+export default function GoodreadsCard({ data = null }) {
   const currentlyReading = data?.currentlyReading ?? [];
   const recent = data?.recentlyRead ?? [];
 
@@ -55,7 +45,7 @@ export default function GoodreadsCard() {
                       />
                     )}
                     <div className="min-w-0">
-                      <div className="text-sm font-semibold text-slate-900 dark:text-slate-50 leading-snug group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                      <div className="text-sm font-semibold text-slate-900 dark:text-slate-50 leading-snug group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
                         {book.title}
                       </div>
                       <div className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
@@ -92,7 +82,7 @@ export default function GoodreadsCard() {
                       />
                     )}
                     <div className="min-w-0 flex-1">
-                      <div className="text-sm text-slate-800 dark:text-slate-200 leading-snug group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors truncate">
+                      <div className="text-sm text-slate-800 dark:text-slate-200 leading-snug group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors truncate">
                         {book.title}
                       </div>
                       <div className="flex items-center gap-2 mt-0.5">

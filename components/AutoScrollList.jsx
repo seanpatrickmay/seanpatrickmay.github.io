@@ -235,6 +235,10 @@ export default function AutoScrollList({
       data-autoscroll
       className={`relative overflow-hidden select-none min-h-0 ${fillHeight ? "h-full" : ""} ${className}`.trim()}
       aria-label={ariaLabel}
+      style={{
+        maskImage: 'linear-gradient(to bottom, transparent, black 12px, black calc(100% - 12px), transparent)',
+        WebkitMaskImage: 'linear-gradient(to bottom, transparent, black 12px, black calc(100% - 12px), transparent)',
+      }}
     >
       {top10.length === 0 ? (
         <div className="text-sm text-slate-500 dark:text-slate-400 p-2">{emptyMessage}</div>
@@ -251,10 +255,6 @@ export default function AutoScrollList({
           </ul>
         </div>
       )}
-
-      {/* Soft masks */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-4 bg-gradient-to-b from-white/90 dark:from-slate-900/90 to-transparent" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-4 bg-gradient-to-t from-white/90 dark:from-slate-900/90 to-transparent" />
 
     </div>
   );

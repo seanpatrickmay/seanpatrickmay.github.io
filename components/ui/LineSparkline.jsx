@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-export default function LineSparkline({ values = [], height = 64, className = '' }) {
+export default function LineSparkline({ values = [], height = 64, className = '', label = '' }) {
   const points = useMemo(() => {
     const data = Array.isArray(values) ? values.map(v => (Number.isFinite(Number(v)) ? Number(v) : 0)) : [];
     if (data.length === 0) return [];
@@ -21,9 +21,24 @@ export default function LineSparkline({ values = [], height = 64, className = ''
     ? `M 0 100 L ${polylinePoints} L 100 100 Z`
     : '';
 
+  const lastValue = points.length ? points[points.length - 1].value : null;
+  const firstValue = points.length ? points[0].value : null;
+  const trend = lastValue != null && firstValue != null
+    ? lastValue > firstValue ? 'upward' : lastValue < firstValue ? 'downward' : 'flat'
+    : '';
+  const accessibleLabel = label || (trend ? `Sparkline chart showing ${trend} trend` : 'Sparkline chart');
+
   return (
     <div className={`w-full ${className}`} style={{ minWidth: 0 }}>
-      <svg viewBox="0 0 100 100" width="100%" height={height} preserveAspectRatio="none" className="block">
+      <svg
+        viewBox="0 0 100 100"
+        width="100%"
+        height={height}
+        preserveAspectRatio="none"
+        className="block"
+        role="img"
+        aria-label={accessibleLabel}
+      >
         <line x1="0" y1="100" x2="100" y2="100" stroke="currentColor" opacity="0.15" />
         {areaPath && <path d={areaPath} fill="currentColor" opacity="0.12" />}
         {polylinePoints && (
@@ -48,4 +63,3 @@ export default function LineSparkline({ values = [], height = 64, className = ''
     </div>
   );
 }
-

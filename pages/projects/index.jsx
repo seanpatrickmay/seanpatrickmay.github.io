@@ -254,7 +254,7 @@ export default function ProjectsIndex() {
       <main id="main-content" className="section-container pt-24 pb-16 space-y-8">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
-            <h1 className="text-3xl font-bold tracking-tight">Projects</h1>
+            <h1 className="font-display text-4xl tracking-tight">Projects</h1>
             <p className="text-slate-600 dark:text-slate-300 mt-2 max-w-2xl">
               A few projects I&apos;m proud of, and a few more I learned a lot from.
             </p>
@@ -267,7 +267,7 @@ export default function ProjectsIndex() {
         {caseStudies.length > 0 && (
           <section className="space-y-4">
             <div className="flex items-baseline justify-between gap-4">
-              <h2 className="text-lg font-semibold tracking-tight text-slate-900 dark:text-slate-50">
+              <h2 className="font-display text-xl tracking-tight text-slate-900 dark:text-slate-50">
                 Deep Dives
               </h2>
               <div className="text-sm text-slate-500 dark:text-slate-400">
@@ -282,7 +282,7 @@ export default function ProjectsIndex() {
           </section>
         )}
 
-        <section className="rounded-2xl border border-slate-200/60 bg-white/80 px-4 py-3 shadow-sm backdrop-blur dark:border-slate-800/60 dark:bg-slate-950/60 lg:sticky lg:top-20 lg:z-20">
+        <section className="rounded-2xl border border-slate-200/60 bg-white px-4 py-3 shadow-sm dark:border-slate-800/60 dark:bg-slate-900 lg:sticky lg:top-20 lg:z-20">
           <div className="flex flex-wrap items-center gap-3">
             <div className="flex-1 min-w-[200px]">
               <label className="sr-only" htmlFor="project-search">
@@ -294,7 +294,7 @@ export default function ProjectsIndex() {
                 placeholder="Search projects..."
                 value={query}
                 onChange={event => setQuery(event.target.value)}
-                className="w-full rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100"
+                className="w-full rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100"
               />
             </div>
 
@@ -307,9 +307,9 @@ export default function ProjectsIndex() {
                     type="button"
                     onClick={() => setSortOption(option.value)}
                     aria-pressed={isActive}
-                    className={`rounded-full border px-3 py-1.5 text-xs font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
+                    className={`rounded-full border px-4 py-2 text-sm font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
                       isActive
-                        ? 'border-indigo-600 bg-indigo-600 text-white dark:border-indigo-400 dark:bg-indigo-500 dark:text-white'
+                        ? 'border-teal-600 bg-teal-600 text-white dark:border-teal-400 dark:bg-teal-500 dark:text-white'
                         : 'border-slate-200 bg-white text-slate-600 hover:border-slate-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-slate-500'
                     }`}
                   >
@@ -320,7 +320,7 @@ export default function ProjectsIndex() {
               <button
                 type="button"
                 onClick={() => setFiltersOpen(previous => !previous)}
-                className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-700 transition hover:border-slate-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-slate-500"
+                className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-slate-500"
               >
                 Filters{activeFacetCount ? ` (${activeFacetCount})` : ''}
               </button>
@@ -328,7 +328,7 @@ export default function ProjectsIndex() {
                 <button
                   type="button"
                   onClick={handleClearFilters}
-                  className="text-xs font-medium text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400 transition-colors"
+                  className="px-3 py-2 text-sm font-medium text-slate-500 hover:text-teal-600 dark:text-slate-400 dark:hover:text-teal-400 transition-colors"
                 >
                   Clear
                 </button>
@@ -345,9 +345,9 @@ export default function ProjectsIndex() {
                   type="button"
                   onClick={() => toggleQuickFilter(filter.value)}
                   aria-pressed={isActive}
-                  className={`rounded-full border px-3 py-1.5 text-xs font-medium transition ${
+                  className={`rounded-full border px-4 py-2 text-sm font-medium transition ${
                     isActive
-                      ? 'border-indigo-600 bg-indigo-600 text-white dark:border-indigo-400 dark:bg-indigo-500 dark:text-white'
+                      ? 'border-teal-600 bg-teal-600 text-white dark:border-teal-400 dark:bg-teal-500 dark:text-white'
                       : 'border-slate-200 bg-white text-slate-500 hover:border-slate-300 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-400 dark:hover:border-slate-500'
                   }`}
                 >
@@ -392,7 +392,7 @@ export default function ProjectsIndex() {
             archiveProjects.length > 0 && (
               <div className="space-y-4">
                 <div className="flex items-baseline justify-between gap-4">
-                  <h2 className="text-lg font-semibold tracking-tight text-slate-900 dark:text-slate-50">
+                  <h2 className="font-display text-xl tracking-tight text-slate-900 dark:text-slate-50">
                     Project Archive
                   </h2>
                   <div className="text-sm text-slate-500 dark:text-slate-400">

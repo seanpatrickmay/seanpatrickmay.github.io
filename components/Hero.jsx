@@ -18,7 +18,7 @@ export default function Hero({ links, featuredProjects = [] }) {
               className="w-20 h-20 rounded-full object-cover object-top ring-2 ring-slate-200/80 dark:ring-slate-700/80 shadow-md flex-shrink-0"
             />
             <div>
-              <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+              <h1 className="font-display text-3xl md:text-4xl tracking-tight text-slate-900 dark:text-white">
                 Sean P. May
               </h1>
               <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">Boston, MA</p>
@@ -71,7 +71,7 @@ export default function Hero({ links, featuredProjects = [] }) {
                     <Link
                       key={project?.slug ?? project?.title ?? href}
                       href={href}
-                      className="group block rounded-2xl border border-slate-200/60 bg-white/60 p-3 shadow-sm transition hover:bg-white hover:border-indigo-200 dark:border-slate-800/60 dark:bg-slate-950/50 dark:hover:bg-slate-900/60 dark:hover:border-indigo-500/30"
+                      className="group block rounded-2xl border border-slate-200/60 bg-white/60 p-3 shadow-sm transition hover:bg-white hover:border-teal-200 dark:border-slate-800/60 dark:bg-slate-950/50 dark:hover:bg-slate-900/60 dark:hover:border-teal-500/30"
                     >
                       <div className="flex items-start gap-3">
                         {project?.emoji && (
@@ -89,7 +89,7 @@ export default function Hero({ links, featuredProjects = [] }) {
                             </div>
                           )}
                         </div>
-                        <span className="text-slate-400 transition group-hover:text-indigo-500 dark:group-hover:text-indigo-400">
+                        <span className="text-slate-400 transition group-hover:text-teal-500 dark:group-hover:text-teal-400">
                           &rarr;
                         </span>
                       </div>

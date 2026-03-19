@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import Badge from '@/components/ui/Badge';
 import SpotifyTopTracks from '@/components/SpotifyTopTracks';
 import SpotifyTopArtists from '@/components/SpotifyTopArtists';
@@ -9,7 +8,7 @@ import CaseStudyCard from '@/components/projects/CaseStudyCard';
 import LineSparkline from '@/components/ui/LineSparkline';
 import { getBostonJourneyEquivalence } from '@/lib/journeyEquivalents';
 import GoodreadsCard from '@/components/GoodreadsCard';
-import { Sparkles, TrendingUp, Music, ClipboardList, Users } from 'lucide-react';
+import { Sparkles, TrendingUp, Music, Users } from 'lucide-react';
 
 function parseDateOnlyLocal(value) {
   if (typeof value !== 'string') return null;
@@ -29,28 +28,6 @@ function startOfLocalDay(date) {
   return new Date(date.getFullYear(), date.getMonth(), date.getDate());
 }
 
-function useStats() {
-  const [stats, setStats] = useState(null);
-  useEffect(() => {
-    fetch('/stats.json')
-      .then(r => (r.ok ? r.json() : null))
-      .then(setStats)
-      .catch(() => setStats(null));
-  }, []);
-  return stats;
-}
-
-function useSpotify() {
-  const [data, setData] = useState(null);
-  useEffect(() => {
-    fetch('/spotify.json')
-      .then(r => (r.ok ? r.json() : null))
-      .then(setData)
-      .catch(() => setData(null));
-  }, []);
-  return data;
-}
-
 const KM_FORMAT = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
 const KCAL_FORMAT = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
 const MILK_FORMAT = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
@@ -61,9 +38,12 @@ export default function AboutSection({
   featuredActivities = [],
   projectHighlights = [],
   projectHighlight = null,
+  statsData = null,
+  spotifyData = null,
+  goodreadsData = null,
 }) {
-  const stats = useStats();
-  const spotify = useSpotify();
+  const stats = statsData;
+  const spotify = spotifyData;
   const activities = Array.isArray(featuredActivities) ? featuredActivities : [];
   const highlights = Array.isArray(projectHighlights) ? projectHighlights.filter(Boolean) : [];
   if (highlights.length === 0 && projectHighlight) highlights.push(projectHighlight);
@@ -155,14 +135,7 @@ export default function AboutSection({
 
   return (
     <Section id="about" title="About me" icon={Sparkles}>
-      <div className="relative">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 -z-10 opacity-30 dark:opacity-20"
-          style={{
-            background: 'radial-gradient(60% 40% at 50% 20%, rgba(15,23,42,0.08), transparent 60%)'
-          }}
-        />
+      <div>
         <div className="space-y-10">
           <div className="space-y-6">
             <div className="grid gap-6 sm:grid-cols-2">
@@ -181,13 +154,13 @@ export default function AboutSection({
                       </div>
                     </div>
 
-                    <LineSparkline values={cumulativeHours} height={56} className="text-slate-900 dark:text-white" />
+                    <LineSparkline values={cumulativeHours} height={56} className="text-slate-900 dark:text-white" label="Cumulative training hours over 8 weeks" />
                     {rangeLabel && (
                       <div className="text-xs text-slate-500 dark:text-slate-400">{rangeLabel}</div>
                     )}
 
-                    <div className="grid grid-cols-2 gap-3 pt-1">
-                      <div className="rounded-xl border border-slate-200/60 bg-white/60 p-3 text-center dark:border-slate-800/60 dark:bg-slate-950/50">
+                    <div className="grid grid-cols-2 gap-4 pt-1">
+                      <div className="text-center">
                         <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
                           Total KM
                         </div>
@@ -196,23 +169,23 @@ export default function AboutSection({
                         </div>
                         {kmJourney && (
                           <div className="mt-1 text-xs text-slate-500 dark:text-slate-400 leading-snug">
-                            Equivalent to ~{kmJourney.percent}% of the way to {kmJourney.destination}
+                            ~{kmJourney.percent}% to {kmJourney.destination}
                           </div>
                         )}
                       </div>
                       <div
-                        className="rounded-xl border border-slate-200/60 bg-white/60 p-3 text-center dark:border-slate-800/60 dark:bg-slate-950/50"
+                        className="text-center"
                         title={`Rough conversion: 1 cup milk ≈ ${MILK_KCAL_PER_CUP} kcal`}
                       >
                         <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
-                          Total Calories
+                          Calories
                         </div>
                         <div className="text-xl font-extrabold text-slate-900 dark:text-white">
                           {totalCaloriesLabel}
                         </div>
                         {totalCalories8w != null && (
                           <div className="mt-1 text-xs text-slate-500 dark:text-slate-400 leading-snug">
-                            Equivalent to ~{totalMilkCupsLabel} cups milk
+                            ~{totalMilkCupsLabel} cups milk
                           </div>
                         )}
                       </div>
@@ -221,7 +194,7 @@ export default function AboutSection({
                 </CardContent>
               </Card>
 
-              <GoodreadsCard />
+              <GoodreadsCard data={goodreadsData} />
 
               <Card className="bg-white/70 shadow-sm dark:bg-slate-900/60 h-full">
                 <CardHeader>
@@ -246,7 +219,7 @@ export default function AboutSection({
           <div className="space-y-4">
             <div className="space-y-4">
               <div className="flex items-center justify-between gap-4">
-                <h3 className="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-50">
+                <h3 className="font-display text-2xl tracking-tight text-slate-900 dark:text-slate-50">
                   Off the clock
                 </h3>
                 {extraInterests.length > 0 && (
@@ -271,7 +244,7 @@ export default function AboutSection({
 
             {hasHighlights && (
               <div className="space-y-4">
-                <h3 className="text-2xl font-semibold tracking-tight text-slate-900 dark:text-slate-50">
+                <h3 className="font-display text-2xl tracking-tight text-slate-900 dark:text-slate-50">
                   Project spotlights
                 </h3>
                 <div className="grid gap-6 md:grid-cols-2">

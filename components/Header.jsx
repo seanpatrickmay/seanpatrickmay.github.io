@@ -85,14 +85,14 @@ export default function Header({ links }) {
         </nav>
       </header>
 
-      <aside className="hidden lg:block lg:flex-none lg:self-stretch">
+      <aside aria-label="Sidebar navigation" className="hidden lg:block lg:flex-none lg:self-stretch">
         <div className="sticky top-6">
           <div className="flex min-h-[calc(100vh_-_3rem)] flex-col justify-center py-6">
             <div
               className="flex w-72 flex-col gap-5 transition-transform duration-300 ease-out will-change-transform"
               style={{ transform: `translateY(${scrollOffset}px)` }}
             >
-              <section className="rounded-3xl border border-slate-200/80 bg-white/90 p-6 shadow-xl backdrop-blur dark:border-slate-800/70 dark:bg-slate-950/70">
+              <section className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-lg dark:border-slate-800/70 dark:bg-slate-900">
                 <div className="flex items-start justify-between">
                   <img
                     src="/images/headshot.png"
@@ -104,7 +104,7 @@ export default function Header({ links }) {
                 <div className="mt-3 space-y-1">
                   <a
                     href="#home"
-                    className="text-2xl font-bold tracking-tight text-slate-900 transition hover:text-slate-700 dark:text-slate-100 dark:hover:text-slate-300"
+                    className="font-display text-2xl tracking-tight text-slate-900 transition hover:text-slate-700 dark:text-slate-100 dark:hover:text-slate-300"
                   >
                     Sean P. May
                   </a>
@@ -212,7 +212,7 @@ export default function Header({ links }) {
                 </div>
               </section>
 
-              <section className="rounded-3xl border border-slate-200/80 bg-white/90 p-6 shadow-xl backdrop-blur dark:border-slate-800/70 dark:bg-slate-950/70">
+              <section className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-lg dark:border-slate-800/70 dark:bg-slate-900">
                 <div className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500">
                   Navigate
                 </div>
@@ -232,7 +232,7 @@ export default function Header({ links }) {
                 </nav>
               </section>
 
-              <section className="rounded-3xl border border-slate-200/80 bg-white/90 p-6 shadow-xl backdrop-blur dark:border-slate-800/70 dark:bg-slate-950/70">
+              <section className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-lg dark:border-slate-800/70 dark:bg-slate-900">
                 <div className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500">
                   Get in touch
                 </div>
@@ -246,25 +246,13 @@ export default function Header({ links }) {
                     Say Hello
                   </PillLink>
                 </div>
-                <div className="mt-4 flex flex-wrap justify-center gap-4 text-sm text-slate-500 dark:text-slate-400">
-                  <a
-                    href={links.github}
-                    className="group inline-flex items-center gap-2 transition hover:text-slate-700 dark:hover:text-slate-200"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    <Github className="h-4 w-4 text-slate-400 transition group-hover:text-slate-700 dark:text-slate-500 dark:group-hover:text-slate-200" />
+                <div className="mt-4 flex flex-wrap justify-center gap-3">
+                  <PillLink href={links.github} icon={Github} external variant="ghost" className="text-sm">
                     GitHub
-                  </a>
-                  <a
-                    href={links.linkedin}
-                    className="group inline-flex items-center gap-2 transition hover:text-slate-700 dark:hover:text-slate-200"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    <Linkedin className="h-4 w-4 text-slate-400 transition group-hover:text-slate-700 dark:text-slate-500 dark:group-hover:text-slate-200" />
+                  </PillLink>
+                  <PillLink href={links.linkedin} icon={Linkedin} external variant="ghost" className="text-sm">
                     LinkedIn
-                  </a>
+                  </PillLink>
                 </div>
               </section>
             </div>

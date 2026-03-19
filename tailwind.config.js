@@ -10,8 +10,11 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: [
-          'ui-sans-serif','system-ui','-apple-system','Segoe UI','Roboto','Inter','Helvetica Neue','Arial','Noto Sans','sans-serif'
-        ]
+          '"DM Sans"','ui-sans-serif','system-ui','-apple-system','sans-serif'
+        ],
+        display: [
+          '"Instrument Serif"','Georgia','ui-serif','serif'
+        ],
       },
       keyframes: {
         'fade-up': {
@@ -26,4 +29,3 @@ module.exports = {
   },
   plugins: [],
 }
-

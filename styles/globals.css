@@ -18,7 +18,7 @@ body { @apply min-h-screen bg-gradient-to-b from-white to-slate-50 text-slate-90
 
 /* Dark */
 .dark body { @apply min-h-screen bg-gradient-to-b from-slate-950 to-slate-900 text-slate-100; }
-.dark .card { @apply bg-slate-900 border-slate-800; }
+.dark .card { @apply bg-slate-900 border-slate-800; box-shadow: 0 1px 3px rgba(0,0,0,.25), 0 1px 2px rgba(0,0,0,.18); }
 .dark .badge { @apply bg-slate-800 text-slate-100; }
 
 /* Shared */
@@ -27,10 +27,10 @@ body { @apply min-h-screen bg-gradient-to-b from-white to-slate-50 text-slate-90
 .pill { @apply px-3 py-2 rounded-full; }
 .pill-accent {
   @apply pill inline-flex items-center gap-2 font-medium border border-transparent shadow-sm transition-colors;
-  @apply bg-indigo-600 text-white hover:bg-indigo-700;
-  @apply dark:bg-indigo-500 dark:text-white dark:hover:bg-indigo-400;
-  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400;
-  @apply dark:focus-visible:outline-indigo-300;
+  @apply bg-teal-600 text-white hover:bg-teal-700;
+  @apply dark:bg-teal-500 dark:text-white dark:hover:bg-teal-400;
+  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-400;
+  @apply dark:focus-visible:outline-teal-300;
 }
 .pill-outline {
   @apply pill inline-flex items-center gap-2 font-medium border shadow-sm transition-colors;
