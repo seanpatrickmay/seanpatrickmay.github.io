@@ -63,18 +63,18 @@ export default function Header({ links }) {
   useEffect(() => {
     if (typeof window === 'undefined') return undefined;
 
-    const aboutEl = document.getElementById('about');
-    if (!aboutEl) return undefined;
+    const experienceEl = document.getElementById('experience');
+    if (!experienceEl) return undefined;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // Hide sidebar once the top of the about section nears the top of the viewport
-        setSidebarHidden(!entry.isIntersecting && entry.boundingClientRect.top < 0);
+        // Hide sidebar 300px before the experience section enters the viewport
+        setSidebarHidden(entry.isIntersecting || entry.boundingClientRect.top < 0);
       },
-      { rootMargin: '0px 0px 600px 0px', threshold: 0 },
+      { rootMargin: '-300px 0px 0px 0px', threshold: 0 },
     );
 
-    observer.observe(aboutEl);
+    observer.observe(experienceEl);
 
     return () => observer.disconnect();
   }, []);
