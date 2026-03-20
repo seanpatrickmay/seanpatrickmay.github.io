@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import ThemeToggle from '@/components/ThemeToggle';
 import PillLink from '@/components/ui/PillLink';
+import PinCard from '@/components/PinCard';
 import {
   Briefcase,
   ClipboardList,
@@ -113,7 +114,7 @@ export default function Header({ links }) {
 
       <aside
         aria-label="Sidebar navigation"
-        className="hidden lg:block lg:flex-none lg:self-stretch overflow-hidden transition-all duration-500 ease-out"
+        className={`hidden lg:block lg:flex-none lg:self-stretch transition-all duration-500 ease-out ${sidebarHidden ? 'overflow-hidden' : 'overflow-visible'}`}
         style={{ width: sidebarHidden ? 0 : 288 }}
       >
         <div className="sticky top-6">
@@ -127,14 +128,15 @@ export default function Header({ links }) {
                 opacity: sidebarHidden ? 0 : 1,
               }}
             >
-              <section aria-label="About" className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-lg dark:border-slate-800/70 dark:bg-slate-900">
+              <PinCard rotation={-1.2} pinColor="red">
+              <section aria-label="About" className="rounded-3xl border border-stone-300/80 bg-stone-50 p-6 shadow-lg dark:border-stone-700/70 dark:bg-stone-900">
                 <div className="flex items-start justify-between">
                   <img
                     src="/images/headshot.png"
                     alt="Sean P. May"
                     width={400}
                     height={400}
-                    className="w-14 h-14 rounded-full object-cover object-top ring-2 ring-slate-200/60 dark:ring-slate-700/60"
+                    className="w-14 h-14 rounded-full object-cover object-top ring-2 ring-stone-200/60 dark:ring-stone-700/60"
                   />
                   <ThemeToggle />
                 </div>
@@ -248,8 +250,10 @@ export default function Header({ links }) {
                   </div>
                 </div>
               </section>
+              </PinCard>
 
-              <section aria-label="Navigation" className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-lg dark:border-slate-800/70 dark:bg-slate-900">
+              <PinCard rotation={0.8} pinColor="teal">
+              <section aria-label="Navigation" className="rounded-3xl border border-stone-300/80 bg-stone-50 p-6 shadow-lg dark:border-stone-700/70 dark:bg-stone-900">
                 <div className="text-xs font-semibold lowercase tracking-[0.2em] text-slate-500 dark:text-slate-300">
                   navigate
                 </div>
@@ -258,9 +262,9 @@ export default function Header({ links }) {
                     <a
                       key={id}
                       href={`#${id}`}
-                      className="group flex items-center gap-3 rounded-2xl px-3 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 dark:text-slate-300 dark:hover:bg-slate-900 dark:hover:text-white"
+                      className="group flex items-center gap-3 rounded-2xl px-3 py-2 text-sm font-medium text-stone-600 transition hover:bg-stone-100 hover:text-stone-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 dark:text-stone-300 dark:hover:bg-stone-800 dark:hover:text-white"
                     >
-                      <span className="flex h-8 w-8 items-center justify-center rounded-xl border border-transparent bg-slate-100 text-slate-600 transition group-hover:border-slate-300 group-hover:bg-white group-hover:text-slate-900 dark:bg-slate-900 dark:text-slate-400 dark:group-hover:border-slate-700 dark:group-hover:bg-slate-800 dark:group-hover:text-white">
+                      <span className="flex h-8 w-8 items-center justify-center rounded-xl border border-transparent bg-stone-100 text-stone-600 transition group-hover:border-stone-300 group-hover:bg-white group-hover:text-stone-900 dark:bg-stone-800 dark:text-stone-400 dark:group-hover:border-stone-600 dark:group-hover:bg-stone-700 dark:group-hover:text-white">
                         <Icon className="h-4 w-4" />
                       </span>
                       {label}
@@ -268,8 +272,10 @@ export default function Header({ links }) {
                   ))}
                 </nav>
               </section>
+              </PinCard>
 
-              <section aria-label="Contact" className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-lg dark:border-slate-800/70 dark:bg-slate-900">
+              <PinCard rotation={-0.6} pinColor="blue">
+              <section aria-label="Contact" className="rounded-3xl border border-stone-300/80 bg-stone-50 p-6 shadow-lg dark:border-stone-700/70 dark:bg-stone-900">
                 <div className="text-xs font-semibold lowercase tracking-[0.2em] text-slate-500 dark:text-slate-300">
                   say hi
                 </div>
@@ -292,6 +298,7 @@ export default function Header({ links }) {
                   </PillLink>
                 </div>
               </section>
+              </PinCard>
             </div>
           </div>
         </div>

@@ -11,17 +11,31 @@ import { toMapCoords, isWorldInset } from '@/lib/mapData';
 const US_TOPO = 'https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json';
 const WORLD_TOPO = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json';
 
+const PIN_COLOR_HEX = {
+  red: '#ef4444',
+  blue: '#3b82f6',
+  green: '#22c55e',
+  yellow: '#eab308',
+  teal: '#14b8a6',
+};
+const PIN_COLOR_CYCLE = ['red', 'blue', 'green', 'yellow', 'teal'];
+
+function pinColorForIndex(i) {
+  return PIN_COLOR_HEX[PIN_COLOR_CYCLE[i % PIN_COLOR_CYCLE.length]];
+}
+
 function getMainPins(pins) {
   const result = [];
-  for (const pin of pins) {
+  for (let i = 0; i < pins.length; i++) {
+    const pin = pins[i];
     if (pin.locations) {
       for (const loc of pin.locations) {
         if (!isWorldInset(loc)) {
-          result.push({ ...pin, location: loc, _multi: true });
+          result.push({ ...pin, location: loc, _multi: true, _origIndex: i });
         }
       }
     } else if (!isWorldInset(pin.location)) {
-      result.push(pin);
+      result.push({ ...pin, _origIndex: i });
     }
   }
   return result;
@@ -29,15 +43,16 @@ function getMainPins(pins) {
 
 function getInsetPins(pins) {
   const result = [];
-  for (const pin of pins) {
+  for (let i = 0; i < pins.length; i++) {
+    const pin = pins[i];
     if (pin.locations) {
       for (const loc of pin.locations) {
         if (isWorldInset(loc)) {
-          result.push({ ...pin, location: loc, _multi: true });
+          result.push({ ...pin, location: loc, _multi: true, _origIndex: i });
         }
       }
     } else if (isWorldInset(pin.location)) {
-      result.push(pin);
+      result.push({ ...pin, _origIndex: i });
     }
   }
   return result;
@@ -79,31 +94,34 @@ function computeProjection(mainPins) {
 }
 
 function ThreadPath({ pins }) {
-  const coords = pins
-    .map((p) => toMapCoords(p.location))
-    .filter(Boolean);
+  const mapped = pins
+    .map((p) => ({ coords: toMapCoords(p.location), origIndex: p._origIndex ?? 0 }))
+    .filter((m) => m.coords);
 
-  if (coords.length < 2) return null;
+  if (mapped.length < 2) return null;
 
   return (
     <>
-      {coords.slice(0, -1).map((from, i) => (
-        <Line
-          key={`${from[0]}-${from[1]}-${i}`}
-          from={from}
-          to={coords[i + 1]}
-          stroke="#ef4444"
-          strokeWidth={1.5}
-          strokeDasharray="6,4"
-          strokeOpacity={0.6}
-          strokeLinecap="round"
-        />
-      ))}
+      {mapped.slice(0, -1).map((from, i) => {
+        const to = mapped[i + 1];
+        return (
+          <Line
+            key={`${from.coords[0]}-${from.coords[1]}-${i}`}
+            from={from.coords}
+            to={to.coords}
+            stroke={pinColorForIndex(to.origIndex)}
+            strokeWidth={1.5}
+            strokeDasharray="6,4"
+            strokeOpacity={0.6}
+            strokeLinecap="round"
+          />
+        );
+      })}
     </>
   );
 }
 
-function PinMarker({ pin, isActive, onHover, onClick, scale = 2000 }) {
+function PinMarker({ pin, isActive, onHover, onClick, scale = 2000, color = '#ef4444' }) {
   const coords = toMapCoords(pin.location);
   if (!coords) return null;
 
@@ -118,14 +136,14 @@ function PinMarker({ pin, isActive, onHover, onClick, scale = 2000 }) {
       {isActive && (
         <circle
           r={pulseR}
-          fill="#ef4444"
+          fill={color}
           opacity={0.2}
           className="animate-pulse"
         />
       )}
       <circle
         r={baseR}
-        fill="#ef4444"
+        fill={color}
         stroke="white"
         strokeWidth={sw}
         style={{
@@ -216,9 +234,20 @@ export default function PinMap({
 
           <ThreadPath pins={mainPins} />
 
-          {mainPins.map((pin, i) => (
+          {[...mainPins]
+            .sort((a, b) => {
+              const aActive = activePin && activePin.org === a.org && activePin.location === a.location;
+              const bActive = activePin && activePin.org === b.org && activePin.location === b.location;
+              // Also bring to front if same org (multi-location pins)
+              const aOrgActive = activePin && activePin.org === a.org;
+              const bOrgActive = activePin && activePin.org === b.org;
+              if (aActive !== bActive) return aActive ? 1 : -1;
+              if (aOrgActive !== bOrgActive) return aOrgActive ? 1 : -1;
+              return 0;
+            })
+            .map((pin, i) => (
             <PinMarker
-              key={`${pin.org}-${pin.location}-${i}`}
+              key={`${pin.org}-${pin.location}-${pin._origIndex}`}
               pin={pin}
               isActive={
                 activePin &&
@@ -228,6 +257,7 @@ export default function PinMap({
               onHover={handlePinHover}
               onClick={handlePinClick}
               scale={projection.scale}
+              color={pinColorForIndex(pin._origIndex ?? i)}
             />
           ))}
         </ComposableMap>
@@ -289,12 +319,13 @@ export default function PinMap({
                 {insetPins.map((pin, i) => {
                   const coords = toMapCoords(pin.location);
                   if (!coords) return null;
+                  const clr = pinColorForIndex(pin._origIndex ?? i);
                   return (
                     <Line
                       key={`inset-thread-${i}`}
                       from={[-71, 42.3]}
                       to={coords}
-                      stroke="#ef4444"
+                      stroke={clr}
                       strokeWidth={1}
                       strokeDasharray="4,3"
                       strokeOpacity={0.5}
@@ -311,9 +342,10 @@ export default function PinMap({
             {insetPins.map((pin, i) => {
               const coords = toMapCoords(pin.location);
               if (!coords) return null;
+              const clr = pinColorForIndex(pin._origIndex ?? i);
               return (
                 <Marker key={`inset-${pin.location}-${i}`} coordinates={coords}>
-                  <circle r={4} fill="#ef4444" stroke="white" strokeWidth={1.2} />
+                  <circle r={4} fill={clr} stroke="white" strokeWidth={1.2} />
                   <text
                     textAnchor="middle"
                     y={-8}

@@ -28,9 +28,10 @@ export default function MapEntryList({ pins = [], activePin, onEntryClick, onEnt
               className={[
                 'flex items-center gap-3 rounded-lg px-3 py-2.5 text-left transition-all duration-200',
                 isActive
-                  ? 'border-2 border-red-400 bg-white shadow-sm dark:border-red-500 dark:bg-stone-800'
+                  ? 'border-2 bg-white shadow-sm dark:bg-stone-800'
                   : 'border border-stone-200 bg-white hover:border-stone-300 hover:shadow-sm dark:border-stone-700 dark:bg-stone-800 dark:hover:border-stone-600',
               ].join(' ')}
+              style={isActive ? { borderColor: { red: '#ef4444', blue: '#3b82f6', green: '#22c55e', yellow: '#eab308', teal: '#14b8a6' }[ENTRY_PIN_COLORS[i % ENTRY_PIN_COLORS.length]] } : undefined}
             >
               {pin.emoji ? (
                 <span className="text-lg flex-shrink-0" aria-hidden="true">
@@ -57,7 +58,10 @@ export default function MapEntryList({ pins = [], activePin, onEntryClick, onEnt
                 </div>
               </div>
               {isActive && (
-                <span className="h-2 w-2 rounded-full bg-red-400 flex-shrink-0" />
+                <span
+                  className="h-2 w-2 rounded-full flex-shrink-0"
+                  style={{ backgroundColor: { red: '#ef4444', blue: '#3b82f6', green: '#22c55e', yellow: '#eab308', teal: '#14b8a6' }[ENTRY_PIN_COLORS[i % ENTRY_PIN_COLORS.length]] }}
+                />
               )}
             </button>
           </PinCard>
