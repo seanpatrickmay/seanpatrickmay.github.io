@@ -63,17 +63,18 @@ export default function Header({ links }) {
   useEffect(() => {
     if (typeof window === 'undefined') return undefined;
 
-    const projectsEl = document.getElementById('projects');
-    if (!projectsEl) return undefined;
+    const aboutEl = document.getElementById('about');
+    if (!aboutEl) return undefined;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setSidebarHidden(entry.isIntersecting);
+        // Hide sidebar once the top of the about section nears the top of the viewport
+        setSidebarHidden(!entry.isIntersecting && entry.boundingClientRect.top < 0);
       },
-      { threshold: 0.05 },
+      { rootMargin: '0px 0px 200px 0px', threshold: 0 },
     );
 
-    observer.observe(projectsEl);
+    observer.observe(aboutEl);
 
     return () => observer.disconnect();
   }, []);
