@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import json
 import os
+import time
 from pathlib import Path
 from datetime import date, datetime, timedelta, timezone
 from collections import defaultdict
@@ -50,20 +51,49 @@ FETCH_MAX = int(os.getenv("GARMIN_FETCH_MAX", "400"))
 
 # ---------------------------- Helpers ----------------------------------------
 
+def _is_rate_limited(exc: Exception) -> bool:
+    """Check if an exception is a 429 rate-limit error."""
+    msg = str(exc).lower()
+    return "429" in msg or "too many requests" in msg
+
+
 def get_client() -> Garmin:
     """
     Create a Garmin client using cached tokens if possible.
     If tokens are missing/invalid, try a fresh login (may require MFA).
+    Rate-limit errors (429) are retried with backoff instead of falling
+    through to a fresh login, which would make rate limiting worse.
     """
     g = Garmin()
-    # 1) Try cached tokens first
-    try:
-        g.garth.load(TOKENS_DIR)
-        # Light call to validate tokens
-        g.get_user_profile()
-        return g
-    except Exception:
-        pass
+
+    # 1) Try cached tokens with retry on transient 429
+    token_err = None
+    for attempt in range(3):
+        try:
+            g.garth.load(TOKENS_DIR)
+            g.get_user_profile()
+            # Save refreshed tokens so the next run gets fresh ones
+            g.garth.dump(TOKENS_DIR)
+            return g
+        except Exception as exc:
+            if _is_rate_limited(exc):
+                wait = 30 * (2 ** attempt)  # 30s, 60s, 120s
+                print(f"Rate-limited during token refresh (attempt {attempt + 1}/3), waiting {wait}s...")
+                time.sleep(wait)
+                token_err = exc
+                continue
+            # Tokens are genuinely invalid/expired — fall through to login
+            token_err = exc
+            break
+
+    # If we exhausted retries on a 429, don't hammer the login endpoint too
+    if token_err and _is_rate_limited(token_err):
+        raise SystemExit(
+            f"Rate-limited by Garmin after 3 retries during token refresh.\n"
+            f"Wait a few hours, then re-seed tokens locally:\n"
+            f"  GARMIN_EMAIL=... GARMIN_PASSWORD=... python scripts/update_stats.py\n"
+            f"Error: {token_err}"
+        )
 
     # 2) Fresh login (interactive MFA cannot be completed non-interactively)
     if not EMAIL or not PASSWORD:
@@ -80,6 +110,7 @@ def get_client() -> Garmin:
             f"Tokens will be saved in: {TOKENS_DIR}"
         )
     g.garth.dump(TOKENS_DIR)
+    print(f"Saved fresh tokens to {TOKENS_DIR}")
     return g
 
 

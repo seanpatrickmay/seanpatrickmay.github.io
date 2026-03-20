@@ -29,8 +29,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install garminconnect
 
-      # Restore tokens from secrets if provided (supports either 2-file or 1-archive approach)
-      - name: Restore Garmin tokens
+      # 1) Try restoring tokens from cache (refreshed by previous run)
+      - name: Restore cached Garmin tokens
+        id: token-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.garminconnect
+          key: garmin-tokens-${{ github.run_id }}
+          restore-keys: garmin-tokens-
+
+      # 2) Fall back to secrets if cache miss (first run or cache evicted)
+      - name: Restore Garmin tokens from secrets
+        if: steps.token-cache.outputs.cache-hit != 'true'
         env:
           OAUTH1_B64: ${{ secrets.GARMIN_OAUTH1_B64 }}   # optional
           OAUTH2_B64: ${{ secrets.GARMIN_OAUTH2_B64 }}   # optional
@@ -40,7 +50,6 @@ jobs:
           mkdir -p ~/.garminconnect
 
           if [ -n "${OAUTH1_B64:-}" ] || [ -n "${OAUTH2_B64:-}" ]; then
-            # Two-secrets path
             if [ -n "${OAUTH1_B64:-}" ]; then
               echo "$OAUTH1_B64" | base64 -d > ~/.garminconnect/oauth1_token.json
             fi
@@ -49,7 +58,6 @@ jobs:
             fi
             echo "Restored individual oauth token files."
           elif [ -n "${TOKENS_B64:-}" ]; then
-            # Single-archive path (auto-detect tgz vs zip)
             echo "$TOKENS_B64" | base64 -d > /tmp/garmin_tokens.blob
             if tar -tzf /tmp/garmin_tokens.blob >/dev/null 2>&1; then
               tar -xzf /tmp/garmin_tokens.blob -C ~/.garminconnect
