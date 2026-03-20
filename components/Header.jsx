@@ -71,7 +71,7 @@ export default function Header({ links }) {
         // Hide sidebar once the top of the about section nears the top of the viewport
         setSidebarHidden(!entry.isIntersecting && entry.boundingClientRect.top < 0);
       },
-      { rootMargin: '0px 0px 200px 0px', threshold: 0 },
+      { rootMargin: '0px 0px 600px 0px', threshold: 0 },
     );
 
     observer.observe(aboutEl);
