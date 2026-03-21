@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-20T13:59:29.909Z",
+  "generated_at": "2026-03-21T13:39:46.195Z",
   "artists": [
     {
       "name": "Lady Gaga",
@@ -22,9 +22,14 @@
       "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
     },
     {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+      "name": "Stromae",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebcc129f1c9b5047760d66aae2",
+      "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
+    },
+    {
+      "name": "DONDA",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb8fbdf9fb0a3c447b8c97a08b",
+      "url": "https://open.spotify.com/artist/1t9YWEQIh5ciiliO2C8Mew"
     },
     {
       "name": "Zedd",
@@ -32,24 +37,19 @@
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
+      "name": "Ye",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb592816284c71eee455ff7093",
+      "url": "https://open.spotify.com/artist/3NlsBPwqJuDgtXZ2rv5Dmq"
+    },
+    {
       "name": "The Beatles",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe9348cc01ff5d55971b22433",
       "url": "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
     },
     {
-      "name": "Super Guitar Bros",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebce399ad7547d8ee3b7fc86a0",
-      "url": "https://open.spotify.com/artist/2WosnSaZPybvQfyGUvD3NX"
-    },
-    {
-      "name": "Gautier Capuçon",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb362a439492dad1d52a593c04",
-      "url": "https://open.spotify.com/artist/57ziOSBD3x0PhVbl7MXTgI"
-    },
-    {
-      "name": "London Symphony Orchestra",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb5a5d168879568c94e86c61aa",
-      "url": "https://open.spotify.com/artist/5yxyJsFanEAuwSM5kOuZKc"
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     }
   ],
   "tracks": [
