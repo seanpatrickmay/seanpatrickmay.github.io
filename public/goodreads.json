@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-23T14:17:55.378Z",
+  "generated_at": "2026-03-24T14:20:46.057Z",
   "currentlyReading": [
     {
       "title": "The Brothers Karamazov",
@@ -12,21 +12,21 @@
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1427728126l/4934._SX98_.jpg",
       "bookId": "4934",
       "link": "https://www.goodreads.com/review/show/8430600555?utm_medium=api&utm_source=rss"
-    },
+    }
+  ],
+  "recentlyRead": [
     {
       "title": "Wuthering Heights",
       "author": "Emily Brontë",
-      "rating": 0,
+      "rating": 3,
       "avgRating": 3.91,
-      "dateAdded": "Mon, 16 Mar 2026 20:48:15 -0700",
+      "dateAdded": "Mon, 23 Mar 2026 08:50:35 -0700",
       "published": "1847",
       "numPages": 359,
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1478641029l/32929156._SX98_.jpg",
       "bookId": "32929156",
       "link": "https://www.goodreads.com/review/show/8418039770?utm_medium=api&utm_source=rss"
-    }
-  ],
-  "recentlyRead": [
+    },
     {
       "title": "Children of Dune (Dune #3)",
       "author": "Frank Herbert",
@@ -74,20 +74,8 @@
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1405868167l/662._SX98_.jpg",
       "bookId": "662",
       "link": "https://www.goodreads.com/review/show/8418065357?utm_medium=api&utm_source=rss"
-    },
-    {
-      "title": "Annihilation (Southern Reach, #1)",
-      "author": "Jeff Vandermeer",
-      "rating": 3,
-      "avgRating": 3.81,
-      "dateAdded": "Sat, 07 Mar 2026 10:47:39 -0800",
-      "published": "2014",
-      "numPages": 195,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1403941587l/17934530._SX98_.jpg",
-      "bookId": "17934530",
-      "link": "https://www.goodreads.com/review/show/8418057737?utm_medium=api&utm_source=rss"
     }
   ],
-  "totalPages": 2966,
+  "totalPages": 3325,
   "profileUrl": "https://www.goodreads.com/user/show/199381877"
 }
