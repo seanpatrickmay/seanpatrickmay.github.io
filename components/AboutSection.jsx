@@ -116,36 +116,45 @@ export default function AboutSection({
 
           {/* Training Stats — expanded */}
           <PinCard rotation={-1.8} pinColor="red">
-            <div className="border border-stone-200 bg-white p-4 dark:border-stone-700 dark:bg-stone-800">
-              <div className="text-[10px] font-semibold uppercase tracking-widest text-stone-500 dark:text-stone-400">
+            <div className="rounded-sm border border-slate-200 bg-white p-4 dark:border-slate-700 dark:bg-slate-900">
+              <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
                 training · 8 weeks
               </div>
               <div className="mt-1.5 flex items-baseline gap-2">
-                <span className="text-3xl font-extrabold leading-none text-stone-900 dark:text-white">
+                <span className="text-3xl font-extrabold leading-none text-slate-900 dark:text-white">
                   {totalHours8w == null ? '—' : totalHours8w.toFixed(1)}
                 </span>
-                <span className="text-sm font-semibold text-stone-400 dark:text-stone-500">hours</span>
+                <span className="text-sm font-semibold text-slate-400 dark:text-slate-500">hours</span>
               </div>
-              <div className="mt-1 flex flex-wrap gap-x-2 text-[11px] text-stone-500 dark:text-stone-400">
+              <div className="mt-1 flex flex-wrap gap-x-2 text-[11px] text-slate-500 dark:text-slate-400">
                 <span>{totalKmLabel} km</span>
                 <span>·</span>
                 <span>{totalCaloriesLabel} kcal</span>
-                <span>·</span>
-                <span>~{totalMilkCupsLabel} cups milk</span>
               </div>
+
+              {/* Cups of milk callout */}
+              {totalCalories8w != null && (
+                <div className="mt-3 flex items-center gap-2.5 rounded-lg bg-teal-50 px-3 py-2 dark:bg-teal-950/40">
+                  <span className="text-lg leading-none">🥛</span>
+                  <div className="flex items-baseline gap-1.5">
+                    <span className="text-xl font-bold text-teal-700 dark:text-teal-300">{totalMilkCupsLabel}</span>
+                    <span className="text-xs font-medium text-teal-600 dark:text-teal-400">cups of milk burned</span>
+                  </div>
+                </div>
+              )}
 
               {/* Cumulative sparkline */}
               <LineSparkline
                 values={cumulativeHours}
                 height={40}
-                className="mt-3 text-stone-900 dark:text-white"
+                className="mt-3 text-slate-900 dark:text-white"
                 label="Cumulative training hours over 8 weeks"
               />
 
               {/* Weekly bar chart */}
               {weeklyHours.length > 1 && (
-                <div className="mt-4 border-t border-stone-100 pt-3 dark:border-stone-700">
-                  <div className="text-[10px] font-semibold uppercase tracking-widest text-stone-500 dark:text-stone-400 mb-2">
+                <div className="mt-4 border-t border-slate-100 pt-3 dark:border-slate-700">
+                  <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400 mb-2">
                     hours per week
                   </div>
                   <BarSparkline
@@ -153,7 +162,7 @@ export default function AboutSection({
                     height={48}
                     labels={weekLabels}
                     labelOrientation="stacked"
-                    labelClassName="text-[9px] text-stone-400 dark:text-stone-500"
+                    labelClassName="text-[9px] text-slate-400 dark:text-slate-500"
                     formatter={(v) => `${v.toFixed(1)} hrs`}
                     className="text-teal-600 dark:text-teal-400"
                   />
@@ -166,7 +175,7 @@ export default function AboutSection({
                 </div>
               )}
               {rangeLabel && (
-                <div className="mt-1 text-[10px] text-stone-400 dark:text-stone-500">{rangeLabel}</div>
+                <div className="mt-1 text-[10px] text-slate-400 dark:text-slate-500">{rangeLabel}</div>
               )}
             </div>
           </PinCard>
