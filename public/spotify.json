@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-25T14:16:49.511Z",
+  "generated_at": "2026-03-26T14:23:22.579Z",
   "artists": [
     {
       "name": "Lady Gaga",
@@ -32,14 +32,14 @@
       "url": "https://open.spotify.com/artist/1t9YWEQIh5ciiliO2C8Mew"
     },
     {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
-    {
       "name": "Ye",
       "image": "https://i.scdn.co/image/ab6761610000e5eb592816284c71eee455ff7093",
       "url": "https://open.spotify.com/artist/3NlsBPwqJuDgtXZ2rv5Dmq"
+    },
+    {
+      "name": "Zedd",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe28762aed82cde1178fb3873",
+      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
       "name": "The Beatles",
@@ -47,12 +47,18 @@
       "url": "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
     },
     {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+      "name": "Super Guitar Bros",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebce399ad7547d8ee3b7fc86a0",
+      "url": "https://open.spotify.com/artist/2WosnSaZPybvQfyGUvD3NX"
     }
   ],
   "tracks": [
+    {
+      "name": "Just Dance",
+      "artist": "Lady Gaga, Colby O'Donis",
+      "image": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
+      "url": "https://open.spotify.com/track/1dzQoRqT5ucxXVaAhTcT0J"
+    },
     {
       "name": "Abracadabra",
       "artist": "Lady Gaga",
@@ -72,34 +78,16 @@
       "url": "https://open.spotify.com/track/4mUR5Tv0CvJtpmnUtzeIgd"
     },
     {
-      "name": "Poker Face",
-      "artist": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
-      "url": "https://open.spotify.com/track/1QV6tiMFM6fSOKOGLMHYYg"
-    },
-    {
       "name": "All Falls Down",
       "artist": "Kanye West, Syleena Johnson",
       "image": "https://i.scdn.co/image/ab67616d0000b27325b055377757b3cdd6f26b78",
       "url": "https://open.spotify.com/track/5SkRLpaGtvYPhw02vZhQQ9"
     },
     {
-      "name": "Die With A Smile",
-      "artist": "Lady Gaga, Bruno Mars",
-      "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
-      "url": "https://open.spotify.com/track/7so0lgd0zP2Sbgs2d7a1SZ"
-    },
-    {
       "name": "Perfect Celebrity",
       "artist": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
       "url": "https://open.spotify.com/track/0Tqn5Th0wk55eLdga96vZM"
-    },
-    {
-      "name": "Money Honey",
-      "artist": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
-      "url": "https://open.spotify.com/track/6gknJVkbQb8jkAXbXx0SYA"
     },
     {
       "name": "Stardew Valley Overture",
@@ -112,6 +100,18 @@
       "artist": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
       "url": "https://open.spotify.com/track/0T3Hw3kPj9T2E4UoaSXmfn"
+    },
+    {
+      "name": "Poker Face",
+      "artist": "Lady Gaga",
+      "image": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
+      "url": "https://open.spotify.com/track/1QV6tiMFM6fSOKOGLMHYYg"
+    },
+    {
+      "name": "Carnival of the Animals: X. Aviary",
+      "artist": "Camille Saint-Saëns, Barry Wordsworth, London Symphony Orchestra",
+      "image": "https://i.scdn.co/image/ab67616d0000b273e1aa11db3009e6f62582803e",
+      "url": "https://open.spotify.com/track/263JmI8vPXqGpdw9NipjYo"
     }
   ]
 }
