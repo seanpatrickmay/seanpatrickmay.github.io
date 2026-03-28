@@ -1,6 +1,18 @@
 {
-  "generated_at": "2026-03-27T14:14:10.895Z",
+  "generated_at": "2026-03-28T13:53:32.001Z",
   "currentlyReading": [
+    {
+      "title": "Project Hail Mary",
+      "author": "Andy Weir",
+      "rating": 0,
+      "avgRating": 4.58,
+      "dateAdded": "Fri, 27 Mar 2026 19:43:36 -0700",
+      "published": "2021",
+      "numPages": 482,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734434586l/222697645._SX98_.jpg",
+      "bookId": "222697645",
+      "link": "https://www.goodreads.com/review/show/8418056222?utm_medium=api&utm_source=rss"
+    },
     {
       "title": "The Brothers Karamazov",
       "author": "Fyodor Dostoevsky",
@@ -18,9 +30,9 @@
     {
       "title": "Wuthering Heights",
       "author": "Emily Brontë",
-      "rating": 3,
+      "rating": 2,
       "avgRating": 3.91,
-      "dateAdded": "Mon, 23 Mar 2026 08:50:35 -0700",
+      "dateAdded": "Fri, 27 Mar 2026 17:41:36 -0700",
       "published": "1847",
       "numPages": 359,
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1478641029l/32929156._SX98_.jpg",
