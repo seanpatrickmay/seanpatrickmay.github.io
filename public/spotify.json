@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-27T14:10:03.686Z",
+  "generated_at": "2026-03-28T13:49:06.663Z",
   "artists": [
     {
       "name": "Lady Gaga",
@@ -38,7 +38,7 @@
     },
     {
       "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb2b3b093e4d22c4e26352b5ca",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebeefa05f0b8fcafd4beb19d31",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
@@ -84,22 +84,16 @@
       "url": "https://open.spotify.com/track/5SkRLpaGtvYPhw02vZhQQ9"
     },
     {
-      "name": "Perfect Celebrity",
-      "artist": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
-      "url": "https://open.spotify.com/track/0Tqn5Th0wk55eLdga96vZM"
-    },
-    {
       "name": "Stardew Valley Overture",
       "artist": "ConcernedApe",
       "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
       "url": "https://open.spotify.com/track/2q2Z2A0Mt8AsWyQEdB6wuu"
     },
     {
-      "name": "Disease",
+      "name": "Perfect Celebrity",
       "artist": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
-      "url": "https://open.spotify.com/track/0T3Hw3kPj9T2E4UoaSXmfn"
+      "url": "https://open.spotify.com/track/0Tqn5Th0wk55eLdga96vZM"
     },
     {
       "name": "PREACHER MAN",
@@ -108,10 +102,16 @@
       "url": "https://open.spotify.com/track/4BTxbcN9LpZnxdjI1eR9Xo"
     },
     {
-      "name": "Zombieboy",
+      "name": "Poker Face",
       "artist": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
-      "url": "https://open.spotify.com/track/0ElVpg9XIswx3XWs6kUj6a"
+      "image": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
+      "url": "https://open.spotify.com/track/1QV6tiMFM6fSOKOGLMHYYg"
+    },
+    {
+      "name": "Carnival of the Animals: X. Aviary",
+      "artist": "Camille Saint-Saëns, Barry Wordsworth, London Symphony Orchestra",
+      "image": "https://i.scdn.co/image/ab67616d0000b273e1aa11db3009e6f62582803e",
+      "url": "https://open.spotify.com/track/263JmI8vPXqGpdw9NipjYo"
     }
   ]
 }
