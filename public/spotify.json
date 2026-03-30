@@ -1,20 +1,25 @@
 {
-  "generated_at": "2026-03-29T13:51:10.019Z",
+  "generated_at": "2026-03-30T14:24:34.010Z",
   "artists": [
-    {
-      "name": "ConcernedApe",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe17351c781f0cd9ae4b6442e",
-      "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
-    },
     {
       "name": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
     },
     {
+      "name": "ConcernedApe",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe17351c781f0cd9ae4b6442e",
+      "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
+    },
+    {
       "name": "Barry Wordsworth",
       "image": "https://i.scdn.co/image/b5b05560a51b368cca8b3420e4e3536586720aa8",
       "url": "https://open.spotify.com/artist/5sjJnaI3YhaO8KylpJk3gN"
+    },
+    {
+      "name": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb9f6f7c2d12975d2a4b3a0fd8",
+      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
       "name": "Kanye West",
@@ -30,11 +35,6 @@
       "name": "DONDA",
       "image": "https://i.scdn.co/image/ab6761610000e5eb8fbdf9fb0a3c447b8c97a08b",
       "url": "https://open.spotify.com/artist/1t9YWEQIh5ciiliO2C8Mew"
-    },
-    {
-      "name": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb9f6f7c2d12975d2a4b3a0fd8",
-      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
       "name": "Ye",
@@ -72,10 +72,16 @@
       "url": "https://open.spotify.com/track/5SkRLpaGtvYPhw02vZhQQ9"
     },
     {
-      "name": "Stardew Valley Overture",
-      "artist": "ConcernedApe",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
-      "url": "https://open.spotify.com/track/2q2Z2A0Mt8AsWyQEdB6wuu"
+      "name": "Make Me a Better Man",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
+    },
+    {
+      "name": "Who's the Fool",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/5hGZ18fF81kgGwukiJOKGm"
     },
     {
       "name": "Perfect Celebrity",
@@ -85,9 +91,9 @@
     },
     {
       "name": "PREACHER MAN",
-      "artist": "Ye, Kanye West",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739bd03f5190e4c4b212121100",
-      "url": "https://open.spotify.com/track/4BTxbcN9LpZnxdjI1eR9Xo"
+      "artist": "Kanye West, Ye",
+      "image": "https://i.scdn.co/image/ab67616d0000b27395184f6a953569b683ca9a0d",
+      "url": "https://open.spotify.com/track/0fD7KBtQgPR1YCtuPAsyZJ"
     },
     {
       "name": "Carnival of the Animals: X. Aviary",
@@ -106,12 +112,6 @@
       "artist": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
       "url": "https://open.spotify.com/track/2rvd6akG8qEtBNUvQpN7iY"
-    },
-    {
-      "name": "Garden Of Eden",
-      "artist": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
-      "url": "https://open.spotify.com/track/4mUR5Tv0CvJtpmnUtzeIgd"
     }
   ]
 }
