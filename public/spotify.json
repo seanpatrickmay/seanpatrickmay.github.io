@@ -1,6 +1,11 @@
 {
-  "generated_at": "2026-03-30T14:24:34.010Z",
+  "generated_at": "2026-03-31T14:25:02.617Z",
   "artists": [
+    {
+      "name": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb9f6f7c2d12975d2a4b3a0fd8",
+      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
+    },
     {
       "name": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
@@ -15,11 +20,6 @@
       "name": "Barry Wordsworth",
       "image": "https://i.scdn.co/image/b5b05560a51b368cca8b3420e4e3536586720aa8",
       "url": "https://open.spotify.com/artist/5sjJnaI3YhaO8KylpJk3gN"
-    },
-    {
-      "name": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb9f6f7c2d12975d2a4b3a0fd8",
-      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
       "name": "Kanye West",
