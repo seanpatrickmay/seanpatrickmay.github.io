@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-31T14:25:02.617Z",
+  "generated_at": "2026-04-01T14:26:39.825Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -60,6 +60,12 @@
       "url": "https://open.spotify.com/track/1dzQoRqT5ucxXVaAhTcT0J"
     },
     {
+      "name": "Make Me a Better Man",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
+    },
+    {
       "name": "Abracadabra",
       "artist": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
@@ -72,16 +78,16 @@
       "url": "https://open.spotify.com/track/5SkRLpaGtvYPhw02vZhQQ9"
     },
     {
-      "name": "Make Me a Better Man",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
-    },
-    {
       "name": "Who's the Fool",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/5hGZ18fF81kgGwukiJOKGm"
+    },
+    {
+      "name": "Bienvenue Chez Moi",
+      "artist": "Stromae",
+      "image": "https://i.scdn.co/image/ab67616d0000b273ae373174b14e3eac81554402",
+      "url": "https://open.spotify.com/track/5yS7vQ1VuDEfNwDGRztrrY"
     },
     {
       "name": "Perfect Celebrity",
@@ -90,28 +96,22 @@
       "url": "https://open.spotify.com/track/0Tqn5Th0wk55eLdga96vZM"
     },
     {
+      "name": "Chest Pain (I Love)",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/2XUx8PCXGpP1XhZJMGiUol"
+    },
+    {
       "name": "PREACHER MAN",
       "artist": "Kanye West, Ye",
       "image": "https://i.scdn.co/image/ab67616d0000b27395184f6a953569b683ca9a0d",
       "url": "https://open.spotify.com/track/0fD7KBtQgPR1YCtuPAsyZJ"
     },
     {
-      "name": "Carnival of the Animals: X. Aviary",
-      "artist": "Camille Saint-Saëns, Barry Wordsworth, London Symphony Orchestra",
-      "image": "https://i.scdn.co/image/ab67616d0000b273e1aa11db3009e6f62582803e",
-      "url": "https://open.spotify.com/track/263JmI8vPXqGpdw9NipjYo"
-    },
-    {
-      "name": "Carnival of the Animals: XII. Fossils",
-      "artist": "Camille Saint-Saëns, Barry Wordsworth, London Symphony Orchestra",
-      "image": "https://i.scdn.co/image/ab67616d0000b273e1aa11db3009e6f62582803e",
-      "url": "https://open.spotify.com/track/2hyUZNd2OqIRD4LqAfdPYK"
-    },
-    {
-      "name": "How Bad Do U Want Me",
-      "artist": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
-      "url": "https://open.spotify.com/track/2rvd6akG8qEtBNUvQpN7iY"
+      "name": "Cheer Me On",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
     }
   ]
 }
