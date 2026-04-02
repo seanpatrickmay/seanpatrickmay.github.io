@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-01T14:26:39.825Z",
+  "generated_at": "2026-04-02T14:20:08.791Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -96,22 +96,22 @@
       "url": "https://open.spotify.com/track/0Tqn5Th0wk55eLdga96vZM"
     },
     {
+      "name": "Cheer Me On",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
+    },
+    {
       "name": "Chest Pain (I Love)",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/2XUx8PCXGpP1XhZJMGiUol"
     },
     {
-      "name": "PREACHER MAN",
-      "artist": "Kanye West, Ye",
-      "image": "https://i.scdn.co/image/ab67616d0000b27395184f6a953569b683ca9a0d",
-      "url": "https://open.spotify.com/track/0fD7KBtQgPR1YCtuPAsyZJ"
-    },
-    {
-      "name": "Cheer Me On",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
+      "name": "You Rock My World",
+      "artist": "Michael Jackson",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736c1748b440eb462a19f24eec",
+      "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
     }
   ]
 }
