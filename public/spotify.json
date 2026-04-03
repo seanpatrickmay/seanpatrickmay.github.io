@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T14:20:08.791Z",
+  "generated_at": "2026-04-03T14:00:52.797Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -60,12 +60,6 @@
       "url": "https://open.spotify.com/track/1dzQoRqT5ucxXVaAhTcT0J"
     },
     {
-      "name": "Make Me a Better Man",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
-    },
-    {
       "name": "Abracadabra",
       "artist": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
@@ -78,10 +72,10 @@
       "url": "https://open.spotify.com/track/5SkRLpaGtvYPhw02vZhQQ9"
     },
     {
-      "name": "Who's the Fool",
+      "name": "Make Me a Better Man",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/5hGZ18fF81kgGwukiJOKGm"
+      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
     },
     {
       "name": "Bienvenue Chez Moi",
@@ -112,6 +106,12 @@
       "artist": "Michael Jackson",
       "image": "https://i.scdn.co/image/ab67616d0000b2736c1748b440eb462a19f24eec",
       "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
+    },
+    {
+      "name": "PREACHER MAN",
+      "artist": "Kanye West, Ye",
+      "image": "https://i.scdn.co/image/ab67616d0000b27395184f6a953569b683ca9a0d",
+      "url": "https://open.spotify.com/track/0fD7KBtQgPR1YCtuPAsyZJ"
     }
   ]
 }
