@@ -1,6 +1,18 @@
 {
-  "generated_at": "2026-04-02T14:23:22.968Z",
+  "generated_at": "2026-04-03T14:04:04.795Z",
   "currentlyReading": [
+    {
+      "title": "The Book Thief",
+      "author": "Markus Zusak",
+      "rating": 0,
+      "avgRating": 4.38,
+      "dateAdded": "Thu, 02 Apr 2026 07:26:02 -0700",
+      "published": "2005",
+      "numPages": 592,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1522157426l/19063._SX98_.jpg",
+      "bookId": "19063",
+      "link": "https://www.goodreads.com/review/show/8425266738?utm_medium=api&utm_source=rss"
+    },
     {
       "title": "The Brothers Karamazov",
       "author": "Fyodor Dostoevsky",
