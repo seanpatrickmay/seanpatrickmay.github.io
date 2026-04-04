@@ -1,20 +1,10 @@
 {
-  "generated_at": "2026-04-03T14:00:52.797Z",
+  "generated_at": "2026-04-04T13:51:00.413Z",
   "artists": [
     {
       "name": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab6761610000e5eb9f6f7c2d12975d2a4b3a0fd8",
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
-    },
-    {
-      "name": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
-      "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
-    },
-    {
-      "name": "ConcernedApe",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe17351c781f0cd9ae4b6442e",
-      "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
     },
     {
       "name": "Barry Wordsworth",
@@ -30,6 +20,11 @@
       "name": "Stromae",
       "image": "https://i.scdn.co/image/ab6761610000e5ebcc129f1c9b5047760d66aae2",
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
+    },
+    {
+      "name": "Lady Gaga",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
+      "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
     },
     {
       "name": "DONDA",
@@ -50,6 +45,11 @@
       "name": "The Beatles",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe9348cc01ff5d55971b22433",
       "url": "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
+    },
+    {
+      "name": "Daniel Blumenthal",
+      "image": "https://i.scdn.co/image/0b0b3373f561d2c676bbe691bb8399975517aa72",
+      "url": "https://open.spotify.com/artist/0Ks41NxSMIGc9jdSGVELba"
     }
   ],
   "tracks": [
@@ -58,12 +58,6 @@
       "artist": "Lady Gaga, Colby O'Donis",
       "image": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
       "url": "https://open.spotify.com/track/1dzQoRqT5ucxXVaAhTcT0J"
-    },
-    {
-      "name": "Abracadabra",
-      "artist": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
-      "url": "https://open.spotify.com/track/2LHNTC9QZxsL3nWpt8iaSR"
     },
     {
       "name": "All Falls Down",
@@ -82,12 +76,6 @@
       "artist": "Stromae",
       "image": "https://i.scdn.co/image/ab67616d0000b273ae373174b14e3eac81554402",
       "url": "https://open.spotify.com/track/5yS7vQ1VuDEfNwDGRztrrY"
-    },
-    {
-      "name": "Perfect Celebrity",
-      "artist": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
-      "url": "https://open.spotify.com/track/0Tqn5Th0wk55eLdga96vZM"
     },
     {
       "name": "Cheer Me On",
@@ -112,6 +100,18 @@
       "artist": "Kanye West, Ye",
       "image": "https://i.scdn.co/image/ab67616d0000b27395184f6a953569b683ca9a0d",
       "url": "https://open.spotify.com/track/0fD7KBtQgPR1YCtuPAsyZJ"
+    },
+    {
+      "name": "Carnival of the Animals: X. Aviary",
+      "artist": "Camille Saint-Saëns, Barry Wordsworth, London Symphony Orchestra",
+      "image": "https://i.scdn.co/image/ab67616d0000b273e1aa11db3009e6f62582803e",
+      "url": "https://open.spotify.com/track/263JmI8vPXqGpdw9NipjYo"
+    },
+    {
+      "name": "Abracadabra",
+      "artist": "Lady Gaga",
+      "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
+      "url": "https://open.spotify.com/track/2LHNTC9QZxsL3nWpt8iaSR"
     }
   ]
 }
