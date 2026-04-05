@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-04T13:51:00.413Z",
+  "generated_at": "2026-04-05T13:52:50.364Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -32,14 +32,14 @@
       "url": "https://open.spotify.com/artist/1t9YWEQIh5ciiliO2C8Mew"
     },
     {
-      "name": "Ye",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb592816284c71eee455ff7093",
-      "url": "https://open.spotify.com/artist/3NlsBPwqJuDgtXZ2rv5Dmq"
-    },
-    {
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebeefa05f0b8fcafd4beb19d31",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+    },
+    {
+      "name": "Ye",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb592816284c71eee455ff7093",
+      "url": "https://open.spotify.com/artist/3NlsBPwqJuDgtXZ2rv5Dmq"
     },
     {
       "name": "The Beatles",
@@ -78,6 +78,12 @@
       "url": "https://open.spotify.com/track/5yS7vQ1VuDEfNwDGRztrrY"
     },
     {
+      "name": "Hourglass",
+      "artist": "Zedd, LIZ",
+      "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
+      "url": "https://open.spotify.com/track/6NwrXtcFbc8OX7wJyBqE89"
+    },
+    {
       "name": "Cheer Me On",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
@@ -106,12 +112,6 @@
       "artist": "Camille Saint-Saëns, Barry Wordsworth, London Symphony Orchestra",
       "image": "https://i.scdn.co/image/ab67616d0000b273e1aa11db3009e6f62582803e",
       "url": "https://open.spotify.com/track/263JmI8vPXqGpdw9NipjYo"
-    },
-    {
-      "name": "Abracadabra",
-      "artist": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab67616d0000b273b0860cf0a98e09663c82290c",
-      "url": "https://open.spotify.com/track/2LHNTC9QZxsL3nWpt8iaSR"
     }
   ]
 }
