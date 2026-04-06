@@ -1,15 +1,10 @@
 {
-  "generated_at": "2026-04-05T13:52:50.364Z",
+  "generated_at": "2026-04-06T14:09:00.385Z",
   "artists": [
     {
       "name": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab6761610000e5eb9f6f7c2d12975d2a4b3a0fd8",
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
-    },
-    {
-      "name": "Barry Wordsworth",
-      "image": "https://i.scdn.co/image/b5b05560a51b368cca8b3420e4e3536586720aa8",
-      "url": "https://open.spotify.com/artist/5sjJnaI3YhaO8KylpJk3gN"
     },
     {
       "name": "Kanye West",
@@ -22,14 +17,19 @@
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
     },
     {
-      "name": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
-      "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
+      "name": "Barry Wordsworth",
+      "image": "https://i.scdn.co/image/b5b05560a51b368cca8b3420e4e3536586720aa8",
+      "url": "https://open.spotify.com/artist/5sjJnaI3YhaO8KylpJk3gN"
     },
     {
       "name": "DONDA",
       "image": "https://i.scdn.co/image/ab6761610000e5eb8fbdf9fb0a3c447b8c97a08b",
       "url": "https://open.spotify.com/artist/1t9YWEQIh5ciiliO2C8Mew"
+    },
+    {
+      "name": "Lady Gaga",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
+      "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
     },
     {
       "name": "Zedd",
@@ -60,16 +60,34 @@
       "url": "https://open.spotify.com/track/1dzQoRqT5ucxXVaAhTcT0J"
     },
     {
+      "name": "Make Me a Better Man",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
+    },
+    {
       "name": "All Falls Down",
       "artist": "Kanye West, Syleena Johnson",
       "image": "https://i.scdn.co/image/ab67616d0000b27325b055377757b3cdd6f26b78",
       "url": "https://open.spotify.com/track/5SkRLpaGtvYPhw02vZhQQ9"
     },
     {
-      "name": "Make Me a Better Man",
+      "name": "Chest Pain (I Love)",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
+      "url": "https://open.spotify.com/track/2XUx8PCXGpP1XhZJMGiUol"
+    },
+    {
+      "name": "Harry Styles",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
+    },
+    {
+      "name": "Who's the Fool",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/5hGZ18fF81kgGwukiJOKGm"
     },
     {
       "name": "Bienvenue Chez Moi",
@@ -90,28 +108,10 @@
       "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
     },
     {
-      "name": "Chest Pain (I Love)",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/2XUx8PCXGpP1XhZJMGiUol"
-    },
-    {
       "name": "You Rock My World",
       "artist": "Michael Jackson",
       "image": "https://i.scdn.co/image/ab67616d0000b2736c1748b440eb462a19f24eec",
       "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
-    },
-    {
-      "name": "PREACHER MAN",
-      "artist": "Kanye West, Ye",
-      "image": "https://i.scdn.co/image/ab67616d0000b27395184f6a953569b683ca9a0d",
-      "url": "https://open.spotify.com/track/0fD7KBtQgPR1YCtuPAsyZJ"
-    },
-    {
-      "name": "Carnival of the Animals: X. Aviary",
-      "artist": "Camille Saint-Saëns, Barry Wordsworth, London Symphony Orchestra",
-      "image": "https://i.scdn.co/image/ab67616d0000b273e1aa11db3009e6f62582803e",
-      "url": "https://open.spotify.com/track/263JmI8vPXqGpdw9NipjYo"
     }
   ]
 }
