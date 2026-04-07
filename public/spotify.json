@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-06T14:09:00.385Z",
+  "generated_at": "2026-04-07T14:28:18.364Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -17,9 +17,9 @@
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
     },
     {
-      "name": "Barry Wordsworth",
-      "image": "https://i.scdn.co/image/b5b05560a51b368cca8b3420e4e3536586720aa8",
-      "url": "https://open.spotify.com/artist/5sjJnaI3YhaO8KylpJk3gN"
+      "name": "ConcernedApe",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe17351c781f0cd9ae4b6442e",
+      "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
     },
     {
       "name": "DONDA",
@@ -66,6 +66,12 @@
       "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
     },
     {
+      "name": "Breathe",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27394f1e6cc9e5d783cdae161f1",
+      "url": "https://open.spotify.com/track/3rKjT23XeGg3pbqE1T1fpd"
+    },
+    {
       "name": "All Falls Down",
       "artist": "Kanye West, Syleena Johnson",
       "image": "https://i.scdn.co/image/ab67616d0000b27325b055377757b3cdd6f26b78",
@@ -106,12 +112,6 @@
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
-    },
-    {
-      "name": "You Rock My World",
-      "artist": "Michael Jackson",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736c1748b440eb462a19f24eec",
-      "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
     }
   ]
 }
