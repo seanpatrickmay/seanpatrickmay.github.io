@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-07T14:28:18.364Z",
+  "generated_at": "2026-04-08T14:44:00.782Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -60,16 +60,16 @@
       "url": "https://open.spotify.com/track/1dzQoRqT5ucxXVaAhTcT0J"
     },
     {
-      "name": "Make Me a Better Man",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
-    },
-    {
       "name": "Breathe",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27394f1e6cc9e5d783cdae161f1",
       "url": "https://open.spotify.com/track/3rKjT23XeGg3pbqE1T1fpd"
+    },
+    {
+      "name": "Make Me a Better Man",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
     },
     {
       "name": "All Falls Down",
@@ -78,40 +78,40 @@
       "url": "https://open.spotify.com/track/5SkRLpaGtvYPhw02vZhQQ9"
     },
     {
+      "name": "Cheer Me On",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
+    },
+    {
+      "name": "Earrings",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
+      "url": "https://open.spotify.com/track/0eAuGrXyGFYwur9ARUe7LJ"
+    },
+    {
+      "name": "4Me 4Me",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
+      "url": "https://open.spotify.com/track/7uEFboafVLvROPYTqdMi0n"
+    },
+    {
+      "name": "Bleed (feat. Omar Apollo)",
+      "artist": "Malcolm Todd, Omar Apollo",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/2TAKt1x0k9AltDJm31GhEu"
+    },
+    {
       "name": "Chest Pain (I Love)",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/2XUx8PCXGpP1XhZJMGiUol"
     },
     {
-      "name": "Harry Styles",
+      "name": "Attention",
       "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
-    },
-    {
-      "name": "Who's the Fool",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/5hGZ18fF81kgGwukiJOKGm"
-    },
-    {
-      "name": "Bienvenue Chez Moi",
-      "artist": "Stromae",
-      "image": "https://i.scdn.co/image/ab67616d0000b273ae373174b14e3eac81554402",
-      "url": "https://open.spotify.com/track/5yS7vQ1VuDEfNwDGRztrrY"
-    },
-    {
-      "name": "Hourglass",
-      "artist": "Zedd, LIZ",
-      "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
-      "url": "https://open.spotify.com/track/6NwrXtcFbc8OX7wJyBqE89"
-    },
-    {
-      "name": "Cheer Me On",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
+      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
+      "url": "https://open.spotify.com/track/4YL3I7JjXiS0p8GpCestbv"
     }
   ]
 }
