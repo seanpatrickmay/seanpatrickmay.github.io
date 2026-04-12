@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-11T13:53:54.062Z",
+  "generated_at": "2026-04-12T13:58:23.913Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -12,14 +12,14 @@
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
-      "name": "Kanye West",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
-      "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
-    },
-    {
       "name": "Stromae",
       "image": "https://i.scdn.co/image/ab6761610000e5ebcc129f1c9b5047760d66aae2",
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
+    },
+    {
+      "name": "Kanye West",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
+      "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
     },
     {
       "name": "ConcernedApe",
@@ -72,12 +72,6 @@
       "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
     },
     {
-      "name": "All Falls Down",
-      "artist": "Kanye West, Syleena Johnson",
-      "image": "https://i.scdn.co/image/ab67616d0000b27325b055377757b3cdd6f26b78",
-      "url": "https://open.spotify.com/track/5SkRLpaGtvYPhw02vZhQQ9"
-    },
-    {
       "name": "Cheer Me On",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
@@ -112,6 +106,12 @@
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
       "url": "https://open.spotify.com/track/4YL3I7JjXiS0p8GpCestbv"
+    },
+    {
+      "name": "Harry Styles",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
     }
   ]
 }
