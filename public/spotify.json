@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-12T13:58:23.913Z",
+  "generated_at": "2026-04-13T14:44:34.072Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -32,11 +32,6 @@
       "url": "https://open.spotify.com/artist/1t9YWEQIh5ciiliO2C8Mew"
     },
     {
-      "name": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
-      "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
-    },
-    {
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebeefa05f0b8fcafd4beb19d31",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
@@ -45,6 +40,11 @@
       "name": "Ye",
       "image": "https://i.scdn.co/image/ab6761610000e5eb592816284c71eee455ff7093",
       "url": "https://open.spotify.com/artist/3NlsBPwqJuDgtXZ2rv5Dmq"
+    },
+    {
+      "name": "Lady Gaga",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
+      "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
     },
     {
       "name": "The Beatles",
