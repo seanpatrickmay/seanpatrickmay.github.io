@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T14:48:12.468Z",
+  "generated_at": "2026-04-15T14:28:19.430Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -47,12 +47,18 @@
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
     },
     {
-      "name": "The Beatles",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe9348cc01ff5d55971b22433",
-      "url": "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
+      "name": "Daniel Blumenthal",
+      "image": "https://i.scdn.co/image/0b0b3373f561d2c676bbe691bb8399975517aa72",
+      "url": "https://open.spotify.com/artist/0Ks41NxSMIGc9jdSGVELba"
     }
   ],
   "tracks": [
+    {
+      "name": "Make Me a Better Man",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
+    },
     {
       "name": "Just Dance",
       "artist": "Lady Gaga, Colby O'Donis",
@@ -64,12 +70,6 @@
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27394f1e6cc9e5d783cdae161f1",
       "url": "https://open.spotify.com/track/3rKjT23XeGg3pbqE1T1fpd"
-    },
-    {
-      "name": "Make Me a Better Man",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
     },
     {
       "name": "Attention",
