@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T14:00:07.269Z",
+  "generated_at": "2026-04-19T13:58:33.219Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -17,9 +17,9 @@
       "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
     },
     {
-      "name": "DONDA",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb8fbdf9fb0a3c447b8c97a08b",
-      "url": "https://open.spotify.com/artist/1t9YWEQIh5ciiliO2C8Mew"
+      "name": "Kanye West",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
+      "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
     },
     {
       "name": "Lady Gaga",
@@ -27,14 +27,14 @@
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
     },
     {
-      "name": "Ye",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb592816284c71eee455ff7093",
-      "url": "https://open.spotify.com/artist/3NlsBPwqJuDgtXZ2rv5Dmq"
-    },
-    {
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebeefa05f0b8fcafd4beb19d31",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+    },
+    {
+      "name": "DONDA",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb8fbdf9fb0a3c447b8c97a08b",
+      "url": "https://open.spotify.com/artist/1t9YWEQIh5ciiliO2C8Mew"
     },
     {
       "name": "Daniel Blumenthal",
@@ -42,14 +42,14 @@
       "url": "https://open.spotify.com/artist/0Ks41NxSMIGc9jdSGVELba"
     },
     {
+      "name": "Ye",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb592816284c71eee455ff7093",
+      "url": "https://open.spotify.com/artist/3NlsBPwqJuDgtXZ2rv5Dmq"
+    },
+    {
       "name": "Adele",
       "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
-    },
-    {
-      "name": "Stromae",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebcc129f1c9b5047760d66aae2",
-      "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
     }
   ],
   "tracks": [
