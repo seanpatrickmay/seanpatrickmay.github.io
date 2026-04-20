@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T13:58:33.219Z",
+  "generated_at": "2026-04-20T14:46:27.183Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -54,16 +54,16 @@
   ],
   "tracks": [
     {
-      "name": "Make Me a Better Man",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
-    },
-    {
       "name": "Breathe",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27394f1e6cc9e5d783cdae161f1",
       "url": "https://open.spotify.com/track/3rKjT23XeGg3pbqE1T1fpd"
+    },
+    {
+      "name": "Make Me a Better Man",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
     },
     {
       "name": "Just Dance",
