@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T14:45:34.857Z",
+  "generated_at": "2026-04-22T14:44:40.995Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -22,9 +22,9 @@
       "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
     },
     {
-      "name": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
-      "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
+      "name": "L'Impératrice",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebc676dbddd1febecdb7ccf160",
+      "url": "https://open.spotify.com/artist/4PwlsrN0t5mLN0C827cbEU"
     },
     {
       "name": "Zedd",
@@ -32,24 +32,24 @@
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
-      "name": "DONDA",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb8fbdf9fb0a3c447b8c97a08b",
-      "url": "https://open.spotify.com/artist/1t9YWEQIh5ciiliO2C8Mew"
-    },
-    {
       "name": "Daniel Blumenthal",
       "image": "https://i.scdn.co/image/0b0b3373f561d2c676bbe691bb8399975517aa72",
       "url": "https://open.spotify.com/artist/0Ks41NxSMIGc9jdSGVELba"
     },
     {
-      "name": "Ye",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb592816284c71eee455ff7093",
-      "url": "https://open.spotify.com/artist/3NlsBPwqJuDgtXZ2rv5Dmq"
-    },
-    {
       "name": "Adele",
       "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
+    },
+    {
+      "name": "Stromae",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebcc129f1c9b5047760d66aae2",
+      "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
+    },
+    {
+      "name": "Hikaru Shirosu",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb300c824520fe76aa9ceb7f08",
+      "url": "https://open.spotify.com/artist/3WJfB0QSAWAO283H19gL5a"
     }
   ],
   "tracks": [
@@ -66,16 +66,16 @@
       "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
     },
     {
-      "name": "Just Dance",
-      "artist": "Lady Gaga, Colby O'Donis",
-      "image": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
-      "url": "https://open.spotify.com/track/1dzQoRqT5ucxXVaAhTcT0J"
-    },
-    {
       "name": "Harry Styles",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
       "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
+    },
+    {
+      "name": "Just Dance",
+      "artist": "Lady Gaga, Colby O'Donis",
+      "image": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
+      "url": "https://open.spotify.com/track/1dzQoRqT5ucxXVaAhTcT0J"
     },
     {
       "name": "Bleed (feat. Omar Apollo)",
@@ -108,10 +108,10 @@
       "url": "https://open.spotify.com/track/1uhkCvJALethci3eokMkbU"
     },
     {
-      "name": "Lying",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/3M4tj3UMHFmMoD3BNvDIkY"
+      "name": "Peur des filles",
+      "artist": "L'Impératrice",
+      "image": "https://i.scdn.co/image/ab67616d0000b273389ffd99d51037a6f0a256f5",
+      "url": "https://open.spotify.com/track/00mO8JKk2wQ7VqdPcY1r4O"
     }
   ]
 }
