@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T14:44:40.995Z",
+  "generated_at": "2026-04-23T15:10:17.824Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -17,14 +17,14 @@
       "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
     },
     {
-      "name": "Kanye West",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
-      "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
-    },
-    {
       "name": "L'Impératrice",
       "image": "https://i.scdn.co/image/ab6761610000e5ebc676dbddd1febecdb7ccf160",
       "url": "https://open.spotify.com/artist/4PwlsrN0t5mLN0C827cbEU"
+    },
+    {
+      "name": "Kanye West",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
+      "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
     },
     {
       "name": "Zedd",
@@ -72,12 +72,6 @@
       "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
     },
     {
-      "name": "Just Dance",
-      "artist": "Lady Gaga, Colby O'Donis",
-      "image": "https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2",
-      "url": "https://open.spotify.com/track/1dzQoRqT5ucxXVaAhTcT0J"
-    },
-    {
       "name": "Bleed (feat. Omar Apollo)",
       "artist": "Malcolm Todd, Omar Apollo",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
@@ -112,6 +106,12 @@
       "artist": "L'Impératrice",
       "image": "https://i.scdn.co/image/ab67616d0000b273389ffd99d51037a6f0a256f5",
       "url": "https://open.spotify.com/track/00mO8JKk2wQ7VqdPcY1r4O"
+    },
+    {
+      "name": "Lying",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/3M4tj3UMHFmMoD3BNvDIkY"
     }
   ]
 }
