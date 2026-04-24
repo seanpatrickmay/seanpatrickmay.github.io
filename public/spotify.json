@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T15:10:17.824Z",
+  "generated_at": "2026-04-24T14:43:21.486Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -32,6 +32,11 @@
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
+      "name": "Hikaru Shirosu",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb300c824520fe76aa9ceb7f08",
+      "url": "https://open.spotify.com/artist/3WJfB0QSAWAO283H19gL5a"
+    },
+    {
       "name": "Daniel Blumenthal",
       "image": "https://i.scdn.co/image/0b0b3373f561d2c676bbe691bb8399975517aa72",
       "url": "https://open.spotify.com/artist/0Ks41NxSMIGc9jdSGVELba"
@@ -45,11 +50,6 @@
       "name": "Stromae",
       "image": "https://i.scdn.co/image/ab6761610000e5ebcc129f1c9b5047760d66aae2",
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
-    },
-    {
-      "name": "Hikaru Shirosu",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb300c824520fe76aa9ceb7f08",
-      "url": "https://open.spotify.com/artist/3WJfB0QSAWAO283H19gL5a"
     }
   ],
   "tracks": [
