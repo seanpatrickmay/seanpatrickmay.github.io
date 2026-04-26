@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T14:01:22.022Z",
+  "generated_at": "2026-04-26T14:03:12.210Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -66,34 +66,16 @@
       "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
     },
     {
-      "name": "Harry Styles",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
-    },
-    {
-      "name": "Bleed (feat. Omar Apollo)",
-      "artist": "Malcolm Todd, Omar Apollo",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/2TAKt1x0k9AltDJm31GhEu"
-    },
-    {
-      "name": "Chest Pain (I Love)",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/2XUx8PCXGpP1XhZJMGiUol"
-    },
-    {
       "name": "Attention",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
       "url": "https://open.spotify.com/track/4YL3I7JjXiS0p8GpCestbv"
     },
     {
-      "name": "Who's the Fool",
+      "name": "Harry Styles",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/5hGZ18fF81kgGwukiJOKGm"
+      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
     },
     {
       "name": "Cheer Me On",
@@ -108,10 +90,28 @@
       "url": "https://open.spotify.com/track/00mO8JKk2wQ7VqdPcY1r4O"
     },
     {
-      "name": "Lying",
+      "name": "Bleed (feat. Omar Apollo)",
+      "artist": "Malcolm Todd, Omar Apollo",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/2TAKt1x0k9AltDJm31GhEu"
+    },
+    {
+      "name": "Chest Pain (I Love)",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/3M4tj3UMHFmMoD3BNvDIkY"
+      "url": "https://open.spotify.com/track/2XUx8PCXGpP1XhZJMGiUol"
+    },
+    {
+      "name": "Who's the Fool",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/5hGZ18fF81kgGwukiJOKGm"
+    },
+    {
+      "name": "Florence",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/0SLzbfio38k2vmWujFVIM6"
     }
   ]
 }
