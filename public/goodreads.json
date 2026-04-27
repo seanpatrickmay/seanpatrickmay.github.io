@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T14:06:10.480Z",
+  "generated_at": "2026-04-27T15:10:04.369Z",
   "currentlyReading": [
     {
       "title": "The Brothers Karamazov",
@@ -18,9 +18,9 @@
     {
       "title": "The Book Thief",
       "author": "Markus Zusak",
-      "rating": 0,
+      "rating": 4,
       "avgRating": 4.42,
-      "dateAdded": "Sat, 18 Apr 2026 23:34:48 -0700",
+      "dateAdded": "Sun, 26 Apr 2026 08:04:00 -0700",
       "published": "2005",
       "numPages": 554,
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1627907823l/8120173._SX98_.jpg",
@@ -53,7 +53,7 @@
     },
     {
       "title": "Children of Dune (Dune #3)",
-      "author": "Frank Patrick Herbert",
+      "author": "Frank Herbert",
       "rating": 4,
       "avgRating": 3.96,
       "dateAdded": "Sat, 07 Mar 2026 10:54:12 -0800",
@@ -65,7 +65,7 @@
     },
     {
       "title": "Dune Messiah (Dune #2)",
-      "author": "Frank Patrick Herbert",
+      "author": "Frank Herbert",
       "rating": 4,
       "avgRating": 3.89,
       "dateAdded": "Sat, 07 Mar 2026 10:53:58 -0800",
