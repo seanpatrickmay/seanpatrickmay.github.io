@@ -1,6 +1,18 @@
 {
-  "generated_at": "2026-04-27T15:10:04.369Z",
+  "generated_at": "2026-04-29T15:20:15.187Z",
   "currentlyReading": [
+    {
+      "title": "Lonesome Dove (Lonesome Dove, #1)",
+      "author": "Larry McMurtry",
+      "rating": 0,
+      "avgRating": 4.76,
+      "dateAdded": "Mon, 27 Apr 2026 14:04:00 -0700",
+      "published": "1985",
+      "numPages": 964,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1767217839l/56346987._SX98_.jpg",
+      "bookId": "56346987",
+      "link": "https://www.goodreads.com/review/show/8556602802?utm_medium=api&utm_source=rss"
+    },
     {
       "title": "The Brothers Karamazov",
       "author": "Fyodor Dostoevsky",
@@ -16,23 +28,23 @@
   ],
   "recentlyRead": [
     {
-      "title": "The Book Thief",
-      "author": "Markus Zusak",
-      "rating": 4,
-      "avgRating": 4.42,
-      "dateAdded": "Sun, 26 Apr 2026 08:04:00 -0700",
-      "published": "2005",
-      "numPages": 554,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1627907823l/8120173._SX98_.jpg",
-      "bookId": "8120173",
-      "link": "https://www.goodreads.com/review/show/8425266738?utm_medium=api&utm_source=rss"
+      "title": "The Hobbit, or There and Back Again",
+      "author": "J.R.R. Tolkien",
+      "rating": 5,
+      "avgRating": 4.29,
+      "dateAdded": "Tue, 28 Apr 2026 13:23:48 -0700",
+      "published": "1937",
+      "numPages": 366,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546071216l/5907._SX98_.jpg",
+      "bookId": "5907",
+      "link": "https://www.goodreads.com/review/show/8418042631?utm_medium=api&utm_source=rss"
     },
     {
       "title": "Project Hail Mary",
       "author": "Andy Weir",
       "rating": 5,
       "avgRating": 4.59,
-      "dateAdded": "Tue, 07 Apr 2026 22:34:26 -0700",
+      "dateAdded": "Tue, 28 Apr 2026 13:19:38 -0700",
       "published": "2021",
       "numPages": 482,
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734434586l/222697645._SX98_.jpg",
@@ -40,42 +52,42 @@
       "link": "https://www.goodreads.com/review/show/8418056222?utm_medium=api&utm_source=rss"
     },
     {
-      "title": "Wuthering Heights",
-      "author": "Emily Brontë",
-      "rating": 2,
-      "avgRating": 3.9,
-      "dateAdded": "Fri, 27 Mar 2026 17:41:36 -0700",
-      "published": "1847",
-      "numPages": 359,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1478641029l/32929156._SX98_.jpg",
-      "bookId": "32929156",
-      "link": "https://www.goodreads.com/review/show/8418039770?utm_medium=api&utm_source=rss"
+      "title": "Dune (Dune, #1)",
+      "author": "Frank Herbert",
+      "rating": 5,
+      "avgRating": 4.34,
+      "dateAdded": "Tue, 28 Apr 2026 13:16:10 -0700",
+      "published": "1965",
+      "numPages": 658,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1555447414l/44767458._SX98_.jpg",
+      "bookId": "44767458",
+      "link": "https://www.goodreads.com/review/show/8418071378?utm_medium=api&utm_source=rss"
     },
     {
-      "title": "Children of Dune (Dune #3)",
-      "author": "Frank Herbert",
-      "rating": 4,
-      "avgRating": 3.96,
-      "dateAdded": "Sat, 07 Mar 2026 10:54:12 -0800",
-      "published": "1976",
-      "numPages": 609,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1564783201l/44492286._SY160_.jpg",
-      "bookId": "44492286",
-      "link": "https://www.goodreads.com/review/show/8418072991?utm_medium=api&utm_source=rss"
+      "title": "Annihilation (Southern Reach, #1)",
+      "author": "Jeff Vandermeer",
+      "rating": 3,
+      "avgRating": 3.81,
+      "dateAdded": "Tue, 28 Apr 2026 13:12:28 -0700",
+      "published": "2014",
+      "numPages": 195,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1403941587l/17934530._SX98_.jpg",
+      "bookId": "17934530",
+      "link": "https://www.goodreads.com/review/show/8418057737?utm_medium=api&utm_source=rss"
     },
     {
-      "title": "Dune Messiah (Dune #2)",
-      "author": "Frank Herbert",
-      "rating": 4,
-      "avgRating": 3.89,
-      "dateAdded": "Sat, 07 Mar 2026 10:53:58 -0800",
-      "published": "1969",
-      "numPages": 336,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1577043824l/44492285._SY160_.jpg",
-      "bookId": "44492285",
-      "link": "https://www.goodreads.com/review/show/8418072429?utm_medium=api&utm_source=rss"
+      "title": "Atlas Shrugged",
+      "author": "Ayn Rand",
+      "rating": 5,
+      "avgRating": 3.67,
+      "dateAdded": "Tue, 28 Apr 2026 13:10:11 -0700",
+      "published": "1957",
+      "numPages": 1168,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1405868167l/662._SX98_.jpg",
+      "bookId": "662",
+      "link": "https://www.goodreads.com/review/show/8418065357?utm_medium=api&utm_source=rss"
     }
   ],
-  "totalPages": 4361,
+  "totalPages": 4727,
   "profileUrl": "https://www.goodreads.com/user/show/199381877"
 }
