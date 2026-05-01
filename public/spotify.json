@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T15:06:51.592Z",
+  "generated_at": "2026-05-01T14:15:19.861Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -28,7 +28,7 @@
     },
     {
       "name": "Zara Larsson",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb11be9310ef4b23734c13b5c8",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd519a7e349541cba8f85e965",
       "url": "https://open.spotify.com/artist/1Xylc3o4UrD53lo9CvFvVg"
     },
     {
@@ -42,14 +42,14 @@
       "url": "https://open.spotify.com/artist/0Ks41NxSMIGc9jdSGVELba"
     },
     {
-      "name": "Adele",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
-      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
-    },
-    {
       "name": "Hikaru Shirosu",
       "image": "https://i.scdn.co/image/ab6761610000e5eb300c824520fe76aa9ceb7f08",
       "url": "https://open.spotify.com/artist/3WJfB0QSAWAO283H19gL5a"
+    },
+    {
+      "name": "Million Eyes",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb3e97fe0da37fbc6ef6466905",
+      "url": "https://open.spotify.com/artist/2sXnk24vARe4jxHbd1HbEq"
     }
   ],
   "tracks": [
@@ -90,28 +90,28 @@
       "url": "https://open.spotify.com/track/6QFCMUUq1T2Vf5sFUXcuQ7"
     },
     {
-      "name": "Danny Boy",
-      "artist": "Xuefei Yang",
-      "image": "https://i.scdn.co/image/ab67616d0000b2733a8a35b196cf105795ec5925",
-      "url": "https://open.spotify.com/track/21Fs9UuXGoESVVESdWTxZ5"
-    },
-    {
-      "name": "Comfort Me",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27367fd900586544a0cd454d57f",
-      "url": "https://open.spotify.com/track/3dAk7Z16rv38qRM3MIhCIX"
-    },
-    {
-      "name": "Right As Rain",
-      "artist": "Adele",
-      "image": "https://i.scdn.co/image/ab67616d0000b27389d0ff2366a208016b6e9c6e",
-      "url": "https://open.spotify.com/track/6OLudcGaT6HQ5bXH54kI8i"
-    },
-    {
       "name": "Around the World",
       "artist": "Daft Punk",
       "image": "https://i.scdn.co/image/ab67616d0000b27387aa91b6ba6b4fded7bf3293",
       "url": "https://open.spotify.com/track/1q4poN5PaGvY1RbEC5gl5s"
+    },
+    {
+      "name": "Bleed (feat. Omar Apollo)",
+      "artist": "Malcolm Todd, Omar Apollo",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/2TAKt1x0k9AltDJm31GhEu"
+    },
+    {
+      "name": "Ladygirl",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
+      "url": "https://open.spotify.com/track/3R1XKFgSo7a8paa77cZCM0"
+    },
+    {
+      "name": "Attention",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
+      "url": "https://open.spotify.com/track/4YL3I7JjXiS0p8GpCestbv"
     }
   ]
 }
