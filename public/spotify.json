@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T14:15:19.861Z",
+  "generated_at": "2026-05-02T14:08:51.037Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -37,11 +37,6 @@
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
-      "name": "Daniel Blumenthal",
-      "image": "https://i.scdn.co/image/0b0b3373f561d2c676bbe691bb8399975517aa72",
-      "url": "https://open.spotify.com/artist/0Ks41NxSMIGc9jdSGVELba"
-    },
-    {
       "name": "Hikaru Shirosu",
       "image": "https://i.scdn.co/image/ab6761610000e5eb300c824520fe76aa9ceb7f08",
       "url": "https://open.spotify.com/artist/3WJfB0QSAWAO283H19gL5a"
@@ -50,6 +45,11 @@
       "name": "Million Eyes",
       "image": "https://i.scdn.co/image/ab6761610000e5eb3e97fe0da37fbc6ef6466905",
       "url": "https://open.spotify.com/artist/2sXnk24vARe4jxHbd1HbEq"
+    },
+    {
+      "name": "Lady Gaga",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
+      "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
     }
   ],
   "tracks": [
