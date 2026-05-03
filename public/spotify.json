@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02T14:08:51.037Z",
+  "generated_at": "2026-05-03T14:09:18.243Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -32,11 +32,6 @@
       "url": "https://open.spotify.com/artist/1Xylc3o4UrD53lo9CvFvVg"
     },
     {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebeefa05f0b8fcafd4beb19d31",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
-    {
       "name": "Hikaru Shirosu",
       "image": "https://i.scdn.co/image/ab6761610000e5eb300c824520fe76aa9ceb7f08",
       "url": "https://open.spotify.com/artist/3WJfB0QSAWAO283H19gL5a"
@@ -50,6 +45,11 @@
       "name": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
+    },
+    {
+      "name": "Hakdo",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd4a024fed59e3b62ae505082",
+      "url": "https://open.spotify.com/artist/28UeK3YHrGAtpcL4NS8gow"
     }
   ],
   "tracks": [
