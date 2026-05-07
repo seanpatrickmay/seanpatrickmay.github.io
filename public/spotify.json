@@ -1,20 +1,10 @@
 {
-  "generated_at": "2026-05-06T15:25:23.208Z",
+  "generated_at": "2026-05-07T15:26:29.860Z",
   "artists": [
     {
       "name": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab6761610000e5eb9f6f7c2d12975d2a4b3a0fd8",
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
-    },
-    {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
-    },
-    {
-      "name": "ConcernedApe",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe17351c781f0cd9ae4b6442e",
-      "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
     },
     {
       "name": "L'Impératrice",
@@ -50,6 +40,16 @@
       "name": "Hakdo",
       "image": "https://i.scdn.co/image/ab6761610000e5ebd4a024fed59e3b62ae505082",
       "url": "https://open.spotify.com/artist/28UeK3YHrGAtpcL4NS8gow"
+    },
+    {
+      "name": "Joe Hisaishi",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb255e3fb8af57399bc9975c61",
+      "url": "https://open.spotify.com/artist/7nzSoJISlVJsn7O0yTeMOB"
+    },
+    {
+      "name": "ABBA",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb144d2bd5d672fcb0f38be00b",
+      "url": "https://open.spotify.com/artist/0LcJLqbBmaGUft1e9Mm8HV"
     }
   ],
   "tracks": [
@@ -60,16 +60,16 @@
       "url": "https://open.spotify.com/track/3rKjT23XeGg3pbqE1T1fpd"
     },
     {
-      "name": "Make Me a Better Man",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
-    },
-    {
       "name": "Peur des filles",
       "artist": "L'Impératrice",
       "image": "https://i.scdn.co/image/ab67616d0000b273389ffd99d51037a6f0a256f5",
       "url": "https://open.spotify.com/track/00mO8JKk2wQ7VqdPcY1r4O"
+    },
+    {
+      "name": "Make Me a Better Man",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
     },
     {
       "name": "Danza Marilù (feat. Fabiana Martone)",
@@ -90,28 +90,28 @@
       "url": "https://open.spotify.com/track/6QFCMUUq1T2Vf5sFUXcuQ7"
     },
     {
-      "name": "Around the World",
-      "artist": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387aa91b6ba6b4fded7bf3293",
-      "url": "https://open.spotify.com/track/1q4poN5PaGvY1RbEC5gl5s"
+      "name": "You Rock My World",
+      "artist": "Michael Jackson",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736c1748b440eb462a19f24eec",
+      "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
     },
     {
-      "name": "Bleed (feat. Omar Apollo)",
-      "artist": "Malcolm Todd, Omar Apollo",
+      "name": "TRUE LOVE",
+      "artist": "DONDA, Kanye West, Ye",
+      "image": "https://i.scdn.co/image/ab67616d0000b2737cd12a9cfd038d6f23c84a86",
+      "url": "https://open.spotify.com/track/3WbuQIjkR1mIKdwSNlgqpp"
+    },
+    {
+      "name": "Last Train to London",
+      "artist": "Electric Light Orchestra",
+      "image": "https://i.scdn.co/image/ab67616d0000b27337e78b6638f7737adee73d6f",
+      "url": "https://open.spotify.com/track/6xE6ZWzK1YDDSYzqOCoQlz"
+    },
+    {
+      "name": "Florence",
+      "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/2TAKt1x0k9AltDJm31GhEu"
-    },
-    {
-      "name": "Ladygirl",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
-      "url": "https://open.spotify.com/track/3R1XKFgSo7a8paa77cZCM0"
-    },
-    {
-      "name": "Attention",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
-      "url": "https://open.spotify.com/track/4YL3I7JjXiS0p8GpCestbv"
+      "url": "https://open.spotify.com/track/0SLzbfio38k2vmWujFVIM6"
     }
   ]
 }
