@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T15:53:30.368Z",
+  "generated_at": "2026-05-12T15:37:16.247Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -66,22 +66,10 @@
       "url": "https://open.spotify.com/track/00mO8JKk2wQ7VqdPcY1r4O"
     },
     {
-      "name": "Make Me a Better Man",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
-    },
-    {
       "name": "Danza Marilù (feat. Fabiana Martone)",
       "artist": "L'Impératrice, Fabiana Martone",
       "image": "https://i.scdn.co/image/ab67616d0000b2737e3398f4a50f6e9534f2fbd6",
       "url": "https://open.spotify.com/track/2WDh4a5IciWBv72BZCa9MP"
-    },
-    {
-      "name": "Harry Styles",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
     },
     {
       "name": "Beauty And A Beat",
@@ -90,10 +78,22 @@
       "url": "https://open.spotify.com/track/6QFCMUUq1T2Vf5sFUXcuQ7"
     },
     {
+      "name": "Make Me a Better Man",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
+    },
+    {
       "name": "You Rock My World",
       "artist": "Michael Jackson",
       "image": "https://i.scdn.co/image/ab67616d0000b2736c1748b440eb462a19f24eec",
       "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
+    },
+    {
+      "name": "Can't Tame Her",
+      "artist": "Zara Larsson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273ad4d76696458a3a7befd3cd7",
+      "url": "https://open.spotify.com/track/0b8MRnjacbgVQlvLcg8JGQ"
     },
     {
       "name": "TRUE LOVE",
@@ -102,16 +102,16 @@
       "url": "https://open.spotify.com/track/3WbuQIjkR1mIKdwSNlgqpp"
     },
     {
-      "name": "Last Train to London",
-      "artist": "Electric Light Orchestra",
-      "image": "https://i.scdn.co/image/ab67616d0000b27337e78b6638f7737adee73d6f",
-      "url": "https://open.spotify.com/track/6xE6ZWzK1YDDSYzqOCoQlz"
+      "name": "Girl!",
+      "artist": "L'Impératrice",
+      "image": "https://i.scdn.co/image/ab67616d0000b2737e3398f4a50f6e9534f2fbd6",
+      "url": "https://open.spotify.com/track/1jllBpCnWEhiSpihZn7iWY"
     },
     {
-      "name": "Ain't My Fault",
-      "artist": "Zara Larsson",
-      "image": "https://i.scdn.co/image/ab67616d0000b273401bf6103d4b7f5230a21582",
-      "url": "https://open.spotify.com/track/0ADG9OgdVTL7fgREP75BrZ"
+      "name": "Voodoo?",
+      "artist": "L'Impératrice",
+      "image": "https://i.scdn.co/image/ab67616d0000b273389ffd99d51037a6f0a256f5",
+      "url": "https://open.spotify.com/track/3pr0y5h4MkBngy6gyozLDV"
     }
   ]
 }
