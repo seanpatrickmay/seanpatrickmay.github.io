@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13T15:41:10.912Z",
+  "generated_at": "2026-05-14T15:15:41.307Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -42,14 +42,14 @@
       "url": "https://open.spotify.com/artist/0LcJLqbBmaGUft1e9Mm8HV"
     },
     {
+      "name": "Hikaru Shirosu",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb300c824520fe76aa9ceb7f08",
+      "url": "https://open.spotify.com/artist/3WJfB0QSAWAO283H19gL5a"
+    },
+    {
       "name": "54 Ultra",
       "image": "https://i.scdn.co/image/ab6761610000e5eb8fdf273bf26657879cccdc74",
       "url": "https://open.spotify.com/artist/6X5L6rmyvrWWu60Gx6exiZ"
-    },
-    {
-      "name": "Laufey",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebc751deb23ed62e7cadfb669a",
-      "url": "https://open.spotify.com/artist/7gW0r5CkdEUMm42w9XpyZO"
     }
   ],
   "tracks": [
