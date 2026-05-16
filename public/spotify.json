@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T15:10:28.401Z",
+  "generated_at": "2026-05-16T14:20:34.355Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -32,11 +32,6 @@
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
     },
     {
-      "name": "Adele",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
-      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
-    },
-    {
       "name": "ABBA",
       "image": "https://i.scdn.co/image/ab6761610000e5eb144d2bd5d672fcb0f38be00b",
       "url": "https://open.spotify.com/artist/0LcJLqbBmaGUft1e9Mm8HV"
@@ -45,6 +40,11 @@
       "name": "Hikaru Shirosu",
       "image": "https://i.scdn.co/image/ab6761610000e5eb300c824520fe76aa9ceb7f08",
       "url": "https://open.spotify.com/artist/3WJfB0QSAWAO283H19gL5a"
+    },
+    {
+      "name": "Toshifumi Hinata",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb1d5fb5b560b966ca1177aefe",
+      "url": "https://open.spotify.com/artist/08tfDO4dSrwxax35a3HIMC"
     },
     {
       "name": "54 Ultra",
@@ -72,12 +72,6 @@
       "url": "https://open.spotify.com/track/2WDh4a5IciWBv72BZCa9MP"
     },
     {
-      "name": "Beauty And A Beat",
-      "artist": "Justin Bieber, Nicki Minaj",
-      "image": "https://i.scdn.co/image/ab67616d0000b273f1d02a6cec967f8b6b78f76e",
-      "url": "https://open.spotify.com/track/6QFCMUUq1T2Vf5sFUXcuQ7"
-    },
-    {
       "name": "Loverini (feat. L'Impératrice)",
       "artist": "Myd, L'Impératrice",
       "image": "https://i.scdn.co/image/ab67616d0000b273a789ac4bd02b1a6db98ef683",
@@ -96,10 +90,10 @@
       "url": "https://open.spotify.com/track/4E4dKxVSGsdwloQ6gtC7Oe"
     },
     {
-      "name": "Make Me a Better Man",
+      "name": "4Me 4Me",
       "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X"
+      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
+      "url": "https://open.spotify.com/track/7uEFboafVLvROPYTqdMi0n"
     },
     {
       "name": "Can't Tame Her",
@@ -108,10 +102,16 @@
       "url": "https://open.spotify.com/track/0b8MRnjacbgVQlvLcg8JGQ"
     },
     {
-      "name": "Girl!",
-      "artist": "L'Impératrice",
-      "image": "https://i.scdn.co/image/ab67616d0000b2737e3398f4a50f6e9534f2fbd6",
-      "url": "https://open.spotify.com/track/1jllBpCnWEhiSpihZn7iWY"
+      "name": "Mr. Incorrect",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
+      "url": "https://open.spotify.com/track/1JOUKim8ZlHaM5N43sQ9dq"
+    },
+    {
+      "name": "I Think I Left the Stove On",
+      "artist": "Hotel Ugly",
+      "image": "https://i.scdn.co/image/ab67616d0000b273934e5b0ab5e1f73519e6b1d2",
+      "url": "https://open.spotify.com/track/34HgIvucTKJvDgzHVMaGLG"
     }
   ]
 }
