@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T14:23:57.794Z",
+  "generated_at": "2026-05-18T16:20:02.681Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -22,19 +22,14 @@
       "url": "https://open.spotify.com/artist/1Xylc3o4UrD53lo9CvFvVg"
     },
     {
+      "name": "ConcernedApe",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe17351c781f0cd9ae4b6442e",
+      "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
+    },
+    {
       "name": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
-    },
-    {
-      "name": "Jack Murnin",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebc580706e9c0a2e5415f58bc7",
-      "url": "https://open.spotify.com/artist/3cwsWGWIWIIouCMZleRHRf"
-    },
-    {
-      "name": "ABBA",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb144d2bd5d672fcb0f38be00b",
-      "url": "https://open.spotify.com/artist/0LcJLqbBmaGUft1e9Mm8HV"
     },
     {
       "name": "Hikaru Shirosu",
@@ -42,14 +37,19 @@
       "url": "https://open.spotify.com/artist/3WJfB0QSAWAO283H19gL5a"
     },
     {
-      "name": "54 Ultra",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb8fdf273bf26657879cccdc74",
-      "url": "https://open.spotify.com/artist/6X5L6rmyvrWWu60Gx6exiZ"
+      "name": "Jack Murnin",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebc580706e9c0a2e5415f58bc7",
+      "url": "https://open.spotify.com/artist/3cwsWGWIWIIouCMZleRHRf"
     },
     {
       "name": "Toshifumi Hinata",
       "image": "https://i.scdn.co/image/ab6761610000e5eb1d5fb5b560b966ca1177aefe",
       "url": "https://open.spotify.com/artist/08tfDO4dSrwxax35a3HIMC"
+    },
+    {
+      "name": "The Strokes",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebc3b137793230f4043feb0089",
+      "url": "https://open.spotify.com/artist/0epOFNiUfyON9EYx7Tpr6V"
     }
   ],
   "tracks": [
@@ -78,12 +78,6 @@
       "url": "https://open.spotify.com/track/7uEFboafVLvROPYTqdMi0n"
     },
     {
-      "name": "Mr. Incorrect",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
-      "url": "https://open.spotify.com/track/1JOUKim8ZlHaM5N43sQ9dq"
-    },
-    {
       "name": "Loverini (feat. L'Impératrice)",
       "artist": "Myd, L'Impératrice",
       "image": "https://i.scdn.co/image/ab67616d0000b273a789ac4bd02b1a6db98ef683",
@@ -100,6 +94,12 @@
       "artist": "Zara Larsson",
       "image": "https://i.scdn.co/image/ab67616d0000b273ad4d76696458a3a7befd3cd7",
       "url": "https://open.spotify.com/track/0b8MRnjacbgVQlvLcg8JGQ"
+    },
+    {
+      "name": "Sour Candy",
+      "artist": "Melt",
+      "image": "https://i.scdn.co/image/ab67616d0000b273956e776b774ba220c5b94a23",
+      "url": "https://open.spotify.com/track/4lxTwvoaAlvefN1wGwvoD9"
     },
     {
       "name": "Mac",
