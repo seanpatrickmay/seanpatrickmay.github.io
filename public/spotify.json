@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T16:16:04.248Z",
+  "generated_at": "2026-05-20T16:21:55.561Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -10,11 +10,6 @@
       "name": "ConcernedApe",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe17351c781f0cd9ae4b6442e",
       "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
-    },
-    {
-      "name": "L'Impératrice",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebc676dbddd1febecdb7ccf160",
-      "url": "https://open.spotify.com/artist/4PwlsrN0t5mLN0C827cbEU"
     },
     {
       "name": "Stromae",
@@ -32,9 +27,19 @@
       "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
     },
     {
+      "name": "The Beatles",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe9348cc01ff5d55971b22433",
+      "url": "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
+    },
+    {
       "name": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
+    },
+    {
+      "name": "L'Impératrice",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebc676dbddd1febecdb7ccf160",
+      "url": "https://open.spotify.com/artist/4PwlsrN0t5mLN0C827cbEU"
     },
     {
       "name": "Hikaru Shirosu",
@@ -45,11 +50,6 @@
       "name": "Jack Murnin",
       "image": "https://i.scdn.co/image/ab6761610000e5ebc580706e9c0a2e5415f58bc7",
       "url": "https://open.spotify.com/artist/3cwsWGWIWIIouCMZleRHRf"
-    },
-    {
-      "name": "Toshifumi Hinata",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb1d5fb5b560b966ca1177aefe",
-      "url": "https://open.spotify.com/artist/08tfDO4dSrwxax35a3HIMC"
     }
   ],
   "tracks": [
@@ -58,12 +58,6 @@
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27394f1e6cc9e5d783cdae161f1",
       "url": "https://open.spotify.com/track/3rKjT23XeGg3pbqE1T1fpd"
-    },
-    {
-      "name": "Danza Marilù (feat. Fabiana Martone)",
-      "artist": "L'Impératrice, Fabiana Martone",
-      "image": "https://i.scdn.co/image/ab67616d0000b2737e3398f4a50f6e9534f2fbd6",
-      "url": "https://open.spotify.com/track/2WDh4a5IciWBv72BZCa9MP"
     },
     {
       "name": "Stardew Valley Overture",
@@ -76,12 +70,6 @@
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
       "url": "https://open.spotify.com/track/7uEFboafVLvROPYTqdMi0n"
-    },
-    {
-      "name": "Loverini (feat. L'Impératrice)",
-      "artist": "Myd, L'Impératrice",
-      "image": "https://i.scdn.co/image/ab67616d0000b273a789ac4bd02b1a6db98ef683",
-      "url": "https://open.spotify.com/track/6bBN2bbxAnCXWTwXaOkF0X"
     },
     {
       "name": "Peace Or Violence",
@@ -112,6 +100,18 @@
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
       "url": "https://open.spotify.com/track/0eAuGrXyGFYwur9ARUe7LJ"
+    },
+    {
+      "name": "Sleepyhead",
+      "artist": "Jack Murnin",
+      "image": "https://i.scdn.co/image/ab67616d0000b2739492c362dd276c3e890b8ca1",
+      "url": "https://open.spotify.com/track/0qRUcsXwl9M5CMThruDIsj"
+    },
+    {
+      "name": "I Think I Left the Stove On",
+      "artist": "Hotel Ugly",
+      "image": "https://i.scdn.co/image/ab67616d0000b273934e5b0ab5e1f73519e6b1d2",
+      "url": "https://open.spotify.com/track/34HgIvucTKJvDgzHVMaGLG"
     }
   ]
 }
