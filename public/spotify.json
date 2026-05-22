@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-05-21T16:13:59.526Z",
+  "generated_at": "2026-05-22T15:46:37.472Z",
   "artists": [
-    {
-      "name": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb9f6f7c2d12975d2a4b3a0fd8",
-      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
-    },
     {
       "name": "ConcernedApe",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe17351c781f0cd9ae4b6442e",
       "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
+    },
+    {
+      "name": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb9f6f7c2d12975d2a4b3a0fd8",
+      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
       "name": "Stromae",
@@ -22,6 +22,11 @@
       "url": "https://open.spotify.com/artist/1Xylc3o4UrD53lo9CvFvVg"
     },
     {
+      "name": "The Beatles",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe9348cc01ff5d55971b22433",
+      "url": "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
+    },
+    {
       "name": "Kanye West",
       "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
       "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
@@ -32,24 +37,19 @@
       "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
     },
     {
-      "name": "The Beatles",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe9348cc01ff5d55971b22433",
-      "url": "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
-    },
-    {
       "name": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
     },
     {
-      "name": "Hikaru Shirosu",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb300c824520fe76aa9ceb7f08",
-      "url": "https://open.spotify.com/artist/3WJfB0QSAWAO283H19gL5a"
-    },
-    {
       "name": "Jack Murnin",
       "image": "https://i.scdn.co/image/ab6761610000e5ebc580706e9c0a2e5415f58bc7",
       "url": "https://open.spotify.com/artist/3cwsWGWIWIIouCMZleRHRf"
+    },
+    {
+      "name": "L'Impératrice",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebc676dbddd1febecdb7ccf160",
+      "url": "https://open.spotify.com/artist/4PwlsrN0t5mLN0C827cbEU"
     }
   ],
   "tracks": [
@@ -64,12 +64,6 @@
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27394f1e6cc9e5d783cdae161f1",
       "url": "https://open.spotify.com/track/3rKjT23XeGg3pbqE1T1fpd"
-    },
-    {
-      "name": "4Me 4Me",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
-      "url": "https://open.spotify.com/track/7uEFboafVLvROPYTqdMi0n"
     },
     {
       "name": "Cloud Country",
@@ -90,12 +84,6 @@
       "url": "https://open.spotify.com/track/24IMYR3YeaGMxePyCLvcCU"
     },
     {
-      "name": "Summer (The Sun Can Bend an Orange Sky)",
-      "artist": "ConcernedApe",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
-      "url": "https://open.spotify.com/track/2uKkYCiGW09gxyNFxX9HTj"
-    },
-    {
       "name": "Spring (It's a Big World Outside)",
       "artist": "ConcernedApe",
       "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
@@ -108,10 +96,22 @@
       "url": "https://open.spotify.com/track/45dZbNz1sanDXVENijqb58"
     },
     {
-      "name": "Peace Or Violence",
-      "artist": "Stromae",
-      "image": "https://i.scdn.co/image/ab67616d0000b273ae373174b14e3eac81554402",
-      "url": "https://open.spotify.com/track/4E4dKxVSGsdwloQ6gtC7Oe"
+      "name": "Pelican Town",
+      "artist": "ConcernedApe",
+      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
+      "url": "https://open.spotify.com/track/4q45kBmFoqQYRXxld3drPB"
+    },
+    {
+      "name": "Settling In",
+      "artist": "ConcernedApe",
+      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
+      "url": "https://open.spotify.com/track/5ocYLXFoqJ2D4Occ2Xepj0"
+    },
+    {
+      "name": "A Glimpse of the Other World (Wizard's Theme)",
+      "artist": "ConcernedApe",
+      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
+      "url": "https://open.spotify.com/track/5zxD1d3DTGJbTUFIWhAcC8"
     }
   ]
 }
