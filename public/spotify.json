@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T16:34:03.342Z",
+  "generated_at": "2026-05-28T16:51:55.582Z",
   "artists": [
     {
       "name": "ConcernedApe",
@@ -17,11 +17,6 @@
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
     },
     {
-      "name": "Zara Larsson",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd519a7e349541cba8f85e965",
-      "url": "https://open.spotify.com/artist/1Xylc3o4UrD53lo9CvFvVg"
-    },
-    {
       "name": "The Beatles",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe9348cc01ff5d55971b22433",
       "url": "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
@@ -37,9 +32,9 @@
       "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
     },
     {
-      "name": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
-      "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
+      "name": "Zara Larsson",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd519a7e349541cba8f85e965",
+      "url": "https://open.spotify.com/artist/1Xylc3o4UrD53lo9CvFvVg"
     },
     {
       "name": "Jack Murnin",
@@ -50,6 +45,11 @@
       "name": "L'Impératrice",
       "image": "https://i.scdn.co/image/ab6761610000e5ebc676dbddd1febecdb7ccf160",
       "url": "https://open.spotify.com/artist/4PwlsrN0t5mLN0C827cbEU"
+    },
+    {
+      "name": "DONDA",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb8fbdf9fb0a3c447b8c97a08b",
+      "url": "https://open.spotify.com/artist/1t9YWEQIh5ciiliO2C8Mew"
     }
   ],
   "tracks": [
@@ -58,12 +58,6 @@
       "artist": "ConcernedApe",
       "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
       "url": "https://open.spotify.com/track/2q2Z2A0Mt8AsWyQEdB6wuu"
-    },
-    {
-      "name": "Breathe",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27394f1e6cc9e5d783cdae161f1",
-      "url": "https://open.spotify.com/track/3rKjT23XeGg3pbqE1T1fpd"
     },
     {
       "name": "Cloud Country",
@@ -112,6 +106,12 @@
       "artist": "ConcernedApe",
       "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
       "url": "https://open.spotify.com/track/5zxD1d3DTGJbTUFIWhAcC8"
+    },
+    {
+      "name": "Spring (The Valley Comes Alive)",
+      "artist": "ConcernedApe",
+      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
+      "url": "https://open.spotify.com/track/6fwW6uPloanwDx78kBvH0N"
     }
   ]
 }
