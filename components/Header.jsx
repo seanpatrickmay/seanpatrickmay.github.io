@@ -130,27 +130,18 @@ export default function Header({ links }) {
             >
               <PinCard rotation={-1.2} pinColor="red">
               <section aria-label="About" className="rounded-3xl border border-stone-300/80 bg-stone-50 p-6 shadow-lg dark:border-stone-700/70 dark:bg-stone-900">
-                <div className="flex items-start justify-between">
-                  <img
-                    src="/images/headshot.png"
-                    alt="Sean P. May"
-                    width={400}
-                    height={400}
-                    className="w-14 h-14 rounded-full object-cover object-top ring-2 ring-stone-200/60 dark:ring-stone-700/60"
-                  />
-                  <ThemeToggle />
-                </div>
-                <div className="mt-3 space-y-1">
+                <div className="flex items-start justify-between gap-3">
                   <a
                     href="#home"
-                    className="font-display text-2xl tracking-tight text-slate-900 transition hover:text-slate-700 dark:text-slate-100 dark:hover:text-slate-300"
+                    className="font-display text-2xl leading-none tracking-tight text-slate-900 transition hover:text-slate-700 dark:text-slate-100 dark:hover:text-slate-300"
                   >
                     Sean P. May
                   </a>
-                  <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-                    i write code and do math
-                  </p>
+                  <ThemeToggle />
                 </div>
+                <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                  i write code and do math
+                </p>
                 <div className="mt-4 space-y-4 text-sm text-slate-600 dark:text-slate-300">
                   <div>
                     <div className="text-xs font-semibold lowercase tracking-wide text-slate-500 dark:text-slate-300">

@@ -182,8 +182,8 @@ export default function AboutSection({
 
           {/* Top Artists — own card */}
           <PinCard rotation={1.5} pinColor="blue" pinPosition="right">
-            <div className="rounded-sm bg-slate-800 p-4 text-white dark:bg-slate-900">
-              <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-400">
+            <div className="rounded-sm border border-slate-200 bg-white p-4 text-slate-900 dark:border-slate-700 dark:bg-slate-900 dark:text-white">
+              <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
                 🎵 top artists
               </div>
               <div className="mt-2">
@@ -201,8 +201,8 @@ export default function AboutSection({
 
           {/* Top Tracks — own card */}
           <PinCard rotation={-0.8} pinColor="yellow" pinPosition="left">
-            <div className="rounded-sm bg-slate-800 p-4 text-white dark:bg-slate-900">
-              <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-400">
+            <div className="rounded-sm border border-slate-200 bg-white p-4 text-slate-900 dark:border-slate-700 dark:bg-slate-900 dark:text-white">
+              <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
                 🎧 top tracks
               </div>
               <div className="mt-2">
