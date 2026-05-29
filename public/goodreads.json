@@ -1,6 +1,19 @@
 {
-  "generated_at": "2026-05-29T02:04:34.604Z",
+  "generated_at": "2026-05-29T16:46:33.588Z",
   "currentlyReading": [
+    {
+      "title": "Pet Sematary",
+      "author": "Stephen  King",
+      "rating": 0,
+      "avgRating": 4.33,
+      "dateAdded": "Fri, 29 May 2026 00:24:42 -0700",
+      "dateRead": null,
+      "published": "1983",
+      "numPages": 561,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1730548765l/45030607._SX98_.jpg",
+      "bookId": "45030607",
+      "link": "https://www.goodreads.com/review/show/8640606839?utm_medium=api&utm_source=rss"
+    },
     {
       "title": "The Two Towers (The Lord of the Rings, #2)",
       "author": "J.R.R. Tolkien",
