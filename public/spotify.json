@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T16:51:55.582Z",
+  "generated_at": "2026-05-29T16:39:55.923Z",
   "artists": [
     {
       "name": "ConcernedApe",
@@ -66,34 +66,10 @@
       "url": "https://open.spotify.com/track/0Mmtro18AX4ONE1I3mgNEh"
     },
     {
-      "name": "Distant Banjo",
-      "artist": "ConcernedApe",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
-      "url": "https://open.spotify.com/track/1GgIIJIJibtXZ5vG8lfTe2"
-    },
-    {
-      "name": "Fun Festival",
-      "artist": "ConcernedApe",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
-      "url": "https://open.spotify.com/track/24IMYR3YeaGMxePyCLvcCU"
-    },
-    {
-      "name": "Spring (It's a Big World Outside)",
-      "artist": "ConcernedApe",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
-      "url": "https://open.spotify.com/track/335Blw6tg6mJzQxK9dRbrt"
-    },
-    {
       "name": "Grandpa's Theme",
       "artist": "ConcernedApe",
       "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
       "url": "https://open.spotify.com/track/45dZbNz1sanDXVENijqb58"
-    },
-    {
-      "name": "Pelican Town",
-      "artist": "ConcernedApe",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
-      "url": "https://open.spotify.com/track/4q45kBmFoqQYRXxld3drPB"
     },
     {
       "name": "Settling In",
@@ -102,16 +78,40 @@
       "url": "https://open.spotify.com/track/5ocYLXFoqJ2D4Occ2Xepj0"
     },
     {
-      "name": "A Glimpse of the Other World (Wizard's Theme)",
+      "name": "Spring (It's a Big World Outside)",
       "artist": "ConcernedApe",
       "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
-      "url": "https://open.spotify.com/track/5zxD1d3DTGJbTUFIWhAcC8"
+      "url": "https://open.spotify.com/track/335Blw6tg6mJzQxK9dRbrt"
+    },
+    {
+      "name": "Distant Banjo",
+      "artist": "ConcernedApe",
+      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
+      "url": "https://open.spotify.com/track/1GgIIJIJibtXZ5vG8lfTe2"
+    },
+    {
+      "name": "Pelican Town",
+      "artist": "ConcernedApe",
+      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
+      "url": "https://open.spotify.com/track/4q45kBmFoqQYRXxld3drPB"
     },
     {
       "name": "Spring (The Valley Comes Alive)",
       "artist": "ConcernedApe",
       "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
       "url": "https://open.spotify.com/track/6fwW6uPloanwDx78kBvH0N"
+    },
+    {
+      "name": "Spring (Wild Horseradish Jam)",
+      "artist": "ConcernedApe",
+      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
+      "url": "https://open.spotify.com/track/6gp9NlnfJX6c2xkf2cIzq8"
+    },
+    {
+      "name": "Fun Festival",
+      "artist": "ConcernedApe",
+      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
+      "url": "https://open.spotify.com/track/24IMYR3YeaGMxePyCLvcCU"
     }
   ]
 }
