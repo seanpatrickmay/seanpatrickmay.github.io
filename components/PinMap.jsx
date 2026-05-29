@@ -225,6 +225,7 @@ export default function PinMap({
                   geography={geo}
                   fill="#e7e5e4"
                   stroke="#c4bfb8"
+                  className="dark:fill-stone-700 dark:stroke-stone-600"
                   strokeWidth={0.5}
                   style={GEO_STYLE}
                 />
@@ -307,6 +308,7 @@ export default function PinMap({
                     geography={geo}
                     fill="#e7e5e4"
                     stroke="#c4bfb8"
+                    className="dark:fill-stone-700 dark:stroke-stone-600"
                     strokeWidth={0.3}
                     style={GEO_STYLE}
                   />
@@ -349,7 +351,8 @@ export default function PinMap({
                   <text
                     textAnchor="middle"
                     y={-8}
-                    style={{ fontSize: 6, fill: '#57534e', fontWeight: 600 }}
+                    className="fill-stone-600 dark:fill-stone-300"
+                    style={{ fontSize: 6, fontWeight: 600 }}
                   >
                     {pin.location}
                   </text>

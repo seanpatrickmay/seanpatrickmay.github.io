@@ -11,10 +11,13 @@ Environment variables:
   GARMIN_FETCH_MAX        maximum activities to retrieve per run (default: 400)
 
 First run (to seed tokens, especially if MFA is enabled):
-  python -m pip install garminconnect
-  GARMIN_EMAIL="you@example.com" GARMIN_PASSWORD="..." python scripts/update_stats.py
+  python3 -m pip install -r scripts/requirements-stats.txt
+  GARMIN_ALLOW_FRESH_LOGIN=1 GARMIN_EMAIL="you@example.com" GARMIN_PASSWORD="..." \
+      python3 scripts/update_stats.py
 
-Subsequent runs (CI/cron) reuse cached tokens and won’t need credentials.
+Subsequent runs (CI/cron) reuse cached tokens and won’t need credentials. Fresh
+login is gated behind GARMIN_ALLOW_FRESH_LOGIN because Garmin 429-rate-limits the
+login endpoint from datacenter IPs (e.g. GitHub Actions); CI relies on cached tokens.
 """
 
 from __future__ import annotations
@@ -34,6 +37,10 @@ from garminconnect import Garmin
 
 EMAIL = os.getenv("GARMIN_EMAIL")
 PASSWORD = os.getenv("GARMIN_PASSWORD")
+# Fresh email/password login hits Garmin's SSO endpoint, which 429-rate-limits
+# datacenter IPs (e.g. GitHub Actions runners). Gate it behind a flag so CI never
+# falls through to it on a transient cached-token hiccup and gets itself blocked.
+ALLOW_FRESH_LOGIN = os.getenv("GARMIN_ALLOW_FRESH_LOGIN", "").strip().lower() in {"1", "true", "yes"}
 TOKENS_DIR = Path(os.getenv("GARMIN_TOKENS_DIR", str(Path.home() / ".garminconnect")))
 OUT_PATH = Path(os.getenv("GARMIN_OUT", "public/stats.json"))
 
@@ -95,7 +102,20 @@ def get_client() -> Garmin:
             f"Error: {token_err}"
         )
 
-    # 2) Fresh login (interactive MFA cannot be completed non-interactively)
+    # 2) Fresh login (interactive MFA cannot be completed non-interactively).
+    # Disabled unless explicitly allowed: hitting Garmin's SSO from a CI runner
+    # gets the IP 429-blocked, which is exactly how this script silently broke.
+    # Failing loudly here keeps the cached-token path the only path in CI.
+    if not ALLOW_FRESH_LOGIN:
+        raise SystemExit(
+            "Cached Garmin tokens failed and fresh login is disabled "
+            "(GARMIN_ALLOW_FRESH_LOGIN not set).\n"
+            f"  Last token error: {token_err}\n"
+            "Re-seed tokens locally, then re-supply them to CI:\n"
+            "  GARMIN_ALLOW_FRESH_LOGIN=1 GARMIN_EMAIL=... GARMIN_PASSWORD=... "
+            "python3 scripts/update_stats.py"
+        )
+
     if not EMAIL or not PASSWORD:
         raise SystemExit(
             "GARMIN_EMAIL / GARMIN_PASSWORD not set and no cached tokens available.\n"
@@ -192,6 +212,20 @@ def week_key(dt: datetime) -> Tuple[str, str]:
     return monday.date().isoformat(), sunday.date().isoformat()
 
 
+def existing_profile() -> Optional[Dict[str, Any]]:
+    """Read the previously-saved profile block, if any.
+
+    get_user_profile() can return nulls on some garminconnect/garth versions; we
+    don't want a refresh to wipe a good profile, so we fall back to the last one.
+    """
+    try:
+        with open(OUT_PATH, "r", encoding="utf-8") as f:
+            prof = (json.load(f) or {}).get("profile") or None
+        return prof if prof and any(prof.values()) else None
+    except (OSError, ValueError):
+        return None
+
+
 # ---------------------------- Main -------------------------------------------
 
 def main() -> None:
@@ -202,8 +236,15 @@ def main() -> None:
     start_month = today_dt - timedelta(days=MONTHLY_WINDOW_DAYS)
     cutoff_weekly = today_dt - timedelta(weeks=WEEKLY_WINDOW)
 
-    # Profile
+    # Profile (preserve the last good one if the endpoint returns nulls)
     profile = client.get_user_profile() or {}
+    new_profile = {
+        "displayName": profile.get("displayName"),
+        "fullName": profile.get("fullName"),
+        "userId": profile.get("userId"),
+    }
+    if not any(new_profile.values()):
+        new_profile = existing_profile() or new_profile
 
     # Get a window of activities
     def fetch_activities(cutoff: datetime) -> List[Dict[str, Any]]:
@@ -363,12 +404,8 @@ def main() -> None:
 
     # ----- Payload
     data = {
-        "generated_at": datetime.utcnow().isoformat() + "Z",
-        "profile": {
-            "displayName": profile.get("displayName"),
-            "fullName": profile.get("fullName"),
-            "userId": profile.get("userId"),
-        },
+        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.%fZ"),
+        "profile": new_profile,
         "stats": stats_by_type,
     }
 

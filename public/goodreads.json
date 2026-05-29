@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T16:57:12.063Z",
+  "generated_at": "2026-05-29T02:04:34.604Z",
   "currentlyReading": [
     {
       "title": "The Two Towers (The Lord of the Rings, #2)",
@@ -7,6 +7,7 @@
       "rating": 0,
       "avgRating": 4.69,
       "dateAdded": "Tue, 12 May 2026 06:07:21 -0700",
+      "dateRead": null,
       "published": "1954",
       "numPages": 448,
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1732382413l/221857305._SX98_.jpg",
@@ -19,6 +20,7 @@
       "rating": 0,
       "avgRating": 4.77,
       "dateAdded": "Tue, 12 May 2026 06:04:20 -0700",
+      "dateRead": null,
       "published": "1955",
       "numPages": 432,
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1732382495l/221857326._SX98_.jpg",
@@ -31,6 +33,7 @@
       "rating": 0,
       "avgRating": 4.76,
       "dateAdded": "Mon, 27 Apr 2026 14:04:00 -0700",
+      "dateRead": null,
       "published": "1985",
       "numPages": 964,
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1767217839l/56346987._SX98_.jpg",
@@ -43,6 +46,7 @@
       "rating": 0,
       "avgRating": 4.37,
       "dateAdded": "Mon, 16 Mar 2026 20:49:45 -0700",
+      "dateRead": null,
       "published": "1880",
       "numPages": 796,
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1427728126l/4934._SX98_.jpg",
@@ -57,6 +61,7 @@
       "rating": 5,
       "avgRating": 4.56,
       "dateAdded": "Tue, 12 May 2026 06:04:22 -0700",
+      "dateRead": "2026-05-12T00:00:00.000Z",
       "published": "1954",
       "numPages": 432,
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1732382377l/221857279._SX98_.jpg",
@@ -69,6 +74,7 @@
       "rating": 5,
       "avgRating": 4.29,
       "dateAdded": "Tue, 28 Apr 2026 13:23:48 -0700",
+      "dateRead": "2026-04-28T00:00:00.000Z",
       "published": "1937",
       "numPages": 366,
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546071216l/5907._SX98_.jpg",
@@ -76,11 +82,25 @@
       "link": "https://www.goodreads.com/review/show/8418042631?utm_medium=api&utm_source=rss"
     },
     {
+      "title": "The Book Thief",
+      "author": "Markus Zusak",
+      "rating": 4,
+      "avgRating": 4.42,
+      "dateAdded": "Tue, 28 Apr 2026 13:04:55 -0700",
+      "dateRead": "2026-04-18T00:00:00.000Z",
+      "published": "2005",
+      "numPages": 554,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1627907823l/8120173._SX98_.jpg",
+      "bookId": "8120173",
+      "link": "https://www.goodreads.com/review/show/8425266738?utm_medium=api&utm_source=rss"
+    },
+    {
       "title": "Project Hail Mary",
       "author": "Andy Weir",
       "rating": 5,
       "avgRating": 4.59,
       "dateAdded": "Tue, 28 Apr 2026 13:19:38 -0700",
+      "dateRead": "2026-03-31T00:00:00.000Z",
       "published": "2021",
       "numPages": 482,
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734434586l/222697645._SX98_.jpg",
@@ -88,30 +108,21 @@
       "link": "https://www.goodreads.com/review/show/8418056222?utm_medium=api&utm_source=rss"
     },
     {
-      "title": "Dune (Dune, #1)",
-      "author": "Frank Patrick Herbert",
+      "title": "Atlas Shrugged",
+      "author": "Ayn Rand",
       "rating": 5,
-      "avgRating": 4.34,
-      "dateAdded": "Tue, 28 Apr 2026 13:16:10 -0700",
-      "published": "1965",
-      "numPages": 658,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1555447414l/44767458._SX98_.jpg",
-      "bookId": "44767458",
-      "link": "https://www.goodreads.com/review/show/8418071378?utm_medium=api&utm_source=rss"
-    },
-    {
-      "title": "Annihilation (Southern Reach, #1)",
-      "author": "Jeff Vandermeer",
-      "rating": 3,
-      "avgRating": 3.81,
-      "dateAdded": "Tue, 28 Apr 2026 13:12:28 -0700",
-      "published": "2014",
-      "numPages": 195,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1403941587l/17934530._SX98_.jpg",
-      "bookId": "17934530",
-      "link": "https://www.goodreads.com/review/show/8418057737?utm_medium=api&utm_source=rss"
+      "avgRating": 3.67,
+      "dateAdded": "Tue, 28 Apr 2026 13:10:11 -0700",
+      "dateRead": "2026-03-23T00:00:00.000Z",
+      "published": "1957",
+      "numPages": 1168,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1405868167l/662._SX98_.jpg",
+      "bookId": "662",
+      "link": "https://www.goodreads.com/review/show/8418065357?utm_medium=api&utm_source=rss"
     }
   ],
   "totalPages": 5159,
+  "yearPagesRead": 3556,
+  "yearBooksRead": 7,
   "profileUrl": "https://www.goodreads.com/user/show/199381877"
 }
