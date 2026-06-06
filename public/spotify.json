@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T15:50:19.906Z",
+  "generated_at": "2026-06-06T14:27:21.639Z",
   "artists": [
     {
       "name": "ConcernedApe",
@@ -10,6 +10,11 @@
       "name": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab6761610000e5eb9f6f7c2d12975d2a4b3a0fd8",
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
+    },
+    {
+      "name": "Joe Hisaishi",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb255e3fb8af57399bc9975c61",
+      "url": "https://open.spotify.com/artist/7nzSoJISlVJsn7O0yTeMOB"
     },
     {
       "name": "Stromae",
@@ -45,11 +50,6 @@
       "name": "Zara Larsson",
       "image": "https://i.scdn.co/image/ab6761610000e5ebd519a7e349541cba8f85e965",
       "url": "https://open.spotify.com/artist/1Xylc3o4UrD53lo9CvFvVg"
-    },
-    {
-      "name": "Adele",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
-      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     }
   ],
   "tracks": [
@@ -84,6 +84,12 @@
       "url": "https://open.spotify.com/track/335Blw6tg6mJzQxK9dRbrt"
     },
     {
+      "name": "Attention",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
+      "url": "https://open.spotify.com/track/4YL3I7JjXiS0p8GpCestbv"
+    },
+    {
       "name": "Distant Banjo",
       "artist": "ConcernedApe",
       "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
@@ -96,22 +102,16 @@
       "url": "https://open.spotify.com/track/4q45kBmFoqQYRXxld3drPB"
     },
     {
+      "name": "Harry Styles",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
+    },
+    {
       "name": "Spring (The Valley Comes Alive)",
       "artist": "ConcernedApe",
       "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
       "url": "https://open.spotify.com/track/6fwW6uPloanwDx78kBvH0N"
-    },
-    {
-      "name": "Spring (Wild Horseradish Jam)",
-      "artist": "ConcernedApe",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
-      "url": "https://open.spotify.com/track/6gp9NlnfJX6c2xkf2cIzq8"
-    },
-    {
-      "name": "Attention",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
-      "url": "https://open.spotify.com/track/4YL3I7JjXiS0p8GpCestbv"
     }
   ]
 }
