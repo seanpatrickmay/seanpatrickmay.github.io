@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T14:27:21.639Z",
+  "generated_at": "2026-06-07T14:49:07.950Z",
   "artists": [
     {
       "name": "ConcernedApe",
@@ -12,14 +12,14 @@
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
-      "name": "Joe Hisaishi",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb255e3fb8af57399bc9975c61",
-      "url": "https://open.spotify.com/artist/7nzSoJISlVJsn7O0yTeMOB"
-    },
-    {
       "name": "Stromae",
       "image": "https://i.scdn.co/image/ab6761610000e5ebcc129f1c9b5047760d66aae2",
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
+    },
+    {
+      "name": "Joe Hisaishi",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb255e3fb8af57399bc9975c61",
+      "url": "https://open.spotify.com/artist/7nzSoJISlVJsn7O0yTeMOB"
     },
     {
       "name": "The Beatles",
@@ -42,14 +42,14 @@
       "url": "https://open.spotify.com/artist/7n2Ycct7Beij7Dj7meI4X0"
     },
     {
+      "name": "Adele",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
+      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
+    },
+    {
       "name": "Tame Impala",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe412a782245eb20d9626c601",
       "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
-    },
-    {
-      "name": "Zara Larsson",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd519a7e349541cba8f85e965",
-      "url": "https://open.spotify.com/artist/1Xylc3o4UrD53lo9CvFvVg"
     }
   ],
   "tracks": [
