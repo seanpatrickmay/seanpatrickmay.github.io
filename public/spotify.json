@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T16:32:48.569Z",
+  "generated_at": "2026-06-11T16:51:38.832Z",
   "artists": [
     {
       "name": "ConcernedApe",
@@ -17,14 +17,14 @@
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
     },
     {
-      "name": "Joe Hisaishi",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb255e3fb8af57399bc9975c61",
-      "url": "https://open.spotify.com/artist/7nzSoJISlVJsn7O0yTeMOB"
-    },
-    {
       "name": "The Beatles",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe9348cc01ff5d55971b22433",
       "url": "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
+    },
+    {
+      "name": "Joe Hisaishi",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb255e3fb8af57399bc9975c61",
+      "url": "https://open.spotify.com/artist/7nzSoJISlVJsn7O0yTeMOB"
     },
     {
       "name": "Kanye West",
@@ -37,14 +37,14 @@
       "url": "https://open.spotify.com/artist/0FEJqmeLRzsXj8hgcZaAyB"
     },
     {
-      "name": "Jack Johnson",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb0bf3ff1eaa4c0d6d664ccc3f",
-      "url": "https://open.spotify.com/artist/3GBPw9NK25X1Wt2OUvOwY3"
-    },
-    {
       "name": "TWICE",
       "image": "https://i.scdn.co/image/ab6761610000e5eb3d8820046fd455b38d644864",
       "url": "https://open.spotify.com/artist/7n2Ycct7Beij7Dj7meI4X0"
+    },
+    {
+      "name": "Jack Johnson",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb0bf3ff1eaa4c0d6d664ccc3f",
+      "url": "https://open.spotify.com/artist/3GBPw9NK25X1Wt2OUvOwY3"
     },
     {
       "name": "Adele",
@@ -96,6 +96,12 @@
       "url": "https://open.spotify.com/track/335Blw6tg6mJzQxK9dRbrt"
     },
     {
+      "name": "Queen St",
+      "artist": "twentythree",
+      "image": "https://i.scdn.co/image/ab67616d0000b27382fa95ab5fa7ae383c4e6fae",
+      "url": "https://open.spotify.com/track/1pwnLaVX9ESD8WuXHr7ToE"
+    },
+    {
       "name": "Attention",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
@@ -106,12 +112,6 @@
       "artist": "ConcernedApe",
       "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
       "url": "https://open.spotify.com/track/1GgIIJIJibtXZ5vG8lfTe2"
-    },
-    {
-      "name": "Pelican Town",
-      "artist": "ConcernedApe",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
-      "url": "https://open.spotify.com/track/4q45kBmFoqQYRXxld3drPB"
     }
   ]
 }
