@@ -1,25 +1,20 @@
 {
-  "generated_at": "2026-06-16T18:02:57.216Z",
+  "generated_at": "2026-06-17T16:37:18.654Z",
   "artists": [
-    {
-      "name": "ConcernedApe",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe17351c781f0cd9ae4b6442e",
-      "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
-    },
     {
       "name": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab6761610000e5eb9f6f7c2d12975d2a4b3a0fd8",
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
+      "name": "ConcernedApe",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe17351c781f0cd9ae4b6442e",
+      "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
+    },
+    {
       "name": "Stromae",
       "image": "https://i.scdn.co/image/ab6761610000e5ebcc129f1c9b5047760d66aae2",
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
-    },
-    {
-      "name": "The Beatles",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe9348cc01ff5d55971b22433",
-      "url": "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
     },
     {
       "name": "Joe Hisaishi",
@@ -35,6 +30,11 @@
       "name": "Indila",
       "image": "https://i.scdn.co/image/ab6761610000e5eb6cd07d169e7e2ec94193a1d2",
       "url": "https://open.spotify.com/artist/0FEJqmeLRzsXj8hgcZaAyB"
+    },
+    {
+      "name": "The Beatles",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe9348cc01ff5d55971b22433",
+      "url": "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
     },
     {
       "name": "TWICE",
@@ -84,6 +84,12 @@
       "url": "https://open.spotify.com/track/45dZbNz1sanDXVENijqb58"
     },
     {
+      "name": "Jean Skirt",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736ad1bfc5a6102f8e926a8c5f",
+      "url": "https://open.spotify.com/track/4rKOkzcvjLYsFcUpYDbeLM"
+    },
+    {
       "name": "Harry Styles",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
@@ -102,16 +108,10 @@
       "url": "https://open.spotify.com/track/5ocYLXFoqJ2D4Occ2Xepj0"
     },
     {
-      "name": "Spring (It's a Big World Outside)",
-      "artist": "ConcernedApe",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
-      "url": "https://open.spotify.com/track/335Blw6tg6mJzQxK9dRbrt"
-    },
-    {
-      "name": "Merry-Go-Round of Life - from 'Howl's Moving Castle'",
-      "artist": "Joe Hisaishi",
-      "image": "https://i.scdn.co/image/ab67616d0000b27333ea9fb3fd69bca55a015229",
-      "url": "https://open.spotify.com/track/39uLYYZytVUwcjgeYLI409"
+      "name": "Malcolm In The Middle",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736ad1bfc5a6102f8e926a8c5f",
+      "url": "https://open.spotify.com/track/0JeAKH2DCIgCCrZ9qBGthg"
     }
   ]
 }
