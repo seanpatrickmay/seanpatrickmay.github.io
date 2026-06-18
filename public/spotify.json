@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T16:37:18.654Z",
+  "generated_at": "2026-06-18T16:27:02.832Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -22,19 +22,9 @@
       "url": "https://open.spotify.com/artist/7nzSoJISlVJsn7O0yTeMOB"
     },
     {
-      "name": "Kanye West",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
-      "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
-    },
-    {
       "name": "Indila",
       "image": "https://i.scdn.co/image/ab6761610000e5eb6cd07d169e7e2ec94193a1d2",
       "url": "https://open.spotify.com/artist/0FEJqmeLRzsXj8hgcZaAyB"
-    },
-    {
-      "name": "The Beatles",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe9348cc01ff5d55971b22433",
-      "url": "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
     },
     {
       "name": "TWICE",
@@ -47,9 +37,19 @@
       "url": "https://open.spotify.com/artist/3GBPw9NK25X1Wt2OUvOwY3"
     },
     {
+      "name": "The Beatles",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe9348cc01ff5d55971b22433",
+      "url": "https://open.spotify.com/artist/3WrFJ7ztbogyGnTHbHJFl2"
+    },
+    {
       "name": "Adele",
       "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
+    },
+    {
+      "name": "Zedd",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebeefa05f0b8fcafd4beb19d31",
+      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     }
   ],
   "tracks": [
@@ -72,6 +72,24 @@
       "url": "https://open.spotify.com/track/1YrC8s6yZWw23QxW6rfM9f"
     },
     {
+      "name": "Harry Styles",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
+    },
+    {
+      "name": "Malcolm In The Middle",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736ad1bfc5a6102f8e926a8c5f",
+      "url": "https://open.spotify.com/track/0JeAKH2DCIgCCrZ9qBGthg"
+    },
+    {
+      "name": "Jean Skirt",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736ad1bfc5a6102f8e926a8c5f",
+      "url": "https://open.spotify.com/track/4rKOkzcvjLYsFcUpYDbeLM"
+    },
+    {
       "name": "Cloud Country",
       "artist": "ConcernedApe",
       "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
@@ -84,34 +102,16 @@
       "url": "https://open.spotify.com/track/45dZbNz1sanDXVENijqb58"
     },
     {
-      "name": "Jean Skirt",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736ad1bfc5a6102f8e926a8c5f",
-      "url": "https://open.spotify.com/track/4rKOkzcvjLYsFcUpYDbeLM"
-    },
-    {
-      "name": "Harry Styles",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
-    },
-    {
       "name": "Spring (The Valley Comes Alive)",
       "artist": "ConcernedApe",
       "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
       "url": "https://open.spotify.com/track/6fwW6uPloanwDx78kBvH0N"
     },
     {
-      "name": "Settling In",
-      "artist": "ConcernedApe",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
-      "url": "https://open.spotify.com/track/5ocYLXFoqJ2D4Occ2Xepj0"
-    },
-    {
-      "name": "Malcolm In The Middle",
+      "name": "Ain't That The Truth",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b2736ad1bfc5a6102f8e926a8c5f",
-      "url": "https://open.spotify.com/track/0JeAKH2DCIgCCrZ9qBGthg"
+      "url": "https://open.spotify.com/track/6cEFXDnzk2tA1tG7RJiWNm"
     }
   ]
 }
