@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T15:09:30.330Z",
+  "generated_at": "2026-06-22T17:28:31.546Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -37,6 +37,11 @@
       "url": "https://open.spotify.com/artist/3GBPw9NK25X1Wt2OUvOwY3"
     },
     {
+      "name": "Lorde",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaa69380a8d5203257611662d",
+      "url": "https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm"
+    },
+    {
       "name": "Adele",
       "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
@@ -45,11 +50,6 @@
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebeefa05f0b8fcafd4beb19d31",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
-    {
-      "name": "IVE",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe9134cc9371327f8238b1840",
-      "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
     }
   ],
   "tracks": [
