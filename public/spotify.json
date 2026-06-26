@@ -1,15 +1,10 @@
 {
-  "generated_at": "2026-06-25T15:37:42.986Z",
+  "generated_at": "2026-06-26T15:21:35.742Z",
   "artists": [
     {
       "name": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab6761610000e5eb9f6f7c2d12975d2a4b3a0fd8",
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
-    },
-    {
-      "name": "ConcernedApe",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe17351c781f0cd9ae4b6442e",
-      "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
     },
     {
       "name": "Stromae",
@@ -27,6 +22,16 @@
       "url": "https://open.spotify.com/artist/0FEJqmeLRzsXj8hgcZaAyB"
     },
     {
+      "name": "Lorde",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaa69380a8d5203257611662d",
+      "url": "https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm"
+    },
+    {
+      "name": "ConcernedApe",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe17351c781f0cd9ae4b6442e",
+      "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
+    },
+    {
       "name": "TWICE",
       "image": "https://i.scdn.co/image/ab6761610000e5eb3d8820046fd455b38d644864",
       "url": "https://open.spotify.com/artist/7n2Ycct7Beij7Dj7meI4X0"
@@ -35,11 +40,6 @@
       "name": "Jack Johnson",
       "image": "https://i.scdn.co/image/ab6761610000e5eb0bf3ff1eaa4c0d6d664ccc3f",
       "url": "https://open.spotify.com/artist/3GBPw9NK25X1Wt2OUvOwY3"
-    },
-    {
-      "name": "Lorde",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebaa69380a8d5203257611662d",
-      "url": "https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm"
     },
     {
       "name": "Adele",
@@ -56,7 +56,7 @@
     {
       "name": "Queen St",
       "artist": "twentythree",
-      "image": "https://i.scdn.co/image/ab67616d0000b27382fa95ab5fa7ae383c4e6fae",
+      "image": "https://i.scdn.co/image/ab67616d0000b27364bff5f011d6be66429a04c0",
       "url": "https://open.spotify.com/track/1pwnLaVX9ESD8WuXHr7ToE"
     },
     {
@@ -64,12 +64,6 @@
       "artist": "Jain",
       "image": "https://i.scdn.co/image/ab67616d0000b2739d3ad3a9fa90bf0dee0ae5be",
       "url": "https://open.spotify.com/track/1YrC8s6yZWw23QxW6rfM9f"
-    },
-    {
-      "name": "Stardew Valley Overture",
-      "artist": "ConcernedApe",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
-      "url": "https://open.spotify.com/track/2q2Z2A0Mt8AsWyQEdB6wuu"
     },
     {
       "name": "Malcolm In The Middle",
@@ -96,22 +90,28 @@
       "url": "https://open.spotify.com/track/6cEFXDnzk2tA1tG7RJiWNm"
     },
     {
-      "name": "Cloud Country",
-      "artist": "ConcernedApe",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
-      "url": "https://open.spotify.com/track/0Mmtro18AX4ONE1I3mgNEh"
-    },
-    {
       "name": "Lonely Song",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b273a1cac678024bb37d83ab012c",
       "url": "https://open.spotify.com/track/2RsV113tb8cEn53L4tDKF5"
     },
     {
+      "name": "Stardew Valley Overture",
+      "artist": "ConcernedApe",
+      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
+      "url": "https://open.spotify.com/track/2q2Z2A0Mt8AsWyQEdB6wuu"
+    },
+    {
       "name": "Merry-Go-Round of Life - from 'Howl's Moving Castle'",
       "artist": "Joe Hisaishi",
       "image": "https://i.scdn.co/image/ab67616d0000b27333ea9fb3fd69bca55a015229",
       "url": "https://open.spotify.com/track/39uLYYZytVUwcjgeYLI409"
+    },
+    {
+      "name": "Attention",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
+      "url": "https://open.spotify.com/track/4YL3I7JjXiS0p8GpCestbv"
     }
   ]
 }
