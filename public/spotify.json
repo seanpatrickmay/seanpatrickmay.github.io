@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T14:46:18.857Z",
+  "generated_at": "2026-06-29T16:36:45.217Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -17,6 +17,11 @@
       "url": "https://open.spotify.com/artist/7nzSoJISlVJsn7O0yTeMOB"
     },
     {
+      "name": "Magdalena Bay",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb8257ff04aaf62d848030efeb",
+      "url": "https://open.spotify.com/artist/1oPRcJUkloHaRLYx0olBLJ"
+    },
+    {
       "name": "Indila",
       "image": "https://i.scdn.co/image/ab6761610000e5eb6cd07d169e7e2ec94193a1d2",
       "url": "https://open.spotify.com/artist/0FEJqmeLRzsXj8hgcZaAyB"
@@ -32,32 +37,27 @@
       "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
     },
     {
-      "name": "TWICE",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb3d8820046fd455b38d644864",
-      "url": "https://open.spotify.com/artist/7n2Ycct7Beij7Dj7meI4X0"
-    },
-    {
-      "name": "IVE",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe9134cc9371327f8238b1840",
-      "url": "https://open.spotify.com/artist/6RHTUrRF63xao58xh9FXYJ"
-    },
-    {
-      "name": "Adele",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
-      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
-    },
-    {
       "name": "Beach House",
       "image": "https://i.scdn.co/image/ab6761610000e5ebb3e38a46a56a423d8f741c09",
       "url": "https://open.spotify.com/artist/56ZTgzPBDge0OvCGgMO3OY"
+    },
+    {
+      "name": "Zedd",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebeefa05f0b8fcafd4beb19d31",
+      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+    },
+    {
+      "name": "Tiffany Day",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb1d3b285fae5233fdff9ae2dc",
+      "url": "https://open.spotify.com/artist/5D5Qbe1lf3aMnLsPSzXItu"
     }
   ],
   "tracks": [
     {
       "name": "Queen St",
       "artist": "twentythree",
-      "image": "https://i.scdn.co/image/ab67616d0000b27364bff5f011d6be66429a04c0",
-      "url": "https://open.spotify.com/track/1pwnLaVX9ESD8WuXHr7ToE"
+      "image": "https://i.scdn.co/image/ab67616d0000b273c18ec4d508e46932041446b8",
+      "url": "https://open.spotify.com/track/4TFOpl0juiBGT5VTHlrige"
     },
     {
       "name": "Come",
@@ -72,12 +72,6 @@
       "url": "https://open.spotify.com/track/0JeAKH2DCIgCCrZ9qBGthg"
     },
     {
-      "name": "Harry Styles",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
-    },
-    {
       "name": "Jean Skirt",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b2736ad1bfc5a6102f8e926a8c5f",
@@ -88,6 +82,18 @@
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b2736ad1bfc5a6102f8e926a8c5f",
       "url": "https://open.spotify.com/track/6cEFXDnzk2tA1tG7RJiWNm"
+    },
+    {
+      "name": "X's & O's",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b273a1cac678024bb37d83ab012c",
+      "url": "https://open.spotify.com/track/750yKw4gINVQFdBeCGiCwP"
+    },
+    {
+      "name": "Difficult Love",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b273a1cac678024bb37d83ab012c",
+      "url": "https://open.spotify.com/track/0UDEtLcKGBU73D15u5g1r3"
     },
     {
       "name": "Lonely Song",
@@ -102,16 +108,10 @@
       "url": "https://open.spotify.com/track/2q2Z2A0Mt8AsWyQEdB6wuu"
     },
     {
-      "name": "Attention",
+      "name": "Harry Styles",
       "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b273436145513f91113c10292b12",
-      "url": "https://open.spotify.com/track/4YL3I7JjXiS0p8GpCestbv"
-    },
-    {
-      "name": "Dernière danse",
-      "artist": "Indila",
-      "image": "https://i.scdn.co/image/ab67616d0000b2734ae8ff731c49965bf2083405",
-      "url": "https://open.spotify.com/track/65uoaqX5qcjXZRheAj1qQT"
+      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
     }
   ]
 }
