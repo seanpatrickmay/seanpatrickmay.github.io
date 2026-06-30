@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T16:36:45.217Z",
+  "generated_at": "2026-06-30T15:24:18.410Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -27,11 +27,6 @@
       "url": "https://open.spotify.com/artist/0FEJqmeLRzsXj8hgcZaAyB"
     },
     {
-      "name": "Lorde",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb678a3a4bc2d8a84074f22c71",
-      "url": "https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm"
-    },
-    {
       "name": "ConcernedApe",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe17351c781f0cd9ae4b6442e",
       "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
@@ -50,6 +45,11 @@
       "name": "Tiffany Day",
       "image": "https://i.scdn.co/image/ab6761610000e5eb1d3b285fae5233fdff9ae2dc",
       "url": "https://open.spotify.com/artist/5D5Qbe1lf3aMnLsPSzXItu"
+    },
+    {
+      "name": "TWICE",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb3d8820046fd455b38d644864",
+      "url": "https://open.spotify.com/artist/7n2Ycct7Beij7Dj7meI4X0"
     }
   ],
   "tracks": [
