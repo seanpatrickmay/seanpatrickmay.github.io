@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T15:12:14.781Z",
+  "generated_at": "2026-07-03T15:07:43.639Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -32,14 +32,14 @@
       "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
     },
     {
-      "name": "Beach House",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebb3e38a46a56a423d8f741c09",
-      "url": "https://open.spotify.com/artist/56ZTgzPBDge0OvCGgMO3OY"
-    },
-    {
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebeefa05f0b8fcafd4beb19d31",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+    },
+    {
+      "name": "Beach House",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebb3e38a46a56a423d8f741c09",
+      "url": "https://open.spotify.com/artist/56ZTgzPBDge0OvCGgMO3OY"
     },
     {
       "name": "Tiffany Day",
@@ -60,16 +60,16 @@
       "url": "https://open.spotify.com/track/4TFOpl0juiBGT5VTHlrige"
     },
     {
-      "name": "Come",
-      "artist": "Jain",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739d3ad3a9fa90bf0dee0ae5be",
-      "url": "https://open.spotify.com/track/1YrC8s6yZWw23QxW6rfM9f"
-    },
-    {
       "name": "Malcolm In The Middle",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b2736ad1bfc5a6102f8e926a8c5f",
       "url": "https://open.spotify.com/track/0JeAKH2DCIgCCrZ9qBGthg"
+    },
+    {
+      "name": "Come",
+      "artist": "Jain",
+      "image": "https://i.scdn.co/image/ab67616d0000b2739d3ad3a9fa90bf0dee0ae5be",
+      "url": "https://open.spotify.com/track/1YrC8s6yZWw23QxW6rfM9f"
     },
     {
       "name": "Jean Skirt",
