@@ -1,6 +1,19 @@
 {
-  "generated_at": "2026-07-02T15:20:36.125Z",
+  "generated_at": "2026-07-03T15:13:38.967Z",
   "currentlyReading": [
+    {
+      "title": "The Picture of Dorian Gray",
+      "author": "Oscar Wilde",
+      "rating": 0,
+      "avgRating": 4.13,
+      "dateAdded": "Thu, 02 Jul 2026 15:11:41 -0700",
+      "dateRead": null,
+      "published": "1890",
+      "numPages": 272,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546103428l/5297._SX98_.jpg",
+      "bookId": "5297",
+      "link": "https://www.goodreads.com/review/show/8425268051?utm_medium=api&utm_source=rss"
+    },
     {
       "title": "The Two Towers (The Lord of the Rings, #2)",
       "author": "J.R.R. Tolkien",
@@ -26,19 +39,6 @@
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1732382495l/221857326._SX98_.jpg",
       "bookId": "221857326",
       "link": "https://www.goodreads.com/review/show/8595293826?utm_medium=api&utm_source=rss"
-    },
-    {
-      "title": "Lonesome Dove (Lonesome Dove, #1)",
-      "author": "Larry McMurtry",
-      "rating": 0,
-      "avgRating": 4.76,
-      "dateAdded": "Mon, 27 Apr 2026 14:04:00 -0700",
-      "dateRead": null,
-      "published": "1985",
-      "numPages": 964,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1767217839l/56346987._SX98_.jpg",
-      "bookId": "56346987",
-      "link": "https://www.goodreads.com/review/show/8556602802?utm_medium=api&utm_source=rss"
     },
     {
       "title": "The Brothers Karamazov",
