@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T15:07:43.639Z",
+  "generated_at": "2026-07-04T14:26:37.699Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -10,11 +10,6 @@
       "name": "Stromae",
       "image": "https://i.scdn.co/image/ab6761610000e5ebcc129f1c9b5047760d66aae2",
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
-    },
-    {
-      "name": "Joe Hisaishi",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb255e3fb8af57399bc9975c61",
-      "url": "https://open.spotify.com/artist/7nzSoJISlVJsn7O0yTeMOB"
     },
     {
       "name": "Magdalena Bay",
@@ -50,6 +45,11 @@
       "name": "TWICE",
       "image": "https://i.scdn.co/image/ab6761610000e5eb3d8820046fd455b38d644864",
       "url": "https://open.spotify.com/artist/7n2Ycct7Beij7Dj7meI4X0"
+    },
+    {
+      "name": "Lorde",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb678a3a4bc2d8a84074f22c71",
+      "url": "https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm"
     }
   ],
   "tracks": [
@@ -108,10 +108,10 @@
       "url": "https://open.spotify.com/track/2q2Z2A0Mt8AsWyQEdB6wuu"
     },
     {
-      "name": "Harry Styles",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
-      "url": "https://open.spotify.com/track/5IVhxDz8BOPUPUkyS1FXiv"
+      "name": "Dernière danse",
+      "artist": "Indila",
+      "image": "https://i.scdn.co/image/ab67616d0000b2734ae8ff731c49965bf2083405",
+      "url": "https://open.spotify.com/track/65uoaqX5qcjXZRheAj1qQT"
     }
   ]
 }
