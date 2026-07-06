@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T14:39:13.216Z",
+  "generated_at": "2026-07-06T16:17:50.503Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -17,14 +17,14 @@
       "url": "https://open.spotify.com/artist/1oPRcJUkloHaRLYx0olBLJ"
     },
     {
-      "name": "Indila",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb6cd07d169e7e2ec94193a1d2",
-      "url": "https://open.spotify.com/artist/0FEJqmeLRzsXj8hgcZaAyB"
-    },
-    {
       "name": "ConcernedApe",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe17351c781f0cd9ae4b6442e",
       "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
+    },
+    {
+      "name": "Indila",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb6cd07d169e7e2ec94193a1d2",
+      "url": "https://open.spotify.com/artist/0FEJqmeLRzsXj8hgcZaAyB"
     },
     {
       "name": "Zedd",
@@ -102,16 +102,16 @@
       "url": "https://open.spotify.com/track/2RsV113tb8cEn53L4tDKF5"
     },
     {
-      "name": "Stardew Valley Overture",
-      "artist": "ConcernedApe",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739f31553286bd249a902b50d4",
-      "url": "https://open.spotify.com/track/2q2Z2A0Mt8AsWyQEdB6wuu"
+      "name": "Gun To My Head",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b273a1cac678024bb37d83ab012c",
+      "url": "https://open.spotify.com/track/2sW7X1G7xaNZZX7b92NP6X"
     },
     {
-      "name": "Dernière danse",
-      "artist": "Indila",
-      "image": "https://i.scdn.co/image/ab67616d0000b2734ae8ff731c49965bf2083405",
-      "url": "https://open.spotify.com/track/65uoaqX5qcjXZRheAj1qQT"
+      "name": "I Don't Feel Like Dancin'",
+      "artist": "Scissor Sisters",
+      "image": "https://i.scdn.co/image/ab67616d0000b27381625c8c1368106d3ac464ed",
+      "url": "https://open.spotify.com/track/1q9l6c8bAzqWcvO3DM6FsR"
     }
   ]
 }
