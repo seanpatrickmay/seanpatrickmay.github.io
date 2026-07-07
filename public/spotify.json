@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T16:17:50.503Z",
+  "generated_at": "2026-07-07T15:41:25.989Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -7,14 +7,14 @@
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
-      "name": "Stromae",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebcc129f1c9b5047760d66aae2",
-      "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
-    },
-    {
       "name": "Magdalena Bay",
       "image": "https://i.scdn.co/image/ab6761610000e5eb8257ff04aaf62d848030efeb",
       "url": "https://open.spotify.com/artist/1oPRcJUkloHaRLYx0olBLJ"
+    },
+    {
+      "name": "Stromae",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebcc129f1c9b5047760d66aae2",
+      "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
     },
     {
       "name": "ConcernedApe",
@@ -22,19 +22,9 @@
       "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
     },
     {
-      "name": "Indila",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb6cd07d169e7e2ec94193a1d2",
-      "url": "https://open.spotify.com/artist/0FEJqmeLRzsXj8hgcZaAyB"
-    },
-    {
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebeefa05f0b8fcafd4beb19d31",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
-    {
-      "name": "Beach House",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebb3e38a46a56a423d8f741c09",
-      "url": "https://open.spotify.com/artist/56ZTgzPBDge0OvCGgMO3OY"
     },
     {
       "name": "Tiffany Day",
@@ -50,6 +40,16 @@
       "name": "Daft Punk",
       "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+    },
+    {
+      "name": "Lorde",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb678a3a4bc2d8a84074f22c71",
+      "url": "https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm"
+    },
+    {
+      "name": "Travis Scott",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb19c2790744c792d05570bb71",
+      "url": "https://open.spotify.com/artist/0Y5tJX1MQlPlqiwlOH1tJY"
     }
   ],
   "tracks": [
