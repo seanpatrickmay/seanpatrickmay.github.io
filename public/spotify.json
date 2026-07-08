@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T15:41:25.989Z",
+  "generated_at": "2026-07-08T15:18:05.896Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -17,11 +17,6 @@
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
     },
     {
-      "name": "ConcernedApe",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe17351c781f0cd9ae4b6442e",
-      "url": "https://open.spotify.com/artist/2PqkSKtPxs112KDZdRXGO2"
-    },
-    {
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000e5ebeefa05f0b8fcafd4beb19d31",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
@@ -30,11 +25,6 @@
       "name": "Tiffany Day",
       "image": "https://i.scdn.co/image/ab6761610000e5eb1d3b285fae5233fdff9ae2dc",
       "url": "https://open.spotify.com/artist/5D5Qbe1lf3aMnLsPSzXItu"
-    },
-    {
-      "name": "TWICE",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb3d8820046fd455b38d644864",
-      "url": "https://open.spotify.com/artist/7n2Ycct7Beij7Dj7meI4X0"
     },
     {
       "name": "Daft Punk",
@@ -50,6 +40,16 @@
       "name": "Travis Scott",
       "image": "https://i.scdn.co/image/ab6761610000e5eb19c2790744c792d05570bb71",
       "url": "https://open.spotify.com/artist/0Y5tJX1MQlPlqiwlOH1tJY"
+    },
+    {
+      "name": "The Marías",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaf586afa2b397f1288683a76",
+      "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
+    },
+    {
+      "name": "Kanye West",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
+      "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
     }
   ],
   "tracks": [
