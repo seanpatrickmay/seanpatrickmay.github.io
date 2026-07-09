@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T15:18:05.896Z",
+  "generated_at": "2026-07-09T15:54:02.231Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -10,11 +10,6 @@
       "name": "Magdalena Bay",
       "image": "https://i.scdn.co/image/ab6761610000e5eb8257ff04aaf62d848030efeb",
       "url": "https://open.spotify.com/artist/1oPRcJUkloHaRLYx0olBLJ"
-    },
-    {
-      "name": "Stromae",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebcc129f1c9b5047760d66aae2",
-      "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
     },
     {
       "name": "Zedd",
@@ -37,11 +32,6 @@
       "url": "https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm"
     },
     {
-      "name": "Travis Scott",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb19c2790744c792d05570bb71",
-      "url": "https://open.spotify.com/artist/0Y5tJX1MQlPlqiwlOH1tJY"
-    },
-    {
       "name": "The Marías",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaf586afa2b397f1288683a76",
       "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
@@ -50,15 +40,19 @@
       "name": "Kanye West",
       "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
       "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
+    },
+    {
+      "name": "Justin Bieber",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaf20f7db5288bce9beede034",
+      "url": "https://open.spotify.com/artist/1uNFoZAHBGtllmzznpCI3s"
+    },
+    {
+      "name": "Michael Jackson",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb997cc9a4aec335d46c9481fd",
+      "url": "https://open.spotify.com/artist/3fMbdgg4jU18AjLCKBhRSm"
     }
   ],
   "tracks": [
-    {
-      "name": "Queen St",
-      "artist": "twentythree",
-      "image": "https://i.scdn.co/image/ab67616d0000b273c18ec4d508e46932041446b8",
-      "url": "https://open.spotify.com/track/4TFOpl0juiBGT5VTHlrige"
-    },
     {
       "name": "Malcolm In The Middle",
       "artist": "Malcolm Todd",
@@ -70,6 +64,12 @@
       "artist": "Jain",
       "image": "https://i.scdn.co/image/ab67616d0000b2739d3ad3a9fa90bf0dee0ae5be",
       "url": "https://open.spotify.com/track/1YrC8s6yZWw23QxW6rfM9f"
+    },
+    {
+      "name": "Queen St",
+      "artist": "twentythree",
+      "image": "https://i.scdn.co/image/ab67616d0000b273c18ec4d508e46932041446b8",
+      "url": "https://open.spotify.com/track/4TFOpl0juiBGT5VTHlrige"
     },
     {
       "name": "Jean Skirt",
