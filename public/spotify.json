@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T15:54:02.231Z",
+  "generated_at": "2026-07-10T15:29:11.182Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -17,19 +17,14 @@
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
-      "name": "Tiffany Day",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb1d3b285fae5233fdff9ae2dc",
-      "url": "https://open.spotify.com/artist/5D5Qbe1lf3aMnLsPSzXItu"
-    },
-    {
       "name": "Daft Punk",
       "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
-      "name": "Lorde",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb678a3a4bc2d8a84074f22c71",
-      "url": "https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm"
+      "name": "Dominic Fike",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebf2903326ec44d5ecb37dcad9",
+      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
     },
     {
       "name": "The Marías",
@@ -37,19 +32,24 @@
       "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
     },
     {
-      "name": "Kanye West",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a",
-      "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
-    },
-    {
       "name": "Justin Bieber",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaf20f7db5288bce9beede034",
       "url": "https://open.spotify.com/artist/1uNFoZAHBGtllmzznpCI3s"
     },
     {
+      "name": "Lady Gaga",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
+      "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
+    },
+    {
       "name": "Michael Jackson",
       "image": "https://i.scdn.co/image/ab6761610000e5eb997cc9a4aec335d46c9481fd",
       "url": "https://open.spotify.com/artist/3fMbdgg4jU18AjLCKBhRSm"
+    },
+    {
+      "name": "Wallows",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebfde4e7d59f6d8868e2ffdaf5",
+      "url": "https://open.spotify.com/artist/0NIPkIjTV8mB795yEIiPYL"
     }
   ],
   "tracks": [
@@ -60,28 +60,22 @@
       "url": "https://open.spotify.com/track/0JeAKH2DCIgCCrZ9qBGthg"
     },
     {
-      "name": "Come",
-      "artist": "Jain",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739d3ad3a9fa90bf0dee0ae5be",
-      "url": "https://open.spotify.com/track/1YrC8s6yZWw23QxW6rfM9f"
-    },
-    {
-      "name": "Queen St",
-      "artist": "twentythree",
-      "image": "https://i.scdn.co/image/ab67616d0000b273c18ec4d508e46932041446b8",
-      "url": "https://open.spotify.com/track/4TFOpl0juiBGT5VTHlrige"
-    },
-    {
-      "name": "Jean Skirt",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736ad1bfc5a6102f8e926a8c5f",
-      "url": "https://open.spotify.com/track/4rKOkzcvjLYsFcUpYDbeLM"
-    },
-    {
       "name": "Ain't That The Truth",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b2736ad1bfc5a6102f8e926a8c5f",
       "url": "https://open.spotify.com/track/6cEFXDnzk2tA1tG7RJiWNm"
+    },
+    {
+      "name": "Addicted To A Memory",
+      "artist": "Zedd, Bahari",
+      "image": "https://i.scdn.co/image/ab67616d0000b273d040bc5b46915b49a64d7b1d",
+      "url": "https://open.spotify.com/track/0xTGfdrWzJLKRD4U6hxSsg"
+    },
+    {
+      "name": "I Talk To The Wind",
+      "artist": "King Crimson",
+      "image": "https://i.scdn.co/image/ab67616d0000b273da7b326bd7ffa7b6b95b0660",
+      "url": "https://open.spotify.com/track/1T0CdfKPKb1gJi4vCKpZ9C"
     },
     {
       "name": "X's & O's",
@@ -90,22 +84,28 @@
       "url": "https://open.spotify.com/track/750yKw4gINVQFdBeCGiCwP"
     },
     {
+      "name": "Come",
+      "artist": "Jain",
+      "image": "https://i.scdn.co/image/ab67616d0000b2739d3ad3a9fa90bf0dee0ae5be",
+      "url": "https://open.spotify.com/track/1YrC8s6yZWw23QxW6rfM9f"
+    },
+    {
+      "name": "Jean Skirt",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736ad1bfc5a6102f8e926a8c5f",
+      "url": "https://open.spotify.com/track/4rKOkzcvjLYsFcUpYDbeLM"
+    },
+    {
+      "name": "Queen St",
+      "artist": "twentythree",
+      "image": "https://i.scdn.co/image/ab67616d0000b273c18ec4d508e46932041446b8",
+      "url": "https://open.spotify.com/track/4TFOpl0juiBGT5VTHlrige"
+    },
+    {
       "name": "Difficult Love",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b273a1cac678024bb37d83ab012c",
       "url": "https://open.spotify.com/track/0UDEtLcKGBU73D15u5g1r3"
-    },
-    {
-      "name": "Lonely Song",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b273a1cac678024bb37d83ab012c",
-      "url": "https://open.spotify.com/track/2RsV113tb8cEn53L4tDKF5"
-    },
-    {
-      "name": "Gun To My Head",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b273a1cac678024bb37d83ab012c",
-      "url": "https://open.spotify.com/track/2sW7X1G7xaNZZX7b92NP6X"
     },
     {
       "name": "I Don't Feel Like Dancin'",
