@@ -1,19 +1,6 @@
 {
-  "generated_at": "2026-07-09T16:02:33.323Z",
+  "generated_at": "2026-07-10T15:33:48.690Z",
   "currentlyReading": [
-    {
-      "title": "The Picture of Dorian Gray",
-      "author": "Oscar Wilde",
-      "rating": 0,
-      "avgRating": 4.13,
-      "dateAdded": "Thu, 02 Jul 2026 15:11:41 -0700",
-      "dateRead": null,
-      "published": "1890",
-      "numPages": 272,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546103428l/5297._SX98_.jpg",
-      "bookId": "5297",
-      "link": "https://www.goodreads.com/review/show/8425268051?utm_medium=api&utm_source=rss"
-    },
     {
       "title": "The Two Towers (The Lord of the Rings, #2)",
       "author": "J.R.R. Tolkien",
@@ -55,6 +42,19 @@
     }
   ],
   "recentlyRead": [
+    {
+      "title": "The Picture of Dorian Gray",
+      "author": "Oscar Wilde",
+      "rating": 4,
+      "avgRating": 4.13,
+      "dateAdded": "Fri, 10 Jul 2026 00:19:03 -0700",
+      "dateRead": "2026-07-10T00:00:00.000Z",
+      "published": "1890",
+      "numPages": 272,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546103428l/5297._SX98_.jpg",
+      "bookId": "5297",
+      "link": "https://www.goodreads.com/review/show/8425268051?utm_medium=api&utm_source=rss"
+    },
     {
       "title": "Pet Sematary",
       "author": "Stephen  King",
@@ -106,23 +106,10 @@
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1627907823l/8120173._SX98_.jpg",
       "bookId": "8120173",
       "link": "https://www.goodreads.com/review/show/8425266738?utm_medium=api&utm_source=rss"
-    },
-    {
-      "title": "Project Hail Mary",
-      "author": "Andy Weir",
-      "rating": 5,
-      "avgRating": 4.59,
-      "dateAdded": "Tue, 28 Apr 2026 13:19:38 -0700",
-      "dateRead": "2026-03-31T00:00:00.000Z",
-      "published": "2021",
-      "numPages": 482,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734434586l/222697645._SX98_.jpg",
-      "bookId": "222697645",
-      "link": "https://www.goodreads.com/review/show/8418056222?utm_medium=api&utm_source=rss"
     }
   ],
-  "totalPages": 5720,
-  "yearPagesRead": 4117,
-  "yearBooksRead": 8,
+  "totalPages": 5992,
+  "yearPagesRead": 4389,
+  "yearBooksRead": 9,
   "profileUrl": "https://www.goodreads.com/user/show/199381877"
 }
