@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T15:29:11.182Z",
+  "generated_at": "2026-07-11T14:20:13.992Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -17,14 +17,24 @@
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+      "name": "Maroon 5",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebf8349dfb619a7f842242de77",
+      "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
     },
     {
       "name": "Dominic Fike",
       "image": "https://i.scdn.co/image/ab6761610000e5ebf2903326ec44d5ecb37dcad9",
       "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
+    },
+    {
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+    },
+    {
+      "name": "Delinquent",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebfabf28a51f1a221fb79c4985",
+      "url": "https://open.spotify.com/artist/1VtJL8QulGDXbbZwTaGV53"
     },
     {
       "name": "The Marías",
@@ -40,16 +50,6 @@
       "name": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
-    },
-    {
-      "name": "Michael Jackson",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb997cc9a4aec335d46c9481fd",
-      "url": "https://open.spotify.com/artist/3fMbdgg4jU18AjLCKBhRSm"
-    },
-    {
-      "name": "Wallows",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebfde4e7d59f6d8868e2ffdaf5",
-      "url": "https://open.spotify.com/artist/0NIPkIjTV8mB795yEIiPYL"
     }
   ],
   "tracks": [
@@ -76,6 +76,12 @@
       "artist": "King Crimson",
       "image": "https://i.scdn.co/image/ab67616d0000b273da7b326bd7ffa7b6b95b0660",
       "url": "https://open.spotify.com/track/1T0CdfKPKb1gJi4vCKpZ9C"
+    },
+    {
+      "name": "My Destiny - Original Mix",
+      "artist": "Delinquent, KCAT, Mike Delinquent Project",
+      "image": "https://i.scdn.co/image/ab67616d0000b2734a0cc2dcd8136407d597ae4d",
+      "url": "https://open.spotify.com/track/3S2u6LcfsHHSzUJlPYl6Ih"
     },
     {
       "name": "X's & O's",
@@ -106,12 +112,6 @@
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b273a1cac678024bb37d83ab012c",
       "url": "https://open.spotify.com/track/0UDEtLcKGBU73D15u5g1r3"
-    },
-    {
-      "name": "I Don't Feel Like Dancin'",
-      "artist": "Scissor Sisters",
-      "image": "https://i.scdn.co/image/ab67616d0000b27381625c8c1368106d3ac464ed",
-      "url": "https://open.spotify.com/track/1q9l6c8bAzqWcvO3DM6FsR"
     }
   ]
 }
