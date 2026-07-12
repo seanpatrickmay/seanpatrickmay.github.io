@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T14:20:13.992Z",
+  "generated_at": "2026-07-12T14:24:30.742Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -27,14 +27,14 @@
       "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
     },
     {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
-    },
-    {
       "name": "Delinquent",
       "image": "https://i.scdn.co/image/ab6761610000e5ebfabf28a51f1a221fb79c4985",
       "url": "https://open.spotify.com/artist/1VtJL8QulGDXbbZwTaGV53"
+    },
+    {
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
       "name": "The Marías",
@@ -60,6 +60,12 @@
       "url": "https://open.spotify.com/track/0JeAKH2DCIgCCrZ9qBGthg"
     },
     {
+      "name": "My Destiny - Original Mix",
+      "artist": "Delinquent, KCAT, Mike Delinquent Project",
+      "image": "https://i.scdn.co/image/ab67616d0000b2734a0cc2dcd8136407d597ae4d",
+      "url": "https://open.spotify.com/track/3S2u6LcfsHHSzUJlPYl6Ih"
+    },
+    {
       "name": "Ain't That The Truth",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b2736ad1bfc5a6102f8e926a8c5f",
@@ -78,12 +84,6 @@
       "url": "https://open.spotify.com/track/1T0CdfKPKb1gJi4vCKpZ9C"
     },
     {
-      "name": "My Destiny - Original Mix",
-      "artist": "Delinquent, KCAT, Mike Delinquent Project",
-      "image": "https://i.scdn.co/image/ab67616d0000b2734a0cc2dcd8136407d597ae4d",
-      "url": "https://open.spotify.com/track/3S2u6LcfsHHSzUJlPYl6Ih"
-    },
-    {
       "name": "X's & O's",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b273a1cac678024bb37d83ab012c",
@@ -96,16 +96,16 @@
       "url": "https://open.spotify.com/track/1YrC8s6yZWw23QxW6rfM9f"
     },
     {
-      "name": "Jean Skirt",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736ad1bfc5a6102f8e926a8c5f",
-      "url": "https://open.spotify.com/track/4rKOkzcvjLYsFcUpYDbeLM"
-    },
-    {
       "name": "Queen St",
       "artist": "twentythree",
       "image": "https://i.scdn.co/image/ab67616d0000b273c18ec4d508e46932041446b8",
       "url": "https://open.spotify.com/track/4TFOpl0juiBGT5VTHlrige"
+    },
+    {
+      "name": "Jean Skirt",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736ad1bfc5a6102f8e926a8c5f",
+      "url": "https://open.spotify.com/track/4rKOkzcvjLYsFcUpYDbeLM"
     },
     {
       "name": "Difficult Love",
