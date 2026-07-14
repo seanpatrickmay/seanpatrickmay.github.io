@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T14:24:30.742Z",
+  "generated_at": "2026-07-14T14:45:51.261Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -12,14 +12,9 @@
       "url": "https://open.spotify.com/artist/1oPRcJUkloHaRLYx0olBLJ"
     },
     {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebeefa05f0b8fcafd4beb19d31",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
-    {
-      "name": "Maroon 5",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebf8349dfb619a7f842242de77",
-      "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
       "name": "Dominic Fike",
@@ -32,9 +27,9 @@
       "url": "https://open.spotify.com/artist/1VtJL8QulGDXbbZwTaGV53"
     },
     {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+      "name": "Zedd",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebeefa05f0b8fcafd4beb19d31",
+      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
       "name": "The Marías",
@@ -50,6 +45,11 @@
       "name": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
+    },
+    {
+      "name": "Michael Jackson",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb997cc9a4aec335d46c9481fd",
+      "url": "https://open.spotify.com/artist/3fMbdgg4jU18AjLCKBhRSm"
     }
   ],
   "tracks": [
@@ -58,12 +58,6 @@
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b2736ad1bfc5a6102f8e926a8c5f",
       "url": "https://open.spotify.com/track/0JeAKH2DCIgCCrZ9qBGthg"
-    },
-    {
-      "name": "My Destiny - Original Mix",
-      "artist": "Delinquent, KCAT, Mike Delinquent Project",
-      "image": "https://i.scdn.co/image/ab67616d0000b2734a0cc2dcd8136407d597ae4d",
-      "url": "https://open.spotify.com/track/3S2u6LcfsHHSzUJlPYl6Ih"
     },
     {
       "name": "Ain't That The Truth",
@@ -90,18 +84,6 @@
       "url": "https://open.spotify.com/track/750yKw4gINVQFdBeCGiCwP"
     },
     {
-      "name": "Come",
-      "artist": "Jain",
-      "image": "https://i.scdn.co/image/ab67616d0000b2739d3ad3a9fa90bf0dee0ae5be",
-      "url": "https://open.spotify.com/track/1YrC8s6yZWw23QxW6rfM9f"
-    },
-    {
-      "name": "Queen St",
-      "artist": "twentythree",
-      "image": "https://i.scdn.co/image/ab67616d0000b273c18ec4d508e46932041446b8",
-      "url": "https://open.spotify.com/track/4TFOpl0juiBGT5VTHlrige"
-    },
-    {
       "name": "Jean Skirt",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b2736ad1bfc5a6102f8e926a8c5f",
@@ -112,6 +94,24 @@
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b273a1cac678024bb37d83ab012c",
       "url": "https://open.spotify.com/track/0UDEtLcKGBU73D15u5g1r3"
+    },
+    {
+      "name": "I Don't Feel Like Dancin'",
+      "artist": "Scissor Sisters",
+      "image": "https://i.scdn.co/image/ab67616d0000b27381625c8c1368106d3ac464ed",
+      "url": "https://open.spotify.com/track/1q9l6c8bAzqWcvO3DM6FsR"
+    },
+    {
+      "name": "Danny Boy",
+      "artist": "Xuefei Yang",
+      "image": "https://i.scdn.co/image/ab67616d0000b2733a8a35b196cf105795ec5925",
+      "url": "https://open.spotify.com/track/21Fs9UuXGoESVVESdWTxZ5"
+    },
+    {
+      "name": "Cry for Me",
+      "artist": "Magdalena Bay",
+      "image": "https://i.scdn.co/image/ab67616d0000b2737339f7e95927d4b823189f62",
+      "url": "https://open.spotify.com/track/2RhHct6gGXSrZ1zHjovhRq"
     }
   ]
 }
