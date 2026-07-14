@@ -75,7 +75,7 @@ export default function GoodreadsCard({ data = null, bare = false }) {
           <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-300 mb-2">
             Currently reading
           </div>
-          <ul className="space-y-2.5">
+          <ul className="grid grid-cols-2 gap-x-3 gap-y-2.5">
             {currentlyReading.map(book => (
               <li key={book.bookId}>
                 <a
@@ -93,10 +93,10 @@ export default function GoodreadsCard({ data = null, bare = false }) {
                     />
                   )}
                   <div className="min-w-0">
-                    <div className="text-sm font-semibold text-slate-900 dark:text-slate-50 leading-snug group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                    <div className="text-sm font-semibold text-slate-900 dark:text-slate-50 leading-snug line-clamp-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
                       {book.title}
                     </div>
-                    <div className="text-xs text-slate-500 dark:text-slate-300 mt-0.5">
+                    <div className="text-xs text-slate-500 dark:text-slate-300 mt-0.5 truncate">
                       {book.author}
                     </div>
                   </div>
@@ -112,7 +112,7 @@ export default function GoodreadsCard({ data = null, bare = false }) {
           <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-300 mb-2">
             Recently read
           </div>
-          <ul className="space-y-2">
+          <ul className="grid grid-cols-2 gap-x-3 gap-y-2">
             {recent.slice(0, 4).map(book => (
               <li key={book.bookId}>
                 <a

@@ -129,11 +129,11 @@ export default function Hero({ links, featuredProjects = [] }) {
 
             <div className="flex flex-wrap gap-2 pt-1 lg:hidden animate-fade-up [animation-delay:150ms]">
               <Badge variant="outline" className="text-xs">Quant Research &mdash; NU Systematic Alpha</Badge>
-              <Badge variant="outline" className="text-xs">Incoming SWE Intern &mdash; Capital One</Badge>
+              <Badge variant="outline" className="text-xs">SWE Intern &mdash; Capital One</Badge>
             </div>
 
             <p className="text-base text-slate-600 dark:text-slate-300 leading-relaxed animate-fade-up [animation-delay:200ms]">
-              built an agentic AI tutor at NExT, now i'm doing quant research and heading to Capital One this summer. triathlons, prompting, reading, and stacking some chips in between
+              built an agentic AI tutor at NExT, now i'm doing quant research and interning at Capital One this summer. triathlons, prompting, reading, and stacking some chips in between
             </p>
 
             <div className="flex flex-wrap gap-3 pt-2 animate-fade-up [animation-delay:300ms]">

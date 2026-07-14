@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T02:04:35.476023Z",
+  "generated_at": "2026-07-14T18:06:25.104031Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,613 +9,613 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 27,
-        "distance_km": 436.45,
-        "time_hours": 68.31,
-        "longest_km": 55.98,
-        "calories_kcal": 29451.0
+        "activities_count": 57,
+        "distance_km": 313.51,
+        "time_hours": 37.94,
+        "longest_km": 60.5,
+        "calories_kcal": 29292.0
       },
       "recent": {
         "last60": [
           {
-            "id": 23050638310,
-            "name": "Treadmill Running",
-            "type": "treadmill_running",
-            "start": "2026-05-28 20:43:04",
-            "distance_km": 4.73,
-            "duration_min": 30.1,
-            "avg_speed_kmh": 9.42,
-            "calories_kcal": 410.0
-          },
-          {
-            "id": 22954749983,
-            "name": "Treadmill Running",
-            "type": "treadmill_running",
-            "start": "2026-05-20 21:01:21",
-            "distance_km": 3.26,
-            "duration_min": 20.1,
-            "avg_speed_kmh": 9.72,
-            "calories_kcal": 294.0
-          },
-          {
-            "id": 22954585165,
-            "name": "Base",
-            "type": "indoor_cycling",
-            "start": "2026-05-20 19:46:32",
+            "id": 23588253008,
+            "name": "Elliptical",
+            "type": "elliptical",
+            "start": "2026-07-13 18:46:52",
             "distance_km": 0.0,
-            "duration_min": 61.3,
+            "duration_min": 92.7,
             "avg_speed_kmh": 0.0,
-            "calories_kcal": 755.0
+            "calories_kcal": 1285.0
           },
           {
-            "id": 22940043627,
-            "name": "Columbia - Base",
-            "type": "cycling",
-            "start": "2026-05-19 14:01:10",
-            "distance_km": 1.01,
-            "duration_min": 65.2,
-            "avg_speed_kmh": 0.93,
-            "calories_kcal": 676.0
-          },
-          {
-            "id": 22930256844,
-            "name": "Howard County Cycling",
-            "type": "cycling",
-            "start": "2026-05-18 18:57:55",
-            "distance_km": 42.15,
-            "duration_min": 117.2,
-            "avg_speed_kmh": 21.59,
-            "calories_kcal": 1439.0
-          },
-          {
-            "id": 22928665297,
+            "id": 23587598057,
             "name": "Strength",
             "type": "strength_training",
-            "start": "2026-05-18 15:49:26",
+            "start": "2026-07-13 18:07:24",
             "distance_km": 0.0,
-            "duration_min": 74.0,
+            "duration_min": 36.9,
             "avg_speed_kmh": 0.0,
-            "calories_kcal": 461.0
+            "calories_kcal": 310.0
           },
           {
-            "id": 22926639566,
+            "id": 23587323238,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-07-13 17:25:06",
+            "distance_km": 7.0,
+            "duration_min": 35.5,
+            "avg_speed_kmh": 11.81,
+            "calories_kcal": 491.0
+          },
+          {
+            "id": 23576569459,
+            "name": "Henrico County Running",
+            "type": "running",
+            "start": "2026-07-12 20:27:23",
+            "distance_km": 13.6,
+            "duration_min": 68.2,
+            "avg_speed_kmh": 11.96,
+            "calories_kcal": 1076.0
+          },
+          {
+            "id": 23575591078,
             "name": "Indoor Cycling",
             "type": "indoor_cycling",
-            "start": "2026-05-18 12:44:40",
+            "start": "2026-07-12 16:08:02",
             "distance_km": 0.0,
-            "duration_min": 60.5,
+            "duration_min": 100.9,
             "avg_speed_kmh": 0.0,
-            "calories_kcal": 817.0
+            "calories_kcal": 1172.0
           },
           {
-            "id": 22907185780,
+            "id": 23565505770,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-07-12 00:32:48",
+            "distance_km": 0.0,
+            "duration_min": 13.6,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 173.0
+          },
+          {
+            "id": 23565454059,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-07-11 23:58:46",
+            "distance_km": 6.03,
+            "duration_min": 31.2,
+            "avg_speed_kmh": 11.58,
+            "calories_kcal": 476.0
+          },
+          {
+            "id": 23565359509,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-07-11 23:46:30",
+            "distance_km": 0.0,
+            "duration_min": 11.7,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 150.0
+          },
+          {
+            "id": 23551914945,
+            "name": "Walking",
+            "type": "walking",
+            "start": "2026-07-10 17:18:47",
+            "distance_km": 2.6,
+            "duration_min": 33.4,
+            "avg_speed_kmh": 4.67,
+            "calories_kcal": 511.0
+          },
+          {
+            "id": 23551620936,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-07-10 16:18:18",
+            "distance_km": 0.0,
+            "duration_min": 45.1,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 580.0
+          },
+          {
+            "id": 23542010366,
+            "name": "Henrico County Running",
+            "type": "running",
+            "start": "2026-07-09 20:19:26",
+            "distance_km": 6.16,
+            "duration_min": 32.6,
+            "avg_speed_kmh": 11.32,
+            "calories_kcal": 524.0
+          },
+          {
+            "id": 23541765596,
             "name": "Strength",
             "type": "strength_training",
-            "start": "2026-05-16 21:51:39",
+            "start": "2026-07-09 20:06:17",
             "distance_km": 0.0,
-            "duration_min": 18.6,
+            "duration_min": 11.2,
             "avg_speed_kmh": 0.0,
-            "calories_kcal": 143.0
+            "calories_kcal": 108.0
           },
           {
-            "id": 22906045126,
-            "name": "College Park Cycling",
-            "type": "cycling",
-            "start": "2026-05-16 14:49:04",
-            "distance_km": 55.98,
-            "duration_min": 202.0,
-            "avg_speed_kmh": 16.63,
-            "calories_kcal": 1803.0
+            "id": 23538655031,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-07-09 13:39:24",
+            "distance_km": 0.0,
+            "duration_min": 12.1,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 198.0
           },
           {
-            "id": 22894103075,
+            "id": 23538652565,
+            "name": "Elliptical",
+            "type": "elliptical",
+            "start": "2026-07-09 13:01:40",
+            "distance_km": 0.0,
+            "duration_min": 35.7,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 606.0
+          },
+          {
+            "id": 23538015770,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-07-09 12:46:35",
+            "distance_km": 0.0,
+            "duration_min": 14.3,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 197.0
+          },
+          {
+            "id": 23529922509,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-07-08 20:13:22",
+            "distance_km": 6.34,
+            "duration_min": 32.0,
+            "avg_speed_kmh": 11.87,
+            "calories_kcal": 487.0
+          },
+          {
+            "id": 23510628677,
+            "name": "Elk Lick Running",
+            "type": "running",
+            "start": "2026-07-06 20:12:42",
+            "distance_km": 10.07,
+            "duration_min": 55.6,
+            "avg_speed_kmh": 10.86,
+            "calories_kcal": 899.0
+          },
+          {
+            "id": 23478044466,
             "name": "Howard County Cycling",
             "type": "cycling",
-            "start": "2026-05-15 16:40:15",
-            "distance_km": 8.17,
-            "duration_min": 37.6,
-            "avg_speed_kmh": 13.03,
-            "calories_kcal": 344.0
+            "start": "2026-07-04 08:56:40",
+            "distance_km": 43.56,
+            "duration_min": 125.4,
+            "avg_speed_kmh": 20.84,
+            "calories_kcal": 1315.0
           },
           {
-            "id": 22893882546,
-            "name": "Howard County Running",
-            "type": "running",
-            "start": "2026-05-15 16:13:21",
-            "distance_km": 4.97,
-            "duration_min": 24.4,
-            "avg_speed_kmh": 12.2,
-            "calories_kcal": 398.0
+            "id": 23459417846,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-07-02 19:12:12",
+            "distance_km": 5.88,
+            "duration_min": 31.9,
+            "avg_speed_kmh": 11.05,
+            "calories_kcal": 503.0
           },
           {
-            "id": 22872354216,
-            "name": "Shenandoah County Cycling",
+            "id": 23458675017,
+            "name": "Richmond Cycling",
             "type": "cycling",
-            "start": "2026-05-13 16:46:55",
-            "distance_km": 32.47,
-            "duration_min": 89.0,
-            "avg_speed_kmh": 21.89,
-            "calories_kcal": 904.0
+            "start": "2026-07-02 15:02:59",
+            "distance_km": 50.1,
+            "duration_min": 125.5,
+            "avg_speed_kmh": 23.95,
+            "calories_kcal": 1570.0
           },
           {
-            "id": 22855979332,
-            "name": "Howard County Running",
-            "type": "running",
-            "start": "2026-05-12 11:22:09",
-            "distance_km": 1.98,
-            "duration_min": 10.6,
-            "avg_speed_kmh": 11.23,
-            "calories_kcal": 162.0
-          },
-          {
-            "id": 22855757167,
-            "name": "Howard County Track Running",
-            "type": "track_running",
-            "start": "2026-05-12 10:34:15",
-            "distance_km": 8.13,
-            "duration_min": 35.0,
-            "avg_speed_kmh": 13.95,
-            "calories_kcal": 563.0
-          },
-          {
-            "id": 22855243235,
-            "name": "Howard County Running",
-            "type": "running",
-            "start": "2026-05-12 10:08:48",
-            "distance_km": 3.09,
-            "duration_min": 15.4,
-            "avg_speed_kmh": 12.06,
-            "calories_kcal": 241.0
-          },
-          {
-            "id": 22848639187,
-            "name": "Howard County Cycling",
-            "type": "cycling",
-            "start": "2026-05-11 17:07:54",
-            "distance_km": 37.03,
-            "duration_min": 123.9,
-            "avg_speed_kmh": 17.93,
-            "calories_kcal": 1108.0
-          },
-          {
-            "id": 22835759258,
-            "name": "Baltimore County Running",
-            "type": "running",
-            "start": "2026-05-10 11:37:03",
-            "distance_km": 21.49,
-            "duration_min": 126.4,
-            "avg_speed_kmh": 10.2,
-            "calories_kcal": 1796.0
-          },
-          {
-            "id": 22784360041,
-            "name": "County Kerry Walking",
+            "id": 23447438341,
+            "name": "Walking",
             "type": "walking",
-            "start": "2026-05-06 06:00:52",
-            "distance_km": 37.08,
-            "duration_min": 373.6,
-            "avg_speed_kmh": 5.96,
-            "calories_kcal": 3061.0
+            "start": "2026-07-01 17:43:12",
+            "distance_km": 3.19,
+            "duration_min": 30.6,
+            "avg_speed_kmh": 6.27,
+            "calories_kcal": 448.0
           },
           {
-            "id": 22775377464,
-            "name": "County Kerry Walking",
+            "id": 23447152181,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-07-01 17:09:35",
+            "distance_km": 0.0,
+            "duration_min": 31.8,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 435.0
+          },
+          {
+            "id": 23447151677,
+            "name": "Walking",
             "type": "walking",
-            "start": "2026-05-05 09:43:00",
-            "distance_km": 28.69,
-            "duration_min": 429.7,
-            "avg_speed_kmh": 4.01,
-            "calories_kcal": 2039.0
+            "start": "2026-07-01 16:34:20",
+            "distance_km": 3.63,
+            "duration_min": 33.8,
+            "avg_speed_kmh": 6.45,
+            "calories_kcal": 506.0
           },
           {
-            "id": 22763419452,
-            "name": "County Kerry Walking",
+            "id": 23435656284,
+            "name": "Walking",
             "type": "walking",
-            "start": "2026-05-04 16:26:46",
-            "distance_km": 9.92,
-            "duration_min": 95.2,
-            "avg_speed_kmh": 6.25,
-            "calories_kcal": 756.0
+            "start": "2026-06-30 18:22:52",
+            "distance_km": 0.8,
+            "duration_min": 7.8,
+            "avg_speed_kmh": 6.12,
+            "calories_kcal": 108.0
           },
           {
-            "id": 22763415254,
-            "name": "County Kerry Running",
-            "type": "running",
-            "start": "2026-05-04 15:43:44",
-            "distance_km": 5.45,
-            "duration_min": 34.3,
-            "avg_speed_kmh": 9.52,
-            "calories_kcal": 512.0
-          },
-          {
-            "id": 22763410227,
-            "name": "County Kerry Walking",
-            "type": "walking",
-            "start": "2026-05-04 10:40:49",
-            "distance_km": 16.31,
-            "duration_min": 302.2,
-            "avg_speed_kmh": 3.24,
-            "calories_kcal": 1559.0
-          },
-          {
-            "id": 22751756742,
-            "name": "County Kerry Walking",
-            "type": "walking",
-            "start": "2026-05-03 09:41:29",
-            "distance_km": 22.53,
-            "duration_min": 356.2,
-            "avg_speed_kmh": 3.8,
-            "calories_kcal": 1659.0
-          },
-          {
-            "id": 22739097964,
-            "name": "County Kerry Walking",
-            "type": "walking",
-            "start": "2026-05-02 08:24:58",
-            "distance_km": 26.61,
-            "duration_min": 346.4,
-            "avg_speed_kmh": 4.61,
-            "calories_kcal": 2085.0
-          },
-          {
-            "id": 22728410484,
-            "name": "County Kerry Walking",
-            "type": "walking",
-            "start": "2026-05-01 10:26:16",
-            "distance_km": 26.67,
-            "duration_min": 426.7,
-            "avg_speed_kmh": 3.75,
-            "calories_kcal": 2154.0
-          },
-          {
-            "id": 22714688413,
-            "name": "County Kerry Walking",
-            "type": "walking",
-            "start": "2026-04-30 10:23:34",
-            "distance_km": 18.91,
-            "duration_min": 272.3,
-            "avg_speed_kmh": 4.17,
-            "calories_kcal": 1504.0
-          },
-          {
-            "id": 22704015045,
-            "name": "County Kerry Walking",
-            "type": "walking",
-            "start": "2026-04-29 11:15:19",
-            "distance_km": 19.84,
-            "duration_min": 350.6,
-            "avg_speed_kmh": 3.39,
-            "calories_kcal": 1808.0
-          },
-          {
-            "id": 22630309533,
-            "name": "Musculation",
+            "id": 23435656069,
+            "name": "Strength",
             "type": "strength_training",
-            "start": "2026-04-23 08:29:42",
+            "start": "2026-06-30 18:02:59",
             "distance_km": 0.0,
-            "duration_min": 51.0,
+            "duration_min": 19.4,
             "avg_speed_kmh": 0.0,
-            "calories_kcal": 634.0
+            "calories_kcal": 165.0
           },
           {
-            "id": 22598981166,
-            "name": "laundry lundi",
-            "type": "virtual_ride",
-            "start": "2026-04-20 16:04:50",
-            "distance_km": 21.47,
-            "duration_min": 99.9,
-            "avg_speed_kmh": 12.9,
-            "calories_kcal": 1114.0
+            "id": 23435472182,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-30 17:41:51",
+            "distance_km": 0.0,
+            "duration_min": 20.0,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 271.0
           },
           {
-            "id": 22594648917,
-            "name": "Boston Running",
+            "id": 23435334099,
+            "name": "Henrico County Running",
             "type": "running",
-            "start": "2026-04-20 10:28:41",
-            "distance_km": 1.92,
-            "duration_min": 50.7,
-            "avg_speed_kmh": 2.28,
-            "calories_kcal": 316.0
+            "start": "2026-06-30 17:02:00",
+            "distance_km": 6.62,
+            "duration_min": 34.6,
+            "avg_speed_kmh": 11.5,
+            "calories_kcal": 538.0
           },
           {
-            "id": 22587552406,
-            "name": "Boston Running",
+            "id": 23435079711,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-30 16:49:32",
+            "distance_km": 0.0,
+            "duration_min": 10.2,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 119.0
+          },
+          {
+            "id": 23423618756,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-29 18:35:59",
+            "distance_km": 0.0,
+            "duration_min": 24.3,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 309.0
+          },
+          {
+            "id": 23423362762,
+            "name": "Henrico County Running",
             "type": "running",
-            "start": "2026-04-19 14:35:08",
-            "distance_km": 17.66,
-            "duration_min": 113.2,
-            "avg_speed_kmh": 9.36,
-            "calories_kcal": 1404.0
+            "start": "2026-06-29 17:41:04",
+            "distance_km": 6.42,
+            "duration_min": 33.9,
+            "avg_speed_kmh": 11.38,
+            "calories_kcal": 543.0
           },
           {
-            "id": 22506569942,
-            "name": "Boston Running",
+            "id": 23422794351,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-06-29 16:36:52",
+            "distance_km": 1.97,
+            "duration_min": 9.7,
+            "avg_speed_kmh": 12.14,
+            "calories_kcal": 147.0
+          },
+          {
+            "id": 23397333022,
+            "name": "Montreal Running",
             "type": "running",
-            "start": "2026-04-12 17:17:56",
-            "distance_km": 18.55,
-            "duration_min": 115.9,
-            "avg_speed_kmh": 9.6,
-            "calories_kcal": 1470.0
+            "start": "2026-06-27 09:27:33",
+            "distance_km": 6.56,
+            "duration_min": 43.8,
+            "avg_speed_kmh": 8.99,
+            "calories_kcal": 543.0
           },
           {
-            "id": 22472569741,
-            "name": "Boston Running",
+            "id": 23380963744,
+            "name": "Henrico County Running",
             "type": "running",
-            "start": "2026-04-09 22:27:15",
-            "distance_km": 1.5,
-            "duration_min": 9.0,
-            "avg_speed_kmh": 10.02,
-            "calories_kcal": 124.0
+            "start": "2026-06-25 19:56:47",
+            "distance_km": 10.64,
+            "duration_min": 56.4,
+            "avg_speed_kmh": 11.31,
+            "calories_kcal": 915.0
           },
           {
-            "id": 22472569569,
-            "name": "Boston Track Running",
-            "type": "track_running",
-            "start": "2026-04-09 21:46:33",
-            "distance_km": 8.72,
-            "duration_min": 39.4,
-            "avg_speed_kmh": 13.27,
-            "calories_kcal": 664.0
+            "id": 23380354749,
+            "name": "Richmond Cycling",
+            "type": "cycling",
+            "start": "2026-06-25 16:44:47",
+            "distance_km": 60.5,
+            "duration_min": 132.0,
+            "avg_speed_kmh": 27.51,
+            "calories_kcal": 1820.0
           },
           {
-            "id": 22472569138,
-            "name": "Boston Running",
+            "id": 23369335493,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-24 18:35:52",
+            "distance_km": 0.0,
+            "duration_min": 26.1,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 329.0
+          },
+          {
+            "id": 23369124645,
+            "name": "Henrico County Running",
             "type": "running",
-            "start": "2026-04-09 21:39:38",
-            "distance_km": 1.21,
-            "duration_min": 6.1,
-            "avg_speed_kmh": 11.98,
-            "calories_kcal": 94.0
+            "start": "2026-06-24 17:35:17",
+            "distance_km": 7.28,
+            "duration_min": 35.8,
+            "avg_speed_kmh": 12.2,
+            "calories_kcal": 577.0
           },
           {
-            "id": 22447429109,
-            "name": "tresh chewsd",
-            "type": "virtual_ride",
-            "start": "2026-04-07 22:15:38",
-            "distance_km": 25.85,
-            "duration_min": 47.2,
-            "avg_speed_kmh": 32.85,
-            "calories_kcal": 740.0
+            "id": 23357647911,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-23 19:11:59",
+            "distance_km": 0.0,
+            "duration_min": 5.2,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 71.0
           },
           {
-            "id": 22419551517,
-            "name": "Boston Running",
+            "id": 23357647564,
+            "name": "Strength",
+            "type": "strength_training",
+            "start": "2026-06-23 18:39:04",
+            "distance_km": 0.0,
+            "duration_min": 32.4,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 307.0
+          },
+          {
+            "id": 23357310515,
+            "name": "Henrico County Running",
             "type": "running",
-            "start": "2026-04-05 12:38:21",
-            "distance_km": 11.97,
-            "duration_min": 78.8,
-            "avg_speed_kmh": 9.11,
-            "calories_kcal": 984.0
+            "start": "2026-06-23 17:50:30",
+            "distance_km": 6.64,
+            "duration_min": 33.2,
+            "avg_speed_kmh": 11.99,
+            "calories_kcal": 531.0
           },
           {
-            "id": 22410106090,
-            "name": "laundry laturday pt 3",
-            "type": "virtual_ride",
-            "start": "2026-04-04 17:19:20",
-            "distance_km": 30.85,
-            "duration_min": 67.0,
-            "avg_speed_kmh": 27.64,
-            "calories_kcal": 678.0
+            "id": 23346275112,
+            "name": "Walking",
+            "type": "walking",
+            "start": "2026-06-22 21:18:47",
+            "distance_km": 4.96,
+            "duration_min": 60.1,
+            "avg_speed_kmh": 4.95,
+            "calories_kcal": 738.0
           },
           {
-            "id": 22409491144,
-            "name": "laundry laturday pt 2",
-            "type": "virtual_ride",
-            "start": "2026-04-04 15:44:10",
-            "distance_km": 20.45,
-            "duration_min": 41.2,
-            "avg_speed_kmh": 29.8,
+            "id": 23346274801,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-22 20:13:52",
+            "distance_km": 0.0,
+            "duration_min": 64.6,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 658.0
+          },
+          {
+            "id": 23332202043,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-21 12:31:40",
+            "distance_km": 0.0,
+            "duration_min": 93.4,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 1016.0
+          },
+          {
+            "id": 23322932688,
+            "name": "Mixed Martial Arts",
+            "type": "mixed_martial_arts",
+            "start": "2026-06-20 20:19:33",
+            "distance_km": 0.0,
+            "duration_min": 40.6,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 370.0
+          },
+          {
+            "id": 23321281812,
+            "name": "Howard County Cycling",
+            "type": "cycling",
+            "start": "2026-06-20 14:20:46",
+            "distance_km": 13.83,
+            "duration_min": 37.4,
+            "avg_speed_kmh": 22.18,
+            "calories_kcal": 430.0
+          },
+          {
+            "id": 23321281425,
+            "name": "College Park Walking",
+            "type": "walking",
+            "start": "2026-06-19 20:15:57",
+            "distance_km": 3.16,
+            "duration_min": 125.3,
+            "avg_speed_kmh": 1.51,
+            "calories_kcal": 583.0
+          },
+          {
+            "id": 23321280565,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-06-19 15:05:36",
+            "distance_km": 1.54,
+            "duration_min": 7.9,
+            "avg_speed_kmh": 11.71,
+            "calories_kcal": 129.0
+          },
+          {
+            "id": 23299038441,
+            "name": "Walking",
+            "type": "walking",
+            "start": "2026-06-18 15:33:18",
+            "distance_km": 3.16,
+            "duration_min": 29.9,
+            "avg_speed_kmh": 6.33,
+            "calories_kcal": 424.0
+          },
+          {
+            "id": 23299038381,
+            "name": "Strength",
+            "type": "strength_training",
+            "start": "2026-06-18 14:59:59",
+            "distance_km": 0.0,
+            "duration_min": 30.0,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 281.0
+          },
+          {
+            "id": 23299038265,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-18 14:27:09",
+            "distance_km": 0.0,
+            "duration_min": 30.2,
+            "avg_speed_kmh": 0.0,
             "calories_kcal": 384.0
           },
           {
-            "id": 22409228078,
-            "name": "laundry laturday pt 1",
-            "type": "virtual_ride",
-            "start": "2026-04-04 15:17:39",
-            "distance_km": 11.62,
-            "duration_min": 19.5,
-            "avg_speed_kmh": 35.71,
-            "calories_kcal": 431.0
-          },
-          {
-            "id": 22354971386,
-            "name": "lire lundi p1",
-            "type": "virtual_ride",
-            "start": "2026-03-30 20:36:07",
-            "distance_km": 17.06,
-            "duration_min": 33.9,
-            "avg_speed_kmh": 30.23,
-            "calories_kcal": 348.0
-          },
-          {
-            "id": 22344554071,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-03-29 11:28:24",
-            "distance_km": 14.58,
-            "duration_min": 96.2,
-            "avg_speed_kmh": 9.1,
-            "calories_kcal": 1205.0
-          },
-          {
-            "id": 22321106089,
-            "name": "Boston - 10x3m",
-            "type": "running",
-            "start": "2026-03-27 18:41:32",
-            "distance_km": 9.57,
-            "duration_min": 42.3,
-            "avg_speed_kmh": 13.58,
-            "calories_kcal": 771.0
-          },
-          {
-            "id": 22262042222,
-            "name": "Hollywood Running",
-            "type": "running",
-            "start": "2026-03-22 08:54:42",
-            "distance_km": 15.08,
-            "duration_min": 82.9,
-            "avg_speed_kmh": 10.92,
-            "calories_kcal": 1260.0
-          },
-          {
-            "id": 22231858860,
-            "name": "ez",
-            "type": "virtual_ride",
-            "start": "2026-03-19 17:42:49",
-            "distance_km": 25.72,
-            "duration_min": 42.4,
-            "avg_speed_kmh": 36.42,
-            "calories_kcal": 508.0
-          },
-          {
-            "id": 22221184790,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-03-18 19:25:53",
-            "distance_km": 9.47,
-            "duration_min": 53.5,
-            "avg_speed_kmh": 10.62,
-            "calories_kcal": 798.0
-          },
-          {
-            "id": 22209737369,
-            "name": "treshold tuesday FAST",
-            "type": "virtual_ride",
-            "start": "2026-03-17 20:20:18",
-            "distance_km": 20.96,
-            "duration_min": 31.4,
-            "avg_speed_kmh": 40.06,
-            "calories_kcal": 483.0
-          },
-          {
-            "id": 22126104824,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-03-09 19:35:09",
-            "distance_km": 2.81,
-            "duration_min": 15.7,
-            "avg_speed_kmh": 10.74,
-            "calories_kcal": 257.0
-          },
-          {
-            "id": 22126102514,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-03-09 16:25:05",
-            "distance_km": 10.44,
-            "duration_min": 60.4,
-            "avg_speed_kmh": 10.36,
-            "calories_kcal": 882.0
-          },
-          {
-            "id": 22098172741,
-            "name": "Zwift - Three Step Sisters in Watopia",
-            "type": "virtual_ride",
-            "start": "2026-03-07 19:49:52",
-            "distance_km": 42.2,
-            "duration_min": 95.8,
-            "avg_speed_kmh": 26.42,
-            "calories_kcal": 972.0
-          },
-          {
-            "id": 22087413034,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-03-06 22:22:07",
-            "distance_km": 14.6,
-            "duration_min": 84.9,
-            "avg_speed_kmh": 10.32,
-            "calories_kcal": 1296.0
-          },
-          {
-            "id": 22041890446,
-            "name": "Cabezas Kayaking",
-            "type": "kayaking_v2",
-            "start": "2026-03-02 20:19:03",
-            "distance_km": 2.73,
-            "duration_min": 73.8,
-            "avg_speed_kmh": 2.22,
-            "calories_kcal": 417.0
-          },
-          {
-            "id": 22040159075,
-            "name": "Mameyes II Walking",
+            "id": 23289603713,
+            "name": "Walking",
             "type": "walking",
-            "start": "2026-03-02 11:29:43",
-            "distance_km": 15.31,
-            "duration_min": 295.6,
-            "avg_speed_kmh": 3.11,
-            "calories_kcal": 1926.0
+            "start": "2026-06-17 22:09:50",
+            "distance_km": 1.83,
+            "duration_min": 18.1,
+            "avg_speed_kmh": 6.08,
+            "calories_kcal": 297.0
           },
           {
-            "id": 22034976886,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-02-28 12:23:34",
-            "distance_km": 12.49,
-            "duration_min": 74.5,
-            "avg_speed_kmh": 10.06,
-            "calories_kcal": 1058.0
+            "id": 23289533686,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-06-17 21:47:50",
+            "distance_km": 4.22,
+            "duration_min": 21.1,
+            "avg_speed_kmh": 11.99,
+            "calories_kcal": 361.0
           },
           {
-            "id": 21987507426,
-            "name": "Zwift - Waisted 8 in Watopia",
-            "type": "virtual_ride",
-            "start": "2026-02-25 18:52:14",
-            "distance_km": 30.85,
-            "duration_min": 55.6,
-            "avg_speed_kmh": 33.3,
-            "calories_kcal": 594.0
+            "id": 23289422980,
+            "name": "Elliptical",
+            "type": "elliptical",
+            "start": "2026-06-17 21:17:31",
+            "distance_km": 0.0,
+            "duration_min": 24.8,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 391.0
           },
           {
-            "id": 21880787373,
-            "name": "Zwift - Out And Back Again in Watopia",
-            "type": "virtual_ride",
-            "start": "2026-02-15 16:22:15",
-            "distance_km": 56.62,
-            "duration_min": 100.9,
-            "avg_speed_kmh": 33.68,
-            "calories_kcal": 1186.0
-          },
-          {
-            "id": 21829397825,
-            "name": "Zwift - Downtown Eruption in Watopia",
-            "type": "virtual_ride",
-            "start": "2026-02-10 16:58:03",
-            "distance_km": 19.79,
-            "duration_min": 45.4,
-            "avg_speed_kmh": 26.14,
-            "calories_kcal": 411.0
-          },
-          {
-            "id": 21820176465,
-            "name": "Zwift - Jurassic Coast in Watopia",
-            "type": "virtual_ride",
-            "start": "2026-02-09 23:30:09",
-            "distance_km": 24.0,
-            "duration_min": 49.8,
-            "avg_speed_kmh": 28.93,
-            "calories_kcal": 439.0
-          },
-          {
-            "id": 21778759778,
-            "name": "Zwift - Mountain Route in Watopia",
-            "type": "virtual_ride",
-            "start": "2026-02-05 20:47:18",
-            "distance_km": 30.57,
-            "duration_min": 57.1,
-            "avg_speed_kmh": 32.1,
-            "calories_kcal": 917.0
-          },
-          {
-            "id": 22034975998,
+            "id": 23289307759,
             "name": "Indoor Cycling",
             "type": "indoor_cycling",
-            "start": "2026-02-01 20:33:26",
+            "start": "2026-06-17 21:00:25",
             "distance_km": 0.0,
-            "duration_min": 16.4,
+            "duration_min": 16.7,
             "avg_speed_kmh": 0.0,
-            "calories_kcal": 282.0
+            "calories_kcal": 192.0
+          },
+          {
+            "id": 23276615937,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-06-16 19:49:31",
+            "distance_km": 5.54,
+            "duration_min": 30.1,
+            "avg_speed_kmh": 11.05,
+            "calories_kcal": 446.0
+          },
+          {
+            "id": 23262614451,
+            "name": "Henrico County Running",
+            "type": "running",
+            "start": "2026-06-15 17:16:31",
+            "distance_km": 5.3,
+            "duration_min": 26.7,
+            "avg_speed_kmh": 11.91,
+            "calories_kcal": 463.0
+          },
+          {
+            "id": 23262397442,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-15 16:45:01",
+            "distance_km": 0.0,
+            "duration_min": 27.7,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 441.0
+          },
+          {
+            "id": 23262201001,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-06-15 16:19:11",
+            "distance_km": 4.37,
+            "duration_min": 24.8,
+            "avg_speed_kmh": 10.59,
+            "calories_kcal": 375.0
+          },
+          {
+            "id": 23227030133,
+            "name": "Yoga",
+            "type": "yoga",
+            "start": "2026-06-12 13:03:09",
+            "distance_km": 0.0,
+            "duration_min": 30.9,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 293.0
+          },
+          {
+            "id": 23205510998,
+            "name": "Walking",
+            "type": "walking",
+            "start": "2026-06-10 17:45:59",
+            "distance_km": 4.05,
+            "duration_min": 40.0,
+            "avg_speed_kmh": 6.07,
+            "calories_kcal": 565.0
+          },
+          {
+            "id": 23205510521,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-06-10 17:15:18",
+            "distance_km": 5.21,
+            "duration_min": 30.3,
+            "avg_speed_kmh": 10.32,
+            "calories_kcal": 439.0
           }
         ]
       },
@@ -623,60 +623,60 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2026-04-06",
-            "week_end": "2026-04-12",
-            "distance_km": 55.83,
-            "time_hours": 3.63,
-            "calories_kcal": 3092.0
-          },
-          {
-            "week_start": "2026-04-13",
-            "week_end": "2026-04-19",
-            "distance_km": 17.66,
-            "time_hours": 1.89,
-            "calories_kcal": 1404.0
-          },
-          {
-            "week_start": "2026-04-20",
-            "week_end": "2026-04-26",
-            "distance_km": 23.4,
-            "time_hours": 3.36,
-            "calories_kcal": 2064.0
-          },
-          {
-            "week_start": "2026-04-27",
-            "week_end": "2026-05-03",
-            "distance_km": 114.55,
-            "time_hours": 29.2,
-            "calories_kcal": 9210.0
-          },
-          {
-            "week_start": "2026-05-04",
-            "week_end": "2026-05-10",
-            "distance_km": 118.94,
-            "time_hours": 22.69,
-            "calories_kcal": 9723.0
-          },
-          {
-            "week_start": "2026-05-11",
-            "week_end": "2026-05-17",
-            "distance_km": 151.81,
-            "time_hours": 9.27,
-            "calories_kcal": 5666.0
-          },
-          {
-            "week_start": "2026-05-18",
-            "week_end": "2026-05-24",
-            "distance_km": 46.42,
-            "time_hours": 6.64,
-            "calories_kcal": 4442.0
-          },
-          {
             "week_start": "2026-05-25",
             "week_end": "2026-05-31",
-            "distance_km": 4.73,
-            "time_hours": 0.5,
-            "calories_kcal": 410.0
+            "distance_km": 67.71,
+            "time_hours": 4.46,
+            "calories_kcal": 3878.0
+          },
+          {
+            "week_start": "2026-06-01",
+            "week_end": "2026-06-07",
+            "distance_km": 34.2,
+            "time_hours": 8.68,
+            "calories_kcal": 6322.0
+          },
+          {
+            "week_start": "2026-06-08",
+            "week_end": "2026-06-14",
+            "distance_km": 64.02,
+            "time_hours": 4.54,
+            "calories_kcal": 3546.0
+          },
+          {
+            "week_start": "2026-06-15",
+            "week_end": "2026-06-21",
+            "distance_km": 42.96,
+            "time_hours": 9.75,
+            "calories_kcal": 6583.0
+          },
+          {
+            "week_start": "2026-06-22",
+            "week_end": "2026-06-28",
+            "distance_km": 96.57,
+            "time_hours": 8.16,
+            "calories_kcal": 6489.0
+          },
+          {
+            "week_start": "2026-06-29",
+            "week_end": "2026-07-05",
+            "distance_km": 122.18,
+            "time_hours": 8.98,
+            "calories_kcal": 6977.0
+          },
+          {
+            "week_start": "2026-07-06",
+            "week_end": "2026-07-12",
+            "distance_km": 44.8,
+            "time_hours": 8.3,
+            "calories_kcal": 7157.0
+          },
+          {
+            "week_start": "2026-07-13",
+            "week_end": "2026-07-19",
+            "distance_km": 7.0,
+            "time_hours": 2.75,
+            "calories_kcal": 2086.0
           }
         ]
       }
@@ -684,14 +684,294 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 8,
-        "distance_km": 176.81,
-        "time_hours": 12.61,
-        "longest_km": 55.98,
-        "calories_kcal": 7846.0
+        "activities_count": 21,
+        "distance_km": 168.0,
+        "time_hours": 16.14,
+        "longest_km": 60.5,
+        "calories_kcal": 11830.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 23575591078,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-07-12 16:08:02",
+            "distance_km": 0.0,
+            "duration_min": 100.9,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 1172.0
+          },
+          {
+            "id": 23565505770,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-07-12 00:32:48",
+            "distance_km": 0.0,
+            "duration_min": 13.6,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 173.0
+          },
+          {
+            "id": 23565359509,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-07-11 23:46:30",
+            "distance_km": 0.0,
+            "duration_min": 11.7,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 150.0
+          },
+          {
+            "id": 23551620936,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-07-10 16:18:18",
+            "distance_km": 0.0,
+            "duration_min": 45.1,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 580.0
+          },
+          {
+            "id": 23538655031,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-07-09 13:39:24",
+            "distance_km": 0.0,
+            "duration_min": 12.1,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 198.0
+          },
+          {
+            "id": 23538015770,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-07-09 12:46:35",
+            "distance_km": 0.0,
+            "duration_min": 14.3,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 197.0
+          },
+          {
+            "id": 23478044466,
+            "name": "Howard County Cycling",
+            "type": "cycling",
+            "start": "2026-07-04 08:56:40",
+            "distance_km": 43.56,
+            "duration_min": 125.4,
+            "avg_speed_kmh": 20.84,
+            "calories_kcal": 1315.0
+          },
+          {
+            "id": 23458675017,
+            "name": "Richmond Cycling",
+            "type": "cycling",
+            "start": "2026-07-02 15:02:59",
+            "distance_km": 50.1,
+            "duration_min": 125.5,
+            "avg_speed_kmh": 23.95,
+            "calories_kcal": 1570.0
+          },
+          {
+            "id": 23447152181,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-07-01 17:09:35",
+            "distance_km": 0.0,
+            "duration_min": 31.8,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 435.0
+          },
+          {
+            "id": 23435472182,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-30 17:41:51",
+            "distance_km": 0.0,
+            "duration_min": 20.0,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 271.0
+          },
+          {
+            "id": 23435079711,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-30 16:49:32",
+            "distance_km": 0.0,
+            "duration_min": 10.2,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 119.0
+          },
+          {
+            "id": 23423618756,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-29 18:35:59",
+            "distance_km": 0.0,
+            "duration_min": 24.3,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 309.0
+          },
+          {
+            "id": 23380354749,
+            "name": "Richmond Cycling",
+            "type": "cycling",
+            "start": "2026-06-25 16:44:47",
+            "distance_km": 60.5,
+            "duration_min": 132.0,
+            "avg_speed_kmh": 27.51,
+            "calories_kcal": 1820.0
+          },
+          {
+            "id": 23369335493,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-24 18:35:52",
+            "distance_km": 0.0,
+            "duration_min": 26.1,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 329.0
+          },
+          {
+            "id": 23357647911,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-23 19:11:59",
+            "distance_km": 0.0,
+            "duration_min": 5.2,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 71.0
+          },
+          {
+            "id": 23346274801,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-22 20:13:52",
+            "distance_km": 0.0,
+            "duration_min": 64.6,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 658.0
+          },
+          {
+            "id": 23332202043,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-21 12:31:40",
+            "distance_km": 0.0,
+            "duration_min": 93.4,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 1016.0
+          },
+          {
+            "id": 23321281812,
+            "name": "Howard County Cycling",
+            "type": "cycling",
+            "start": "2026-06-20 14:20:46",
+            "distance_km": 13.83,
+            "duration_min": 37.4,
+            "avg_speed_kmh": 22.18,
+            "calories_kcal": 430.0
+          },
+          {
+            "id": 23299038265,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-18 14:27:09",
+            "distance_km": 0.0,
+            "duration_min": 30.2,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 384.0
+          },
+          {
+            "id": 23289307759,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-17 21:00:25",
+            "distance_km": 0.0,
+            "duration_min": 16.7,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 192.0
+          },
+          {
+            "id": 23262397442,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-15 16:45:01",
+            "distance_km": 0.0,
+            "duration_min": 27.7,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 441.0
+          },
+          {
+            "id": 23205035754,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-10 17:00:38",
+            "distance_km": 0.0,
+            "duration_min": 9.3,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 120.0
+          },
+          {
+            "id": 23194195132,
+            "name": "Richmond Cycling",
+            "type": "cycling",
+            "start": "2026-06-09 17:59:12",
+            "distance_km": 51.16,
+            "duration_min": 113.1,
+            "avg_speed_kmh": 27.13,
+            "calories_kcal": 1538.0
+          },
+          {
+            "id": 23156725621,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-06 17:54:31",
+            "distance_km": 0.0,
+            "duration_min": 34.1,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 421.0
+          },
+          {
+            "id": 23156494211,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-06-06 17:21:48",
+            "distance_km": 0.0,
+            "duration_min": 20.6,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 324.0
+          },
+          {
+            "id": 23084915879,
+            "name": "Richmond Cycling",
+            "type": "cycling",
+            "start": "2026-05-31 15:29:44",
+            "distance_km": 48.25,
+            "duration_min": 111.7,
+            "avg_speed_kmh": 25.91,
+            "calories_kcal": 1684.0
+          },
+          {
+            "id": 23072698454,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-05-30 18:03:21",
+            "distance_km": 0.0,
+            "duration_min": 5.3,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 68.0
+          },
+          {
+            "id": 23068259919,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-05-30 09:26:15",
+            "distance_km": 0.0,
+            "duration_min": 30.0,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 402.0
+          },
           {
             "id": 22954585165,
             "name": "Base",
@@ -761,326 +1041,6 @@
             "duration_min": 89.0,
             "avg_speed_kmh": 21.89,
             "calories_kcal": 904.0
-          },
-          {
-            "id": 22848639187,
-            "name": "Howard County Cycling",
-            "type": "cycling",
-            "start": "2026-05-11 17:07:54",
-            "distance_km": 37.03,
-            "duration_min": 123.9,
-            "avg_speed_kmh": 17.93,
-            "calories_kcal": 1108.0
-          },
-          {
-            "id": 22598981166,
-            "name": "laundry lundi",
-            "type": "virtual_ride",
-            "start": "2026-04-20 16:04:50",
-            "distance_km": 21.47,
-            "duration_min": 99.9,
-            "avg_speed_kmh": 12.9,
-            "calories_kcal": 1114.0
-          },
-          {
-            "id": 22447429109,
-            "name": "tresh chewsd",
-            "type": "virtual_ride",
-            "start": "2026-04-07 22:15:38",
-            "distance_km": 25.85,
-            "duration_min": 47.2,
-            "avg_speed_kmh": 32.85,
-            "calories_kcal": 740.0
-          },
-          {
-            "id": 22410106090,
-            "name": "laundry laturday pt 3",
-            "type": "virtual_ride",
-            "start": "2026-04-04 17:19:20",
-            "distance_km": 30.85,
-            "duration_min": 67.0,
-            "avg_speed_kmh": 27.64,
-            "calories_kcal": 678.0
-          },
-          {
-            "id": 22409491144,
-            "name": "laundry laturday pt 2",
-            "type": "virtual_ride",
-            "start": "2026-04-04 15:44:10",
-            "distance_km": 20.45,
-            "duration_min": 41.2,
-            "avg_speed_kmh": 29.8,
-            "calories_kcal": 384.0
-          },
-          {
-            "id": 22409228078,
-            "name": "laundry laturday pt 1",
-            "type": "virtual_ride",
-            "start": "2026-04-04 15:17:39",
-            "distance_km": 11.62,
-            "duration_min": 19.5,
-            "avg_speed_kmh": 35.71,
-            "calories_kcal": 431.0
-          },
-          {
-            "id": 22354971386,
-            "name": "lire lundi p1",
-            "type": "virtual_ride",
-            "start": "2026-03-30 20:36:07",
-            "distance_km": 17.06,
-            "duration_min": 33.9,
-            "avg_speed_kmh": 30.23,
-            "calories_kcal": 348.0
-          },
-          {
-            "id": 22231858860,
-            "name": "ez",
-            "type": "virtual_ride",
-            "start": "2026-03-19 17:42:49",
-            "distance_km": 25.72,
-            "duration_min": 42.4,
-            "avg_speed_kmh": 36.42,
-            "calories_kcal": 508.0
-          },
-          {
-            "id": 22209737369,
-            "name": "treshold tuesday FAST",
-            "type": "virtual_ride",
-            "start": "2026-03-17 20:20:18",
-            "distance_km": 20.96,
-            "duration_min": 31.4,
-            "avg_speed_kmh": 40.06,
-            "calories_kcal": 483.0
-          },
-          {
-            "id": 22098172741,
-            "name": "Zwift - Three Step Sisters in Watopia",
-            "type": "virtual_ride",
-            "start": "2026-03-07 19:49:52",
-            "distance_km": 42.2,
-            "duration_min": 95.8,
-            "avg_speed_kmh": 26.42,
-            "calories_kcal": 972.0
-          },
-          {
-            "id": 21987507426,
-            "name": "Zwift - Waisted 8 in Watopia",
-            "type": "virtual_ride",
-            "start": "2026-02-25 18:52:14",
-            "distance_km": 30.85,
-            "duration_min": 55.6,
-            "avg_speed_kmh": 33.3,
-            "calories_kcal": 594.0
-          },
-          {
-            "id": 21880787373,
-            "name": "Zwift - Out And Back Again in Watopia",
-            "type": "virtual_ride",
-            "start": "2026-02-15 16:22:15",
-            "distance_km": 56.62,
-            "duration_min": 100.9,
-            "avg_speed_kmh": 33.68,
-            "calories_kcal": 1186.0
-          },
-          {
-            "id": 21829397825,
-            "name": "Zwift - Downtown Eruption in Watopia",
-            "type": "virtual_ride",
-            "start": "2026-02-10 16:58:03",
-            "distance_km": 19.79,
-            "duration_min": 45.4,
-            "avg_speed_kmh": 26.14,
-            "calories_kcal": 411.0
-          },
-          {
-            "id": 21820176465,
-            "name": "Zwift - Jurassic Coast in Watopia",
-            "type": "virtual_ride",
-            "start": "2026-02-09 23:30:09",
-            "distance_km": 24.0,
-            "duration_min": 49.8,
-            "avg_speed_kmh": 28.93,
-            "calories_kcal": 439.0
-          },
-          {
-            "id": 21778759778,
-            "name": "Zwift - Mountain Route in Watopia",
-            "type": "virtual_ride",
-            "start": "2026-02-05 20:47:18",
-            "distance_km": 30.57,
-            "duration_min": 57.1,
-            "avg_speed_kmh": 32.1,
-            "calories_kcal": 917.0
-          },
-          {
-            "id": 22034975998,
-            "name": "Indoor Cycling",
-            "type": "indoor_cycling",
-            "start": "2026-02-01 20:33:26",
-            "distance_km": 0.0,
-            "duration_min": 16.4,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 282.0
-          },
-          {
-            "id": 22034975350,
-            "name": "Indoor Cycling",
-            "type": "indoor_cycling",
-            "start": "2026-02-01 19:50:19",
-            "distance_km": 0.0,
-            "duration_min": 15.3,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 217.0
-          },
-          {
-            "id": 21691857330,
-            "name": "Zwift - Triple Loops in London",
-            "type": "virtual_ride",
-            "start": "2026-01-28 09:46:29",
-            "distance_km": 41.34,
-            "duration_min": 70.5,
-            "avg_speed_kmh": 35.2,
-            "calories_kcal": 1115.0
-          },
-          {
-            "id": 21663015408,
-            "name": "Zwift - Knights of the Roundabout in France",
-            "type": "virtual_ride",
-            "start": "2026-01-25 11:17:19",
-            "distance_km": 56.55,
-            "duration_min": 92.9,
-            "avg_speed_kmh": 36.51,
-            "calories_kcal": 1255.0
-          },
-          {
-            "id": 21631749933,
-            "name": "Zwift - Mountain Mash in Watopia",
-            "type": "virtual_ride",
-            "start": "2026-01-22 12:22:49",
-            "distance_km": 6.71,
-            "duration_min": 18.4,
-            "avg_speed_kmh": 21.93,
-            "calories_kcal": 330.0
-          },
-          {
-            "id": 21580918194,
-            "name": "WITH MUMA",
-            "type": "virtual_ride",
-            "start": "2026-01-17 16:00:21",
-            "distance_km": 58.34,
-            "duration_min": 102.3,
-            "avg_speed_kmh": 34.2,
-            "calories_kcal": 1384.0
-          },
-          {
-            "id": 21525401859,
-            "name": "Zwift - BRAEk-fast Crits and Grits in Scotland",
-            "type": "virtual_ride",
-            "start": "2026-01-12 13:14:43",
-            "distance_km": 23.72,
-            "duration_min": 41.5,
-            "avg_speed_kmh": 34.25,
-            "calories_kcal": 526.0
-          },
-          {
-            "id": 21517504756,
-            "name": "Zwift - Easy Threshold on Tempus Fugit in Watopia",
-            "type": "virtual_ride",
-            "start": "2026-01-11 17:38:20",
-            "distance_km": 20.68,
-            "duration_min": 30.9,
-            "avg_speed_kmh": 40.22,
-            "calories_kcal": 496.0
-          },
-          {
-            "id": 21505227052,
-            "name": "Zwift - Ocean Lava Cliffside Loop in Watopia",
-            "type": "virtual_ride",
-            "start": "2026-01-10 13:20:54",
-            "distance_km": 20.04,
-            "duration_min": 32.5,
-            "avg_speed_kmh": 37.01,
-            "calories_kcal": 518.0
-          },
-          {
-            "id": 21486957552,
-            "name": "Zwift - Turf N Surf in Makuri Islands",
-            "type": "virtual_ride",
-            "start": "2026-01-08 17:07:44",
-            "distance_km": 24.69,
-            "duration_min": 45.6,
-            "avg_speed_kmh": 32.46,
-            "calories_kcal": 527.0
-          },
-          {
-            "id": 21475043150,
-            "name": "Zwift - No Sleep Till Brooklyn in New York",
-            "type": "virtual_ride",
-            "start": "2026-01-07 13:19:24",
-            "distance_km": 33.1,
-            "duration_min": 54.3,
-            "avg_speed_kmh": 36.57,
-            "calories_kcal": 739.0
-          },
-          {
-            "id": 21456862422,
-            "name": "Indoor Cycling",
-            "type": "indoor_cycling",
-            "start": "2026-01-05 22:32:30",
-            "distance_km": 0.0,
-            "duration_min": 14.9,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 249.0
-          },
-          {
-            "id": 21356368634,
-            "name": "Indoor Cycling",
-            "type": "indoor_cycling",
-            "start": "2025-12-26 09:11:00",
-            "distance_km": 0.0,
-            "duration_min": 33.1,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 398.0
-          },
-          {
-            "id": 21351442672,
-            "name": "Indoor Cycling",
-            "type": "indoor_cycling",
-            "start": "2025-12-25 22:20:04",
-            "distance_km": 0.0,
-            "duration_min": 31.8,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 417.0
-          },
-          {
-            "id": 21307936527,
-            "name": "Indoor Cycling",
-            "type": "indoor_cycling",
-            "start": "2025-12-20 10:41:00",
-            "distance_km": 0.0,
-            "duration_min": 62.7,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 694.0
-          },
-          {
-            "id": 21307241813,
-            "name": "Indoor Cycling",
-            "type": "indoor_cycling",
-            "start": "2025-12-19 19:03:22",
-            "distance_km": 0.0,
-            "duration_min": 49.4,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 594.0
-          },
-          {
-            "id": 21277502236,
-            "name": "threshold before winter break :D",
-            "type": "virtual_ride",
-            "start": "2025-12-16 20:40:42",
-            "distance_km": 29.59,
-            "duration_min": 51.7,
-            "avg_speed_kmh": 34.36,
-            "calories_kcal": 724.0
           }
         ]
       },
@@ -1088,57 +1048,57 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2026-04-06",
-            "week_end": "2026-04-12",
-            "distance_km": 25.85,
-            "time_hours": 0.79,
-            "calories_kcal": 740.0
-          },
-          {
-            "week_start": "2026-04-13",
-            "week_end": "2026-04-19",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
-          {
-            "week_start": "2026-04-20",
-            "week_end": "2026-04-26",
-            "distance_km": 21.47,
-            "time_hours": 1.66,
-            "calories_kcal": 1114.0
-          },
-          {
-            "week_start": "2026-04-27",
-            "week_end": "2026-05-03",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
-          {
-            "week_start": "2026-05-04",
-            "week_end": "2026-05-10",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
-          {
-            "week_start": "2026-05-11",
-            "week_end": "2026-05-17",
-            "distance_km": 133.65,
-            "time_hours": 7.54,
-            "calories_kcal": 4159.0
-          },
-          {
-            "week_start": "2026-05-18",
-            "week_end": "2026-05-24",
-            "distance_km": 43.16,
-            "time_hours": 5.07,
-            "calories_kcal": 3687.0
-          },
-          {
             "week_start": "2026-05-25",
             "week_end": "2026-05-31",
+            "distance_km": 48.25,
+            "time_hours": 2.45,
+            "calories_kcal": 2154.0
+          },
+          {
+            "week_start": "2026-06-01",
+            "week_end": "2026-06-07",
+            "distance_km": 0.0,
+            "time_hours": 0.91,
+            "calories_kcal": 745.0
+          },
+          {
+            "week_start": "2026-06-08",
+            "week_end": "2026-06-14",
+            "distance_km": 51.16,
+            "time_hours": 2.04,
+            "calories_kcal": 1658.0
+          },
+          {
+            "week_start": "2026-06-15",
+            "week_end": "2026-06-21",
+            "distance_km": 13.83,
+            "time_hours": 3.42,
+            "calories_kcal": 2463.0
+          },
+          {
+            "week_start": "2026-06-22",
+            "week_end": "2026-06-28",
+            "distance_km": 60.5,
+            "time_hours": 3.8,
+            "calories_kcal": 2878.0
+          },
+          {
+            "week_start": "2026-06-29",
+            "week_end": "2026-07-05",
+            "distance_km": 93.66,
+            "time_hours": 5.62,
+            "calories_kcal": 4019.0
+          },
+          {
+            "week_start": "2026-07-06",
+            "week_end": "2026-07-12",
+            "distance_km": 0.0,
+            "time_hours": 3.3,
+            "calories_kcal": 2470.0
+          },
+          {
+            "week_start": "2026-07-13",
+            "week_end": "2026-07-19",
             "distance_km": 0.0,
             "time_hours": 0.0,
             "calories_kcal": 0.0
@@ -1149,14 +1109,294 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 8,
-        "distance_km": 53.09,
-        "time_hours": 4.94,
-        "longest_km": 21.49,
-        "calories_kcal": 4376.0
+        "activities_count": 19,
+        "distance_km": 122.18,
+        "time_hours": 10.75,
+        "longest_km": 13.6,
+        "calories_kcal": 10024.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 23587323238,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-07-13 17:25:06",
+            "distance_km": 7.0,
+            "duration_min": 35.5,
+            "avg_speed_kmh": 11.81,
+            "calories_kcal": 491.0
+          },
+          {
+            "id": 23576569459,
+            "name": "Henrico County Running",
+            "type": "running",
+            "start": "2026-07-12 20:27:23",
+            "distance_km": 13.6,
+            "duration_min": 68.2,
+            "avg_speed_kmh": 11.96,
+            "calories_kcal": 1076.0
+          },
+          {
+            "id": 23565454059,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-07-11 23:58:46",
+            "distance_km": 6.03,
+            "duration_min": 31.2,
+            "avg_speed_kmh": 11.58,
+            "calories_kcal": 476.0
+          },
+          {
+            "id": 23542010366,
+            "name": "Henrico County Running",
+            "type": "running",
+            "start": "2026-07-09 20:19:26",
+            "distance_km": 6.16,
+            "duration_min": 32.6,
+            "avg_speed_kmh": 11.32,
+            "calories_kcal": 524.0
+          },
+          {
+            "id": 23529922509,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-07-08 20:13:22",
+            "distance_km": 6.34,
+            "duration_min": 32.0,
+            "avg_speed_kmh": 11.87,
+            "calories_kcal": 487.0
+          },
+          {
+            "id": 23510628677,
+            "name": "Elk Lick Running",
+            "type": "running",
+            "start": "2026-07-06 20:12:42",
+            "distance_km": 10.07,
+            "duration_min": 55.6,
+            "avg_speed_kmh": 10.86,
+            "calories_kcal": 899.0
+          },
+          {
+            "id": 23459417846,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-07-02 19:12:12",
+            "distance_km": 5.88,
+            "duration_min": 31.9,
+            "avg_speed_kmh": 11.05,
+            "calories_kcal": 503.0
+          },
+          {
+            "id": 23435334099,
+            "name": "Henrico County Running",
+            "type": "running",
+            "start": "2026-06-30 17:02:00",
+            "distance_km": 6.62,
+            "duration_min": 34.6,
+            "avg_speed_kmh": 11.5,
+            "calories_kcal": 538.0
+          },
+          {
+            "id": 23423362762,
+            "name": "Henrico County Running",
+            "type": "running",
+            "start": "2026-06-29 17:41:04",
+            "distance_km": 6.42,
+            "duration_min": 33.9,
+            "avg_speed_kmh": 11.38,
+            "calories_kcal": 543.0
+          },
+          {
+            "id": 23422794351,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-06-29 16:36:52",
+            "distance_km": 1.97,
+            "duration_min": 9.7,
+            "avg_speed_kmh": 12.14,
+            "calories_kcal": 147.0
+          },
+          {
+            "id": 23397333022,
+            "name": "Montreal Running",
+            "type": "running",
+            "start": "2026-06-27 09:27:33",
+            "distance_km": 6.56,
+            "duration_min": 43.8,
+            "avg_speed_kmh": 8.99,
+            "calories_kcal": 543.0
+          },
+          {
+            "id": 23380963744,
+            "name": "Henrico County Running",
+            "type": "running",
+            "start": "2026-06-25 19:56:47",
+            "distance_km": 10.64,
+            "duration_min": 56.4,
+            "avg_speed_kmh": 11.31,
+            "calories_kcal": 915.0
+          },
+          {
+            "id": 23369124645,
+            "name": "Henrico County Running",
+            "type": "running",
+            "start": "2026-06-24 17:35:17",
+            "distance_km": 7.28,
+            "duration_min": 35.8,
+            "avg_speed_kmh": 12.2,
+            "calories_kcal": 577.0
+          },
+          {
+            "id": 23357310515,
+            "name": "Henrico County Running",
+            "type": "running",
+            "start": "2026-06-23 17:50:30",
+            "distance_km": 6.64,
+            "duration_min": 33.2,
+            "avg_speed_kmh": 11.99,
+            "calories_kcal": 531.0
+          },
+          {
+            "id": 23321280565,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-06-19 15:05:36",
+            "distance_km": 1.54,
+            "duration_min": 7.9,
+            "avg_speed_kmh": 11.71,
+            "calories_kcal": 129.0
+          },
+          {
+            "id": 23289533686,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-06-17 21:47:50",
+            "distance_km": 4.22,
+            "duration_min": 21.1,
+            "avg_speed_kmh": 11.99,
+            "calories_kcal": 361.0
+          },
+          {
+            "id": 23276615937,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-06-16 19:49:31",
+            "distance_km": 5.54,
+            "duration_min": 30.1,
+            "avg_speed_kmh": 11.05,
+            "calories_kcal": 446.0
+          },
+          {
+            "id": 23262614451,
+            "name": "Henrico County Running",
+            "type": "running",
+            "start": "2026-06-15 17:16:31",
+            "distance_km": 5.3,
+            "duration_min": 26.7,
+            "avg_speed_kmh": 11.91,
+            "calories_kcal": 463.0
+          },
+          {
+            "id": 23262201001,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-06-15 16:19:11",
+            "distance_km": 4.37,
+            "duration_min": 24.8,
+            "avg_speed_kmh": 10.59,
+            "calories_kcal": 375.0
+          },
+          {
+            "id": 23205510521,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-06-10 17:15:18",
+            "distance_km": 5.21,
+            "duration_min": 30.3,
+            "avg_speed_kmh": 10.32,
+            "calories_kcal": 439.0
+          },
+          {
+            "id": 23194194921,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-06-09 07:50:30",
+            "distance_km": 3.61,
+            "duration_min": 20.1,
+            "avg_speed_kmh": 10.76,
+            "calories_kcal": 294.0
+          },
+          {
+            "id": 23157102825,
+            "name": "Henrico County Running",
+            "type": "running",
+            "start": "2026-06-06 18:54:34",
+            "distance_km": 8.66,
+            "duration_min": 46.2,
+            "avg_speed_kmh": 11.25,
+            "calories_kcal": 758.0
+          },
+          {
+            "id": 23133437404,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-06-04 17:48:38",
+            "distance_km": 2.64,
+            "duration_min": 15.1,
+            "avg_speed_kmh": 10.46,
+            "calories_kcal": 219.0
+          },
+          {
+            "id": 23110119292,
+            "name": "Henrico County Running",
+            "type": "running",
+            "start": "2026-06-02 19:47:02",
+            "distance_km": 6.12,
+            "duration_min": 32.2,
+            "avg_speed_kmh": 11.41,
+            "calories_kcal": 526.0
+          },
+          {
+            "id": 23096415989,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-06-01 17:23:09",
+            "distance_km": 2.72,
+            "duration_min": 15.8,
+            "avg_speed_kmh": 10.35,
+            "calories_kcal": 222.0
+          },
+          {
+            "id": 23072856062,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-05-30 18:09:28",
+            "distance_km": 5.13,
+            "duration_min": 30.3,
+            "avg_speed_kmh": 10.15,
+            "calories_kcal": 418.0
+          },
+          {
+            "id": 23062253187,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-05-29 22:38:28",
+            "distance_km": 4.85,
+            "duration_min": 30.2,
+            "avg_speed_kmh": 9.64,
+            "calories_kcal": 436.0
+          },
+          {
+            "id": 23057352953,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-05-29 10:57:50",
+            "distance_km": 4.75,
+            "duration_min": 30.2,
+            "avg_speed_kmh": 9.44,
+            "calories_kcal": 460.0
+          },
           {
             "id": 23050638310,
             "name": "Treadmill Running",
@@ -1206,366 +1446,6 @@
             "duration_min": 35.0,
             "avg_speed_kmh": 13.95,
             "calories_kcal": 563.0
-          },
-          {
-            "id": 22855243235,
-            "name": "Howard County Running",
-            "type": "running",
-            "start": "2026-05-12 10:08:48",
-            "distance_km": 3.09,
-            "duration_min": 15.4,
-            "avg_speed_kmh": 12.06,
-            "calories_kcal": 241.0
-          },
-          {
-            "id": 22835759258,
-            "name": "Baltimore County Running",
-            "type": "running",
-            "start": "2026-05-10 11:37:03",
-            "distance_km": 21.49,
-            "duration_min": 126.4,
-            "avg_speed_kmh": 10.2,
-            "calories_kcal": 1796.0
-          },
-          {
-            "id": 22763415254,
-            "name": "County Kerry Running",
-            "type": "running",
-            "start": "2026-05-04 15:43:44",
-            "distance_km": 5.45,
-            "duration_min": 34.3,
-            "avg_speed_kmh": 9.52,
-            "calories_kcal": 512.0
-          },
-          {
-            "id": 22594648917,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-04-20 10:28:41",
-            "distance_km": 1.92,
-            "duration_min": 50.7,
-            "avg_speed_kmh": 2.28,
-            "calories_kcal": 316.0
-          },
-          {
-            "id": 22587552406,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-04-19 14:35:08",
-            "distance_km": 17.66,
-            "duration_min": 113.2,
-            "avg_speed_kmh": 9.36,
-            "calories_kcal": 1404.0
-          },
-          {
-            "id": 22506569942,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-04-12 17:17:56",
-            "distance_km": 18.55,
-            "duration_min": 115.9,
-            "avg_speed_kmh": 9.6,
-            "calories_kcal": 1470.0
-          },
-          {
-            "id": 22472569741,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-04-09 22:27:15",
-            "distance_km": 1.5,
-            "duration_min": 9.0,
-            "avg_speed_kmh": 10.02,
-            "calories_kcal": 124.0
-          },
-          {
-            "id": 22472569569,
-            "name": "Boston Track Running",
-            "type": "track_running",
-            "start": "2026-04-09 21:46:33",
-            "distance_km": 8.72,
-            "duration_min": 39.4,
-            "avg_speed_kmh": 13.27,
-            "calories_kcal": 664.0
-          },
-          {
-            "id": 22472569138,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-04-09 21:39:38",
-            "distance_km": 1.21,
-            "duration_min": 6.1,
-            "avg_speed_kmh": 11.98,
-            "calories_kcal": 94.0
-          },
-          {
-            "id": 22419551517,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-04-05 12:38:21",
-            "distance_km": 11.97,
-            "duration_min": 78.8,
-            "avg_speed_kmh": 9.11,
-            "calories_kcal": 984.0
-          },
-          {
-            "id": 22344554071,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-03-29 11:28:24",
-            "distance_km": 14.58,
-            "duration_min": 96.2,
-            "avg_speed_kmh": 9.1,
-            "calories_kcal": 1205.0
-          },
-          {
-            "id": 22321106089,
-            "name": "Boston - 10x3m",
-            "type": "running",
-            "start": "2026-03-27 18:41:32",
-            "distance_km": 9.57,
-            "duration_min": 42.3,
-            "avg_speed_kmh": 13.58,
-            "calories_kcal": 771.0
-          },
-          {
-            "id": 22262042222,
-            "name": "Hollywood Running",
-            "type": "running",
-            "start": "2026-03-22 08:54:42",
-            "distance_km": 15.08,
-            "duration_min": 82.9,
-            "avg_speed_kmh": 10.92,
-            "calories_kcal": 1260.0
-          },
-          {
-            "id": 22221184790,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-03-18 19:25:53",
-            "distance_km": 9.47,
-            "duration_min": 53.5,
-            "avg_speed_kmh": 10.62,
-            "calories_kcal": 798.0
-          },
-          {
-            "id": 22126104824,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-03-09 19:35:09",
-            "distance_km": 2.81,
-            "duration_min": 15.7,
-            "avg_speed_kmh": 10.74,
-            "calories_kcal": 257.0
-          },
-          {
-            "id": 22126102514,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-03-09 16:25:05",
-            "distance_km": 10.44,
-            "duration_min": 60.4,
-            "avg_speed_kmh": 10.36,
-            "calories_kcal": 882.0
-          },
-          {
-            "id": 22087413034,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-03-06 22:22:07",
-            "distance_km": 14.6,
-            "duration_min": 84.9,
-            "avg_speed_kmh": 10.32,
-            "calories_kcal": 1296.0
-          },
-          {
-            "id": 22034976886,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-02-28 12:23:34",
-            "distance_km": 12.49,
-            "duration_min": 74.5,
-            "avg_speed_kmh": 10.06,
-            "calories_kcal": 1058.0
-          },
-          {
-            "id": 21643701872,
-            "name": "Treadmill Running",
-            "type": "treadmill_running",
-            "start": "2026-01-23 16:00:16",
-            "distance_km": 1.55,
-            "duration_min": 40.3,
-            "avg_speed_kmh": 2.31,
-            "calories_kcal": 650.0
-          },
-          {
-            "id": 21599608228,
-            "name": "Track Running",
-            "type": "track_running",
-            "start": "2026-01-19 12:40:13",
-            "distance_km": 4.96,
-            "duration_min": 30.1,
-            "avg_speed_kmh": 9.88,
-            "calories_kcal": 396.0
-          },
-          {
-            "id": 21570665946,
-            "name": "Treadmill Running",
-            "type": "treadmill_running",
-            "start": "2026-01-16 18:21:18",
-            "distance_km": 5.55,
-            "duration_min": 60.2,
-            "avg_speed_kmh": 5.52,
-            "calories_kcal": 862.0
-          },
-          {
-            "id": 21550832747,
-            "name": "Treadmill Running",
-            "type": "treadmill_running",
-            "start": "2026-01-14 19:36:17",
-            "distance_km": 5.74,
-            "duration_min": 60.2,
-            "avg_speed_kmh": 5.72,
-            "calories_kcal": 837.0
-          },
-          {
-            "id": 21540155946,
-            "name": "Treadmill Running",
-            "type": "treadmill_running",
-            "start": "2026-01-13 20:19:15",
-            "distance_km": 6.67,
-            "duration_min": 60.3,
-            "avg_speed_kmh": 6.64,
-            "calories_kcal": 866.0
-          },
-          {
-            "id": 21528219268,
-            "name": "Treadmill Running",
-            "type": "treadmill_running",
-            "start": "2026-01-12 18:44:03",
-            "distance_km": 4.41,
-            "duration_min": 46.1,
-            "avg_speed_kmh": 5.73,
-            "calories_kcal": 683.0
-          },
-          {
-            "id": 21515774000,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-01-11 12:40:40",
-            "distance_km": 9.5,
-            "duration_min": 40.3,
-            "avg_speed_kmh": 14.15,
-            "calories_kcal": 717.0
-          },
-          {
-            "id": 21496926381,
-            "name": "Treadmill Running",
-            "type": "treadmill_running",
-            "start": "2026-01-09 19:01:05",
-            "distance_km": 5.69,
-            "duration_min": 60.4,
-            "avg_speed_kmh": 5.65,
-            "calories_kcal": 801.0
-          },
-          {
-            "id": 21495169377,
-            "name": "Treadmill Running",
-            "type": "treadmill_running",
-            "start": "2026-01-08 14:44:32",
-            "distance_km": 5.43,
-            "duration_min": 61.0,
-            "avg_speed_kmh": 5.34,
-            "calories_kcal": 838.0
-          },
-          {
-            "id": 21478456613,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-01-07 19:06:27",
-            "distance_km": 11.12,
-            "duration_min": 58.4,
-            "avg_speed_kmh": 11.42,
-            "calories_kcal": 864.0
-          },
-          {
-            "id": 21455409810,
-            "name": "Treadmill Running",
-            "type": "treadmill_running",
-            "start": "2026-01-05 16:59:15",
-            "distance_km": 5.4,
-            "duration_min": 63.4,
-            "avg_speed_kmh": 5.12,
-            "calories_kcal": 829.0
-          },
-          {
-            "id": 21446898705,
-            "name": "Treadmill Running",
-            "type": "treadmill_running",
-            "start": "2026-01-04 16:37:35",
-            "distance_km": 5.62,
-            "duration_min": 61.1,
-            "avg_speed_kmh": 5.52,
-            "calories_kcal": 773.0
-          },
-          {
-            "id": 21446898341,
-            "name": "Treadmill Running",
-            "type": "treadmill_running",
-            "start": "2026-01-03 14:31:17",
-            "distance_km": 5.55,
-            "duration_min": 60.2,
-            "avg_speed_kmh": 5.53,
-            "calories_kcal": 859.0
-          },
-          {
-            "id": 21446898008,
-            "name": "Treadmill Running",
-            "type": "treadmill_running",
-            "start": "2026-01-02 17:04:29",
-            "distance_km": 5.48,
-            "duration_min": 60.2,
-            "avg_speed_kmh": 5.45,
-            "calories_kcal": 877.0
-          },
-          {
-            "id": 21404825202,
-            "name": "Hardy County Running",
-            "type": "running",
-            "start": "2025-12-31 11:02:14",
-            "distance_km": 6.52,
-            "duration_min": 39.2,
-            "avg_speed_kmh": 9.98,
-            "calories_kcal": 615.0
-          },
-          {
-            "id": 21326551044,
-            "name": "Howard County Running",
-            "type": "running",
-            "start": "2025-12-22 16:03:46",
-            "distance_km": 5.02,
-            "duration_min": 24.8,
-            "avg_speed_kmh": 12.17,
-            "calories_kcal": 424.0
-          },
-          {
-            "id": 21301375333,
-            "name": "Howard County Running",
-            "type": "running",
-            "start": "2025-12-19 16:43:19",
-            "distance_km": 10.12,
-            "duration_min": 51.8,
-            "avg_speed_kmh": 11.72,
-            "calories_kcal": 820.0
-          },
-          {
-            "id": 21292804549,
-            "name": "Fremont Course à pied",
-            "type": "running",
-            "start": "2025-12-17 20:15:58",
-            "distance_km": 4.25,
-            "duration_min": 20.8,
-            "avg_speed_kmh": 12.28,
-            "calories_kcal": 324.0
           }
         ]
       },
@@ -1573,60 +1453,60 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2026-04-06",
-            "week_end": "2026-04-12",
-            "distance_km": 29.98,
-            "time_hours": 2.84,
-            "calories_kcal": 2352.0
-          },
-          {
-            "week_start": "2026-04-13",
-            "week_end": "2026-04-19",
-            "distance_km": 17.66,
-            "time_hours": 1.89,
-            "calories_kcal": 1404.0
-          },
-          {
-            "week_start": "2026-04-20",
-            "week_end": "2026-04-26",
-            "distance_km": 1.92,
-            "time_hours": 0.84,
-            "calories_kcal": 316.0
-          },
-          {
-            "week_start": "2026-04-27",
-            "week_end": "2026-05-03",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
-          {
-            "week_start": "2026-05-04",
-            "week_end": "2026-05-10",
-            "distance_km": 26.94,
-            "time_hours": 2.68,
-            "calories_kcal": 2308.0
-          },
-          {
-            "week_start": "2026-05-11",
-            "week_end": "2026-05-17",
-            "distance_km": 18.16,
-            "time_hours": 1.42,
-            "calories_kcal": 1364.0
-          },
-          {
-            "week_start": "2026-05-18",
-            "week_end": "2026-05-24",
-            "distance_km": 3.26,
-            "time_hours": 0.34,
-            "calories_kcal": 294.0
-          },
-          {
             "week_start": "2026-05-25",
             "week_end": "2026-05-31",
-            "distance_km": 4.73,
-            "time_hours": 0.5,
-            "calories_kcal": 410.0
+            "distance_km": 19.46,
+            "time_hours": 2.01,
+            "calories_kcal": 1724.0
+          },
+          {
+            "week_start": "2026-06-01",
+            "week_end": "2026-06-07",
+            "distance_km": 20.13,
+            "time_hours": 1.82,
+            "calories_kcal": 1725.0
+          },
+          {
+            "week_start": "2026-06-08",
+            "week_end": "2026-06-14",
+            "distance_km": 8.82,
+            "time_hours": 0.84,
+            "calories_kcal": 733.0
+          },
+          {
+            "week_start": "2026-06-15",
+            "week_end": "2026-06-21",
+            "distance_km": 20.98,
+            "time_hours": 1.84,
+            "calories_kcal": 1774.0
+          },
+          {
+            "week_start": "2026-06-22",
+            "week_end": "2026-06-28",
+            "distance_km": 31.12,
+            "time_hours": 2.82,
+            "calories_kcal": 2566.0
+          },
+          {
+            "week_start": "2026-06-29",
+            "week_end": "2026-07-05",
+            "distance_km": 20.89,
+            "time_hours": 1.83,
+            "calories_kcal": 1731.0
+          },
+          {
+            "week_start": "2026-07-06",
+            "week_end": "2026-07-12",
+            "distance_km": 42.2,
+            "time_hours": 3.66,
+            "calories_kcal": 3462.0
+          },
+          {
+            "week_start": "2026-07-13",
+            "week_end": "2026-07-19",
+            "distance_km": 7.0,
+            "time_hours": 0.59,
+            "calories_kcal": 491.0
           }
         ]
       }
@@ -1647,57 +1527,57 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2026-04-06",
-            "week_end": "2026-04-12",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
-          {
-            "week_start": "2026-04-13",
-            "week_end": "2026-04-19",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
-          {
-            "week_start": "2026-04-20",
-            "week_end": "2026-04-26",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
-          {
-            "week_start": "2026-04-27",
-            "week_end": "2026-05-03",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
-          {
-            "week_start": "2026-05-04",
-            "week_end": "2026-05-10",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
-          {
-            "week_start": "2026-05-11",
-            "week_end": "2026-05-17",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
-          {
-            "week_start": "2026-05-18",
-            "week_end": "2026-05-24",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
-          {
             "week_start": "2026-05-25",
             "week_end": "2026-05-31",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-06-01",
+            "week_end": "2026-06-07",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-06-08",
+            "week_end": "2026-06-14",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-06-15",
+            "week_end": "2026-06-21",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-06-22",
+            "week_end": "2026-06-28",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-06-29",
+            "week_end": "2026-07-05",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-07-06",
+            "week_end": "2026-07-12",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-07-13",
+            "week_end": "2026-07-19",
             "distance_km": 0.0,
             "time_hours": 0.0,
             "calories_kcal": 0.0
