@@ -150,6 +150,17 @@ export default function Header({ links }) {
                     <ul className="mt-3 space-y-2">
                       <li className="flex items-start gap-2">
                         <span className="mt-0.5" aria-hidden="true">
+                          🏦
+                        </span>
+                        <div className="min-w-0 leading-snug">
+                          <div className="font-medium text-slate-900 dark:text-slate-100">SWE Intern</div>
+                          <div className="text-xs text-slate-500 dark:text-slate-300">
+                            Capital One · Richmond, VA · June 1 – August 8, 2026
+                          </div>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="mt-0.5" aria-hidden="true">
                           🎓
                         </span>
                         <div className="min-w-0 leading-snug">
@@ -181,17 +192,6 @@ export default function Header({ links }) {
                           </div>
                         </div>
                       </li>
-                      <li className="flex items-start gap-2">
-                        <span className="mt-0.5" aria-hidden="true">
-                          💼
-                        </span>
-                        <div className="min-w-0 leading-snug">
-                          <div className="font-medium text-slate-900 dark:text-slate-100">Freelance SWE</div>
-                          <div className="text-xs text-slate-500 dark:text-slate-300">
-                            Comic Book Grading App
-                          </div>
-                        </div>
-                      </li>
                     </ul>
                   </div>
                   <div>
@@ -199,6 +199,17 @@ export default function Header({ links }) {
                       previously
                     </div>
                     <ul className="mt-3 space-y-2">
+                      <li className="flex items-start gap-2">
+                        <span className="mt-0.5" aria-hidden="true">
+                          💼
+                        </span>
+                        <div className="min-w-0 leading-snug">
+                          <div className="font-medium text-slate-900 dark:text-slate-100">Freelance SWE</div>
+                          <div className="text-xs text-slate-500 dark:text-slate-300">
+                            Comic Book Grading App · Jan – Jun 2026
+                          </div>
+                        </div>
+                      </li>
                       <li className="flex items-start gap-2">
                         <span className="mt-0.5" aria-hidden="true">
                           🧪
@@ -222,22 +233,6 @@ export default function Header({ links }) {
                         </div>
                       </li>
                     </ul>
-                  </div>
-                  <div>
-                    <div className="text-xs font-semibold lowercase tracking-wide text-slate-500 dark:text-slate-300">
-                      up next
-                    </div>
-                    <div className="mt-3 flex items-start gap-2">
-                      <span className="mt-0.5" aria-hidden="true">
-                        🏦
-                      </span>
-                      <div className="min-w-0 leading-snug">
-                        <div className="font-medium text-slate-900 dark:text-slate-100">Incoming SWE Intern</div>
-                        <div className="text-xs text-slate-500 dark:text-slate-300">
-                          Capital One · Richmond, VA · June 1 – August 8, 2026
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </section>

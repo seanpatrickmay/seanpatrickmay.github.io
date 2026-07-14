@@ -1,25 +1,25 @@
 [
   {
-    "org": "Freelance",
-    "role": "Software Engineer",
-    "location": "Remote",
-    "period": "Jan 2026 – Present",
-    "emoji": "💼",
-    "oneLiner": "Comic book grading iOS app",
-    "bullets": [
-      "Building a comic book grading iOS application using computer vision, web scraping, and AWS infrastructure—from CV model pipeline through mobile deployment."
-    ]
-  },
-  {
     "org": "Capital One",
-    "role": "Incoming Software Engineer Intern",
+    "role": "Software Engineer Intern",
     "location": "Richmond, VA",
     "period": "June 1 – August 8, 2026",
     "emoji": "🏦",
     "img": "/logos/normalized/capitalone-logo.png",
-    "oneLiner": "Incoming Capital One SWE Intern",
+    "oneLiner": "Capital One SWE Intern",
     "bullets": [
-      "Starting June 2026."
+      "Summer 2026 software engineering internship in Richmond, VA."
+    ]
+  },
+  {
+    "org": "Freelance",
+    "role": "Software Engineer",
+    "location": "Remote",
+    "period": "Jan – Jun 2026",
+    "emoji": "💼",
+    "oneLiner": "Comic book grading iOS app",
+    "bullets": [
+      "Built a comic book grading iOS application using computer vision, web scraping, and AWS infrastructure—from CV model pipeline through mobile deployment."
     ]
   },
   {
@@ -39,7 +39,7 @@
     "org": "General Dynamics Electric Boat",
     "role": "Software Development Co-op",
     "location": "Groton, CT",
-    "period": "Jan \u2013 Jul 2024",
+    "period": "Jan – Jul 2024",
     "img": "/logos/normalized/gdeb-logo.png",
     "oneLiner": "GDEB SDE Co-op",
     "bullets": [
@@ -53,7 +53,7 @@
     "org": "Defense Information Systems Agency (DISA)",
     "role": "Administrative Assistant",
     "location": "Fort Meade, MD",
-    "period": "Jun \u2013 Sep 2023",
+    "period": "Jun – Sep 2023",
     "img": "/logos/normalized/disa-logo.png",
     "oneLiner": "DISA Admin Assistant",
     "bullets": [
