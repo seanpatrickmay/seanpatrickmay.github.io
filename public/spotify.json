@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T14:45:51.261Z",
+  "generated_at": "2026-07-15T14:45:48.117Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -12,16 +12,6 @@
       "url": "https://open.spotify.com/artist/1oPRcJUkloHaRLYx0olBLJ"
     },
     {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
-    },
-    {
-      "name": "Dominic Fike",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebf2903326ec44d5ecb37dcad9",
-      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
-    },
-    {
       "name": "Delinquent",
       "image": "https://i.scdn.co/image/ab6761610000e5ebfabf28a51f1a221fb79c4985",
       "url": "https://open.spotify.com/artist/1VtJL8QulGDXbbZwTaGV53"
@@ -32,9 +22,24 @@
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+    },
+    {
+      "name": "Dominic Fike",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebf2903326ec44d5ecb37dcad9",
+      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
+    },
+    {
       "name": "The Marías",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaf586afa2b397f1288683a76",
       "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
+    },
+    {
+      "name": "Michael Jackson",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb997cc9a4aec335d46c9481fd",
+      "url": "https://open.spotify.com/artist/3fMbdgg4jU18AjLCKBhRSm"
     },
     {
       "name": "Justin Bieber",
@@ -45,11 +50,6 @@
       "name": "Lady Gaga",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaadc18cac8d48124357c38e6",
       "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
-    },
-    {
-      "name": "Michael Jackson",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb997cc9a4aec335d46c9481fd",
-      "url": "https://open.spotify.com/artist/3fMbdgg4jU18AjLCKBhRSm"
     }
   ],
   "tracks": [
@@ -60,10 +60,16 @@
       "url": "https://open.spotify.com/track/0JeAKH2DCIgCCrZ9qBGthg"
     },
     {
-      "name": "Ain't That The Truth",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736ad1bfc5a6102f8e926a8c5f",
-      "url": "https://open.spotify.com/track/6cEFXDnzk2tA1tG7RJiWNm"
+      "name": "My Destiny - 2026 Edit",
+      "artist": "Delinquent, KCAT, Mike Delinquent Project",
+      "image": "https://i.scdn.co/image/ab67616d0000b2734a0cc2dcd8136407d597ae4d",
+      "url": "https://open.spotify.com/track/1quse5mAKsNcrilBTJosG3"
+    },
+    {
+      "name": "My Destiny - Original Mix",
+      "artist": "Delinquent, KCAT, Mike Delinquent Project",
+      "image": "https://i.scdn.co/image/ab67616d0000b2734a0cc2dcd8136407d597ae4d",
+      "url": "https://open.spotify.com/track/3S2u6LcfsHHSzUJlPYl6Ih"
     },
     {
       "name": "Addicted To A Memory",
@@ -78,28 +84,10 @@
       "url": "https://open.spotify.com/track/1T0CdfKPKb1gJi4vCKpZ9C"
     },
     {
-      "name": "X's & O's",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b273a1cac678024bb37d83ab012c",
-      "url": "https://open.spotify.com/track/750yKw4gINVQFdBeCGiCwP"
-    },
-    {
-      "name": "Jean Skirt",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736ad1bfc5a6102f8e926a8c5f",
-      "url": "https://open.spotify.com/track/4rKOkzcvjLYsFcUpYDbeLM"
-    },
-    {
-      "name": "Difficult Love",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b273a1cac678024bb37d83ab012c",
-      "url": "https://open.spotify.com/track/0UDEtLcKGBU73D15u5g1r3"
-    },
-    {
-      "name": "I Don't Feel Like Dancin'",
-      "artist": "Scissor Sisters",
-      "image": "https://i.scdn.co/image/ab67616d0000b27381625c8c1368106d3ac464ed",
-      "url": "https://open.spotify.com/track/1q9l6c8bAzqWcvO3DM6FsR"
+      "name": "My Destiny - Sped Up",
+      "artist": "Delinquent, KCAT, Mike Delinquent Project",
+      "image": "https://i.scdn.co/image/ab67616d0000b2734a0cc2dcd8136407d597ae4d",
+      "url": "https://open.spotify.com/track/0QBU8ez6HjwabV8sGro8ma"
     },
     {
       "name": "Danny Boy",
@@ -112,6 +100,18 @@
       "artist": "Magdalena Bay",
       "image": "https://i.scdn.co/image/ab67616d0000b2737339f7e95927d4b823189f62",
       "url": "https://open.spotify.com/track/2RhHct6gGXSrZ1zHjovhRq"
+    },
+    {
+      "name": "I Don't Feel Like Dancin'",
+      "artist": "Scissor Sisters",
+      "image": "https://i.scdn.co/image/ab67616d0000b27381625c8c1368106d3ac464ed",
+      "url": "https://open.spotify.com/track/1q9l6c8bAzqWcvO3DM6FsR"
+    },
+    {
+      "name": "I'm Every Woman",
+      "artist": "Chaka Khan",
+      "image": "https://i.scdn.co/image/ab67616d0000b273735d94e335e1e701126c39e5",
+      "url": "https://open.spotify.com/track/2nWsvUXAp2rVCXlGDRuyAT"
     }
   ]
 }
