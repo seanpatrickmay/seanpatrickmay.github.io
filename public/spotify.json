@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T14:40:21.316Z",
+  "generated_at": "2026-07-18T14:18:18.732Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -27,24 +27,24 @@
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
-      "name": "Dominic Fike",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebf2903326ec44d5ecb37dcad9",
-      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
-    },
-    {
       "name": "The Marías",
       "image": "https://i.scdn.co/image/ab6761610000e5ebaf586afa2b397f1288683a76",
       "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
     },
     {
-      "name": "Michael Jackson",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb997cc9a4aec335d46c9481fd",
-      "url": "https://open.spotify.com/artist/3fMbdgg4jU18AjLCKBhRSm"
+      "name": "Dominic Fike",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebf2903326ec44d5ecb37dcad9",
+      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
     },
     {
       "name": "Wallows",
       "image": "https://i.scdn.co/image/ab6761610000e5ebfde4e7d59f6d8868e2ffdaf5",
       "url": "https://open.spotify.com/artist/0NIPkIjTV8mB795yEIiPYL"
+    },
+    {
+      "name": "Ellie Goulding",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb70a7b5f0ee7b18d2f2cc8d74",
+      "url": "https://open.spotify.com/artist/0X2BH1fck6amBIoJhDVmmJ"
     },
     {
       "name": "Maroon 5",
@@ -54,16 +54,16 @@
   ],
   "tracks": [
     {
-      "name": "My Destiny - 2026 Edit",
-      "artist": "Delinquent, KCAT, Mike Delinquent Project",
-      "image": "https://i.scdn.co/image/ab67616d0000b2734a0cc2dcd8136407d597ae4d",
-      "url": "https://open.spotify.com/track/1quse5mAKsNcrilBTJosG3"
-    },
-    {
       "name": "Hourglass",
       "artist": "Zedd, LIZ",
       "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
       "url": "https://open.spotify.com/track/6NwrXtcFbc8OX7wJyBqE89"
+    },
+    {
+      "name": "My Destiny - 2026 Edit",
+      "artist": "Delinquent, KCAT, Mike Delinquent Project",
+      "image": "https://i.scdn.co/image/ab67616d0000b2734a0cc2dcd8136407d597ae4d",
+      "url": "https://open.spotify.com/track/1quse5mAKsNcrilBTJosG3"
     },
     {
       "name": "Malcolm In The Middle",
