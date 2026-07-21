@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T15:13:52.197Z",
+  "generated_at": "2026-07-21T15:06:40.036Z",
   "currentlyReading": [
     {
       "title": "Lonesome Dove (Lonesome Dove, #1)",
@@ -13,19 +13,6 @@
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1767217839l/56346987._SX98_.jpg",
       "bookId": "56346987",
       "link": "https://www.goodreads.com/review/show/8556602802?utm_medium=api&utm_source=rss"
-    },
-    {
-      "title": "The Two Towers (The Lord of the Rings, #2)",
-      "author": "J.R.R. Tolkien",
-      "rating": 0,
-      "avgRating": 4.7,
-      "dateAdded": "Tue, 12 May 2026 06:07:21 -0700",
-      "dateRead": null,
-      "published": "1954",
-      "numPages": 448,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1732382413l/221857305._SX98_.jpg",
-      "bookId": "221857305",
-      "link": "https://www.goodreads.com/review/show/8595299856?utm_medium=api&utm_source=rss"
     },
     {
       "title": "The Return of the King (The Lord of the Rings, #3)",
@@ -55,6 +42,19 @@
     }
   ],
   "recentlyRead": [
+    {
+      "title": "The Two Towers (The Lord of the Rings, #2)",
+      "author": "J.R.R. Tolkien",
+      "rating": 0,
+      "avgRating": 4.7,
+      "dateAdded": "Mon, 20 Jul 2026 21:08:07 -0700",
+      "dateRead": "2026-07-20T00:00:00.000Z",
+      "published": "1954",
+      "numPages": 448,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1732382413l/221857305._SX98_.jpg",
+      "bookId": "221857305",
+      "link": "https://www.goodreads.com/review/show/8595299856?utm_medium=api&utm_source=rss"
+    },
     {
       "title": "The Picture of Dorian Gray",
       "author": "Oscar Wilde",
@@ -106,23 +106,10 @@
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546071216l/5907._SX98_.jpg",
       "bookId": "5907",
       "link": "https://www.goodreads.com/review/show/8418042631?utm_medium=api&utm_source=rss"
-    },
-    {
-      "title": "The Book Thief",
-      "author": "Markus Zusak",
-      "rating": 4,
-      "avgRating": 4.42,
-      "dateAdded": "Tue, 28 Apr 2026 13:04:55 -0700",
-      "dateRead": "2026-04-18T00:00:00.000Z",
-      "published": "2005",
-      "numPages": 554,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1627907823l/8120173._SX98_.jpg",
-      "bookId": "8120173",
-      "link": "https://www.goodreads.com/review/show/8425266738?utm_medium=api&utm_source=rss"
     }
   ],
-  "totalPages": 5992,
-  "yearPagesRead": 4389,
-  "yearBooksRead": 9,
+  "totalPages": 6440,
+  "yearPagesRead": 4837,
+  "yearBooksRead": 10,
   "profileUrl": "https://www.goodreads.com/user/show/199381877"
 }
