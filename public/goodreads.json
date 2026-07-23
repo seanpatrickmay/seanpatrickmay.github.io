@@ -1,6 +1,19 @@
 {
-  "generated_at": "2026-07-22T15:07:25.835Z",
+  "generated_at": "2026-07-23T15:12:53.764Z",
   "currentlyReading": [
+    {
+      "title": "The Trial",
+      "author": "Franz Kafka",
+      "rating": 0,
+      "avgRating": 3.68,
+      "dateAdded": "Wed, 22 Jul 2026 21:00:58 -0700",
+      "dateRead": null,
+      "published": "1925",
+      "numPages": 191,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1437238236l/25933700._SX98_.jpg",
+      "bookId": "25933700",
+      "link": "https://www.goodreads.com/review/show/8793880352?utm_medium=api&utm_source=rss"
+    },
     {
       "title": "Lonesome Dove (Lonesome Dove, #1)",
       "author": "Larry McMurtry",
