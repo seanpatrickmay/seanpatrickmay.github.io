@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T13:54:18.321Z",
+  "generated_at": "2026-08-25T13:54:05.801Z",
   "currentlyReading": [
     {
       "title": "The Trial",
@@ -13,19 +13,6 @@
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1437238236l/25933700._SX98_.jpg",
       "bookId": "25933700",
       "link": "https://www.goodreads.com/review/show/8793880352?utm_medium=api&utm_source=rss"
-    },
-    {
-      "title": "Lonesome Dove (Lonesome Dove, #1)",
-      "author": "Larry McMurtry",
-      "rating": 0,
-      "avgRating": 4.76,
-      "dateAdded": "Wed, 15 Jul 2026 19:51:30 -0700",
-      "dateRead": null,
-      "published": "1985",
-      "numPages": 964,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1767217839l/56346987._SX98_.jpg",
-      "bookId": "56346987",
-      "link": "https://www.goodreads.com/review/show/8556602802?utm_medium=api&utm_source=rss"
     },
     {
       "title": "The Return of the King (The Lord of the Rings, #3)",
@@ -55,6 +42,19 @@
     }
   ],
   "recentlyRead": [
+    {
+      "title": "Lonesome Dove (Lonesome Dove, #1)",
+      "author": "Larry McMurtry",
+      "rating": 4,
+      "avgRating": 4.76,
+      "dateAdded": "Tue, 25 Aug 2026 00:19:05 -0700",
+      "dateRead": "2026-08-25T00:00:00.000Z",
+      "published": "1985",
+      "numPages": 964,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1767217839l/56346987._SX98_.jpg",
+      "bookId": "56346987",
+      "link": "https://www.goodreads.com/review/show/8556602802?utm_medium=api&utm_source=rss"
+    },
     {
       "title": "The Two Towers (The Lord of the Rings, #2)",
       "author": "J.R.R. Tolkien",
@@ -106,23 +106,10 @@
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1732382377l/221857279._SX98_.jpg",
       "bookId": "221857279",
       "link": "https://www.goodreads.com/review/show/8595293827?utm_medium=api&utm_source=rss"
-    },
-    {
-      "title": "The Hobbit, or There and Back Again",
-      "author": "J.R.R. Tolkien",
-      "rating": 5,
-      "avgRating": 4.3,
-      "dateAdded": "Tue, 28 Apr 2026 13:23:48 -0700",
-      "dateRead": "2026-04-28T00:00:00.000Z",
-      "published": "1937",
-      "numPages": 366,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546071216l/5907._SX98_.jpg",
-      "bookId": "5907",
-      "link": "https://www.goodreads.com/review/show/8418042631?utm_medium=api&utm_source=rss"
     }
   ],
-  "totalPages": 6440,
-  "yearPagesRead": 4837,
-  "yearBooksRead": 10,
+  "totalPages": 7404,
+  "yearPagesRead": 5801,
+  "yearBooksRead": 11,
   "profileUrl": "https://www.goodreads.com/user/show/199381877"
 }
