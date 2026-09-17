@@ -5,6 +5,17 @@ on:
     - cron: "3 13 * * *"  # 13:00 UTC ~ 9:00 AM ET during DST
   push:
     branches: [ "main" ]
+  # Data refreshes are pushed by github-actions[bot] using GITHUB_TOKEN, and
+  # GitHub deliberately does not fire `push` workflows for those commits (loop
+  # prevention). Without this, fresh data sat in the repo un-deployed until the
+  # next human push or the daily cron — up to ~24h of stale numbers on a page
+  # whose whole point is being live.
+  workflow_run:
+    workflows:
+      - "Update Goodreads data"
+      - "Update Spotify data"
+      - "Update Garmin stats.json"
+    types: [ completed ]
   workflow_dispatch: {}
 
 permissions:
@@ -18,6 +29,10 @@ concurrency:
 
 jobs:
   build:
+    # A failed refresh has nothing new to publish.
+    if: >-
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
