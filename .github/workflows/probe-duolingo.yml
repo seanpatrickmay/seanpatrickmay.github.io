@@ -1,0 +1,83 @@
+name: Probe Duolingo reachability
+
+# THROWAWAY DIAGNOSTIC — delete after reading the result.
+#
+# Duolingo has no official API; the usable endpoint is unofficial. Before
+# building a card on it we need to know whether it answers from a GitHub
+# Actions runner at all. Garmin's six-month outage was exactly this: the call
+# worked from a laptop and 429'd from a datacenter IP. Verify, don't assume.
+#
+# Reports only — never fails on a bad status, because a block IS the finding.
+
+on:
+  workflow_dispatch:
+    inputs:
+      username:
+        description: "Duolingo username to probe (any public profile works as a liveness check)"
+        type: string
+        default: "seanmay"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe endpoint
+        env:
+          U: ${{ inputs.username }}
+          UA: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        run: |
+          set -uo pipefail
+          EP="https://www.duolingo.com/2017-06-30/users?username=${U}"
+          S="$GITHUB_STEP_SUMMARY"
+
+          echo "### Duolingo CI reachability probe" >> "$S"
+          IP=$(curl -s --max-time 10 https://api.ipify.org || echo unknown)
+          echo "runner egress IP: $IP"
+          echo "" >> "$S"
+          echo "- runner egress IP: \`$IP\`" >> "$S"
+
+          run_probe () {
+            LABEL="$1"; shift
+            echo ""
+            echo "════════ $LABEL ════════"
+            CODE=$(curl -s -o /tmp/body -D /tmp/hdr -w '%{http_code}' --max-time 25 "$@" "$EP" || echo 000)
+            SIZE=$(wc -c < /tmp/body | tr -d ' ')
+            echo "HTTP $CODE   ${SIZE}B"
+
+            echo "-- notable headers --"
+            grep -iE '^(server|cf-ray|cf-mitigated|retry-after|x-ratelimit|content-type)' /tmp/hdr | cut -c1-120 || echo "(none)"
+
+            echo "-- body --"
+            if jq -e . /tmp/body >/dev/null 2>&1; then
+              N=$(jq -r '(.users // []) | length' /tmp/body)
+              echo "valid JSON; users returned: $N"
+              if [ "$N" -gt 0 ]; then
+                jq -r '.users[0] | "streak=\(.streak)  totalXp=\(.totalXp)  courses=\((.courses//[])|length)"' /tmp/body
+                jq -r '.users[0].courses[]? | "   - \(.title)  xp=\(.xp)  crowns=\(.crowns)"' /tmp/body
+                echo "- **$LABEL**: HTTP \`$CODE\` — usable data ✅" >> "$S"
+              else
+                echo "- **$LABEL**: HTTP \`$CODE\` — reachable, but no such user ⚠️" >> "$S"
+              fi
+            else
+              echo "NOT JSON (likely a block/challenge page). First 200 bytes:"
+              head -c 200 /tmp/body; echo
+              echo "- **$LABEL**: HTTP \`$CODE\` — non-JSON response ❌" >> "$S"
+            fi
+          }
+
+          run_probe "default curl UA"
+          run_probe "browser UA" -H "User-Agent: $UA"
+
+          echo ""
+          echo "── throttling check: 5 rapid requests ──"
+          CODES=""
+          for i in 1 2 3 4 5; do
+            C=$(curl -s -o /dev/null -w '%{http_code}' --max-time 15 -H "User-Agent: $UA" "$EP" || echo 000)
+            echo "  req $i -> HTTP $C"
+            CODES="$CODES $C"
+          done
+          echo "" >> "$S"
+          echo "- 5 rapid requests:\`$CODES\`" >> "$S"
