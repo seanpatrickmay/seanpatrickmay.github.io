@@ -25,6 +25,7 @@ from __future__ import annotations
 
 import json
 import os
+import sys
 import time
 from pathlib import Path
 from datetime import date, datetime, timedelta, timezone
@@ -102,7 +103,7 @@ def get_client() -> Garmin:
         raise SystemExit(
             f"Rate-limited by Garmin after 3 retries during token refresh.\n"
             f"Wait a few hours, then re-seed tokens locally:\n"
-            f"  GARMIN_EMAIL=... GARMIN_PASSWORD=... python scripts/update_stats.py\n"
+            f"  GARMIN_ALLOW_FRESH_LOGIN=1 GARMIN_EMAIL=... GARMIN_PASSWORD=... python3 scripts/update_stats.py\n"
             f"Error: {token_err}"
         )
 
@@ -129,16 +130,21 @@ def get_client() -> Garmin:
     g = Garmin(email=EMAIL, password=PASSWORD, return_on_mfa=True)
     res1, res2 = g.login()
     if res1 == "needs_mfa":
-        # MFA_CODE lets CI finish the challenge without a local run: the reseed
-        # workflow takes the code as a dispatch input. Codes expire fast, so this
-        # only works on a run started right after the code is generated.
-        if not MFA_CODE:
+        # Garmin only sends the code once login() has been called, so the code
+        # cannot be supplied up front. Interactively we can just ask for it and
+        # resume the *same* challenge, which is why seeding works locally but
+        # not from CI, where re-running would start a fresh challenge and
+        # invalidate the code you were given.
+        code = MFA_CODE
+        if not code and sys.stdin.isatty():
+            print("\nGarmin sent an MFA code to your email.")
+            code = input("Enter the MFA code: ").strip()
+        if not code:
             raise SystemExit(
-                "MFA required and GARMIN_MFA_CODE not set.\n"
-                "Re-run the 'Update Garmin stats.json' workflow with the reseed inputs "
-                "and paste a fresh MFA code."
+                "MFA required but no code available.\n"
+                "Run this script from a terminal so it can prompt, or set GARMIN_MFA_CODE."
             )
-        g.resume_login(res2, MFA_CODE)
+        g.resume_login(res2, code)
     g.garth.dump(TOKENS_DIR)
     print(f"Saved fresh tokens to {TOKENS_DIR}")
     return g
