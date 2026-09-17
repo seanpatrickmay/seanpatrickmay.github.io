@@ -1,5 +1,6 @@
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import { Languages } from 'lucide-react';
+import StaleBadge from '@/components/ui/StaleBadge';
 
 const NUM = new Intl.NumberFormat('en-US');
 
@@ -23,9 +24,12 @@ export default function DuolingoCard({ data = null, bare = false }) {
         <div className="text-[10px] font-semibold uppercase tracking-widest text-lime-700/80 dark:text-lime-400/80">
           duolingo
         </div>
-        {since && (
-          <div className="text-[10px] text-stone-400 dark:text-stone-500">since {since}</div>
-        )}
+        <span className="flex items-baseline gap-1.5">
+          <StaleBadge staleness={data?._staleness} />
+          {since && (
+            <span className="text-[10px] text-stone-400 dark:text-stone-500">since {since}</span>
+          )}
+        </span>
       </div>
 
       <div className="mt-1.5 flex items-baseline gap-2">

@@ -1,6 +1,7 @@
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import { useMemo } from 'react';
 import { BookOpen } from 'lucide-react';
+import StaleBadge from '@/components/ui/StaleBadge';
 import AutoScrollShelf from '@/components/AutoScrollShelf';
 
 const NUM = new Intl.NumberFormat('en-US');
@@ -72,8 +73,11 @@ export default function GoodreadsCard({ data = null, bare = false }) {
     <div className="space-y-4">
       {hasYear && (
         <div className="rounded-lg border border-amber-200/70 bg-amber-50/60 p-3 dark:border-amber-900/40 dark:bg-amber-950/20">
-          <div className="text-[10px] font-semibold uppercase tracking-widest text-amber-700/80 dark:text-amber-400/80">
-            reading · past 12 months
+          <div className="flex items-baseline justify-between gap-2">
+            <div className="text-[10px] font-semibold uppercase tracking-widest text-amber-700/80 dark:text-amber-400/80">
+              reading · past 12 months
+            </div>
+            <StaleBadge staleness={data?._staleness} />
           </div>
           <div className="mt-1 flex items-baseline gap-1.5">
             <span className="text-2xl font-extrabold leading-none text-stone-900 dark:text-stone-50">

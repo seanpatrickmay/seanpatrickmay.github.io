@@ -9,6 +9,7 @@ import GoodreadsCard from '@/components/GoodreadsCard';
 import DuolingoCard from '@/components/DuolingoCard';
 import Pinboard from '@/components/Pinboard';
 import PinCard from '@/components/PinCard';
+import StaleBadge from '@/components/ui/StaleBadge';
 import { Sparkles } from 'lucide-react';
 
 function parseDateOnlyLocal(value) {
@@ -119,8 +120,11 @@ export default function AboutSection({
           {/* Training Stats — expanded */}
           <PinCard rotation={-1.8} pinColor="red">
             <div className="rounded-sm border border-slate-200 bg-white p-4 dark:border-slate-700 dark:bg-slate-900">
-              <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
-                training · 8 weeks
+              <div className="flex items-baseline justify-between gap-2">
+                <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
+                  training · 8 weeks
+                </div>
+                <StaleBadge staleness={stats?._staleness} />
               </div>
               <div className="mt-1.5 flex items-baseline gap-2">
                 <span className="text-3xl font-extrabold leading-none text-slate-900 dark:text-white">
@@ -185,8 +189,11 @@ export default function AboutSection({
           {/* Top Artists — own card */}
           <PinCard rotation={1.5} pinColor="blue" pinPosition="right">
             <div className="rounded-sm border border-slate-200 bg-white p-4 text-slate-900 dark:border-slate-700 dark:bg-slate-900 dark:text-white">
-              <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
-                🎵 top artists
+              <div className="flex items-baseline justify-between gap-2">
+                <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
+                  🎵 top artists
+                </div>
+                <StaleBadge staleness={spotify?._staleness} />
               </div>
               <div className="mt-2">
                 <SpotifyTopArtists artists={spotify?.artists ?? []} visibleCount={7} />
@@ -204,8 +211,11 @@ export default function AboutSection({
           {/* Top Tracks — own card */}
           <PinCard rotation={-0.8} pinColor="yellow" pinPosition="left">
             <div className="rounded-sm border border-slate-200 bg-white p-4 text-slate-900 dark:border-slate-700 dark:bg-slate-900 dark:text-white">
-              <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
-                🎧 top tracks
+              <div className="flex items-baseline justify-between gap-2">
+                <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
+                  🎧 top tracks
+                </div>
+                <StaleBadge staleness={spotify?._staleness} />
               </div>
               <div className="mt-2">
                 <SpotifyTopTracks tracks={spotify?.tracks ?? []} visibleCount={7} />

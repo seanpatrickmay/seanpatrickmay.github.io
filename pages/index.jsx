@@ -4,6 +4,7 @@ import path from 'path';
 import rawProjects from '@/public/projects.json' assert { type: 'json' };
 import rawExperience from '@/public/experience.json' assert { type: 'json' };
 import rawOtherWork from '@/public/other-work.json' assert { type: 'json' };
+import { getStaleness } from '@/lib/freshness';
 import { validateProjects } from '@/lib/projects';
 import { validateExperience } from '@/lib/experience';
 import { validateWork } from '@/lib/work';
@@ -29,13 +30,22 @@ function readJsonSafe(filename) {
   }
 }
 
+// Staleness is resolved at build time, not render time: the site is a static
+// export, so this keeps the badge crawler-visible and free of hydration
+// mismatches. The daily deploy cron re-evaluates it.
+function readFeed(filename) {
+  const data = readJsonSafe(filename);
+  if (!data) return null;
+  return { ...data, _staleness: getStaleness(data.generated_at) };
+}
+
 export async function getStaticProps() {
   return {
     props: {
-      statsData: readJsonSafe('stats.json'),
-      spotifyData: readJsonSafe('spotify.json'),
-      goodreadsData: readJsonSafe('goodreads.json'),
-      duolingoData: readJsonSafe('duolingo.json'),
+      statsData: readFeed('stats.json'),
+      spotifyData: readFeed('spotify.json'),
+      goodreadsData: readFeed('goodreads.json'),
+      duolingoData: readFeed('duolingo.json'),
     },
   };
 }

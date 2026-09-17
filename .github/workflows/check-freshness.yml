@@ -1,0 +1,42 @@
+name: Check data freshness
+
+# The Garmin refresh broke on 2026-03-21 and went unnoticed until 2026-09-17.
+# The workflow failed every single day in between — the signal existed, nobody
+# was reading it. This job exists to make staleness impossible to miss: one
+# red X per day on a workflow whose only purpose is answering "is the data
+# still real?".
+#
+# Runs after the refresh workflows (13:00–13:20 UTC) have had time to finish.
+
+on:
+  schedule:
+    - cron: "0 14 * * *"
+  workflow_dispatch:
+    inputs:
+      warn_only:
+        description: "Report without failing the run"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "check-freshness"
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Check freshness
+        run: |
+          node scripts/check_freshness.mjs ${{ inputs.warn_only && '--warn' || '' }}
