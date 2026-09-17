@@ -1,7 +1,6 @@
 import SpotifyTopTracks from '@/components/SpotifyTopTracks';
 import SpotifyTopArtists from '@/components/SpotifyTopArtists';
 import Section from '@/components/ui/Section';
-import HobbySpotlight from '@/components/HobbySpotlight';
 import LineSparkline from '@/components/ui/LineSparkline';
 import BarSparkline from '@/components/ui/BarSparkline';
 import { getBostonJourneyEquivalence } from '@/lib/journeyEquivalents';
@@ -100,12 +99,6 @@ export default function AboutSection({
     return `${start.toLocaleDateString(undefined, { month: 'short', day: 'numeric' })} → ${end.toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}`;
   })();
 
-  const hobbySpotlights = [
-    { title: 'Prompting', emoji: '🚀' },
-    { title: 'Triathlon', emoji: '🏊‍♂️' },
-    { title: 'Français', emoji: '🇫🇷' },
-    { title: 'Escape Rooms', emoji: '🗝️' },
-  ];
 
   const weekLabels = weeklySeries.map(row => {
     const d = parseDateOnlyLocal(row?.week_start);
@@ -236,10 +229,6 @@ export default function AboutSection({
 
         </div>
 
-        {/* Hobby stickers — outside the columns so it stays full width */}
-        <div className="pt-1">
-          <HobbySpotlight hobbies={hobbySpotlights} />
-        </div>
       </Pinboard>
     </Section>
   );
