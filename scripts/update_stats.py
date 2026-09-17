@@ -5,6 +5,7 @@ Fetch Garmin data and write public/stats.json for your site.
 Environment variables:
   GARMIN_EMAIL         your Garmin account email (only needed for first login)
   GARMIN_PASSWORD      your Garmin account password (only needed for first login)
+  GARMIN_MFA_CODE      one-shot MFA code, to finish a fresh login from CI
   GARMIN_TOKENS_DIR    where to cache tokens (default: ~/.garminconnect)
   GARMIN_OUT           output path for stats.json (default: public/stats.json)
   GARMIN_FETCH_PAGE_SIZE  page size for activity fetch pagination (default: 100)
@@ -41,6 +42,9 @@ PASSWORD = os.getenv("GARMIN_PASSWORD")
 # datacenter IPs (e.g. GitHub Actions runners). Gate it behind a flag so CI never
 # falls through to it on a transient cached-token hiccup and gets itself blocked.
 ALLOW_FRESH_LOGIN = os.getenv("GARMIN_ALLOW_FRESH_LOGIN", "").strip().lower() in {"1", "true", "yes"}
+# One-shot MFA code, supplied by the reseed workflow so a fresh login can be
+# completed from CI instead of requiring a local run.
+MFA_CODE = os.getenv("GARMIN_MFA_CODE", "").strip()
 TOKENS_DIR = Path(os.getenv("GARMIN_TOKENS_DIR", str(Path.home() / ".garminconnect")))
 OUT_PATH = Path(os.getenv("GARMIN_OUT", "public/stats.json"))
 
@@ -125,10 +129,16 @@ def get_client() -> Garmin:
     g = Garmin(email=EMAIL, password=PASSWORD, return_on_mfa=True)
     res1, res2 = g.login()
     if res1 == "needs_mfa":
-        raise SystemExit(
-            "MFA required. Run this script locally once to complete MFA and seed tokens.\n"
-            f"Tokens will be saved in: {TOKENS_DIR}"
-        )
+        # MFA_CODE lets CI finish the challenge without a local run: the reseed
+        # workflow takes the code as a dispatch input. Codes expire fast, so this
+        # only works on a run started right after the code is generated.
+        if not MFA_CODE:
+            raise SystemExit(
+                "MFA required and GARMIN_MFA_CODE not set.\n"
+                "Re-run the 'Update Garmin stats.json' workflow with the reseed inputs "
+                "and paste a fresh MFA code."
+            )
+        g.resume_login(res2, MFA_CODE)
     g.garth.dump(TOKENS_DIR)
     print(f"Saved fresh tokens to {TOKENS_DIR}")
     return g

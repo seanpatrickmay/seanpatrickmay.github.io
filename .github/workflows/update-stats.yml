@@ -3,7 +3,16 @@ name: Update Garmin stats.json
 on:
   schedule:
     - cron: "0 13 * * *"  # 13:00 UTC ~ 9:00 AM ET during DST
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      reseed:
+        description: "Force a fresh email/password login instead of using cached tokens"
+        type: boolean
+        default: false
+      mfa_code:
+        description: "Garmin MFA code (only needed when reseed is checked, and only valid for a few minutes)"
+        type: string
+        required: false
 
 permissions:
   contents: write
@@ -29,47 +38,58 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r scripts/requirements-stats.txt
 
-      # 1) Try restoring tokens from cache (refreshed by previous run)
+      # 1) Try restoring tokens from cache (refreshed by the previous run).
+      # This is only a fast path — the cache is evicted after 7 days of no
+      # reads and is skipped entirely when a job fails, so the secret below
+      # is the real source of truth.
       - name: Restore cached Garmin tokens
         id: token-cache
+        if: ${{ !inputs.reseed }}
         uses: actions/cache@v4
         with:
           path: ~/.garminconnect
           key: garmin-tokens-${{ github.run_id }}
           restore-keys: garmin-tokens-
 
-      # 2) Fall back to secrets if cache miss (first run or cache evicted)
+      # 2) Fall back to secrets on cache miss.
+      #
+      # Precedence matters: GARMIN_TOKENS_B64 is the bundle the "persist" step
+      # below rewrites after every successful run, so it is always the freshest
+      # copy. The individual OAUTH1/OAUTH2 secrets are a legacy manual seed and
+      # must only be used when no bundle exists — checking them first is what
+      # silently pinned this workflow to expired March tokens for six months.
       - name: Restore Garmin tokens from secrets
-        if: steps.token-cache.outputs.cache-hit != 'true'
+        if: ${{ !inputs.reseed && steps.token-cache.outputs.cache-hit != 'true' }}
         env:
-          OAUTH1_B64: ${{ secrets.GARMIN_OAUTH1_B64 }}   # optional
-          OAUTH2_B64: ${{ secrets.GARMIN_OAUTH2_B64 }}   # optional
-          TOKENS_B64: ${{ secrets.GARMIN_TOKENS_B64 }}   # optional (tgz/zip)
+          TOKENS_B64: ${{ secrets.GARMIN_TOKENS_B64 }}   # preferred: self-renewing bundle
+          OAUTH1_B64: ${{ secrets.GARMIN_OAUTH1_B64 }}   # legacy fallback
+          OAUTH2_B64: ${{ secrets.GARMIN_OAUTH2_B64 }}   # legacy fallback
         run: |
           set -euo pipefail
           mkdir -p ~/.garminconnect
 
-          if [ -n "${OAUTH1_B64:-}" ] || [ -n "${OAUTH2_B64:-}" ]; then
+          if [ -n "${TOKENS_B64:-}" ]; then
+            echo "$TOKENS_B64" | base64 -d > /tmp/garmin_tokens.blob
+            if tar -tzf /tmp/garmin_tokens.blob >/dev/null 2>&1; then
+              tar -xzf /tmp/garmin_tokens.blob -C ~/.garminconnect
+              echo "Restored tokens from GARMIN_TOKENS_B64 (tgz)."
+            else
+              sudo apt-get update -y >/dev/null
+              sudo apt-get install -y unzip >/dev/null
+              unzip -o /tmp/garmin_tokens.blob -d ~/.garminconnect
+              echo "Restored tokens from GARMIN_TOKENS_B64 (zip)."
+            fi
+            rm -f /tmp/garmin_tokens.blob
+          elif [ -n "${OAUTH1_B64:-}" ] || [ -n "${OAUTH2_B64:-}" ]; then
             if [ -n "${OAUTH1_B64:-}" ]; then
               echo "$OAUTH1_B64" | base64 -d > ~/.garminconnect/oauth1_token.json
             fi
             if [ -n "${OAUTH2_B64:-}" ]; then
               echo "$OAUTH2_B64" | base64 -d > ~/.garminconnect/oauth2_token.json
             fi
-            echo "Restored individual oauth token files."
-          elif [ -n "${TOKENS_B64:-}" ]; then
-            echo "$TOKENS_B64" | base64 -d > /tmp/garmin_tokens.blob
-            if tar -tzf /tmp/garmin_tokens.blob >/dev/null 2>&1; then
-              tar -xzf /tmp/garmin_tokens.blob -C ~/.garminconnect
-              echo "Extracted tokens from tgz."
-            else
-              sudo apt-get update -y >/dev/null
-              sudo apt-get install -y unzip >/dev/null
-              unzip -o /tmp/garmin_tokens.blob -d ~/.garminconnect
-              echo "Extracted tokens from zip."
-            fi
+            echo "Restored tokens from legacy OAUTH1/OAUTH2 secrets."
           else
-            echo "No token secrets provided; relying on email/password (may fail if MFA/risk checks)."
+            echo "No token secrets provided; run this workflow with reseed=true."
           fi
 
           ls -la ~/.garminconnect || true
@@ -77,12 +97,32 @@ jobs:
       - name: Generate stats.json
         env:
           GARMIN_OUT: public/stats.json
-          # Optional fallback if you have NO MFA (will likely fail otherwise):
           GARMIN_EMAIL: ${{ secrets.GARMIN_EMAIL }}
           GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
+          GARMIN_ALLOW_FRESH_LOGIN: ${{ inputs.reseed && '1' || '' }}
+          GARMIN_MFA_CODE: ${{ inputs.mfa_code }}
         run: |
           set -euo pipefail
           python scripts/update_stats.py
+
+      # 3) Write the refreshed tokens back to the secret. garth rotates the
+      # OAuth2 token on every successful load, so persisting here is what keeps
+      # the credentials alive indefinitely without another manual reseed.
+      - name: Persist refreshed Garmin tokens
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          set -euo pipefail
+          if [ -z "${GH_TOKEN:-}" ]; then
+            echo "::warning::GH_PAT not set — tokens were refreshed but cannot be persisted to secrets."
+            echo "Add a GH_PAT secret (fine-grained, this repo, secrets:write) to make refresh permanent."
+            exit 0
+          fi
+          tar -czf /tmp/garmin_tokens.tgz -C ~/.garminconnect .
+          base64 -w0 /tmp/garmin_tokens.tgz | gh secret set GARMIN_TOKENS_B64 --repo "${{ github.repository }}"
+          rm -f /tmp/garmin_tokens.tgz
+          echo "Persisted refreshed tokens to GARMIN_TOKENS_B64."
 
       - name: Commit & push changes
         run: |

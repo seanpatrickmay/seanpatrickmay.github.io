@@ -25,13 +25,41 @@ jobs:
           node-version: 20
 
       - name: Generate spotify.json
+        id: generate
         env:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+          SPOTIFY_ROTATED_TOKEN_PATH: ${{ runner.temp }}/spotify_rotated_token
+        run: |
+          set -uo pipefail
+          node scripts/update_spotify.mjs 2> "$RUNNER_TEMP/spotify_err"
+          rc=$?
+          cat "$RUNNER_TEMP/spotify_err" >&2
+          if [ "$rc" -ne 0 ]; then
+            if grep -q "invalid_grant" "$RUNNER_TEMP/spotify_err"; then
+              echo "::error::Spotify refresh token is revoked. Run the 'Reseed Spotify token' workflow to re-consent — no local steps needed."
+            fi
+            exit "$rc"
+          fi
+
+      # Spotify can hand back a rotated refresh token on any refresh. Persisting
+      # it keeps the integration alive without another manual re-consent.
+      - name: Persist rotated refresh token
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           set -euo pipefail
-          node scripts/update_spotify.mjs
+          TOKEN_FILE="$RUNNER_TEMP/spotify_rotated_token"
+          [ -s "$TOKEN_FILE" ] || exit 0
+          if [ -z "${GH_TOKEN:-}" ]; then
+            echo "::warning::Spotify rotated the refresh token but GH_PAT is not set, so it cannot be persisted."
+            exit 0
+          fi
+          gh secret set SPOTIFY_REFRESH_TOKEN --repo "${{ github.repository }}" < "$TOKEN_FILE"
+          rm -f "$TOKEN_FILE"
+          echo "Persisted rotated Spotify refresh token."
 
       - name: Commit & push changes
         run: |

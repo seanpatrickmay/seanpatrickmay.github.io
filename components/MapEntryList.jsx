@@ -33,16 +33,18 @@ export default function MapEntryList({ pins = [], activePin, onEntryClick, onEnt
               ].join(' ')}
               style={isActive ? { borderColor: { red: '#ef4444', blue: '#3b82f6', green: '#22c55e', yellow: '#eab308', teal: '#14b8a6' }[ENTRY_PIN_COLORS[i % ENTRY_PIN_COLORS.length]] } : undefined}
             >
-              {pin.emoji ? (
-                <span className="text-lg flex-shrink-0" aria-hidden="true">
-                  {pin.emoji}
-                </span>
-              ) : pin.img ? (
+              {/* Real logo wins over the emoji placeholder — matching
+                  ExperienceItem — so orgs that have one actually show it. */}
+              {pin.img ? (
                 <img
                   src={pin.img}
                   alt=""
                   className="w-7 h-7 rounded-md object-contain flex-shrink-0 bg-stone-50 dark:bg-stone-700"
                 />
+              ) : pin.emoji ? (
+                <span className="text-lg flex-shrink-0" aria-hidden="true">
+                  {pin.emoji}
+                </span>
               ) : (
                 <span className="flex h-7 w-7 items-center justify-center rounded-md bg-stone-100 text-xs font-bold text-stone-500 flex-shrink-0 dark:bg-stone-700 dark:text-stone-400">
                   {pin.org.charAt(0)}

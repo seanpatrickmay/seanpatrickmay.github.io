@@ -6,7 +6,7 @@
     "period": "2024 – Present",
     "startDate": "2024-01-01",
     "endDate": null,
-    "updatedAt": "2026-03-10",
+    "updatedAt": "2026-09-16",
     "stack": [
       "Next.js",
       "React",
@@ -27,7 +27,7 @@
     "showcaseTag": "Full-stack",
     "showcaseTech": "Next.js",
     "proofPoints": [
-      "16 project pages all generated from one big JSON file",
+      "every project page generated from one JSON file",
       "scheduled scripts pull fresh Garmin and Spotify data into static JSON",
       "filterable project archive with search, tag filters, and shareable URL params"
     ],
@@ -56,7 +56,7 @@
     },
     "gallery": [],
     "bullets": [
-      "16 project case-study pages with cover images, proof points, galleries, and deep-dive sections.",
+      "Project case-study pages with cover images, proof points, galleries, and deep-dive sections, all generated from a single JSON source.",
       "Live Garmin training stats (8-week rolling window, 60 recent activities) and Spotify top-10 via scheduled refresh scripts.",
       "Project archive with full-text search, multi-tag/language filters, and sort by featured ranking, date, or title."
     ],
@@ -80,7 +80,7 @@
     "period": "Sep 2025 – Present",
     "startDate": "2025-09-01",
     "endDate": null,
-    "updatedAt": "2026-03-10",
+    "updatedAt": "2026-06-08",
     "stack": [
       "Python",
       "FastAPI",
@@ -231,10 +231,10 @@
     "title": "Human Digit Recognition",
     "slug": "human-digit-classification",
     "emoji": "🔢",
-    "period": "Updated Dec 2025",
+    "period": "Updated Mar 2026",
     "startDate": null,
     "endDate": null,
-    "updatedAt": "2025-12-04",
+    "updatedAt": "2026-03-15",
     "stack": [
       "Python",
       "Flask",
@@ -304,10 +304,10 @@
     "title": "Wildfire Modeling",
     "slug": "wildfire-modeling",
     "emoji": "🔥",
-    "period": "Updated Feb 2026",
+    "period": "Updated Mar 2026",
     "startDate": null,
     "endDate": null,
-    "updatedAt": "2026-02-12",
+    "updatedAt": "2026-03-30",
     "stack": [
       "Python",
       "JavaScript",
@@ -373,87 +373,13 @@
     ]
   },
   {
-    "title": "Sentiment Market MM",
-    "slug": "sentiment-market-mm",
-    "emoji": "🏦",
-    "period": "Updated Mar 2026",
-    "startDate": null,
-    "endDate": null,
-    "updatedAt": "2026-03-14",
-    "stack": [
-      "Python",
-      "FastAPI",
-      "PostgreSQL",
-      "Redis",
-      "React",
-      "TypeScript",
-      "Docker"
-    ],
-    "oneLiner": "automated market maker for prediction markets — ingests sentiment signals, prices two-sided quotes, manages inventory risk, and executes across Kalshi and Polymarket",
-    "cardDescription": "prediction market MM with sentiment-driven spread pricing, inventory risk management, and a React dashboard for monitoring everything",
-    "languages": [
-      "Python",
-      "TypeScript"
-    ],
-    "tags": [
-      "Full-stack",
-      "Data Engineering",
-      "Algorithms",
-      "Cloud/Infra"
-    ],
-    "coolness": 93,
-    "showcaseTag": "Algorithms",
-    "showcaseTech": "Redis",
-    "proofPoints": [
-      "sentiment-weighted spread pricing that adjusts bid-ask width based on news flow, social volume, and order book imbalance",
-      "inventory risk engine with position limits, greeks-inspired exposure tracking, and dynamic skew to reduce directional risk",
-      "multi-venue execution layer with order lifecycle management across Kalshi and Polymarket"
-    ],
-    "overview": "this is a full-stack market-making system for prediction markets. it ingests real-time sentiment signals, prices two-sided quotes with dynamic spread adjustment, manages inventory exposure, and executes across multiple venues through a unified order management layer.",
-    "whatIBuilt": [
-      "fastapi backend with sentiment ingestion, spread pricing engine, order management, and position tracking",
-      "postgres + redis schema for markets, quotes, orders, fills, positions, and real-time sentiment state",
-      "react monitoring dashboard for live P&L, position exposure, spread visualization, and order flow"
-    ],
-    "howItWorks": [
-      "ingest sentiment signals from news APIs, social feeds, and order book data into a scoring pipeline",
-      "price two-sided quotes with spread width driven by sentiment confidence, volatility, and current inventory skew",
-      "execute and manage order lifecycle across venues with fill tracking and position reconciliation"
-    ],
-    "results": [
-      "the whole market-making loop from signal ingestion through quote pricing to execution and risk tracking",
-      "gives me a sandbox for testing different spread strategies against real prediction market data"
-    ],
-    "nextSteps": [
-      "add a backtesting harness to evaluate spread strategies against historical order book snapshots",
-      "implement adaptive position sizing based on realized P&L and drawdown thresholds"
-    ],
-    "coverImage": {
-      "src": "/projects/sentiment-market-mm/cover.png",
-      "alt": "Sentiment Market MM monitoring dashboard"
-    },
-    "gallery": [],
-    "bullets": [
-      "Sentiment scoring pipeline aggregates news, social, and order-flow signals into a real-time confidence score that drives dynamic bid-ask spread width.",
-      "Inventory risk manager tracks net exposure per market with position limits, directional skew adjustment, and Greeks-style sensitivity metrics.",
-      "Unified execution layer abstracts Kalshi and Polymarket APIs behind a common order interface with fill tracking and position reconciliation."
-    ],
-    "links": [
-      {
-        "label": "Git Repo",
-        "href": "https://github.com/seanpatrickmay/sentiment-market-mm",
-        "kind": "repo"
-      }
-    ]
-  },
-  {
     "title": "PokerML",
     "slug": "nlhe-alpha-beta",
     "emoji": "🃏",
-    "period": "Updated Nov 2025",
+    "period": "Updated Mar 2026",
     "startDate": null,
     "endDate": null,
-    "updatedAt": "2025-11-02",
+    "updatedAt": "2026-03-24",
     "stack": [
       "Python",
       "FastAPI",
@@ -518,280 +444,13 @@
     ]
   },
   {
-    "title": "MBTA Leave Now",
-    "slug": "mbta-leave-now",
-    "emoji": "🚇",
-    "period": "Updated Jan 2026",
-    "startDate": null,
-    "endDate": null,
-    "updatedAt": "2026-01-14",
-    "stack": [
-      "Java",
-      "Spring Boot",
-      "Gradle",
-      "HTML"
-    ],
-    "oneLiner": "tells you when to leave for the T — matches trips across lines, adds walking and transfer time, and gives you a leave-by recommendation",
-    "cardDescription": "MBTA commute solver — multi-leg trip matching with walk and transfer buffers, plus a leave-by planner",
-    "languages": [
-      "Java"
-    ],
-    "tags": [
-      "Full-stack"
-    ],
-    "coolness": 88,
-    "showcaseTag": "Full-stack",
-    "showcaseTech": "Spring Boot",
-    "proofPoints": [
-      "MBTA prediction-driven leave-now API",
-      "fixed commute leave-by planner with transfer and walking buffers",
-      "spring boot + gradle kotlin DSL practice project"
-    ],
-    "overview": "this is a spring boot project that answers a pretty simple commuter question: when should i leave? it has both a generic stop-level API and a more opinionated leave-by planner for my fixed commute. i mostly built it to get comfortable with spring and gradle.",
-    "whatIBuilt": [
-      "spring MVC endpoints for stop-level leave guidance and a fixed commute planner",
-      "MBTA API client using java HttpClient and jackson parsing",
-      "minimal browser UI for entering a deadline and viewing leave-by guidance"
-    ],
-    "howItWorks": [
-      "fetch upcoming MBTA predictions and schedules for the relevant stops",
-      "apply walk-time and transfer buffers to compute a leave-by recommendation",
-      "expose results through a REST API and a lightweight static frontend"
-    ],
-    "results": [
-      "solid practice project for gradle kotlin DSL, spring MVC, and test structure",
-      "bridges backend API logic and a usable frontend in one small repo"
-    ],
-    "nextSteps": [
-      "generalize the fixed commute planner into configurable routes",
-      "add example responses and screenshots for easier onboarding"
-    ],
-    "coverImage": {
-      "src": "/projects/mbta-leave-now/cover.png",
-      "alt": "MBTA Leave-By Planner commute view"
-    },
-    "gallery": [],
-    "bullets": [
-      "Fetches real-time MBTA predictions and schedules, filtering by stop, route, and direction with paginated responses.",
-      "Multi-leg commute solver matches trip IDs across Orange and Red lines with configurable walk-time and transfer buffers.",
-      "Headway bunching detection via coefficient-of-variation scoring to assess service reliability."
-    ],
-    "links": [
-      {
-        "label": "Git Repo",
-        "href": "https://github.com/seanpatrickmay/mbta-leave-now",
-        "kind": "repo"
-      }
-    ]
-  },
-  {
-    "title": "Study Buddy",
-    "slug": "study-buddy",
-    "emoji": "🧠",
-    "period": "Updated Sep 2025",
-    "startDate": null,
-    "endDate": null,
-    "updatedAt": "2025-09-29",
-    "stack": [
-      "Python",
-      "FastAPI",
-      "LangChain",
-      "CrewAI",
-      "ChromaDB"
-    ],
-    "oneLiner": "give it your PDFs and lecture notes, it gives you back Anki flashcard decks and LaTeX cheat sheets weighted by difficulty. built with CrewAI agents and ChromaDB for retrieval",
-    "cardDescription": "upload your notes, get back Anki decks and difficulty-weighted cheat sheets. CrewAI agents and ChromaDB under the hood",
-    "languages": [
-      "Python",
-      "JavaScript"
-    ],
-    "tags": [
-      "Full-stack",
-      "Data Engineering",
-      "Agentic AI"
-    ],
-    "coolness": 87,
-    "showcaseTag": "Agentic AI",
-    "showcaseTech": "CrewAI",
-    "proofPoints": [
-      "document ingestion -> flashcards -> cheat-sheet workflow",
-      "RAG-backed study flow using ChromaDB",
-      "fastapi app with a focused single-page interface"
-    ],
-    "overview": "study-buddy is a study companion that takes your lecture notes, research papers, and anki exports and turns them into curated flashcards, decks, and cheat sheets. it combines LLM tooling, retrieval, and a simple web interface into one study workflow.",
-    "whatIBuilt": [
-      "built the full ingestion-to-artifact pipeline for processing study materials and generating outputs",
-      "fastapi-backed flow for converting source material into flashcards and cheat sheets",
-      "RAG path using chromaDB to keep generations anchored in the uploaded material"
-    ],
-    "howItWorks": [
-      "upload notes, papers, or deck exports",
-      "index material into a retrieval layer",
-      "generate flashcards, exports, and cheat-sheet style outputs from the grounded context"
-    ],
-    "results": [
-      "working prototype that shows a concrete AI-assisted study loop from raw notes to review artifacts"
-    ],
-    "nextSteps": [
-      "show sample flashcard deck and cheat sheet outputs in the readme",
-      "add a one-click demo path with a bundled example PDF"
-    ],
-    "coverImage": {
-      "src": "/projects/study-buddy/cover.png",
-      "alt": "Study Buddy flashcard and cheat sheet generator"
-    },
-    "gallery": [],
-    "bullets": [
-      "CrewAI agents (flashcard, cheatsheet, RAG, aggregator) orchestrate a multi-step pipeline from document ingestion to artifact export.",
-      "ChromaDB vector store with LangChain embeddings grounds all generation in uploaded source material via similarity search.",
-      "Exports Anki .apkg decks and compiles difficulty-weighted LaTeX cheat sheets to PDF, using Anki review history for prioritization."
-    ],
-    "links": [
-      {
-        "label": "Git Repo",
-        "href": "https://github.com/seanpatrickmay/study-buddy",
-        "kind": "repo"
-      }
-    ]
-  },
-  {
-    "title": "N-Queens Genetic Algorithm",
-    "slug": "nqueens-genetic-algorithms",
-    "emoji": "♛",
-    "period": "Updated Nov 2025",
-    "startDate": null,
-    "endDate": null,
-    "updatedAt": "2025-11-02",
-    "stack": [
-      "Python",
-      "Genetic Algorithms"
-    ],
-    "oneLiner": "genetic algorithm for N-Queens — tournament selection, adaptive mutation rate, solves N=8 in under 500 generations",
-    "cardDescription": "GA solver with tournament selection, single-point crossover, and adaptive mutation. solves N=8 in around 500 generations",
-    "languages": [
-      "Python"
-    ],
-    "tags": [
-      "Algorithms"
-    ],
-    "coolness": 84,
-    "showcaseTag": "Algorithms",
-    "showcaseTech": "Genetic Algorithms",
-    "proofPoints": [
-      "tournament selection + single-point crossover",
-      "mutation schedule that scales with board size",
-      "CLI/.env configurable experiments"
-    ],
-    "overview": "this project explores the n-queens puzzle through a compact genetic algorithm. it's intentionally small and transparent, so it's easy to see how population size, mutation behavior, and iteration caps affect convergence.",
-    "whatIBuilt": [
-      "single-file genetic algorithm with tournament selection and crossover",
-      "collision-based fitness function for scoring candidate boards",
-      "CLI and .env configuration for quick experimentation"
-    ],
-    "howItWorks": [
-      "initialize a population of candidate boards",
-      "score conflicts and select parents via tournaments",
-      "apply crossover and mutation across generations",
-      "stop when a zero-collision solution is found or the iteration cap is hit"
-    ],
-    "results": [
-      "nice compact reference implementation for an evolutionary search workflow"
-    ],
-    "nextSteps": [
-      "add seeded benchmarking and clearer example outputs",
-      "try alternate encodings or hybrid local-search ideas"
-    ],
-    "coverImage": {
-      "src": "/projects/nqueens-genetic-algorithms/cover.png",
-      "alt": "N-Queens genetic algorithm solution with convergence chart"
-    },
-    "gallery": [],
-    "bullets": [
-      "Tournament selection (k=3) picks two parents; single-point crossover produces offspring; 1/N per-gene mutation adapts to board size.",
-      "Population of 200, cap of 200K generations, all configurable via .env or CLI—solves N=8 in under 500 generations.",
-      "Collision-counting fitness function runs O(N^2) pairwise checks across rows, columns, and both diagonals."
-    ],
-    "links": [
-      {
-        "label": "Git Repo",
-        "href": "https://github.com/seanpatrickmay/NQueensGeneticAlgorithms",
-        "kind": "repo"
-      }
-    ]
-  },
-  {
-    "title": "Maze-Game",
-    "slug": "maze-game",
-    "emoji": "🌀",
-    "period": "Updated Feb 2025",
-    "startDate": null,
-    "endDate": null,
-    "updatedAt": "2025-02-01",
-    "stack": [
-      "Java",
-      "javalib.impworld",
-      "javalib.worldimages"
-    ],
-    "oneLiner": "generates mazes with Kruskal's algorithm, then you can watch BFS or DFS solve them frame by frame, or just play through it yourself with arrow keys",
-    "cardDescription": "maze generator with animated BFS and DFS solvers, plus a manual play mode with arrow keys",
-    "languages": [
-      "Java"
-    ],
-    "tags": [
-      "Algorithms"
-    ],
-    "coolness": 83,
-    "showcaseTag": "Algorithms",
-    "showcaseTech": "Java",
-    "proofPoints": [
-      "maze generation via weighted graph + spanning tree",
-      "BFS and DFS solver visualization",
-      "interactive player mode with keyboard controls"
-    ],
-    "overview": "maze-game is a java world program that generates solvable mazes, animates breadth-first or depth-first search, and has a manual play mode. it's sort of a compact mix of graph generation, search visualization, and event-driven interaction.",
-    "whatIBuilt": [
-      "maze generator over a grid graph using weighted edges and union-find style logic",
-      "solver playback for BFS and DFS so you can actually watch pathfinding instead of just getting the answer",
-      "manual mode with movement, collision checks, and win detection"
-    ],
-    "howItWorks": [
-      "generate a maze from weighted connections across a grid",
-      "choose BFS or DFS to visualize a solver path",
-      "optionally switch into manual mode and play through the maze yourself"
-    ],
-    "results": [
-      "solid early project for graph algorithms, search, and interactive java state"
-    ],
-    "nextSteps": [
-      "record a GIF of maze generation and BFS/DFS solver animation",
-      "document the course-library setup more precisely"
-    ],
-    "coverImage": {
-      "src": "/projects/maze-game/cover.png",
-      "alt": "Maze generation and BFS solution path"
-    },
-    "gallery": [],
-    "bullets": [
-      "Kruskal's algorithm with union-find on a weighted grid graph; supports horizontal/vertical edge bias for varied maze shapes.",
-      "Tick-based animation renders BFS or DFS search one node per frame (0.01s), then traces the solution path in green.",
-      "Manual mode with arrow-key movement, collision validation against maze connections, and a win-state overlay at the exit."
-    ],
-    "links": [
-      {
-        "label": "Git Repo",
-        "href": "https://github.com/seanpatrickmay/Maze-Game",
-        "kind": "repo"
-      }
-    ]
-  },
-  {
     "title": "Hex Reversi",
     "slug": "hex-reversi",
     "emoji": "🔷",
-    "period": "Updated 2025",
+    "period": "Nov – Dec 2023",
     "startDate": null,
     "endDate": null,
-    "updatedAt": "2025-01-01",
+    "updatedAt": "2023-12-07",
     "stack": [
       "Java",
       "Swing"
@@ -813,7 +472,7 @@
       "TryTwo combinator chains strategies (corners -> avoid-near-corners -> minimax -> capture-max) with fallible/infallible pattern",
       "four adapter classes bridge third-party provider code without modifying core"
     ],
-    "overview": "hex reversi is an extensible reversi/othello implementation on a hexagonal grid. the main emphasis is software design, clean MVC separation, adapters for different play modes, and modular AI strategies you can mix and match.",
+    "overview": "hex reversi is an extensible reversi/othello implementation on a hexagonal grid. the main emphasis is software design, clean MVC separation, adapters for different play modes, and modular AI strategies you can mix and match. built with one collaborator for a course on object-oriented design; the repo lives on their account.",
     "whatIBuilt": [
       "hex-grid reversi engine with configurable board shapes and starting states",
       "MVC architecture with GUI + text views and a controller layer",
@@ -878,7 +537,7 @@
       "5 built-ins (cd, source, prev, help, verbose) communicate with parent via a dedicated global IPC pipe",
       "single-pass tokenizer handles quoted strings, special characters, and whitespace with a custom 2x-growth dynamic vector"
     ],
-    "overview": "a custom shell written in C with command execution, piping, redirection, and signal handling. the focus is on process control and getting correctness right under typical shell behaviors.",
+    "overview": "a custom shell written in C with command execution, piping, redirection, and signal handling. the focus is on process control and getting correctness right under typical shell behaviors. built for a systems course, so the source stays private — the details below are the writeup rather than a link.",
     "whatIBuilt": [
       "command execution with piping and I/O redirection",
       "signal handling and process orchestration",

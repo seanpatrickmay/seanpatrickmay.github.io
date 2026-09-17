@@ -42,3 +42,6 @@ spotify-local/
 !package-lock.json
 !public/stats.json
 !public/spotify.json
+
+# Local-only notes (not part of the site)
+IDEAS.md

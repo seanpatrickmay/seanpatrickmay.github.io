@@ -1,0 +1,103 @@
+name: Reseed Spotify token
+
+# Spotify refresh tokens can be revoked (password change, app removed from the
+# account, Spotify-side revocation). Recovery needs exactly one human browser
+# consent — everything else happens here, so nothing runs on a laptop.
+#
+# Usage:
+#   1. Run this workflow with `auth_code` empty. It prints an authorize URL.
+#   2. Open the URL, approve, copy the `code=` value out of the redirect URL.
+#   3. Run this workflow again with that value pasted into `auth_code`.
+#
+# Step 3 rotates SPOTIFY_REFRESH_TOKEN and kicks off a data refresh.
+
+on:
+  workflow_dispatch:
+    inputs:
+      auth_code:
+        description: "Authorization code from the redirect URL (leave empty to print the authorize URL)"
+        type: string
+        required: false
+      redirect_uri:
+        description: "Override the redirect URI — must match the Spotify app's registered value exactly. Leave empty for the default."
+        type: string
+        required: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "reseed-spotify"
+  cancel-in-progress: false
+
+jobs:
+  reseed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Checked before the authorize URL is printed: discovering a missing PAT
+      # *after* the browser consent would waste a single-use code.
+      - name: Check prerequisites
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+        run: |
+          set -uo pipefail
+          missing=""
+          [ -n "${GH_PAT:-}" ] || missing="$missing GH_PAT"
+          [ -n "${SPOTIFY_CLIENT_ID:-}" ] || missing="$missing SPOTIFY_CLIENT_ID"
+          [ -n "${SPOTIFY_CLIENT_SECRET:-}" ] || missing="$missing SPOTIFY_CLIENT_SECRET"
+          if [ -n "$missing" ]; then
+            echo "::error::Missing required secret(s):$missing"
+            echo "GH_PAT must be a fine-grained PAT on this repo with 'Secrets: read and write' and 'Actions: read and write'."
+            exit 1
+          fi
+          echo "All required secrets present."
+
+      - name: Print authorize URL
+        if: ${{ !inputs.auth_code }}
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_REDIRECT_URI: ${{ inputs.redirect_uri }}
+        run: |
+          set -euo pipefail
+          node scripts/spotify_authorize.mjs url | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Exchange code and rotate secret
+        if: ${{ inputs.auth_code }}
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_AUTH_CODE: ${{ inputs.auth_code }}
+          SPOTIFY_REDIRECT_URI: ${{ inputs.redirect_uri }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          set -euo pipefail
+          if [ -z "${GH_TOKEN:-}" ]; then
+            echo "::error::GH_PAT secret is required so this workflow can rotate SPOTIFY_REFRESH_TOKEN."
+            echo "Create a fine-grained PAT scoped to this repo with 'Secrets: read and write', then add it as GH_PAT."
+            exit 1
+          fi
+
+          # Keep the token out of the log: straight from stdout into the secret.
+          node scripts/spotify_authorize.mjs exchange \
+            | gh secret set SPOTIFY_REFRESH_TOKEN --repo "${{ github.repository }}"
+
+          echo "✅ SPOTIFY_REFRESH_TOKEN rotated." | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Trigger a data refresh
+        if: ${{ inputs.auth_code }}
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          set -euo pipefail
+          gh workflow run update-spotify.yml --repo "${{ github.repository }}"
+          echo "Kicked off 'Update Spotify data'." | tee -a "$GITHUB_STEP_SUMMARY"

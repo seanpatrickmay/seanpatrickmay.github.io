@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { fetchJsonWithRetry, fetchTop } from './update_spotify.mjs';
+import { fetchJsonWithRetry, fetchTop, getAccessToken } from './update_spotify.mjs';
 
 function createLogger() {
   const messages = [];
@@ -80,4 +80,48 @@ test('fetchTop falls back to cached items after repeated 502 responses', async (
   assert.equal(messages.length, 2);
   assert.match(messages[0], /Retrying in/);
   assert.match(messages[1], /Reusing cached top tracks/);
+});
+
+test('getAccessToken surfaces a rotated refresh token', async () => {
+  const fetchImpl = async () => new Response(
+    JSON.stringify({ access_token: 'new-access', refresh_token: 'rotated-refresh' }),
+    { status: 200, headers: { 'Content-Type': 'application/json' } },
+  );
+
+  const result = await getAccessToken({
+    env: {
+      SPOTIFY_CLIENT_ID: 'id',
+      SPOTIFY_CLIENT_SECRET: 'secret',
+      SPOTIFY_REFRESH_TOKEN: 'original-refresh',
+    },
+    fetchImpl,
+    logger: createLogger().logger,
+    maxRetries: 0,
+    requestTimeoutMs: 100,
+  });
+
+  assert.equal(result.accessToken, 'new-access');
+  assert.equal(result.rotatedRefreshToken, 'rotated-refresh');
+});
+
+test('getAccessToken reports no rotation when the refresh token is unchanged', async () => {
+  const fetchImpl = async () => new Response(
+    JSON.stringify({ access_token: 'new-access', refresh_token: 'original-refresh' }),
+    { status: 200, headers: { 'Content-Type': 'application/json' } },
+  );
+
+  const result = await getAccessToken({
+    env: {
+      SPOTIFY_CLIENT_ID: 'id',
+      SPOTIFY_CLIENT_SECRET: 'secret',
+      SPOTIFY_REFRESH_TOKEN: 'original-refresh',
+    },
+    fetchImpl,
+    logger: createLogger().logger,
+    maxRetries: 0,
+    requestTimeoutMs: 100,
+  });
+
+  assert.equal(result.accessToken, 'new-access');
+  assert.equal(result.rotatedRefreshToken, null);
 });

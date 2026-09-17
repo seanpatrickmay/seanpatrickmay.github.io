@@ -1,17 +1,56 @@
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
+import { useMemo } from 'react';
 import { BookOpen } from 'lucide-react';
+import AutoScrollShelf from '@/components/AutoScrollShelf';
 
 const NUM = new Intl.NumberFormat('en-US');
 // Page-count benchmark for the yearly reading bar. Harry Potter's 7 US editions
 // run ~4,100 pages. Swap to taste — e.g. the LOTR trilogy is ~1,178 pages.
 const BENCHMARK = { label: 'the Harry Potter series', pages: 4100, books: 7 };
 
-function StarRating({ rating }) {
-  if (!rating) return null;
+function toShelfItems(books, withRatings) {
+  return books.map((book, index) => ({
+    id: book.bookId || book.link || `${book.title}-${index}`,
+    title: book.title,
+    subtitle: book.author,
+    image: book.imageUrl,
+    url: book.link,
+    badge: withRatings && book.rating ? `★${book.rating}` : null,
+  }));
+}
+
+/** One horizontal shelf of covers, with a wooden rail underneath. */
+function Shelf({ label, count, books, withRatings = false, emptyMessage }) {
+  // Stable identity: AutoScrollShelf re-measures whenever `items` changes, and
+  // a fresh array every render would re-measure on every render.
+  const shelfItems = useMemo(() => toShelfItems(books, withRatings), [books, withRatings]);
+
+  if (!books.length) return null;
+
   return (
-    <span className="text-xs text-amber-500" aria-label={`${rating} out of 5 stars`}>
-      {'★'.repeat(rating)}{'☆'.repeat(5 - rating)}
-    </span>
+    <div>
+      <div className="mb-2 flex items-baseline justify-between gap-2">
+        <div className="text-[10px] font-semibold uppercase tracking-widest text-stone-500 dark:text-stone-400">
+          {label}
+        </div>
+        <div className="text-[10px] tabular-nums text-stone-400 dark:text-stone-500">
+          {count} {count === 1 ? 'book' : 'books'}
+        </div>
+      </div>
+
+      <AutoScrollShelf
+        items={shelfItems}
+        ariaLabel={`${label} — ${count} ${count === 1 ? 'book' : 'books'}`}
+        emptyMessage={emptyMessage}
+        speed={withRatings ? 11 : 14}
+      />
+
+      {/* shelf rail */}
+      <div
+        aria-hidden="true"
+        className="mt-1 h-[3px] rounded-full bg-gradient-to-r from-amber-900/15 via-amber-800/35 to-amber-900/15 dark:from-amber-200/10 dark:via-amber-200/25 dark:to-amber-200/10"
+      />
+    </div>
   );
 }
 
@@ -70,82 +109,20 @@ export default function GoodreadsCard({ data = null, bare = false }) {
         </div>
       )}
 
-      {currentlyReading.length > 0 && (
-        <div>
-          <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-300 mb-2">
-            Currently reading
-          </div>
-          <ul className="grid grid-cols-2 gap-x-3 gap-y-2.5">
-            {currentlyReading.map(book => (
-              <li key={book.bookId}>
-                <a
-                  href={book.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex gap-3 group"
-                >
-                  {book.imageUrl && (
-                    <img
-                      src={book.imageUrl}
-                      alt=""
-                      loading="lazy"
-                      className="w-10 h-14 rounded object-cover flex-shrink-0 shadow-sm"
-                    />
-                  )}
-                  <div className="min-w-0">
-                    <div className="text-sm font-semibold text-slate-900 dark:text-slate-50 leading-snug line-clamp-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
-                      {book.title}
-                    </div>
-                    <div className="text-xs text-slate-500 dark:text-slate-300 mt-0.5 truncate">
-                      {book.author}
-                    </div>
-                  </div>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+      <Shelf
+        label="currently reading"
+        count={currentlyReading.length}
+        books={currentlyReading}
+        emptyMessage="Nothing on the go"
+      />
 
-      {recent.length > 0 && (
-        <div>
-          <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-300 mb-2">
-            Recently read
-          </div>
-          <ul className="grid grid-cols-2 gap-x-3 gap-y-2">
-            {recent.slice(0, 4).map(book => (
-              <li key={book.bookId}>
-                <a
-                  href={book.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-start gap-2.5 group"
-                >
-                  {book.imageUrl && (
-                    <img
-                      src={book.imageUrl}
-                      alt=""
-                      loading="lazy"
-                      className="w-7 h-10 rounded object-cover flex-shrink-0"
-                    />
-                  )}
-                  <div className="min-w-0 flex-1">
-                    <div className="text-sm text-slate-800 dark:text-slate-200 leading-snug group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors truncate">
-                      {book.title}
-                    </div>
-                    <div className="flex items-center gap-2 mt-0.5">
-                      <span className="text-xs text-slate-500 dark:text-slate-300 truncate">
-                        {book.author}
-                      </span>
-                      <StarRating rating={book.rating} />
-                    </div>
-                  </div>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+      <Shelf
+        label="recently read"
+        count={recent.length}
+        books={recent}
+        withRatings
+        emptyMessage="No finished books yet"
+      />
     </div>
   );
 

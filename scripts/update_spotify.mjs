@@ -164,7 +164,13 @@ async function getAccessToken({
     },
   );
 
-  return data.access_token;
+  // Spotify may hand back a rotated refresh token on any refresh. Dropping it
+  // is how a long-lived integration silently dies, so surface it to the caller.
+  return {
+    accessToken: data.access_token,
+    rotatedRefreshToken:
+      data.refresh_token && data.refresh_token !== refreshToken ? data.refresh_token : null,
+  };
 }
 
 async function fetchTop(token, type, limit, {
@@ -208,13 +214,20 @@ async function main({
   const maxRetries = getMaxRetries(env);
   const requestTimeoutMs = getRequestTimeoutMs(env);
   const cached = await readCachedOutput(outPath);
-  const token = await getAccessToken({
+  const { accessToken: token, rotatedRefreshToken } = await getAccessToken({
     env,
     fetchImpl,
     logger,
     maxRetries,
     requestTimeoutMs,
   });
+
+  // The workflow points SPOTIFY_ROTATED_TOKEN_PATH at a scratch file and, if it
+  // appears, writes the value back into the repo secret.
+  if (rotatedRefreshToken && env.SPOTIFY_ROTATED_TOKEN_PATH) {
+    await fs.writeFile(env.SPOTIFY_ROTATED_TOKEN_PATH, rotatedRefreshToken, 'utf8');
+    warn(logger, '[spotify] Refresh token was rotated; wrote replacement for the workflow to persist.');
+  }
   const [artistsRes, tracksRes] = await Promise.all([
     fetchTop(token, 'artists', DEFAULT_LIMIT, {
       fetchImpl,

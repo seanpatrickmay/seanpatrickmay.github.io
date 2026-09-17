@@ -70,7 +70,7 @@ export default function BarSparkline({
   }, [values, containerWidth, height, barGap, minBarWidth, maxBarWidth]);
 
   const hasLabels = labelTexts.some(label => label && String(label).length > 0);
-  const labelHeight = labelOrientation === 'stacked' ? 48 : labelOrientation === 'vertical' ? bars.length * 18 : 18;
+  const labelHeight = labelOrientation === 'stacked' ? 30 : labelOrientation === 'vertical' ? bars.length * 18 : 18;
 
   return (
     <div ref={containerRef} className={`relative w-full ${className}`} style={{ minWidth: 0 }}>
@@ -137,32 +137,31 @@ export default function BarSparkline({
               const text = labelTexts[i];
               if (!text) return null;
               const left = Math.max(width, 1) > 0 ? ((b.x + b.w / 2) / Math.max(width, 1)) * 100 : 0;
-              const characters = Array.from(String(text));
+              // Stack by word, not by character: "May 25" is two short lines,
+              // not six. Per-character stacking made every label an unreadable
+              // vertical column that also overflowed the label track.
+              const lines = String(text).split(/\s+/).filter(Boolean);
               return (
                 <span
                   key={`label-${i}`}
-                  className={`absolute -translate-x-1/2 whitespace-pre-wrap ${labelClassName}`}
+                  className={`absolute -translate-x-1/2 whitespace-nowrap ${labelClassName}`}
                   style={{
                     left: `${left}%`,
                     top: 0,
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
-                    gap: '2px',
-                    lineHeight: '1.1',
-                    padding: '4px 3px',
-                    borderRadius: '9999px',
-                    background: 'rgba(15,23,42,0.04)',
+                    lineHeight: '1.15',
                     color: 'inherit',
                   }}
                 >
-                  {characters.map((char, index) => (
+                  {lines.map((line, index) => (
                     <span
-                      key={`char-${index}`}
+                      key={`line-${index}`}
                       className="leading-none"
-                      style={{ fontWeight: index === 0 ? 600 : 500 }}
+                      style={{ fontWeight: index === 0 ? 600 : 400 }}
                     >
-                      {char === ' ' ? ' ' : char}
+                      {line}
                     </span>
                   ))}
                 </span>

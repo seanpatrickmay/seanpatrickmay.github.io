@@ -149,13 +149,26 @@ export default function Header({ links }) {
                     </div>
                     <ul className="mt-3 space-y-2">
                       <li className="flex items-start gap-2">
-                        <span className="mt-0.5" aria-hidden="true">
-                          🏦
-                        </span>
+                        {/* Wordmark stands in for both the icon and the org name;
+                            the square logo would render the text illegibly small.
+                            Two files rather than a CSS filter so the red swoosh
+                            survives on dark backgrounds. */}
+                        <img
+                          src="/logos/normalized/capitalone-wordmark.png"
+                          alt="Capital One"
+                          loading="lazy"
+                          className="mt-1 h-3.5 w-auto flex-none dark:hidden"
+                        />
+                        <img
+                          src="/logos/normalized/capitalone-wordmark-dark.png"
+                          alt="Capital One"
+                          loading="lazy"
+                          className="mt-1 hidden h-3.5 w-auto flex-none dark:block"
+                        />
                         <div className="min-w-0 leading-snug">
                           <div className="font-medium text-slate-900 dark:text-slate-100">SWE Intern</div>
                           <div className="text-xs text-slate-500 dark:text-slate-300">
-                            Capital One · Richmond, VA · June 1 – August 8, 2026
+                            Richmond, VA · June 1 – August 8, 2026
                           </div>
                         </div>
                       </li>

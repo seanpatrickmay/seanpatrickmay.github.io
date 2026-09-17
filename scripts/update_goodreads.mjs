@@ -18,7 +18,9 @@ const OUTPUT = resolve(__dirname, '..', 'public', 'goodreads.json');
 const USER_ID = '199381877';
 const RSS_BASE = `https://www.goodreads.com/review/list_rss/${USER_ID}`;
 const SHELVES = ['currently-reading', 'read'];
-const MAX_RECENT = 5;
+// Feeds the horizontal "recently read" shelf, which only earns its scroll if
+// the covers overflow the card. 5 was sized for the old 2-column grid.
+const MAX_RECENT = 12;
 const MAX_PAGES = 10; // safety cap when paging a shelf; we stop early on an empty page
 const TIMEOUT_MS = 15_000;
 
@@ -33,13 +35,19 @@ function extractTag(xml, tag) {
   return match ? match[1].trim() : '';
 }
 
+// Goodreads ships inconsistent internal whitespace in names and titles
+// (e.g. "Stephen  King"), which renders verbatim on the site.
+function squish(value) {
+  return typeof value === 'string' ? value.replace(/\s+/g, ' ').trim() : value;
+}
+
 function parseItems(xml) {
   const items = [];
   const itemBlocks = xml.split('<item>').slice(1);
   for (const block of itemBlocks) {
     const raw = block.split('</item>')[0];
-    const title = extractCDATA(extractTag(raw, 'title')) || extractTag(raw, 'title');
-    const author = extractTag(raw, 'author_name');
+    const title = squish(extractCDATA(extractTag(raw, 'title')) || extractTag(raw, 'title'));
+    const author = squish(extractTag(raw, 'author_name'));
     const rating = parseInt(extractTag(raw, 'user_rating'), 10) || 0;
     const avgRating = parseFloat(extractTag(raw, 'average_rating')) || 0;
     const dateAdded = extractCDATA(extractTag(raw, 'user_date_added'));
@@ -110,14 +118,25 @@ async function main() {
   console.log('Fetching Goodreads shelves...');
 
   const results = {};
+  const failures = [];
   for (const shelf of SHELVES) {
     try {
       results[shelf] = await fetchShelf(shelf);
       console.log(`  ${shelf}: ${results[shelf].length} books`);
     } catch (err) {
       console.error(`  ${shelf}: failed (${err.message})`);
+      failures.push(shelf);
       results[shelf] = [];
     }
+  }
+
+  // Every shelf failing means Goodreads is unreachable, not that the shelves
+  // are empty. Writing here would overwrite good data with zeros and the
+  // workflow would happily commit it, so bail before touching the file.
+  if (failures.length === SHELVES.length) {
+    throw new Error(
+      `all shelves failed (${failures.join(', ')}) — keeping the existing ${OUTPUT}`,
+    );
   }
 
   const currentlyReading = results['currently-reading'] || [];
