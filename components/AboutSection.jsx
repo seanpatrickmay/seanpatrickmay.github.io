@@ -115,7 +115,7 @@ export default function AboutSection({
   return (
     <Section id="about" title="about me" icon={Sparkles}>
       <Pinboard>
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div className="columns-1 gap-5 sm:columns-2 [&>*]:mb-5 [&>*]:break-inside-avoid">
 
           {/* Training Stats — expanded */}
           <PinCard rotation={-1.8} pinColor="red">
@@ -177,7 +177,11 @@ export default function AboutSection({
 
               {kmJourney && (
                 <div className="mt-2 text-[11px] font-medium text-teal-600 dark:text-teal-400">
-                  ~{kmJourney.percent}% of the way to {kmJourney.destination}
+                  {totalKmLabel} km ≈ {kmJourney.percent}% of {kmJourney.origin} →{' '}
+                  {kmJourney.destination}
+                  <span className="text-stone-400 dark:text-stone-500">
+                    {' '}({KM_FORMAT.format(Math.round(kmJourney.routeDistanceKm))} km)
+                  </span>
                 </div>
               )}
               {rangeLabel && (
@@ -208,6 +212,13 @@ export default function AboutSection({
             </div>
           </PinCard>
 
+          {/* Duolingo — sits under Reading in the left column */}
+          <PinCard rotation={1.4} pinColor="teal">
+            <div className="rounded-sm border border-stone-200 bg-white p-4 dark:border-stone-700 dark:bg-stone-800">
+              <DuolingoCard data={duolingoData} bare />
+            </div>
+          </PinCard>
+
           {/* Top Tracks — own card */}
           <PinCard rotation={-0.8} pinColor="yellow" pinPosition="left">
             <div className="rounded-sm border border-slate-200 bg-white p-4 text-slate-900 dark:border-slate-700 dark:bg-slate-900 dark:text-white">
@@ -223,18 +234,11 @@ export default function AboutSection({
             </div>
           </PinCard>
 
-          {/* Duolingo — sits under Reading in the left column */}
-          <PinCard rotation={1.4} pinColor="teal">
-            <div className="rounded-sm border border-stone-200 bg-white p-4 dark:border-stone-700 dark:bg-stone-800">
-              <DuolingoCard data={duolingoData} bare />
-            </div>
-          </PinCard>
+        </div>
 
-          {/* Hobby stickers */}
-          <div className="sm:col-span-2 pt-2">
-            <HobbySpotlight hobbies={hobbySpotlights} />
-          </div>
-
+        {/* Hobby stickers — outside the columns so it stays full width */}
+        <div className="pt-1">
+          <HobbySpotlight hobbies={hobbySpotlights} />
         </div>
       </Pinboard>
     </Section>
