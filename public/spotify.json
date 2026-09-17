@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T14:21:57.930Z",
+  "generated_at": "2026-09-17T06:17:02.555Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -12,19 +12,29 @@
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
-      "name": "Magdalena Bay",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb8257ff04aaf62d848030efeb",
-      "url": "https://open.spotify.com/artist/1oPRcJUkloHaRLYx0olBLJ"
-    },
-    {
-      "name": "Delinquent",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebfabf28a51f1a221fb79c4985",
-      "url": "https://open.spotify.com/artist/1VtJL8QulGDXbbZwTaGV53"
-    },
-    {
       "name": "Daft Punk",
       "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+    },
+    {
+      "name": "Red Velvet",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebd6c6537054755d396684e629",
+      "url": "https://open.spotify.com/artist/1z4g3DjTBBZKhvAroFlhOM"
+    },
+    {
+      "name": "Adele",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
+      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
+    },
+    {
+      "name": "Angèle",
+      "image": "https://i.scdn.co/image/ab6761610000e5eba5396ab4c06009c05685d54d",
+      "url": "https://open.spotify.com/artist/3QVolfxko2UyCOtexhVTli"
+    },
+    {
+      "name": "Steve Lacy",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb7e3150cffbfda40c6eaf28dd",
+      "url": "https://open.spotify.com/artist/57vWImR43h4CaDao012Ofp"
     },
     {
       "name": "Dominic Fike",
@@ -32,86 +42,76 @@
       "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
     },
     {
-      "name": "The Marías",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebaf586afa2b397f1288683a76",
-      "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
+      "name": "Tame Impala",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe412a782245eb20d9626c601",
+      "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
     },
     {
-      "name": "Wallows",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebfde4e7d59f6d8868e2ffdaf5",
-      "url": "https://open.spotify.com/artist/0NIPkIjTV8mB795yEIiPYL"
-    },
-    {
-      "name": "Ellie Goulding",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb70a7b5f0ee7b18d2f2cc8d74",
-      "url": "https://open.spotify.com/artist/0X2BH1fck6amBIoJhDVmmJ"
-    },
-    {
-      "name": "Maroon 5",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebf8349dfb619a7f842242de77",
-      "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
+      "name": "Daniel Caesar",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebe4d94f7cbebb17504c25d419",
+      "url": "https://open.spotify.com/artist/20wkVLutqVOYrc0kxFs7rA"
     }
   ],
   "tracks": [
     {
-      "name": "Hourglass",
-      "artist": "Zedd, LIZ",
-      "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
-      "url": "https://open.spotify.com/track/6NwrXtcFbc8OX7wJyBqE89"
-    },
-    {
-      "name": "My Destiny - 2026 Edit",
-      "artist": "Delinquent, KCAT, Mike Delinquent Project",
-      "image": "https://i.scdn.co/image/ab67616d0000b2734a0cc2dcd8136407d597ae4d",
-      "url": "https://open.spotify.com/track/1quse5mAKsNcrilBTJosG3"
-    },
-    {
-      "name": "Malcolm In The Middle",
+      "name": "Earrings",
       "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736ad1bfc5a6102f8e926a8c5f",
-      "url": "https://open.spotify.com/track/0JeAKH2DCIgCCrZ9qBGthg"
+      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
+      "url": "https://open.spotify.com/track/0eAuGrXyGFYwur9ARUe7LJ"
     },
     {
-      "name": "My Destiny - Original Mix",
-      "artist": "Delinquent, KCAT, Mike Delinquent Project",
-      "image": "https://i.scdn.co/image/ab67616d0000b2734a0cc2dcd8136407d597ae4d",
-      "url": "https://open.spotify.com/track/3S2u6LcfsHHSzUJlPYl6Ih"
+      "name": "On My Shoulder",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
+      "url": "https://open.spotify.com/track/6hKFQb0Jsr51UFJ4sNVoUx"
     },
     {
-      "name": "Addicted To A Memory",
-      "artist": "Zedd, Bahari",
-      "image": "https://i.scdn.co/image/ab67616d0000b273d040bc5b46915b49a64d7b1d",
-      "url": "https://open.spotify.com/track/0xTGfdrWzJLKRD4U6hxSsg"
+      "name": "Ladygirl",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
+      "url": "https://open.spotify.com/track/3R1XKFgSo7a8paa77cZCM0"
     },
     {
-      "name": "I Talk To The Wind",
-      "artist": "King Crimson",
-      "image": "https://i.scdn.co/image/ab67616d0000b273da7b326bd7ffa7b6b95b0660",
-      "url": "https://open.spotify.com/track/1T0CdfKPKb1gJi4vCKpZ9C"
+      "name": "Thailand",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
+      "url": "https://open.spotify.com/track/3jcw3xe2YsP5IlMwaahetO"
     },
     {
-      "name": "My Destiny - Sped Up",
-      "artist": "Delinquent, KCAT, Mike Delinquent Project",
-      "image": "https://i.scdn.co/image/ab67616d0000b2734a0cc2dcd8136407d597ae4d",
-      "url": "https://open.spotify.com/track/0QBU8ez6HjwabV8sGro8ma"
+      "name": "Rodrick Rules",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
+      "url": "https://open.spotify.com/track/4CL6fIvrJwD7XQP0QWyfd3"
     },
     {
-      "name": "Danny Boy",
-      "artist": "Xuefei Yang",
-      "image": "https://i.scdn.co/image/ab67616d0000b2733a8a35b196cf105795ec5925",
-      "url": "https://open.spotify.com/track/21Fs9UuXGoESVVESdWTxZ5"
+      "name": "Accutane",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
+      "url": "https://open.spotify.com/track/02TadTMowLwJiGAC64ehyu"
     },
     {
-      "name": "Cry for Me",
-      "artist": "Magdalena Bay",
-      "image": "https://i.scdn.co/image/ab67616d0000b2737339f7e95927d4b823189f62",
-      "url": "https://open.spotify.com/track/2RhHct6gGXSrZ1zHjovhRq"
+      "name": "Hot in NY",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
+      "url": "https://open.spotify.com/track/4RYRUDApJsPKTJIvBUz6a5"
     },
     {
-      "name": "Shave It Up",
-      "artist": "Zedd",
-      "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
-      "url": "https://open.spotify.com/track/4mtCNSfEwcwvm9iLG1bADY"
+      "name": "Sweet Boy",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
+      "url": "https://open.spotify.com/track/59c2xv2kMzYM6HR9oY6BIa"
+    },
+    {
+      "name": "Roommates",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
+      "url": "https://open.spotify.com/track/5vPUv0xziXbV4lnWeVNXNq"
+    },
+    {
+      "name": "Mr. Incorrect",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
+      "url": "https://open.spotify.com/track/1JOUKim8ZlHaM5N43sQ9dq"
     }
   ]
 }
