@@ -35,6 +35,7 @@ export async function getStaticProps() {
       statsData: readJsonSafe('stats.json'),
       spotifyData: readJsonSafe('spotify.json'),
       goodreadsData: readJsonSafe('goodreads.json'),
+      duolingoData: readJsonSafe('duolingo.json'),
     },
   };
 }
@@ -81,7 +82,7 @@ const education = [
   },
 ];
 
-export default function Home({ statsData, spotifyData, goodreadsData }) {
+export default function Home({ statsData, spotifyData, goodreadsData, duolingoData }) {
   return (
     <>
       <Head>
@@ -102,6 +103,7 @@ export default function Home({ statsData, spotifyData, goodreadsData }) {
             statsData={statsData}
             spotifyData={spotifyData}
             goodreadsData={goodreadsData}
+            duolingoData={duolingoData}
           />
 
           <MapSection />

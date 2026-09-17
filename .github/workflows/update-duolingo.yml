@@ -1,0 +1,49 @@
+name: Update Duolingo data
+
+# Duolingo has no official API. This reads the unofficial /2017-06-30/users
+# endpoint, verified on 2026-09-17 to answer HTTP 200 with usable JSON from a
+# GitHub Actions runner (no auth, no UA spoofing, no throttling across rapid
+# requests). If that ever changes, the script exits non-zero and keeps the
+# last-good file rather than publishing an empty card.
+
+on:
+  schedule:
+    - cron: "20 13 * * *"  # staggered off the 13:00 UTC pile-up
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "update-duolingo"
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch Duolingo data
+        env:
+          DUOLINGO_USERNAME: maydotsean
+        run: node scripts/update_duolingo.mjs
+
+      - name: Commit & push changes
+        run: |
+          set -euo pipefail
+          if [[ -n "$(git status --porcelain public/duolingo.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add public/duolingo.json
+            git commit -m "chore(duolingo): daily refresh"
+            git push
+          else
+            echo "No changes to commit."
+          fi

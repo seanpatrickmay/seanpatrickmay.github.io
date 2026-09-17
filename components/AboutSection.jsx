@@ -6,6 +6,7 @@ import LineSparkline from '@/components/ui/LineSparkline';
 import BarSparkline from '@/components/ui/BarSparkline';
 import { getBostonJourneyEquivalence } from '@/lib/journeyEquivalents';
 import GoodreadsCard from '@/components/GoodreadsCard';
+import DuolingoCard from '@/components/DuolingoCard';
 import Pinboard from '@/components/Pinboard';
 import PinCard from '@/components/PinCard';
 import { Sparkles } from 'lucide-react';
@@ -38,6 +39,7 @@ export default function AboutSection({
   statsData = null,
   spotifyData = null,
   goodreadsData = null,
+  duolingoData = null,
 }) {
   const stats = statsData;
   const spotify = spotifyData;
@@ -208,6 +210,13 @@ export default function AboutSection({
               <div className="mt-2">
                 <SpotifyTopTracks tracks={spotify?.tracks ?? []} visibleCount={7} />
               </div>
+            </div>
+          </PinCard>
+
+          {/* Duolingo — sits under Reading in the left column */}
+          <PinCard rotation={1.4} pinColor="teal">
+            <div className="rounded-sm border border-stone-200 bg-white p-4 dark:border-stone-700 dark:bg-stone-800">
+              <DuolingoCard data={duolingoData} bare />
             </div>
           </PinCard>
 
