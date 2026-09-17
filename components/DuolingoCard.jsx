@@ -14,22 +14,13 @@ export default function DuolingoCard({ data = null, bare = false }) {
   // dabbled-in language has been filtered out upstream.
   const shownXp = Number(data.shownXp) || courses.reduce((s, c) => s + (Number(c.xp) || 0), 0);
 
-  const since = data.joined
-    ? new Date(data.joined).toLocaleDateString(undefined, { month: 'short', year: 'numeric' })
-    : null;
-
   const content = (
     <div>
       <div className="flex items-baseline justify-between gap-2">
         <div className="text-[10px] font-semibold uppercase tracking-widest text-lime-700/80 dark:text-lime-400/80">
           duolingo
         </div>
-        <span className="flex items-baseline gap-1.5">
-          <StaleBadge staleness={data?._staleness} />
-          {since && (
-            <span className="text-[10px] text-stone-400 dark:text-stone-500">since {since}</span>
-          )}
-        </span>
+        <StaleBadge staleness={data?._staleness} />
       </div>
 
       <div className="mt-1.5 flex items-baseline gap-2">

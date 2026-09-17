@@ -87,8 +87,9 @@ function ProjectPolaroidFan({ projects = [] }) {
   );
 }
 
-export default function Hero({ links, featuredProjects = [] }) {
+export default function Hero({ links, featuredProjects = [], timeline = { current: [] } }) {
   const projects = Array.isArray(featuredProjects) ? featuredProjects.slice(0, 3) : [];
+  const highlights = (timeline.current || []).filter(e => e.highlight);
 
   return (
     <section id="home" className="section-container py-12 scroll-mt-32 lg:scroll-mt-16">
@@ -127,13 +128,20 @@ export default function Hero({ links, featuredProjects = [] }) {
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-2 pt-1 lg:hidden animate-fade-up [animation-delay:150ms]">
-              <Badge variant="outline" className="text-xs">Quant Research &mdash; NU Systematic Alpha</Badge>
-              <Badge variant="outline" className="text-xs">SWE Intern &mdash; Capital One</Badge>
-            </div>
+            {/* Derived from the timeline, so a finished role cannot linger here
+                the way "SWE Intern — Capital One" did after August. */}
+            {highlights.length > 0 && (
+              <div className="flex flex-wrap gap-2 pt-1 lg:hidden animate-fade-up [animation-delay:150ms]">
+                {highlights.map(entry => (
+                  <Badge key={entry.title} variant="outline" className="text-xs">
+                    {entry.title} &mdash; {entry.meta?.[0]}
+                  </Badge>
+                ))}
+              </div>
+            )}
 
             <p className="text-base text-slate-600 dark:text-slate-300 leading-relaxed animate-fade-up [animation-delay:200ms]">
-              built an agentic AI tutor at NExT, now i'm doing quant research and interning at Capital One this summer. triathlons, prompting, reading, and stacking some chips in between
+              built an agentic AI tutor at NExT, spent this past summer interning at Capital One, and now i'm doing quant research. triathlons, prompting, reading, and stacking some chips in between
             </p>
 
             <div className="flex flex-wrap gap-3 pt-2 animate-fade-up [animation-delay:300ms]">

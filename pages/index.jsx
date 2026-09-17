@@ -5,6 +5,7 @@ import rawProjects from '@/public/projects.json' assert { type: 'json' };
 import rawExperience from '@/public/experience.json' assert { type: 'json' };
 import rawOtherWork from '@/public/other-work.json' assert { type: 'json' };
 import { getStaleness } from '@/lib/freshness';
+import { splitTimeline } from '@/lib/timeline';
 import { validateProjects } from '@/lib/projects';
 import { validateExperience } from '@/lib/experience';
 import { validateWork } from '@/lib/work';
@@ -46,6 +47,7 @@ export async function getStaticProps() {
       spotifyData: readFeed('spotify.json'),
       goodreadsData: readFeed('goodreads.json'),
       duolingoData: readFeed('duolingo.json'),
+      timeline: splitTimeline(Date.now()),
     },
   };
 }
@@ -92,7 +94,7 @@ const education = [
   },
 ];
 
-export default function Home({ statsData, spotifyData, goodreadsData, duolingoData }) {
+export default function Home({ statsData, spotifyData, goodreadsData, duolingoData, timeline }) {
   return (
     <>
       <Head>
@@ -104,9 +106,9 @@ export default function Home({ statsData, spotifyData, goodreadsData, duolingoDa
       </Head>
 
       <div className="lg:mx-auto lg:flex lg:max-w-screen-2xl lg:items-start lg:justify-center lg:gap-10 lg:px-12 xl:px-16">
-        <Header links={links} />
+        <Header links={links} timeline={timeline} />
         <main id="main-content" className="flex-1 space-y-12 pt-32 pb-24 sm:pt-28 md:pt-24 lg:min-w-0 lg:pt-16 xl:pt-20">
-          <Hero links={links} featuredProjects={featuredProjects} />
+          <Hero links={links} featuredProjects={featuredProjects} timeline={timeline} />
           <AboutSection
             featuredActivities={otherWork}
             projectHighlights={[lifeDashboardProject, lecteurAideProject].filter(Boolean)}

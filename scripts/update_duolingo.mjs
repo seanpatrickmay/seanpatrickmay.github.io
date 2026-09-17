@@ -82,7 +82,6 @@ function buildOutput(user) {
     // Total across shown courses, so the card's bars sum to their own 100%.
     shownXp: courses.reduce((sum, c) => sum + c.xp, 0),
     courses,
-    joined: user.creationDate ? new Date(user.creationDate * 1000).toISOString() : null,
     profileUrl: `https://www.duolingo.com/profile/${user.username || USERNAME}`,
   };
 }

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import ThemeToggle from '@/components/ThemeToggle';
+import SidebarTimeline from '@/components/SidebarTimeline';
 import PillLink from '@/components/ui/PillLink';
 import PinCard from '@/components/PinCard';
 import {
@@ -23,7 +24,7 @@ const navItems = [
   { id: 'other-work', label: 'other', icon: ClipboardList },
 ];
 
-export default function Header({ links }) {
+export default function Header({ links, timeline = { current: [], past: [] } }) {
   const [scrollOffset, setScrollOffset] = useState(0);
   const [sidebarHidden, setSidebarHidden] = useState(false);
   const lastScrollRef = useRef(0);
@@ -143,110 +144,8 @@ export default function Header({ links }) {
                   i write code and do math
                 </p>
                 <div className="mt-4 space-y-4 text-sm text-slate-600 dark:text-slate-300">
-                  <div>
-                    <div className="text-xs font-semibold lowercase tracking-wide text-slate-500 dark:text-slate-300">
-                      now
-                    </div>
-                    <ul className="mt-3 space-y-2">
-                      <li className="flex items-start gap-2">
-                        {/* Wordmark stands in for both the icon and the org name;
-                            the square logo would render the text illegibly small.
-                            Two files rather than a CSS filter so the red swoosh
-                            survives on dark backgrounds. */}
-                        <img
-                          src="/logos/normalized/capitalone-wordmark.png"
-                          alt="Capital One"
-                          loading="lazy"
-                          className="mt-1 h-3.5 w-auto flex-none dark:hidden"
-                        />
-                        <img
-                          src="/logos/normalized/capitalone-wordmark-dark.png"
-                          alt="Capital One"
-                          loading="lazy"
-                          className="mt-1 hidden h-3.5 w-auto flex-none dark:block"
-                        />
-                        <div className="min-w-0 leading-snug">
-                          <div className="font-medium text-slate-900 dark:text-slate-100">SWE Intern</div>
-                          <div className="text-xs text-slate-500 dark:text-slate-300">
-                            Richmond, VA · June 1 – August 8, 2026
-                          </div>
-                        </div>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="mt-0.5" aria-hidden="true">
-                          🎓
-                        </span>
-                        <div className="min-w-0 leading-snug">
-                          <div className="font-medium text-slate-900 dark:text-slate-100">B.S. CS &amp; Math</div>
-                          <div className="text-xs text-slate-500 dark:text-slate-300">
-                            Northeastern University · May 2027
-                          </div>
-                        </div>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="mt-0.5" aria-hidden="true">
-                          📈
-                        </span>
-                        <div className="min-w-0 leading-snug">
-                          <div className="font-medium text-slate-900 dark:text-slate-100">Quant Research</div>
-                          <div className="text-xs text-slate-500 dark:text-slate-300">
-                            NU Systematic Alpha
-                          </div>
-                        </div>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="mt-0.5" aria-hidden="true">
-                          📝
-                        </span>
-                        <div className="min-w-0 leading-snug">
-                          <div className="font-medium text-slate-900 dark:text-slate-100">Calc III Grader</div>
-                          <div className="text-xs text-slate-500 dark:text-slate-300">
-                            NU College of Science
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <div className="text-xs font-semibold lowercase tracking-wide text-slate-500 dark:text-slate-300">
-                      previously
-                    </div>
-                    <ul className="mt-3 space-y-2">
-                      <li className="flex items-start gap-2">
-                        <span className="mt-0.5" aria-hidden="true">
-                          💼
-                        </span>
-                        <div className="min-w-0 leading-snug">
-                          <div className="font-medium text-slate-900 dark:text-slate-100">Freelance SWE</div>
-                          <div className="text-xs text-slate-500 dark:text-slate-300">
-                            Comic Book Grading App · Jan – Jun 2026
-                          </div>
-                        </div>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="mt-0.5" aria-hidden="true">
-                          🧪
-                        </span>
-                        <div className="min-w-0 leading-snug">
-                          <div className="font-medium text-slate-900 dark:text-slate-100">SWE Co-op</div>
-                          <div className="text-xs text-slate-500 dark:text-slate-300">
-                            NExT Consulting · Fall 2025
-                          </div>
-                        </div>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="mt-0.5" aria-hidden="true">
-                          🔧
-                        </span>
-                        <div className="min-w-0 leading-snug">
-                          <div className="font-medium text-slate-900 dark:text-slate-100">SDE Co-op</div>
-                          <div className="text-xs text-slate-500 dark:text-slate-300">
-                            General Dynamics Electric Boat · 2024
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
+                  <SidebarTimeline label="now" entries={timeline.current} />
+                  <SidebarTimeline label="previously" entries={timeline.past} />
                 </div>
               </section>
               </PinCard>
