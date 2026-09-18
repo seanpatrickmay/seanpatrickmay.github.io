@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T17:26:25.128Z",
+  "generated_at": "2026-09-18T16:55:02.393Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -32,9 +32,9 @@
       "url": "https://open.spotify.com/artist/3QVolfxko2UyCOtexhVTli"
     },
     {
-      "name": "Steve Lacy",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb7e3150cffbfda40c6eaf28dd",
-      "url": "https://open.spotify.com/artist/57vWImR43h4CaDao012Ofp"
+      "name": "Konstantin Scherbakov",
+      "image": "https://i.scdn.co/image/ab6772690000c46cca1949a1c785c7b7cc429b9b",
+      "url": "https://open.spotify.com/artist/6f4LXqcGifD364sFBKFfoN"
     },
     {
       "name": "Dominic Fike",
@@ -47,9 +47,9 @@
       "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
     },
     {
-      "name": "Daniel Caesar",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebe4d94f7cbebb17504c25d419",
-      "url": "https://open.spotify.com/artist/20wkVLutqVOYrc0kxFs7rA"
+      "name": "Steve Lacy",
+      "image": "https://i.scdn.co/image/ab6761610000e5eb7e3150cffbfda40c6eaf28dd",
+      "url": "https://open.spotify.com/artist/57vWImR43h4CaDao012Ofp"
     }
   ],
   "tracks": [
@@ -102,16 +102,16 @@
       "url": "https://open.spotify.com/track/59c2xv2kMzYM6HR9oY6BIa"
     },
     {
+      "name": "Shostakovich / Arr. Atovmyan: Suite from the Gadfly, Op. 97a: VIII. Romance",
+      "artist": "Dmitri Shostakovich, Tasmin Little, Piers Lane",
+      "image": "https://i.scdn.co/image/ab67616d0000b27316904029c31ca50916e3116a",
+      "url": "https://open.spotify.com/track/7c8EKQLv5ld1uWm1BdGqds"
+    },
+    {
       "name": "Roommates",
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
       "url": "https://open.spotify.com/track/5vPUv0xziXbV4lnWeVNXNq"
-    },
-    {
-      "name": "Mr. Incorrect",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
-      "url": "https://open.spotify.com/track/1JOUKim8ZlHaM5N43sQ9dq"
     }
   ]
 }
