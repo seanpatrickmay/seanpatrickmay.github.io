@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T16:55:02.393Z",
+  "generated_at": "2026-09-19T16:12:47.937Z",
   "artists": [
     {
       "name": "Malcolm Todd",
@@ -42,14 +42,14 @@
       "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
     },
     {
+      "name": "Håvard Gimse",
+      "image": "https://i.scdn.co/image/ab67616d0000b273da7a0416ab8a7621f19d68f7",
+      "url": "https://open.spotify.com/artist/1dk8ZJIE1IET4n4LrxzD6I"
+    },
+    {
       "name": "Tame Impala",
       "image": "https://i.scdn.co/image/ab6761610000e5ebe412a782245eb20d9626c601",
       "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
-    },
-    {
-      "name": "Steve Lacy",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb7e3150cffbfda40c6eaf28dd",
-      "url": "https://open.spotify.com/artist/57vWImR43h4CaDao012Ofp"
     }
   ],
   "tracks": [
