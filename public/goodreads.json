@@ -1,6 +1,19 @@
 {
-  "generated_at": "2026-09-19T16:19:18.735Z",
+  "generated_at": "2026-09-20T16:43:14.424Z",
   "currentlyReading": [
+    {
+      "title": "Blood Meridian, or, the Evening Redness in the West",
+      "author": "Cormac McCarthy",
+      "rating": 0,
+      "avgRating": 4.16,
+      "dateAdded": "Sat, 19 Sep 2026 15:30:18 -0700",
+      "dateRead": null,
+      "published": "1985",
+      "numPages": 351,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1701688704l/394535._SX98_.jpg",
+      "bookId": "394535",
+      "link": "https://www.goodreads.com/review/show/8418246676?utm_medium=api&utm_source=rss"
+    },
     {
       "title": "Les Misérables",
       "author": "Victor Hugo",
@@ -13,19 +26,6 @@
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1411852091l/24280._SY160_.jpg",
       "bookId": "24280",
       "link": "https://www.goodreads.com/review/show/8944134053?utm_medium=api&utm_source=rss"
-    },
-    {
-      "title": "The Obscene Bird of Night",
-      "author": "José Donoso",
-      "rating": 0,
-      "avgRating": 3.83,
-      "dateAdded": "Tue, 25 Aug 2026 20:35:32 -0700",
-      "dateRead": null,
-      "published": "1970",
-      "numPages": 493,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1716123576l/200176166._SX98_.jpg",
-      "bookId": "200176166",
-      "link": "https://www.goodreads.com/review/show/8891966244?utm_medium=api&utm_source=rss"
     },
     {
       "title": "The Trial",
@@ -55,6 +55,19 @@
     }
   ],
   "recentlyRead": [
+    {
+      "title": "The Obscene Bird of Night",
+      "author": "José Donoso",
+      "rating": 4,
+      "avgRating": 3.83,
+      "dateAdded": "Sat, 19 Sep 2026 13:21:25 -0700",
+      "dateRead": "2026-09-19T00:00:00.000Z",
+      "published": "1970",
+      "numPages": 493,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1716123576l/200176166._SX98_.jpg",
+      "bookId": "200176166",
+      "link": "https://www.goodreads.com/review/show/8891966244?utm_medium=api&utm_source=rss"
+    },
     {
       "title": "A Clockwork Orange",
       "author": "Anthony Burgess",
@@ -197,23 +210,10 @@
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1478641029l/32929156._SX98_.jpg",
       "bookId": "32929156",
       "link": "https://www.goodreads.com/review/show/8418039770?utm_medium=api&utm_source=rss"
-    },
-    {
-      "title": "Children of Dune (Dune, #3)",
-      "author": "Frank Herbert",
-      "rating": 4,
-      "avgRating": 3.96,
-      "dateAdded": "Sat, 07 Mar 2026 10:54:12 -0800",
-      "dateRead": null,
-      "published": "1976",
-      "numPages": 609,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1564783201l/44492286._SY160_.jpg",
-      "bookId": "44492286",
-      "link": "https://www.goodreads.com/review/show/8418072991?utm_medium=api&utm_source=rss"
     }
   ],
-  "totalPages": 7644,
-  "yearPagesRead": 6041,
-  "yearBooksRead": 12,
+  "totalPages": 8137,
+  "yearPagesRead": 6534,
+  "yearBooksRead": 13,
   "profileUrl": "https://www.goodreads.com/user/show/199381877"
 }
