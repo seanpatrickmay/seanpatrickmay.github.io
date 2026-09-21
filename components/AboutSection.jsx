@@ -9,6 +9,7 @@ import { getSpotifyWindowLabel } from '@/lib/spotifyWindow';
 import GoodreadsCard from '@/components/GoodreadsCard';
 import DuolingoCard from '@/components/DuolingoCard';
 import Pinboard from '@/components/Pinboard';
+import MovementMap from '@/components/MovementMap';
 import PinCard from '@/components/PinCard';
 import StaleBadge from '@/components/ui/StaleBadge';
 import JourneyArc from '@/components/ui/JourneyArc';
@@ -161,7 +162,14 @@ export default function AboutSection({
   return (
     <Section id="about" title="about me" icon={Sparkles}>
       <Pinboard>
-        <div className="columns-1 gap-5 sm:columns-2 xl:columns-3 [&>*]:mb-5 [&>*]:break-inside-avoid">
+        {/* Full width, above the masonry: a world map in a ~300px masonry
+            column would be unreadable, and this one spans Puerto Rico to
+            Hungary. Note the wrapper — Pinboard puts className on its outer
+            element, so spacing has to live on a div of our own. */}
+        <div className="space-y-5">
+          <MovementMap />
+
+          <div className="columns-1 gap-5 sm:columns-2 xl:columns-3 [&>*]:mb-5 [&>*]:break-inside-avoid">
 
           {/* Training Stats — expanded */}
           <PinCard rotation={-1.8} pinColor="red">
@@ -300,6 +308,7 @@ export default function AboutSection({
             </div>
           </PinCard>
 
+          </div>
         </div>
 
       </Pinboard>

@@ -19,6 +19,15 @@ import {
   LAND_NEIGHBOUR,
 } from '@/components/map/chart';
 
+/**
+ * A pin's own coordinates win over a lookup by name. Movement pins resolve
+ * theirs from GPS at backfill time, which is how "Dover" stays in Vermont;
+ * the curated work and education pins keep using the COORDINATES table.
+ */
+function coordsOf(pin) {
+  return pin?.coords ?? toMapCoords(pin?.location);
+}
+
 const US_TOPO = 'https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json';
 const WORLD_TOPO = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json';
 
@@ -68,7 +77,7 @@ function getInsetPins(pins, useInset = true) {
 
 function ThreadPath({ pins }) {
   const mapped = pins
-    .map((p) => ({ coords: toMapCoords(p.location), origIndex: p._origIndex ?? 0 }))
+    .map((p) => ({ coords: coordsOf(p), origIndex: p._origIndex ?? 0 }))
     .filter((m) => m.coords);
 
   if (mapped.length < 2) return null;
@@ -95,20 +104,25 @@ function ThreadPath({ pins }) {
 }
 
 function PinMarker({ pin, isActive, onHover, onClick, scale = 2000, color = '#ef4444' }) {
-  const coords = toMapCoords(pin.location);
+  const coords = coordsOf(pin);
   if (!coords) return null;
 
   // Scale pin size inversely with zoom — larger pins when zoomed out
   const sizeFactor = Math.max(0.9, Math.min(2000 / scale, 1.6));
-  // Movement pins carry a `weight` (activities at that place). Area grows
-  // with the count rather than radius, so forty runs does not draw a pin
-  // forty times the ink of one.
-  const weightFactor = pin.weight
-    ? Math.min(2.6, 0.72 + Math.sqrt(pin.weight) * 0.26)
-    : 1;
-  const baseR = (isActive ? 7 : 5.5) * sizeFactor * weightFactor;
-  const pulseR = 10 * sizeFactor;
-  const sw = (isActive ? 2.5 : 2) * Math.min(sizeFactor, 1.2);
+
+  // Weighted pins size themselves and ignore sizeFactor entirely. The two
+  // used to multiply, and on the world-scale movement map that bottomed out
+  // at 1.6 x 2.6 — a radius of 23 viewBox units, which drew the whole
+  // Boston-to-Baltimore cluster as one blob. Radius grows with the square
+  // root of the count so 193 activities reads as bigger than 1 without
+  // drawing 193 times the ink.
+  const baseR = pin.weight
+    ? Math.min(9, 3 + Math.sqrt(pin.weight) * 0.42) * (isActive ? 1.15 : 1)
+    : (isActive ? 7 : 5.5) * sizeFactor;
+  const pulseR = baseR * 1.8;
+  // Stroke follows the dot rather than the zoom, or a small pin ends up
+  // mostly outline.
+  const sw = Math.max(0.6, baseR * (isActive ? 0.3 : 0.24));
 
   return (
     <Marker coordinates={coords}>
@@ -157,12 +171,12 @@ export default function PinMap({
   const mainPins = useMemo(() => getMainPins(pins, useInset), [pins, useInset]);
   const insetPins = useMemo(() => getInsetPins(pins, useInset), [pins, useInset]);
   const projection = useMemo(
-    () => computeProjection(mainPins.map((p) => toMapCoords(p.location)).filter(Boolean)),
+    () => computeProjection(mainPins.map(coordsOf).filter(Boolean)),
     [mainPins],
   );
   const insetProjection = useMemo(() => {
     if (insetPins.length === 0) return { center: [-20, 46], scale: 100 };
-    const coords = insetPins.map((p) => toMapCoords(p.location)).filter(Boolean);
+    const coords = insetPins.map(coordsOf).filter(Boolean);
     // Midpoint between Boston anchor and the inset pin(s)
     const allLons = [-71, ...coords.map((c) => c[0])];
     const allLats = [42.3, ...coords.map((c) => c[1])];
@@ -207,7 +221,11 @@ export default function PinMap({
           height={projection.height}
           style={{ width: '100%', height: 'auto' }}
         >
-          <ChartDefs id="chart-main" wobble={2} />
+          {/* The wobble is in viewBox units, so it has to shrink as the map
+              zooms out: ±2 units is a pleasing hand-inked coastline across a
+              few US states, and a smear that closes the Irish Sea and the
+              English Channel across the whole North Atlantic. */}
+          <ChartDefs id="chart-main" wobble={projection.scale > 1000 ? 2 : 0.7} />
           <ChartWater id="chart-main" width={MAP_WIDTH} height={projection.height} />
 
           <Graticule
@@ -265,7 +283,9 @@ export default function PinMap({
               const bOrgActive = activePin && activePin.org === b.org;
               if (aActive !== bActive) return aActive ? 1 : -1;
               if (aOrgActive !== bOrgActive) return aOrgActive ? 1 : -1;
-              return 0;
+              // Heaviest first, so it paints underneath: a one-activity place
+              // inside a 193-activity circle would otherwise be unclickable.
+              return (b.weight ?? 0) - (a.weight ?? 0);
             })
             .map((pin, i) => (
             <PinMarker
@@ -354,7 +374,7 @@ export default function PinMap({
             {insetPins.length > 0 && (
               <>
                 {insetPins.map((pin, i) => {
-                  const coords = toMapCoords(pin.location);
+                  const coords = coordsOf(pin);
                   if (!coords) return null;
                   const clr = pinColorForIndex(pin._origIndex ?? i);
                   return (
@@ -377,7 +397,7 @@ export default function PinMap({
               <circle r={2.5} fill="#ef4444" stroke="white" strokeWidth={0.8} opacity={0.7} />
             </Marker>
             {insetPins.map((pin, i) => {
-              const coords = toMapCoords(pin.location);
+              const coords = coordsOf(pin);
               if (!coords) return null;
               const clr = pinColorForIndex(pin._origIndex ?? i);
               return (
