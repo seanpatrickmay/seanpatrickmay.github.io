@@ -11,6 +11,12 @@ const ROOT_DIR = path.dirname(url.fileURLToPath(import.meta.url));
 const LOGO_DIR = path.join(ROOT_DIR, '..', 'public', 'logos');
 const OUTPUT_DIR = path.join(LOGO_DIR, 'normalized');
 
+// Note: normalized/capitalone-wordmark{,-dark}.png are 200x72 and hand-made —
+// a wordmark squashed into a 200x200 contain box is illegible at icon size.
+// They have no source here on purpose, and this script never deletes, so it
+// leaves them alone. Do not "fix" the missing source by adding one.
+
+
 async function ensureDirectoryExists(dirPath) {
   try {
     const stats = await stat(dirPath);

@@ -83,23 +83,6 @@ function SportSplit({ split }) {
         ))}
       </ul>
 
-      {split.longest.length > 0 && (
-        <div className="mt-2.5 text-[11px] text-slate-500 dark:text-slate-400">
-          longest, past 30d:{' '}
-          {/* Each figure carries its own sport label. `longest` is sorted by
-              distance, so a fixed "ride & run" would silently mislabel the
-              day a run goes further than any ride. */}
-          {split.longest.map((entry, i) => (
-            <span key={entry.label}>
-              {i > 0 && ' · '}
-              <span className="font-medium tabular-nums text-slate-700 dark:text-slate-200">
-                {KM_FORMAT.format(Math.round(entry.km))} km
-              </span>{' '}
-              {entry.label}
-            </span>
-          ))}
-        </div>
-      )}
     </div>
   );
 }

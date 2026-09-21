@@ -8,7 +8,7 @@ name: Update Duolingo data
 
 on:
   schedule:
-    - cron: "20 13 * * *"  # staggered off the 13:00 UTC pile-up
+    - cron: "24 13 * * *"
   workflow_dispatch: {}
 
 permissions:

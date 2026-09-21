@@ -15,7 +15,7 @@ export default function SidebarTimeline({ label, entries = [] }) {
       </div>
       <ul className="mt-3 space-y-2">
         {entries.map(entry => (
-          <li key={`${entry.title}-${entry.start}`} className="flex items-start gap-2">
+          <li key={`${entry.org}-${entry.start}`} className="flex items-start gap-2">
             {entry.wordmark ? (
               <>
                 <img
@@ -37,10 +37,18 @@ export default function SidebarTimeline({ label, entries = [] }) {
               </span>
             )}
             <div className="min-w-0 leading-snug">
-              <div className="font-medium text-slate-900 dark:text-slate-100">{entry.title}</div>
-              {entry.meta?.length > 0 && (
-                <div className="text-xs text-slate-500 dark:text-slate-300">
-                  {entry.meta.join(' · ')}
+              {/* Organisation leads: it is what gets recognised at a glance,
+                  and "SDE Co-op" alone says nothing about where. The wordmark
+                  already names Capital One, so its text line is redundant. */}
+              {!entry.wordmark && (
+                <div className="font-medium text-slate-900 dark:text-slate-100">{entry.org}</div>
+              )}
+              {entry.role && (
+                <div className="text-xs text-slate-600 dark:text-slate-300">{entry.role}</div>
+              )}
+              {entry.detail?.length > 0 && (
+                <div className="text-xs text-slate-400 dark:text-slate-500">
+                  {entry.detail.join(' · ')}
                 </div>
               )}
             </div>

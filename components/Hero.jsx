@@ -133,8 +133,8 @@ export default function Hero({ links, featuredProjects = [], timeline = { curren
             {highlights.length > 0 && (
               <div className="flex flex-wrap gap-2 pt-1 lg:hidden animate-fade-up [animation-delay:150ms]">
                 {highlights.map(entry => (
-                  <Badge key={entry.title} variant="outline" className="text-xs">
-                    {entry.title} &mdash; {entry.meta?.[0]}
+                  <Badge key={entry.org} variant="outline" className="text-xs">
+                    {entry.role} &mdash; {entry.org}
                   </Badge>
                 ))}
               </div>

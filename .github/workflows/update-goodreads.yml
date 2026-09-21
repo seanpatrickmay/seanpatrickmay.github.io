@@ -2,7 +2,7 @@ name: Update Goodreads data
 
 on:
   schedule:
-    - cron: "0 13 * * *"  # 13:00 UTC ~ 9:00 AM ET during DST
+    - cron: "8 13 * * *"
   workflow_dispatch: {}
 
 permissions:

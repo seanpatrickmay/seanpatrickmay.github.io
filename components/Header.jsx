@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import ThemeToggle from '@/components/ThemeToggle';
 import SidebarTimeline from '@/components/SidebarTimeline';
-import PillLink from '@/components/ui/PillLink';
 import PinCard from '@/components/PinCard';
 import { Briefcase, Github, Home, Linkedin, Mail, Sparkles, Trophy } from 'lucide-react';
 
@@ -14,7 +13,6 @@ const navItems = [
 
 export default function Header({ links, timeline = { current: [], past: [] } }) {
   const [scrollOffset, setScrollOffset] = useState(0);
-  const [sidebarHidden, setSidebarHidden] = useState(false);
   const lastScrollRef = useRef(0);
   const resetTimeoutRef = useRef(null);
 
@@ -50,24 +48,6 @@ export default function Header({ links, timeline = { current: [], past: [] } }) 
     };
   }, []);
 
-  useEffect(() => {
-    if (typeof window === 'undefined') return undefined;
-
-    const experienceEl = document.getElementById('experience');
-    if (!experienceEl) return undefined;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // Hide sidebar 300px before the experience section enters the viewport
-        setSidebarHidden(entry.isIntersecting || entry.boundingClientRect.top < 0);
-      },
-      { rootMargin: '-300px 0px 0px 0px', threshold: 0 },
-    );
-
-    observer.observe(experienceEl);
-
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <>
@@ -101,99 +81,78 @@ export default function Header({ links, timeline = { current: [], past: [] } }) 
         </nav>
       </header>
 
+      {/* Stays put for the whole page. It used to slide away 300px before the
+          map section, which meant it vanished mid-scroll through "about me"
+          with no way to get it back. */}
       <aside
-        aria-label="Sidebar navigation"
-        className={`hidden lg:block lg:flex-none lg:self-stretch transition-all duration-500 ease-out ${sidebarHidden ? 'overflow-hidden' : 'overflow-visible'}`}
-        style={{ width: sidebarHidden ? 0 : 288 }}
+        aria-label="Sidebar"
+        className="hidden w-72 lg:block lg:flex-none lg:self-stretch"
       >
         <div className="sticky top-6">
           <div className="flex min-h-[calc(100vh_-_3rem)] flex-col justify-center py-6">
             <div
-              className="flex w-72 flex-col gap-5 transition-all duration-500 ease-out will-change-transform"
-              style={{
-                transform: sidebarHidden
-                  ? `translateX(-120%) translateY(${scrollOffset}px)`
-                  : `translateY(${scrollOffset}px)`,
-                opacity: sidebarHidden ? 0 : 1,
-              }}
+              className="flex w-72 flex-col gap-5 will-change-transform"
+              style={{ transform: `translateY(${scrollOffset}px)` }}
             >
               <PinCard rotation={-1.2} pinColor="red">
-              <section aria-label="About" className="rounded-3xl border border-stone-300/80 bg-stone-50 p-6 shadow-lg dark:border-stone-700/70 dark:bg-stone-900">
-                <div className="flex items-start justify-between gap-3">
-                  <a
-                    href="#home"
-                    className="font-display text-2xl leading-none tracking-tight text-slate-900 transition hover:text-slate-700 dark:text-slate-100 dark:hover:text-slate-300"
-                  >
-                    Sean P. May
-                  </a>
-                  <ThemeToggle />
-                </div>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-                  i write code and do math
-                </p>
-                <div className="mt-4 space-y-4 text-sm text-slate-600 dark:text-slate-300">
-                  <SidebarTimeline label="now" entries={timeline.current} />
-                  <SidebarTimeline label="previously" entries={timeline.past} />
-                </div>
-              </section>
-              </PinCard>
-
-              <PinCard rotation={0.8} pinColor="teal">
-              <section aria-label="Navigation" className="rounded-3xl border border-stone-300/80 bg-stone-50 p-6 shadow-lg dark:border-stone-700/70 dark:bg-stone-900">
-                <div className="text-xs font-semibold lowercase tracking-[0.2em] text-slate-500 dark:text-slate-300">
-                  navigate
-                </div>
-                <nav aria-label="Primary" className="mt-4 space-y-1.5">
-                  {navItems.map(({ id, label, icon: Icon }) => (
+                <section
+                  aria-label="About"
+                  className="rounded-3xl border border-stone-300/80 bg-stone-50 p-6 shadow-lg dark:border-stone-700/70 dark:bg-stone-900"
+                >
+                  <div className="flex items-start justify-between gap-3">
                     <a
-                      key={id}
-                      href={`#${id}`}
-                      className="group flex items-center gap-3 rounded-2xl px-3 py-2 text-sm font-medium text-stone-600 transition hover:bg-stone-100 hover:text-stone-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 dark:text-stone-300 dark:hover:bg-stone-800 dark:hover:text-white"
+                      href="#home"
+                      className="font-display text-2xl leading-none tracking-tight text-slate-900 transition hover:text-slate-700 dark:text-slate-100 dark:hover:text-slate-300"
                     >
-                      <span className="flex h-8 w-8 items-center justify-center rounded-xl border border-transparent bg-stone-100 text-stone-600 transition group-hover:border-stone-300 group-hover:bg-white group-hover:text-stone-900 dark:bg-stone-800 dark:text-stone-400 dark:group-hover:border-stone-600 dark:group-hover:bg-stone-700 dark:group-hover:text-white">
-                        <Icon className="h-4 w-4" />
-                      </span>
-                      {label}
+                      Sean P. May
                     </a>
-                  ))}
-                </nav>
-              </section>
-              </PinCard>
+                    <ThemeToggle />
+                  </div>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                    i write code and do math
+                  </p>
 
-              <PinCard rotation={-0.6} pinColor="blue">
-              <section aria-label="Contact" className="rounded-3xl border border-stone-300/80 bg-stone-50 p-6 shadow-lg dark:border-stone-700/70 dark:bg-stone-900">
-                <div className="text-xs font-semibold lowercase tracking-[0.2em] text-slate-500 dark:text-slate-300">
-                  say hi
-                </div>
-                <div className="mt-4 flex flex-col gap-2">
-                  <PillLink
-                    href={links.email}
-                    icon={Mail}
-                    variant="solid"
-                    className="w-full justify-center px-4"
-                  >
-                    say hi
-                  </PillLink>
-                  {/* The button hid the actual address; some people want to
-                      copy it rather than open a mail client. */}
-                  {links.emailDisplay && (
-                    <a
-                      href={links.email}
-                      className="text-center text-[11px] text-slate-500 transition hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100"
-                    >
-                      {links.emailDisplay}
-                    </a>
-                  )}
-                </div>
-                <div className="mt-4 flex flex-wrap justify-center gap-3">
-                  <PillLink href={links.github} icon={Github} external variant="ghost" className="text-sm">
-                    GitHub
-                  </PillLink>
-                  <PillLink href={links.linkedin} icon={Linkedin} external variant="ghost" className="text-sm">
-                    LinkedIn
-                  </PillLink>
-                </div>
-              </section>
+                  <div className="mt-4 space-y-4 text-sm text-slate-600 dark:text-slate-300">
+                    <SidebarTimeline label="now" entries={timeline.current} />
+                    <SidebarTimeline label="previously" entries={timeline.past} />
+                  </div>
+
+                  {/* Contact folded in rather than given its own card. The page
+                      already has a "say hi" button in the hero and a full
+                      contact section at the bottom; a third card for the same
+                      action was the least useful thing in the sidebar. */}
+                  <div className="mt-5 border-t border-stone-200 pt-4 dark:border-stone-700">
+                    <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs">
+                      <a
+                        href={links.email}
+                        className="inline-flex items-center gap-1.5 font-medium text-teal-700 transition hover:text-teal-800 dark:text-teal-400 dark:hover:text-teal-300"
+                      >
+                        <Mail className="h-3.5 w-3.5" />
+                        {links.emailDisplay || 'say hi'}
+                      </a>
+                    </div>
+                    <div className="mt-2 flex items-center gap-3 text-xs">
+                      <a
+                        href={links.github}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1.5 text-slate-500 transition hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100"
+                      >
+                        <Github className="h-3.5 w-3.5" />
+                        GitHub
+                      </a>
+                      <a
+                        href={links.linkedin}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1.5 text-slate-500 transition hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100"
+                      >
+                        <Linkedin className="h-3.5 w-3.5" />
+                        LinkedIn
+                      </a>
+                    </div>
+                  </div>
+                </section>
               </PinCard>
             </div>
           </div>

@@ -45,3 +45,8 @@ spotify-local/
 
 # Local-only notes (not part of the site)
 IDEAS.md
+
+# Scratch dirs that kept showing up in `git status`
+.superpowers/
+test-results/
+.playwright-cli/

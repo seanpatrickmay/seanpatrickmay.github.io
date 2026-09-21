@@ -2,7 +2,10 @@ name: Deploy Portfolio to GitHub Pages
 
 on:
   schedule:
-    - cron: "3 13 * * *"  # 13:00 UTC ~ 9:00 AM ET during DST
+    # Backstop only: each refresh already triggers a deploy on success via
+    # workflow_run. This runs after the whole staggered chain (13:00-13:24)
+    # so it publishes fresh data rather than racing it.
+    - cron: "40 13 * * *"
   push:
     branches: [ "main" ]
   # Data refreshes are pushed by github-actions[bot] using GITHUB_TOKEN, and
