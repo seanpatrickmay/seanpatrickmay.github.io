@@ -48,14 +48,21 @@ export async function getStaticProps() {
       goodreadsData: readFeed('goodreads.json'),
       duolingoData: readFeed('duolingo.json'),
       timeline: splitTimeline(Date.now()),
+      // Resolved at build time like the rest: `new Date()` at render time
+      // disagrees between the prerendered HTML and the client on Jan 1.
+      buildYear: new Date().getFullYear(),
     },
   };
 }
 
-const FEATURED_SLUGS = ['life-dashboard', 'nlhe-alpha-beta', 'lecteuraide'];
-const featuredProjects = FEATURED_SLUGS
-  .map(slug => projects.find(p => p.slug === slug))
-  .filter(Boolean);
+// The hero fan is the top of the same ranking ProjectsSection uses, rather
+// than a second hand-kept list. The old hardcoded trio had drifted to ranks
+// 1, 5, 2 — so re-ranking a project in projects.json silently disagreed with
+// what the hero showed.
+const featuredProjects = projects
+  .filter(project => Number.isFinite(project.caseStudyRank))
+  .sort((a, b) => a.caseStudyRank - b.caseStudyRank)
+  .slice(0, 3);
 
 const lifeDashboardProject =
   projects.find(project => project.slug === 'life-dashboard') ?? null;
@@ -94,7 +101,7 @@ const education = [
   },
 ];
 
-export default function Home({ statsData, spotifyData, goodreadsData, duolingoData, timeline }) {
+export default function Home({ statsData, spotifyData, goodreadsData, duolingoData, timeline, buildYear }) {
   return (
     <>
       <Head>
@@ -123,7 +130,7 @@ export default function Home({ statsData, spotifyData, goodreadsData, duolingoDa
           <ProjectsSection />
 
           <ContactSection links={links} />
-          <Footer links={links} />
+          <Footer links={links} year={buildYear} />
         </main>
       </div>
     </>

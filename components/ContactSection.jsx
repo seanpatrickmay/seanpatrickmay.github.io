@@ -9,10 +9,15 @@ export default function ContactSection({ links }) {
       <Pinboard>
         <PinCard rotation={1} pinColor="teal">
           <div className="relative mx-auto max-w-lg overflow-hidden rounded-2xl border border-slate-200/60 bg-white/70 px-8 py-10 text-center shadow-sm dark:border-slate-800/60 dark:bg-slate-900/60">
-            {/* Decorative scattered emoji */}
-            <span aria-hidden="true" className="absolute -top-1 left-6 text-2xl opacity-20 motion-reduce:!rotate-0" style={{ transform: 'rotate(-12deg)' }}>💬</span>
-            <span aria-hidden="true" className="absolute -bottom-1 right-8 text-xl opacity-20 motion-reduce:!rotate-0" style={{ transform: 'rotate(8deg)' }}>👋</span>
-            <span aria-hidden="true" className="absolute top-4 right-4 text-lg opacity-15 motion-reduce:!rotate-0" style={{ transform: 'rotate(15deg)' }}>✉️</span>
+            {/* One decorative mark, not three — the other two just added noise
+                around the heading. */}
+            <span
+              aria-hidden="true"
+              className="absolute -top-1 left-6 text-2xl opacity-20 motion-reduce:!rotate-0"
+              style={{ transform: 'rotate(-12deg)' }}
+            >
+              💬
+            </span>
 
             <h2 className="font-display text-3xl tracking-tight text-slate-900 dark:text-slate-50">
               let's talk

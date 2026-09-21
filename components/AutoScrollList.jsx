@@ -1,11 +1,29 @@
 // components/AutoScrollList.jsx
 import { useEffect, useRef } from 'react';
 
+// The top fade sells the scroll, but at rest it ate the top third of row #1 —
+// the one row you most want readable. So the top fade is only applied once the
+// list has actually moved off the first item, and the initial render (and any
+// scroll back to the top) shows #1 whole.
+const MASK_BOTTOM_ONLY = 'linear-gradient(to bottom, black calc(100% - 12px), transparent)';
+const MASK_TOP_AND_BOTTOM =
+  'linear-gradient(to bottom, transparent, black 12px, black calc(100% - 12px), transparent)';
+
+function applyTopFade(container, stateRef, faded) {
+  if (!container || stateRef.current === faded) return;
+  stateRef.current = faded;
+  const mask = faded ? MASK_TOP_AND_BOTTOM : MASK_BOTTOM_ONLY;
+  container.style.maskImage = mask;
+  container.style.webkitMaskImage = mask;
+}
+
 export default function AutoScrollList({
   items = [], // [{ id, title, subtitle, image, emoji, url, info, trailing }]
   visibleCount = 5,
   fillHeight = false,
   speed = 10,
+  // Hold on #1 long enough to actually read it before the marquee takes over.
+  startDelayMs = 2600,
   resumeDelayMs = 2000,
   ariaLabel = "Auto scrolling list",
   emptyMessage = "No items",
@@ -21,6 +39,8 @@ export default function AutoScrollList({
   const pausedHoverRef = useRef(false);
   const userActiveUntilRef = useRef(0);
   const lastSetContainerHRef = useRef(0);
+  const startTsRef = useRef(0);
+  const topFadedRef = useRef(false);
 
   // Compute arrays but DO NOT early-return before hooks
   const top10 = items.slice(0, 10);
@@ -119,7 +139,10 @@ export default function AutoScrollList({
       const now = performance.now();
       const userActive = now < userActiveUntilRef.current;
 
-      if (!pausedHoverRef.current && !userActive && oneH > 0) {
+      if (!startTsRef.current) startTsRef.current = ts;
+      const dwellOver = ts - startTsRef.current >= startDelayMs;
+
+      if (dwellOver && !pausedHoverRef.current && !userActive && oneH > 0) {
         offsetRef.current += dt * pxPerMs;
         if (offsetRef.current >= oneH) {
           // wrap with modulo to handle long idle gaps
@@ -128,11 +151,13 @@ export default function AutoScrollList({
       }
 
       runner.style.transform = `translate3d(0, ${-offsetRef.current}px, 0)`;
+      applyTopFade(container, topFadedRef, offsetRef.current > 0.5);
       rafRef.current = requestAnimationFrame(tick);
     };
 
     // Start loop
     lastTsRef.current = 0;
+    startTsRef.current = 0;
     rafRef.current = requestAnimationFrame(tick);
 
     // Helpers
@@ -150,7 +175,7 @@ export default function AutoScrollList({
       container.removeEventListener("mouseenter", pauseOnHover);
       container.removeEventListener("mouseleave", resumeAfterHover);
     };
-  }, [top10.length, speed, resumeDelayMs]);
+  }, [top10.length, speed, startDelayMs, resumeDelayMs]);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -171,6 +196,7 @@ export default function AutoScrollList({
       offsetRef.current += delta;
       offsetRef.current = ((offsetRef.current % oneH) + oneH) % oneH;
       runner.style.transform = `translate3d(0, ${-offsetRef.current}px, 0)`;
+      applyTopFade(container, topFadedRef, offsetRef.current > 0.5);
       userActiveUntilRef.current = performance.now() + resumeDelayMs;
     };
 
@@ -235,10 +261,7 @@ export default function AutoScrollList({
       data-autoscroll
       className={`relative overflow-hidden select-none min-h-0 ${fillHeight ? "h-full" : ""} ${className}`.trim()}
       aria-label={ariaLabel}
-      style={{
-        maskImage: 'linear-gradient(to bottom, transparent, black 12px, black calc(100% - 12px), transparent)',
-        WebkitMaskImage: 'linear-gradient(to bottom, transparent, black 12px, black calc(100% - 12px), transparent)',
-      }}
+      style={{ maskImage: MASK_BOTTOM_ONLY, WebkitMaskImage: MASK_BOTTOM_ONLY }}
     >
       {top10.length === 0 ? (
         <div className="text-sm text-slate-500 dark:text-slate-300 p-2">{emptyMessage}</div>

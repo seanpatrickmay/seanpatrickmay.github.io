@@ -186,6 +186,16 @@ export default function Header({ links, timeline = { current: [], past: [] } }) 
                   >
                     say hi
                   </PillLink>
+                  {/* The button hid the actual address; some people want to
+                      copy it rather than open a mail client. */}
+                  {links.emailDisplay && (
+                    <a
+                      href={links.email}
+                      className="text-center text-[11px] text-slate-500 transition hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100"
+                    >
+                      {links.emailDisplay}
+                    </a>
+                  )}
                 </div>
                 <div className="mt-4 flex flex-wrap justify-center gap-3">
                   <PillLink href={links.github} icon={Github} external variant="ghost" className="text-sm">

@@ -4,11 +4,14 @@ import Section from '@/components/ui/Section';
 import LineSparkline from '@/components/ui/LineSparkline';
 import BarSparkline from '@/components/ui/BarSparkline';
 import { getBostonJourneyEquivalence } from '@/lib/journeyEquivalents';
+import { getTrainingSplit } from '@/lib/trainingSplit';
+import { getSpotifyWindowLabel } from '@/lib/spotifyWindow';
 import GoodreadsCard from '@/components/GoodreadsCard';
 import DuolingoCard from '@/components/DuolingoCard';
 import Pinboard from '@/components/Pinboard';
 import PinCard from '@/components/PinCard';
 import StaleBadge from '@/components/ui/StaleBadge';
+import JourneyArc from '@/components/ui/JourneyArc';
 import { Sparkles } from 'lucide-react';
 
 function parseDateOnlyLocal(value) {
@@ -33,6 +36,74 @@ const KM_FORMAT = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
 const KCAL_FORMAT = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
 const MILK_FORMAT = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
 const MILK_KCAL_PER_CUP = 150;
+
+const SPORT_BAR = {
+  running: 'bg-teal-500 dark:bg-teal-400',
+  biking: 'bg-indigo-500 dark:bg-indigo-400',
+  other: 'bg-slate-400 dark:bg-slate-500',
+};
+
+/**
+ * Run / bike / other, barred by hours.
+ *
+ * Numbers sit above a full-width bar rather than beside it — a masonry column
+ * is ~250px of content and a label + km + hours + bar on one row squeezed the
+ * bar down to nothing.
+ */
+function SportSplit({ split }) {
+  if (!split || split.rows.length === 0) return null;
+
+  const maxHours = Math.max(...split.rows.map(row => row.hours));
+
+  return (
+    <div className="mt-4 border-t border-slate-100 pt-3 dark:border-slate-700">
+      <div className="mb-2 text-[10px] font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
+        by sport
+      </div>
+      <ul className="space-y-2">
+        {split.rows.map(row => (
+          <li key={row.key}>
+            <div className="flex items-baseline justify-between gap-2 text-[11px]">
+              <span className="font-medium text-slate-600 dark:text-slate-300">
+                <span aria-hidden="true">{row.emoji}</span> {row.label}
+              </span>
+              <span className="tabular-nums text-slate-500 dark:text-slate-400">
+                {KM_FORMAT.format(Math.round(row.km))} km ·{' '}
+                <span className="font-semibold text-slate-700 dark:text-slate-200">
+                  {row.hours.toFixed(1)} h
+                </span>
+              </span>
+            </div>
+            <span className="mt-1 block h-1.5 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-800">
+              <span
+                className={`block h-full rounded-full ${SPORT_BAR[row.key] ?? SPORT_BAR.other}`}
+                style={{ width: `${Math.max(3, (row.hours / maxHours) * 100)}%` }}
+              />
+            </span>
+          </li>
+        ))}
+      </ul>
+
+      {split.longest.length > 0 && (
+        <div className="mt-2.5 text-[11px] text-slate-500 dark:text-slate-400">
+          longest, past 30d:{' '}
+          {/* Each figure carries its own sport label. `longest` is sorted by
+              distance, so a fixed "ride & run" would silently mislabel the
+              day a run goes further than any ride. */}
+          {split.longest.map((entry, i) => (
+            <span key={entry.label}>
+              {i > 0 && ' · '}
+              <span className="font-medium tabular-nums text-slate-700 dark:text-slate-200">
+                {KM_FORMAT.format(Math.round(entry.km))} km
+              </span>{' '}
+              {entry.label}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function AboutSection({
   featuredActivities = [],
@@ -74,6 +145,9 @@ export default function AboutSection({
 
   const totalCalories8w =
     totalCaloriesFromWeekly > 0 ? totalCaloriesFromWeekly : totalCaloriesFromRecent || null;
+
+  const sportSplit = getTrainingSplit(stats);
+  const spotifyWindow = getSpotifyWindowLabel(spotify?.time_range);
 
   const totalKmLabel = weeklySeries.length ? KM_FORMAT.format(Math.round(totalKm8w)) : '—';
   const totalKmRounded = weeklySeries.length ? Math.round(totalKm8w) : null;
@@ -129,6 +203,12 @@ export default function AboutSection({
                 <span>{totalKmLabel} km</span>
                 <span>·</span>
                 <span>{totalCaloriesLabel} kcal</span>
+                {rangeLabel && (
+                  <>
+                    <span>·</span>
+                    <span className="tabular-nums">{rangeLabel}</span>
+                  </>
+                )}
               </div>
 
               {/* Cups of milk callout */}
@@ -168,17 +248,22 @@ export default function AboutSection({
                 </div>
               )}
 
+              <SportSplit split={sportSplit} />
+
               {kmJourney && (
-                <div className="mt-2 text-[11px] font-medium text-teal-600 dark:text-teal-400">
-                  {totalKmLabel} km ≈ {kmJourney.percent}% of {kmJourney.origin} →{' '}
-                  {kmJourney.destination}
-                  <span className="text-stone-400 dark:text-stone-500">
-                    {' '}({KM_FORMAT.format(Math.round(kmJourney.routeDistanceKm))} km)
-                  </span>
+                <div className="mt-3 border-t border-slate-100 pt-3 dark:border-slate-700">
+                  <JourneyArc
+                    percent={kmJourney.percent}
+                    origin={kmJourney.origin}
+                    destination={kmJourney.destination}
+                  />
+                  <div className="mt-1.5 text-[11px] font-medium text-teal-600 dark:text-teal-400">
+                    {totalKmLabel} km ≈ {kmJourney.percent}% of the way
+                    <span className="text-stone-400 dark:text-stone-500">
+                      {' '}({KM_FORMAT.format(Math.round(kmJourney.routeDistanceKm))} km total)
+                    </span>
+                  </div>
                 </div>
-              )}
-              {rangeLabel && (
-                <div className="mt-1 text-[10px] text-slate-400 dark:text-slate-500">{rangeLabel}</div>
               )}
             </div>
           </PinCard>
@@ -188,7 +273,10 @@ export default function AboutSection({
             <div className="rounded-sm border border-slate-200 bg-white p-4 text-slate-900 dark:border-slate-700 dark:bg-slate-900 dark:text-white">
               <div className="flex items-baseline justify-between gap-2">
                 <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
-                  🎵 top artists
+                  🎵 top artists{' '}
+                  <span className="font-medium normal-case tracking-normal text-slate-400 dark:text-slate-500">
+                    · {spotifyWindow}
+                  </span>
                 </div>
                 <StaleBadge staleness={spotify?._staleness} />
               </div>
@@ -217,7 +305,10 @@ export default function AboutSection({
             <div className="rounded-sm border border-slate-200 bg-white p-4 text-slate-900 dark:border-slate-700 dark:bg-slate-900 dark:text-white">
               <div className="flex items-baseline justify-between gap-2">
                 <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
-                  🎧 top tracks
+                  🎧 top tracks{' '}
+                  <span className="font-medium normal-case tracking-normal text-slate-400 dark:text-slate-500">
+                    · {spotifyWindow}
+                  </span>
                 </div>
                 <StaleBadge staleness={spotify?._staleness} />
               </div>

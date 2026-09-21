@@ -262,6 +262,10 @@ async function main({
 
   const out = {
     generated_at: new Date().toISOString(),
+    // The cards used to say "top artists" with no window, which reads as
+    // all-time. Emitted rather than hardcoded in the component so changing
+    // TIME_RANGE updates the label too.
+    time_range: TIME_RANGE,
     artists,
     tracks,
   };

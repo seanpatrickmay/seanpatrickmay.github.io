@@ -3,11 +3,13 @@ import { useMemo } from 'react';
 import { BookOpen } from 'lucide-react';
 import StaleBadge from '@/components/ui/StaleBadge';
 import AutoScrollShelf from '@/components/AutoScrollShelf';
+import { pickReadingBenchmark } from '@/lib/readingBenchmarks';
 
 const NUM = new Intl.NumberFormat('en-US');
-// Page-count benchmark for the yearly reading bar. Harry Potter's 7 US editions
-// run ~4,100 pages. Swap to taste — e.g. the LOTR trilogy is ~1,178 pages.
-const BENCHMARK = { label: 'the Harry Potter series', pages: 4100, books: 7 };
+
+function sumPages(books) {
+  return books.reduce((sum, book) => sum + (Number(book?.numPages) || 0), 0);
+}
 
 function toShelfItems(books, withRatings) {
   return books.map((book, index) => ({
@@ -21,7 +23,7 @@ function toShelfItems(books, withRatings) {
 }
 
 /** One horizontal shelf of covers, with a wooden rail underneath. */
-function Shelf({ label, count, books, withRatings = false, emptyMessage }) {
+function Shelf({ label, count, books, withRatings = false, emptyMessage, meta = null }) {
   // Stable identity: AutoScrollShelf re-measures whenever `items` changes, and
   // a fresh array every render would re-measure on every render.
   const shelfItems = useMemo(() => toShelfItems(books, withRatings), [books, withRatings]);
@@ -36,6 +38,7 @@ function Shelf({ label, count, books, withRatings = false, emptyMessage }) {
         </div>
         <div className="text-[10px] tabular-nums text-stone-400 dark:text-stone-500">
           {count} {count === 1 ? 'book' : 'books'}
+          {meta && <span> · {meta}</span>}
         </div>
       </div>
 
@@ -64,14 +67,25 @@ export default function GoodreadsCard({ data = null, bare = false }) {
   const yearPages = Number(data?.yearPagesRead) || 0;
   const yearBooks = Number(data?.yearBooksRead) || 0;
   const hasYear = yearPages > 0;
-  const ratio = yearPages / BENCHMARK.pages;
+
+  // Ladder rather than a fixed series, so the bar never sits pinned at 100%.
+  const benchmark = pickReadingBenchmark(yearPages);
+  const target = benchmark?.target ?? null;
+  // Only credit a cleared series if it is not the one being aimed at, which
+  // happens when the total lands exactly on the top rung.
+  const cleared =
+    benchmark?.cleared && benchmark.cleared.label !== target?.label ? benchmark.cleared : null;
+
+  const ratio = target ? yearPages / target.pages : 0;
   const barWidth = `${Math.max(2, Math.min(100, Math.round(ratio * 100)))}%`;
   const ratioLabel = ratio >= 1 ? `${ratio.toFixed(1)}×` : `${Math.round(ratio * 100)}%`;
   const ariaNow = Math.min(100, Math.round(ratio * 100));
 
+  const pagesInFlight = sumPages(currentlyReading);
+
   const content = (
     <div className="space-y-4">
-      {hasYear && (
+      {hasYear && target && (
         <div className="rounded-lg border border-amber-200/70 bg-amber-50/60 p-3 dark:border-amber-900/40 dark:bg-amber-950/20">
           <div className="flex items-baseline justify-between gap-2">
             <div className="text-[10px] font-semibold uppercase tracking-widest text-amber-700/80 dark:text-amber-400/80">
@@ -90,7 +104,7 @@ export default function GoodreadsCard({ data = null, bare = false }) {
           </div>
           <div className="mt-2.5">
             <div className="mb-1 flex items-center justify-between text-[11px]">
-              <span className="font-medium text-amber-700 dark:text-amber-300">📚 {BENCHMARK.label}</span>
+              <span className="font-medium text-amber-700 dark:text-amber-300">📚 {target.label}</span>
               <span className="font-semibold text-stone-600 dark:text-stone-300">{ratioLabel}</span>
             </div>
             <div
@@ -99,7 +113,7 @@ export default function GoodreadsCard({ data = null, bare = false }) {
               aria-valuenow={ariaNow}
               aria-valuemin={0}
               aria-valuemax={100}
-              aria-label={`${NUM.format(yearPages)} pages read in the past 12 months — ${ratioLabel} of ${BENCHMARK.label}`}
+              aria-label={`${NUM.format(yearPages)} pages read in the past 12 months — ${ratioLabel} of ${target.label}`}
             >
               <div
                 className="h-full rounded-full bg-amber-500 transition-all dark:bg-amber-400"
@@ -107,8 +121,13 @@ export default function GoodreadsCard({ data = null, bare = false }) {
               />
             </div>
             <div className="mt-1 text-[10px] text-stone-400 dark:text-stone-500">
-              all {BENCHMARK.books} books run ~{NUM.format(BENCHMARK.pages)} pages
+              all {target.books} books run ~{NUM.format(target.pages)} pages
             </div>
+            {cleared && (
+              <div className="mt-0.5 text-[10px] font-medium text-amber-600/90 dark:text-amber-500/90">
+                ✓ already past {cleared.label}
+              </div>
+            )}
           </div>
         </div>
       )}
@@ -117,6 +136,7 @@ export default function GoodreadsCard({ data = null, bare = false }) {
         label="currently reading"
         count={currentlyReading.length}
         books={currentlyReading}
+        meta={pagesInFlight > 0 ? `${NUM.format(pagesInFlight)} pages` : null}
         emptyMessage="Nothing on the go"
       />
 

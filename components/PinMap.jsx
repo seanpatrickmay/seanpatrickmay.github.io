@@ -283,6 +283,13 @@ export default function PinMap({
             <div className="text-[10px] text-stone-500 dark:text-stone-400 leading-tight">
               {tooltip.pin.location}
             </div>
+            {/* When, not just where — the entry list below already says it, but
+                the tooltip is what you read while scanning the map. */}
+            {tooltip.pin.period && (
+              <div className="text-[10px] text-stone-400 dark:text-stone-500 leading-tight">
+                {tooltip.pin.period}
+              </div>
+            )}
           </div>
         </div>
       )}
