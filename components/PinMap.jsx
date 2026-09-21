@@ -8,6 +8,7 @@ import {
   Line,
 } from 'react-simple-maps';
 import { toMapCoords, isWorldInset } from '@/lib/mapData';
+import { MAP_WIDTH, computeProjection } from '@/lib/mapProjection';
 import {
   ChartDefs,
   ChartVignette,
@@ -34,73 +35,35 @@ function pinColorForIndex(i) {
   return PIN_COLOR_HEX[PIN_COLOR_CYCLE[i % PIN_COLOR_CYCLE.length]];
 }
 
-function getMainPins(pins) {
+// `useInset: false` keeps everything on one map. The movement category wants
+// that: with Ireland and Hungary in the set, the bounding box is the North
+// Atlantic, and relegating Europe to a 160px corner box would throw away the
+// most interesting thing the map has to say.
+function getMainPins(pins, useInset = true) {
   const result = [];
   for (let i = 0; i < pins.length; i++) {
     const pin = pins[i];
-    if (pin.locations) {
-      for (const loc of pin.locations) {
-        if (!isWorldInset(loc)) {
-          result.push({ ...pin, location: loc, _multi: true, _origIndex: i });
-        }
+    for (const loc of pin.locations ?? [pin.location]) {
+      if (!useInset || !isWorldInset(loc)) {
+        result.push({ ...pin, location: loc, _multi: !!pin.locations, _origIndex: i });
       }
-    } else if (!isWorldInset(pin.location)) {
-      result.push({ ...pin, _origIndex: i });
     }
   }
   return result;
 }
 
-function getInsetPins(pins) {
+function getInsetPins(pins, useInset = true) {
+  if (!useInset) return [];
   const result = [];
   for (let i = 0; i < pins.length; i++) {
     const pin = pins[i];
-    if (pin.locations) {
-      for (const loc of pin.locations) {
-        if (isWorldInset(loc)) {
-          result.push({ ...pin, location: loc, _multi: true, _origIndex: i });
-        }
+    for (const loc of pin.locations ?? [pin.location]) {
+      if (isWorldInset(loc)) {
+        result.push({ ...pin, location: loc, _multi: !!pin.locations, _origIndex: i });
       }
-    } else if (isWorldInset(pin.location)) {
-      result.push({ ...pin, _origIndex: i });
     }
   }
   return result;
-}
-
-/**
- * Compute center + scale to fit all main pins with padding.
- * Returns { center, scale, height } — height adapts to lat span.
- */
-function computeProjection(mainPins) {
-  const coords = mainPins.map((p) => toMapCoords(p.location)).filter(Boolean);
-  if (coords.length === 0) {
-    return { center: [-76, 38], scale: 2000, height: 420 };
-  }
-
-  const lons = coords.map((c) => c[0]);
-  const lats = coords.map((c) => c[1]);
-  const minLon = Math.min(...lons);
-  const maxLon = Math.max(...lons);
-  const minLat = Math.min(...lats);
-  const maxLat = Math.max(...lats);
-
-  const centerLon = (minLon + maxLon) / 2;
-  const centerLat = (minLat + maxLat) / 2;
-
-  const PAD = 2.5;
-  const latSpan = maxLat - minLat + PAD * 2;
-  const lonSpan = maxLon - minLon + PAD * 2;
-
-  // Use the aspect ratio of the pin spread to choose SVG height
-  const aspectRatio = latSpan / Math.max(lonSpan, 1);
-  const height = Math.min(Math.max(Math.round(600 * aspectRatio * 0.7), 380), 560);
-
-  // Scale based on the larger of the two spans, tuned per height
-  const span = Math.max(latSpan, lonSpan * (420 / height));
-  const scale = Math.min(Math.max(26000 / span, 1200), 4500);
-
-  return { center: [centerLon, centerLat], scale, height };
 }
 
 function ThreadPath({ pins }) {
@@ -137,7 +100,13 @@ function PinMarker({ pin, isActive, onHover, onClick, scale = 2000, color = '#ef
 
   // Scale pin size inversely with zoom — larger pins when zoomed out
   const sizeFactor = Math.max(0.9, Math.min(2000 / scale, 1.6));
-  const baseR = (isActive ? 7 : 5.5) * sizeFactor;
+  // Movement pins carry a `weight` (activities at that place). Area grows
+  // with the count rather than radius, so forty runs does not draw a pin
+  // forty times the ink of one.
+  const weightFactor = pin.weight
+    ? Math.min(2.6, 0.72 + Math.sqrt(pin.weight) * 0.26)
+    : 1;
+  const baseR = (isActive ? 7 : 5.5) * sizeFactor * weightFactor;
   const pulseR = 10 * sizeFactor;
   const sw = (isActive ? 2.5 : 2) * Math.min(sizeFactor, 1.2);
 
@@ -179,10 +148,18 @@ export default function PinMap({
   activePin = null,
   onPinHover,
   onPinClick,
+  // The world inset and the connecting thread both assume a category that
+  // reads as a journey between a handful of places. Movement is neither: it
+  // is a scatter of everywhere, in no order.
+  useInset = true,
+  showThread = true,
 }) {
-  const mainPins = useMemo(() => getMainPins(pins), [pins]);
-  const insetPins = useMemo(() => getInsetPins(pins), [pins]);
-  const projection = useMemo(() => computeProjection(mainPins), [mainPins]);
+  const mainPins = useMemo(() => getMainPins(pins, useInset), [pins, useInset]);
+  const insetPins = useMemo(() => getInsetPins(pins, useInset), [pins, useInset]);
+  const projection = useMemo(
+    () => computeProjection(mainPins.map((p) => toMapCoords(p.location)).filter(Boolean)),
+    [mainPins],
+  );
   const insetProjection = useMemo(() => {
     if (insetPins.length === 0) return { center: [-20, 46], scale: 100 };
     const coords = insetPins.map((p) => toMapCoords(p.location)).filter(Boolean);
@@ -226,12 +203,12 @@ export default function PinMap({
         <ComposableMap
           projection="geoMercator"
           projectionConfig={{ center: projection.center, scale: projection.scale }}
-          width={600}
+          width={MAP_WIDTH}
           height={projection.height}
           style={{ width: '100%', height: 'auto' }}
         >
           <ChartDefs id="chart-main" wobble={2} />
-          <ChartWater id="chart-main" width={600} height={projection.height} />
+          <ChartWater id="chart-main" width={MAP_WIDTH} height={projection.height} />
 
           <Graticule
             step={[5, 5]}
@@ -277,7 +254,7 @@ export default function PinMap({
             </Geographies>
           </g>
 
-          <ThreadPath pins={mainPins} />
+          {showThread && <ThreadPath pins={mainPins} />}
 
           {[...mainPins]
             .sort((a, b) => {
@@ -306,7 +283,7 @@ export default function PinMap({
             />
           ))}
 
-          <ChartVignette id="chart-main" width={600} height={projection.height} />
+          <ChartVignette id="chart-main" width={MAP_WIDTH} height={projection.height} />
         </ComposableMap>
 
         <CompassRose className="pointer-events-none absolute right-3.5 top-3.5 h-14 w-14 opacity-85" />

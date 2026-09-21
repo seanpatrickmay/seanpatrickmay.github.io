@@ -82,6 +82,8 @@ export default function MapSection() {
               activePin={activePin}
               onPinHover={handlePinHover}
               onPinClick={handlePinClick}
+              useInset={category?.useInset !== false}
+              showThread={category?.useInset !== false}
             />
           </div>
 

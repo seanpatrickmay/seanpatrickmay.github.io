@@ -5,7 +5,7 @@
   "scripts": {
     "predev": "node scripts/clean.mjs --next-dev",
     "dev": "next dev",
-    "prebuild": "node scripts/clean.mjs --out --next-prod && node scripts/generate_sitemap.mjs",
+    "prebuild": "node scripts/clean.mjs --out --next-prod && node scripts/build_activity_places.mjs && node scripts/generate_sitemap.mjs",
     "build": "next build",
     "start": "npm run preview",
     "preview": "npx serve out -l 4321",

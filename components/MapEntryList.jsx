@@ -12,7 +12,14 @@ export default function MapEntryList({ pins = [], activePin, onEntryClick, onEnt
           activePin.org === pin.org &&
           (activePin.location === pin.location ||
             (pin.locations && pin.locations.includes(activePin.location)));
-        const locationLabel = pin.locations ? pin.locations.join(' → ') : pin.location;
+        // Movement pins are named after the place they happened in, so
+        // repeating the location would read "Henrico County · 15 runs ·
+        // Henrico County, VA" and push the date out of a truncated line.
+        const locationLabel = pin.showLocation === false
+          ? null
+          : pin.locations
+            ? pin.locations.join(' → ')
+            : pin.location;
 
         return (
           <PinCard
