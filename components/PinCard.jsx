@@ -33,9 +33,13 @@ export default function PinCard({
   children,
 }) {
   return (
+    /* The tilt arrives as a custom property rather than an inline
+       `transform`, because an inline transform beats every class-based one:
+       the `hover:scale-[1.01]` that used to sit here never fired once.
+       .pin-card composes the tilt and the hover lift in one place. */
     <div
-      className={`pin-card relative shadow-[3px_4px_12px_rgba(0,0,0,0.08)] transition-transform duration-200 hover:scale-[1.01] motion-reduce:!rotate-0 ${className}`}
-      style={{ transform: `rotate(${rotation}deg)` }}
+      className={`pin-card relative ${className}`}
+      style={{ '--pin-rotate': `${rotation}deg` }}
     >
       {fastener === 'tape' ? (
         /* Counter-rotated so the tape sits level against the board while the

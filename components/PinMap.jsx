@@ -3,10 +3,20 @@ import {
   ComposableMap,
   Geographies,
   Geography,
+  Graticule,
   Marker,
   Line,
 } from 'react-simple-maps';
 import { toMapCoords, isWorldInset } from '@/lib/mapData';
+import {
+  ChartDefs,
+  ChartVignette,
+  ChartWater,
+  CompassRose,
+  LAND,
+  LAND_INSET,
+  LAND_NEIGHBOUR,
+} from '@/components/map/chart';
 
 const US_TOPO = 'https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json';
 const WORLD_TOPO = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json';
@@ -209,7 +219,10 @@ export default function PinMap({
   return (
     <div className="relative" ref={containerRef}>
       {/* Main US map — key on projection to force re-render on category change */}
-      <div className="rounded-xl border border-stone-200 bg-gradient-to-br from-stone-100 via-stone-50 to-amber-50/30 dark:border-stone-700 dark:from-stone-800 dark:via-stone-850 dark:to-stone-800 transition-all duration-500">
+      {/* The double rule is the chart's printed border: an outer ink line and
+          an inner hairline, which is what stops the paper from reading as a
+          div with a border-radius. */}
+      <div className="chart-frame relative overflow-hidden rounded-xl transition-all duration-500">
         <ComposableMap
           projection="geoMercator"
           projectionConfig={{ center: projection.center, scale: projection.scale }}
@@ -217,21 +230,52 @@ export default function PinMap({
           height={projection.height}
           style={{ width: '100%', height: 'auto' }}
         >
-          <Geographies geography={US_TOPO}>
-            {({ geographies }) =>
-              geographies.map((geo) => (
-                <Geography
-                  key={geo.rsmKey}
-                  geography={geo}
-                  fill="#e7e5e4"
-                  stroke="#c4bfb8"
-                  className="dark:fill-stone-700 dark:stroke-stone-600"
-                  strokeWidth={0.5}
-                  style={GEO_STYLE}
-                />
-              ))
-            }
-          </Geographies>
+          <ChartDefs id="chart-main" wobble={2} />
+          <ChartWater id="chart-main" width={600} height={projection.height} />
+
+          <Graticule
+            step={[5, 5]}
+            className="stroke-[#c2ab84] dark:stroke-[#1f4a5b]"
+            strokeWidth={0.4}
+            fill="none"
+            opacity={0.55}
+          />
+
+          <g filter="url(#chart-main-ink)">
+            {/* Canada and Mexico first, from the world file. The US is
+                excluded here because states-10m draws it at a much higher
+                resolution a moment later, and two versions of the same
+                coastline a pixel apart looks like a printing misregistration. */}
+            <Geographies geography={WORLD_TOPO}>
+              {({ geographies }) =>
+                geographies
+                  .filter((geo) => geo.properties?.name !== 'United States of America')
+                  .map((geo) => (
+                    <Geography
+                      key={`neighbour-${geo.rsmKey}`}
+                      geography={geo}
+                      className={LAND_NEIGHBOUR}
+                      stroke="none"
+                      style={GEO_STYLE}
+                    />
+                  ))
+              }
+            </Geographies>
+
+            <Geographies geography={US_TOPO}>
+              {({ geographies }) =>
+                geographies.map((geo) => (
+                  <Geography
+                    key={geo.rsmKey}
+                    geography={geo}
+                    className={LAND}
+                    strokeWidth={0.6}
+                    style={GEO_STYLE}
+                  />
+                ))
+              }
+            </Geographies>
+          </g>
 
           <ThreadPath pins={mainPins} />
 
@@ -261,7 +305,11 @@ export default function PinMap({
               color={pinColorForIndex(pin._origIndex ?? i)}
             />
           ))}
+
+          <ChartVignette id="chart-main" width={600} height={projection.height} />
         </ComposableMap>
+
+        <CompassRose className="pointer-events-none absolute right-3.5 top-3.5 h-14 w-14 opacity-85" />
       </div>
 
       {/* HTML tooltip — outside SVG, never clipped */}
@@ -296,8 +344,8 @@ export default function PinMap({
 
       {/* World inset */}
       {insetPins.length > 0 && (
-        <div className="absolute bottom-3 right-3 w-40 h-28 rounded-lg border border-stone-300 bg-stone-100/95 dark:border-stone-600 dark:bg-stone-800/95 overflow-hidden backdrop-blur-sm shadow-sm">
-          <div className="absolute top-1 left-2 text-[8px] font-semibold uppercase tracking-widest text-stone-500 dark:text-stone-400 z-10">
+        <div className="chart-frame absolute bottom-3 right-3 h-28 w-40 overflow-hidden rounded-lg shadow-sm">
+          <div className="absolute left-2 top-1 z-10 font-display text-[9px] uppercase tracking-[0.2em] text-[#8a7047] dark:text-[#4d94a3]">
             world
           </div>
           <ComposableMap
@@ -307,21 +355,24 @@ export default function PinMap({
             height={112}
             style={{ width: '100%', height: '100%' }}
           >
-            <Geographies geography={WORLD_TOPO}>
-              {({ geographies }) =>
-                geographies.map((geo) => (
-                  <Geography
-                    key={geo.rsmKey}
-                    geography={geo}
-                    fill="#e7e5e4"
-                    stroke="#c4bfb8"
-                    className="dark:fill-stone-700 dark:stroke-stone-600"
-                    strokeWidth={0.3}
-                    style={GEO_STYLE}
-                  />
-                ))
-              }
-            </Geographies>
+            <ChartDefs id="chart-inset" wobble={0.9} />
+            <ChartWater id="chart-inset" width={160} height={112} />
+
+            <g filter="url(#chart-inset-ink)">
+              <Geographies geography={WORLD_TOPO}>
+                {({ geographies }) =>
+                  geographies.map((geo) => (
+                    <Geography
+                      key={geo.rsmKey}
+                      geography={geo}
+                      className={LAND_INSET}
+                      strokeWidth={0.35}
+                      style={GEO_STYLE}
+                    />
+                  ))
+                }
+              </Geographies>
+            </g>
             {/* Thread connecting US anchor to international pins */}
             {insetPins.length > 0 && (
               <>

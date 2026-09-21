@@ -4,11 +4,13 @@ export default function Section({ id, title, icon, children, className = '', ...
 
   return (
     <section id={id} className={sectionClassName} {...props}>
-      <div className="flex items-center gap-3 mb-4">
-        {Icon && <Icon className="w-5 h-5 text-teal-600 dark:text-teal-400" />}
-        <h2 className="font-display text-3xl tracking-tight text-slate-900 dark:text-slate-50">
-          {title}
-        </h2>
+      <div className="mb-5">
+        {/* The stamp is a <div> wrapping the real <h2>, not a styled heading:
+            the frame is decoration and has no business in the outline. */}
+        <div className="stamp">
+          {Icon && <Icon className="h-5 w-5 flex-none" aria-hidden="true" />}
+          <h2 className="font-display text-3xl tracking-tight">{title}</h2>
+        </div>
       </div>
       {children}
     </section>
