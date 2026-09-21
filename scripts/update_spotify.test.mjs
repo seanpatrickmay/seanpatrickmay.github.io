@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { fetchJsonWithRetry, fetchTop, getAccessToken } from './update_spotify.mjs';
+import { capPerArtist, fetchJsonWithRetry, fetchTop, getAccessToken } from './update_spotify.mjs';
 
 function createLogger() {
   const messages = [];
@@ -124,4 +124,61 @@ test('getAccessToken reports no rotation when the refresh token is unchanged', a
 
   assert.equal(result.accessToken, 'new-access');
   assert.equal(result.rotatedRefreshToken, null);
+});
+
+function track(artist, name) {
+  return { _primary: artist.toLowerCase(), artist, name };
+}
+
+test('capPerArtist thins a chart dominated by one artist', () => {
+  const pool = [
+    track('Malcolm Todd', 'Earrings'),
+    track('Malcolm Todd', 'On My Shoulder'),
+    track('Malcolm Todd', 'Ladygirl'),
+    track('Malcolm Todd', 'Thailand'),
+    track('Zedd', 'Clarity'),
+    track('Adele', 'Hello'),
+  ];
+
+  const result = capPerArtist(pool, 2, 4);
+
+  assert.deepEqual(
+    result.map(t => t.name),
+    ['Earrings', 'On My Shoulder', 'Clarity', 'Hello'],
+  );
+});
+
+test('capPerArtist preserves Spotify ordering among the tracks it keeps', () => {
+  const pool = [
+    track('A', 'a1'),
+    track('B', 'b1'),
+    track('A', 'a2'),
+    track('C', 'c1'),
+  ];
+
+  const result = capPerArtist(pool, 2, 4);
+
+  assert.deepEqual(result.map(t => t.name), ['a1', 'b1', 'a2', 'c1']);
+});
+
+test('capPerArtist still fills the card when one artist is all there is', () => {
+  const pool = Array.from({ length: 12 }, (_, i) => track('Solo Act', `t${i + 1}`));
+
+  const result = capPerArtist(pool, 2, 10);
+
+  assert.equal(result.length, 10, 'relaxes the cap rather than returning a stub');
+  assert.deepEqual(result.slice(0, 2).map(t => t.name), ['t1', 't2']);
+});
+
+test('capPerArtist treats a featured credit as the same primary artist', () => {
+  const pool = [
+    { _primary: 'malcolm todd', artist: 'Malcolm Todd', name: 'solo' },
+    { _primary: 'malcolm todd', artist: 'Malcolm Todd, Guest', name: 'feature' },
+    { _primary: 'malcolm todd', artist: 'Malcolm Todd', name: 'third' },
+    { _primary: 'zedd', artist: 'Zedd', name: 'clarity' },
+  ];
+
+  const result = capPerArtist(pool, 2, 3);
+
+  assert.deepEqual(result.map(t => t.name), ['solo', 'feature', 'clarity']);
 });

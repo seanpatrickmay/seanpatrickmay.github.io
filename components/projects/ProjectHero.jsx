@@ -79,6 +79,11 @@ export default function ProjectHero({ project }) {
                 {repoLink.label || 'Repo'}
               </PillLink>
             )}
+            {project.linksNote && (
+              <span className="text-sm italic text-slate-400 dark:text-slate-500">
+                🔒 {project.linksNote}
+              </span>
+            )}
           </div>
         </div>
       </div>

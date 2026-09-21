@@ -3,25 +3,13 @@ import ThemeToggle from '@/components/ThemeToggle';
 import SidebarTimeline from '@/components/SidebarTimeline';
 import PillLink from '@/components/ui/PillLink';
 import PinCard from '@/components/PinCard';
-import {
-  Briefcase,
-  ClipboardList,
-  Github,
-  GraduationCap,
-  Home,
-  Linkedin,
-  Mail,
-  Sparkles,
-  Trophy,
-} from 'lucide-react';
+import { Briefcase, Github, Home, Linkedin, Mail, Sparkles, Trophy } from 'lucide-react';
 
 const navItems = [
   { id: 'home', label: 'home', icon: Home },
   { id: 'about', label: 'about me', icon: Sparkles },
   { id: 'projects', label: 'projects', icon: Trophy },
   { id: 'experience', label: 'work', icon: Briefcase },
-  { id: 'education', label: 'education', icon: GraduationCap },
-  { id: 'other-work', label: 'other', icon: ClipboardList },
 ];
 
 export default function Header({ links, timeline = { current: [], past: [] } }) {

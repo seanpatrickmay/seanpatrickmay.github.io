@@ -64,6 +64,11 @@ export default function ArchiveCard({ project }) {
               {repoLink.label || 'Repo'}
             </PillLink>
           )}
+          {project.linksNote && (
+            <span className="text-xs italic text-slate-400 dark:text-slate-500">
+              🔒 {project.linksNote}
+            </span>
+          )}
         </div>
       </div>
     </Card>

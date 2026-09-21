@@ -501,7 +501,7 @@
     ],
     "links": [
       {
-        "label": "Git Repo",
+        "label": "Partner's Repo",
         "href": "https://github.com/akul-sethi/hex-reversi",
         "kind": "repo"
       }
@@ -564,6 +564,7 @@
       "6-layer execution stack (command lines → pipes → redirects → fork/exec) with global IPC pipe for built-in cd/source communication.",
       "Custom dynamic vector (2x growth, string-copying) backs a single-pass tokenizer that handles quotes, special chars, and delimiters."
     ],
-    "links": []
+    "links": [],
+    "linksNote": "source stays private — systems coursework"
   }
 ]

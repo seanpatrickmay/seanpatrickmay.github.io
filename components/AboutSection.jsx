@@ -1,7 +1,6 @@
 import SpotifyTopTracks from '@/components/SpotifyTopTracks';
 import SpotifyTopArtists from '@/components/SpotifyTopArtists';
 import Section from '@/components/ui/Section';
-import LineSparkline from '@/components/ui/LineSparkline';
 import BarSparkline from '@/components/ui/BarSparkline';
 import { getBostonJourneyEquivalence } from '@/lib/journeyEquivalents';
 import { getTrainingSplit } from '@/lib/trainingSplit';
@@ -106,7 +105,6 @@ function SportSplit({ split }) {
 }
 
 export default function AboutSection({
-  featuredActivities = [],
   statsData = null,
   spotifyData = null,
   goodreadsData = null,
@@ -119,12 +117,9 @@ export default function AboutSection({
   const recent = Array.isArray(combined?.recent?.last60) ? combined.recent.last60 : [];
 
   const weeklyHours = weeklySeries.map(row => Number(row?.time_hours) || 0);
-  const cumulativeHours = weeklyHours.reduce((acc, hours) => {
-    const nextTotal = (acc.length ? acc[acc.length - 1] : 0) + hours;
-    acc.push(nextTotal);
-    return acc;
-  }, []);
-  const totalHours8w = cumulativeHours.length ? cumulativeHours[cumulativeHours.length - 1] : null;
+  const totalHours8w = weeklyHours.length
+    ? weeklyHours.reduce((sum, hours) => sum + hours, 0)
+    : null;
 
   const totalKm8w = weeklySeries.reduce((sum, row) => sum + (Number(row?.distance_km) || 0), 0);
 
@@ -221,14 +216,6 @@ export default function AboutSection({
                   </div>
                 </div>
               )}
-
-              {/* Cumulative sparkline */}
-              <LineSparkline
-                values={cumulativeHours}
-                height={40}
-                className="mt-3 text-slate-900 dark:text-white"
-                label="Cumulative training hours over 8 weeks"
-              />
 
               {/* Weekly bar chart */}
               {weeklyHours.length > 1 && (

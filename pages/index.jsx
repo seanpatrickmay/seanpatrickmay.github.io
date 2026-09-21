@@ -2,13 +2,9 @@ import Head from 'next/head';
 import fs from 'fs';
 import path from 'path';
 import rawProjects from '@/public/projects.json' assert { type: 'json' };
-import rawExperience from '@/public/experience.json' assert { type: 'json' };
-import rawOtherWork from '@/public/other-work.json' assert { type: 'json' };
 import { getStaleness } from '@/lib/freshness';
 import { splitTimeline } from '@/lib/timeline';
 import { validateProjects } from '@/lib/projects';
-import { validateExperience } from '@/lib/experience';
-import { validateWork } from '@/lib/work';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import AboutSection from '@/components/AboutSection';
@@ -18,8 +14,6 @@ import MapSection from '@/components/MapSection';
 import ProjectsSection from '@/components/ProjectsSection';
 
 const projects = validateProjects(rawProjects) ? rawProjects : [];
-const experience = validateExperience(rawExperience) ? rawExperience : [];
-const otherWork = validateWork(rawOtherWork) ? rawOtherWork : [];
 
 function readJsonSafe(filename) {
   try {
@@ -79,27 +73,6 @@ const links = {
   website: 'https://seanpatrickmay.me',
 };
 
-const education = [
-  {
-    school: 'Northeastern University — Khoury College of Computer Sciences',
-    degree: 'B.S. in Computer Science & Mathematics (Expected May 2027)',
-    img: '/logos/normalized/nu-logo.png',
-    oneLiner: 'BS CS+Math',
-    extras: [
-      'Sep 2022 – Present (Boston, MA)',
-      'GPA 3.64/4.0; Dean’s Scholarship; Dean’s List (Fall 2024, Spring 2025)',
-      'Activities: Bridge to Calculus Tutor, Calculus Field Day Volunteer, Math Club, Putnam Club, Running Club',
-      'Relevant coursework: Artificial Intelligence, Matrix Methods for Machine Learning, Algorithms & Data Structures, Software Engineering, Computer Systems, Probability & Statistics, Quantitative Finance',
-    ],
-  },
-  {
-    school: 'Corvinus University of Budapest — Mathematical Heritage of Budapest',
-    degree: 'Budapest, Hungary — Summer study abroad (Jun – Aug 2025)',
-    img: '/logos/normalized/corvinus-logo.png',
-    oneLiner: 'Math Dialogue',
-    extras: ['GPA 4.0/4.0', 'Courses: Number Theory, Exploration of Modern Mathematics'],
-  },
-];
 
 export default function Home({ statsData, spotifyData, goodreadsData, duolingoData, timeline, buildYear }) {
   return (
@@ -117,7 +90,6 @@ export default function Home({ statsData, spotifyData, goodreadsData, duolingoDa
         <main id="main-content" className="flex-1 space-y-12 pt-32 pb-24 sm:pt-28 md:pt-24 lg:min-w-0 lg:pt-16 xl:pt-20">
           <Hero links={links} featuredProjects={featuredProjects} timeline={timeline} />
           <AboutSection
-            featuredActivities={otherWork}
             projectHighlights={[lifeDashboardProject, lecteurAideProject].filter(Boolean)}
             statsData={statsData}
             spotifyData={spotifyData}

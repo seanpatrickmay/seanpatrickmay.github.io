@@ -3,6 +3,11 @@ import { pathToFileURL } from 'node:url';
 
 const DEFAULT_OUT_PATH = 'public/spotify.json';
 const DEFAULT_LIMIT = 10;
+// Tracks are fetched deep and then thinned: a four-week chart is usually one
+// artist on repeat, and a top-10 that is 9x the same name says nothing about
+// taste. 50 is the API maximum for this endpoint.
+const TRACK_FETCH_LIMIT = 50;
+const MAX_TRACKS_PER_ARTIST = 2;
 const DEFAULT_REQUEST_TIMEOUT_MS = 15_000;
 const DEFAULT_MAX_RETRIES = 3;
 const TIME_RANGE = 'short_term';
@@ -173,6 +178,33 @@ async function getAccessToken({
   };
 }
 
+/**
+ * Keeps Spotify's ordering but allows at most `perArtist` tracks from any one
+ * act, then trims to `limit`.
+ *
+ * Relaxes rather than under-fills: if capping leaves fewer than `limit`
+ * tracks, the skipped ones are appended in their original order, so a genuinely
+ * single-artist month still yields a full card instead of a stub.
+ */
+export function capPerArtist(tracks, perArtist, limit) {
+  const counts = new Map();
+  const kept = [];
+  const overflow = [];
+
+  for (const track of tracks) {
+    const key = track._primary || track.artist || track.name;
+    const seen = counts.get(key) || 0;
+    if (seen < perArtist) {
+      counts.set(key, seen + 1);
+      kept.push(track);
+    } else {
+      overflow.push(track);
+    }
+  }
+
+  return [...kept, ...overflow].slice(0, limit);
+}
+
 async function fetchTop(token, type, limit, {
   fetchImpl = fetch,
   logger = console,
@@ -237,7 +269,7 @@ async function main({
       fallbackItems: cached.artists,
       canFallback: cached.hasArtists,
     }),
-    fetchTop(token, 'tracks', DEFAULT_LIMIT, {
+    fetchTop(token, 'tracks', TRACK_FETCH_LIMIT, {
       fetchImpl,
       logger,
       maxRetries,
@@ -253,12 +285,19 @@ async function main({
     url: a.external_urls?.spotify || null,
   }));
 
-  const tracks = normalizeItems(tracksRes.items).map(t => ({
-    name: t.name,
-    artist: t.artists?.map(a => a.name).join(', ') || '',
-    image: t.album?.images?.[0]?.url || null,
-    url: t.external_urls?.spotify || null,
-  }));
+  const tracks = capPerArtist(
+    normalizeItems(tracksRes.items).map(t => ({
+      name: t.name,
+      artist: t.artists?.map(a => a.name).join(', ') || '',
+      image: t.album?.images?.[0]?.url || null,
+      url: t.external_urls?.spotify || null,
+      // Keyed on the primary artist so "X" and "X, Y" are not treated as
+      // different acts. Stripped before writing.
+      _primary: (t.artists?.[0]?.name || '').trim().toLowerCase(),
+    })),
+    MAX_TRACKS_PER_ARTIST,
+    DEFAULT_LIMIT,
+  ).map(({ _primary, ...track }) => track);
 
   const out = {
     generated_at: new Date().toISOString(),
