@@ -162,13 +162,9 @@ export default function AboutSection({
   return (
     <Section id="about" title="about me" icon={Sparkles}>
       <Pinboard>
-        {/* Full width, above the masonry: a world map in a ~300px masonry
-            column would be unreadable, and this one spans Puerto Rico to
-            Hungary. Note the wrapper — Pinboard puts className on its outer
-            element, so spacing has to live on a div of our own. */}
+        {/* Note the wrapper — Pinboard puts className on its outer element,
+            so spacing has to live on a div of our own. */}
         <div className="space-y-5">
-          <MovementMap />
-
           <div className="columns-1 gap-5 sm:columns-2 xl:columns-3 [&>*]:mb-5 [&>*]:break-inside-avoid">
 
           {/* Training Stats — expanded */}
@@ -309,6 +305,11 @@ export default function AboutSection({
           </PinCard>
 
           </div>
+
+          {/* Full width and last: a world map spanning Puerto Rico to Hungary
+              is unreadable in a ~300px masonry column, so it sits outside the
+              columns rather than inside them. */}
+          <MovementMap />
         </div>
 
       </Pinboard>
