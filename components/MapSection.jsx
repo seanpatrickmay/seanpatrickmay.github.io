@@ -75,21 +75,25 @@ export default function MapSection() {
           ))}
         </div>
 
-        {/* Map */}
-        <PinMap
-          pins={pins}
-          activePin={activePin}
-          onPinHover={handlePinHover}
-          onPinClick={handlePinClick}
-        />
+        <div className="lg:flex lg:items-start lg:gap-5">
+          <div className="min-w-0 lg:flex-1">
+            <PinMap
+              pins={pins}
+              activePin={activePin}
+              onPinHover={handlePinHover}
+              onPinClick={handlePinClick}
+            />
+          </div>
 
-        {/* Entry list */}
-        <MapEntryList
-          pins={pins}
-          activePin={activePin}
-          onEntryClick={handleEntryClick}
-          onEntryHover={handleEntryHover}
-        />
+          <div className="lg:w-[22rem] lg:flex-none">
+            <MapEntryList
+              pins={pins}
+              activePin={activePin}
+              onEntryClick={handleEntryClick}
+              onEntryHover={handleEntryHover}
+            />
+          </div>
+        </div>
       </Pinboard>
     </Section>
   );

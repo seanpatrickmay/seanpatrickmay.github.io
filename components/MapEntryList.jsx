@@ -26,7 +26,7 @@ export default function MapEntryList({ pins = [], activePin, onEntryClick, onEnt
               onMouseEnter={() => onEntryHover(pin)}
               onMouseLeave={() => onEntryHover(null)}
               className={[
-                'flex items-center gap-3 rounded-lg px-3 py-2.5 text-left transition-all duration-200',
+                'flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left transition-all duration-200',
                 isActive
                   ? 'border-2 bg-white shadow-sm dark:bg-stone-800'
                   : 'border border-stone-200 bg-white hover:border-stone-300 hover:shadow-sm dark:border-stone-700 dark:bg-stone-800 dark:hover:border-stone-600',

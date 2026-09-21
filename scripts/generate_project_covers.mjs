@@ -39,8 +39,12 @@ const COVERS = [
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 function svg({ title, lines, accent, glow }) {
+  // Centred inside a safe zone, not left-aligned: these are rendered with
+  // object-cover into containers of several different aspect ratios, and the
+  // hero crops hard from both edges. Left-aligned text lost its first word.
+  const cx = W / 2;
   const body = lines
-    .map((line, i) => `<text x="80" y="${392 + i * 52}" class="sub">${esc(line)}</text>`)
+    .map((line, i) => `<text x="${cx}" y="${402 + i * 52}" class="sub">${esc(line)}</text>`)
     .join('\n    ');
 
   return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">
@@ -50,20 +54,20 @@ function svg({ title, lines, accent, glow }) {
       <stop offset="55%" stop-color="#1e293b"/>
       <stop offset="100%" stop-color="${glow}"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.85" cy="0.15" r="0.6">
-      <stop offset="0%" stop-color="${accent}" stop-opacity="0.28"/>
+    <radialGradient id="glow" cx="0.5" cy="0.1" r="0.7">
+      <stop offset="0%" stop-color="${accent}" stop-opacity="0.26"/>
       <stop offset="100%" stop-color="${accent}" stop-opacity="0"/>
     </radialGradient>
     <style>
-      .title { font-family: Helvetica, Arial, sans-serif; font-size: 68px; font-weight: 700; fill: #f8fafc; }
-      .sub   { font-family: Helvetica, Arial, sans-serif; font-size: 30px; fill: #cbd5e1; }
+      .title { font-family: Helvetica, Arial, sans-serif; font-size: 62px; font-weight: 700; fill: #f8fafc; text-anchor: middle; }
+      .sub   { font-family: Helvetica, Arial, sans-serif; font-size: 28px; fill: #cbd5e1; text-anchor: middle; }
       .rule  { stroke: ${accent}; stroke-width: 6; stroke-linecap: round; }
     </style>
   </defs>
   <rect width="${W}" height="${H}" fill="url(#bg)"/>
   <rect width="${W}" height="${H}" fill="url(#glow)"/>
-  <line x1="80" y1="232" x2="176" y2="232" class="rule"/>
-  <text x="80" y="310" class="title">${esc(title)}</text>
+  <line x1="${cx - 48}" y1="252" x2="${cx + 48}" y2="252" class="rule"/>
+  <text x="${cx}" y="330" class="title">${esc(title)}</text>
   ${body}
 </svg>`;
 }
