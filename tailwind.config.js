@@ -15,6 +15,10 @@ module.exports = {
         display: [
           '"Instrument Serif"','Georgia','ui-serif','serif'
         ],
+        // Annotations only. In body copy this tips straight into kitsch.
+        hand: [
+          'Caveat','"Bradley Hand"','"Segoe Print"','cursive'
+        ],
       },
       keyframes: {
         'fade-up': {

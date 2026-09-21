@@ -4,11 +4,20 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 import Badge from '@/components/ui/Badge';
 import PillLink from '@/components/ui/PillLink';
 
+// A dealt-cards cascade rather than a tight fan. The fan was tuned for a
+// ~570px absolute overlay; inside the hero's own column it packed three 200px
+// cards into ~460px and the third all but disappeared. Going down-and-right
+// with increasing z keeps every title legible, and dropping the negative
+// `top` stops the handwritten note above being overlapped.
 const FAN_POSITIONS = [
-  { rotation: -10, left: '10%', top: '-20px', z: 3 },
-  { rotation: 5, left: '48%', top: '-5px', z: 2 },
-  { rotation: 16, left: '26%', top: '30px', z: 1 },
+  // z descends with rank: the fan is fed from caseStudyRank, so the strongest
+  // project has to be the one on top and fully legible. Increasing z put the
+  // third-ranked project in front, covering the titles of the first two.
+  { rotation: -6, left: '0%', top: '0px', z: 3 },
+  { rotation: 3, left: '25%', top: '58px', z: 2 },
+  { rotation: 11, left: '48%', top: '116px', z: 1 },
 ];
+const FAN_CARD_WIDTH = 190;
 
 function ProjectPolaroidFan({ projects = [] }) {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -36,7 +45,7 @@ function ProjectPolaroidFan({ projects = [] }) {
               left: pos.left,
               zIndex,
               transform: `rotate(${pos.rotation}deg)${isHovered ? ' scale(1.06) translateY(-8px)' : ''}`,
-              width: 200,
+              width: FAN_CARD_WIDTH,
             }}
             onMouseEnter={() => setHoveredIndex(i)}
             onMouseLeave={() => setHoveredIndex(null)}
@@ -92,83 +101,104 @@ export default function Hero({ links, featuredProjects = [], timeline = { curren
   const highlights = (timeline.current || []).filter(e => e.highlight);
 
   return (
-    <section id="home" className="section-container py-12 scroll-mt-32 lg:scroll-mt-16">
-      <div className="relative">
-        {/* Cards positioned behind text in top-right */}
-        <div className="hidden md:block absolute -top-4 right-0 w-[55%] h-[calc(100%-40px)] pointer-events-none overflow-visible" style={{ zIndex: 0 }}>
-          <div className="relative w-full h-full [&_a]:pointer-events-auto animate-fade-up [animation-delay:400ms]">
-            <ProjectPolaroidFan projects={projects} />
+    <section id="home" className="section-container scroll-mt-32 py-12 lg:scroll-mt-16">
+      {/* A real two-column grid rather than a fan absolutely positioned over
+          the text. The old version left a hole under the bio, orphaned the
+          "see all projects" pill bottom-right, and capped the copy at
+          max-w-md inside a column twice that wide. */}
+      <div className="grid gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] lg:items-start">
+        <div className="max-w-xl space-y-5">
+          <div className="animate-fade-up flex items-center gap-4">
+            <img
+              src="/images/headshot.png"
+              alt="Sean P. May"
+              width={400}
+              height={400}
+              className="h-20 w-20 flex-shrink-0 rounded-full object-cover object-top shadow-md ring-2 ring-slate-200/80 dark:ring-slate-700/80"
+            />
+            <div>
+              <h1 className="font-display text-3xl tracking-tight text-slate-900 md:text-4xl dark:text-white">
+                Sean P. May
+              </h1>
+              <p className="mt-1 text-sm text-slate-500 dark:text-slate-300">Boston, MA</p>
+            </div>
           </div>
-        </div>
 
-        <div className="relative pointer-events-none" style={{ zIndex: 10 }}>
-          <div className="space-y-5 max-w-md [&>*]:pointer-events-auto">
-            <div className="flex items-center gap-4 animate-fade-up">
-              <img
-                src="/images/headshot.png"
-                alt="Sean P. May"
-                width={400}
-                height={400}
-                className="w-20 h-20 rounded-full object-cover object-top ring-2 ring-slate-200/80 dark:ring-slate-700/80 shadow-md flex-shrink-0"
-              />
-              <div>
-                <h1 className="font-display text-3xl md:text-4xl tracking-tight text-slate-900 dark:text-white">
-                  Sean P. May
-                </h1>
-                <p className="text-sm text-slate-500 dark:text-slate-300 mt-1">Boston, MA</p>
-              </div>
-            </div>
-
-            <div className="animate-fade-up [animation-delay:100ms]">
-              <p className="text-xl md:text-2xl font-semibold leading-snug text-slate-800 dark:text-slate-200">
-                swe, math, and whatever looks interesting
-              </p>
-              <p className="text-lg md:text-xl text-slate-500 dark:text-slate-300 mt-1">
-                i really like hard problems
-              </p>
-            </div>
-
-            {/* Derived from the timeline, so a finished role cannot linger here
-                the way "SWE Intern — Capital One" did after August. */}
-            {highlights.length > 0 && (
-              <div className="flex flex-wrap gap-2 pt-1 lg:hidden animate-fade-up [animation-delay:150ms]">
-                {highlights.map(entry => (
-                  <Badge key={entry.org} variant="outline" className="text-xs">
-                    {entry.role} &mdash; {entry.org}
-                  </Badge>
-                ))}
-              </div>
-            )}
-
-            <p className="text-base text-slate-600 dark:text-slate-300 leading-relaxed animate-fade-up [animation-delay:200ms]">
-              built an agentic AI tutor at NExT, spent this past summer interning at Capital One, and now i'm doing quant research. training for the indianapolis monumental marathon, prompting, reading, and stacking some chips in between
+          <div className="animate-fade-up [animation-delay:100ms]">
+            <p className="text-2xl font-semibold leading-snug text-slate-800 md:text-3xl dark:text-slate-200">
+              swe, math, and whatever looks interesting
             </p>
+            <p className="mt-1 text-lg text-slate-500 md:text-xl dark:text-slate-300">
+              i really like hard problems
+            </p>
+          </div>
 
-            <div className="flex flex-wrap gap-3 pt-2 animate-fade-up [animation-delay:300ms]">
-              <PillLink href={links.github} icon={Github} external className="px-4">
-                GitHub
-              </PillLink>
-              <PillLink href={links.linkedin} icon={Linkedin} external className="px-4">
-                LinkedIn
-              </PillLink>
-              <PillLink href={links.email} variant="solid" icon={Mail} className="px-4">
-                say hi
-              </PillLink>
+          {/* Derived from the timeline, so a finished role cannot linger here
+              the way "SWE Intern — Capital One" did after August. */}
+          {highlights.length > 0 && (
+            <div className="animate-fade-up flex flex-wrap gap-2 pt-1 [animation-delay:150ms] lg:hidden">
+              {highlights.map(entry => (
+                <Badge key={entry.org} variant="outline" className="text-xs">
+                  {entry.role} &mdash; {entry.org}
+                </Badge>
+              ))}
             </div>
+          )}
+
+          <p className="animate-fade-up text-base leading-relaxed text-slate-600 [animation-delay:200ms] dark:text-slate-300">
+            built an agentic AI tutor at NExT, spent this past summer interning at Capital One, and now i&apos;m doing quant research. training for the indianapolis monumental marathon, prompting, reading, and stacking some chips in between
+          </p>
+
+          <div className="animate-fade-up flex flex-wrap gap-3 pt-2 [animation-delay:300ms]">
+            <PillLink href={links.github} icon={Github} external className="px-4">
+              GitHub
+            </PillLink>
+            <PillLink href={links.linkedin} icon={Linkedin} external className="px-4">
+              LinkedIn
+            </PillLink>
+            <PillLink href={links.email} variant="solid" icon={Mail} className="px-4">
+              say hi
+            </PillLink>
           </div>
         </div>
 
-        {/* "see all" link below */}
-        <div className="flex justify-end mt-6 md:mt-2 animate-fade-up [animation-delay:500ms]">
-          <PillLink href="#projects" variant="solid" className="px-4 text-sm">
-            see all projects
-          </PillLink>
-        </div>
+        <div className="animate-fade-up [animation-delay:400ms]">
+          {/* Handwritten aside — the one place on the page a marker face earns
+              its keep, because it is an annotation about the thing next to it
+              rather than content in its own right. */}
+          <div
+            aria-hidden="true"
+            className="mb-1 hidden items-end gap-2 pl-6 md:flex"
+          >
+            <span className="font-hand text-2xl leading-none text-stone-500 dark:text-stone-400">
+              a few things i built
+            </span>
+            <svg viewBox="0 0 48 34" className="h-7 w-10 flex-none text-stone-400 dark:text-stone-500" fill="none">
+              <path
+                d="M2 4c14 0 26 8 32 22"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeDasharray="0.5 5"
+              />
+              <path
+                d="M28 25l6.5 3 1.5-7"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
 
-        {/* Mobile: show cards normally */}
-        <div className="md:hidden mt-8 animate-fade-up [animation-delay:400ms]">
-          <div className="relative" style={{ minHeight: 340 }}>
+          <div className="relative min-h-[400px] sm:min-h-[430px]">
             <ProjectPolaroidFan projects={projects} />
+          </div>
+
+          <div className="mt-2 flex justify-center md:justify-end">
+            <PillLink href="#projects" variant="solid" className="px-4 text-sm">
+              see all projects
+            </PillLink>
           </div>
         </div>
       </div>
