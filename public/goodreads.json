@@ -1,6 +1,19 @@
 {
-  "generated_at": "2026-09-21T06:26:51.042Z",
+  "generated_at": "2026-09-21T18:38:29.690Z",
   "currentlyReading": [
+    {
+      "title": "A Game of Thrones (A Song of Ice and Fire, #1)",
+      "author": "George R.R. Martin",
+      "rating": 0,
+      "avgRating": 4.58,
+      "dateAdded": "Mon, 21 Sep 2026 01:50:51 -0700",
+      "dateRead": null,
+      "published": "1996",
+      "numPages": 819,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1753055008l/50863421._SX98_.jpg",
+      "bookId": "50863421",
+      "link": "https://www.goodreads.com/review/show/8418091814?utm_medium=api&utm_source=rss"
+    },
     {
       "title": "Blood Meridian, or, the Evening Redness in the West",
       "author": "Cormac McCarthy",
