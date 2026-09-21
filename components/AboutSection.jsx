@@ -1,5 +1,6 @@
 import SpotifyTopTracks from '@/components/SpotifyTopTracks';
 import SpotifyTopArtists from '@/components/SpotifyTopArtists';
+import SpotifyGenresCard from '@/components/SpotifyGenresCard';
 import Section from '@/components/ui/Section';
 import BarSparkline from '@/components/ui/BarSparkline';
 import { getBostonJourneyEquivalence } from '@/lib/journeyEquivalents';
@@ -160,7 +161,7 @@ export default function AboutSection({
   return (
     <Section id="about" title="about me" icon={Sparkles}>
       <Pinboard>
-        <div className="columns-1 gap-5 sm:columns-2 [&>*]:mb-5 [&>*]:break-inside-avoid">
+        <div className="columns-1 gap-5 sm:columns-2 xl:columns-3 [&>*]:mb-5 [&>*]:break-inside-avoid">
 
           {/* Training Stats — expanded */}
           <PinCard rotation={-1.8} pinColor="red">
@@ -253,6 +254,17 @@ export default function AboutSection({
               <div className="mt-2">
                 <SpotifyTopArtists artists={spotify?.artists ?? []} visibleCount={7} />
               </div>
+            </div>
+          </PinCard>
+
+          {/* Top Genres — derived from the same artist ranking above it */}
+          <PinCard rotation={-1.1} pinColor="green" pinPosition="right">
+            <div className="rounded-sm border border-slate-200 bg-white p-4 dark:border-slate-700 dark:bg-slate-900">
+              <SpotifyGenresCard
+                genres={spotify?.genres ?? []}
+                window={spotifyWindow}
+                staleness={spotify?._staleness}
+              />
             </div>
           </PinCard>
 

@@ -38,11 +38,10 @@ export default function SidebarTimeline({ label, entries = [] }) {
             )}
             <div className="min-w-0 leading-snug">
               {/* Organisation leads: it is what gets recognised at a glance,
-                  and "SDE Co-op" alone says nothing about where. The wordmark
-                  already names Capital One, so its text line is redundant. */}
-              {!entry.wordmark && (
-                <div className="font-medium text-slate-900 dark:text-slate-100">{entry.org}</div>
-              )}
+                  and "SDE Co-op" alone says nothing about where. Shown even
+                  when there is a wordmark — the logo reads as decoration next
+                  to the other entries' names, not as the name itself. */}
+              <div className="font-medium text-slate-900 dark:text-slate-100">{entry.org}</div>
               {entry.role && (
                 <div className="text-xs text-slate-600 dark:text-slate-300">{entry.role}</div>
               )}

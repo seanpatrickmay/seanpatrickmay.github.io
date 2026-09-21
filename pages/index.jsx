@@ -6,6 +6,7 @@ import { getStaleness } from '@/lib/freshness';
 import { splitTimeline } from '@/lib/timeline';
 import { validateProjects } from '@/lib/projects';
 import Header from '@/components/Header';
+import Sidebar from '@/components/Sidebar';
 import Hero from '@/components/Hero';
 import AboutSection from '@/components/AboutSection';
 import ContactSection from '@/components/ContactSection';
@@ -63,20 +64,13 @@ function trimStats(data) {
   };
 }
 
-// The home card shows 12 recent books; readHistory exists for /reading, which
-// reads goodreads.json itself.
-function trimGoodreads(data) {
-  if (!data) return data;
-  const { readHistory, ...rest } = data;
-  return rest;
-}
 
 export async function getStaticProps() {
   return {
     props: {
       statsData: trimStats(readFeed('stats.json')),
       spotifyData: readFeed('spotify.json'),
-      goodreadsData: trimGoodreads(readFeed('goodreads.json')),
+      goodreadsData: readFeed('goodreads.json'),
       duolingoData: readFeed('duolingo.json'),
       timeline: splitTimeline(Date.now()),
       // Resolved at build time like the rest: `new Date()` at render time
@@ -122,10 +116,21 @@ export default function Home({ statsData, spotifyData, goodreadsData, duolingoDa
         />
       </Head>
 
-      <div className="lg:mx-auto lg:flex lg:max-w-screen-2xl lg:items-start lg:justify-center lg:gap-10 lg:px-12 xl:px-16">
-        <Header links={links} timeline={timeline} />
-        <main id="main-content" className="flex-1 space-y-12 pt-32 pb-24 sm:pt-28 md:pt-24 lg:min-w-0 lg:pt-16 xl:pt-20">
-          <Hero links={links} featuredProjects={featuredProjects} timeline={timeline} />
+      <Header />
+
+      <main id="main-content" className="mx-auto max-w-screen-2xl px-4 pb-24 sm:px-6 lg:px-12 xl:px-16">
+        {/* Sidebar is pinned top-left beside the hero rather than running the
+            height of the page. As a full-height column it capped every
+            section below at ~1150px; now only this row is split and
+            everything under it gets the full width. */}
+        <div className="pt-32 sm:pt-28 md:pt-24 lg:flex lg:items-start lg:gap-10 lg:pt-10">
+          <Sidebar links={links} timeline={timeline} />
+          <div className="min-w-0 flex-1">
+            <Hero links={links} featuredProjects={featuredProjects} timeline={timeline} />
+          </div>
+        </div>
+
+        <div className="mt-12 space-y-12">
           <AboutSection
             projectHighlights={[lifeDashboardProject, lecteurAideProject].filter(Boolean)}
             statsData={statsData}
@@ -139,9 +144,10 @@ export default function Home({ statsData, spotifyData, goodreadsData, duolingoDa
           <ProjectsSection />
 
           <ContactSection links={links} />
-          <Footer links={links} year={buildYear} />
-        </main>
-      </div>
+        </div>
+      </main>
+
+      <Footer links={links} year={buildYear} />
     </>
   );
 }

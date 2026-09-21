@@ -1,5 +1,132 @@
 [
   {
+    "title": "Alternative Data Pipeline",
+    "slug": "alternative-data-pipeline",
+    "emoji": "📡",
+    "period": "Sep 2025 – Apr 2026",
+    "startDate": "2025-09-01",
+    "endDate": "2026-04-30",
+    "updatedAt": "2026-04-30",
+    "stack": [
+      "Python",
+      "AWS Lambda",
+      "SQS",
+      "EventBridge",
+      "Athena",
+      "SAM",
+      "PostgreSQL"
+    ],
+    "oneLiner": "serverless pipeline syncing 175,000+ job postings a day from 6 ATS platforms across 61% of the S&P 500 into Postgres and an S3/Athena lake — for under $15 a month",
+    "cardDescription": "infrastructure-as-code job-posting pipeline: 6 ATS adapters, SQS self-continuation past the Lambda 15-minute ceiling, and Lambda timeouts driven from ~37 per cycle to zero",
+    "languages": [
+      "Python",
+      "SQL"
+    ],
+    "tags": [
+      "Data Engineering",
+      "Cloud/Infra"
+    ],
+    "coolness": 96,
+    "caseStudyRank": 1,
+    "showcaseTag": "Data Engineering",
+    "showcaseTech": "AWS Lambda",
+    "proofPoints": [
+      "175,000+ postings a day from 6 ATS platforms covering 61% of the S&P 500, into PostgreSQL and an S3/Athena lake for under $15/month",
+      "Lambda timeouts from ~37 per cycle to zero: time-budgeted scrapes, 16-way concurrent fetching, and SQS self-continuation where workers commit progress and re-enqueue past the 15-minute ceiling",
+      "a shared ats_runner with per-platform adapters took coverage from 2 platforms to 6, each adapter 50-130 lines"
+    ],
+    "overview": "an alternative-data pipeline for equity research: it tracks hiring as a signal by scraping job postings from the applicant-tracking systems that big companies actually run on. everything is infrastructure-as-code under AWS SAM, and the whole thing runs for less than a streaming subscription. the interesting engineering is not the scraping, it is surviving Lambda's 15-minute wall without dropping work.",
+    "whatIBuilt": [
+      "per-ATS adapters (Ashby, Lever, Phenom, SmartRecruiters, SuccessFactors, Oracle Cloud) behind one shared runner",
+      "an SQS self-continuation loop so a worker that runs out of clock commits what it has and re-enqueues itself",
+      "EventBridge scheduling, CloudWatch alarms on source degradation, and Alembic-managed Postgres schema",
+      "an S3/Athena lake for the historical snapshots the Postgres tables do not keep"
+    ],
+    "howItWorks": [
+      "a dispatcher fans companies out to per-ATS scrape jobs on SQS",
+      "each worker runs against a time budget, fetching 16 pages concurrently",
+      "when the budget runs out it commits progress and re-enqueues its own cursor, so nothing is lost at the 15-minute ceiling",
+      "rows land in Postgres for querying and in S3 for Athena over the history"
+    ],
+    "results": [
+      "175,000+ postings synced daily across 61% of the S&P 500",
+      "Lambda timeouts reduced from ~37 per cycle to zero",
+      "under $15/month all-in"
+    ],
+    "nextSteps": [
+      "more ATS coverage",
+      "backfill the lake further"
+    ],
+    "coverImage": {
+      "src": "/projects/alternative-data-pipeline/cover.png",
+      "alt": "Alternative Data Pipeline — serverless job-posting pipeline"
+    },
+    "gallery": [],
+    "bullets": [],
+    "links": [],
+    "linksNote": "private repo — NU Systematic Alpha"
+  },
+  {
+    "title": "AI Chief of Staff",
+    "slug": "ai-chief-of-staff",
+    "emoji": "🧭",
+    "period": "Jan – Apr 2026",
+    "startDate": "2026-01-01",
+    "endDate": "2026-04-30",
+    "updatedAt": "2026-04-30",
+    "stack": [
+      "Python",
+      "LangGraph",
+      "FastAPI",
+      "PostgreSQL",
+      "Redis",
+      "ECS Fargate"
+    ],
+    "oneLiner": "event-driven core of a 7-engineer multi-agent system that scores delivery risk across concurrent consulting engagements from 32 GitHub, Slack, Linear and Notion webhook types",
+    "cardDescription": "multi-agent project monitoring — per-project Redis locks and timestamp-scored queues keep each project's events ordered while projects analyse concurrently",
+    "languages": [
+      "Python",
+      "TypeScript"
+    ],
+    "tags": [
+      "AI/ML",
+      "Cloud/Infra"
+    ],
+    "coolness": 95,
+    "caseStudyRank": 2,
+    "showcaseTag": "AI/ML",
+    "showcaseTech": "LangGraph",
+    "proofPoints": [
+      "designed the event-driven core of a 7-engineer system scoring delivery risk across concurrent client projects from 32 webhook types",
+      "3-phase ingest worker: per-project Redis locks and timestamp-scored queues order each project's events while projects analyse concurrently",
+      "retry backoff and dead-letter queues, because webhook payloads are sparse and every event needs a follow-up API call that can fail"
+    ],
+    "overview": "consulting engagements go wrong quietly — a stalled Linear board, a channel that went silent, a PR nobody reviewed. this ingests all of it from Notion, Slack, Linear and GitHub and turns it into a prioritised risk briefing. i owned the event-driven core: the part that has to keep one project's events in order while several projects are being analysed at once.",
+    "whatIBuilt": [
+      "the ingest worker: HMAC-verified webhooks in, Redis queue, ordered per-project processing out",
+      "per-project locks plus timestamp-scored queues so ordering holds within a project without serialising across projects",
+      "retry backoff and dead-letter handling for the follow-up fetches that sparse webhooks force"
+    ],
+    "howItWorks": [
+      "FastAPI validates the HMAC signature, extracts metadata, enqueues and returns 200 immediately",
+      "webhook payloads are sparse, so a worker fetches the actual content from each platform's API",
+      "a per-project lock and a timestamp-scored queue keep that project's events in order",
+      "agents score the signals and the dashboard surfaces prioritised risk"
+    ],
+    "results": [
+      "shipped as the ingest backbone for a 7-engineer build across 32 webhook types"
+    ],
+    "nextSteps": [],
+    "coverImage": {
+      "src": "/projects/ai-chief-of-staff/cover.png",
+      "alt": "AI Chief of Staff — multi-agent project monitoring"
+    },
+    "gallery": [],
+    "bullets": [],
+    "links": [],
+    "linksNote": "private repo — NExT Consulting"
+  },
+  {
     "title": "seanpatrickmay.github.io",
     "slug": "seanpatrickmay-github-io",
     "emoji": "🌐",
@@ -102,7 +229,7 @@
       "Data Engineering"
     ],
     "coolness": 100,
-    "caseStudyRank": 1,
+    "caseStudyRank": 3,
     "showcaseTag": "Agentic AI",
     "showcaseTech": "PostgreSQL",
     "proofPoints": [
@@ -182,7 +309,7 @@
       "Agentic AI"
     ],
     "coolness": 99,
-    "caseStudyRank": 2,
+    "caseStudyRank": 4,
     "showcaseTag": "NLP",
     "showcaseTech": "Cloud Translation",
     "proofPoints": [
@@ -254,7 +381,7 @@
       "Algorithms"
     ],
     "coolness": 96,
-    "caseStudyRank": 3,
+    "caseStudyRank": 5,
     "showcaseTag": "Computer Vision",
     "showcaseTech": "PyTorch",
     "proofPoints": [
@@ -327,7 +454,7 @@
       "Cloud/Infra"
     ],
     "coolness": 92,
-    "caseStudyRank": 4,
+    "caseStudyRank": 6,
     "showcaseTag": "Machine Learning",
     "showcaseTech": "Earth Engine",
     "proofPoints": [
@@ -396,7 +523,7 @@
       "Algorithms"
     ],
     "coolness": 90,
-    "caseStudyRank": 5,
+    "caseStudyRank": 7,
     "showcaseTag": "Game Theory",
     "showcaseTech": "CFR+",
     "proofPoints": [

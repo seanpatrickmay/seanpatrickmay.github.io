@@ -141,7 +141,7 @@ export default function Hero({ links, featuredProjects = [], timeline = { curren
             )}
 
             <p className="text-base text-slate-600 dark:text-slate-300 leading-relaxed animate-fade-up [animation-delay:200ms]">
-              built an agentic AI tutor at NExT, spent this past summer interning at Capital One, and now i'm doing quant research. triathlons, prompting, reading, and stacking some chips in between
+              built an agentic AI tutor at NExT, spent this past summer interning at Capital One, and now i'm doing quant research. training for the indianapolis monumental marathon, prompting, reading, and stacking some chips in between
             </p>
 
             <div className="flex flex-wrap gap-3 pt-2 animate-fade-up [animation-delay:300ms]">

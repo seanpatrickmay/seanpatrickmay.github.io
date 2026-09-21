@@ -8,6 +8,11 @@ const DEFAULT_LIMIT = 10;
 // taste. 50 is the API maximum for this endpoint.
 const TRACK_FETCH_LIMIT = 50;
 const MAX_TRACKS_PER_ARTIST = 2;
+// Spotify has no "top genres" endpoint for a user. The artists response
+// carries a genres[] per artist, so the chart is derived from it: an artist's
+// rank is its weight, because #1 says more about taste than #20.
+const ARTIST_FETCH_LIMIT = 50;
+const MAX_GENRES = 6;
 const DEFAULT_REQUEST_TIMEOUT_MS = 15_000;
 const DEFAULT_MAX_RETRIES = 3;
 const TIME_RANGE = 'short_term';
@@ -186,6 +191,40 @@ async function getAccessToken({
  * tracks, the skipped ones are appended in their original order, so a genuinely
  * single-artist month still yields a full card instead of a stub.
  */
+/**
+ * Rank-weighted genre chart from the top-artists list.
+ *
+ * Counting genres flat would let twenty mid-list artists outvote the one you
+ * actually listen to, so each artist contributes 1/(rank+1) — a smooth decay
+ * that keeps the top of the list dominant without erasing the tail.
+ *
+ * `share` is normalised against the leader, so the bars read as "relative to
+ * my top genre" rather than implying a percentage of listening time, which
+ * this data cannot support.
+ */
+export function topGenres(artists, limit) {
+  const weights = new Map();
+
+  artists.forEach((artist, index) => {
+    const weight = 1 / (index + 1);
+    for (const genre of artist?.genres ?? []) {
+      const key = String(genre).trim().toLowerCase();
+      if (!key) continue;
+      weights.set(key, (weights.get(key) || 0) + weight);
+    }
+  });
+
+  if (weights.size === 0) return [];
+
+  const ranked = [...weights.entries()].sort((a, b) => b[1] - a[1]).slice(0, limit);
+  const top = ranked[0][1];
+
+  return ranked.map(([name, weight]) => ({
+    name,
+    share: Math.round((weight / top) * 100),
+  }));
+}
+
 export function capPerArtist(tracks, perArtist, limit) {
   const counts = new Map();
   const kept = [];
@@ -261,7 +300,7 @@ async function main({
     warn(logger, '[spotify] Refresh token was rotated; wrote replacement for the workflow to persist.');
   }
   const [artistsRes, tracksRes] = await Promise.all([
-    fetchTop(token, 'artists', DEFAULT_LIMIT, {
+    fetchTop(token, 'artists', ARTIST_FETCH_LIMIT, {
       fetchImpl,
       logger,
       maxRetries,
@@ -279,7 +318,11 @@ async function main({
     }),
   ]);
 
-  const artists = normalizeItems(artistsRes.items).map(a => ({
+  const rankedArtists = normalizeItems(artistsRes.items);
+  const genres = topGenres(rankedArtists, MAX_GENRES);
+
+  // The card still shows ten; the deeper fetch exists for the genre chart.
+  const artists = rankedArtists.slice(0, DEFAULT_LIMIT).map(a => ({
     name: a.name,
     image: a.images?.[0]?.url || null,
     url: a.external_urls?.spotify || null,
@@ -306,6 +349,7 @@ async function main({
     // TIME_RANGE updates the label too.
     time_range: TIME_RANGE,
     artists,
+    genres,
     tracks,
   };
 

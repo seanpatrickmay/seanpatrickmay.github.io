@@ -3,7 +3,6 @@ import { useMemo } from 'react';
 import { BookOpen } from 'lucide-react';
 import StaleBadge from '@/components/ui/StaleBadge';
 import AutoScrollShelf from '@/components/AutoScrollShelf';
-import Link from 'next/link';
 import { pickReadingBenchmark } from '@/lib/readingBenchmarks';
 
 const NUM = new Intl.NumberFormat('en-US');
@@ -149,12 +148,6 @@ export default function GoodreadsCard({ data = null, bare = false }) {
         emptyMessage="No finished books yet"
       />
 
-      <Link
-        href="/reading/"
-        className="inline-block text-[11px] font-medium text-amber-700 transition hover:text-amber-800 dark:text-amber-400 dark:hover:text-amber-300"
-      >
-        pages per month, ratings, and whether i'm a harsh critic →
-      </Link>
     </div>
   );
 

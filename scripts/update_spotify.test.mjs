@@ -1,7 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { capPerArtist, fetchJsonWithRetry, fetchTop, getAccessToken } from './update_spotify.mjs';
+import {
+  capPerArtist,
+  fetchJsonWithRetry,
+  fetchTop,
+  getAccessToken,
+  topGenres,
+} from './update_spotify.mjs';
 
 function createLogger() {
   const messages = [];
@@ -181,4 +187,44 @@ test('capPerArtist treats a featured credit as the same primary artist', () => {
   const result = capPerArtist(pool, 2, 3);
 
   assert.deepEqual(result.map(t => t.name), ['solo', 'feature', 'clarity']);
+});
+
+test('topGenres weights a genre by the rank of the artists carrying it', () => {
+  const result = topGenres(
+    [
+      { name: 'Top', genres: ['indie pop'] },
+      { name: 'Second', genres: ['edm'] },
+      { name: 'Third', genres: ['edm'] },
+    ],
+    5,
+  );
+
+  // indie pop scores 1/1 = 1.0; edm scores 1/2 + 1/3 = 0.83.
+  assert.equal(result[0].name, 'indie pop');
+  assert.equal(result[0].share, 100);
+  assert.equal(result[1].name, 'edm');
+  assert.ok(result[1].share < 100 && result[1].share > 75, `got ${result[1].share}`);
+});
+
+test('topGenres folds case and whitespace together', () => {
+  const result = topGenres(
+    [
+      { name: 'A', genres: ['Indie Pop'] },
+      { name: 'B', genres: ['  indie pop  '] },
+    ],
+    5,
+  );
+
+  assert.equal(result.length, 1);
+  assert.equal(result[0].name, 'indie pop');
+});
+
+test('topGenres survives artists with no genres at all', () => {
+  assert.deepEqual(topGenres([{ name: 'A' }, { name: 'B', genres: [] }], 5), []);
+});
+
+test('topGenres respects the limit', () => {
+  const artists = Array.from({ length: 10 }, (_, i) => ({ name: `a${i}`, genres: [`g${i}`] }));
+
+  assert.equal(topGenres(artists, 4).length, 4);
 });
