@@ -21,6 +21,10 @@ const SHELVES = ['currently-reading', 'read'];
 // Feeds the horizontal "recently read" shelf, which only earns its scroll if
 // the covers overflow the card. 5 was sized for the old 2-column grid.
 const MAX_RECENT = 12;
+// The whole read shelf is already fetched to compute the yearly totals; this
+// is how much of it /reading gets for its charts. Trimmed to the fields the
+// page actually plots, so it stays a fraction of the full records.
+const MAX_HISTORY = 120;
 const MAX_PAGES = 10; // safety cap when paging a shelf; we stop early on an empty page
 const TIMEOUT_MS = 15_000;
 
@@ -148,6 +152,22 @@ async function main() {
     .sort((a, b) => recencyTs(b) - recencyTs(a))
     .slice(0, MAX_RECENT);
 
+  // Only dated books: the charts bucket by finish date, and an undated book
+  // cannot be placed on any of them.
+  const readHistory = [...readAll]
+    .filter(b => b.dateRead && Number.isFinite(Date.parse(b.dateRead)))
+    .sort((a, b) => Date.parse(b.dateRead) - Date.parse(a.dateRead))
+    .slice(0, MAX_HISTORY)
+    .map(b => ({
+      title: b.title,
+      author: b.author,
+      dateRead: b.dateRead,
+      numPages: b.numPages || null,
+      rating: b.rating || null,
+      avgRating: b.avgRating || null,
+      link: b.link || null,
+    }));
+
   const totalPages = readAll.reduce((sum, b) => sum + (b.numPages || 0), 0);
 
   // Trailing 12 months, by finish date (user_read_at). Books shelved as read
@@ -163,6 +183,7 @@ async function main() {
     generated_at: new Date().toISOString(),
     currentlyReading,
     recentlyRead,
+    readHistory,
     totalPages,
     yearPagesRead,
     yearBooksRead,
@@ -171,6 +192,7 @@ async function main() {
 
   writeFileSync(OUTPUT, JSON.stringify(output, null, 2));
   console.log(`  past 12 months: ${yearBooksRead} books, ${yearPagesRead} pages`);
+  console.log(`  history for /reading: ${readHistory.length} dated books`);
   console.log(`Written to ${OUTPUT}`);
 }
 

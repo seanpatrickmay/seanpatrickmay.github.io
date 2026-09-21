@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T16:43:14.424Z",
+  "generated_at": "2026-09-21T06:26:51.042Z",
   "currentlyReading": [
     {
       "title": "Blood Meridian, or, the Evening Redness in the West",
@@ -28,19 +28,6 @@
       "link": "https://www.goodreads.com/review/show/8944134053?utm_medium=api&utm_source=rss"
     },
     {
-      "title": "The Trial",
-      "author": "Franz Kafka",
-      "rating": 0,
-      "avgRating": 3.67,
-      "dateAdded": "Wed, 22 Jul 2026 21:00:58 -0700",
-      "dateRead": null,
-      "published": "1925",
-      "numPages": 253,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1437238236l/25933700._SX98_.jpg",
-      "bookId": "25933700",
-      "link": "https://www.goodreads.com/review/show/8793880352?utm_medium=api&utm_source=rss"
-    },
-    {
       "title": "The Brothers Karamazov",
       "author": "Fyodor Dostoevsky",
       "rating": 0,
@@ -56,11 +43,24 @@
   ],
   "recentlyRead": [
     {
+      "title": "The Trial",
+      "author": "Franz Kafka",
+      "rating": 3,
+      "avgRating": 3.67,
+      "dateAdded": "Sun, 20 Sep 2026 22:21:21 -0700",
+      "dateRead": "2026-09-20T00:00:00.000Z",
+      "published": "1925",
+      "numPages": 253,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1437238236l/25933700._SX98_.jpg",
+      "bookId": "25933700",
+      "link": "https://www.goodreads.com/review/show/8793880352?utm_medium=api&utm_source=rss"
+    },
+    {
       "title": "The Obscene Bird of Night",
       "author": "José Donoso",
       "rating": 4,
       "avgRating": 3.83,
-      "dateAdded": "Sat, 19 Sep 2026 13:21:25 -0700",
+      "dateAdded": "Sun, 20 Sep 2026 22:21:02 -0700",
       "dateRead": "2026-09-19T00:00:00.000Z",
       "published": "1970",
       "numPages": 493,
@@ -197,23 +197,147 @@
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1405868167l/662._SX98_.jpg",
       "bookId": "662",
       "link": "https://www.goodreads.com/review/show/8418065357?utm_medium=api&utm_source=rss"
+    }
+  ],
+  "readHistory": [
+    {
+      "title": "The Trial",
+      "author": "Franz Kafka",
+      "dateRead": "2026-09-20T00:00:00.000Z",
+      "numPages": 253,
+      "rating": 3,
+      "avgRating": 3.67,
+      "link": "https://www.goodreads.com/review/show/8793880352?utm_medium=api&utm_source=rss"
+    },
+    {
+      "title": "The Obscene Bird of Night",
+      "author": "José Donoso",
+      "dateRead": "2026-09-19T00:00:00.000Z",
+      "numPages": 493,
+      "rating": 4,
+      "avgRating": 3.83,
+      "link": "https://www.goodreads.com/review/show/8891966244?utm_medium=api&utm_source=rss"
+    },
+    {
+      "title": "A Clockwork Orange",
+      "author": "Anthony Burgess",
+      "dateRead": "2026-09-14T00:00:00.000Z",
+      "numPages": 240,
+      "rating": 4,
+      "avgRating": 4.04,
+      "link": "https://www.goodreads.com/review/show/8944132786?utm_medium=api&utm_source=rss"
+    },
+    {
+      "title": "Lonesome Dove (Lonesome Dove, #1)",
+      "author": "Larry McMurtry",
+      "dateRead": "2026-08-25T00:00:00.000Z",
+      "numPages": 964,
+      "rating": 4,
+      "avgRating": 4.76,
+      "link": "https://www.goodreads.com/review/show/8556602802?utm_medium=api&utm_source=rss"
+    },
+    {
+      "title": "The Two Towers (The Lord of the Rings, #2)",
+      "author": "J.R.R. Tolkien",
+      "dateRead": "2026-07-20T00:00:00.000Z",
+      "numPages": 448,
+      "rating": 4,
+      "avgRating": 4.7,
+      "link": "https://www.goodreads.com/review/show/8595299856?utm_medium=api&utm_source=rss"
+    },
+    {
+      "title": "The Picture of Dorian Gray",
+      "author": "Oscar Wilde",
+      "dateRead": "2026-07-10T00:00:00.000Z",
+      "numPages": 272,
+      "rating": 4,
+      "avgRating": 4.13,
+      "link": "https://www.goodreads.com/review/show/8425268051?utm_medium=api&utm_source=rss"
+    },
+    {
+      "title": "Pet Sematary",
+      "author": "Stephen King",
+      "dateRead": "2026-06-11T00:00:00.000Z",
+      "numPages": 561,
+      "rating": 5,
+      "avgRating": 4.32,
+      "link": "https://www.goodreads.com/review/show/8640606839?utm_medium=api&utm_source=rss"
+    },
+    {
+      "title": "The Fellowship of the Ring (The Lord of the Rings, #1)",
+      "author": "J.R.R. Tolkien",
+      "dateRead": "2026-05-12T00:00:00.000Z",
+      "numPages": 432,
+      "rating": 5,
+      "avgRating": 4.54,
+      "link": "https://www.goodreads.com/review/show/8595293827?utm_medium=api&utm_source=rss"
+    },
+    {
+      "title": "The Hobbit, or There and Back Again",
+      "author": "J.R.R. Tolkien",
+      "dateRead": "2026-04-28T00:00:00.000Z",
+      "numPages": 366,
+      "rating": 5,
+      "avgRating": 4.3,
+      "link": "https://www.goodreads.com/review/show/8418042631?utm_medium=api&utm_source=rss"
+    },
+    {
+      "title": "The Book Thief",
+      "author": "Markus Zusak",
+      "dateRead": "2026-04-18T00:00:00.000Z",
+      "numPages": 554,
+      "rating": 4,
+      "avgRating": 4.42,
+      "link": "https://www.goodreads.com/review/show/8425266738?utm_medium=api&utm_source=rss"
+    },
+    {
+      "title": "Project Hail Mary",
+      "author": "Andy Weir",
+      "dateRead": "2026-03-31T00:00:00.000Z",
+      "numPages": 482,
+      "rating": 5,
+      "avgRating": 4.59,
+      "link": "https://www.goodreads.com/review/show/8418056222?utm_medium=api&utm_source=rss"
+    },
+    {
+      "title": "Atlas Shrugged",
+      "author": "Ayn Rand",
+      "dateRead": "2026-03-23T00:00:00.000Z",
+      "numPages": 1168,
+      "rating": 5,
+      "avgRating": 3.67,
+      "link": "https://www.goodreads.com/review/show/8418065357?utm_medium=api&utm_source=rss"
     },
     {
       "title": "Wuthering Heights",
       "author": "Emily Brontë",
+      "dateRead": "2026-03-23T00:00:00.000Z",
+      "numPages": 359,
       "rating": 2,
       "avgRating": 3.88,
-      "dateAdded": "Tue, 28 Apr 2026 13:02:25 -0700",
-      "dateRead": "2026-03-23T00:00:00.000Z",
-      "published": "1847",
-      "numPages": 359,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1478641029l/32929156._SX98_.jpg",
-      "bookId": "32929156",
       "link": "https://www.goodreads.com/review/show/8418039770?utm_medium=api&utm_source=rss"
+    },
+    {
+      "title": "Annihilation (Southern Reach, #1)",
+      "author": "Jeff Vandermeer",
+      "dateRead": "2026-03-02T00:00:00.000Z",
+      "numPages": 195,
+      "rating": 3,
+      "avgRating": 3.81,
+      "link": "https://www.goodreads.com/review/show/8418057737?utm_medium=api&utm_source=rss"
+    },
+    {
+      "title": "Dune (Dune, #1)",
+      "author": "Frank Herbert",
+      "dateRead": "2024-02-28T00:00:00.000Z",
+      "numPages": 658,
+      "rating": 5,
+      "avgRating": 4.34,
+      "link": "https://www.goodreads.com/review/show/8418071378?utm_medium=api&utm_source=rss"
     }
   ],
-  "totalPages": 8137,
-  "yearPagesRead": 6534,
-  "yearBooksRead": 13,
+  "totalPages": 8390,
+  "yearPagesRead": 6787,
+  "yearBooksRead": 14,
   "profileUrl": "https://www.goodreads.com/user/show/199381877"
 }
