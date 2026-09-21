@@ -18,6 +18,8 @@ const MAX_COPIES = 8;
 export default function AutoScrollShelf({
   items = [], // [{ id, title, subtitle, image, url, badge }]
   speed = 14, // px per second
+  // Hold on the first cover long enough to read it, matching AutoScrollList.
+  startDelayMs = 2600,
   resumeDelayMs = 2000,
   ariaLabel = 'Auto scrolling shelf',
   emptyMessage = 'Nothing here yet',
@@ -36,6 +38,7 @@ export default function AutoScrollShelf({
   const pausedHoverRef = useRef(false);
   const userActiveUntilRef = useRef(0);
   const dragRef = useRef({ active: false, startX: 0, startOffset: 0, moved: false });
+  const startTsRef = useRef(0);
 
   const [copies, setCopies] = useState(MIN_COPIES);
   const [overflows, setOverflows] = useState(false);
@@ -117,8 +120,11 @@ export default function AutoScrollShelf({
       const dt = ts - lastTsRef.current;
       lastTsRef.current = ts;
 
+      if (!startTsRef.current) startTsRef.current = ts;
+      const dwellOver = ts - startTsRef.current >= startDelayMs;
+
       const userActive = performance.now() < userActiveUntilRef.current;
-      if (!pausedHoverRef.current && !userActive && !dragRef.current.active && setWidth > 0) {
+      if (dwellOver && !pausedHoverRef.current && !userActive && !dragRef.current.active && setWidth > 0) {
         offsetRef.current = (offsetRef.current + dt * pxPerMs) % setWidth;
       }
 
@@ -127,6 +133,7 @@ export default function AutoScrollShelf({
     };
 
     lastTsRef.current = 0;
+    startTsRef.current = 0;
     rafRef.current = requestAnimationFrame(tick);
 
     const pause = () => {
@@ -149,7 +156,7 @@ export default function AutoScrollShelf({
       container.removeEventListener('focusin', pause);
       container.removeEventListener('focusout', resume);
     };
-  }, [items.length, speed, resumeDelayMs, overflows, copies]);
+  }, [items.length, speed, startDelayMs, resumeDelayMs, overflows, copies]);
 
   // Wheel + pointer drag scrubbing.
   useEffect(() => {

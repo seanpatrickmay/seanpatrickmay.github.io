@@ -34,12 +34,49 @@ function readFeed(filename) {
   return { ...data, _staleness: getStaleness(data.generated_at) };
 }
 
+// stats.json is ~39KB and was shipping whole in __NEXT_DATA__ for a card that
+// renders four aggregates. Only the weekly series is read, plus a calorie
+// fallback that needs two fields off each recent activity.
+function trimStats(data) {
+  if (!data?.stats) return data;
+
+  const weeklyOnly = section =>
+    section?.weekly ? { weekly: { series: section.weekly.series ?? [] } } : undefined;
+
+  return {
+    generated_at: data.generated_at,
+    _staleness: data._staleness,
+    stats: {
+      combined: {
+        ...weeklyOnly(data.stats.combined),
+        recent: {
+          // Used only when the weekly series carries no calories.
+          last60: (data.stats.combined?.recent?.last60 ?? []).map(a => ({
+            start: a.start,
+            calories_kcal: a.calories_kcal,
+          })),
+        },
+      },
+      running: weeklyOnly(data.stats.running),
+      biking: weeklyOnly(data.stats.biking),
+    },
+  };
+}
+
+// The home card shows 12 recent books; readHistory exists for /reading, which
+// reads goodreads.json itself.
+function trimGoodreads(data) {
+  if (!data) return data;
+  const { readHistory, ...rest } = data;
+  return rest;
+}
+
 export async function getStaticProps() {
   return {
     props: {
-      statsData: readFeed('stats.json'),
+      statsData: trimStats(readFeed('stats.json')),
       spotifyData: readFeed('spotify.json'),
-      goodreadsData: readFeed('goodreads.json'),
+      goodreadsData: trimGoodreads(readFeed('goodreads.json')),
       duolingoData: readFeed('duolingo.json'),
       timeline: splitTimeline(Date.now()),
       // Resolved at build time like the rest: `new Date()` at render time

@@ -65,7 +65,7 @@ export default function ArchiveCard({ project }) {
             </PillLink>
           )}
           {project.linksNote && (
-            <span className="text-xs italic text-slate-400 dark:text-slate-500">
+            <span className="text-xs italic text-slate-500 dark:text-slate-400">
               🔒 {project.linksNote}
             </span>
           )}

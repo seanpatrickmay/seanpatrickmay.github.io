@@ -61,7 +61,7 @@ function Panel({ title, subtitle, children, className = '' }) {
         {title}
       </div>
       {subtitle && (
-        <div className="mt-0.5 text-[11px] text-stone-400 dark:text-stone-500">{subtitle}</div>
+        <div className="mt-0.5 text-[11px] text-stone-500 dark:text-stone-400">{subtitle}</div>
       )}
       <div className="mt-3">{children}</div>
     </section>
@@ -99,7 +99,7 @@ function MonthlyChart({ months }) {
         {months.map(month => (
           <div
             key={month.key}
-            className="flex-1 text-center text-[9px] tabular-nums text-stone-400 dark:text-stone-500"
+            className="flex-1 text-center text-[9px] tabular-nums text-stone-500 dark:text-stone-400"
           >
             {month.label}
           </div>
@@ -131,7 +131,7 @@ function Histogram({ histogram }) {
           </span>
         </li>
       ))}
-      <li className="pt-1 text-[10px] text-stone-400 dark:text-stone-500">
+      <li className="pt-1 text-[10px] text-stone-500 dark:text-stone-400">
         {total} rated {total === 1 ? 'book' : 'books'}
       </li>
     </ul>
@@ -148,7 +148,7 @@ function Disagreement({ label, entry, tone }) {
 
   return (
     <div>
-      <div className="text-[10px] uppercase tracking-wide text-stone-400 dark:text-stone-500">
+      <div className="text-[10px] uppercase tracking-wide text-stone-500 dark:text-stone-400">
         {label}
       </div>
       <div className="mt-0.5 text-sm font-medium text-stone-900 dark:text-stone-100">
@@ -233,10 +233,10 @@ export default function Reading({
                 <span className="text-4xl font-extrabold leading-none text-stone-900 dark:text-stone-50">
                   {NUM.format(yearPages)}
                 </span>
-                <span className="text-sm font-semibold text-stone-400 dark:text-stone-500">
+                <span className="text-sm font-semibold text-stone-500 dark:text-stone-400">
                   pages
                 </span>
-                <span className="text-sm text-stone-400 dark:text-stone-500">
+                <span className="text-sm text-stone-500 dark:text-stone-400">
                   · {yearBooks} books
                 </span>
               </div>
@@ -278,7 +278,7 @@ export default function Reading({
                   style={{ width: `${Math.max(2, Math.min(100, ratio * 100))}%` }}
                 />
               </div>
-              <div className="mt-1 text-[10px] text-stone-400 dark:text-stone-500">
+              <div className="mt-1 text-[10px] text-stone-500 dark:text-stone-400">
                 all {target.books} books run ~{NUM.format(target.pages)} pages
                 {cleared && ` · already past ${cleared.label}`}
               </div>
@@ -302,13 +302,13 @@ export default function Reading({
                   <span className="text-2xl font-extrabold tabular-nums leading-none text-stone-900 dark:text-stone-50">
                     {critic.yourAverage.toFixed(2)}
                   </span>
-                  <span className="text-xs text-stone-400 dark:text-stone-500">my average</span>
+                  <span className="text-xs text-stone-500 dark:text-stone-400">my average</span>
                 </div>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-2xl font-extrabold tabular-nums leading-none text-stone-400 dark:text-stone-500">
+                  <span className="text-2xl font-extrabold tabular-nums leading-none text-stone-500 dark:text-stone-400">
                     {critic.goodreadsAverage.toFixed(2)}
                   </span>
-                  <span className="text-xs text-stone-400 dark:text-stone-500">goodreads</span>
+                  <span className="text-xs text-stone-500 dark:text-stone-400">goodreads</span>
                 </div>
                 <div className="text-sm text-stone-600 dark:text-stone-300">
                   {Math.abs(critic.delta) < 0.15
@@ -343,7 +343,7 @@ export default function Reading({
                       )}
                     </span>
                     {b.numPages > 0 && (
-                      <span className="flex-none text-[11px] tabular-nums text-stone-400 dark:text-stone-500">
+                      <span className="flex-none text-[11px] tabular-nums text-stone-500 dark:text-stone-400">
                         {NUM.format(b.numPages)} pp
                       </span>
                     )}
@@ -373,7 +373,7 @@ export default function Reading({
                 <span className="text-sm font-semibold tabular-nums text-amber-600 dark:text-amber-400">
                   {NUM.format(longest.numPages)} pages
                 </span>
-                <span className="text-sm text-stone-400 dark:text-stone-500">
+                <span className="text-sm text-stone-500 dark:text-stone-400">
                   — {NUM.format(totalPages)} pages read all-time
                 </span>
               </div>

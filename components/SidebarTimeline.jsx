@@ -47,7 +47,7 @@ export default function SidebarTimeline({ label, entries = [] }) {
                 <div className="text-xs text-slate-600 dark:text-slate-300">{entry.role}</div>
               )}
               {entry.detail?.length > 0 && (
-                <div className="text-xs text-slate-400 dark:text-slate-500">
+                <div className="text-xs text-slate-500 dark:text-slate-400">
                   {entry.detail.join(' · ')}
                 </div>
               )}

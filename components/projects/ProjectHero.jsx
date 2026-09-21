@@ -80,7 +80,7 @@ export default function ProjectHero({ project }) {
               </PillLink>
             )}
             {project.linksNote && (
-              <span className="text-sm italic text-slate-400 dark:text-slate-500">
+              <span className="text-sm italic text-slate-500 dark:text-slate-400">
                 🔒 {project.linksNote}
               </span>
             )}

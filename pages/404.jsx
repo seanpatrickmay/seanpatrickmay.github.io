@@ -7,8 +7,9 @@ export default function NotFound() {
     <>
       <Head>
         <title>404 — Sean P. May</title>
+        <meta name="description" content="That page does not exist — head back to seanpatrickmay.me." />
       </Head>
-      <main className="flex min-h-screen items-center justify-center px-4">
+      <main id="main-content" className="flex min-h-screen items-center justify-center px-4">
         <div className="text-center">
           <div className="relative mx-auto mb-6 w-fit">
             <span className="text-8xl font-extrabold tracking-tighter text-slate-200 dark:text-slate-800 select-none" aria-hidden="true">

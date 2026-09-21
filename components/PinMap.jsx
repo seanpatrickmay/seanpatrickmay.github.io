@@ -286,7 +286,7 @@ export default function PinMap({
             {/* When, not just where — the entry list below already says it, but
                 the tooltip is what you read while scanning the map. */}
             {tooltip.pin.period && (
-              <div className="text-[10px] text-stone-400 dark:text-stone-500 leading-tight">
+              <div className="text-[10px] text-stone-500 dark:text-stone-400 leading-tight">
                 {tooltip.pin.period}
               </div>
             )}
@@ -297,7 +297,7 @@ export default function PinMap({
       {/* World inset */}
       {insetPins.length > 0 && (
         <div className="absolute bottom-3 right-3 w-40 h-28 rounded-lg border border-stone-300 bg-stone-100/95 dark:border-stone-600 dark:bg-stone-800/95 overflow-hidden backdrop-blur-sm shadow-sm">
-          <div className="absolute top-1 left-2 text-[8px] font-semibold uppercase tracking-widest text-stone-400 dark:text-stone-500 z-10">
+          <div className="absolute top-1 left-2 text-[8px] font-semibold uppercase tracking-widest text-stone-500 dark:text-stone-400 z-10">
             world
           </div>
           <ComposableMap

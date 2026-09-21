@@ -27,7 +27,7 @@ export default function DuolingoCard({ data = null, bare = false }) {
         <span className="text-3xl font-extrabold leading-none text-stone-900 dark:text-stone-50">
           {streak}
         </span>
-        <span className="text-sm font-semibold text-stone-400 dark:text-stone-500">
+        <span className="text-sm font-semibold text-stone-500 dark:text-stone-400">
           day streak
         </span>
       </div>

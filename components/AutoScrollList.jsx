@@ -208,7 +208,10 @@ export default function AutoScrollList({
   }, [top10.length, resumeDelayMs]);
 
   // ---- Render helpers ----
-  const renderListItems = (suffix) =>
+  // `hidden` marks the duplicated copy: it is aria-hidden for screen readers,
+  // so its links must leave the tab order too or they are focusable but
+  // unannounced.
+  const renderListItems = (suffix, hidden = false) =>
     top10.map((item, i) => (
       <li
         key={`${item.id || item.title}-${suffix}-${i}`}
@@ -227,6 +230,7 @@ export default function AutoScrollList({
               href={item.url}
               target="_blank"
               rel="noreferrer"
+              tabIndex={hidden ? -1 : undefined}
               className="text-sm truncate flex-1 min-w-0"
               title={item.title}
               onClick={(e) => e.stopPropagation()}
@@ -274,7 +278,7 @@ export default function AutoScrollList({
             {renderListItems("A")}
           </ul>
           <ul className="space-y-2" aria-hidden="true">
-            {renderListItems("B")}
+            {renderListItems("B", true)}
           </ul>
         </div>
       )}

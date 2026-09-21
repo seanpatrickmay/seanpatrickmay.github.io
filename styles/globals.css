@@ -37,7 +37,8 @@ body { @apply min-h-screen bg-gradient-to-b from-white via-slate-50/80 to-stone-
 @media (prefers-reduced-motion: reduce) { .pill:hover { transform: none; } }
 .pill-accent {
   @apply pill inline-flex items-center gap-2 font-medium border border-transparent shadow-sm transition-colors;
-  @apply bg-teal-600 text-white hover:bg-teal-700;
+  /* white on teal-600 is 3.55:1, under AA for normal text; teal-700 is ~5:1 */
+  @apply bg-teal-700 text-white hover:bg-teal-800;
   @apply dark:bg-teal-500 dark:text-white dark:hover:bg-teal-400;
   @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-400;
   @apply dark:focus-visible:outline-teal-300;

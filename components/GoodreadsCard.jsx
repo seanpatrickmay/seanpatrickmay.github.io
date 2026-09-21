@@ -37,7 +37,7 @@ function Shelf({ label, count, books, withRatings = false, emptyMessage, meta = 
         <div className="text-[10px] font-semibold uppercase tracking-widest text-stone-500 dark:text-stone-400">
           {label}
         </div>
-        <div className="text-[10px] tabular-nums text-stone-400 dark:text-stone-500">
+        <div className="text-[10px] tabular-nums text-stone-500 dark:text-stone-400">
           {count} {count === 1 ? 'book' : 'books'}
           {meta && <span> · {meta}</span>}
         </div>
@@ -98,8 +98,8 @@ export default function GoodreadsCard({ data = null, bare = false }) {
             <span className="text-2xl font-extrabold leading-none text-stone-900 dark:text-stone-50">
               {NUM.format(yearPages)}
             </span>
-            <span className="text-xs font-semibold text-stone-400 dark:text-stone-500">pages</span>
-            <span className="text-xs text-stone-400 dark:text-stone-500">
+            <span className="text-xs font-semibold text-stone-500 dark:text-stone-400">pages</span>
+            <span className="text-xs text-stone-500 dark:text-stone-400">
               · {yearBooks} {yearBooks === 1 ? 'book' : 'books'}
             </span>
           </div>
@@ -121,7 +121,7 @@ export default function GoodreadsCard({ data = null, bare = false }) {
                 style={{ width: barWidth }}
               />
             </div>
-            <div className="mt-1 text-[10px] text-stone-400 dark:text-stone-500">
+            <div className="mt-1 text-[10px] text-stone-500 dark:text-stone-400">
               all {target.books} books run ~{NUM.format(target.pages)} pages
             </div>
             {cleared && (

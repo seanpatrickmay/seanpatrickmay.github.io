@@ -50,3 +50,4 @@ IDEAS.md
 .superpowers/
 test-results/
 .playwright-cli/
+.lighthouseci/

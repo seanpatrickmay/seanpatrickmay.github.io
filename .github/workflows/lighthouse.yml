@@ -1,0 +1,57 @@
+name: Lighthouse
+
+# Deliberately not on `deploy`. Deploy fires several times a day off data
+# refreshes, and running Lighthouse against unchanged markup would burn CI
+# minutes to re-measure the same page. This runs when the *code* changes.
+#
+# Data pushes are made by github-actions[bot] with GITHUB_TOKEN, which never
+# fires `push` workflows — so this triggers on human pushes and PRs only,
+# which is exactly the intent.
+on:
+  push:
+    branches: ["main"]
+    paths-ignore:
+      - "public/stats.json"
+      - "public/spotify.json"
+      - "public/goodreads.json"
+      - "public/duolingo.json"
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lighthouse-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - run: npm ci
+
+      - name: Build static export
+        run: npm run build
+
+      - name: Lighthouse CI
+        # Accessibility, SEO and best-practices are deterministic, so they
+        # gate. Performance swings with runner load, so it warns rather than
+        # failing the build on a noisy neighbour.
+        run: npx --yes @lhci/cli@0.14.x autorun
+
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-reports
+          path: .lighthouseci
+          retention-days: 14

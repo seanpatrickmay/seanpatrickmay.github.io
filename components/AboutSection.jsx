@@ -175,7 +175,7 @@ export default function AboutSection({
                 <span className="text-3xl font-extrabold leading-none text-slate-900 dark:text-white">
                   {totalHours8w == null ? '—' : totalHours8w.toFixed(1)}
                 </span>
-                <span className="text-sm font-semibold text-slate-400 dark:text-slate-500">hours</span>
+                <span className="text-sm font-semibold text-slate-500 dark:text-slate-400">hours</span>
               </div>
               <div className="mt-1 flex flex-wrap gap-x-2 text-[11px] text-slate-500 dark:text-slate-400">
                 <span>{totalKmLabel} km</span>
@@ -211,7 +211,7 @@ export default function AboutSection({
                     height={48}
                     labels={weekLabels}
                     labelOrientation="stacked"
-                    labelClassName="text-[9px] text-slate-400 dark:text-slate-500"
+                    labelClassName="text-[9px] text-slate-500 dark:text-slate-400"
                     formatter={(v) => `${v.toFixed(1)} hrs`}
                     className="text-teal-600 dark:text-teal-400"
                   />
@@ -229,7 +229,7 @@ export default function AboutSection({
                   />
                   <div className="mt-1.5 text-[11px] font-medium text-teal-600 dark:text-teal-400">
                     {totalKmLabel} km ≈ {kmJourney.percent}% of the way
-                    <span className="text-stone-400 dark:text-stone-500">
+                    <span className="text-stone-500 dark:text-stone-400">
                       {' '}({KM_FORMAT.format(Math.round(kmJourney.routeDistanceKm))} km total)
                     </span>
                   </div>
@@ -244,7 +244,7 @@ export default function AboutSection({
               <div className="flex items-baseline justify-between gap-2">
                 <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
                   🎵 top artists{' '}
-                  <span className="font-medium normal-case tracking-normal text-slate-400 dark:text-slate-500">
+                  <span className="font-medium normal-case tracking-normal text-slate-500 dark:text-slate-400">
                     · {spotifyWindow}
                   </span>
                 </div>
@@ -276,7 +276,7 @@ export default function AboutSection({
               <div className="flex items-baseline justify-between gap-2">
                 <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
                   🎧 top tracks{' '}
-                  <span className="font-medium normal-case tracking-normal text-slate-400 dark:text-slate-500">
+                  <span className="font-medium normal-case tracking-normal text-slate-500 dark:text-slate-400">
                     · {spotifyWindow}
                   </span>
                 </div>
