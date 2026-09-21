@@ -1,3 +1,13 @@
+/**
+ * The kraft board every section sits on.
+ *
+ * `className` lands on the OUTER wrapper, not on the element that holds
+ * `children` — children live in the `.relative` div at the bottom. So a
+ * spacing utility passed in here spaces the background layers, not the
+ * content, and silently does nothing visible. ProjectsSection lost an
+ * afternoon to `<Pinboard className="space-y-8">`: the featured card ended
+ * up sitting on top of the intro line. Wrap your own children instead.
+ */
 export default function Pinboard({ children, className = '' }) {
   return (
     <div
