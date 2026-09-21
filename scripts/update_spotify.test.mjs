@@ -6,6 +6,7 @@ import {
   fetchJsonWithRetry,
   fetchTop,
   getAccessToken,
+  pickImage,
   topGenres,
 } from './update_spotify.mjs';
 
@@ -227,4 +228,33 @@ test('topGenres respects the limit', () => {
   const artists = Array.from({ length: 10 }, (_, i) => ({ name: `a${i}`, genres: [`g${i}`] }));
 
   assert.equal(topGenres(artists, 4).length, 4);
+});
+
+test('pickImage takes the smallest variant that still covers the render size', () => {
+  const images = [
+    { url: 'big', width: 640, height: 640 },
+    { url: 'mid', width: 300, height: 300 },
+    { url: 'small', width: 64, height: 64 },
+  ];
+  assert.equal(pickImage(images, 160), 'mid');
+});
+
+test('pickImage falls back to the largest when nothing is big enough', () => {
+  const images = [{ url: 'small', width: 64, height: 64 }];
+  assert.equal(pickImage(images, 160), 'small');
+});
+
+test('pickImage does not assume Spotify ordered the array', () => {
+  const images = [
+    { url: 'small', width: 64 },
+    { url: 'big', width: 640 },
+    { url: 'mid', width: 300 },
+  ];
+  assert.equal(pickImage(images, 160), 'mid');
+});
+
+test('pickImage returns null for missing or empty artwork', () => {
+  assert.equal(pickImage(undefined), null);
+  assert.equal(pickImage([]), null);
+  assert.equal(pickImage([{ width: 640 }]), null);
 });

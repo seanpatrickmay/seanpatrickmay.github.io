@@ -58,8 +58,8 @@
       "backfill the lake further"
     ],
     "coverImage": {
-      "src": "/projects/alternative-data-pipeline/cover.png",
-      "alt": "Alternative Data Pipeline — serverless job-posting pipeline"
+      "src": "/projects/alternative-data-pipeline/cover.webp",
+      "alt": "Alternative Data Pipeline — Data Engineering"
     },
     "gallery": [],
     "bullets": [],
@@ -118,8 +118,8 @@
     ],
     "nextSteps": [],
     "coverImage": {
-      "src": "/projects/ai-chief-of-staff/cover.png",
-      "alt": "AI Chief of Staff — multi-agent project monitoring"
+      "src": "/projects/ai-chief-of-staff/cover.webp",
+      "alt": "AI Chief of Staff — AI/ML"
     },
     "gallery": [],
     "bullets": [],
@@ -178,8 +178,8 @@
       "add demo GIFs and before/after screenshots for the audit improvements"
     ],
     "coverImage": {
-      "src": "/projects/seanpatrickmay-github-io/cover.png",
-      "alt": "Portfolio homepage screenshot"
+      "src": "/projects/seanpatrickmay-github-io/cover.webp",
+      "alt": "seanpatrickmay.github.io — Full-stack"
     },
     "gallery": [],
     "bullets": [
@@ -257,7 +257,7 @@
       "pull in deeper git activity and PR status for the project integration"
     ],
     "coverImage": {
-      "src": "/projects/life-dashboard/life-dashboard-cover.png",
+      "src": "/projects/life-dashboard/life-dashboard-cover.webp",
       "alt": "Life-Dashboard wellness dashboard"
     },
     "gallery": [],
@@ -337,7 +337,7 @@
       "build out stronger review and spaced-repetition loops in the reader"
     ],
     "coverImage": {
-      "src": "/projects/lecteuraide/lecteur-aide-cover.png",
+      "src": "/projects/lecteuraide/lecteur-aide-cover.webp",
       "alt": "LecteurAide French reading companion"
     },
     "gallery": [],
@@ -410,8 +410,8 @@
       "capture an inference demo GIF showing hand detection through digit classification"
     ],
     "coverImage": {
-      "src": "/projects/human-digit-classification/cover.png",
-      "alt": "Human Digit Recognition two-stage pipeline"
+      "src": "/projects/human-digit-classification/cover.webp",
+      "alt": "Human Digit Recognition — Computer Vision"
     },
     "gallery": [],
     "bullets": [
@@ -482,8 +482,8 @@
       "expand the multiresolution data path and result visualization"
     ],
     "coverImage": {
-      "src": "/projects/wildfire-modeling/cover.png",
-      "alt": "Wildfire GOFER confidence heatmap viewer"
+      "src": "/projects/wildfire-modeling/cover.webp",
+      "alt": "Wildfire Modeling — Machine Learning"
     },
     "gallery": [],
     "bullets": [
@@ -553,8 +553,8 @@
       "expand action abstraction with more bet sizings and raise depths"
     ],
     "coverImage": {
-      "src": "/projects/nlhe-alpha-beta/cover.png",
-      "alt": "PokerML preflop range matrix and decision tree"
+      "src": "/projects/nlhe-alpha-beta/cover.webp",
+      "alt": "PokerML — Game Theory"
     },
     "gallery": [],
     "bullets": [
@@ -617,8 +617,8 @@
       "improve UI polish and strategy visualization"
     ],
     "coverImage": {
-      "src": "/projects/hex-reversi/cover.png",
-      "alt": "Hex Reversi game board mid-game"
+      "src": "/projects/hex-reversi/cover.webp",
+      "alt": "Hex Reversi — Game Theory"
     },
     "gallery": [],
     "bullets": [
@@ -682,8 +682,8 @@
       "harden parsing for edge cases and quoting rules"
     ],
     "coverImage": {
-      "src": "/projects/linux-shell-c/cover.svg",
-      "alt": "Linux shell terminal with commands"
+      "src": "/projects/linux-shell-c/cover.webp",
+      "alt": "Linux Shell (C) — Concurrency"
     },
     "gallery": [],
     "bullets": [

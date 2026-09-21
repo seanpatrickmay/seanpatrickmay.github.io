@@ -146,10 +146,11 @@ body { @apply min-h-screen bg-gradient-to-b from-white via-slate-50/80 to-stone-
   background:
     linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.28) 0%,
-      rgba(231, 225, 205, 0.34) 14%,
-      rgba(224, 217, 196, 0.34) 86%,
-      rgba(0, 0, 0, 0.28) 100%
+      rgba(148, 140, 118, 0.55) 0%,
+      rgba(214, 206, 180, 0.82) 16%,
+      rgba(230, 223, 199, 0.86) 42%,
+      rgba(203, 195, 170, 0.82) 84%,
+      rgba(148, 140, 118, 0.55) 100%
     );
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }

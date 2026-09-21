@@ -13,6 +13,11 @@ const MAX_TRACKS_PER_ARTIST = 2;
 // rank is its weight, because #1 says more about taste than #20.
 const ARTIST_FETCH_LIMIT = 50;
 const MAX_GENRES = 6;
+// Spotify returns each image at 640/300/64px, largest first. The cards render
+// artwork around 48px, so taking images[0] meant shipping a 640px JPEG per
+// row — three of them were the heaviest requests on the page. 160 is 48px at
+// 3x, which lands on the 300px variant and leaves retina headroom.
+const MIN_ARTWORK_PX = 160;
 const DEFAULT_REQUEST_TIMEOUT_MS = 15_000;
 const DEFAULT_MAX_RETRIES = 3;
 const TIME_RANGE = 'short_term';
@@ -202,6 +207,20 @@ async function getAccessToken({
  * my top genre" rather than implying a percentage of listening time, which
  * this data cannot support.
  */
+/**
+ * Smallest image at least `minWidth` across, falling back to the largest
+ * available when nothing is big enough. Spotify orders images largest-first
+ * but does not promise it, and some artists have only one size, so this
+ * sorts rather than indexing.
+ */
+export function pickImage(images, minWidth = MIN_ARTWORK_PX) {
+  const sized = (images ?? []).filter(image => image?.url);
+  if (sized.length === 0) return null;
+  const ascending = [...sized].sort((a, b) => (a.width ?? 0) - (b.width ?? 0));
+  const big = ascending.find(image => (image.width ?? 0) >= minWidth);
+  return (big ?? ascending[ascending.length - 1]).url;
+}
+
 export function topGenres(artists, limit) {
   const weights = new Map();
 
@@ -324,7 +343,7 @@ async function main({
   // The card still shows ten; the deeper fetch exists for the genre chart.
   const artists = rankedArtists.slice(0, DEFAULT_LIMIT).map(a => ({
     name: a.name,
-    image: a.images?.[0]?.url || null,
+    image: pickImage(a.images),
     url: a.external_urls?.spotify || null,
   }));
 
@@ -332,7 +351,7 @@ async function main({
     normalizeItems(tracksRes.items).map(t => ({
       name: t.name,
       artist: t.artists?.map(a => a.name).join(', ') || '',
-      image: t.album?.images?.[0]?.url || null,
+      image: pickImage(t.album?.images),
       url: t.external_urls?.spotify || null,
       // Keyed on the primary artist so "X" and "X, Y" are not treated as
       // different acts. Stripped before writing.
