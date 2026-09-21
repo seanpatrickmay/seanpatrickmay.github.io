@@ -1,143 +1,143 @@
 {
-  "generated_at": "2026-09-21T07:23:02.809Z",
+  "generated_at": "2026-09-21T18:26:38.045Z",
   "time_range": "short_term",
   "artists": [
     {
       "name": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb9f6f7c2d12975d2a4b3a0fd8",
+      "image": "https://i.scdn.co/image/ab6761610000f1789f6f7c2d12975d2a4b3a0fd8",
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
       "name": "Kid Cudi",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb5f00bb6dd7a7008d14156630",
+      "image": "https://i.scdn.co/image/ab6761610000f1785f00bb6dd7a7008d14156630",
       "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
     },
     {
       "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebeefa05f0b8fcafd4beb19d31",
+      "image": "https://i.scdn.co/image/ab6761610000f178eefa05f0b8fcafd4beb19d31",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
       "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd3aa7cc0e419b6c459b08e8e",
+      "image": "https://i.scdn.co/image/ab6761610000f178d3aa7cc0e419b6c459b08e8e",
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
       "name": "Red Velvet",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebd6c6537054755d396684e629",
+      "image": "https://i.scdn.co/image/ab6761610000f178d6c6537054755d396684e629",
       "url": "https://open.spotify.com/artist/1z4g3DjTBBZKhvAroFlhOM"
     },
     {
       "name": "Adele",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb68f6e5892075d7f22615bd17",
+      "image": "https://i.scdn.co/image/ab6761610000f17868f6e5892075d7f22615bd17",
       "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     },
     {
       "name": "Angèle",
-      "image": "https://i.scdn.co/image/ab6761610000e5eba5396ab4c06009c05685d54d",
+      "image": "https://i.scdn.co/image/ab6761610000f178a5396ab4c06009c05685d54d",
       "url": "https://open.spotify.com/artist/3QVolfxko2UyCOtexhVTli"
     },
     {
       "name": "KIDS SEE GHOSTS",
-      "image": "https://i.scdn.co/image/ab6761610000e5eb22c693c66a5494d88194d543",
+      "image": "https://i.scdn.co/image/ab6761610000f17822c693c66a5494d88194d543",
       "url": "https://open.spotify.com/artist/2hPgGN4uhvXAxiXQBIXOmE"
     },
     {
       "name": "Konstantin Scherbakov",
-      "image": "https://i.scdn.co/image/ab6772690000c46cca1949a1c785c7b7cc429b9b",
+      "image": "https://i.scdn.co/image/ab6772690000bac3ca1949a1c785c7b7cc429b9b",
       "url": "https://open.spotify.com/artist/6f4LXqcGifD364sFBKFfoN"
     },
     {
       "name": "Dominic Fike",
-      "image": "https://i.scdn.co/image/ab6761610000e5ebf2903326ec44d5ecb37dcad9",
+      "image": "https://i.scdn.co/image/ab6761610000f178f2903326ec44d5ecb37dcad9",
       "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
     }
   ],
   "genres": [
     {
-      "name": "classical",
+      "name": "edm",
       "share": 100
     },
     {
-      "name": "classical piano",
-      "share": 86
-    },
-    {
-      "name": "edm",
-      "share": 85
+      "name": "classical",
+      "share": 91
     },
     {
       "name": "french house",
-      "share": 64
+      "share": 75
     },
     {
       "name": "electronic",
-      "share": 64
+      "share": 75
     },
     {
       "name": "electro",
-      "share": 64
+      "share": 75
+    },
+    {
+      "name": "classical piano",
+      "share": 75
     }
   ],
   "tracks": [
     {
       "name": "Earrings",
       "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
+      "image": "https://i.scdn.co/image/ab67616d00001e022c1f34ecc1929fb59908aad1",
       "url": "https://open.spotify.com/track/0eAuGrXyGFYwur9ARUe7LJ"
     },
     {
       "name": "On My Shoulder",
       "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d0000b2732c1f34ecc1929fb59908aad1",
+      "image": "https://i.scdn.co/image/ab67616d00001e022c1f34ecc1929fb59908aad1",
       "url": "https://open.spotify.com/track/6hKFQb0Jsr51UFJ4sNVoUx"
     },
     {
       "name": "Shostakovich / Arr. Atovmyan: Suite from the Gadfly, Op. 97a: VIII. Romance",
       "artist": "Dmitri Shostakovich, Tasmin Little, Piers Lane",
-      "image": "https://i.scdn.co/image/ab67616d0000b27316904029c31ca50916e3116a",
+      "image": "https://i.scdn.co/image/ab67616d00001e0216904029c31ca50916e3116a",
       "url": "https://open.spotify.com/track/7c8EKQLv5ld1uWm1BdGqds"
     },
     {
       "name": "Lost At Sea",
       "artist": "Zedd, Ryan Tedder",
-      "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
+      "image": "https://i.scdn.co/image/ab67616d00001e02941dd3b3343d9cb9329d37bf",
       "url": "https://open.spotify.com/track/3Gwq0zKnMWluOEPKh93BeC"
     },
     {
       "name": "Dandelion",
       "artist": "Ella Langley",
-      "image": "https://i.scdn.co/image/ab67616d0000b2738606848da949bbaddf447d87",
+      "image": "https://i.scdn.co/image/ab67616d00001e028606848da949bbaddf447d87",
       "url": "https://open.spotify.com/track/34D5CH3DKBGpAj8ktFOAUH"
     },
     {
       "name": "You Rock My World",
       "artist": "Michael Jackson",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736c1748b440eb462a19f24eec",
+      "image": "https://i.scdn.co/image/ab67616d00001e026c1748b440eb462a19f24eec",
       "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
     },
     {
       "name": "Touch (feat. Paul Williams)",
       "artist": "Daft Punk, Paul Williams",
-      "image": "https://i.scdn.co/image/ab67616d0000b2734d22198f946d9b32f25fc263",
+      "image": "https://i.scdn.co/image/ab67616d00001e024d22198f946d9b32f25fc263",
       "url": "https://open.spotify.com/track/6jmvJ2cUbImtirxo8U5Qb9"
     },
     {
       "name": "Fall Into The Sky",
       "artist": "Zedd, Lucky Date, Ellie Goulding",
-      "image": "https://i.scdn.co/image/ab67616d0000b273941dd3b3343d9cb9329d37bf",
+      "image": "https://i.scdn.co/image/ab67616d00001e02941dd3b3343d9cb9329d37bf",
       "url": "https://open.spotify.com/track/6xzCQrXrn0uOOKBQZK1zsF"
     },
     {
       "name": "Pasture Child",
       "artist": "Dominic Fike",
-      "image": "https://i.scdn.co/image/ab67616d0000b2735b26c1b56d89c1416d21db60",
+      "image": "https://i.scdn.co/image/ab67616d00001e025b26c1b56d89c1416d21db60",
       "url": "https://open.spotify.com/track/5APPlPgagEAXjGLIizqSDS"
     },
     {
       "name": "Consolation No. 3 in D-Flat Major, S. 172",
       "artist": "Franz Liszt, Lang Lang",
-      "image": "https://i.scdn.co/image/ab67616d0000b273dc7e831d880de1c90d621379",
+      "image": "https://i.scdn.co/image/ab67616d00001e02dc7e831d880de1c90d621379",
       "url": "https://open.spotify.com/track/0Jp7n6FKqGVxtXPMVYtMQr"
     }
   ]
