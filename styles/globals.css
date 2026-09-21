@@ -91,3 +91,65 @@ body { @apply min-h-screen bg-gradient-to-b from-white via-slate-50/80 to-stone-
   overscroll-behavior: auto;
   touch-action: pan-y;
 }
+
+/* --- Scrapbook surfaces -------------------------------------------------
+   The board already reads as paper; the cards on it did not. `.paper` gives a
+   card a warm off-white and a very fine fibre grain so it reads as a sheet
+   pinned to the board rather than a UI panel sitting on top of one. The grain
+   is baked into the SVG at low alpha rather than layered with a pseudo-element
+   so it composes with any existing background utilities. */
+.paper {
+  background-color: #fdfcf9;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)' opacity='0.035'/%3E%3C/svg%3E");
+}
+.dark .paper {
+  background-color: #1c1917;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+/* A strip of masking tape. Used instead of a pushpin on some cards — a board
+   where everything is fixed the same way looks like a grid of widgets.
+   The first pass was tinted too close to the kraft background and read as a
+   smudge, so this is warmer, more opaque, and has defined edges. */
+.tape {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(120, 95, 40, 0.16) 0%,
+      rgba(255, 249, 219, 0.94) 14%,
+      rgba(252, 243, 205, 0.94) 86%,
+      rgba(120, 95, 40, 0.16) 100%
+    );
+  box-shadow: 0 2px 5px rgba(60, 45, 20, 0.16);
+}
+/* Torn-looking ends: a soft fade rather than a hard rectangle edge. */
+.tape::before,
+.tape::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: inherit;
+}
+.tape::before {
+  left: -9px;
+  mask-image: linear-gradient(to right, transparent, black);
+  -webkit-mask-image: linear-gradient(to right, transparent, black);
+}
+.tape::after {
+  right: -9px;
+  mask-image: linear-gradient(to left, transparent, black);
+  -webkit-mask-image: linear-gradient(to left, transparent, black);
+}
+.dark .tape {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.28) 0%,
+      rgba(231, 225, 205, 0.34) 14%,
+      rgba(224, 217, 196, 0.34) 86%,
+      rgba(0, 0, 0, 0.28) 100%
+    );
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+}

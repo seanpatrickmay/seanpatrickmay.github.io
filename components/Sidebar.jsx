@@ -17,7 +17,7 @@ export default function Sidebar({ links, timeline = { current: [], past: [] } })
           <PinCard rotation={-1.2} pinColor="red">
             <section
               aria-label="About"
-              className="rounded-3xl border border-stone-300/80 bg-stone-50 p-6 shadow-lg dark:border-stone-700/70 dark:bg-stone-900"
+              className="paper rounded-3xl border border-stone-300/80 p-6 shadow-lg dark:border-stone-700/70"
             >
               <div className="flex items-start justify-between gap-3">
                 <a

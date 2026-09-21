@@ -28,8 +28,8 @@ export default function MapEntryList({ pins = [], activePin, onEntryClick, onEnt
               className={[
                 'flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left transition-all duration-200',
                 isActive
-                  ? 'border-2 bg-white shadow-sm dark:bg-stone-800'
-                  : 'border border-stone-200 bg-white hover:border-stone-300 hover:shadow-sm dark:border-stone-700 dark:bg-stone-800 dark:hover:border-stone-600',
+                  ? 'paper border-2 shadow-sm'
+                  : 'paper border border-stone-200 hover:border-stone-300 hover:shadow-sm dark:border-stone-700 dark:hover:border-stone-600',
               ].join(' ')}
               style={isActive ? { borderColor: { red: '#ef4444', blue: '#3b82f6', green: '#22c55e', yellow: '#eab308', teal: '#14b8a6' }[ENTRY_PIN_COLORS[i % ENTRY_PIN_COLORS.length]] } : undefined}
             >

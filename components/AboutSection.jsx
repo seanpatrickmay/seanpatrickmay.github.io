@@ -165,7 +165,7 @@ export default function AboutSection({
 
           {/* Training Stats — expanded */}
           <PinCard rotation={-1.8} pinColor="red">
-            <div className="rounded-sm border border-slate-200 bg-white p-4 dark:border-slate-700 dark:bg-slate-900">
+            <div className="paper rounded-sm border border-stone-200/80 p-4 dark:border-stone-700/80">
               <div className="flex items-baseline justify-between gap-2">
                 <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
                   training · 8 weeks
@@ -240,8 +240,8 @@ export default function AboutSection({
           </PinCard>
 
           {/* Top Artists — own card */}
-          <PinCard rotation={1.5} pinColor="blue" pinPosition="right">
-            <div className="rounded-sm border border-slate-200 bg-white p-4 text-slate-900 dark:border-slate-700 dark:bg-slate-900 dark:text-white">
+          <PinCard rotation={1.5} fastener="tape" pinPosition="right">
+            <div className="paper rounded-sm border border-stone-200/80 p-4 text-slate-900 dark:border-stone-700/80 dark:text-white">
               <div className="flex items-baseline justify-between gap-2">
                 <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
                   🎵 top artists{' '}
@@ -259,7 +259,7 @@ export default function AboutSection({
 
           {/* Top Genres — derived from the same artist ranking above it */}
           <PinCard rotation={-1.1} pinColor="green" pinPosition="right">
-            <div className="rounded-sm border border-slate-200 bg-white p-4 dark:border-slate-700 dark:bg-slate-900">
+            <div className="paper rounded-sm border border-stone-200/80 p-4 dark:border-stone-700/80">
               <SpotifyGenresCard
                 genres={spotify?.genres ?? []}
                 window={spotifyWindow}
@@ -270,21 +270,21 @@ export default function AboutSection({
 
           {/* Goodreads */}
           <PinCard rotation={1} pinColor="green">
-            <div className="border border-stone-200 bg-white p-4 dark:border-stone-700 dark:bg-stone-800">
+            <div className="paper border border-stone-200/80 p-4 dark:border-stone-700/80">
               <GoodreadsCard data={goodreadsData} bare />
             </div>
           </PinCard>
 
           {/* Duolingo — sits under Reading in the left column */}
-          <PinCard rotation={1.4} pinColor="teal">
-            <div className="rounded-sm border border-stone-200 bg-white p-4 dark:border-stone-700 dark:bg-stone-800">
+          <PinCard rotation={1.4} fastener="tape">
+            <div className="rounded-sm paper border border-stone-200/80 p-4 dark:border-stone-700/80">
               <DuolingoCard data={duolingoData} bare />
             </div>
           </PinCard>
 
           {/* Top Tracks — own card */}
           <PinCard rotation={-0.8} pinColor="yellow" pinPosition="left">
-            <div className="rounded-sm border border-slate-200 bg-white p-4 text-slate-900 dark:border-slate-700 dark:bg-slate-900 dark:text-white">
+            <div className="paper rounded-sm border border-stone-200/80 p-4 text-slate-900 dark:border-stone-700/80 dark:text-white">
               <div className="flex items-baseline justify-between gap-2">
                 <div className="text-[10px] font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
                   🎧 top tracks{' '}
