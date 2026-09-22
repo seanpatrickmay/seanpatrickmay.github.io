@@ -7,6 +7,7 @@ import Pinboard from '@/components/Pinboard';
 import PinCard from '@/components/PinCard';
 import { sortProjectLinks } from '@/lib/projectDisplay';
 import CoverArt, { hasMotif } from '@/components/projects/CoverArt';
+import { coverSources, COVER_SIZES } from '@/lib/coverImage';
 
 const allProjects = validateProjects(rawProjects) ? rawProjects : [];
 
@@ -111,6 +112,8 @@ export default function ProjectDetail({ project }) {
                   ) : coverImage?.src ? (
                     <img
                       src={coverImage.src}
+                      {...(coverSources(coverImage) || {})}
+                      sizes={COVER_SIZES.masthead}
                       alt={coverImage.alt || ''}
                       loading="eager"
                       className="h-full w-full object-cover"

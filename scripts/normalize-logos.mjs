@@ -1,20 +1,25 @@
 #!/usr/bin/env node
-import { readdir, stat, mkdir } from 'node:fs/promises';
+import { readdir, stat, mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import url from 'node:url';
 import sharp from 'sharp';
 
-const LOGO_SIZE = 200;
-const OUTPUT_FORMAT = 'png';
+// 96px for a badge that renders at 28x28 -- enough for a 3x display, and
+// about 2KB as webp. These were 200x200 PNGs: nu-logo alone was 46KB to fill
+// 28 square pixels, and the eight together outweighed every other image on
+// the page.
+const LOGO_SIZE = 96;
+const OUTPUT_FORMAT = 'webp';
 const VALID_EXTENSIONS = new Set(['.png', '.jpg', '.jpeg', '.webp', '.gif', '.svg']);
 const ROOT_DIR = path.dirname(url.fileURLToPath(import.meta.url));
 const LOGO_DIR = path.join(ROOT_DIR, '..', 'public', 'logos');
 const OUTPUT_DIR = path.join(LOGO_DIR, 'normalized');
 
-// Note: normalized/capitalone-wordmark{,-dark}.png are 200x72 and hand-made —
-// a wordmark squashed into a 200x200 contain box is illegible at icon size.
-// They have no source here on purpose, and this script never deletes, so it
-// leaves them alone. Do not "fix" the missing source by adding one.
+// Note: normalized/capitalone-wordmark{,-dark}.webp are hand-made and wider
+// than they are tall — a wordmark squashed into a square contain box is
+// illegible at icon size. They have no source here on purpose, and this
+// script never deletes, so it leaves them alone. Do not "fix" the missing
+// source by adding one.
 
 
 async function ensureDirectoryExists(dirPath) {
@@ -40,13 +45,19 @@ async function normalizeLogo(filePath) {
   const fileName = path.basename(filePath, path.extname(filePath));
   const outputPath = path.join(OUTPUT_DIR, `${fileName}.${OUTPUT_FORMAT}`);
 
-  await sharp(filePath)
-    .resize(LOGO_SIZE, LOGO_SIZE, {
-      fit: 'contain',
-      background: { r: 255, g: 255, b: 255, alpha: 0 },
-    })
-    .toFormat(OUTPUT_FORMAT)
-    .toFile(outputPath);
+  const resized = sharp(filePath).resize(LOGO_SIZE, LOGO_SIZE, {
+    fit: 'contain',
+    background: { r: 255, g: 255, b: 255, alpha: 0 },
+  });
+
+  // Flat-colour marks often encode smaller lossless than lossy, and without
+  // the ringing that lossy leaves around hard edges. Try both, keep the
+  // smaller — it is two encodes of a 96px image, so the cost is nothing.
+  const [lossy, lossless] = await Promise.all([
+    resized.clone().webp({ quality: 88, effort: 6 }).toBuffer(),
+    resized.clone().webp({ lossless: true, effort: 6 }).toBuffer(),
+  ]);
+  await writeFile(outputPath, lossless.length < lossy.length ? lossless : lossy);
 
   return outputPath;
 }
@@ -61,7 +72,7 @@ async function main() {
     return;
   }
 
-  console.log(`Normalizing ${files.length} logo${files.length === 1 ? '' : 's'} to ${LOGO_SIZE}x${LOGO_SIZE}px in logos/normalized…`);
+  console.log(`Normalizing ${files.length} logo${files.length === 1 ? '' : 's'} to ${LOGO_SIZE}x${LOGO_SIZE}px ${OUTPUT_FORMAT} in logos/normalized…`);
 
   for (const file of files) {
     try {

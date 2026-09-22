@@ -5,6 +5,7 @@ import PillLink from '@/components/ui/PillLink';
 import { pickHighlightTag, pickHighlightTech, pickProofPoints, sortProjectLinks } from '@/lib/projectDisplay';
 import PinCard from '@/components/PinCard';
 import CoverArt, { hasMotif } from '@/components/projects/CoverArt';
+import { coverSources, COVER_SIZES } from '@/lib/coverImage';
 
 export default function ProjectHero({ project }) {
   if (!project) return null;
@@ -33,6 +34,8 @@ export default function ProjectHero({ project }) {
           ) : project.coverImage?.src ? (
             <img
               src={project.coverImage.src}
+              {...(coverSources(project.coverImage) || {})}
+              sizes={COVER_SIZES.featured}
               alt=""
               loading="eager"
               className="h-full w-full bg-slate-900 object-cover transition-transform duration-500 group-hover:scale-[1.03]"

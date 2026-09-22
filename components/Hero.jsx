@@ -1,64 +1,54 @@
-import { useState } from 'react';
 import Link from 'next/link';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import Badge from '@/components/ui/Badge';
 import PillLink from '@/components/ui/PillLink';
 import CoverArt, { hasMotif } from '@/components/projects/CoverArt';
+import { coverSources, COVER_SIZES } from '@/lib/coverImage';
 
-// A dealt-cards cascade rather than a tight fan. The fan was tuned for a
-// ~570px absolute overlay; inside the hero's own column it packed three 200px
-// cards into ~460px and the third all but disappeared. Going down-and-right
-// with increasing z keeps every title legible, and dropping the negative
-// `top` stops the handwritten note above being overlapped.
-const FAN_POSITIONS = [
-  // z descends with rank: the fan is fed from caseStudyRank, so the strongest
-  // project has to be the one on top and fully legible. Increasing z put the
-  // third-ranked project in front, covering the titles of the first two.
-  { rotation: -6, left: '0%', top: '0px', z: 3 },
-  { rotation: 3, left: '25%', top: '58px', z: 2 },
-  { rotation: 11, left: '48%', top: '116px', z: 1 },
-];
-const FAN_CARD_WIDTH = 190;
+// Three cards pinned to the board, staggered rather than fanned.
+//
+// The cascade this replaces overlapped them by design, which only works if
+// the covered strip is dead space. It never was: each card is ~190px wide in
+// a ~400px column, so the card on top buried the *start* of the next one's
+// title and "AI Chief of Staff" read as "...Staff". Three cards of that width
+// cannot sit side by side in that column, so the fan had to go rather than be
+// re-tuned. Two up, one below, each on its own tilt, still reads as pinned
+// paper and every title survives.
+//
+// Rotation lives in a CSS custom property, not an inline transform, because
+// the mobile layout needs a different one -- and below sm the cards go
+// full-width and stack, which is also what fixed the 6px of horizontal page
+// scroll the third card used to cause at 390px. See .fan-card.
+const FAN_ROTATIONS = [-3.4, 2.6, -1.8];
+// Mobile tilts are smaller: a full-width card at a jaunty angle is just crooked.
+const STACK_ROTATIONS = [-1.2, 0.9, -0.7];
 
 function ProjectPolaroidFan({ projects = [] }) {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-
   if (projects.length === 0) return null;
 
   return (
     <>
       {projects.map((project, i) => {
-        if (!project) return null;
-        const pos = FAN_POSITIONS[i] || FAN_POSITIONS[0];
         const href = project.slug ? `/projects/${project.slug}/` : '/projects/';
         const coverSrc = project.coverImage?.src;
+        const cover = coverSources(project.coverImage);
         const motif = project.coverArt?.motif;
         const description = project.cardDescription || project.oneLiner || '';
-        const isHovered = hoveredIndex === i;
-        const zIndex = isHovered ? 20 : pos.z;
 
         return (
           <Link
             key={project.slug ?? project.title ?? i}
             href={href}
-            className="group absolute block transition-all duration-300 ease-out"
+            className="fan-card group block"
             style={{
-              top: pos.top,
-              left: pos.left,
-              zIndex,
-              transform: `rotate(${pos.rotation}deg)${isHovered ? ' scale(1.06) translateY(-8px)' : ''}`,
-              width: FAN_CARD_WIDTH,
+              '--fan-rot': `${FAN_ROTATIONS[i % FAN_ROTATIONS.length]}deg`,
+              '--fan-rot-stacked': `${STACK_ROTATIONS[i % STACK_ROTATIONS.length]}deg`,
+              // Descending, so where tilted corners do cross, the
+              // highest-ranked project is the one on top.
+              zIndex: 3 - i,
             }}
-            onMouseEnter={() => setHoveredIndex(i)}
-            onMouseLeave={() => setHoveredIndex(null)}
           >
-            <div
-              className={[
-                'overflow-hidden rounded-sm border bg-white p-1.5 pb-3 shadow-md transition-shadow duration-300',
-                'border-stone-200 dark:border-stone-700 dark:bg-stone-800',
-                isHovered ? 'shadow-xl' : '',
-              ].join(' ')}
-            >
+            <div className="overflow-hidden rounded-sm border border-stone-200 bg-white p-1.5 pb-3 shadow-md transition-shadow duration-300 group-hover:shadow-xl dark:border-stone-700 dark:bg-stone-800">
               {/* showLine is off for the fan: at 190px the handwritten
                   caption is unreadable, and the title prints underneath. */}
               <div className="relative h-24 w-full overflow-hidden rounded-sm sm:h-28">
@@ -67,6 +57,8 @@ function ProjectPolaroidFan({ projects = [] }) {
                 ) : coverSrc ? (
                   <img
                     src={coverSrc}
+                    {...(cover || {})}
+                    sizes={COVER_SIZES.fan}
                     alt=""
                     loading={i === 0 ? 'eager' : 'lazy'}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -77,20 +69,22 @@ function ProjectPolaroidFan({ projects = [] }) {
               </div>
 
               <div className="px-1.5 pt-2">
-                <div className="flex items-center gap-1.5">
+                {/* Wraps rather than truncates. At 190px "Alternative Data
+                    Pipeline" came out as "Alternative Data Pipe..." — a
+                    truncated title is worse than a second line, because the
+                    card's whole job is naming the thing. */}
+                <p className="line-clamp-2 text-sm font-semibold leading-snug text-stone-900 group-hover:text-teal-700 dark:text-stone-50 dark:group-hover:text-teal-400">
                   {project.emoji && (
-                    <span className="text-base leading-none" aria-hidden="true">{project.emoji}</span>
+                    <span className="mr-1" aria-hidden="true">{project.emoji}</span>
                   )}
-                  <span className="text-sm font-semibold text-slate-900 dark:text-slate-100 truncate">
-                    {project.title}
-                  </span>
-                </div>
+                  {project.title}
+                </p>
                 {description && (
-                  <p className="mt-1 text-[11px] leading-snug text-stone-500 dark:text-stone-400 line-clamp-2">
+                  <p className="mt-1 line-clamp-2 text-[11px] leading-snug text-stone-500 dark:text-stone-400">
                     {description}
                   </p>
                 )}
-                <span className="mt-1.5 inline-block text-[10px] font-semibold tracking-wider text-teal-600 transition-colors group-hover:text-teal-700 dark:text-teal-400 dark:group-hover:text-teal-300">
+                <span className="mt-1.5 inline-block text-[11px] font-semibold text-teal-700 dark:text-teal-400">
                   deep dive →
                 </span>
               </div>
@@ -116,7 +110,7 @@ export default function Hero({ links, featuredProjects = [], timeline = { curren
         <div className="max-w-xl space-y-5">
           <div className="animate-fade-up flex items-center gap-4">
             <img
-              src="/images/headshot.png"
+              src="/images/headshot.webp"
               alt="Sean P. May"
               width={400}
               height={400}
@@ -197,7 +191,7 @@ export default function Hero({ links, featuredProjects = [], timeline = { curren
             </svg>
           </div>
 
-          <div className="relative min-h-[400px] sm:min-h-[430px]">
+          <div className="fan-deck">
             <ProjectPolaroidFan projects={projects} />
           </div>
 

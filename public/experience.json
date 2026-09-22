@@ -5,7 +5,7 @@
     "location": "Richmond, VA",
     "period": "June 1 – August 8, 2026",
     "emoji": "🏦",
-    "img": "/logos/normalized/capitalone-logo.png",
+    "img": "/logos/normalized/capitalone-logo.webp",
     "oneLiner": "Capital One SWE Intern",
     "bullets": [
       "Summer 2026 software engineering internship in Richmond, VA."
@@ -27,7 +27,7 @@
     "role": "Software Engineering Co-op",
     "location": "Boston, MA",
     "period": "Sep 2025 – Dec 2025",
-    "img": "/logos/normalized/next-logo.png",
+    "img": "/logos/normalized/next-logo.webp",
     "oneLiner": "Agentic AI tutor systems",
     "bullets": [
       "Built and shipped Winston, an agentic AI tutoring platform for institutional deployment (course-aware tutoring, persistent personalization, proactive support).",
@@ -40,7 +40,7 @@
     "role": "Software Development Co-op",
     "location": "Groton, CT",
     "period": "Jan – Jul 2024",
-    "img": "/logos/normalized/gdeb-logo.png",
+    "img": "/logos/normalized/gdeb-logo.webp",
     "oneLiner": "GDEB SDE Co-op",
     "bullets": [
       "Led an intern project automating database accuracy via ServiceNow REST API; improved tracking of ~1000 assets and contributed to an estimated $10,000+ per month in savings.",
@@ -54,7 +54,7 @@
     "role": "Administrative Assistant",
     "location": "Fort Meade, MD",
     "period": "Jun – Sep 2023",
-    "img": "/logos/normalized/disa-logo.png",
+    "img": "/logos/normalized/disa-logo.webp",
     "oneLiner": "DISA Admin Assistant",
     "bullets": [
       "Maintained records/databases to support mission accessibility.",

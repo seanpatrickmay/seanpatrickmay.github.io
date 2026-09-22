@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Github } from 'lucide-react';
 import CoverArt, { hasMotif } from '@/components/projects/CoverArt';
+import { coverSources, COVER_SIZES } from '@/lib/coverImage';
 import { Card } from '@/components/ui/Card';
 import PillLink from '@/components/ui/PillLink';
 import { pickHighlightTag, pickHighlightTech, sortProjectLinks } from '@/lib/projectDisplay';
@@ -42,6 +43,8 @@ export default function ArchiveCard({ project }) {
         ) : project.coverImage?.src ? (
           <img
             src={project.coverImage.src}
+            {...(coverSources(project.coverImage) || {})}
+            sizes={COVER_SIZES.card}
             alt=""
             loading="lazy"
             className="h-full w-full bg-slate-900 object-cover transition-transform duration-300 group-hover:scale-105"

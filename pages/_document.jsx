@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document';
+import { PRELOAD } from '@/lib/fontSpec';
 
 const themeInitScript = `(function () {
   try {
@@ -14,12 +15,26 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
-          rel="stylesheet"
-        />
+        {/* Fonts are self-hosted — see lib/fontSpec.js for why, and
+            scripts/fetch_fonts.mjs for how they get here.
+
+            The two faces used above the fold are preloaded: @font-face rules
+            are only discovered once the stylesheet parses, which left the
+            body font a full round trip behind the page and made the hero
+            paragraph paint twice — once in the fallback, once in DM Sans.
+            crossOrigin is required even same-origin, because font fetches
+            are CORS-mode; without it the preload is discarded and the file
+            is fetched a second time. */}
+        {PRELOAD.map(file => (
+          <link
+            key={file}
+            rel="preload"
+            as="font"
+            type="font/woff2"
+            href={`/fonts/${file}`}
+            crossOrigin="anonymous"
+          />
+        ))}
         <link rel="preconnect" href="https://i.scdn.co" crossOrigin="anonymous" />
       </Head>
       <body>

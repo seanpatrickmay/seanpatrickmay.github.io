@@ -262,7 +262,9 @@
     ],
     "coverImage": {
       "src": "/projects/life-dashboard/life-dashboard-cover.webp",
-      "alt": "Life-Dashboard wellness dashboard"
+      "alt": "Life-Dashboard wellness dashboard",
+      "width": 1200,
+      "height": 688
     },
     "gallery": [],
     "bullets": [
@@ -342,7 +344,9 @@
     ],
     "coverImage": {
       "src": "/projects/lecteuraide/lecteur-aide-cover.webp",
-      "alt": "LecteurAide French reading companion"
+      "alt": "LecteurAide French reading companion",
+      "width": 1200,
+      "height": 649
     },
     "gallery": [],
     "bullets": [
