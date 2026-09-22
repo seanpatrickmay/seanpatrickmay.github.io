@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Github } from 'lucide-react';
+import CoverArt, { hasMotif } from '@/components/projects/CoverArt';
 import { Card } from '@/components/ui/Card';
 import PillLink from '@/components/ui/PillLink';
 import { pickHighlightTag, pickHighlightTech, sortProjectLinks } from '@/lib/projectDisplay';
@@ -27,18 +28,28 @@ export default function ArchiveCard({ project }) {
 
   return (
     <Card className="paper flex h-full flex-col overflow-hidden">
-      {project.coverImage?.src ? (
-        <Link href={href} className="group relative block aspect-[2/1] overflow-hidden bg-slate-900">
+      {/* The cover repeats the title link's destination, so it is taken out
+          of the tab order and the accessibility tree together — aria-hidden
+          on its own would leave a focusable element hidden from AT. */}
+      <Link
+        href={href}
+        tabIndex={-1}
+        aria-hidden="true"
+        className="group relative block aspect-[2/1] overflow-hidden"
+      >
+        {hasMotif(project.coverArt?.motif) ? (
+          <CoverArt motif={project.coverArt.motif} line={project.coverArt.line} />
+        ) : project.coverImage?.src ? (
           <img
             src={project.coverImage.src}
-            alt={project.coverImage.alt || ''}
+            alt=""
             loading="lazy"
-            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            className="h-full w-full bg-slate-900 object-cover transition-transform duration-300 group-hover:scale-105"
           />
-        </Link>
-      ) : (
-        <div className="aspect-[2/1] bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900/40" />
-      )}
+        ) : (
+          <div className="h-full w-full bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900/40" />
+        )}
+      </Link>
       <div className="flex flex-1 flex-col gap-2 p-4">
         <Link
           href={href}

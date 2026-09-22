@@ -57,9 +57,9 @@
       "more ATS coverage",
       "backfill the lake further"
     ],
-    "coverImage": {
-      "src": "/projects/alternative-data-pipeline/cover.webp",
-      "alt": "Alternative Data Pipeline — Data Engineering"
+    "coverArt": {
+      "motif": "pipeline",
+      "line": "175,000 postings a day, for $15 a month"
     },
     "gallery": [],
     "bullets": [],
@@ -117,9 +117,9 @@
       "shipped as the ingest backbone for a 7-engineer build across 32 webhook types"
     ],
     "nextSteps": [],
-    "coverImage": {
-      "src": "/projects/ai-chief-of-staff/cover.webp",
-      "alt": "AI Chief of Staff — AI/ML"
+    "coverArt": {
+      "motif": "lanes",
+      "line": "ordered per project, concurrent across them"
     },
     "gallery": [],
     "bullets": [],
@@ -177,9 +177,9 @@
       "replace manual project metadata with something that syncs from github",
       "add demo GIFs and before/after screenshots for the audit improvements"
     ],
-    "coverImage": {
-      "src": "/projects/seanpatrickmay-github-io/cover.webp",
-      "alt": "seanpatrickmay.github.io — Full-stack"
+    "coverArt": {
+      "motif": "browser",
+      "line": "you're looking at it"
     },
     "gallery": [],
     "bullets": [
@@ -409,9 +409,9 @@
       "clean up dependencies for easier reproducible setup",
       "capture an inference demo GIF showing hand detection through digit classification"
     ],
-    "coverImage": {
-      "src": "/projects/human-digit-classification/cover.webp",
-      "alt": "Human Digit Recognition — Computer Vision"
+    "coverArt": {
+      "motif": "hand",
+      "line": "finds your hand, then counts the fingers"
     },
     "gallery": [],
     "bullets": [
@@ -481,9 +481,9 @@
       "tighten environment bootstrapping and add clearer example outputs",
       "expand the multiresolution data path and result visualization"
     ],
-    "coverImage": {
-      "src": "/projects/wildfire-modeling/cover.webp",
-      "alt": "Wildfire Modeling — Machine Learning"
+    "coverArt": {
+      "motif": "satellite",
+      "line": "satellite exports → fire-spread regressions"
     },
     "gallery": [],
     "bullets": [
@@ -552,9 +552,9 @@
       "add variance reduction techniques like pruning and warm starting",
       "expand action abstraction with more bet sizings and raise depths"
     ],
-    "coverImage": {
-      "src": "/projects/nlhe-alpha-beta/cover.webp",
-      "alt": "PokerML — Game Theory"
+    "coverArt": {
+      "motif": "range-grid",
+      "line": "play it, watch its range update"
     },
     "gallery": [],
     "bullets": [
@@ -616,9 +616,9 @@
       "add stronger evaluation heuristics and time controls",
       "improve UI polish and strategy visualization"
     ],
-    "coverImage": {
-      "src": "/projects/hex-reversi/cover.webp",
-      "alt": "Hex Reversi — Game Theory"
+    "coverArt": {
+      "motif": "hex",
+      "line": "Reversi, on hexagons"
     },
     "gallery": [],
     "bullets": [
@@ -681,9 +681,9 @@
       "add job control (fg/bg) if i feel like it",
       "harden parsing for edge cases and quoting rules"
     ],
-    "coverImage": {
-      "src": "/projects/linux-shell-c/cover.webp",
-      "alt": "Linux Shell (C) — Concurrency"
+    "coverArt": {
+      "motif": "pipes",
+      "line": "pipes, all the way down"
     },
     "gallery": [],
     "bullets": [

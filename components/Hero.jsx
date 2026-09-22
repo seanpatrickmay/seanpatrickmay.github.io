@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import Badge from '@/components/ui/Badge';
 import PillLink from '@/components/ui/PillLink';
+import CoverArt, { hasMotif } from '@/components/projects/CoverArt';
 
 // A dealt-cards cascade rather than a tight fan. The fan was tuned for a
 // ~570px absolute overlay; inside the hero's own column it packed three 200px
@@ -31,6 +32,7 @@ function ProjectPolaroidFan({ projects = [] }) {
         const pos = FAN_POSITIONS[i] || FAN_POSITIONS[0];
         const href = project.slug ? `/projects/${project.slug}/` : '/projects/';
         const coverSrc = project.coverImage?.src;
+        const motif = project.coverArt?.motif;
         const description = project.cardDescription || project.oneLiner || '';
         const isHovered = hoveredIndex === i;
         const zIndex = isHovered ? 20 : pos.z;
@@ -58,10 +60,12 @@ function ProjectPolaroidFan({ projects = [] }) {
               ].join(' ')}
             >
               <div className="relative h-24 w-full overflow-hidden rounded-sm sm:h-28">
-                {coverSrc ? (
+                {hasMotif(motif) ? (
+                  <CoverArt motif={motif} line={project.coverArt.line} />
+                ) : coverSrc ? (
                   <img
                     src={coverSrc}
-                    alt={project.coverImage?.alt || ''}
+                    alt=""
                     loading={i === 0 ? 'eager' : 'lazy'}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />

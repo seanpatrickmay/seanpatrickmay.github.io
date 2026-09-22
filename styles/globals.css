@@ -287,3 +287,60 @@ body { @apply min-h-screen bg-gradient-to-b from-white via-slate-50/80 to-stone-
   -webkit-mask-composite: source-in;
   mask-composite: intersect;
 }
+
+/* Index card stock for project covers: ruled paper with a red margin rule.
+   The rules are a repeating gradient rather than drawn elements so they stay
+   1px at any card size, and the margin rule is a pseudo-element so it spans
+   the full height regardless of how the content flows. */
+.index-card {
+  background-color: #fbf7ed;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 21px,
+    rgba(150, 132, 100, 0.22) 21px,
+    rgba(150, 132, 100, 0.22) 22px
+  );
+  background-position: 0 6px;
+}
+.index-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 11%;
+  width: 1px;
+  background: rgba(190, 88, 80, 0.55);
+}
+/* A little wear at the top edge, so it reads as stock rather than a div. */
+.index-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(120, 98, 62, 0.07), transparent 18%);
+}
+.dark .index-card {
+  background-color: #201d19;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 21px,
+    rgba(214, 199, 168, 0.13) 21px,
+    rgba(214, 199, 168, 0.13) 22px
+  );
+}
+.dark .index-card::before {
+  background: rgba(190, 96, 88, 0.45);
+}
+.dark .index-card::after {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent 18%);
+}
+
+/* Constant pen weight. The motifs render anywhere from ~200px wide on an
+   archive card to ~360px in the featured panel; without this the strokes
+   scale with the box and the same drawing reads as a fineliner in one place
+   and a marker in another. */
+.index-card svg * {
+  vector-effect: non-scaling-stroke;
+}

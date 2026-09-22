@@ -4,6 +4,7 @@ import Badge from '@/components/ui/Badge';
 import PillLink from '@/components/ui/PillLink';
 import { pickHighlightTag, pickHighlightTech, pickProofPoints, sortProjectLinks } from '@/lib/projectDisplay';
 import PinCard from '@/components/PinCard';
+import CoverArt, { hasMotif } from '@/components/projects/CoverArt';
 
 export default function ProjectHero({ project }) {
   if (!project) return null;
@@ -21,18 +22,25 @@ export default function ProjectHero({ project }) {
     <PinCard rotation={1.5} pinColor="teal">
     <section className="rounded-3xl border border-slate-200/80 bg-white overflow-hidden shadow-lg dark:border-slate-800/70 dark:bg-slate-900">
       <div className="grid lg:grid-cols-[1fr_1fr] items-stretch">
-        {project.coverImage?.src ? (
-          <Link href={href} className="relative block h-56 sm:h-64 lg:h-full lg:min-h-[320px] bg-slate-900 overflow-hidden group">
+        <Link
+          href={href}
+          tabIndex={-1}
+          aria-hidden="true"
+          className="group relative block h-56 overflow-hidden sm:h-64 lg:h-full lg:min-h-[320px]"
+        >
+          {hasMotif(project.coverArt?.motif) ? (
+            <CoverArt motif={project.coverArt.motif} line={project.coverArt.line} />
+          ) : project.coverImage?.src ? (
             <img
               src={project.coverImage.src}
-              alt={project.coverImage.alt || ''}
+              alt=""
               loading="eager"
-              className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+              className="h-full w-full bg-slate-900 object-cover transition-transform duration-500 group-hover:scale-[1.03]"
             />
-          </Link>
-        ) : (
-          <div className="h-56 sm:h-64 lg:h-full lg:min-h-[320px] bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900/40" />
-        )}
+          ) : (
+            <div className="h-full w-full bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900/40" />
+          )}
+        </Link>
 
         <div className="flex flex-col gap-5 p-6 sm:p-8 lg:p-10">
           <div className="space-y-3">

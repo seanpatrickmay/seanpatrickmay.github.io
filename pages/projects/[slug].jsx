@@ -4,6 +4,7 @@ import { validateProjects } from '@/lib/projects';
 import ProjectPageHeader from '@/components/ProjectPageHeader';
 import PillLink from '@/components/ui/PillLink';
 import { sortProjectLinks } from '@/lib/projectDisplay';
+import CoverArt, { hasMotif } from '@/components/projects/CoverArt';
 
 const allProjects = validateProjects(rawProjects) ? rawProjects : [];
 
@@ -37,6 +38,7 @@ export default function ProjectDetail({ project }) {
     results = [],
     nextSteps = [],
     coverImage,
+    coverArt,
     gallery = [],
   } = project;
 
@@ -66,11 +68,15 @@ export default function ProjectDetail({ project }) {
 
         {/* ── Hero: cover + title + overview + proof points ── */}
         <header className="space-y-6 mb-12">
-          {coverImage?.src && (
+          {hasMotif(coverArt?.motif) ? (
+            <div className="aspect-[3/1] overflow-hidden rounded-2xl border border-slate-200/70 shadow-sm dark:border-slate-800/60">
+              <CoverArt motif={coverArt.motif} line={coverArt.line} />
+            </div>
+          ) : coverImage?.src ? (
             <div className="rounded-2xl overflow-hidden border border-slate-200/70 dark:border-slate-800/60 shadow-sm">
               <img src={coverImage.src} alt={coverImage.alt || ''} loading="lazy" className="w-full h-auto" />
             </div>
-          )}
+          ) : null}
 
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div className="space-y-2">
