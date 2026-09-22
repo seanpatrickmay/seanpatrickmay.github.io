@@ -83,7 +83,7 @@ export default function MovementMap() {
               caption says which is which rather than letting the two
               numbers quietly disagree. */}
           <div className="pointer-events-none absolute bottom-3 right-3 max-w-[15rem] rounded-sm bg-[#faf6ec]/92 px-3 py-2 shadow-sm ring-1 ring-[#9c8256]/45 backdrop-blur-[1px] dark:bg-[#0d2029]/92 dark:ring-[#3e7d8b]/45">
-            <div className="font-display text-lg leading-none tabular-nums text-stone-800 dark:text-stone-100">
+            <div className="stat-figure text-xl leading-none text-stone-800 dark:text-stone-100">
               {totals.distanceKm.toLocaleString()} km
             </div>
             <div

@@ -59,9 +59,11 @@ function ProjectPolaroidFan({ projects = [] }) {
                 isHovered ? 'shadow-xl' : '',
               ].join(' ')}
             >
+              {/* showLine is off for the fan: at 190px the handwritten
+                  caption is unreadable, and the title prints underneath. */}
               <div className="relative h-24 w-full overflow-hidden rounded-sm sm:h-28">
                 {hasMotif(motif) ? (
-                  <CoverArt motif={motif} line={project.coverArt.line} />
+                  <CoverArt motif={motif} line={project.coverArt.line} showLine={false} />
                 ) : coverSrc ? (
                   <img
                     src={coverSrc}

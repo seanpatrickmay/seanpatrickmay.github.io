@@ -94,7 +94,7 @@ export default function GoodreadsCard({ data = null, bare = false }) {
             <StaleBadge staleness={data?._staleness} />
           </div>
           <div className="mt-1 flex items-baseline gap-1.5">
-            <span className="text-2xl font-extrabold leading-none text-stone-900 dark:text-stone-50">
+            <span className="stat-figure text-3xl leading-none text-stone-900 dark:text-stone-50">
               {NUM.format(yearPages)}
             </span>
             <span className="text-xs font-semibold text-stone-500 dark:text-stone-400">pages</span>

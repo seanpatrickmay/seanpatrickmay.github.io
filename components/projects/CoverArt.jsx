@@ -217,7 +217,7 @@ export function hasMotif(name) {
   return Boolean(name && MOTIFS[name]);
 }
 
-export default function CoverArt({ motif, line, className = '' }) {
+export default function CoverArt({ motif, line, showLine = true, className = '' }) {
   const Motif = MOTIFS[motif];
   if (!Motif) return null;
 
@@ -231,9 +231,12 @@ export default function CoverArt({ motif, line, className = '' }) {
           <Motif />
         </div>
       </div>
-      {line && (
+      {showLine && line && (
         <div className="relative pb-3 pl-[14%] pr-4">
-          <p className="font-hand text-[15px] leading-tight text-stone-700 dark:text-stone-200 sm:text-base">
+          {/* Caveat has a small x-height for its point size, so 15px measured
+              far smaller than it sounds. Weight 600 is one of the two loaded,
+              so this asks for a real cut rather than a synthesised bold. */}
+          <p className="font-hand text-xl font-semibold leading-tight text-stone-800 dark:text-stone-100 sm:text-2xl">
             {line}
           </p>
         </div>

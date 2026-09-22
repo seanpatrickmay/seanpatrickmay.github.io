@@ -24,7 +24,7 @@ export default function DuolingoCard({ data = null, bare = false }) {
       </div>
 
       <div className="mt-1.5 flex items-baseline gap-2">
-        <span className="text-3xl font-extrabold leading-none text-stone-900 dark:text-stone-50">
+        <span className="stat-figure text-4xl leading-none text-stone-900 dark:text-stone-50">
           {streak}
         </span>
         <span className="text-sm font-semibold text-stone-500 dark:text-stone-400">

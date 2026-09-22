@@ -360,3 +360,15 @@ body { @apply min-h-screen bg-gradient-to-b from-white via-slate-50/80 to-stone-
     inset 0 0 0 1px rgba(62, 125, 139, 0.3),
     0 1px 6px rgba(0, 0, 0, 0.4);
 }
+
+/* Figures get their own face.
+   Instrument Serif rather than a fourth webfont: it is already loaded for
+   the display type and the stamped headings, so this costs nothing and ties
+   the data cards to them. Weight stays 400 — the family ships one weight,
+   and font-extrabold on it synthesises a smeared fake bold. */
+.stat-figure {
+  font-family: 'Instrument Serif', Georgia, ui-serif, serif;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.015em;
+}

@@ -177,7 +177,7 @@ export default function AboutSection({
                 <StaleBadge staleness={stats?._staleness} />
               </div>
               <div className="mt-1.5 flex items-baseline gap-2">
-                <span className="text-3xl font-extrabold leading-none text-slate-900 dark:text-white">
+                <span className="stat-figure text-4xl leading-none text-slate-900 dark:text-white">
                   {totalHours8w == null ? '—' : totalHours8w.toFixed(1)}
                 </span>
                 <span className="text-sm font-semibold text-slate-500 dark:text-slate-400">hours</span>
