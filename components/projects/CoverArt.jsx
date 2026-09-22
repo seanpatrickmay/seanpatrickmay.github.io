@@ -227,7 +227,7 @@ export default function CoverArt({ motif, line, showLine = true, className = '' 
         {/* No height cap: the SVG's own preserveAspectRatio fits it to the
             box, so the motif grows into the tall featured panel instead of
             floating in a sea of ruled paper. */}
-        <div className="h-full w-full max-w-[320px] text-[#6b5c45] dark:text-[#b0a081]">
+        <div className="h-full w-full text-[#6b5c45] dark:text-[#b0a081]">
           <Motif />
         </div>
       </div>

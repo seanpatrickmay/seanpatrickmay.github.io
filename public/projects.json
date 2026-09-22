@@ -436,17 +436,19 @@
     "endDate": null,
     "updatedAt": "2026-03-30",
     "stack": [
-      "Python",
-      "JavaScript",
-      "R",
+      "PyTorch",
+      "XGBoost",
       "Earth Engine",
-      "scikit-learn"
+      "Python",
+      "FastAPI",
+      "React"
     ],
-    "oneLiner": "research pipeline that pulls GOES satellite data through Earth Engine, converts it to GOFER-format JSON, and runs regressions on how fires spread. Python, JavaScript, and R all in one repo",
-    "cardDescription": "wildfire research — satellite data downloads, JSON normalization, logistic regressions, and a canvas viewer for the outputs",
+    "oneLiner": "ConvGRU-U-Net that predicts where a wildfire spreads over the next hour. F1 0.929 across 13 California fires, from 38 channels fused out of GOES, VIIRS, MODIS, fire weather and terrain",
+    "cardDescription": "wildfire spread prediction — a ConvGRU-U-Net with CBAM attention on a 38-channel satellite fusion, at F1 0.929 against a 0.832 logistic-regression baseline",
     "languages": [
       "Python",
-      "JavaScript"
+      "TypeScript",
+      "R"
     ],
     "tags": [
       "Data Engineering",
@@ -456,40 +458,46 @@
     "coolness": 92,
     "caseStudyRank": 6,
     "showcaseTag": "Machine Learning",
-    "showcaseTech": "Earth Engine",
+    "showcaseTech": "PyTorch",
     "proofPoints": [
-      "earth engine download and normalization pipeline",
-      "locational spread + continuation regression workflows",
-      "lightweight local viewer for GOFER-style JSON outputs"
+      "FireSpreadNet reaches F1 0.929, F2 0.930 and AUC 0.995 on held-out fires, against a logistic-regression baseline at F1 0.832 — so the architecture is earning about 0.10 F1 over a linear model on the same features",
+      "the two biggest jumps came from data quality, not architecture: 5-frame label smoothing added 12% F1, and eliminating temporal leakage by construction added another 11%",
+      "38 channels fused from GOES, VIIRS and MODIS detections, GRIDMET fire-weather indices and 3DEP terrain, with the feature set chosen by a 6-stage ablation"
     ],
-    "overview": "this is a research workflow for collecting wildfire geospatial data, converting it into GOFER-style JSON, and running local regression analyses on fire spread and continuation. it basically sits between raw remote-sensing data and whatever modeling experiments i want to run downstream.",
+    "overview": "Six generations of model for one question: given where a fire is now, where will it be in an hour? The final system is FireSpreadNet, a ConvGRU-U-Net with CBAM attention over a 38-channel stack of satellite, weather and terrain data, trained on 13 California fires from 2018 to 2023. The interesting part is not the architecture — it is that the two largest gains came from fixing the data rather than changing the model.",
     "whatIBuilt": [
-      "CLI scripts for downloading GOES confidence stacks and aligned RTMA meteorology",
-      "conversion tools that normalize geospatial outputs into modeling-friendly JSON",
-      "regression workflows and notebooks for single-fire and multi-fire analysis"
+      "a data pipeline that pulls GOES fire detections through Earth Engine, masks cloud with DQF, and fuses VIIRS and MODIS, GRIDMET weather and 3DEP terrain into training arrays",
+      "FireSpreadNet: a ConvGRU-U-Net with CBAM attention that predicts a whole next-frame fire image from a sequence, trained with focal + Tversky loss",
+      "an XGBoost per-pixel classifier and a logistic-regression baseline, so the neural network has to justify itself against something simpler",
+      "a 6-stage ablation harness that adds one feature group at a time and keeps only what moves F2",
+      "a React and FastAPI viewer that plays a fire back hour by hour against the model's prediction"
     ],
     "howItWorks": [
-      "download wildfire confidence stacks and aligned meteorology",
-      "convert outputs into GOFER-style JSON time series",
-      "run locational regressions and inspect outputs through notebooks or the local viewer"
+      "Earth Engine exports GOES fire detections for a fire's bounding box, hour by hour",
+      "a 7-stage label pipeline cleans the raw detections — majority-vote smoothing over 5 frames is what turned a noisy signal into a learnable one",
+      "prev_fire_state[t] is defined as labels[t-1], which removes temporal leakage by construction rather than by remembering to shift a column",
+      "the ConvGRU-U-Net consumes a 6-frame sequence and predicts the next frame in full",
+      "ablation decides the channels: anything that does not move F2 does not ship"
     ],
     "results": [
-      "repeatable research workflow from earth engine exports to regression outputs",
-      "supports both single-fire analysis and broader multi-fire experiments"
+      "F1 0.929 / F2 0.930 / AUC 0.995 on held-out California fires",
+      "fire state alone carries 83% of XGBoost's feature importance — fire spread is strongly autocorrelated, and any honest model has to beat that prior",
+      "F2 rather than F1 as the target metric, because missing a fire costs more than a false alarm",
+      "an earlier MLP scored F1 0.482, worse than logistic regression — kept in the write-up because a neural network that loses to a linear model is the useful result"
     ],
     "nextSteps": [
-      "tighten environment bootstrapping and add clearer example outputs",
-      "expand the multiresolution data path and result visualization"
+      "generalise past California — every fire in the training set shares a fuel and terrain regime",
+      "calibrate the probabilities, so the output can drive a decision rather than a picture"
     ],
     "coverArt": {
       "motif": "satellite",
-      "line": "satellite data → fire spread"
+      "line": "predicts the next hour of a fire"
     },
     "gallery": [],
     "bullets": [
-      "15 Python CLI scripts, 18 Earth Engine JavaScript modules, and 6 R post-processing scripts across the full pipeline.",
-      "Downloads GOES confidence stacks and hourly RTMA meteorology (temp, wind, humidity) with adaptive multi-band chunking.",
-      "Canvas-based web viewer with 5-stop color gradient, time-slider navigation, and metadata display for GOFER JSON outputs."
+      "FireSpreadNet reaches F1 0.929, F2 0.930 and AUC 0.995 on held-out fires, against a logistic-regression baseline at F1 0.832 — so the architecture is earning about 0.10 F1 over a linear model on the same features",
+      "the two biggest jumps came from data quality, not architecture: 5-frame label smoothing added 12% F1, and eliminating temporal leakage by construction added another 11%",
+      "38 channels fused from GOES, VIIRS and MODIS detections, GRIDMET fire-weather indices and 3DEP terrain, with the feature set chosen by a 6-stage ablation"
     ],
     "links": [
       {
