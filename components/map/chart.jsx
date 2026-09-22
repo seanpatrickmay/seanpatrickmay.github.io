@@ -17,6 +17,8 @@
 // declaration beats SVG's `fill` presentation attribute, which is how the
 // dark variants get to win.
 export const LAND = 'fill-[#f2e7cf] stroke-[#9c8256] dark:fill-[#1a3d4f] dark:stroke-[#56a3b4]';
+// Plain variant: flatter, quieter, no engraved-chart warmth.
+export const LAND_PLAIN = 'fill-[#e3d9c4] stroke-[#a8987c] dark:fill-[#17313d] dark:stroke-[#3d6b79]';
 export const LAND_INSET = 'fill-[#f2e7cf] stroke-[#a68c60] dark:fill-[#1a3d4f] dark:stroke-[#4d93a3]';
 // Neighbouring countries: same paper, no inked border. us-atlas carries only
 // US states, so without this layer Ontario and Quebec render as open ocean.
@@ -47,6 +49,18 @@ export function ChartDefs({ id, wobble = 2 }) {
         />
       </filter>
 
+      {/* Fine plotting grid, for the plain variant: graph paper rather than
+          an engraved chart, so the two maps on the page stop reading as the
+          same artefact printed twice. */}
+      <pattern id={`${id}-plot`} width="12" height="12" patternUnits="userSpaceOnUse">
+        <path
+          d="M12 0 H0 V12"
+          fill="none"
+          className="stroke-[#c4b596] dark:stroke-[#24424f]"
+          strokeWidth="0.5"
+        />
+      </pattern>
+
       {/* Diagonal swell lines, the way water is shaded on an engraved chart. */}
       <pattern
         id={`${id}-swell`}
@@ -74,16 +88,22 @@ export function ChartDefs({ id, wobble = 2 }) {
   );
 }
 
-/** Water plus its swell hatching, drawn under everything else. */
-export function ChartWater({ id, width, height }) {
+/** Water, with swell hatching on the chart variant and a plot grid on the plain one. */
+export function ChartWater({ id, width, height, variant = 'chart' }) {
+  const plain = variant === 'plain';
   return (
     <>
       <rect
         width={width}
         height={height}
-        className="fill-[#e6ece8] dark:fill-[#061219]"
+        className={plain ? 'fill-[#f3ece0] dark:fill-[#0a1a22]' : 'fill-[#e6ece8] dark:fill-[#061219]'}
       />
-      <rect width={width} height={height} fill={`url(#${id}-swell)`} opacity="0.55" />
+      <rect
+        width={width}
+        height={height}
+        fill={`url(#${id}-${plain ? 'plot' : 'swell'})`}
+        opacity={plain ? 0.85 : 0.55}
+      />
     </>
   );
 }

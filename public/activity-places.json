@@ -1,10 +1,37 @@
 {
   "source": "full-history",
-  "generated_at": "2026-09-21T20:00:34.424937+00:00",
+  "generated_at": "2026-09-22T05:24:20.134244+00:00",
   "note": "Full Garmin history. Each place's coordinate is the median of its activities' start points, snapped to a 0.1 degree grid; no per-activity coordinate is published. Virtual/trainer rides are excluded.",
-  "activities_considered": 1751,
+  "activities_considered": 1752,
   "activities_placed": 553,
   "coord_grid_deg": 0.1,
+  "totals": {
+    "activities": 1751,
+    "distance_km": 8240.6,
+    "hours": 1246.4,
+    "first": "2022-06-15",
+    "last": "2026-09-21",
+    "earth_circumference_km": 40075,
+    "earth_fraction": 0.2056,
+    "sports": {
+      "bike": 564,
+      "run": 479,
+      "elliptical": 388,
+      "strength_training": 118,
+      "swim": 83,
+      "row": 61,
+      "walk": 40,
+      "hike": 5,
+      "ski": 4,
+      "mixed_martial_arts": 2,
+      "breathwork": 2,
+      "climb": 1,
+      "yoga": 1,
+      "paddle": 1,
+      "multi_sport": 1,
+      "meditation": 1
+    }
+  },
   "places": [
     {
       "place": "Howard County",

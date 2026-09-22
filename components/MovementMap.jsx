@@ -44,8 +44,8 @@ export default function MovementMap() {
             everywhere i&apos;ve moved
           </div>
           <div className="text-[11px] tabular-nums text-slate-500 dark:text-slate-400">
-            {totals.activities.toLocaleString()} activities · {totals.places} places ·{' '}
-            {totals.distanceKm.toLocaleString()} km
+            {totals.activities.toLocaleString()} activities · {totals.distanceKm.toLocaleString()} km ·{' '}
+            {totals.hours.toLocaleString()} h
             {totals.since ? ` · since ${totals.since}` : ''}
           </div>
         </div>
@@ -60,9 +60,14 @@ export default function MovementMap() {
               <span className="text-slate-500 dark:text-slate-400">{label}</span>
             </span>
           ))}
+          {totals.otherCount > 0 && (
+            <span className="text-slate-500 dark:text-slate-400">
+              +{totals.otherCount} more
+            </span>
+          )}
         </div>
 
-        <div className="mt-3">
+        <div className="relative mt-3">
           <PinMap
             pins={MOVEMENT_PINS}
             activePin={activePin}
@@ -70,7 +75,33 @@ export default function MovementMap() {
             onPinClick={handleClick}
             useInset={false}
             showThread={false}
+            variant="plain"
           />
+
+          {/* Cartouche, bottom-right, where a chart puts its scale. The map
+              plots 553 activities; the distance counts all 1,751, so the
+              caption says which is which rather than letting the two
+              numbers quietly disagree. */}
+          <div className="pointer-events-none absolute bottom-3 right-3 max-w-[15rem] rounded-sm bg-[#faf6ec]/92 px-3 py-2 shadow-sm ring-1 ring-[#9c8256]/45 backdrop-blur-[1px] dark:bg-[#0d2029]/92 dark:ring-[#3e7d8b]/45">
+            <div className="font-display text-lg leading-none tabular-nums text-stone-800 dark:text-stone-100">
+              {totals.distanceKm.toLocaleString()} km
+            </div>
+            <div
+              aria-hidden="true"
+              className="mt-1.5 h-1.5 w-full overflow-hidden rounded-full bg-stone-400/30 dark:bg-stone-200/20"
+            >
+              <div
+                className="h-full rounded-full bg-teal-700 dark:bg-teal-400"
+                style={{ width: `${Math.min(100, totals.earthPercent)}%` }}
+              />
+            </div>
+            <div className="mt-1 text-[10px] leading-tight text-stone-600 dark:text-stone-300">
+              {totals.earthPercent}% of the way around the earth
+            </div>
+            <div className="mt-0.5 text-[10px] leading-tight text-stone-500 dark:text-stone-400">
+              {totals.placedActivities} of them mapped, in {totals.places} places
+            </div>
+          </div>
         </div>
 
         <div className="mt-3 flex flex-wrap gap-1.5">

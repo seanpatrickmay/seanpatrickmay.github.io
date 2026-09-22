@@ -84,6 +84,8 @@ export default function MapSection() {
               onPinClick={handlePinClick}
               useInset={category?.useInset !== false}
               showThread={category?.useInset !== false}
+              markerStyle="flag"
+              variant="chart"
             />
           </div>
 

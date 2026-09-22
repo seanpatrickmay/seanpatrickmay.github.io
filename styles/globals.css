@@ -344,3 +344,19 @@ body { @apply min-h-screen bg-gradient-to-b from-white via-slate-50/80 to-stone-
 .index-card svg * {
   vector-effect: non-scaling-stroke;
 }
+
+/* The plain map frame: a single hairline rule on plotting paper, against the
+   chart frame's printed double rule. Two maps sit on this page and they
+   should not look like the same document twice. */
+.plain-frame {
+  background-color: #f3ece0;
+  box-shadow:
+    inset 0 0 0 1px rgba(122, 98, 66, 0.28),
+    0 1px 6px rgba(60, 45, 20, 0.08);
+}
+.dark .plain-frame {
+  background-color: #0a1a22;
+  box-shadow:
+    inset 0 0 0 1px rgba(62, 125, 139, 0.3),
+    0 1px 6px rgba(0, 0, 0, 0.4);
+}

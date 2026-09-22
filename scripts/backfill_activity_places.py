@@ -81,7 +81,9 @@ SPORT_FAMILIES: List[tuple] = [
     (re.compile(r"snowshoe"), "snowshoe"),
     (re.compile(r"hik"), "hike"),
     (re.compile(r"run"), "run"),
-    (re.compile(r"cycl|bik"), "bike"),
+    # "ride" catches virtual_ride: excluded from the MAP because its
+    # coordinates are fictional, but it is still a ride he did.
+    (re.compile(r"cycl|bik|ride"), "bike"),
     (re.compile(r"swim"), "swim"),
     (re.compile(r"walk"), "walk"),
     (re.compile(r"kayak|canoe|paddl"), "paddle"),
@@ -141,7 +143,31 @@ def main() -> None:
     places: Dict[str, Dict[str, Any]] = {}
     skipped_virtual = 0
 
+    # Totals count EVERYTHING he did, not just what the map can plot. The map
+    # answers "where"; the totals answer "how much", and an indoor hour is
+    # still an hour. Only Garmin's crash-detection records are dropped,
+    # because they are not activities.
+    total_count = 0
+    total_km = 0.0
+    total_hours = 0.0
+    total_first = None
+    total_last = None
+    total_sports: Dict[str, int] = {}
+
     for activity in activities:
+        if (activity.get("activityType") or {}).get("typeKey") not in NON_ACTIVITY_TYPES:
+            total_count += 1
+            total_km += (activity.get("distance") or 0) / 1000.0
+            total_hours += (activity.get("duration") or 0) / 3600.0
+            fam = sport_family((activity.get("activityType") or {}).get("typeKey"))
+            total_sports[fam] = total_sports.get(fam, 0) + 1
+            day_all = (activity.get("startTimeLocal") or "")[:10]
+            if day_all:
+                if not total_first or day_all < total_first:
+                    total_first = day_all
+                if not total_last or day_all > total_last:
+                    total_last = day_all
+
         type_key = (activity.get("activityType") or {}).get("typeKey") or ""
         if VIRTUAL_TYPE.search(type_key) or type_key in NON_ACTIVITY_TYPES:
             skipped_virtual += 1
@@ -188,6 +214,8 @@ def main() -> None:
     )
 
     placed = sum(e["count"] for e in ordered)
+    # Mean Earth circumference, for the "how far around" figure on the map.
+    EARTH_CIRCUMFERENCE_KM = 40075
     payload = {
         "source": "full-history",
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -199,13 +227,27 @@ def main() -> None:
         "activities_considered": len(activities),
         "activities_placed": placed,
         "coord_grid_deg": COORD_GRID,
+        "totals": {
+            "activities": total_count,
+            "distance_km": round(total_km, 1),
+            "hours": round(total_hours, 1),
+            "first": total_first,
+            "last": total_last,
+            "earth_circumference_km": EARTH_CIRCUMFERENCE_KM,
+            "earth_fraction": round(total_km / EARTH_CIRCUMFERENCE_KM, 4),
+            # Across everything, so the legend adds up to the headline count
+            # rather than to the smaller number the map can plot.
+            "sports": dict(sorted(total_sports.items(), key=lambda kv: -kv[1])),
+        },
         "places": ordered,
     }
 
     OUT_PATH.write_text(json.dumps(payload, indent=2) + "\n")
     print(f"\nWrote {OUT_PATH.resolve()}")
     print(f"  {len(ordered)} places from {placed}/{len(activities)} activities")
-    print(f"  {skipped_virtual} virtual/non-activity records excluded")
+    print(f"  {skipped_virtual} virtual/non-activity records excluded from the MAP")
+    print(f"  totals across everything: {total_count} activities, {round(total_km):,} km, "
+          f"{round(total_hours):,} h = {total_km / EARTH_CIRCUMFERENCE_KM * 100:.1f}% of the earth")
     print()
     for entry in ordered:
         sports = " ".join(f"{k}:{v}" for k, v in entry["sports"].items())

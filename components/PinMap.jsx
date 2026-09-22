@@ -17,6 +17,7 @@ import {
   LAND,
   LAND_INSET,
   LAND_NEIGHBOUR,
+  LAND_PLAIN,
 } from '@/components/map/chart';
 
 /**
@@ -103,6 +104,53 @@ function ThreadPath({ pins }) {
   );
 }
 
+/**
+ * A pin planted in the ground, for work and education.
+ *
+ * Five labelled places in chronological order read as a career, and a flag
+ * says "planted here" in a way a dot does not. The movement map keeps dots,
+ * because forty-four flags would be a hedge.
+ */
+function FlagMarker({ pin, isActive, onHover, onClick, color = '#ef4444' }) {
+  const coords = coordsOf(pin);
+  if (!coords) return null;
+
+  const height = isActive ? 21 : 18;
+  const width = isActive ? 13 : 11;
+
+  return (
+    <Marker coordinates={coords}>
+      <g
+        style={{ cursor: 'pointer', transition: 'all 0.2s ease' }}
+        onMouseEnter={(e) => onHover(pin, e)}
+        onMouseLeave={() => onHover(null)}
+        onClick={() => onClick(pin)}
+      >
+        {/* Transparent hit area, so the target is not a 1px pole. */}
+        <rect x={-6} y={-height - 4} width={width + 12} height={height + 8} fill="transparent" />
+        <line
+          x1={0}
+          y1={0}
+          x2={0}
+          y2={-height}
+          stroke="#57534e"
+          strokeWidth={isActive ? 1.8 : 1.4}
+          strokeLinecap="round"
+          className="dark:stroke-stone-300"
+        />
+        <path
+          d={`M0 ${-height} L${width} ${-height + 3.4} L0 ${-height + 7.5} Z`}
+          fill={color}
+          stroke="#ffffff"
+          strokeWidth={0.9}
+          strokeLinejoin="round"
+        />
+        <circle r={isActive ? 2.6 : 2} fill="#57534e" className="dark:fill-stone-300" />
+      </g>
+    </Marker>
+  );
+}
+
 function PinMarker({ pin, isActive, onHover, onClick, scale = 2000, color = '#ef4444' }) {
   const coords = coordsOf(pin);
   if (!coords) return null;
@@ -167,6 +215,13 @@ export default function PinMap({
   // is a scatter of everywhere, in no order.
   useInset = true,
   showThread = true,
+  // 'chart' is the aged nautical chart with a compass and swell hatching;
+  // 'plain' is quieter plotting paper. Two maps on one page should not be
+  // the same artefact twice.
+  variant = 'chart',
+  // Flags suit a handful of labelled places in chronological order; dots
+  // sized by count suit forty-four of them in no order at all.
+  markerStyle = 'dot',
 }) {
   const mainPins = useMemo(() => getMainPins(pins, useInset), [pins, useInset]);
   const insetPins = useMemo(() => getInsetPins(pins, useInset), [pins, useInset]);
@@ -213,7 +268,11 @@ export default function PinMap({
       {/* The double rule is the chart's printed border: an outer ink line and
           an inner hairline, which is what stops the paper from reading as a
           div with a border-radius. */}
-      <div className="chart-frame relative overflow-hidden rounded-xl transition-all duration-500">
+      <div
+        className={`relative overflow-hidden rounded-xl transition-all duration-500 ${
+          variant === 'plain' ? 'plain-frame' : 'chart-frame'
+        }`}
+      >
         <ComposableMap
           projection="geoMercator"
           projectionConfig={{ center: projection.center, scale: projection.scale }}
@@ -226,15 +285,22 @@ export default function PinMap({
               few US states, and a smear that closes the Irish Sea and the
               English Channel across the whole North Atlantic. */}
           <ChartDefs id="chart-main" wobble={projection.scale > 1000 ? 2 : 0.7} />
-          <ChartWater id="chart-main" width={MAP_WIDTH} height={projection.height} />
-
-          <Graticule
-            step={[5, 5]}
-            className="stroke-[#c2ab84] dark:stroke-[#1f4a5b]"
-            strokeWidth={0.4}
-            fill="none"
-            opacity={0.55}
+          <ChartWater
+            id="chart-main"
+            width={MAP_WIDTH}
+            height={projection.height}
+            variant={variant}
           />
+
+          {variant === 'chart' && (
+            <Graticule
+              step={[5, 5]}
+              className="stroke-[#c2ab84] dark:stroke-[#1f4a5b]"
+              strokeWidth={0.4}
+              fill="none"
+              opacity={0.55}
+            />
+          )}
 
           <g filter="url(#chart-main-ink)">
             {/* Canada and Mexico first, from the world file. The US is
@@ -263,7 +329,7 @@ export default function PinMap({
                   <Geography
                     key={geo.rsmKey}
                     geography={geo}
-                    className={LAND}
+                    className={variant === 'plain' ? LAND_PLAIN : LAND}
                     strokeWidth={0.6}
                     style={GEO_STYLE}
                   />
@@ -287,26 +353,33 @@ export default function PinMap({
               // inside a 193-activity circle would otherwise be unclickable.
               return (b.weight ?? 0) - (a.weight ?? 0);
             })
-            .map((pin, i) => (
-            <PinMarker
-              key={`${pin.org}-${pin.location}-${pin._origIndex}`}
-              pin={pin}
-              isActive={
-                activePin &&
-                activePin.org === pin.org &&
-                activePin.location === pin.location
-              }
-              onHover={handlePinHover}
-              onClick={handlePinClick}
-              scale={projection.scale}
-              color={pinColorForIndex(pin._origIndex ?? i)}
-            />
-          ))}
+            .map((pin, i) => {
+              const Marker_ = markerStyle === 'flag' ? FlagMarker : PinMarker;
+              return (
+                <Marker_
+                  key={`${pin.org}-${pin.location}-${pin._origIndex}`}
+                  pin={pin}
+                  isActive={
+                    activePin &&
+                    activePin.org === pin.org &&
+                    activePin.location === pin.location
+                  }
+                  onHover={handlePinHover}
+                  onClick={handlePinClick}
+                  scale={projection.scale}
+                  color={pinColorForIndex(pin._origIndex ?? i)}
+                />
+              );
+            })}
 
-          <ChartVignette id="chart-main" width={MAP_WIDTH} height={projection.height} />
+          {variant === 'chart' && (
+            <ChartVignette id="chart-main" width={MAP_WIDTH} height={projection.height} />
+          )}
         </ComposableMap>
 
-        <CompassRose className="pointer-events-none absolute right-3.5 top-3.5 h-14 w-14 opacity-85" />
+        {variant === 'chart' && (
+          <CompassRose className="pointer-events-none absolute right-3.5 top-3.5 h-14 w-14 opacity-85" />
+        )}
       </div>
 
       {/* HTML tooltip — outside SVG, never clipped */}
