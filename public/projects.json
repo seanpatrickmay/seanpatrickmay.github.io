@@ -138,11 +138,12 @@
       "Next.js",
       "React",
       "Tailwind CSS",
-      "Garmin API",
-      "Spotify API"
+      "GitHub Actions",
+      "Lighthouse CI",
+      "D3 / TopoJSON"
     ],
-    "oneLiner": "this site. pulls my Garmin and Spotify data live, has writeups for all my projects, and it's just static HTML on GitHub Pages",
-    "cardDescription": "my portfolio — live Garmin and Spotify widgets, a filterable project archive, and individual writeups for each project",
+    "oneLiner": "this site. four live data feeds, four years of Garmin plotted on a map, and every page drawn as paper — all of it static HTML on GitHub Pages with no backend",
+    "cardDescription": "my portfolio — live Garmin, Spotify, Goodreads and Duolingo feeds, hand-drawn project covers, and two maps built from four years of activity data",
     "languages": [
       "JavaScript",
       "Python"
@@ -154,28 +155,31 @@
     "showcaseTag": "Full-stack",
     "showcaseTech": "Next.js",
     "proofPoints": [
-      "every project page generated from one JSON file",
-      "scheduled scripts pull fresh Garmin and Spotify data into static JSON",
-      "filterable project archive with search, tag filters, and shareable URL params"
+      "four feeds — Garmin, Spotify, Goodreads, Duolingo — refresh on a schedule into static JSON, so the site reads as live while serving as plain HTML from GitHub Pages",
+      "the movement map plots 44 places from 1,751 Garmin activities, with each place's coordinate coarsened to a 0.1° grid so a public repo never carries a home address",
+      "project covers are inline SVG rather than generated images: no regeneration step, no image weight, and they follow dark mode, which baked tiles could not"
     ],
-    "overview": "this is a static-exported next.js portfolio that mixes hand-written project writeups with live data feeds from my Garmin and Spotify. the whole point is a fast personal site that still feels current without needing a backend running somewhere.",
+    "overview": "A static-exported Next.js site that still feels current, because scheduled workflows write fresh JSON into the repo rather than a server answering at request time. The look is a scrapbook: kraft board, pinned paper, rubber-stamped headings, and project covers drawn as index cards in SVG so they cost nothing and follow dark mode.",
     "whatIBuilt": [
-      "static next.js site with a homepage, project archive, and individual project pages",
-      "data refresh scripts that pull Garmin and Spotify summaries on a schedule",
-      "reusable UI components for cards, pills, filters, and the longer project writeups"
+      "a static Next.js export with a home page, a project wall, and a page per project, all driven from one projects.json",
+      "scheduled GitHub Actions that refresh Garmin, Spotify, Goodreads and Duolingo into committed JSON, with a data-loss guard so a failed fetch never blanks a card",
+      "two maps from the same projection code: an aged nautical chart with flags for work and study, and plotting paper with weighted dots for everywhere I've run, ridden or skied",
+      "a Lighthouse CI gate that fails the build on accessibility, SEO or best-practices regressions, and warns rather than fails on performance because runner load is noisy"
     ],
     "howItWorks": [
-      "scheduled scripts write JSON into public/",
-      "pages import that JSON at build time",
-      "github pages serves the whole thing as static HTML"
+      "scheduled workflows fetch each feed and commit JSON into public/",
+      "a one-off local script pages the full Garmin history, resolves each place from its own GPS, and writes only a coarse per-place centroid",
+      "pages import that JSON at build time, so every route is static HTML",
+      "GitHub Pages serves it; Lighthouse CI runs against the built output on every code push"
     ],
     "results": [
-      "fast static site that still feels like it has live activity widgets",
-      "shareable /projects/ and /projects/<slug>/ routes that work with static export"
+      "cover art went from 3.0MB of generated PNGs to zero bytes of image, and project pages now score 0.98 on performance",
+      "accessibility holds at 0.95–1.00 across every route, enforced in CI rather than checked by hand",
+      "the Garmin feed is the one that breaks: Garmin rate-limits datacenter IPs, so history is refreshed by hand from a laptop and the page shows a staleness badge instead of pretending"
     ],
     "nextSteps": [
-      "replace manual project metadata with something that syncs from github",
-      "add demo GIFs and before/after screenshots for the audit improvements"
+      "per-project OG images, rendered from the same SVG covers at build time",
+      "fix the hero card fan on mobile — it overflows the viewport by six pixels"
     ],
     "coverArt": {
       "motif": "browser",
