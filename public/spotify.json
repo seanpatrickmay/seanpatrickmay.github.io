@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T17:40:49.951Z",
+  "generated_at": "2026-09-24T17:43:18.958Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -43,14 +43,14 @@
       "url": "https://open.spotify.com/artist/2hPgGN4uhvXAxiXQBIXOmE"
     },
     {
-      "name": "Enrique Iglesias",
-      "image": "https://i.scdn.co/image/ab6761610000f1784fa1405802a42c665b0f2dd1",
-      "url": "https://open.spotify.com/artist/7qG3b048QCHVRO5Pv1T5lw"
-    },
-    {
       "name": "Tame Impala",
       "image": "https://i.scdn.co/image/ab6761610000f178e412a782245eb20d9626c601",
       "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
+    },
+    {
+      "name": "Enrique Iglesias",
+      "image": "https://i.scdn.co/image/ab6761610000f1784fa1405802a42c665b0f2dd1",
+      "url": "https://open.spotify.com/artist/7qG3b048QCHVRO5Pv1T5lw"
     }
   ],
   "genres": [
@@ -64,7 +64,7 @@
     },
     {
       "name": "classical piano",
-      "share": 67
+      "share": 68
     },
     {
       "name": "french house",
