@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T16:51:38.642Z",
+  "generated_at": "2026-09-27T17:26:51.221Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -55,28 +55,28 @@
   ],
   "genres": [
     {
-      "name": "classical",
+      "name": "edm",
       "share": 100
     },
     {
-      "name": "edm",
-      "share": 87
-    },
-    {
-      "name": "classical piano",
-      "share": 67
+      "name": "classical",
+      "share": 96
     },
     {
       "name": "french house",
-      "share": 65
+      "share": 75
     },
     {
       "name": "electronic",
-      "share": 65
+      "share": 75
     },
     {
       "name": "electro",
-      "share": 65
+      "share": 75
+    },
+    {
+      "name": "k-pop",
+      "share": 60
     }
   ],
   "tracks": [
@@ -85,12 +85,6 @@
       "artist": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab67616d00001e022c1f34ecc1929fb59908aad1",
       "url": "https://open.spotify.com/track/0eAuGrXyGFYwur9ARUe7LJ"
-    },
-    {
-      "name": "Shostakovich / Arr. Atovmyan: Suite from the Gadfly, Op. 97a: VIII. Romance",
-      "artist": "Dmitri Shostakovich, Tasmin Little, Piers Lane",
-      "image": "https://i.scdn.co/image/ab67616d00001e0216904029c31ca50916e3116a",
-      "url": "https://open.spotify.com/track/7c8EKQLv5ld1uWm1BdGqds"
     },
     {
       "name": "Lost At Sea",
@@ -109,6 +103,12 @@
       "artist": "Omar Apollo",
       "image": "https://i.scdn.co/image/ab67616d00001e026e06e45ecdc297ddaea115e4",
       "url": "https://open.spotify.com/track/7dJN4NWQuqCjWwIT3UwOps"
+    },
+    {
+      "name": "Shostakovich / Arr. Atovmyan: Suite from the Gadfly, Op. 97a: VIII. Romance",
+      "artist": "Dmitri Shostakovich, Tasmin Little, Piers Lane",
+      "image": "https://i.scdn.co/image/ab67616d00001e0216904029c31ca50916e3116a",
+      "url": "https://open.spotify.com/track/7c8EKQLv5ld1uWm1BdGqds"
     },
     {
       "name": "Glorious Morning",
