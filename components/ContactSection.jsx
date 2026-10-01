@@ -98,7 +98,7 @@ export default function ContactSection({ links }) {
                 <Postmark />
 
                 <div className="mt-[5.5rem] space-y-2.5">
-                  <div className="text-[10px] uppercase tracking-[0.22em] text-stone-500 dark:text-stone-400">
+                  <div className="text-[10px] uppercase tracking-[0.22em] text-stone-600 dark:text-stone-400">
                     send to
                   </div>
                   <div className="border-b border-stone-300/80 pb-1 text-base font-semibold text-stone-800 dark:border-stone-600/70 dark:text-stone-100">

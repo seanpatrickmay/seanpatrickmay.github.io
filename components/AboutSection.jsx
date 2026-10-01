@@ -200,7 +200,7 @@ export default function AboutSection({
                   <span className="text-lg leading-none">🥛</span>
                   <div className="flex items-baseline gap-1.5">
                     <span className="text-xl font-bold text-teal-700 dark:text-teal-300">{totalMilkCupsLabel}</span>
-                    <span className="text-xs font-medium text-teal-600 dark:text-teal-400">cups of milk burned</span>
+                    <span className="text-xs font-medium text-teal-700 dark:text-teal-400">cups of milk burned</span>
                   </div>
                 </div>
               )}
@@ -232,7 +232,7 @@ export default function AboutSection({
                     origin={kmJourney.origin}
                     destination={kmJourney.destination}
                   />
-                  <div className="mt-1.5 text-[11px] font-medium text-teal-600 dark:text-teal-400">
+                  <div className="mt-1.5 text-[11px] font-medium text-teal-700 dark:text-teal-400">
                     {totalKmLabel} km ≈ {kmJourney.percent}% of the way
                     <span className="text-stone-500 dark:text-stone-400">
                       {' '}({KM_FORMAT.format(Math.round(kmJourney.routeDistanceKm))} km total)

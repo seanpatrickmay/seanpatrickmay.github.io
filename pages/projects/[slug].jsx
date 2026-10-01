@@ -231,7 +231,7 @@ export default function ProjectDetail({ project }) {
                   <ul className="space-y-2.5">
                     {results.map((item, i) => (
                       <li key={i} className="flex gap-3 text-stone-700 dark:text-stone-300">
-                        <span className="mt-0.5 flex-shrink-0 text-base text-teal-600 dark:text-teal-400">✓</span>
+                        <span className="mt-0.5 flex-shrink-0 text-base text-teal-700 dark:text-teal-400">✓</span>
                         <span>{item}</span>
                       </li>
                     ))}

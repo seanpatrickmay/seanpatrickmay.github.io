@@ -102,13 +102,13 @@ export default function NotFound() {
                 <div className="relative min-h-[13rem] px-7 pb-9 pt-8 sm:px-9">
                   <CancelledStamp />
                   <div className="mt-[5.5rem] space-y-2.5">
-                    <div className="text-[10px] uppercase tracking-[0.22em] text-stone-500 dark:text-stone-400">
+                    <div className="text-[10px] uppercase tracking-[0.22em] text-stone-600 dark:text-stone-400">
                       addressed to
                     </div>
-                    <div className="border-b border-stone-300/80 pb-1 text-base text-stone-500 line-through dark:border-stone-600/70 dark:text-stone-400">
+                    <div className="border-b border-stone-300/80 pb-1 text-base text-stone-600 line-through dark:border-stone-600/70 dark:text-stone-400">
                       whatever you typed
                     </div>
-                    <div className="border-b border-stone-300/80 pb-1 text-sm text-stone-500 line-through dark:border-stone-600/70 dark:text-stone-400">
+                    <div className="border-b border-stone-300/80 pb-1 text-sm text-stone-600 line-through dark:border-stone-600/70 dark:text-stone-400">
                       seanpatrickmay.me
                     </div>
                   </div>

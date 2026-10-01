@@ -16,10 +16,12 @@ import StaleBadge from '@/components/ui/StaleBadge';
 
 // Warm, board-ish palette. Ordered so the leader gets the strongest colour and
 // the tail fades into paper, which does the ranking work without numbers.
+// White ink needs a -700/-600 ground: teal-600 (3.55:1) and indigo-500
+// (4.47:1) only passed while their genre happened to rank big enough.
 const STICKERS = [
-  'bg-teal-600 text-white border-teal-700/40',
+  'bg-teal-700 text-white border-teal-800/40',
   'bg-amber-200 text-amber-950 border-amber-400/50',
-  'bg-indigo-500 text-white border-indigo-600/40',
+  'bg-indigo-600 text-white border-indigo-700/40',
   'bg-rose-200 text-rose-950 border-rose-400/50',
   'bg-stone-200 text-stone-800 border-stone-400/50',
   'bg-emerald-200 text-emerald-950 border-emerald-500/40',

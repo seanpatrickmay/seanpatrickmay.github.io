@@ -25,6 +25,8 @@ html {
 body { @apply min-h-screen bg-gradient-to-b from-white via-slate-50/80 to-stone-50/50 text-slate-900; }
 
 /* Dark */
+/* Without this, scrollbars, form controls and the overscroll canvas stay light. */
+:root.dark { color-scheme: dark; }
 .dark body { @apply min-h-screen bg-gradient-to-b from-slate-950 to-slate-900 text-slate-100; }
 .dark .card { @apply bg-slate-900 border-slate-800; box-shadow: 0 1px 3px rgba(0,0,0,.25), 0 1px 2px rgba(0,0,0,.18); }
 .dark .badge { @apply bg-slate-800 text-slate-100; }
@@ -39,7 +41,9 @@ body { @apply min-h-screen bg-gradient-to-b from-white via-slate-50/80 to-stone-
   @apply pill inline-flex items-center gap-2 font-medium border border-transparent shadow-sm transition-colors;
   /* white on teal-600 is 3.55:1, under AA for normal text; teal-700 is ~5:1 */
   @apply bg-teal-700 text-white hover:bg-teal-800;
-  @apply dark:bg-teal-500 dark:text-white dark:hover:bg-teal-400;
+  /* Same problem in dark, worse: white on teal-500 is 2.5:1. Keep the bright
+     pill and flip the ink instead — teal-950 on teal-400 is ~8:1. */
+  @apply dark:bg-teal-400 dark:text-teal-950 dark:hover:bg-teal-300;
   @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-400;
   @apply dark:focus-visible:outline-teal-300;
 }

@@ -152,7 +152,6 @@ export default function BarSparkline({
                     flexDirection: 'column',
                     alignItems: 'center',
                     lineHeight: '1.15',
-                    color: 'inherit',
                   }}
                 >
                   {lines.map((line, index) => (

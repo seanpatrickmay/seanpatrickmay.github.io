@@ -41,12 +41,14 @@ export default function MapEntryList({ pins = [], activePin, onEntryClick, onEnt
               style={isActive ? { borderColor: { red: '#ef4444', blue: '#3b82f6', green: '#22c55e', yellow: '#eab308', teal: '#14b8a6' }[ENTRY_PIN_COLORS[i % ENTRY_PIN_COLORS.length]] } : undefined}
             >
               {/* Real logo wins over the emoji placeholder — matching
-                  ExperienceItem — so orgs that have one actually show it. */}
+                  ExperienceItem — so orgs that have one actually show it.
+                  The tile stays light in dark mode: these logos are dark ink
+                  on transparency, and on stone-700 Capital One and DISA vanished. */}
               {pin.img ? (
                 <img
                   src={pin.img}
                   alt=""
-                  className="w-7 h-7 rounded-md object-contain flex-shrink-0 bg-stone-50 dark:bg-stone-700"
+                  className="w-7 h-7 rounded-md object-contain flex-shrink-0 bg-stone-50 dark:bg-stone-100"
                 />
               ) : pin.emoji ? (
                 <span className="text-lg flex-shrink-0" aria-hidden="true">

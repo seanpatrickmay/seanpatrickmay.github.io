@@ -66,7 +66,7 @@ export default function MapSection() {
               className={[
                 'rounded-full px-4 py-1.5 text-sm font-semibold transition-all duration-200',
                 cat.id === categoryId
-                  ? 'bg-red-500 text-white shadow-sm'
+                  ? 'bg-red-600 text-white shadow-sm' // red-500 is 3.76:1 under white
                   : 'bg-stone-100 text-stone-600 hover:bg-stone-200 dark:bg-stone-800 dark:text-stone-300 dark:hover:bg-stone-700',
               ].join(' ')}
             >

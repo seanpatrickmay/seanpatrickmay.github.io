@@ -17,7 +17,7 @@ export default function DuolingoCard({ data = null, bare = false }) {
   const content = (
     <div>
       <div className="flex items-baseline justify-between gap-2">
-        <div className="text-[10px] font-semibold uppercase tracking-widest text-lime-700/80 dark:text-lime-400/80">
+        <div className="text-[10px] font-semibold uppercase tracking-widest text-lime-700 dark:text-lime-400/80">
           duolingo
         </div>
         <StaleBadge staleness={data?._staleness} />
@@ -75,7 +75,7 @@ export default function DuolingoCard({ data = null, bare = false }) {
           href={data.profileUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-2.5 inline-block text-[10px] text-stone-400 transition-colors hover:text-lime-600 dark:text-stone-500 dark:hover:text-lime-400"
+          className="mt-2.5 inline-block text-[10px] text-stone-500 transition-colors hover:text-lime-700 dark:text-stone-400 dark:hover:text-lime-400"
         >
           view profile →
         </a>

@@ -88,7 +88,7 @@ export default function GoodreadsCard({ data = null, bare = false }) {
       {hasYear && target && (
         <div className="rounded-lg border border-amber-200/70 bg-amber-50/60 p-3 dark:border-amber-900/40 dark:bg-amber-950/20">
           <div className="flex items-baseline justify-between gap-2">
-            <div className="text-[10px] font-semibold uppercase tracking-widest text-amber-700/80 dark:text-amber-400/80">
+            <div className="text-[10px] font-semibold uppercase tracking-widest text-amber-700 dark:text-amber-400/80">
               reading · past 12 months
             </div>
             <StaleBadge staleness={data?._staleness} />
@@ -124,7 +124,7 @@ export default function GoodreadsCard({ data = null, bare = false }) {
               all {target.books} books run ~{NUM.format(target.pages)} pages
             </div>
             {cleared && (
-              <div className="mt-0.5 text-[10px] font-medium text-amber-600/90 dark:text-amber-500/90">
+              <div className="mt-0.5 text-[10px] font-medium text-amber-700 dark:text-amber-500/90">
                 ✓ already past {cleared.label}
               </div>
             )}
