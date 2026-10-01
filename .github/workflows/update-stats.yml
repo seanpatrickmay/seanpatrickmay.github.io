@@ -1,8 +1,9 @@
 name: Update Garmin stats.json
 
 on:
-  schedule:
-    - cron: "16 13 * * *"
+  # No schedule: Garmin 429s the OAuth token exchange from runner IPs, so this
+  # failed every day it ran. The daily refresh now runs from a home IP via
+  # launchd (scripts/garmin-local/). Kept for manual runs only.
   workflow_dispatch:
     inputs:
       reseed:
