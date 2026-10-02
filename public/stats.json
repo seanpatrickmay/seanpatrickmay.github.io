@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T13:23:04.840902Z",
+  "generated_at": "2026-10-02T13:23:07.319109Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -10,13 +10,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 51,
-        "distance_km": 257.44,
-        "time_hours": 34.89,
+        "distance_km": 259.74,
+        "time_hours": 35.92,
         "longest_km": 23.54,
-        "calories_kcal": 30611.0
+        "calories_kcal": 30766.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 24572291649,
+            "name": "Walking",
+            "type": "walking",
+            "start": "2026-10-01 16:29:15",
+            "distance_km": 13.36,
+            "duration_min": 120.2,
+            "avg_speed_kmh": 6.67,
+            "calories_kcal": 1040.0
+          },
           {
             "id": 24558346023,
             "name": "Boston Running",
@@ -606,16 +616,6 @@
             "duration_min": 29.1,
             "avg_speed_kmh": 0.0,
             "calories_kcal": 425.0
-          },
-          {
-            "id": 24130636613,
-            "name": "Howard County Running",
-            "type": "running",
-            "start": "2026-08-26 19:55:46",
-            "distance_km": 8.33,
-            "duration_min": 47.3,
-            "avg_speed_kmh": 10.57,
-            "calories_kcal": 682.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2026-09-28",
             "week_end": "2026-10-04",
-            "distance_km": 35.83,
-            "time_hours": 4.29,
-            "calories_kcal": 3462.0
+            "distance_km": 49.19,
+            "time_hours": 6.29,
+            "calories_kcal": 4502.0
           }
         ]
       }
@@ -1059,11 +1059,11 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 23,
-        "distance_km": 230.39,
-        "time_hours": 18.36,
+        "activities_count": 22,
+        "distance_km": 219.34,
+        "time_hours": 17.38,
         "longest_km": 23.54,
-        "calories_kcal": 17844.0
+        "calories_kcal": 16959.0
       },
       "recent": {
         "last60": [
@@ -1536,16 +1536,6 @@
             "duration_min": 19.7,
             "avg_speed_kmh": 12.44,
             "calories_kcal": 366.0
-          },
-          {
-            "id": 23855482868,
-            "name": "Treadmill Running",
-            "type": "treadmill_running",
-            "start": "2026-08-04 18:41:27",
-            "distance_km": 7.9,
-            "duration_min": 40.2,
-            "avg_speed_kmh": 11.78,
-            "calories_kcal": 582.0
           }
         ]
       },
