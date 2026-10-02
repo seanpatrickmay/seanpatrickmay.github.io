@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T18:40:29.904Z",
+  "generated_at": "2026-10-02T18:11:09.527Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -13,19 +13,24 @@
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000f178eefa05f0b8fcafd4beb19d31",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
-    {
       "name": "Daft Punk",
       "image": "https://i.scdn.co/image/ab6761610000f178d3aa7cc0e419b6c459b08e8e",
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
+      "name": "Zedd",
+      "image": "https://i.scdn.co/image/ab6761610000f178eefa05f0b8fcafd4beb19d31",
+      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+    },
+    {
       "name": "Red Velvet",
       "image": "https://i.scdn.co/image/ab6761610000f178d6c6537054755d396684e629",
       "url": "https://open.spotify.com/artist/1z4g3DjTBBZKhvAroFlhOM"
+    },
+    {
+      "name": "Billie Eilish",
+      "image": "https://i.scdn.co/image/ab6761610000f1784a21b4760d2ecb7b0dcdc8da",
+      "url": "https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH"
     },
     {
       "name": "Post Malone",
@@ -36,11 +41,6 @@
       "name": "KIDS SEE GHOSTS",
       "image": "https://i.scdn.co/image/ab6761610000f17822c693c66a5494d88194d543",
       "url": "https://open.spotify.com/artist/2hPgGN4uhvXAxiXQBIXOmE"
-    },
-    {
-      "name": "Angèle",
-      "image": "https://i.scdn.co/image/ab6761610000f178a5396ab4c06009c05685d54d",
-      "url": "https://open.spotify.com/artist/3QVolfxko2UyCOtexhVTli"
     },
     {
       "name": "Enrique Iglesias",
@@ -59,20 +59,20 @@
       "share": 100
     },
     {
-      "name": "edm",
-      "share": 87
-    },
-    {
       "name": "french house",
-      "share": 65
+      "share": 89
     },
     {
       "name": "electronic",
-      "share": 65
+      "share": 89
     },
     {
       "name": "electro",
-      "share": 65
+      "share": 89
+    },
+    {
+      "name": "edm",
+      "share": 67
     },
     {
       "name": "classical piano",
