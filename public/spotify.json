@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T18:11:09.527Z",
+  "generated_at": "2026-10-03T16:57:05.865Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -23,14 +23,14 @@
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
-      "name": "Red Velvet",
-      "image": "https://i.scdn.co/image/ab6761610000f178d6c6537054755d396684e629",
-      "url": "https://open.spotify.com/artist/1z4g3DjTBBZKhvAroFlhOM"
-    },
-    {
       "name": "Billie Eilish",
       "image": "https://i.scdn.co/image/ab6761610000f1784a21b4760d2ecb7b0dcdc8da",
       "url": "https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH"
+    },
+    {
+      "name": "Red Velvet",
+      "image": "https://i.scdn.co/image/ab6761610000f178d6c6537054755d396684e629",
+      "url": "https://open.spotify.com/artist/1z4g3DjTBBZKhvAroFlhOM"
     },
     {
       "name": "Post Malone",
@@ -43,14 +43,14 @@
       "url": "https://open.spotify.com/artist/2hPgGN4uhvXAxiXQBIXOmE"
     },
     {
+      "name": "Yo-Yo Ma",
+      "image": "https://i.scdn.co/image/ab6761610000f178fb0fcd51414e7bbe85e00b6f",
+      "url": "https://open.spotify.com/artist/5Dl3HXZjG6ZOWT5cV375lk"
+    },
+    {
       "name": "Enrique Iglesias",
       "image": "https://i.scdn.co/image/ab6761610000f1784fa1405802a42c665b0f2dd1",
       "url": "https://open.spotify.com/artist/7qG3b048QCHVRO5Pv1T5lw"
-    },
-    {
-      "name": "Konstantin Scherbakov",
-      "image": "https://i.scdn.co/image/ab6772690000bac3ca1949a1c785c7b7cc429b9b",
-      "url": "https://open.spotify.com/artist/6f4LXqcGifD364sFBKFfoN"
     }
   ],
   "genres": [
@@ -60,23 +60,23 @@
     },
     {
       "name": "french house",
-      "share": 89
+      "share": 71
     },
     {
       "name": "electronic",
-      "share": 89
+      "share": 71
     },
     {
       "name": "electro",
-      "share": 89
+      "share": 71
     },
     {
       "name": "edm",
-      "share": 67
+      "share": 53
     },
     {
       "name": "classical piano",
-      "share": 61
+      "share": 52
     }
   ],
   "tracks": [
@@ -87,16 +87,16 @@
       "url": "https://open.spotify.com/track/0eAuGrXyGFYwur9ARUe7LJ"
     },
     {
-      "name": "Lost At Sea",
-      "artist": "Zedd, Ryan Tedder",
-      "image": "https://i.scdn.co/image/ab67616d00001e02941dd3b3343d9cb9329d37bf",
-      "url": "https://open.spotify.com/track/3Gwq0zKnMWluOEPKh93BeC"
-    },
-    {
       "name": "Useless",
       "artist": "Omar Apollo",
       "image": "https://i.scdn.co/image/ab67616d00001e026e06e45ecdc297ddaea115e4",
       "url": "https://open.spotify.com/track/7dJN4NWQuqCjWwIT3UwOps"
+    },
+    {
+      "name": "Lost At Sea",
+      "artist": "Zedd, Ryan Tedder",
+      "image": "https://i.scdn.co/image/ab67616d00001e02941dd3b3343d9cb9329d37bf",
+      "url": "https://open.spotify.com/track/3Gwq0zKnMWluOEPKh93BeC"
     },
     {
       "name": "Shostakovich / Arr. Atovmyan: Suite from the Gadfly, Op. 97a: VIII. Romance",
@@ -135,10 +135,10 @@
       "url": "https://open.spotify.com/track/6PSKhwo0mVcOdjUOhVJd5p"
     },
     {
-      "name": "Sky Might Fall",
-      "artist": "Kid Cudi",
-      "image": "https://i.scdn.co/image/ab67616d00001e02a487deeecb334b6619489d74",
-      "url": "https://open.spotify.com/track/3Ygy1L8ABabUA7MwoOLiPM"
+      "name": "The Carnival of the Animals, R. 125: XIII. The Swan (Arr. for Cello and Piano)",
+      "artist": "Camille Saint-Saëns, Yo-Yo Ma, Kathryn Stott",
+      "image": "https://i.scdn.co/image/ab67616d00001e02fe1daedcef433b516fa1e555",
+      "url": "https://open.spotify.com/track/2LKMUX3iN0tQOvggbalydj"
     }
   ]
 }
