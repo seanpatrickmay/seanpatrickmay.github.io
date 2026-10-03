@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T13:23:07.319109Z",
+  "generated_at": "2026-10-03T01:36:16.988429Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 51,
-        "distance_km": 259.74,
-        "time_hours": 35.92,
+        "activities_count": 52,
+        "distance_km": 273.96,
+        "time_hours": 36.92,
         "longest_km": 23.54,
-        "calories_kcal": 30766.0
+        "calories_kcal": 31808.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 24580814259,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-10-02 11:51:39",
+            "distance_km": 14.22,
+            "duration_min": 60.0,
+            "avg_speed_kmh": 14.21,
+            "calories_kcal": 1042.0
+          },
           {
             "id": 24572291649,
             "name": "Walking",
@@ -606,16 +616,6 @@
             "duration_min": 44.7,
             "avg_speed_kmh": 13.09,
             "calories_kcal": 810.0
-          },
-          {
-            "id": 24131086726,
-            "name": "Indoor Cycling",
-            "type": "indoor_cycling",
-            "start": "2026-08-26 21:55:56",
-            "distance_km": 0.0,
-            "duration_min": 29.1,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 425.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2026-09-28",
             "week_end": "2026-10-04",
-            "distance_km": 49.19,
-            "time_hours": 6.29,
-            "calories_kcal": 4502.0
+            "distance_km": 63.41,
+            "time_hours": 7.29,
+            "calories_kcal": 5544.0
           }
         ]
       }
@@ -981,16 +981,6 @@
             "duration_min": 11.2,
             "avg_speed_kmh": 0.0,
             "calories_kcal": 141.0
-          },
-          {
-            "id": 23855742187,
-            "name": "Indoor Cycling",
-            "type": "indoor_cycling",
-            "start": "2026-08-04 19:36:25",
-            "distance_km": 0.0,
-            "duration_min": 20.0,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 233.0
           }
         ]
       },
@@ -1059,14 +1049,24 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 22,
-        "distance_km": 219.34,
-        "time_hours": 17.38,
+        "activities_count": 23,
+        "distance_km": 233.56,
+        "time_hours": 18.39,
         "longest_km": 23.54,
-        "calories_kcal": 16959.0
+        "calories_kcal": 18001.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 24580814259,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-10-02 11:51:39",
+            "distance_km": 14.22,
+            "duration_min": 60.0,
+            "avg_speed_kmh": 14.21,
+            "calories_kcal": 1042.0
+          },
           {
             "id": 24558346023,
             "name": "Boston Running",
@@ -1594,9 +1594,9 @@
           {
             "week_start": "2026-09-28",
             "week_end": "2026-10-04",
-            "distance_km": 35.83,
-            "time_hours": 2.79,
-            "calories_kcal": 2726.0
+            "distance_km": 50.05,
+            "time_hours": 3.79,
+            "calories_kcal": 3768.0
           }
         ]
       }
