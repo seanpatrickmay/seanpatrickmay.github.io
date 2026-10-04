@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T16:57:05.865Z",
+  "generated_at": "2026-10-04T17:15:53.513Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -60,23 +60,23 @@
     },
     {
       "name": "french house",
-      "share": 71
+      "share": 67
     },
     {
       "name": "electronic",
-      "share": 71
+      "share": 67
     },
     {
       "name": "electro",
-      "share": 71
+      "share": 67
     },
     {
       "name": "edm",
-      "share": 53
+      "share": 50
     },
     {
       "name": "classical piano",
-      "share": 52
+      "share": 50
     }
   ],
   "tracks": [
