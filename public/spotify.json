@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T17:15:53.513Z",
+  "generated_at": "2026-10-05T20:56:17.798Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -28,11 +28,6 @@
       "url": "https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH"
     },
     {
-      "name": "Red Velvet",
-      "image": "https://i.scdn.co/image/ab6761610000f178d6c6537054755d396684e629",
-      "url": "https://open.spotify.com/artist/1z4g3DjTBBZKhvAroFlhOM"
-    },
-    {
       "name": "Post Malone",
       "image": "https://i.scdn.co/image/ab6761610000f178e17c0aa1714a03d62b5ce4e0",
       "url": "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
@@ -51,6 +46,11 @@
       "name": "Enrique Iglesias",
       "image": "https://i.scdn.co/image/ab6761610000f1784fa1405802a42c665b0f2dd1",
       "url": "https://open.spotify.com/artist/7qG3b048QCHVRO5Pv1T5lw"
+    },
+    {
+      "name": "The Smiths",
+      "image": "https://i.scdn.co/image/bd4c7f5ff2c5c4385604e60c71eac1dd498ddbd9",
+      "url": "https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8"
     }
   ],
   "genres": [
@@ -60,23 +60,23 @@
     },
     {
       "name": "french house",
-      "share": 67
+      "share": 64
     },
     {
       "name": "electronic",
-      "share": 67
+      "share": 64
     },
     {
       "name": "electro",
-      "share": 67
+      "share": 64
     },
     {
       "name": "edm",
-      "share": 50
+      "share": 48
     },
     {
       "name": "classical piano",
-      "share": 50
+      "share": 48
     }
   ],
   "tracks": [
