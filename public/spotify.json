@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T18:44:55.988Z",
+  "generated_at": "2026-10-07T19:11:05.950Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -18,14 +18,14 @@
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000f178eefa05f0b8fcafd4beb19d31",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
-    {
       "name": "Billie Eilish",
       "image": "https://i.scdn.co/image/ab6761610000f1784a21b4760d2ecb7b0dcdc8da",
       "url": "https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH"
+    },
+    {
+      "name": "Zedd",
+      "image": "https://i.scdn.co/image/ab6761610000f178eefa05f0b8fcafd4beb19d31",
+      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
       "name": "Post Malone",
@@ -71,12 +71,12 @@
       "share": 66
     },
     {
-      "name": "edm",
-      "share": 49
-    },
-    {
       "name": "classical piano",
       "share": 48
+    },
+    {
+      "name": "edm",
+      "share": 40
     }
   ],
   "tracks": [
@@ -117,10 +117,10 @@
       "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
     },
     {
-      "name": "Roommates",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d00001e022c1f34ecc1929fb59908aad1",
-      "url": "https://open.spotify.com/track/5vPUv0xziXbV4lnWeVNXNq"
+      "name": "Bailando - Spanish Version",
+      "artist": "Enrique Iglesias, Descemer Bueno, Gente De Zona",
+      "image": "https://i.scdn.co/image/ab67616d00001e0290b2ea6298a6e5d98e60d6ec",
+      "url": "https://open.spotify.com/track/6PSKhwo0mVcOdjUOhVJd5p"
     },
     {
       "name": "Touch (feat. Paul Williams)",
@@ -129,16 +129,16 @@
       "url": "https://open.spotify.com/track/6jmvJ2cUbImtirxo8U5Qb9"
     },
     {
-      "name": "Bailando - Spanish Version",
-      "artist": "Enrique Iglesias, Descemer Bueno, Gente De Zona",
-      "image": "https://i.scdn.co/image/ab67616d00001e0290b2ea6298a6e5d98e60d6ec",
-      "url": "https://open.spotify.com/track/6PSKhwo0mVcOdjUOhVJd5p"
-    },
-    {
       "name": "The Carnival of the Animals, R. 125: XIII. The Swan (Arr. for Cello and Piano)",
       "artist": "Camille Saint-Saëns, Yo-Yo Ma, Kathryn Stott",
       "image": "https://i.scdn.co/image/ab67616d00001e02fe1daedcef433b516fa1e555",
       "url": "https://open.spotify.com/track/2LKMUX3iN0tQOvggbalydj"
+    },
+    {
+      "name": "Sky Might Fall",
+      "artist": "Kid Cudi",
+      "image": "https://i.scdn.co/image/ab67616d00001e02a487deeecb334b6619489d74",
+      "url": "https://open.spotify.com/track/3Ygy1L8ABabUA7MwoOLiPM"
     }
   ]
 }
