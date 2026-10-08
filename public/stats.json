@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T13:24:14.355722Z",
+  "generated_at": "2026-10-08T01:32:21.840697Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 46,
+        "activities_count": 47,
         "distance_km": 268.87,
-        "time_hours": 36.67,
+        "time_hours": 37.68,
         "longest_km": 26.01,
-        "calories_kcal": 31345.0
+        "calories_kcal": 32229.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 24646063751,
+            "name": "Elliptical",
+            "type": "elliptical",
+            "start": "2026-10-07 17:52:36",
+            "distance_km": 0.0,
+            "duration_min": 60.5,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 884.0
+          },
           {
             "id": 24635236962,
             "name": "Treadmill Running",
@@ -606,16 +616,6 @@
             "duration_min": 150.7,
             "avg_speed_kmh": 0.0,
             "calories_kcal": 1707.0
-          },
-          {
-            "id": 24174440060,
-            "name": "Baltimore County Running",
-            "type": "running",
-            "start": "2026-08-30 10:42:17",
-            "distance_km": 8.43,
-            "duration_min": 47.4,
-            "avg_speed_kmh": 10.67,
-            "calories_kcal": 706.0
           }
         ]
       },
@@ -675,8 +675,8 @@
             "week_start": "2026-10-05",
             "week_end": "2026-10-11",
             "distance_km": 12.5,
-            "time_hours": 1.67,
-            "calories_kcal": 1333.0
+            "time_hours": 2.68,
+            "calories_kcal": 2217.0
           }
         ]
       }
@@ -981,16 +981,6 @@
             "duration_min": 94.3,
             "avg_speed_kmh": 19.39,
             "calories_kcal": 884.0
-          },
-          {
-            "id": 23881958211,
-            "name": "Indoor Cycling",
-            "type": "indoor_cycling",
-            "start": "2026-08-06 21:25:50",
-            "distance_km": 0.0,
-            "duration_min": 63.0,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 777.0
           }
         ]
       },
