@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T19:11:05.950Z",
+  "generated_at": "2026-10-08T19:07:35.459Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -43,14 +43,14 @@
       "url": "https://open.spotify.com/artist/5Dl3HXZjG6ZOWT5cV375lk"
     },
     {
-      "name": "Enrique Iglesias",
-      "image": "https://i.scdn.co/image/ab6761610000f1784fa1405802a42c665b0f2dd1",
-      "url": "https://open.spotify.com/artist/7qG3b048QCHVRO5Pv1T5lw"
-    },
-    {
       "name": "The Smiths",
       "image": "https://i.scdn.co/image/bd4c7f5ff2c5c4385604e60c71eac1dd498ddbd9",
       "url": "https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8"
+    },
+    {
+      "name": "Konstantin Scherbakov",
+      "image": "https://i.scdn.co/image/ab6772690000bac3ca1949a1c785c7b7cc429b9b",
+      "url": "https://open.spotify.com/artist/6f4LXqcGifD364sFBKFfoN"
     }
   ],
   "genres": [
@@ -72,7 +72,7 @@
     },
     {
       "name": "classical piano",
-      "share": 48
+      "share": 52
     },
     {
       "name": "edm",
