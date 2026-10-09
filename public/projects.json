@@ -509,6 +509,11 @@
     ],
     "links": [
       {
+        "label": "Paper (PDF)",
+        "href": "/projects/wildfire-modeling/hourly-wildfire-spread-prediction.pdf",
+        "kind": "paper"
+      },
+      {
         "label": "Git Repo",
         "href": "https://github.com/seanpatrickmay/wildfire-modeling",
         "kind": "repo"
