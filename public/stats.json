@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T13:23:26.019249Z",
+  "generated_at": "2026-10-09T13:23:07.548395Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 44,
-        "distance_km": 255.22,
-        "time_hours": 36.23,
+        "activities_count": 43,
+        "distance_km": 246.38,
+        "time_hours": 34.77,
         "longest_km": 26.01,
-        "calories_kcal": 30925.0
+        "calories_kcal": 29838.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 24657118632,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-10-08 18:05:19",
+            "distance_km": 10.0,
+            "duration_min": 38.7,
+            "avg_speed_kmh": 15.52,
+            "calories_kcal": 706.0
+          },
           {
             "id": 24646063751,
             "name": "Elliptical",
@@ -606,16 +616,6 @@
             "duration_min": 51.7,
             "avg_speed_kmh": 10.56,
             "calories_kcal": 741.0
-          },
-          {
-            "id": 24189445627,
-            "name": "Indoor Cycling",
-            "type": "indoor_cycling",
-            "start": "2026-08-31 15:36:03",
-            "distance_km": 0.0,
-            "duration_min": 150.7,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 1707.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2026-10-05",
             "week_end": "2026-10-11",
-            "distance_km": 12.5,
-            "time_hours": 2.68,
-            "calories_kcal": 2217.0
+            "distance_km": 22.5,
+            "time_hours": 3.32,
+            "calories_kcal": 2923.0
           }
         ]
       }
@@ -1050,13 +1050,23 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 18,
-        "distance_km": 220.34,
-        "time_hours": 17.22,
+        "distance_km": 217.4,
+        "time_hours": 16.77,
         "longest_km": 26.01,
-        "calories_kcal": 16817.0
+        "calories_kcal": 16521.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 24657118632,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-10-08 18:05:19",
+            "distance_km": 10.0,
+            "duration_min": 38.7,
+            "avg_speed_kmh": 15.52,
+            "calories_kcal": 706.0
+          },
           {
             "id": 24635236962,
             "name": "Treadmill Running",
@@ -1594,9 +1604,9 @@
           {
             "week_start": "2026-10-05",
             "week_end": "2026-10-11",
-            "distance_km": 12.5,
-            "time_hours": 1.0,
-            "calories_kcal": 830.0
+            "distance_km": 22.5,
+            "time_hours": 1.65,
+            "calories_kcal": 1536.0
           }
         ]
       }
