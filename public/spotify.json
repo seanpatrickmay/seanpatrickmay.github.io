@@ -1,16 +1,11 @@
 {
-  "generated_at": "2026-10-08T19:07:35.459Z",
+  "generated_at": "2026-10-09T18:38:02.009Z",
   "time_range": "short_term",
   "artists": [
     {
       "name": "Kid Cudi",
       "image": "https://i.scdn.co/image/ab6761610000f1785f00bb6dd7a7008d14156630",
       "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
-    },
-    {
-      "name": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab6761610000f1789f6f7c2d12975d2a4b3a0fd8",
-      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
       "name": "Daft Punk",
@@ -21,6 +16,11 @@
       "name": "Billie Eilish",
       "image": "https://i.scdn.co/image/ab6761610000f1784a21b4760d2ecb7b0dcdc8da",
       "url": "https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH"
+    },
+    {
+      "name": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab6761610000f1789f6f7c2d12975d2a4b3a0fd8",
+      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
       "name": "Zedd",
@@ -43,36 +43,36 @@
       "url": "https://open.spotify.com/artist/5Dl3HXZjG6ZOWT5cV375lk"
     },
     {
+      "name": "Dominic Fike",
+      "image": "https://i.scdn.co/image/ab6761610000f178f2903326ec44d5ecb37dcad9",
+      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
+    },
+    {
       "name": "The Smiths",
       "image": "https://i.scdn.co/image/bd4c7f5ff2c5c4385604e60c71eac1dd498ddbd9",
       "url": "https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8"
-    },
-    {
-      "name": "Konstantin Scherbakov",
-      "image": "https://i.scdn.co/image/ab6772690000bac3ca1949a1c785c7b7cc429b9b",
-      "url": "https://open.spotify.com/artist/6f4LXqcGifD364sFBKFfoN"
     }
   ],
   "genres": [
     {
-      "name": "classical",
+      "name": "french house",
       "share": 100
     },
     {
-      "name": "french house",
-      "share": 66
-    },
-    {
       "name": "electronic",
-      "share": 66
+      "share": 100
     },
     {
       "name": "electro",
-      "share": 66
+      "share": 100
+    },
+    {
+      "name": "classical",
+      "share": 87
     },
     {
       "name": "classical piano",
-      "share": 52
+      "share": 45
     },
     {
       "name": "edm",
@@ -80,12 +80,6 @@
     }
   ],
   "tracks": [
-    {
-      "name": "Earrings",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d00001e022c1f34ecc1929fb59908aad1",
-      "url": "https://open.spotify.com/track/0eAuGrXyGFYwur9ARUe7LJ"
-    },
     {
       "name": "Glorious Morning",
       "artist": "Waterflame",
@@ -99,10 +93,10 @@
       "url": "https://open.spotify.com/track/7dJN4NWQuqCjWwIT3UwOps"
     },
     {
-      "name": "Lost At Sea",
-      "artist": "Zedd, Ryan Tedder",
-      "image": "https://i.scdn.co/image/ab67616d00001e02941dd3b3343d9cb9329d37bf",
-      "url": "https://open.spotify.com/track/3Gwq0zKnMWluOEPKh93BeC"
+      "name": "Earrings",
+      "artist": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab67616d00001e022c1f34ecc1929fb59908aad1",
+      "url": "https://open.spotify.com/track/0eAuGrXyGFYwur9ARUe7LJ"
     },
     {
       "name": "Shostakovich / Arr. Atovmyan: Suite from the Gadfly, Op. 97a: VIII. Romance",
@@ -133,6 +127,12 @@
       "artist": "Camille Saint-Saëns, Yo-Yo Ma, Kathryn Stott",
       "image": "https://i.scdn.co/image/ab67616d00001e02fe1daedcef433b516fa1e555",
       "url": "https://open.spotify.com/track/2LKMUX3iN0tQOvggbalydj"
+    },
+    {
+      "name": "Lost At Sea",
+      "artist": "Zedd, Ryan Tedder",
+      "image": "https://i.scdn.co/image/ab67616d00001e02941dd3b3343d9cb9329d37bf",
+      "url": "https://open.spotify.com/track/3Gwq0zKnMWluOEPKh93BeC"
     },
     {
       "name": "Sky Might Fall",
