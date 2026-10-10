@@ -801,7 +801,7 @@
     ],
     "showcaseTag": "Agentic AI",
     "showcaseTech": "TypeScript",
-    "overview": "RepoWiki reads a repository's source and git history, clusters its files into features, and writes a Wikipedia-style article for each one. Every claim on a page cites the code lines or commits it rests on. When new commits make a claim stale, it finds that claim and rewrites the page around it. It built every wiki linked from this board.",
+    "overview": "RepoWiki reads a repository's source and git history, clusters its files into features, and writes a Wikipedia-style article for each one. Every claim on a page cites the code lines or commits it rests on. When new commits make a claim stale, it finds that claim and rewrites the page around it. It built every wiki linked from this site.",
     "bullets": [
       "clusters a repository's files into features and writes one cited article per feature, plus an architecture page and a page for each contributor",
       "tracks which claims each commit makes stale and regenerates only those pages, keeping a revision history for every article",

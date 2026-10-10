@@ -14,9 +14,11 @@ import { boardClusters, threadPairs, BOARD_NOTE } from '@/lib/board';
  * and the DOM follows that rank exactly. The scatter is visual only, so Tab
  * and screen readers walk the cards best-first.
  *
- * At lg the clusters sit side by side, each on a six-column grid (big cards
- * span three, small cards two). Below lg they stack, "run" first, with jump
- * links at the top so a quant reader can skip to their half.
+ * At xl the clusters sit side by side, each on a six-column grid (big cards
+ * span three, small cards two). Below xl they stack, "run" first, with jump
+ * links at the top so a quant reader can skip to their half. A stacked cluster
+ * is full board width, so from lg its big cards stay wide enough to hold their
+ * cover captions and the evidence hung off them.
  */
 
 // Fixed cycles, so a card's tilt and pin colour are stable across renders.
@@ -35,14 +37,14 @@ export default function Board({ projects, headingLevel = 3 }) {
     <div ref={ref} data-board="" className="relative">
       <nav
         aria-label="Jump to a cluster"
-        className="mb-6 flex flex-wrap items-center gap-x-3 font-hand text-xl text-stone-600 dark:text-stone-300 lg:hidden"
+        className="mb-6 flex flex-wrap items-center gap-x-3 font-hand text-xl text-stone-600 dark:text-stone-300 xl:hidden"
       >
         {clusters.map((cluster, i) => (
           <span key={cluster.id} className="flex items-center gap-3">
             {i > 0 && <span aria-hidden="true">·</span>}
             <a
               href={`#board-${cluster.id}`}
-              className="underline decoration-stone-300 underline-offset-4 hover:text-teal-700 dark:decoration-stone-600 dark:hover:text-teal-400"
+              className="underline decoration-stone-300 underline-offset-4 hover:text-teal-800 dark:decoration-stone-600 dark:hover:text-teal-400"
             >
               {cluster.label}
             </a>
@@ -50,7 +52,7 @@ export default function Board({ projects, headingLevel = 3 }) {
         ))}
       </nav>
 
-      <div className="grid gap-y-14 lg:grid-cols-2 lg:gap-x-12">
+      <div className="grid gap-y-14 xl:grid-cols-2 xl:gap-x-12">
         {clusters.map((cluster, ci) => (
           <section key={cluster.id} aria-labelledby={`board-${cluster.id}`}>
             <Heading

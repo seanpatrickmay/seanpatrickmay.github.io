@@ -35,7 +35,7 @@ export default function Artifact({ artifact }) {
       return (
         <span
           data-artifact="tag"
-          className={`${BASE} -bottom-3 left-3 rounded-r-md bg-[#e8d5a6] py-0.5 pl-5 pr-2.5 text-[11px] font-semibold text-[#57452a] motion-safe:-rotate-3`}
+          className={`${BASE} -bottom-8 left-3 rounded-r-md bg-[#e8d5a6] py-0.5 pl-5 pr-2.5 text-[11px] font-semibold text-[#57452a] motion-safe:-rotate-3 sm:-bottom-4`}
         >
           <span
             aria-hidden="true"
@@ -55,9 +55,9 @@ export default function Artifact({ artifact }) {
       );
     case 'paper':
       return (
-        <EvidenceLink artifact={artifact} className="-bottom-6 -right-5 w-24 bg-white p-2 text-stone-900 motion-safe:rotate-3">
+        <EvidenceLink artifact={artifact} className="-bottom-9 -right-5 w-28 bg-white p-2 text-stone-900 motion-safe:rotate-3 sm:-bottom-6 sm:w-24 xl:-right-10 xl:w-20">
           <span className="block font-display text-[11px] leading-tight">{artifact.text}</span>
-          <span aria-hidden="true" className="mt-1.5 block space-y-1">
+          <span aria-hidden="true" className="mt-1.5 hidden space-y-1 sm:block">
             {PAPER_LINES.map(i => (
               <span key={i} className="block h-1 rounded-sm bg-stone-200" />
             ))}
@@ -68,7 +68,7 @@ export default function Artifact({ artifact }) {
       return (
         <EvidenceLink
           artifact={artifact}
-          className="-bottom-12 -right-2 w-16 bg-white p-1 pb-4 motion-safe:-rotate-6"
+          className="-bottom-12 -right-2 w-14 bg-white p-1 pb-4 motion-safe:-rotate-6 xl:-right-4"
         >
           <img src={artifact.image} alt="" loading="lazy" className="aspect-square w-full object-cover" />
           <span className="absolute inset-x-0 bottom-0.5 text-center font-hand text-xs text-stone-800 sm:text-sm">

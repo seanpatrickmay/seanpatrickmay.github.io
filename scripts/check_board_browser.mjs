@@ -9,7 +9,9 @@
  * Exits non-zero on the first failure. Checks: overflow (390px), thread
  * (follows pins after a resize), keyboard (Tab walks cards in rank order with
  * a visible ring), contrast (artifact text, light and dark), motion (no tilts
- * under prefers-reduced-motion).
+ * under prefers-reduced-motion), fit (at 320, 1024, 1180 and 1440px: every
+ * cover caption sits whole inside its cover, and no artifact covers a card's
+ * title or meta text).
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -136,6 +138,56 @@ for (const p of paths) {
       });
     });
     for (const { kind, ratio } of ratios) check(ratio >= 4.5, `${p} contrast: ${kind} text ${ratio.toFixed(2)}:1 in ${scheme} mode`);
+    await page.close();
+  }
+
+  // fit: captions are not clipped by their cover, and evidence never covers text.
+  for (const width of [320, 1024, 1180, 1440]) {
+    const page = await browser.newPage({ viewport: { width, height: 900 } });
+    await page.goto(url, { waitUntil: 'networkidle' });
+    const { clipped, covered, cards, artifacts } = await page.evaluate(() => {
+      const clipped = [];
+      const covered = [];
+      let cards = 0;
+      let artifacts = 0;
+      for (const slot of document.querySelectorAll('[data-board-slug]')) {
+        const slug = slot.dataset.boardSlug;
+        const caption = slot.querySelector('.index-card p');
+        if (caption) {
+          // The cover box is the clipping ancestor of the caption.
+          const cover = caption.closest('a > div');
+          const over = caption.getBoundingClientRect().bottom - cover.getBoundingClientRect().bottom;
+          cards += 1;
+          if (over > 1) clipped.push(`${slug} caption clipped by ${over.toFixed(0)}px`);
+        }
+      }
+      // Title and meta of every card: BoardCard's own <p>s, measured by their
+      // text rather than their boxes. Any artifact may cover any card's text.
+      const texts = [...document.querySelectorAll('[data-board-slug]')].flatMap(slot =>
+        [...slot.querySelectorAll('a > div:last-child > p')].map(el => {
+          const range = document.createRange();
+          range.selectNodeContents(el);
+          return { slug: slot.dataset.boardSlug, el, rects: [...range.getClientRects()] };
+        }),
+      );
+      for (const art of document.querySelectorAll('[data-artifact]')) {
+        artifacts += 1;
+        const a = art.getBoundingClientRect();
+        for (const { slug, el, rects } of texts) {
+          const hit = rects.find(r => Math.min(a.right, r.right) - Math.max(a.left, r.left) > 2
+            && Math.min(a.bottom, r.bottom) - Math.max(a.top, r.top) > 2);
+          if (hit) {
+            const ix = Math.min(a.right, hit.right) - Math.max(a.left, hit.left);
+            const iy = Math.min(a.bottom, hit.bottom) - Math.max(a.top, hit.top);
+            covered.push(`${art.dataset.artifact} of ${art.closest('[data-board-slug]').dataset.boardSlug} covers "${el.textContent.trim().slice(0, 28)}" of ${slug} (${ix.toFixed(0)}x${iy.toFixed(0)}px)`);
+          }
+        }
+      }
+      return { clipped, covered, cards, artifacts };
+    });
+    check(cards > 0, `${p} fit: found ${cards} cover captions at ${width}px`);
+    check(clipped.length === 0, `${p} fit: captions whole at ${width}px (${clipped.join('; ') || 'none clipped'})`);
+    check(artifacts > 0 && covered.length === 0, `${p} fit: no artifact covers a title or meta at ${width}px (${covered.join('; ') || `${artifacts} artifacts clear`})`);
     await page.close();
   }
 
