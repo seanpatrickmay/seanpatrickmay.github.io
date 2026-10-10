@@ -8,7 +8,7 @@
  *
  * Exits non-zero on the first failure. Checks: overflow (390px), thread
  * (follows pins after a resize), keyboard (Tab walks cards in rank order with
- * a visible ring), contrast (artifact text in dark mode), motion (no tilts
+ * a visible ring), contrast (artifact text, light and dark), motion (no tilts
  * under prefers-reduced-motion).
  */
 import fs from 'node:fs';
@@ -56,12 +56,25 @@ for (const p of paths) {
         const box = board.getBoundingClientRect();
         return [...document.querySelectorAll('[data-thread-line]')].map(line => {
           const [from, to] = line.dataset.threadLine.split('->');
-          const pin = slug => {
+          const rect = slug => {
             const r = document.querySelector(`[data-board-slug="${slug}"]`).getBoundingClientRect();
-            return { x: r.left - box.left + r.width / 2, y: r.top - box.top + 2 };
+            return { top: r.top - box.top, bottom: r.bottom - box.top, cx: r.left - box.left + r.width / 2 };
           };
-          const a = pin(from);
-          const b = pin(to);
+          // Facing edges where one card is wholly above the other, else pin to pin.
+          const f = rect(from);
+          const t = rect(to);
+          let a;
+          let b;
+          if (f.bottom <= t.top) {
+            a = { x: f.cx, y: f.bottom };
+            b = { x: t.cx, y: t.top + 2 };
+          } else if (t.bottom <= f.top) {
+            a = { x: f.cx, y: f.top + 2 };
+            b = { x: t.cx, y: t.bottom };
+          } else {
+            a = { x: f.cx, y: f.top + 2 };
+            b = { x: t.cx, y: t.top + 2 };
+          }
           return Math.max(
             Math.abs(a.x - line.x1.baseVal.value), Math.abs(a.y - line.y1.baseVal.value),
             Math.abs(b.x - line.x2.baseVal.value), Math.abs(b.y - line.y2.baseVal.value),
@@ -95,9 +108,9 @@ for (const p of paths) {
     await page.close();
   }
 
-  // contrast: artifact text stays legible in dark mode.
-  {
-    const page = await browser.newPage({ viewport: { width: 1440, height: 900 }, colorScheme: 'dark' });
+  // contrast: artifact text stays legible in both themes.
+  for (const scheme of ['light', 'dark']) {
+    const page = await browser.newPage({ viewport: { width: 1440, height: 900 }, colorScheme: scheme });
     await page.goto(url, { waitUntil: 'networkidle' });
     const ratios = await page.evaluate(() => {
       const rgb = s => (s.match(/[\d.]+/g) || []).map(Number);
@@ -122,7 +135,7 @@ for (const p of paths) {
         return { kind: el.dataset.artifact, ratio: (Math.max(fg, bg) + 0.05) / (Math.min(fg, bg) + 0.05) };
       });
     });
-    for (const { kind, ratio } of ratios) check(ratio >= 4.5, `${p} contrast: ${kind} text ${ratio.toFixed(2)}:1 in dark mode`);
+    for (const { kind, ratio } of ratios) check(ratio >= 4.5, `${p} contrast: ${kind} text ${ratio.toFixed(2)}:1 in ${scheme} mode`);
     await page.close();
   }
 

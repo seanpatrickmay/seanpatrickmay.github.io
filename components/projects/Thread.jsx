@@ -1,7 +1,12 @@
 import { useEffect, useState } from 'react';
 
 /**
- * Red string between related cards, pin to pin.
+ * Red string between related cards.
+ *
+ * Where one card sits wholly above the other, the string runs from the upper
+ * card's bottom-centre to the lower card's pin, so it only crosses the gap
+ * and never a card's caption, title or meta. Otherwise (side by side, or
+ * overlapping) it runs pin to pin.
  *
  * Measured after layout, because the grid decides where cards land. Nothing
  * renders on the server or before the first measurement, and the overlay is
@@ -23,17 +28,35 @@ export default function Thread({ containerRef, pairs }) {
     const measure = () => {
       if (cancelled) return;
       const box = container.getBoundingClientRect();
-      const pinOf = slug => {
+      const rectOf = slug => {
         const el = container.querySelector(`[data-board-slug="${slug}"]`);
         if (!el) return null;
         const r = el.getBoundingClientRect();
-        // PinCard's pushpin sits centred on the card's top edge.
-        return { x: r.left - box.left + r.width / 2, y: r.top - box.top + 2 };
+        return {
+          top: r.top - box.top,
+          bottom: r.bottom - box.top,
+          cx: r.left - box.left + r.width / 2,
+        };
+      };
+      // Same rule as scripts/check_board_browser.mjs: keep the two in step.
+      // PinCard's pushpin sits centred on the card's top edge.
+      const endpoints = (from, to) => {
+        const f = rectOf(from);
+        const t = rectOf(to);
+        if (!f || !t) return null;
+        const [upper, lower] = f.bottom <= t.top ? [f, t] : t.bottom <= f.top ? [t, f] : [null, null];
+        if (upper) {
+          const a = { x: upper.cx, y: upper.bottom };
+          const b = { x: lower.cx, y: lower.top + 2 };
+          return f === upper ? { a, b } : { a: b, b: a };
+        }
+        return { a: { x: f.cx, y: f.top + 2 }, b: { x: t.cx, y: t.top + 2 } };
       };
       setLines(
         pairs
-          .map(([from, to]) => ({ key: `${from}->${to}`, a: pinOf(from), b: pinOf(to) }))
-          .filter(line => line.a && line.b),
+          .map(([from, to]) => ({ key: `${from}->${to}`, ends: endpoints(from, to) }))
+          .filter(line => line.ends)
+          .map(({ key, ends }) => ({ key, a: ends.a, b: ends.b })),
       );
     };
 

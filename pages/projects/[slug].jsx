@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { ArrowLeft } from 'lucide-react';
 import rawProjects from '@/public/projects.json' assert { type: 'json' };
 import { validateProjects } from '@/lib/projects';
 import ProjectPageHeader from '@/components/ProjectPageHeader';
@@ -97,7 +98,8 @@ export default function ProjectDetail({ project }) {
             href="/projects/"
             className="font-hand text-lg text-stone-500 underline-offset-4 transition-colors hover:text-teal-700 hover:underline dark:text-stone-400 dark:hover:text-teal-400"
           >
-            ← all projects
+            <ArrowLeft className="mr-1 inline h-4 w-4 align-[-2px]" aria-hidden="true" />
+            all projects
           </a>
         </div>
 
