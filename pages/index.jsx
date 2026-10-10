@@ -16,6 +16,7 @@ import { Trophy } from 'lucide-react';
 import Section from '@/components/ui/Section';
 import Pinboard from '@/components/Pinboard';
 import Board from '@/components/projects/Board';
+import { assertValidBoard, boardProps } from '@/lib/board';
 
 const projects = validateProjects(rawProjects) ? rawProjects : [];
 
@@ -69,8 +70,11 @@ function trimStats(data) {
 
 
 export async function getStaticProps() {
+  // A broken board fails the build instead of quietly dropping a card.
+  assertValidBoard(projects);
   return {
     props: {
+      boardProjects: boardProps(projects),
       statsData: trimStats(readFeed('stats.json')),
       spotifyData: readFeed('spotify.json'),
       goodreadsData: readFeed('goodreads.json'),
@@ -99,7 +103,7 @@ const links = {
 };
 
 
-export default function Home({ statsData, spotifyData, goodreadsData, duolingoData, timeline, buildYear }) {
+export default function Home({ boardProjects, statsData, spotifyData, goodreadsData, duolingoData, timeline, buildYear }) {
   return (
     <>
       <Head>
@@ -129,7 +133,7 @@ export default function Home({ statsData, spotifyData, goodreadsData, duolingoDa
               and the board is what they came for. About me follows. */}
           <Section id="projects" title="projects" icon={Trophy}>
             <Pinboard>
-              <Board projects={projects} />
+              <Board projects={boardProjects} />
             </Pinboard>
           </Section>
 

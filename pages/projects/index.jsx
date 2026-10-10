@@ -5,8 +5,16 @@ import { validateProjects } from '@/lib/projects';
 import ProjectPageHeader from '@/components/ProjectPageHeader';
 import Pinboard from '@/components/Pinboard';
 import Board from '@/components/projects/Board';
+import { assertValidBoard, boardProps } from '@/lib/board';
 
-const projects = validateProjects(rawProjects) ? rawProjects : [];
+// projects.json is read only here, at build time, so the whole file is not
+// bundled into the page's JS. A broken board fails the build instead of
+// quietly dropping a card.
+export async function getStaticProps() {
+  const projects = validateProjects(rawProjects) ? rawProjects : [];
+  assertValidBoard(projects);
+  return { props: { boardProjects: boardProps(projects) } };
+}
 
 /**
  * The same board as the home page, on its own URL.
@@ -15,7 +23,7 @@ const projects = validateProjects(rawProjects) ? rawProjects : [];
  * JavaScript ran, nothing for a crawler, and the deep dives' "← all projects"
  * link went through it.
  */
-export default function ProjectsPage() {
+export default function ProjectsPage({ boardProjects }) {
   return (
     <>
       <Head>
@@ -43,7 +51,7 @@ export default function ProjectsPage() {
           </div>
         </div>
         <Pinboard>
-          <Board projects={projects} headingLevel={2} />
+          <Board projects={boardProjects} headingLevel={2} />
         </Pinboard>
       </main>
     </>
