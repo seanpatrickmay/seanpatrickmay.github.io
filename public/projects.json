@@ -323,8 +323,8 @@
     "leadFigure": {
       "src": "/projects/life-dashboard/body-view.webp",
       "width": 1200,
-      "height": 900,
-      "alt": "Screenshot of Life-Dashboard's body view on guest demo data: a readiness score of 78 out of 100 with a one-line coaching note, a morning briefing, and HRV, resting heart rate, sleep and training load each scored out of ten, on a pixel-art pond at dusk.",
+      "height": 660,
+      "alt": "Screenshot of Life-Dashboard's body view on guest demo data: a readiness score of 78 out of 100 with a one-line coaching note, a morning briefing, and HRV, resting heart rate, sleep and training load each scored out of ten, on a pixel-art pond.",
       "caption": "the body view, on guest demo data",
       "source": {
         "label": "docs/screenshots",
@@ -599,7 +599,7 @@
       "src": "/projects/wildfire-modeling/creek-fire-186.webp",
       "width": 870,
       "height": 460,
-      "alt": "Three maps of the Creek Fire at hour 186: the previous hour, the next hour as observed, and the model's prediction of it. Orange is fire that persisted, blue is new fire, yellow is fire that went out; the predicted spread around the main cluster closely follows the observed one.",
+      "alt": "Three maps of the Creek Fire at hour 186: the previous hour, the next hour as observed, and the model's prediction of it. Orange is fire that persisted, blue is new fire, yellow is fire that went out; the predicted spread around the main cluster roughly follows the observed one.",
       "caption": "creek fire, hour 186: last hour, what happened, what the model said",
       "source": {
         "label": "paper, page 16",

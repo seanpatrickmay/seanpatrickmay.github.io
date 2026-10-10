@@ -49,7 +49,7 @@ const FIGURES = [
     // headlines, and not guest-projects.png, whose demo todos are lab work.
     out: 'public/projects/life-dashboard/body-view.webp',
     from: { repo: 'Life-Dashboard', ref: 'origin/main', file: 'docs/screenshots/body-desktop.png' },
-    crop: { left: 40, top: 60, width: 1200, height: 900 },
+    crop: { left: 40, top: 300, width: 1200, height: 660 },
     webp: { quality: 85, effort: 6 },
   },
 ];
