@@ -55,7 +55,7 @@ export default function Artifact({ artifact }) {
       );
     case 'paper':
       return (
-        <EvidenceLink artifact={artifact} className="-bottom-9 -right-5 w-28 bg-white p-2 text-stone-900 motion-safe:rotate-3 sm:-bottom-6 sm:w-24 xl:-right-10 xl:w-20">
+        <EvidenceLink artifact={artifact} className="-bottom-9 -right-5 w-28 bg-white p-2 text-stone-900 motion-safe:rotate-3 sm:-bottom-6 sm:w-24 xl:-right-8 xl:w-20">
           <span className="block font-display text-[11px] leading-tight">{artifact.text}</span>
           <span aria-hidden="true" className="mt-1.5 hidden space-y-1 sm:block">
             {PAPER_LINES.map(i => (
