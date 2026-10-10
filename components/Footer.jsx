@@ -9,6 +9,7 @@ export default function Footer({ links, year }) {
     { href: links.email, label: links.emailDisplay },
     { href: links.github, label: 'GitHub', external: true },
     { href: links.linkedin, label: 'LinkedIn', external: true },
+    { href: 'https://github.com/seanpatrickmay/seanpatrickmay.github.io', label: 'site source', external: true },
   ].filter(item => item.href && item.label);
 
   return (
