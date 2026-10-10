@@ -26,8 +26,6 @@
       "Data Engineering",
       "Cloud/Infra"
     ],
-    "coolness": 96,
-    "caseStudyRank": 1,
     "showcaseTag": "Data Engineering",
     "showcaseTech": "AWS Lambda",
     "proofPoints": [
@@ -64,7 +62,18 @@
     "gallery": [],
     "bullets": [],
     "links": [],
-    "linksNote": "private repo — NU Systematic Alpha"
+    "linksNote": "private repo — NU Systematic Alpha",
+    "board": {
+      "cluster": "run",
+      "size": "big",
+      "order": 1
+    },
+    "artifacts": [
+      {
+        "kind": "tag",
+        "text": "NU Systematic Alpha"
+      }
+    ]
   },
   {
     "title": "AI Chief of Staff",
@@ -92,8 +101,6 @@
       "AI/ML",
       "Cloud/Infra"
     ],
-    "coolness": 95,
-    "caseStudyRank": 2,
     "showcaseTag": "AI/ML",
     "showcaseTech": "LangGraph",
     "proofPoints": [
@@ -124,7 +131,19 @@
     "gallery": [],
     "bullets": [],
     "links": [],
-    "linksNote": "private repo — NExT Consulting"
+    "linksNote": "private repo — NExT Consulting",
+    "board": {
+      "cluster": "run",
+      "size": "small",
+      "order": 4,
+      "line": "multi-agent project monitoring · LangGraph"
+    },
+    "artifacts": [
+      {
+        "kind": "tag",
+        "text": "NExT Consulting"
+      }
+    ]
   },
   {
     "title": "seanpatrickmay.github.io",
@@ -151,7 +170,6 @@
     "tags": [
       "Full-stack"
     ],
-    "coolness": 89,
     "showcaseTag": "Full-stack",
     "showcaseTech": "Next.js",
     "proofPoints": [
@@ -232,8 +250,6 @@
       "Agentic AI",
       "Data Engineering"
     ],
-    "coolness": 100,
-    "caseStudyRank": 3,
     "showcaseTag": "Agentic AI",
     "showcaseTech": "PostgreSQL",
     "proofPoints": [
@@ -288,6 +304,21 @@
         "href": "https://seanpatrickmay.me/wiki/life-dashboard/",
         "kind": "wiki"
       }
+    ],
+    "board": {
+      "cluster": "run",
+      "size": "small",
+      "order": 3,
+      "line": "live · personal command center"
+    },
+    "artifacts": [
+      {
+        "kind": "polaroid",
+        "text": "it's live",
+        "href": "https://lifedashboard.tech",
+        "label": "Life-Dashboard, live",
+        "image": "/projects/life-dashboard/life-dashboard-cover-480.webp"
+      }
     ]
   },
   {
@@ -319,8 +350,6 @@
       "Cloud/Infra",
       "Agentic AI"
     ],
-    "coolness": 99,
-    "caseStudyRank": 4,
     "showcaseTag": "NLP",
     "showcaseTech": "Cloud Translation",
     "proofPoints": [
@@ -370,7 +399,13 @@
         "href": "https://seanpatrickmay.me/wiki/lecteuraide/",
         "kind": "wiki"
       }
-    ]
+    ],
+    "board": {
+      "cluster": "run",
+      "size": "small",
+      "order": 5,
+      "line": "French reading companion · Gemini"
+    }
   },
   {
     "title": "Human Digit Recognition",
@@ -398,8 +433,6 @@
       "Computer Vision",
       "Algorithms"
     ],
-    "coolness": 96,
-    "caseStudyRank": 5,
     "showcaseTag": "Computer Vision",
     "showcaseTech": "PyTorch",
     "proofPoints": [
@@ -473,8 +506,6 @@
       "Machine Learning",
       "Cloud/Infra"
     ],
-    "coolness": 92,
-    "caseStudyRank": 6,
     "showcaseTag": "Machine Learning",
     "showcaseTech": "PyTorch",
     "proofPoints": [
@@ -528,6 +559,19 @@
         "href": "https://github.com/seanpatrickmay/wildfire-modeling",
         "kind": "repo"
       }
+    ],
+    "board": {
+      "cluster": "think",
+      "size": "big",
+      "order": 2
+    },
+    "artifacts": [
+      {
+        "kind": "paper",
+        "text": "Hourly Wildfire Spread Prediction",
+        "href": "/projects/wildfire-modeling/hourly-wildfire-spread-prediction.pdf",
+        "label": "the wildfire paper (PDF)"
+      }
     ]
   },
   {
@@ -553,8 +597,6 @@
       "Game Theory",
       "Algorithms"
     ],
-    "coolness": 90,
-    "caseStudyRank": 7,
     "showcaseTag": "Game Theory",
     "showcaseTech": "CFR+",
     "proofPoints": [
@@ -604,7 +646,13 @@
         "href": "https://seanpatrickmay.me/wiki/pokerml/",
         "kind": "wiki"
       }
-    ]
+    ],
+    "board": {
+      "cluster": "think",
+      "size": "small",
+      "order": 3,
+      "line": "CFR+ solver for no-limit hold'em"
+    }
   },
   {
     "title": "Hex Reversi",
@@ -627,7 +675,6 @@
       "Algorithms",
       "Game Theory"
     ],
-    "coolness": 87,
     "showcaseTag": "Game Theory",
     "showcaseTech": "Swing",
     "proofPoints": [
@@ -692,7 +739,6 @@
       "Concurrency",
       "Algorithms"
     ],
-    "coolness": 85,
     "showcaseTag": "Concurrency",
     "showcaseTech": "C",
     "proofPoints": [
@@ -784,6 +830,19 @@
         "href": "https://github.com/seanpatrickmay/repowiki",
         "kind": "repo"
       }
+    ],
+    "board": {
+      "cluster": "run",
+      "size": "big",
+      "order": 2
+    },
+    "artifacts": [
+      {
+        "kind": "sticky",
+        "text": "wrote the wikis for 4 of these",
+        "href": "https://seanpatrickmay.me/wiki/",
+        "label": "project wikis, built by RepoWiki"
+      }
     ]
   },
   {
@@ -840,6 +899,22 @@
         "href": "https://github.com/seanpatrickmay/AlphaSettler",
         "kind": "repo"
       }
+    ],
+    "board": {
+      "cluster": "think",
+      "size": "big",
+      "order": 1
+    },
+    "artifacts": [
+      {
+        "kind": "sticky",
+        "text": "300× faster than Catanatron",
+        "href": "https://seanpatrickmay.me/wiki/alphasettler/wiki/performance-testing/",
+        "label": "AlphaSettler benchmarks, in its wiki"
+      }
+    ],
+    "threadTo": [
+      "nlhe-alpha-beta"
     ]
   },
   {
