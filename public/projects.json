@@ -451,7 +451,7 @@
       "FastAPI",
       "React"
     ],
-    "oneLiner": "ConvGRU-U-Net that predicts where a wildfire spreads over the next hour. F1 0.929 across 13 California fires, from 38 channels fused out of GOES, VIIRS, MODIS, fire weather and terrain",
+    "oneLiner": "ConvGRU-U-Net that predicts where a wildfire spreads over the next hour. F1 0.929 on four held-out California fires, from 38 channels fused out of GOES, VIIRS, MODIS, fire weather and terrain",
     "cardDescription": "wildfire spread prediction — a ConvGRU-U-Net with CBAM attention on a 38-channel satellite fusion, at F1 0.929 against a 0.832 logistic-regression baseline",
     "languages": [
       "Python",
@@ -468,11 +468,11 @@
     "showcaseTag": "Machine Learning",
     "showcaseTech": "PyTorch",
     "proofPoints": [
-      "FireSpreadNet reaches F1 0.929, F2 0.930 and AUC 0.995 on held-out fires, against a logistic-regression baseline at F1 0.832 — so the architecture is earning about 0.10 F1 over a linear model on the same features",
+      "FireSpreadNet reaches F1 0.929 and F2 0.928 on four held-out fires, against a logistic-regression baseline at F1 0.832 — so the architecture is earning about 0.10 F1 over a linear model on the same features",
       "the two biggest jumps came from data quality, not architecture: 5-frame label smoothing added 12% F1, and eliminating temporal leakage by construction added another 11%",
       "38 channels fused from GOES, VIIRS and MODIS detections, GRIDMET fire-weather indices and 3DEP terrain, with the feature set chosen by a 6-stage ablation"
     ],
-    "overview": "Six generations of model for one question: given where a fire is now, where will it be in an hour? The final system is FireSpreadNet, a ConvGRU-U-Net with CBAM attention over a 38-channel stack of satellite, weather and terrain data, trained on 13 California fires from 2018 to 2023. The interesting part is not the architecture — it is that the two largest gains came from fixing the data rather than changing the model.",
+    "overview": "Six generations of model for one question: given where a fire is now, where will it be in an hour? The final system is FireSpreadNet, a ConvGRU-U-Net with CBAM attention over a 38-channel stack of satellite, weather and terrain data, trained on eight California fires and tested on four it never saw. The interesting part is not the architecture — it is that the two largest gains came from fixing the data rather than changing the model.",
     "whatIBuilt": [
       "a data pipeline that pulls GOES fire detections through Earth Engine, masks cloud with DQF, and fuses VIIRS and MODIS, GRIDMET weather and 3DEP terrain into training arrays",
       "FireSpreadNet: a ConvGRU-U-Net with CBAM attention that predicts a whole next-frame fire image from a sequence, trained with focal + Tversky loss",
@@ -488,7 +488,7 @@
       "ablation decides the channels: anything that does not move F2 does not ship"
     ],
     "results": [
-      "F1 0.929 / F2 0.930 / AUC 0.995 on held-out California fires",
+      "F1 0.929 / F2 0.928 on the four held-out fires — Camp, Creek, Dolan and Glass — and no single fire below F2 0.918",
       "fire state alone carries 83% of XGBoost's feature importance — fire spread is strongly autocorrelated, and any honest model has to beat that prior",
       "F2 rather than F1 as the target metric, because missing a fire costs more than a false alarm",
       "an earlier MLP scored F1 0.482, worse than logistic regression — kept in the write-up because a neural network that loses to a linear model is the useful result"
@@ -503,11 +503,16 @@
     },
     "gallery": [],
     "bullets": [
-      "FireSpreadNet reaches F1 0.929, F2 0.930 and AUC 0.995 on held-out fires, against a logistic-regression baseline at F1 0.832 — so the architecture is earning about 0.10 F1 over a linear model on the same features",
+      "FireSpreadNet reaches F1 0.929 and F2 0.928 on four held-out fires, against a logistic-regression baseline at F1 0.832 — so the architecture is earning about 0.10 F1 over a linear model on the same features",
       "the two biggest jumps came from data quality, not architecture: 5-frame label smoothing added 12% F1, and eliminating temporal leakage by construction added another 11%",
       "38 channels fused from GOES, VIIRS and MODIS detections, GRIDMET fire-weather indices and 3DEP terrain, with the feature set chosen by a 6-stage ablation"
     ],
     "links": [
+      {
+        "label": "Paper (PDF)",
+        "href": "/projects/wildfire-modeling/hourly-wildfire-spread-prediction.pdf",
+        "kind": "paper"
+      },
       {
         "label": "Git Repo",
         "href": "https://github.com/seanpatrickmay/wildfire-modeling",
