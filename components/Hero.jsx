@@ -45,8 +45,17 @@ export default function Hero({ links, timeline = { current: [] } }) {
         {highlights.length > 0 && (
           <div className="animate-fade-up flex flex-wrap gap-2 pt-1 [animation-delay:150ms] lg:hidden">
             {highlights.map(entry => {
+              // A linked chip is underlined like the sidebar's links, so it
+              // does not read as the same label as an unlinked one.
               const badge = (
-                <Badge variant="outline" className="text-xs">
+                <Badge
+                  variant="outline"
+                  className={`text-xs ${
+                    entry.href
+                      ? 'underline decoration-slate-300 underline-offset-2 transition-colors hover:text-teal-700 dark:decoration-slate-600 dark:hover:text-teal-400'
+                      : ''
+                  }`}
+                >
                   {entry.role} &mdash; {entry.org}
                 </Badge>
               );
