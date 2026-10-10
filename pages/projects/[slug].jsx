@@ -2,17 +2,21 @@ import Head from 'next/head';
 import { ArrowLeft } from 'lucide-react';
 import rawProjects from '@/public/projects.json' assert { type: 'json' };
 import { validateProjects } from '@/lib/projects';
+import { assertValidDeepDives, DEEP_DIVE_LABELS, MAX_STACK_CHIPS, overviewText } from '@/lib/deepDive';
+import { sortProjectLinks } from '@/lib/projectDisplay';
 import ProjectPageHeader from '@/components/ProjectPageHeader';
 import PillLink from '@/components/ui/PillLink';
 import Pinboard from '@/components/Pinboard';
 import PinCard from '@/components/PinCard';
-import { sortProjectLinks } from '@/lib/projectDisplay';
-import CoverArt, { hasMotif } from '@/components/projects/CoverArt';
-import { coverSources, COVER_SIZES } from '@/lib/coverImage';
+import MetricsStrip from '@/components/projects/MetricsStrip';
+import LeadFigure from '@/components/projects/LeadFigure';
 
 const allProjects = validateProjects(rawProjects) ? rawProjects : [];
 
 export async function getStaticPaths() {
+  // A broken deep dive fails the build, the way a broken board does,
+  // instead of shipping a metric with no source.
+  assertValidDeepDives(allProjects);
   const paths = allProjects
     .filter(p => typeof p.slug === 'string' && p.slug.length > 0)
     .map(p => ({ params: { slug: p.slug } }));
@@ -25,12 +29,12 @@ export async function getStaticProps({ params }) {
 }
 
 /**
- * Detail pages used a visual language of their own: white cards on a plain
- * background, teal gradient callouts, and a five-colour rainbow on the
- * numbered steps. They are where anyone who actually cares about a project
- * ends up, and they looked like a different site from the one that sent
- * them there. This is the same board, paper and stamps as the home page,
- * with one accent colour instead of five.
+ * A deep dive, evidence first: the numbers with their sources, then a real
+ * figure, then the story. Every fact appears once. The old template showed
+ * the same numbers in the overview, three proof cards and a results list.
+ *
+ * Each section's root carries data-section, in DEEP_DIVE_SECTIONS order;
+ * lib/deepDiveExport.test.mjs holds the export to it.
  */
 
 /** A stamped heading, matching the section headings on the home page. */
@@ -55,150 +59,114 @@ function Sheet({ children, className = '', rotation = 0, pinColor = 'teal', fast
   );
 }
 
+function Dot() {
+  return <span aria-hidden="true" className="mt-[0.45rem] h-1.5 w-1.5 flex-shrink-0 rounded-full bg-teal-600 dark:bg-teal-400" />;
+}
+
 export default function ProjectDetail({ project }) {
   if (!project) return null;
   const {
     title,
     emoji,
     period,
+    credits,
     stack = [],
-    bullets = [],
-    oneLiner,
     links = [],
-    summary,
-    overview,
-    proofPoints = [],
+    linksNote,
+    metrics = [],
     whatIBuilt = [],
     howItWorks = [],
-    results = [],
+    findings = [],
     nextSteps = [],
-    coverImage,
-    coverArt,
-    gallery = [],
   } = project;
 
-  const overviewText = overview || summary || project.cardDescription || oneLiner || '';
-  const proofList = proofPoints.length ? proofPoints : bullets;
-  const builtList = whatIBuilt.length ? whatIBuilt : bullets;
-  const howList = howItWorks;
-  const galleryList = gallery.length ? gallery : project.images || [];
+  const overview = overviewText(project);
   const sortedLinks = sortProjectLinks(links);
 
   return (
     <>
       <Head>
         <title>{`${title} — Projects — Sean P. May`}</title>
-        <meta name="description" content={overviewText || title} />
+        <meta name="description" content={overview || title} />
       </Head>
       <ProjectPageHeader />
 
-      <main id="main-content" className="section-container pb-16 pt-24">
-        <div className="mb-6">
+      <main id="main-content" data-deep-dive="" className="section-container pb-16 pt-20 sm:pt-24">
+        <div data-section="back" className="mb-4 sm:mb-6">
           <a
             href="/projects/"
             className="font-hand text-lg text-stone-500 underline-offset-4 transition-colors hover:text-teal-700 hover:underline dark:text-stone-400 dark:hover:text-teal-400"
           >
             <ArrowLeft className="mr-1 inline h-4 w-4 align-[-2px]" aria-hidden="true" />
-            all projects
+            {DEEP_DIVE_LABELS.back}
           </a>
         </div>
 
         <Pinboard>
-          <div className="space-y-10">
-            {/* ── Masthead: cover, title, links, overview ── */}
-            <header className="space-y-6">
-              <PinCard rotation={-0.7} pinColor="red">
-                <div className="aspect-[3/1] overflow-hidden rounded-sm border border-stone-200/80 dark:border-stone-700/80">
-                  {hasMotif(coverArt?.motif) ? (
-                    <CoverArt motif={coverArt.motif} line={coverArt.line} />
-                  ) : coverImage?.src ? (
-                    <img
-                      src={coverImage.src}
-                      {...(coverSources(coverImage) || {})}
-                      sizes={COVER_SIZES.masthead}
-                      alt={coverImage.alt || ''}
-                      loading="eager"
-                      className="h-full w-full object-cover"
-                    />
-                  ) : (
-                    <div className="h-full w-full bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900/40" />
+          <div className="space-y-6 sm:space-y-8">
+            {/* ── Title, period, credits, links ── */}
+            <header data-section="masthead" className="flex flex-wrap items-start justify-between gap-4">
+              <div className="min-w-0 space-y-1.5">
+                <h1 className="flex items-center gap-3 font-display text-3xl tracking-tight text-stone-900 [overflow-wrap:anywhere] md:text-4xl dark:text-stone-50">
+                  {emoji && <span className="text-3xl" aria-hidden="true">{emoji}</span>}
+                  <span className="min-w-0">{title}</span>
+                </h1>
+                <p className="text-stone-600 dark:text-stone-300">
+                  {period}
+                  {credits && (
+                    <>
+                      <span aria-hidden="true"> · </span>
+                      <span data-credits="">{credits}</span>
+                    </>
                   )}
-                </div>
-              </PinCard>
-
-              <div className="flex flex-wrap items-start justify-between gap-4">
-                <div className="space-y-1.5">
-                  <h1 className="flex items-center gap-3 font-display text-3xl tracking-tight text-stone-900 md:text-4xl dark:text-stone-50">
-                    {emoji && <span className="text-3xl" aria-hidden="true">{emoji}</span>}
-                    {title}
-                  </h1>
-                  {period && <p className="text-stone-600 dark:text-stone-300">{period}</p>}
-                </div>
-                {(sortedLinks.length > 0 || project.linksNote) && (
-                  <div className="flex flex-wrap items-center gap-2">
-                    {sortedLinks.map((link, index) => (
-                      <PillLink
-                        key={`${link.href}-${index}`}
-                        href={link.href}
-                        external
-                        variant={index === 0 ? 'solid' : 'outline'}
-                      >
-                        {link.label}
-                      </PillLink>
-                    ))}
-                    {/* A private repo says why there is nothing to click,
-                        rather than leaving the space blank. */}
-                    {project.linksNote && (
-                      <p className="text-sm italic text-stone-600 dark:text-stone-300">🔒 {project.linksNote}</p>
-                    )}
-                  </div>
-                )}
-              </div>
-
-              {!!stack.length && (
-                <div className="flex flex-wrap gap-2">
-                  {stack.map(s => (
-                    <span key={s} className="badge">
-                      {s}
-                    </span>
-                  ))}
-                </div>
-              )}
-
-              {overviewText && (
-                <p className="max-w-3xl text-lg leading-relaxed text-stone-700 dark:text-stone-200">
-                  {overviewText}
                 </p>
+              </div>
+              {(sortedLinks.length > 0 || linksNote) && (
+                <div className="flex flex-wrap items-center gap-2">
+                  {sortedLinks.map((link, index) => (
+                    <PillLink key={`${link.href}-${index}`} href={link.href} external variant={index === 0 ? 'solid' : 'outline'}>
+                      {link.label}
+                    </PillLink>
+                  ))}
+                  {/* A private repo says why there is nothing to click,
+                      rather than leaving the space blank. */}
+                  {linksNote && <p className="text-sm italic text-stone-600 dark:text-stone-300">🔒 {linksNote}</p>}
+                </div>
               )}
             </header>
 
-            {/* ── The three things worth knowing, as notes on the board ── */}
-            {proofList.length > 0 && (
-              <div className="grid gap-5 sm:grid-cols-3">
-                {proofList.slice(0, 3).map((point, i) => (
-                  <Sheet
-                    key={i}
-                    rotation={[-1.2, 0.8, -0.6][i % 3]}
-                    pinColor={['red', 'blue', 'green'][i % 3]}
-                    fastener={i === 1 ? 'tape' : 'pin'}
-                  >
-                    <p className="text-sm leading-snug text-stone-700 dark:text-stone-200">{point}</p>
-                  </Sheet>
+            {/* ── Stack: the first four, in the order projects.json lists them ── */}
+            {stack.length > 0 && (
+              <ul data-section="stack" aria-label="stack" className="flex flex-wrap gap-2">
+                {stack.slice(0, MAX_STACK_CHIPS).map(s => (
+                  <li key={s} data-stack-chip="" className="badge">
+                    {s}
+                  </li>
                 ))}
-              </div>
+              </ul>
+            )}
+
+            <MetricsStrip metrics={metrics} />
+
+            <LeadFigure project={project} />
+
+            {overview && (
+              <p data-section="overview" className="max-w-3xl text-lg leading-relaxed text-stone-700 dark:text-stone-200">
+                {overview}
+              </p>
             )}
 
             {/* ── What I built / How it works ── */}
-            {(builtList.length > 0 || howList.length > 0) && (
-              <div className={`grid gap-8 ${builtList.length && howList.length ? 'lg:grid-cols-2' : ''}`}>
-                {builtList.length > 0 && (
-                  <section>
-                    <Stamped>what i built</Stamped>
+            {(whatIBuilt.length > 0 || howItWorks.length > 0) && (
+              <div className={`grid gap-8 ${whatIBuilt.length && howItWorks.length ? 'lg:grid-cols-2' : ''}`}>
+                {whatIBuilt.length > 0 && (
+                  <section data-section="built">
+                    <Stamped>{DEEP_DIVE_LABELS.built}</Stamped>
                     <Sheet rotation={-0.4} pinColor="yellow">
                       <ul className="space-y-3">
-                        {builtList.map((item, i) => (
+                        {whatIBuilt.map((item, i) => (
                           <li key={i} className="flex gap-3 text-stone-700 dark:text-stone-300">
-                            <span className="mt-[0.45rem] h-1.5 w-1.5 flex-shrink-0 rounded-full bg-teal-600 dark:bg-teal-400" />
+                            <Dot />
                             <span>{item}</span>
                           </li>
                         ))}
@@ -207,16 +175,13 @@ export default function ProjectDetail({ project }) {
                   </section>
                 )}
 
-                {howList.length > 0 && (
-                  <section>
-                    <Stamped>how it works</Stamped>
+                {howItWorks.length > 0 && (
+                  <section data-section="how">
+                    <Stamped>{DEEP_DIVE_LABELS.how}</Stamped>
                     <Sheet rotation={0.5} pinColor="blue" fastener="tape">
                       <ol className="space-y-3">
-                        {howList.map((item, i) => (
+                        {howItWorks.map((item, i) => (
                           <li key={i} className="flex gap-3 text-stone-700 dark:text-stone-300">
-                            {/* One ink colour. The old version cycled five,
-                                which made a numbered list look like a chart
-                                legend for data that did not exist. */}
                             <span className="stat-figure mt-[-0.1rem] w-5 flex-shrink-0 text-lg text-teal-700 dark:text-teal-400">
                               {i + 1}
                             </span>
@@ -230,15 +195,15 @@ export default function ProjectDetail({ project }) {
               </div>
             )}
 
-            {/* ── Results ── */}
-            {results.length > 0 && (
-              <section>
-                <Stamped>results</Stamped>
+            {/* ── Findings: the lessons, with their numbers left in the strip ── */}
+            {findings.length > 0 && (
+              <section data-section="findings">
+                <Stamped>{DEEP_DIVE_LABELS.findings}</Stamped>
                 <Sheet rotation={-0.3} pinColor="green">
                   <ul className="space-y-2.5">
-                    {results.map((item, i) => (
+                    {findings.map((item, i) => (
                       <li key={i} className="flex gap-3 text-stone-700 dark:text-stone-300">
-                        <span className="mt-0.5 flex-shrink-0 text-base text-teal-700 dark:text-teal-400">✓</span>
+                        <Dot />
                         <span>{item}</span>
                       </li>
                     ))}
@@ -247,42 +212,12 @@ export default function ProjectDetail({ project }) {
               </section>
             )}
 
-            {/* ── Gallery, pinned up like photos ── */}
-            {galleryList.length > 0 && (
-              <section>
-                <Stamped>screenshots</Stamped>
-                <div className="grid gap-6 sm:grid-cols-2">
-                  {galleryList.map((img, i) => (
-                    <PinCard
-                      key={i}
-                      rotation={[-1.1, 0.9, -0.7, 1.2][i % 4]}
-                      pinColor={['red', 'teal', 'yellow', 'blue'][i % 4]}
-                      fastener={i % 3 === 1 ? 'tape' : 'pin'}
-                    >
-                      <figure className="paper rounded-sm border border-stone-200/80 p-2 pb-3 dark:border-stone-700/80">
-                        <img
-                          src={img.src}
-                          alt={img.alt || ''}
-                          loading="lazy"
-                          className="w-full rounded-sm"
-                        />
-                        {img.caption && (
-                          <figcaption className="font-hand px-1 pt-2 text-lg leading-tight text-stone-600 dark:text-stone-300">
-                            {img.caption}
-                          </figcaption>
-                        )}
-                      </figure>
-                    </PinCard>
-                  ))}
-                </div>
-              </section>
-            )}
-
             {/* ── What's next: a margin note, not a section ── */}
             {nextSteps.length > 0 && (
-              <section className="border-t border-stone-300/60 pt-6 dark:border-stone-700/60">
-                <h2 className="mb-2 text-[10px] font-semibold uppercase tracking-[0.22em] text-stone-500 dark:text-stone-400">
-                  what&apos;s next
+              <section data-section="next" className="border-t border-stone-300/60 pt-6 dark:border-stone-700/60">
+                {/* stone-600, not 500: 500 on the kraft board is 3.9:1. */}
+                <h2 className="mb-2 text-[10px] font-semibold uppercase tracking-[0.22em] text-stone-600 dark:text-stone-300">
+                  {DEEP_DIVE_LABELS.next}
                 </h2>
                 <ul className="space-y-1">
                   {nextSteps.map((item, i) => (
