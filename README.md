@@ -55,6 +55,7 @@ npm run build
 npm run preview
 npm run clean
 npm run normalize-logos
+npm test
 ```
 
 ## Content and data model
@@ -62,8 +63,9 @@ npm run normalize-logos
 The site is intentionally simple at runtime: pages import static JSON directly during build time.
 
 - `public/projects.json` is the main portfolio data source
-- `coolness` controls homepage featuring order
-- `caseStudyRank` controls which projects appear in the deep-dive section
+- `board` places a project on the project board (home page and `/projects/`): `cluster` (`run` or `think`), `size` (`big` or `small`), `order`, and a `line` for small cards. Projects without it still get a page, just no card
+- `artifacts` pin evidence beside a board card (a tag, sticky note, paper or polaroid) and `threadTo` strings two cards in the same cluster together
+- the board rules live in `lib/board.js` (`validateBoard`); a board that breaks them fails `npm run build`
 - `slug` enables static `/projects/<slug>` routes
 - long-form fields such as `overview`, `whatIBuilt`, and `howItWorks` drive the detail pages
 
