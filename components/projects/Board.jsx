@@ -61,7 +61,9 @@ export default function Board({ projects, headingLevel = 3 }) {
             >
               {cluster.label}
             </Heading>
-            <div className="grid grid-cols-2 gap-x-5 gap-y-12 lg:grid-cols-6">
+            {/* items-start: a stretched slot would hang the polaroid, the tag
+                and the thread's bottom end from empty space under its card. */}
+            <div className="grid grid-cols-2 items-start gap-x-5 gap-y-12 lg:grid-cols-6">
               {[...cluster.big, ...cluster.small].map((project, i) => {
                 const big = project.board.size === 'big';
                 return (

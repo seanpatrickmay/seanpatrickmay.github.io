@@ -68,10 +68,15 @@ export default function Artifact({ artifact }) {
       return (
         <EvidenceLink
           artifact={artifact}
-          className="-bottom-12 -right-2 w-14 bg-white p-1 pb-4 motion-safe:-rotate-6 xl:-right-4"
+          className="-bottom-16 -right-2 w-14 bg-white p-1 pb-5 motion-safe:-rotate-6 xl:-bottom-[46px] xl:-right-5"
         >
+          {/* The frame's bottom margin is taller than the caption's line box,
+              so the caption sits wholly under the photo. The frame hangs low
+              enough to clear its card's meta line. At xl the card is on the
+              board's last row, so it hangs a little higher, to stay inside
+              the board, and further right, to stay clear of the meta. */}
           <img src={artifact.image} alt="" loading="lazy" className="aspect-square w-full object-cover" />
-          <span className="absolute inset-x-0 bottom-0.5 text-center font-hand text-xs text-stone-800 sm:text-sm">
+          <span className="absolute inset-x-0 bottom-0.5 text-center font-hand text-xs leading-none text-stone-800 sm:text-sm sm:leading-none">
             {artifact.text}
           </span>
         </EvidenceLink>

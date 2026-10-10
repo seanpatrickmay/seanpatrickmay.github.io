@@ -9,10 +9,13 @@ import { useEffect, useState } from 'react';
  * overlapping) it runs pin to pin.
  *
  * Measured after layout, because the grid decides where cards land. Nothing
- * renders on the server or before the first measurement, and the overlay is
- * hidden below lg, where the clusters stack and a string would cut across the
- * page. Re-measures on resize and once the web fonts land, since late fonts
- * reflow the cards underneath it.
+ * renders on the server or before the first measurement. The overlay shows
+ * from lg; below it a cluster is a two-column phone grid and a string would
+ * cut across the page. The clusters themselves stack below xl, so a string
+ * between them would cross a heading and every card in between: validateBoard
+ * rejects a thread that crosses clusters, and each one stays inside its own.
+ * Re-measures on resize and once the web fonts land, since late fonts reflow
+ * the cards underneath it.
  *
  * `pairs` must be referentially stable (Board memoises it): a fresh array
  * every render would re-run the effect, set state, and loop.
