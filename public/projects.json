@@ -73,6 +73,29 @@
         "kind": "tag",
         "text": "NU Systematic Alpha"
       }
+    ],
+    "metrics": [
+      {
+        "value": "175,000+",
+        "label": "job postings synced a day",
+        "source": {
+          "label": "self-reported, private repo"
+        }
+      },
+      {
+        "value": "61%",
+        "label": "of the S&P 500 covered by the six platforms",
+        "source": {
+          "label": "self-reported, private repo"
+        }
+      },
+      {
+        "value": "~37 to 0",
+        "label": "Lambda timeouts per cycle, before and after the rework",
+        "source": {
+          "label": "self-reported, private repo"
+        }
+      }
     ]
   },
   {
@@ -143,6 +166,16 @@
         "kind": "tag",
         "text": "NExT Consulting"
       }
+    ],
+    "credits": "on a team of 7 engineers",
+    "metrics": [
+      {
+        "value": "32",
+        "label": "webhook types handled by the ingest worker",
+        "source": {
+          "label": "self-reported, private repo"
+        }
+      }
     ]
   },
   {
@@ -196,8 +229,7 @@
       "the Garmin feed is the one that breaks: Garmin rate-limits datacenter IPs, so history is refreshed by hand from a laptop and the page shows a staleness badge instead of pretending"
     ],
     "nextSteps": [
-      "per-project OG images, rendered from the same SVG covers at build time",
-      "fix the hero card fan on mobile — it overflows the viewport by six pixels"
+      "per-project OG images, rendered from the same SVG covers at build time"
     ],
     "coverArt": {
       "motif": "browser",
@@ -220,6 +252,27 @@
         "href": "https://github.com/seanpatrickmay/seanpatrickmay.github.io",
         "kind": "repo"
       }
+    ],
+    "metrics": [
+      {
+        "value": "1,751",
+        "label": "Garmin activities in the movement map's totals, not only the ones with a GPS trace to plot",
+        "source": {
+          "label": "public/activity-places.json",
+          "href": "https://github.com/seanpatrickmay/seanpatrickmay.github.io/blob/main/public/activity-places.json"
+        }
+      },
+      {
+        "value": "0.95",
+        "label": "the Lighthouse accessibility score every page CI audits must clear",
+        "source": {
+          "label": "lighthouserc.json",
+          "href": "https://github.com/seanpatrickmay/seanpatrickmay.github.io/blob/main/lighthouserc.json"
+        }
+      }
+    ],
+    "findings": [
+      "the Garmin feed is the one that breaks: Garmin rate-limits datacenter IPs, so history is refreshed by hand from a laptop and the page shows a staleness badge instead of pretending"
     ]
   },
   {
@@ -330,7 +383,10 @@
         "label": "docs/screenshots",
         "href": "https://github.com/seanpatrickmay/Life-Dashboard/blob/main/docs/screenshots/body-desktop.png"
       }
-    }
+    },
+    "findings": [
+      "clean separation between ingestion sources, AI reasoning, and the actual UI"
+    ]
   },
   {
     "title": "LecteurAide",
@@ -427,7 +483,10 @@
         "label": "LecteurAide repo",
         "href": "https://github.com/seanpatrickmay/LecteurAide"
       }
-    }
+    },
+    "findings": [
+      "passing the previous scene's summary forward is what keeps the narrative coherent across chunks"
+    ]
   },
   {
     "title": "Human Digit Recognition",
@@ -535,7 +594,7 @@
       "the two biggest jumps came from data quality, not architecture: 5-frame label smoothing added 12% F1, and eliminating temporal leakage by construction added another 11%",
       "38 channels fused from GOES, VIIRS and MODIS detections, GRIDMET fire-weather indices and 3DEP terrain, with the feature set chosen by a 6-stage ablation"
     ],
-    "overview": "Six generations of model for one question: given where a fire is now, where will it be in an hour? The final system is FireSpreadNet, a ConvGRU-U-Net with CBAM attention over a 38-channel stack of satellite, weather and terrain data, trained on eight California fires and tested on four it never saw. The interesting part is not the architecture — it is that the two largest gains came from fixing the data rather than changing the model.",
+    "overview": "Six generations of model for one question: given where a fire is now, where will it be in an hour? The final system is FireSpreadNet, a ConvGRU-U-Net with CBAM attention over a 38-channel stack of satellite, weather and terrain data, trained on eight California fires.",
     "whatIBuilt": [
       "a data pipeline that pulls GOES fire detections through Earth Engine, masks cloud with DQF, and fuses VIIRS and MODIS, GRIDMET weather and 3DEP terrain into training arrays",
       "FireSpreadNet: a ConvGRU-U-Net with CBAM attention that predicts a whole next-frame fire image from a sequence, trained with focal + Tversky loss",
@@ -605,7 +664,39 @@
         "label": "paper, page 16",
         "href": "/projects/wildfire-modeling/hourly-wildfire-spread-prediction.pdf#page=17"
       }
-    }
+    },
+    "credits": "with Aidan D'Alonzo & Ethan Meid",
+    "metrics": [
+      {
+        "value": "F2 0.928",
+        "label": "on four fires the model never saw",
+        "source": {
+          "label": "paper · Table 2",
+          "href": "/projects/wildfire-modeling/hourly-wildfire-spread-prediction.pdf#page=15"
+        }
+      },
+      {
+        "value": "F1 0.929",
+        "label": "against 0.832 for logistic regression on the same features",
+        "source": {
+          "label": "paper · Table 3",
+          "href": "/projects/wildfire-modeling/hourly-wildfire-spread-prediction.pdf#page=15"
+        }
+      },
+      {
+        "value": "+0.180 F1",
+        "label": "from fixing the labels and features, with the model unchanged",
+        "source": {
+          "label": "paper · Table 3",
+          "href": "/projects/wildfire-modeling/hourly-wildfire-spread-prediction.pdf#page=15"
+        }
+      }
+    ],
+    "findings": [
+      "fire state alone carries most of XGBoost's feature importance: spread is strongly autocorrelated, so any honest model has to beat that prior",
+      "F2 rather than F1 as the target, because missing a fire costs more than a false alarm",
+      "an earlier MLP lost to plain logistic regression — a neural network does not earn its place by being one"
+    ]
   },
   {
     "title": "PokerML",
@@ -637,7 +728,7 @@
       "k-means preflop abstraction (10 buckets) + empirical CDF postflop bucketing with sampled board completions",
       "fastapi web UI where you play against the bot with a live 13x13 range heatmap showing action probabilities per hand"
     ],
-    "overview": "this is a heads-up no-limit hold'em solver built on CFR+ and external sampling monte carlo. it trains over 100K iterations with k-means preflop bucketing and percentile-based postflop abstraction, then serves the converged strategy through a fastapi web app where you can play against the bot and see its 13x13 range grid in real time.",
+    "overview": "this is a heads-up no-limit hold'em solver built on CFR+ and external sampling monte carlo. it trains with k-means preflop bucketing and percentile-based postflop abstraction, then serves the converged strategy through a fastapi web app where you can play against the bot and see its 13x13 range grid in real time.",
     "whatIBuilt": [
       "CFR+ trainer with external sampling MCCFR, immutable game states, and per-iteration bucket caching for speed",
       "two-level card abstraction: k-means on preflop equity (169 hands to 10 buckets) and percentile CDF on postflop hand strength",
@@ -648,7 +739,7 @@
       "deal hands and board, pre-cache card buckets for both players across all 4 streets",
       "traverse the game tree: enumerate all actions for the traversing player, sample one for the opponent",
       "update cumulative regrets (clamped to zero for CFR+) and accumulate strategy sums",
-      "after 100K iterations, compress the averaged strategy to JSON and serve it via fastapi for live play"
+      "once training finishes, compress the averaged strategy to JSON and serve it via fastapi for live play"
     ],
     "results": [
       "converged strategy across ~1,173 lines of python with an 18.5 MB compressed strategy file",
@@ -685,7 +776,17 @@
       "size": "small",
       "order": 3,
       "line": "CFR+ solver for no-limit hold'em"
-    }
+    },
+    "metrics": [
+      {
+        "value": "100,000",
+        "label": "CFR+ iterations per training run, by default",
+        "source": {
+          "label": "config.py",
+          "href": "https://github.com/seanpatrickmay/PokerML/blob/main/config.py#L61"
+        }
+      }
+    ]
   },
   {
     "title": "Hex Reversi",
@@ -719,7 +820,7 @@
     "whatIBuilt": [
       "hex-grid reversi engine with configurable board shapes and starting states",
       "MVC architecture with GUI + text views and a controller layer",
-      "strategy system including minimax and composable heuristics"
+      "strategies composed with a TryTwo combinator: corners, then avoid-near-corners, then minimax, then capture-max"
     ],
     "howItWorks": [
       "represent the board on an odd-r hex coordinate system",
@@ -781,7 +882,7 @@
     ],
     "overview": "a custom shell written in C with command execution, piping, redirection, and signal handling. the focus is on process control and getting correctness right under typical shell behaviors. built for a systems course, so the source stays private — the details below are the writeup rather than a link.",
     "whatIBuilt": [
-      "command execution with piping and I/O redirection",
+      "recursive pipe chaining for pipelines of any depth, via right-to-left parsing and fork/dup2, plus I/O redirection",
       "signal handling and process orchestration",
       "built-in commands (source, prev, cd, help, verbose toggle)"
     ],
@@ -887,7 +988,33 @@
         "label": "Wiki freshness, live",
         "href": "https://seanpatrickmay.me/wiki/repowiki/wiki/wiki-freshness/"
       }
-    }
+    },
+    "metrics": [
+      {
+        "value": "6",
+        "label": "wikis live on this site, one per project",
+        "source": {
+          "label": "the wiki index",
+          "href": "https://seanpatrickmay.me/wiki/"
+        }
+      },
+      {
+        "value": "76",
+        "label": "feature articles across those wikis",
+        "source": {
+          "label": "wiki exports, 2026-10-10",
+          "href": "https://seanpatrickmay.me/wiki/"
+        }
+      },
+      {
+        "value": "2,329",
+        "label": "citations across those articles",
+        "source": {
+          "label": "wiki exports, 2026-10-10",
+          "href": "https://seanpatrickmay.me/wiki/"
+        }
+      }
+    ]
   },
   {
     "title": "AlphaSettler",
@@ -925,7 +1052,8 @@
       "ISMCTS with belief-state sampling, PUCT selection and batched leaf evaluation",
       "a bot arena with seat rotation, common random numbers and multi-threaded matches",
       "PyO3 bindings and a CLI for matches, statistical comparisons and self-play",
-      "an adapter to Catanatron 3.3, so both engines can be tested against each other"
+      "an adapter to Catanatron 3.3, so both engines can be tested against each other",
+      "a learned evaluator, trained by self-play, that the search can use in place of the hand-tuned one"
     ],
     "coverArt": {
       "motif": "hex",
@@ -990,7 +1118,36 @@
         "label": "docs/perf/comparison.md",
         "href": "https://github.com/seanpatrickmay/AlphaSettler/blob/main/docs/perf/comparison.md"
       }
-    }
+    },
+    "metrics": [
+      {
+        "value": "~300×",
+        "label": "faster per engine step than Catanatron, random players, trades off",
+        "source": {
+          "label": "docs/perf/comparison.md",
+          "href": "https://github.com/seanpatrickmay/AlphaSettler/blob/main/docs/perf/comparison.md"
+        }
+      },
+      {
+        "value": "700k",
+        "label": "tree-search simulations a second, on one core",
+        "source": {
+          "label": "docs/perf/search.md",
+          "href": "https://github.com/seanpatrickmay/AlphaSettler/blob/main/docs/perf/search.md"
+        }
+      },
+      {
+        "value": "0.585",
+        "label": "win rate of the learned-evaluator bot over 800 games against three Catanatron AlphaBeta bots, where an even share is 0.25",
+        "source": {
+          "label": "docs/bot/results-3b.md",
+          "href": "https://github.com/seanpatrickmay/AlphaSettler/blob/main/docs/bot/results-3b.md"
+        }
+      }
+    ],
+    "findings": [
+      "against weak bots more search stops helping after a few hundred simulations, but against itself it keeps paying off — the first search bot's plateau is gone"
+    ]
   },
   {
     "title": "RotoText",
