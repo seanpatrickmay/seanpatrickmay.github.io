@@ -13,7 +13,7 @@ export default function Hero({ links, timeline = { current: [] } }) {
 
   return (
     <section id="home" className="section-container scroll-mt-32 py-12 lg:scroll-mt-16">
-      <div className="max-w-xl space-y-5">
+      <div className="max-w-3xl space-y-5">
         <div className="animate-fade-up flex items-center gap-4">
           <img
             src="/images/headshot.webp"
