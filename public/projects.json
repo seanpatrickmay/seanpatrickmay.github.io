@@ -319,7 +319,18 @@
         "label": "Life-Dashboard, live",
         "image": "/projects/life-dashboard/life-dashboard-cover-480.webp"
       }
-    ]
+    ],
+    "leadFigure": {
+      "src": "/projects/life-dashboard/body-view.webp",
+      "width": 1200,
+      "height": 900,
+      "alt": "Screenshot of Life-Dashboard's body view on guest demo data: a readiness score of 78 out of 100 with a one-line coaching note, a morning briefing, and HRV, resting heart rate, sleep and training load each scored out of ten, on a pixel-art pond at dusk.",
+      "caption": "the body view, on guest demo data",
+      "source": {
+        "label": "docs/screenshots",
+        "href": "https://github.com/seanpatrickmay/Life-Dashboard/blob/main/docs/screenshots/body-desktop.png"
+      }
+    }
   },
   {
     "title": "LecteurAide",
@@ -405,6 +416,17 @@
       "size": "small",
       "order": 5,
       "line": "French reading companion · Gemini"
+    },
+    "leadFigure": {
+      "src": "/projects/lecteuraide/lecteur-aide-cover.webp",
+      "width": 1200,
+      "height": 649,
+      "alt": "Screenshot of LecteurAide's reader on scene 2 of 20 of a French book: a summary of the scene, the French text with one sentence highlighted, its English translation, and the scene's vocabulary grouped by part of speech.",
+      "caption": "the scene reader: text, translation, vocab",
+      "source": {
+        "label": "LecteurAide repo",
+        "href": "https://github.com/seanpatrickmay/LecteurAide"
+      }
     }
   },
   {
@@ -572,7 +594,18 @@
         "href": "/projects/wildfire-modeling/hourly-wildfire-spread-prediction.pdf",
         "label": "the wildfire paper (PDF)"
       }
-    ]
+    ],
+    "leadFigure": {
+      "src": "/projects/wildfire-modeling/creek-fire-186.webp",
+      "width": 870,
+      "height": 460,
+      "alt": "Three maps of the Creek Fire at hour 186: the previous hour, the next hour as observed, and the model's prediction of it. Orange is fire that persisted, blue is new fire, yellow is fire that went out; the predicted spread around the main cluster closely follows the observed one.",
+      "caption": "creek fire, hour 186: last hour, what happened, what the model said",
+      "source": {
+        "label": "paper, page 16",
+        "href": "/projects/wildfire-modeling/hourly-wildfire-spread-prediction.pdf#page=17"
+      }
+    }
   },
   {
     "title": "PokerML",
@@ -843,7 +876,18 @@
         "href": "https://seanpatrickmay.me/wiki/",
         "label": "project wikis, built by RepoWiki"
       }
-    ]
+    ],
+    "leadFigure": {
+      "src": "/projects/repowiki/wiki-freshness.webp",
+      "width": 1200,
+      "height": 900,
+      "alt": "Screenshot of RepoWiki's article on its own wiki-freshness feature: a lead paragraph, an infobox listing files, lines, languages, entry points and commit dates, and an overview whose sentences end in numbered citations.",
+      "caption": "a real article, from RepoWiki's wiki of itself",
+      "source": {
+        "label": "Wiki freshness, live",
+        "href": "https://seanpatrickmay.me/wiki/repowiki/wiki/wiki-freshness/"
+      }
+    }
   },
   {
     "title": "AlphaSettler",
@@ -915,7 +959,38 @@
     ],
     "threadTo": [
       "nlhe-alpha-beta"
-    ]
+    ],
+    "leadFigure": {
+      "chart": {
+        "kind": "log-bars",
+        "unit": "ns per engine step",
+        "domain": [
+          10,
+          100000
+        ],
+        "bars": [
+          {
+            "label": "AlphaSettler",
+            "value": 68.2,
+            "highlight": true
+          },
+          {
+            "label": "catan-rl",
+            "value": 88
+          },
+          {
+            "label": "Catanatron",
+            "value": 20691
+          }
+        ]
+      },
+      "alt": "Bar chart, log scale, of nanoseconds per engine step with random players on one M1 Pro: AlphaSettler 68.2 and Catanatron 20,691 with trades off, catan-rl 88 with its own trade menu.",
+      "caption": "random players on one M1 Pro; catan-rl runs its own trade menu",
+      "source": {
+        "label": "docs/perf/comparison.md",
+        "href": "https://github.com/seanpatrickmay/AlphaSettler/blob/main/docs/perf/comparison.md"
+      }
+    }
   },
   {
     "title": "RotoText",
