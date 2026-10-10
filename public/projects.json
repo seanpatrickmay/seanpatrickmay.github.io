@@ -816,7 +816,7 @@
     ],
     "coverArt": {
       "motif": "wiki",
-      "line": "every claim cites its code"
+      "line": "every claim cites code or a commit"
     },
     "gallery": [],
     "links": [
