@@ -134,8 +134,8 @@ export default function ProjectDetail({ project }) {
                   </h1>
                   {period && <p className="text-stone-600 dark:text-stone-300">{period}</p>}
                 </div>
-                {sortedLinks.length > 0 && (
-                  <div className="flex flex-wrap gap-2">
+                {(sortedLinks.length > 0 || project.linksNote) && (
+                  <div className="flex flex-wrap items-center gap-2">
                     {sortedLinks.map((link, index) => (
                       <PillLink
                         key={`${link.href}-${index}`}
@@ -146,6 +146,11 @@ export default function ProjectDetail({ project }) {
                         {link.label}
                       </PillLink>
                     ))}
+                    {/* A private repo says why there is nothing to click,
+                        rather than leaving the space blank. */}
+                    {project.linksNote && (
+                      <p className="text-sm italic text-stone-600 dark:text-stone-300">🔒 {project.linksNote}</p>
+                    )}
                   </div>
                 )}
               </div>
