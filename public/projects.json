@@ -84,14 +84,14 @@
       },
       {
         "value": "61%",
-        "label": "of the S&P 500 covered by the six platforms",
+        "label": "of the S&P 500 covered by six applicant-tracking platforms",
         "source": {
           "label": "self-reported, private repo"
         }
       },
       {
         "value": "~37 to 0",
-        "label": "Lambda timeouts per cycle, before and after the rework",
+        "label": "Lambda timeouts per cycle, before and after time budgets and SQS self-continuation",
         "source": {
           "label": "self-reported, private repo"
         }
@@ -256,7 +256,7 @@
     "metrics": [
       {
         "value": "1,751",
-        "label": "Garmin activities in the movement map's totals, not only the ones with a GPS trace to plot",
+        "label": "garmin activities logged, the history behind the movement map",
         "source": {
           "label": "public/activity-places.json",
           "href": "https://github.com/seanpatrickmay/seanpatrickmay.github.io/blob/main/public/activity-places.json"
@@ -383,10 +383,7 @@
         "label": "docs/screenshots",
         "href": "https://github.com/seanpatrickmay/Life-Dashboard/blob/main/docs/screenshots/body-desktop.png"
       }
-    },
-    "findings": [
-      "clean separation between ingestion sources, AI reasoning, and the actual UI"
-    ]
+    }
   },
   {
     "title": "LecteurAide",
@@ -669,7 +666,7 @@
     "metrics": [
       {
         "value": "F2 0.928",
-        "label": "on four fires the model never saw",
+        "label": "recall-weighted, on four fires the model never saw",
         "source": {
           "label": "paper · Table 2",
           "href": "/projects/wildfire-modeling/hourly-wildfire-spread-prediction.pdf#page=15"
@@ -677,7 +674,7 @@
       },
       {
         "value": "F1 0.929",
-        "label": "against 0.832 for logistic regression on the same features",
+        "label": "equal-weight F1, against 0.832 for logistic regression on the same features",
         "source": {
           "label": "paper · Table 3",
           "href": "/projects/wildfire-modeling/hourly-wildfire-spread-prediction.pdf#page=15"
@@ -694,8 +691,7 @@
     ],
     "findings": [
       "fire state alone carries most of XGBoost's feature importance: spread is strongly autocorrelated, so any honest model has to beat that prior",
-      "F2 rather than F1 as the target, because missing a fire costs more than a false alarm",
-      "an earlier MLP lost to plain logistic regression — a neural network does not earn its place by being one"
+      "F2 rather than F1 as the target, because missing a fire costs more than a false alarm"
     ]
   },
   {
@@ -992,7 +988,7 @@
     "metrics": [
       {
         "value": "6",
-        "label": "wikis live on this site, one per project",
+        "label": "wikis live on this site, each built by RepoWiki",
         "source": {
           "label": "the wiki index",
           "href": "https://seanpatrickmay.me/wiki/"
@@ -1008,7 +1004,7 @@
       },
       {
         "value": "2,329",
-        "label": "citations across those articles",
+        "label": "citations to code lines or commits across those articles",
         "source": {
           "label": "wiki exports, 2026-10-10",
           "href": "https://seanpatrickmay.me/wiki/"
@@ -1053,7 +1049,7 @@
       "a bot arena with seat rotation, common random numbers and multi-threaded matches",
       "PyO3 bindings and a CLI for matches, statistical comparisons and self-play",
       "an adapter to Catanatron 3.3, so both engines can be tested against each other",
-      "a learned evaluator, trained by self-play, that the search can use in place of the hand-tuned one"
+      "a learned evaluator: a value/policy network, trained by self-play, that replaces the hand-set heuristic as the bot's evaluator"
     ],
     "coverArt": {
       "motif": "hex",
@@ -1122,7 +1118,7 @@
     "metrics": [
       {
         "value": "~300×",
-        "label": "faster per engine step than Catanatron, random players, trades off",
+        "label": "faster per engine step than Catanatron, in the same random-play benchmark",
         "source": {
           "label": "docs/perf/comparison.md",
           "href": "https://github.com/seanpatrickmay/AlphaSettler/blob/main/docs/perf/comparison.md"
@@ -1138,7 +1134,7 @@
       },
       {
         "value": "0.585",
-        "label": "win rate of the learned-evaluator bot over 800 games against three Catanatron AlphaBeta bots, where an even share is 0.25",
+        "label": "win rate over 800 games against three Catanatron bots, where an even share is 0.25",
         "source": {
           "label": "docs/bot/results-3b.md",
           "href": "https://github.com/seanpatrickmay/AlphaSettler/blob/main/docs/bot/results-3b.md"
@@ -1146,7 +1142,7 @@
       }
     ],
     "findings": [
-      "against weak bots more search stops helping after a few hundred simulations, but against itself it keeps paying off — the first search bot's plateau is gone"
+      "a flat strength curve against a weak bot is the opponent's ceiling, not the search's: against itself, the learned-evaluator bot keeps gaining from more simulations"
     ]
   },
   {
