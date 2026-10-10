@@ -2,8 +2,8 @@ import ThemeToggle from '@/components/ThemeToggle';
 
 const navItems = [
   { id: 'home', label: 'home' },
-  { id: 'about', label: 'about me' },
   { id: 'projects', label: 'projects' },
+  { id: 'about', label: 'about me' },
   { id: 'experience', label: 'work' },
 ];
 

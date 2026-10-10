@@ -39,7 +39,7 @@
           }
         },
         {
-          "matchingUrlPattern": "^(?!.*/projects/index\\.html).*$",
+          "matchingUrlPattern": ".*",
           "assertions": {
             "categories:performance": [
               "warn",

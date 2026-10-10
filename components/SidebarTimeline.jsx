@@ -41,7 +41,18 @@ export default function SidebarTimeline({ label, entries = [] }) {
                   and "SDE Co-op" alone says nothing about where. Shown even
                   when there is a wordmark — the logo reads as decoration next
                   to the other entries' names, not as the name itself. */}
-              <div className="font-medium text-slate-900 dark:text-slate-100">{entry.org}</div>
+              <div className="font-medium text-slate-900 dark:text-slate-100">
+                {entry.href ? (
+                  <a
+                    href={entry.href}
+                    className="underline decoration-slate-300 underline-offset-2 transition hover:text-teal-700 hover:decoration-teal-500 dark:decoration-slate-600 dark:hover:text-teal-400"
+                  >
+                    {entry.org}
+                  </a>
+                ) : (
+                  entry.org
+                )}
+              </div>
               {entry.role && (
                 <div className="text-xs text-slate-600 dark:text-slate-300">{entry.role}</div>
               )}

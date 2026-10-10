@@ -202,6 +202,49 @@ function BrowserMotif() {
   );
 }
 
+/** A cited article: its claims run out to the code they rest on. */
+function WikiMotif() {
+  return (
+    <svg viewBox="0 0 140 84" aria-hidden="true" className="h-full w-full">
+      <g {...STROKE}>
+        <rect x="12" y="8" width="58" height="68" rx="2" />
+        <path d="M20 18 H52" />
+        {[30, 40, 50, 60].map(y => (
+          <path key={y} d={`M20 ${y} H58`} strokeWidth="1" opacity="0.55" />
+        ))}
+        <rect x="60" y="27" width="5" height="5" rx="1" />
+        <rect x="60" y="47" width="5" height="5" rx="1" />
+        <path d="M65 29.5 C76 29.5 76 30 88 30" strokeWidth="1" strokeDasharray="2 3" />
+        <path d="M65 49.5 C76 49.5 76 52 88 52" strokeWidth="1" strokeDasharray="2 3" />
+        <rect x="88" y="18" width="42" height="48" rx="2" />
+        <path d="M96 30 L91 35 L96 40" />
+        <path d="M122 30 L127 35 L122 40" />
+        {[48, 55].map(y => (
+          <path key={y} d={`M96 ${y} H122`} strokeWidth="1" opacity="0.55" />
+        ))}
+      </g>
+    </svg>
+  );
+}
+
+/** An eye, and text squared up to wherever it is looking from. */
+function EyeMotif() {
+  return (
+    <svg viewBox="0 0 140 84" aria-hidden="true" className="h-full w-full">
+      <g {...STROKE}>
+        <path d="M10 42 Q36 18 62 42 Q36 66 10 42 Z" />
+        <circle cx="36" cy="42" r="9" />
+        <circle cx="36" cy="42" r="3" />
+        <path d="M66 42 H84" strokeWidth="1" strokeDasharray="2 3" />
+        <path d="M88 22 L128 14 L128 70 L88 62 Z" />
+        {[32, 42, 52].map(y => (
+          <path key={y} d={`M95 ${y} L121 ${y - 4}`} strokeWidth="1" opacity="0.6" />
+        ))}
+      </g>
+    </svg>
+  );
+}
+
 export const MOTIFS = {
   pipeline: PipelineMotif,
   lanes: LanesMotif,
@@ -211,6 +254,8 @@ export const MOTIFS = {
   hex: HexMotif,
   pipes: PipesMotif,
   browser: BrowserMotif,
+  wiki: WikiMotif,
+  eye: EyeMotif,
 };
 
 export function hasMotif(name) {

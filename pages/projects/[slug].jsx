@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { ArrowLeft } from 'lucide-react';
 import rawProjects from '@/public/projects.json' assert { type: 'json' };
 import { validateProjects } from '@/lib/projects';
 import ProjectPageHeader from '@/components/ProjectPageHeader';
@@ -97,7 +98,8 @@ export default function ProjectDetail({ project }) {
             href="/projects/"
             className="font-hand text-lg text-stone-500 underline-offset-4 transition-colors hover:text-teal-700 hover:underline dark:text-stone-400 dark:hover:text-teal-400"
           >
-            ← all projects
+            <ArrowLeft className="mr-1 inline h-4 w-4 align-[-2px]" aria-hidden="true" />
+            all projects
           </a>
         </div>
 
@@ -132,8 +134,8 @@ export default function ProjectDetail({ project }) {
                   </h1>
                   {period && <p className="text-stone-600 dark:text-stone-300">{period}</p>}
                 </div>
-                {sortedLinks.length > 0 && (
-                  <div className="flex flex-wrap gap-2">
+                {(sortedLinks.length > 0 || project.linksNote) && (
+                  <div className="flex flex-wrap items-center gap-2">
                     {sortedLinks.map((link, index) => (
                       <PillLink
                         key={`${link.href}-${index}`}
@@ -144,6 +146,11 @@ export default function ProjectDetail({ project }) {
                         {link.label}
                       </PillLink>
                     ))}
+                    {/* A private repo says why there is nothing to click,
+                        rather than leaving the space blank. */}
+                    {project.linksNote && (
+                      <p className="text-sm italic text-stone-600 dark:text-stone-300">🔒 {project.linksNote}</p>
+                    )}
                   </div>
                 )}
               </div>

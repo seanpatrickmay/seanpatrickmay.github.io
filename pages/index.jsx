@@ -12,7 +12,11 @@ import AboutSection from '@/components/AboutSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import MapSection from '@/components/MapSection';
-import ProjectsSection from '@/components/ProjectsSection';
+import { Trophy } from 'lucide-react';
+import Section from '@/components/ui/Section';
+import Pinboard from '@/components/Pinboard';
+import Board from '@/components/projects/Board';
+import { assertValidBoard, boardProps } from '@/lib/board';
 
 const projects = validateProjects(rawProjects) ? rawProjects : [];
 
@@ -66,8 +70,16 @@ function trimStats(data) {
 
 
 export async function getStaticProps() {
+  // A broken board fails the build instead of quietly dropping a card.
+  assertValidBoard(projects);
   return {
     props: {
+      boardProjects: boardProps(projects),
+      // Picked here rather than at module level so projects.json stays out
+      // of the client bundle.
+      projectHighlights: ['life-dashboard', 'lecteuraide']
+        .map(slug => projects.find(project => project.slug === slug))
+        .filter(Boolean),
       statsData: trimStats(readFeed('stats.json')),
       spotifyData: readFeed('spotify.json'),
       goodreadsData: readFeed('goodreads.json'),
@@ -80,20 +92,6 @@ export async function getStaticProps() {
   };
 }
 
-// The hero fan is the top of the same ranking ProjectsSection uses, rather
-// than a second hand-kept list. The old hardcoded trio had drifted to ranks
-// 1, 5, 2 — so re-ranking a project in projects.json silently disagreed with
-// what the hero showed.
-const featuredProjects = projects
-  .filter(project => Number.isFinite(project.caseStudyRank))
-  .sort((a, b) => a.caseStudyRank - b.caseStudyRank)
-  .slice(0, 3);
-
-const lifeDashboardProject =
-  projects.find(project => project.slug === 'life-dashboard') ?? null;
-const lecteurAideProject =
-  projects.find(project => project.slug === 'lecteuraide') ?? null;
-
 const links = {
   github: 'https://github.com/seanpatrickmay',
   linkedin: 'https://linkedin.com/in/seanpatrickmay',
@@ -105,7 +103,7 @@ const links = {
 };
 
 
-export default function Home({ statsData, spotifyData, goodreadsData, duolingoData, timeline, buildYear }) {
+export default function Home({ boardProjects, projectHighlights, statsData, spotifyData, goodreadsData, duolingoData, timeline, buildYear }) {
   return (
     <>
       <Head>
@@ -126,13 +124,21 @@ export default function Home({ statsData, spotifyData, goodreadsData, duolingoDa
         <div className="pt-32 sm:pt-28 md:pt-24 lg:flex lg:items-start lg:gap-10 lg:pt-10">
           <Sidebar links={links} timeline={timeline} />
           <div className="min-w-0 flex-1">
-            <Hero links={links} featuredProjects={featuredProjects} timeline={timeline} />
+            <Hero links={links} timeline={timeline} />
           </div>
         </div>
 
         <div className="mt-12 space-y-12">
+          {/* Work first: the readers this page is for skim for thirty seconds,
+              and the board is what they came for. About me follows. */}
+          <Section id="projects" title="projects" icon={Trophy}>
+            <Pinboard>
+              <Board projects={boardProjects} />
+            </Pinboard>
+          </Section>
+
           <AboutSection
-            projectHighlights={[lifeDashboardProject, lecteurAideProject].filter(Boolean)}
+            projectHighlights={projectHighlights}
             statsData={statsData}
             spotifyData={spotifyData}
             goodreadsData={goodreadsData}
@@ -140,8 +146,6 @@ export default function Home({ statsData, spotifyData, goodreadsData, duolingoDa
           />
 
           <MapSection />
-
-          <ProjectsSection />
 
           <ContactSection links={links} />
         </div>
