@@ -11,6 +11,7 @@
 export default function Pinboard({ children, className = '' }) {
   return (
     <div
+      data-pinboard=""
       className={`relative rounded-2xl border border-stone-300 shadow-lg overflow-hidden dark:border-stone-700 px-5 py-8 sm:px-7 sm:py-10 lg:px-9 lg:py-12 ${className}`}
     >
       {/* Light mode background */}

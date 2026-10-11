@@ -258,9 +258,9 @@ export const MOTIFS = {
   eye: EyeMotif,
 };
 
-export function hasMotif(name) {
-  return Boolean(name && MOTIFS[name]);
-}
+// The names live in lib/motifs.js, so the pure deep-dive rules can share
+// this check; lib/projectCovers.test.mjs keeps them in step with MOTIFS.
+export { hasMotif } from '@/lib/motifs';
 
 export default function CoverArt({ motif, line, showLine = true, className = '' }) {
   const Motif = MOTIFS[motif];
