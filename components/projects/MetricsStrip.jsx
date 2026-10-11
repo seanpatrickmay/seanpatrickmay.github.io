@@ -1,6 +1,12 @@
 import PinCard from '@/components/PinCard';
 import Source from '@/components/projects/Source';
 
+// Written out in full so Tailwind's scanner keeps every class. One or two
+// metrics in a three-column sheet left a third of it, or two thirds, blank;
+// the sheet narrows instead, and PinCard keeps the tape centred on it.
+const COLUMNS = { 1: 'sm:grid-cols-1', 2: 'sm:grid-cols-2', 3: 'sm:grid-cols-3' };
+const WIDTHS = { 1: 'sm:max-w-sm', 2: 'sm:max-w-2xl', 3: '' };
+
 /**
  * The deep dive's numbers, each stated once, each with its source.
  *
@@ -14,8 +20,8 @@ export default function MetricsStrip({ metrics = [] }) {
   if (metrics.length === 0) return null;
   return (
     <section data-section="metrics" aria-label="by the numbers">
-      <PinCard rotation={0.3} pinColor="teal" fastener="tape">
-        <ul className="paper grid divide-y divide-stone-200 rounded-sm border border-stone-200/80 px-4 pb-1 pt-3 sm:grid-cols-3 sm:divide-x sm:divide-y-0 sm:px-2 sm:py-4 dark:divide-stone-700 dark:border-stone-700/80">
+      <PinCard rotation={0.3} pinColor="teal" fastener="tape" className={`mx-auto ${WIDTHS[metrics.length] ?? ''}`}>
+        <ul className={`paper grid divide-y divide-stone-200 rounded-sm border border-stone-200/80 px-4 pb-1 pt-3 ${COLUMNS[metrics.length] ?? COLUMNS[3]} sm:divide-x sm:divide-y-0 sm:px-2 sm:py-4 dark:divide-stone-700 dark:border-stone-700/80`}>
           {metrics.map(m => (
             <li key={`${m.value}-${m.label}`} data-metric="" className="py-2 sm:px-4 sm:py-0">
               <p className="leading-snug">

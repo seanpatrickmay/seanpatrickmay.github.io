@@ -115,7 +115,9 @@ export default function ProjectDetail({ project }) {
                   {period}
                   {credits && (
                     <>
-                      <span aria-hidden="true"> · </span>
+                      {/* The spaces sit outside the hidden dot, so a screen reader
+                          hears "Mar 2026 with …" rather than "Mar 2026with …". */}
+                      {' '}<span aria-hidden="true">·</span>{' '}
                       <span data-credits="">{credits}</span>
                     </>
                   )}
