@@ -559,8 +559,8 @@
     ],
     "leadFigure": {
       "src": "/projects/wildfire-modeling/creek-fire-186.webp",
-      "width": 870,
-      "height": 460,
+      "width": 1740,
+      "height": 920,
       "alt": "Three maps of the Creek Fire at hour 186: the previous hour, the next hour as observed, and the model's prediction of it. Orange is fire that persisted, blue is new fire, yellow is fire that went out; the predicted spread around the main cluster roughly follows the observed one.",
       "caption": "creek fire, hour 186: last hour, what happened, what the model said",
       "source": {

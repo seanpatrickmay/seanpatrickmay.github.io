@@ -24,12 +24,12 @@ const SIBLINGS = path.join(ROOT, '..');
 
 const FIGURES = [
   {
-    // "Page 16" is the printed number; it is the PDF's 17th page. 144 dpi is
-    // 2x the PDF's 72. The box is the CreekFire t=186 title, its three panels
-    // and the legend.
+    // "Page 16" is the printed number; it is the PDF's 17th page. 288 dpi is
+    // 4x the PDF's 72, so the 752px figure slot stays sharp on a 2x screen.
+    // The box is the CreekFire t=186 title, its three panels and the legend.
     out: 'public/projects/wildfire-modeling/creek-fire-186.webp',
-    from: { pdf: 'public/projects/wildfire-modeling/hourly-wildfire-spread-prediction.pdf', page: 17, dpi: 144 },
-    crop: { left: 180, top: 550, width: 870, height: 460 },
+    from: { pdf: 'public/projects/wildfire-modeling/hourly-wildfire-spread-prediction.pdf', page: 17, dpi: 288 },
+    crop: { left: 360, top: 1100, width: 1740, height: 920 },
     // Flat colour and small type: lossless is both sharper and smaller.
     webp: { lossless: true, effort: 6 },
   },
@@ -42,11 +42,12 @@ const FIGURES = [
     webp: { quality: 85, effort: 6 },
   },
   {
-    // The body view in guest mode (demo data, nothing personal): the
-    // "GUEST MODE - DEMO DATA ONLY" banner, the Today/Read/Reflect nav, a
-    // readiness score, the morning briefing, and HRV, resting HR, sleep and
-    // training load. Not today-desktop.png, whose AI briefing quotes real news
-    // headlines, and not guest-projects.png, whose demo todos are lab work.
+    // The body view in guest mode (demo data, nothing personal). The box
+    // starts below the guest-mode banner and the Today/Read/Reflect nav, so
+    // it shows the back link, the health/nutrition tabs, a readiness score,
+    // the morning briefing, and HRV, resting HR, sleep and training load.
+    // Not today-desktop.png, whose AI briefing quotes real news headlines,
+    // and not guest-projects.png, whose demo todos are lab work.
     out: 'public/projects/life-dashboard/body-view.webp',
     from: { repo: 'Life-Dashboard', ref: 'origin/main', file: 'docs/screenshots/body-desktop.png' },
     crop: { left: 40, top: 300, width: 1200, height: 660 },
