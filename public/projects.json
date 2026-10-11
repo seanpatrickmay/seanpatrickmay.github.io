@@ -665,24 +665,24 @@
     "credits": "with Aidan D'Alonzo & Ethan Meid",
     "metrics": [
       {
-        "value": "F2 0.928",
-        "label": "recall-weighted, on four fires the model never saw",
+        "value": "0.928",
+        "label": "F2, recall-weighted, on four fires the model never saw",
         "source": {
           "label": "paper · Table 2",
           "href": "/projects/wildfire-modeling/hourly-wildfire-spread-prediction.pdf#page=15"
         }
       },
       {
-        "value": "F1 0.929",
-        "label": "equal-weight F1, against 0.832 for logistic regression on the same features",
+        "value": "0.929",
+        "label": "F1, equal-weight, against 0.832 for logistic regression on the same features",
         "source": {
           "label": "paper · Table 3",
           "href": "/projects/wildfire-modeling/hourly-wildfire-spread-prediction.pdf#page=15"
         }
       },
       {
-        "value": "+0.180 F1",
-        "label": "from fixing the labels and features, with the model unchanged",
+        "value": "+0.180",
+        "label": "F1 gained from fixing the labels and features, with the model unchanged",
         "source": {
           "label": "paper · Table 3",
           "href": "/projects/wildfire-modeling/hourly-wildfire-spread-prediction.pdf#page=15"

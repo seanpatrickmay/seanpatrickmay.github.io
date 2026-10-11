@@ -1,8 +1,9 @@
 import PinCard from '@/components/PinCard';
-import CoverArt, { hasMotif } from '@/components/projects/CoverArt';
+import CoverArt from '@/components/projects/CoverArt';
 import LogBarChart from '@/components/projects/LogBarChart';
 import Source from '@/components/projects/Source';
 import { coverSources, COVER_SIZES } from '@/lib/coverImage';
+import { figureKind } from '@/lib/deepDive';
 
 /**
  * Real output first. The lead figure is the first picture on the page, so
@@ -19,8 +20,11 @@ const EDGE = 'rounded-sm border border-stone-200/80 dark:border-stone-700/80';
 
 export default function LeadFigure({ project }) {
   const { leadFigure: fig, coverArt, coverImage } = project;
+  // The same predicate deepDiveSections uses, so the slot is here exactly
+  // when the section list says it is.
+  const kind = figureKind(project);
 
-  if (fig) {
+  if (kind === 'lead') {
     return (
       <div data-section="figure" className={FRAME}>
         <PinCard rotation={-0.5} pinColor="red">
@@ -47,13 +51,12 @@ export default function LeadFigure({ project }) {
     );
   }
 
-  const motif = hasMotif(coverArt?.motif);
-  if (!motif && !coverImage?.src) return null;
+  if (kind === null) return null;
   return (
     <div data-section="figure" data-cover-fallback="" className={FRAME}>
       <PinCard rotation={-0.7} pinColor="red">
         <div className={`aspect-[3/1] overflow-hidden ${EDGE}`}>
-          {motif ? (
+          {kind === 'motif' ? (
             <CoverArt motif={coverArt.motif} showLine={false} />
           ) : (
             <img

@@ -28,36 +28,45 @@ export default function LogBarChart({ chart, label }) {
       <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-stone-600 dark:text-stone-300">
         {chart.unit} · log scale
       </p>
-      <ul className="space-y-3">
-        {bars.map(b => (
-          <li key={b.label}>
-            <p className="flex items-baseline justify-between gap-3 text-sm text-stone-800 dark:text-stone-100">
-              <span className={b.highlight ? 'font-semibold' : ''}>{b.label}</span>
-              <span className="stat-figure text-base">{b.display}</span>
-            </p>
-            <div className="relative mt-1 h-3">
-              <Gridlines ticks={ticks} />
-              <div
-                data-bar=""
-                className={`relative h-full rounded-r-sm ${b.highlight ? 'bg-teal-600 dark:bg-teal-400' : 'bg-stone-500 dark:bg-stone-400'}`}
-                style={{ width: `${b.percent}%` }}
-              />
-            </div>
-          </li>
-        ))}
-      </ul>
-      {/* Tick labels: the first hangs right of its line and the last left of
-          it, so neither pokes out of the figure on a phone. */}
-      <div className="relative mt-2 h-4 text-[11px] text-stone-600 dark:text-stone-300">
-        {ticks.map((t, i) => (
-          <span
-            key={t.value}
-            className={`absolute top-0 ${i === 0 ? '' : i === ticks.length - 1 ? '-translate-x-full' : '-translate-x-1/2'}`}
-            style={{ left: `${t.percent}%` }}
-          >
-            {t.label}
-          </span>
-        ))}
+      {/* The scale ends pr-14 short of the edge, so a value written at the
+          end of a full-length bar still fits inside the figure. */}
+      <div className="pr-14">
+        <ul className="space-y-3">
+          {bars.map(b => (
+            <li key={b.label}>
+              <p className={`text-sm text-stone-800 dark:text-stone-100 ${b.highlight ? 'font-semibold' : ''}`}>{b.label}</p>
+              {/* h-4 holds the value's line box, so it centres on the bar. */}
+              <div className="relative mt-1 h-4">
+                <Gridlines ticks={ticks} />
+                <div
+                  data-bar=""
+                  className={`relative h-full rounded-r-sm ${b.highlight ? 'bg-teal-600 dark:bg-teal-400' : 'bg-stone-500 dark:bg-stone-400'}`}
+                  style={{ width: `${b.percent}%` }}
+                />
+                {/* At the bar's end, on paper, so no gridline runs through it. */}
+                <span
+                  className="stat-figure paper absolute top-1/2 z-10 -translate-y-1/2 whitespace-nowrap pl-1.5 pr-1 text-base leading-none text-stone-800 dark:text-stone-100"
+                  style={{ left: `${b.percent}%` }}
+                >
+                  {b.display}
+                </span>
+              </div>
+            </li>
+          ))}
+        </ul>
+        {/* Tick labels: the first hangs right of its line and the last left of
+            it, so neither pokes out of the scale on a phone. */}
+        <div className="relative mt-2 h-4 text-[11px] text-stone-600 dark:text-stone-300">
+          {ticks.map((t, i) => (
+            <span
+              key={t.value}
+              className={`absolute top-0 ${i === 0 ? '' : i === ticks.length - 1 ? '-translate-x-full' : '-translate-x-1/2'}`}
+              style={{ left: `${t.percent}%` }}
+            >
+              {t.label}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );

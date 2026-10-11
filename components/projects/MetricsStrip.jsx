@@ -17,7 +17,7 @@ export default function MetricsStrip({ metrics = [] }) {
       <PinCard rotation={0.3} pinColor="teal" fastener="tape">
         <ul className="paper grid divide-y divide-stone-200 rounded-sm border border-stone-200/80 px-4 pb-1 pt-3 sm:grid-cols-3 sm:divide-x sm:divide-y-0 sm:px-2 sm:py-4 dark:divide-stone-700 dark:border-stone-700/80">
           {metrics.map(m => (
-            <li key={m.value} data-metric="" className="py-2 sm:px-4 sm:py-0">
+            <li key={`${m.value}-${m.label}`} data-metric="" className="py-2 sm:px-4 sm:py-0">
               <p className="leading-snug">
                 <span className="stat-figure mr-2 text-2xl leading-none text-stone-900 sm:mr-0 sm:block sm:text-3xl dark:text-stone-50">
                   {m.value}
