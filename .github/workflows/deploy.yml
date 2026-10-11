@@ -19,6 +19,7 @@ on:
       - "Update Spotify data"
       - "Update Garmin stats.json"
       - "Update Duolingo data"
+      - "Update wiki stats"
     types: [ completed ]
   workflow_dispatch: {}
 

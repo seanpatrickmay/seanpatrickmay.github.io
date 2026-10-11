@@ -1,0 +1,44 @@
+name: Update wiki stats
+
+on:
+  schedule:
+    - cron: "32 13 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "update-wikis"
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 22, not the site's 20: the script imports lib/wikiStrip.js, an ES
+      # module in a package without "type": "module", and Node 22 detects
+      # ES module syntax on its own.
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Fetch wiki exports
+        run: node scripts/update_wikis.mjs
+
+      - name: Commit & push changes
+        run: |
+          set -euo pipefail
+          if [[ -n "$(git status --porcelain public/wikis.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add public/wikis.json
+            git commit -m "chore(wikis): daily refresh"
+            git push
+          else
+            echo "No changes to commit."
+          fi

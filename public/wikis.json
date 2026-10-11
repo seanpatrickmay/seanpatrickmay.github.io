@@ -1,0 +1,228 @@
+{
+  "generated_at": "2026-10-11T09:43:25.146Z",
+  "wikis": {
+    "life-dashboard": {
+      "url": "https://seanpatrickmay.me/wiki/life-dashboard/",
+      "exportedAt": "2026-10-09T04:27:49.136Z",
+      "head": "e662257",
+      "features": 25,
+      "citedClaims": 517,
+      "citations": 780,
+      "commits": 345,
+      "span": {
+        "first": "2025-10",
+        "last": "2026-06"
+      },
+      "authorship": {
+        "solo": true
+      },
+      "languages": [
+        "Python",
+        "TypeScript"
+      ],
+      "highlights": [
+        {
+          "id": "imessage-integration",
+          "title": "iMessage integration",
+          "href": "https://seanpatrickmay.me/wiki/life-dashboard/wiki/imessage-integration/"
+        },
+        {
+          "id": "garmin-integration",
+          "title": "Garmin integration",
+          "href": "https://seanpatrickmay.me/wiki/life-dashboard/wiki/garmin-integration/"
+        },
+        {
+          "id": "ai-digest",
+          "title": "AI digest",
+          "href": "https://seanpatrickmay.me/wiki/life-dashboard/wiki/ai-digest/"
+        }
+      ],
+      "fetchedAt": "2026-10-11T09:43:25.146Z"
+    },
+    "lecteuraide": {
+      "url": "https://seanpatrickmay.me/wiki/lecteuraide/",
+      "exportedAt": "2026-10-09T04:19:02.840Z",
+      "head": "a9ffb3b",
+      "features": 3,
+      "citedClaims": 49,
+      "citations": 71,
+      "commits": 8,
+      "span": {
+        "first": "2025-09",
+        "last": "2025-11"
+      },
+      "authorship": {
+        "solo": true
+      },
+      "languages": [
+        "Python",
+        "TypeScript",
+        "JavaScript"
+      ],
+      "highlights": [
+        {
+          "id": "content-processing",
+          "title": "Content processing",
+          "href": "https://seanpatrickmay.me/wiki/lecteuraide/wiki/content-processing/"
+        },
+        {
+          "id": "book-management",
+          "title": "Book management",
+          "href": "https://seanpatrickmay.me/wiki/lecteuraide/wiki/book-management/"
+        }
+      ],
+      "fetchedAt": "2026-10-11T09:43:25.146Z"
+    },
+    "pokerml": {
+      "url": "https://seanpatrickmay.me/wiki/pokerml/",
+      "exportedAt": "2026-10-09T04:23:28.799Z",
+      "head": "56ad610",
+      "features": 5,
+      "citedClaims": 85,
+      "citations": 135,
+      "commits": 33,
+      "span": {
+        "first": "2024-10",
+        "last": "2026-03"
+      },
+      "authorship": {
+        "solo": true
+      },
+      "languages": [
+        "Python",
+        "JavaScript"
+      ],
+      "highlights": [
+        {
+          "id": "counterfactual-regret-minimization",
+          "title": "Counterfactual regret minimization",
+          "href": "https://seanpatrickmay.me/wiki/pokerml/wiki/counterfactual-regret-minimization/"
+        },
+        {
+          "id": "solver-optimization",
+          "title": "Solver optimization",
+          "href": "https://seanpatrickmay.me/wiki/pokerml/wiki/solver-optimization/"
+        },
+        {
+          "id": "interactive-play",
+          "title": "Interactive play and self-play",
+          "href": "https://seanpatrickmay.me/wiki/pokerml/wiki/interactive-play/"
+        }
+      ],
+      "fetchedAt": "2026-10-11T09:43:25.146Z"
+    },
+    "repowiki": {
+      "url": "https://seanpatrickmay.me/wiki/repowiki/",
+      "exportedAt": "2026-10-09T05:35:34.327Z",
+      "head": "3993d10",
+      "features": 22,
+      "citedClaims": 496,
+      "citations": 751,
+      "commits": 706,
+      "span": {
+        "first": "2026-09",
+        "last": "2026-10"
+      },
+      "authorship": {
+        "solo": true
+      },
+      "languages": [
+        "TypeScript"
+      ],
+      "highlights": [
+        {
+          "id": "wiki-writing",
+          "title": "Wiki writing",
+          "href": "https://seanpatrickmay.me/wiki/repowiki/wiki/wiki-writing/"
+        },
+        {
+          "id": "wiki-freshness",
+          "title": "Wiki freshness",
+          "href": "https://seanpatrickmay.me/wiki/repowiki/wiki/wiki-freshness/"
+        },
+        {
+          "id": "link-verification",
+          "title": "Link verification",
+          "href": "https://seanpatrickmay.me/wiki/repowiki/wiki/link-verification/"
+        }
+      ],
+      "fetchedAt": "2026-10-11T09:43:25.146Z"
+    },
+    "alphasettler": {
+      "url": "https://seanpatrickmay.me/wiki/alphasettler/",
+      "exportedAt": "2026-10-10T22:43:59.090Z",
+      "head": "dac6e2f",
+      "features": 14,
+      "citedClaims": 281,
+      "citations": 403,
+      "commits": 181,
+      "span": {
+        "first": "2026-09",
+        "last": "2026-10"
+      },
+      "authorship": {
+        "solo": true
+      },
+      "languages": [
+        "Rust",
+        "Python"
+      ],
+      "highlights": [
+        {
+          "id": "search-algorithm",
+          "title": "Search algorithm",
+          "href": "https://seanpatrickmay.me/wiki/alphasettler/wiki/search-algorithm/"
+        },
+        {
+          "id": "game-engine",
+          "title": "Game engine",
+          "href": "https://seanpatrickmay.me/wiki/alphasettler/wiki/game-engine/"
+        },
+        {
+          "id": "network-training",
+          "title": "Network training",
+          "href": "https://seanpatrickmay.me/wiki/alphasettler/wiki/network-training/"
+        }
+      ],
+      "fetchedAt": "2026-10-11T09:43:25.146Z"
+    },
+    "rototext": {
+      "url": "https://seanpatrickmay.me/wiki/rototext/",
+      "exportedAt": "2026-10-09T04:20:42.264Z",
+      "head": "dbf2b8f",
+      "features": 7,
+      "citedClaims": 137,
+      "citations": 189,
+      "commits": 50,
+      "span": {
+        "first": "2026-09",
+        "last": "2026-10"
+      },
+      "authorship": {
+        "solo": true
+      },
+      "languages": [
+        "TypeScript",
+        "JavaScript"
+      ],
+      "highlights": [
+        {
+          "id": "eye-tracking",
+          "title": "Eye tracking",
+          "href": "https://seanpatrickmay.me/wiki/rototext/wiki/eye-tracking/"
+        },
+        {
+          "id": "geometric-projection",
+          "title": "Geometric projection",
+          "href": "https://seanpatrickmay.me/wiki/rototext/wiki/geometric-projection/"
+        },
+        {
+          "id": "scene-rendering",
+          "title": "Scene rendering",
+          "href": "https://seanpatrickmay.me/wiki/rototext/wiki/scene-rendering/"
+        }
+      ],
+      "fetchedAt": "2026-10-11T09:43:25.146Z"
+    }
+  }
+}

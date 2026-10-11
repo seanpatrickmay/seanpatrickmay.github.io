@@ -27,6 +27,7 @@ const FEEDS = [
   { file: 'goodreads.json', label: 'Goodreads reading', maxAgeDays: 10 },
   { file: 'spotify.json', label: 'Spotify top 10', maxAgeDays: 10 },
   { file: 'duolingo.json', label: 'Duolingo progress', maxAgeDays: 10 },
+  { file: 'wikis.json', label: 'Code wiki stats', maxAgeDays: 10 },
 ];
 
 const warnOnly = process.argv.includes('--warn');
