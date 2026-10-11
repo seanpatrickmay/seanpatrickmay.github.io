@@ -1,22 +1,26 @@
 import Head from 'next/head';
 import { ArrowLeft } from 'lucide-react';
 import rawProjects from '@/public/projects.json' assert { type: 'json' };
+import rawWikis from '@/public/wikis.json' assert { type: 'json' };
 import { validateProjects } from '@/lib/projects';
 import { assertValidDeepDives, DEEP_DIVE_LABELS, MAX_STACK_CHIPS, overviewText } from '@/lib/deepDive';
 import { sortProjectLinks } from '@/lib/projectDisplay';
+import { highlightsFor, resolveWikiMetrics } from '@/lib/wikiStrip';
+import { getStaleness } from '@/lib/freshness';
 import ProjectPageHeader from '@/components/ProjectPageHeader';
 import PillLink from '@/components/ui/PillLink';
 import Pinboard from '@/components/Pinboard';
 import PinCard from '@/components/PinCard';
 import MetricsStrip from '@/components/projects/MetricsStrip';
 import LeadFigure from '@/components/projects/LeadFigure';
+import WikiStrip from '@/components/projects/WikiStrip';
 
 const allProjects = validateProjects(rawProjects) ? rawProjects : [];
 
 export async function getStaticPaths() {
   // A broken deep dive fails the build, the way a broken board does,
   // instead of shipping a metric with no source.
-  assertValidDeepDives(allProjects);
+  assertValidDeepDives(allProjects, rawWikis);
   const paths = allProjects
     .filter(p => typeof p.slug === 'string' && p.slug.length > 0)
     .map(p => ({ params: { slug: p.slug } }));
@@ -24,14 +28,21 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const project = allProjects.find(p => p.slug === params.slug) || null;
-  return { props: { project } };
+  const raw = allProjects.find(p => p.slug === params.slug) || null;
+  // RepoWiki's totals are filled from wikis.json here, so the page and the
+  // build gate see the same numbers.
+  const project = raw ? resolveWikiMetrics(raw, rawWikis) : null;
+  const entry = (raw?.wiki && rawWikis.wikis?.[raw.wiki.slug]) || null;
+  // wikis.json only changes when the daily feed runs, so the strip takes its highlights from the ids projects.json names now.
+  const wiki = entry && { ...entry, highlights: highlightsFor(entry, raw.wiki.highlight) };
+  return { props: { project, wiki, wikiStaleness: wiki ? getStaleness(wiki.fetchedAt) : null } };
 }
 
 /**
  * A deep dive, evidence first: the numbers with their sources, then a real
- * figure, then the story. Every fact appears once. The old template showed
- * the same numbers in the overview, three proof cards and a results list.
+ * figure, then the project's code wiki where it has one, then the story.
+ * Every fact appears once. The old template showed the same numbers in the
+ * overview, three proof cards and a results list.
  *
  * Each section's root carries data-section, in DEEP_DIVE_SECTIONS order;
  * lib/deepDiveExport.test.mjs holds the export to it.
@@ -63,7 +74,7 @@ function Dot() {
   return <span aria-hidden="true" className="mt-[0.45rem] h-1.5 w-1.5 flex-shrink-0 rounded-full bg-teal-600 dark:bg-teal-400" />;
 }
 
-export default function ProjectDetail({ project }) {
+export default function ProjectDetail({ project, wiki = null, wikiStaleness = null }) {
   if (!project) return null;
   const {
     title,
@@ -151,6 +162,8 @@ export default function ProjectDetail({ project }) {
             <MetricsStrip metrics={metrics} />
 
             <LeadFigure project={project} />
+
+            <WikiStrip wiki={wiki} staleness={wikiStaleness} />
 
             {overview && (
               <p data-section="overview" className="max-w-3xl text-lg leading-relaxed text-stone-700 dark:text-stone-200">

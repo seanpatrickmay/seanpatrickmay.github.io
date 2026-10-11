@@ -276,11 +276,6 @@
       "react/vite frontend for the daily briefing, todo management, calendar view, project status, and chatting with the assistant",
       "postgres data model for messages, calendar events, projects, todos, biometrics, and AI-generated insights"
     ],
-    "howItWorks": [
-      "ingest imessage conversations and calendar events into postgres, pulling out actionable items and deadlines",
-      "aggregate messages, schedule, project activity, and biometrics into context for openai-powered todo and briefing generation",
-      "surface prioritized todos, daily briefings, and project status through one react dashboard"
-    ],
     "nextSteps": [
       "add tighter evals for how relevant and well-prioritized the AI-generated todos actually are",
       "pull in deeper git activity and PR status for the project integration"
@@ -334,6 +329,14 @@
         "label": "docs/screenshots",
         "href": "https://github.com/seanpatrickmay/Life-Dashboard/blob/main/docs/screenshots/body-desktop.png"
       }
+    },
+    "wiki": {
+      "slug": "life-dashboard",
+      "highlight": [
+        "imessage-integration",
+        "garmin-integration",
+        "ai-digest"
+      ]
     }
   },
   {
@@ -372,11 +375,6 @@
       "fastapi backend for book upload, scene segmentation, translation, vocab extraction, and persistence",
       "next.js frontend for uploading, browsing the library, and reading scene by scene",
       "vertex AI and google cloud translation pipeline that turns raw PDFs into guided reading experiences"
-    ],
-    "howItWorks": [
-      "upload a french PDF and title through the ingestion API",
-      "segment the text into scenes and annotate with translations, vocab, and questions",
-      "persist the processed book and render it through the web reader"
     ],
     "nextSteps": [
       "record a walkthrough video of the scene-by-scene reading flow",
@@ -420,7 +418,14 @@
     },
     "findings": [
       "passing the previous scene's summary forward is what keeps the narrative coherent across chunks"
-    ]
+    ],
+    "wiki": {
+      "slug": "lecteuraide",
+      "highlight": [
+        "content-processing",
+        "book-management"
+      ]
+    }
   },
   {
     "title": "Human Digit Recognition",
@@ -632,12 +637,6 @@
       "action abstraction with 75%, 100% and 175% pot preflop, up to five geometric sizes postflop from a small blocking bet to an overbet, fold/check/call, all-in, and a 4-raise-per-street cap",
       "fastapi server with session management, bot inference, and a 13x13 range grid API for the frontend"
     ],
-    "howItWorks": [
-      "deal hands and board, pre-cache card buckets for both players across all 4 streets",
-      "traverse the game tree: enumerate all actions for the traversing player, sample one for the opponent",
-      "update cumulative regrets (clamped to zero for CFR+) and accumulate strategy sums",
-      "once training finishes, compress the averaged strategy to JSON and serve it via fastapi for live play"
-    ],
     "nextSteps": [
       "expand action abstraction with more bet sizings and raise depths"
     ],
@@ -663,6 +662,14 @@
       "size": "small",
       "order": 3,
       "line": "CFR+ solver for no-limit hold'em"
+    },
+    "wiki": {
+      "slug": "pokerml",
+      "highlight": [
+        "counterfactual-regret-minimization",
+        "solver-optimization",
+        "interactive-play"
+      ]
     }
   },
   {
@@ -841,7 +848,7 @@
     },
     "metrics": [
       {
-        "value": "6",
+        "wikiTotal": "wikis",
         "label": "wikis live on this site, each built by RepoWiki",
         "source": {
           "label": "the wiki index",
@@ -849,22 +856,30 @@
         }
       },
       {
-        "value": "76",
+        "wikiTotal": "features",
         "label": "feature articles across those wikis",
         "source": {
-          "label": "the six wikis' export.json, 2026-10-10",
+          "label": "each wiki's export.json, refreshed daily",
           "href": "https://seanpatrickmay.me/wiki/"
         }
       },
       {
-        "value": "2,329",
+        "wikiTotal": "citations",
         "label": "citations to code lines or commits across those articles",
         "source": {
-          "label": "the six wikis' export.json, 2026-10-10",
+          "label": "each wiki's export.json, refreshed daily",
           "href": "https://seanpatrickmay.me/wiki/"
         }
       }
-    ]
+    ],
+    "wiki": {
+      "slug": "repowiki",
+      "highlight": [
+        "wiki-writing",
+        "wiki-freshness",
+        "link-verification"
+      ]
+    }
   },
   {
     "title": "AlphaSettler",
@@ -992,7 +1007,15 @@
     ],
     "findings": [
       "a flat strength curve against a weak bot is the opponent's ceiling, not the search's: against itself, the learned-evaluator bot keeps gaining from more simulations"
-    ]
+    ],
+    "wiki": {
+      "slug": "alphasettler",
+      "highlight": [
+        "search-algorithm",
+        "game-engine",
+        "network-training"
+      ]
+    }
   },
   {
     "title": "RotoText",
@@ -1040,6 +1063,14 @@
         "href": "https://github.com/seanpatrickmay/RotoText",
         "kind": "repo"
       }
-    ]
+    ],
+    "wiki": {
+      "slug": "rototext",
+      "highlight": [
+        "eye-tracking",
+        "geometric-projection",
+        "scene-rendering"
+      ]
+    }
   }
 ]
