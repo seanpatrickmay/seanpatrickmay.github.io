@@ -75,11 +75,6 @@ export async function getStaticProps() {
   return {
     props: {
       boardProjects: boardProps(projects),
-      // Picked here rather than at module level so projects.json stays out
-      // of the client bundle.
-      projectHighlights: ['life-dashboard', 'lecteuraide']
-        .map(slug => projects.find(project => project.slug === slug))
-        .filter(Boolean),
       statsData: trimStats(readFeed('stats.json')),
       spotifyData: readFeed('spotify.json'),
       goodreadsData: readFeed('goodreads.json'),
@@ -103,7 +98,7 @@ const links = {
 };
 
 
-export default function Home({ boardProjects, projectHighlights, statsData, spotifyData, goodreadsData, duolingoData, timeline, buildYear }) {
+export default function Home({ boardProjects, statsData, spotifyData, goodreadsData, duolingoData, timeline, buildYear }) {
   return (
     <>
       <Head>
@@ -138,7 +133,6 @@ export default function Home({ boardProjects, projectHighlights, statsData, spot
           </Section>
 
           <AboutSection
-            projectHighlights={projectHighlights}
             statsData={statsData}
             spotifyData={spotifyData}
             goodreadsData={goodreadsData}
