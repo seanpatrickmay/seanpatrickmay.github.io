@@ -13,6 +13,7 @@ import Pinboard from '@/components/Pinboard';
 import PinCard from '@/components/PinCard';
 import MetricsStrip from '@/components/projects/MetricsStrip';
 import LeadFigure from '@/components/projects/LeadFigure';
+import WikiStrip from '@/components/projects/WikiStrip';
 
 const allProjects = validateProjects(rawProjects) ? rawProjects : [];
 
@@ -37,8 +38,9 @@ export async function getStaticProps({ params }) {
 
 /**
  * A deep dive, evidence first: the numbers with their sources, then a real
- * figure, then the story. Every fact appears once. The old template showed
- * the same numbers in the overview, three proof cards and a results list.
+ * figure, then the project's code wiki where it has one, then the story.
+ * Every fact appears once. The old template showed the same numbers in the
+ * overview, three proof cards and a results list.
  *
  * Each section's root carries data-section, in DEEP_DIVE_SECTIONS order;
  * lib/deepDiveExport.test.mjs holds the export to it.
@@ -158,6 +160,8 @@ export default function ProjectDetail({ project, wiki = null, wikiStaleness = nu
             <MetricsStrip metrics={metrics} />
 
             <LeadFigure project={project} />
+
+            <WikiStrip wiki={wiki} staleness={wikiStaleness} />
 
             {overview && (
               <p data-section="overview" className="max-w-3xl text-lg leading-relaxed text-stone-700 dark:text-stone-200">
