@@ -115,16 +115,16 @@
     ],
     "showcaseTag": "AI/ML",
     "showcaseTech": "LangGraph",
-    "overview": "consulting engagements go wrong quietly — a stalled Linear board, a channel that went silent, a PR nobody reviewed. this ingests all of it from Notion, Slack, Linear and GitHub and turns it into a prioritised risk briefing. i owned the event-driven core: the part that has to keep one project's events in order while several projects are being analysed at once.",
+    "overview": "consulting engagements go wrong quietly — a stalled Linear board, a channel that went silent, a PR nobody reviewed. this ingests all of it from Notion, Slack, Linear and GitHub and turns it into a prioritised risk briefing. i owned the event-driven core underneath it.",
     "whatIBuilt": [
-      "the ingest worker: HMAC-verified webhooks in, Redis queue, ordered per-project processing out",
-      "per-project locks plus timestamp-scored queues so ordering holds within a project without serialising across projects",
-      "retry backoff and dead-letter handling for the follow-up fetches that sparse webhooks force"
+      "the ingest worker, the part every webhook passes through before any agent sees it",
+      "the concurrency model, which was the hard part: ordering has to hold inside a project without serialising across projects",
+      "retry backoff and dead-letter handling, so a follow-up fetch that fails is retried and then parked rather than lost"
     ],
     "howItWorks": [
       "FastAPI validates the HMAC signature, extracts metadata, enqueues and returns 200 immediately",
       "webhook payloads are sparse, so a worker fetches the actual content from each platform's API",
-      "a per-project lock and a timestamp-scored queue keep that project's events in order",
+      "each project gets its own Redis lock and a queue scored by event timestamp",
       "agents score the signals and the dashboard surfaces prioritised risk"
     ],
     "nextSteps": [],
@@ -196,7 +196,7 @@
       "scheduled workflows fetch each feed and commit JSON into public/",
       "a one-off local script pages the full Garmin history, resolves each place from its own GPS, and writes only a coarse per-place centroid",
       "pages import that JSON at build time, so every route is static HTML",
-      "GitHub Pages serves it; Lighthouse CI runs against the built output on every code push"
+      "GitHub Pages serves the built output"
     ],
     "nextSteps": [
       "per-project OG images, rendered from the same SVG covers at build time"
@@ -521,8 +521,7 @@
       "Earth Engine exports GOES fire detections for a fire's bounding box, hour by hour",
       "a 7-stage label pipeline cleans the raw detections — majority-vote smoothing over 5 frames is what turned a noisy signal into a learnable one",
       "prev_fire_state[t] is defined as labels[t-1], which removes temporal leakage by construction rather than by remembering to shift a column",
-      "the ConvGRU-U-Net consumes a 6-frame sequence and predicts the next frame in full",
-      "ablation decides the channels: anything that does not move F2 does not ship"
+      "the ConvGRU-U-Net consumes a 6-frame sequence and predicts the next frame in full"
     ],
     "nextSteps": [
       "generalise past California — every fire in the training set shares a fuel and terrain regime",
@@ -581,7 +580,7 @@
       },
       {
         "value": "0.929",
-        "label": "F1, equal-weight, against 0.832 for logistic regression on the same features",
+        "label": "F1, equal-weight, against 0.884 for XGBoost on the same features",
         "source": {
           "label": "paper · Table 3",
           "href": "/projects/wildfire-modeling/hourly-wildfire-spread-prediction.pdf#page=15"
@@ -626,11 +625,11 @@
     ],
     "showcaseTag": "Game Theory",
     "showcaseTech": "CFR+",
-    "overview": "this is a heads-up no-limit hold'em solver built on CFR+ and external sampling monte carlo. it trains with k-means preflop bucketing and percentile-based postflop abstraction, then serves the converged strategy through a fastapi web app where you can play against the bot and see its 13x13 range grid in real time.",
+    "overview": "this is a heads-up no-limit hold'em solver built on CFR+ and external sampling monte carlo. it trains over a card and bet-size abstraction, then serves the converged strategy through a fastapi web app where you can play against the bot and see its 13x13 range grid in real time.",
     "whatIBuilt": [
       "CFR+ trainer with external sampling MCCFR, immutable game states, and per-iteration bucket caching for speed",
-      "two-level card abstraction: k-means on preflop equity (169 hands to 10 buckets) and percentile CDF on postflop hand strength",
-      "action abstraction with 50% and 100% pot bet sizings, fold/check/call, all-in, and a 4-raise-per-street cap",
+      "card abstraction: heads-up, all 169 preflop hands keep a bucket of their own; flop and turn hands are clustered by earth mover's distance over where their strength can go, and river hands by OCHS, strength against clusters of opponent hands",
+      "action abstraction with 75%, 100% and 175% pot preflop, up to five geometric sizes postflop from a small blocking bet to an overbet, fold/check/call, all-in, and a 4-raise-per-street cap",
       "fastapi server with session management, bot inference, and a 13x13 range grid API for the frontend"
     ],
     "howItWorks": [
@@ -640,7 +639,6 @@
       "once training finishes, compress the averaged strategy to JSON and serve it via fastapi for live play"
     ],
     "nextSteps": [
-      "add variance reduction techniques like pruning and warm starting",
       "expand action abstraction with more bet sizings and raise depths"
     ],
     "coverArt": {
@@ -665,17 +663,7 @@
       "size": "small",
       "order": 3,
       "line": "CFR+ solver for no-limit hold'em"
-    },
-    "metrics": [
-      {
-        "value": "100,000",
-        "label": "CFR+ iterations per training run, by default",
-        "source": {
-          "label": "config.py",
-          "href": "https://github.com/seanpatrickmay/PokerML/blob/main/config.py#L61"
-        }
-      }
-    ]
+    }
   },
   {
     "title": "Hex Reversi",
@@ -864,7 +852,7 @@
         "value": "76",
         "label": "feature articles across those wikis",
         "source": {
-          "label": "wiki exports, 2026-10-10",
+          "label": "the six wikis' export.json, 2026-10-10",
           "href": "https://seanpatrickmay.me/wiki/"
         }
       },
@@ -872,7 +860,7 @@
         "value": "2,329",
         "label": "citations to code lines or commits across those articles",
         "source": {
-          "label": "wiki exports, 2026-10-10",
+          "label": "the six wikis' export.json, 2026-10-10",
           "href": "https://seanpatrickmay.me/wiki/"
         }
       }
@@ -995,7 +983,7 @@
       },
       {
         "value": "0.585",
-        "label": "win rate over 800 games against three Catanatron bots, where an even share is 0.25",
+        "label": "win rate over 800 games against three Catanatron alpha-beta bots (even share: 0.25)",
         "source": {
           "label": "docs/bot/results-3b.md",
           "href": "https://github.com/seanpatrickmay/AlphaSettler/blob/main/docs/bot/results-3b.md"
