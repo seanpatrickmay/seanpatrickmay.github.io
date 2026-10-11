@@ -3,7 +3,7 @@ name: Deploy Portfolio to GitHub Pages
 on:
   schedule:
     # Backstop only: each refresh already triggers a deploy on success via
-    # workflow_run. This runs after the whole staggered chain (13:00-13:24)
+    # workflow_run. This runs after the whole staggered chain (13:00-13:32)
     # so it publishes fresh data rather than racing it.
     - cron: "40 13 * * *"
   push:

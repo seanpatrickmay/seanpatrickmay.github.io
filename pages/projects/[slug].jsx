@@ -5,7 +5,7 @@ import rawWikis from '@/public/wikis.json' assert { type: 'json' };
 import { validateProjects } from '@/lib/projects';
 import { assertValidDeepDives, DEEP_DIVE_LABELS, MAX_STACK_CHIPS, overviewText } from '@/lib/deepDive';
 import { sortProjectLinks } from '@/lib/projectDisplay';
-import { resolveWikiMetrics } from '@/lib/wikiStrip';
+import { highlightsFor, resolveWikiMetrics } from '@/lib/wikiStrip';
 import { getStaleness } from '@/lib/freshness';
 import ProjectPageHeader from '@/components/ProjectPageHeader';
 import PillLink from '@/components/ui/PillLink';
@@ -32,7 +32,9 @@ export async function getStaticProps({ params }) {
   // RepoWiki's totals are filled from wikis.json here, so the page and the
   // build gate see the same numbers.
   const project = raw ? resolveWikiMetrics(raw, rawWikis) : null;
-  const wiki = (raw?.wiki && rawWikis.wikis?.[raw.wiki.slug]) || null;
+  const entry = (raw?.wiki && rawWikis.wikis?.[raw.wiki.slug]) || null;
+  // wikis.json only changes when the daily feed runs, so the strip takes its highlights from the ids projects.json names now.
+  const wiki = entry && { ...entry, highlights: highlightsFor(entry, raw.wiki.highlight) };
   return { props: { project, wiki, wikiStaleness: wiki ? getStaleness(wiki.fetchedAt) : null } };
 }
 
