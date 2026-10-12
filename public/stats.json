@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T13:23:07.442254Z",
+  "generated_at": "2026-10-12T01:23:12.579992Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,14 +9,24 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 41,
-        "distance_km": 235.39,
-        "time_hours": 33.28,
+        "activities_count": 42,
+        "distance_km": 248.3,
+        "time_hours": 34.28,
         "longest_km": 26.01,
-        "calories_kcal": 28197.0
+        "calories_kcal": 29159.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 24691573155,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-10-11 19:03:01",
+            "distance_km": 12.91,
+            "duration_min": 60.1,
+            "avg_speed_kmh": 12.88,
+            "calories_kcal": 962.0
+          },
           {
             "id": 24667981496,
             "name": "Indoor Cycling",
@@ -606,16 +616,6 @@
             "duration_min": 25.8,
             "avg_speed_kmh": 11.61,
             "calories_kcal": 401.0
-          },
-          {
-            "id": 24229703758,
-            "name": "Boston Running",
-            "type": "running",
-            "start": "2026-09-03 20:47:48",
-            "distance_km": 1.53,
-            "duration_min": 7.4,
-            "avg_speed_kmh": 12.4,
-            "calories_kcal": 123.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2026-10-05",
             "week_end": "2026-10-11",
-            "distance_km": 26.14,
-            "time_hours": 4.36,
-            "calories_kcal": 3655.0
+            "distance_km": 39.05,
+            "time_hours": 5.36,
+            "calories_kcal": 4617.0
           }
         ]
       }
@@ -1059,14 +1059,24 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 17,
-        "distance_km": 205.28,
-        "time_hours": 15.85,
+        "activities_count": 18,
+        "distance_km": 218.19,
+        "time_hours": 16.85,
         "longest_km": 26.01,
-        "calories_kcal": 15559.0
+        "calories_kcal": 16521.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 24691573155,
+            "name": "Treadmill Running",
+            "type": "treadmill_running",
+            "start": "2026-10-11 19:03:01",
+            "distance_km": 12.91,
+            "duration_min": 60.1,
+            "avg_speed_kmh": 12.88,
+            "calories_kcal": 962.0
+          },
           {
             "id": 24657118632,
             "name": "Treadmill Running",
@@ -1604,9 +1614,9 @@
           {
             "week_start": "2026-10-05",
             "week_end": "2026-10-11",
-            "distance_km": 22.5,
-            "time_hours": 1.65,
-            "calories_kcal": 1536.0
+            "distance_km": 35.41,
+            "time_hours": 2.65,
+            "calories_kcal": 2498.0
           }
         ]
       }
@@ -1621,18 +1631,7 @@
         "calories_kcal": 0
       },
       "recent": {
-        "last60": [
-          {
-            "id": 23929921534,
-            "name": "Shenandoah County Open Water Swimming",
-            "type": "open_water_swimming",
-            "start": "2026-08-09 13:14:56",
-            "distance_km": 0.17,
-            "duration_min": 4.5,
-            "avg_speed_kmh": 2.24,
-            "calories_kcal": 64.0
-          }
-        ]
+        "last60": []
       },
       "weekly": {
         "window_weeks": 8,
