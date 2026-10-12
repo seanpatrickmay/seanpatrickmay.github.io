@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T17:53:06.311Z",
+  "generated_at": "2026-10-12T21:31:57.831Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -18,14 +18,14 @@
       "url": "https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH"
     },
     {
-      "name": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab6761610000f1789f6f7c2d12975d2a4b3a0fd8",
-      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
-    },
-    {
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000f178eefa05f0b8fcafd4beb19d31",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+    },
+    {
+      "name": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab6761610000f1789f6f7c2d12975d2a4b3a0fd8",
+      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
       "name": "Post Malone",
@@ -48,9 +48,9 @@
       "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
     },
     {
-      "name": "The Smiths",
-      "image": "https://i.scdn.co/image/bd4c7f5ff2c5c4385604e60c71eac1dd498ddbd9",
-      "url": "https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8"
+      "name": "Enrique Iglesias",
+      "image": "https://i.scdn.co/image/ab6761610000f1784fa1405802a42c665b0f2dd1",
+      "url": "https://open.spotify.com/artist/7qG3b048QCHVRO5Pv1T5lw"
     }
   ],
   "genres": [
@@ -68,15 +68,15 @@
     },
     {
       "name": "classical",
-      "share": 92
-    },
-    {
-      "name": "classical piano",
-      "share": 44
+      "share": 90
     },
     {
       "name": "edm",
-      "share": 40
+      "share": 50
+    },
+    {
+      "name": "classical piano",
+      "share": 43
     }
   ],
   "tracks": [
@@ -103,12 +103,6 @@
       "artist": "Dmitri Shostakovich, Tasmin Little, Piers Lane",
       "image": "https://i.scdn.co/image/ab67616d00001e0216904029c31ca50916e3116a",
       "url": "https://open.spotify.com/track/7c8EKQLv5ld1uWm1BdGqds"
-    },
-    {
-      "name": "You Rock My World",
-      "artist": "Michael Jackson",
-      "image": "https://i.scdn.co/image/ab67616d00001e026c1748b440eb462a19f24eec",
-      "url": "https://open.spotify.com/track/3T59S3Vh3DOatsmTD8clqP"
     },
     {
       "name": "Bailando - Spanish Version",
@@ -139,6 +133,12 @@
       "artist": "Kid Cudi",
       "image": "https://i.scdn.co/image/ab67616d00001e02a487deeecb334b6619489d74",
       "url": "https://open.spotify.com/track/3Ygy1L8ABabUA7MwoOLiPM"
+    },
+    {
+      "name": "Reborn",
+      "artist": "KIDS SEE GHOSTS",
+      "image": "https://i.scdn.co/image/ab67616d00001e02013c00ee367dd85396f79c82",
+      "url": "https://open.spotify.com/track/4RVbK6cV0VqWdpCDcx3hiT"
     }
   ]
 }
