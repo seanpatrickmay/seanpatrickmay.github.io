@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T01:23:12.579992Z",
+  "generated_at": "2026-10-12T13:23:06.931791Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -9,11 +9,11 @@
     "combined": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 42,
-        "distance_km": 248.3,
-        "time_hours": 34.28,
+        "activities_count": 38,
+        "distance_km": 238.81,
+        "time_hours": 32.97,
         "longest_km": 26.01,
-        "calories_kcal": 29159.0
+        "calories_kcal": 28012.0
       },
       "recent": {
         "last60": [
@@ -623,13 +623,6 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2026-08-17",
-            "week_end": "2026-08-23",
-            "distance_km": 113.82,
-            "time_hours": 13.26,
-            "calories_kcal": 7944.0
-          },
-          {
             "week_start": "2026-08-24",
             "week_end": "2026-08-30",
             "distance_km": 102.97,
@@ -677,6 +670,13 @@
             "distance_km": 39.05,
             "time_hours": 5.36,
             "calories_kcal": 4617.0
+          },
+          {
+            "week_start": "2026-10-12",
+            "week_end": "2026-10-18",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -684,11 +684,11 @@
     "biking": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 12,
+        "activities_count": 11,
         "distance_km": 0.0,
-        "time_hours": 9.15,
+        "time_hours": 8.65,
         "longest_km": 0.0,
-        "calories_kcal": 6961.0
+        "calories_kcal": 6562.0
       },
       "recent": {
         "last60": [
@@ -998,13 +998,6 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2026-08-17",
-            "week_end": "2026-08-23",
-            "distance_km": 44.34,
-            "time_hours": 3.06,
-            "calories_kcal": 2625.0
-          },
-          {
             "week_start": "2026-08-24",
             "week_end": "2026-08-30",
             "distance_km": 48.16,
@@ -1052,6 +1045,13 @@
             "distance_km": 0.0,
             "time_hours": 1.18,
             "calories_kcal": 890.0
+          },
+          {
+            "week_start": "2026-10-12",
+            "week_end": "2026-10-18",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -1059,11 +1059,11 @@
     "running": {
       "monthly": {
         "window_days": 30,
-        "activities_count": 18,
-        "distance_km": 218.19,
-        "time_hours": 16.85,
+        "activities_count": 15,
+        "distance_km": 208.7,
+        "time_hours": 16.04,
         "longest_km": 26.01,
-        "calories_kcal": 16521.0
+        "calories_kcal": 15773.0
       },
       "recent": {
         "last60": [
@@ -1563,13 +1563,6 @@
         "window_weeks": 8,
         "series": [
           {
-            "week_start": "2026-08-17",
-            "week_end": "2026-08-23",
-            "distance_km": 41.59,
-            "time_hours": 4.05,
-            "calories_kcal": 3242.0
-          },
-          {
             "week_start": "2026-08-24",
             "week_end": "2026-08-30",
             "distance_km": 54.81,
@@ -1617,6 +1610,13 @@
             "distance_km": 35.41,
             "time_hours": 2.65,
             "calories_kcal": 2498.0
+          },
+          {
+            "week_start": "2026-10-12",
+            "week_end": "2026-10-18",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
           }
         ]
       }
@@ -1636,13 +1636,6 @@
       "weekly": {
         "window_weeks": 8,
         "series": [
-          {
-            "week_start": "2026-08-17",
-            "week_end": "2026-08-23",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
-          },
           {
             "week_start": "2026-08-24",
             "week_end": "2026-08-30",
@@ -1688,6 +1681,13 @@
           {
             "week_start": "2026-10-05",
             "week_end": "2026-10-11",
+            "distance_km": 0.0,
+            "time_hours": 0.0,
+            "calories_kcal": 0.0
+          },
+          {
+            "week_start": "2026-10-12",
+            "week_end": "2026-10-18",
             "distance_km": 0.0,
             "time_hours": 0.0,
             "calories_kcal": 0.0
