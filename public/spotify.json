@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T21:31:57.831Z",
+  "generated_at": "2026-10-13T19:43:09.216Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -8,24 +8,19 @@
       "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
     },
     {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000f178d3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
-    },
-    {
       "name": "Billie Eilish",
       "image": "https://i.scdn.co/image/ab6761610000f1784a21b4760d2ecb7b0dcdc8da",
       "url": "https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH"
     },
     {
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000f178d3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+    },
+    {
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000f178eefa05f0b8fcafd4beb19d31",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
-    {
-      "name": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab6761610000f1789f6f7c2d12975d2a4b3a0fd8",
-      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
       "name": "Post Malone",
@@ -38,6 +33,11 @@
       "url": "https://open.spotify.com/artist/2hPgGN4uhvXAxiXQBIXOmE"
     },
     {
+      "name": "Enrique Iglesias",
+      "image": "https://i.scdn.co/image/ab6761610000f1784fa1405802a42c665b0f2dd1",
+      "url": "https://open.spotify.com/artist/7qG3b048QCHVRO5Pv1T5lw"
+    },
+    {
       "name": "Yo-Yo Ma",
       "image": "https://i.scdn.co/image/ab6761610000f178fb0fcd51414e7bbe85e00b6f",
       "url": "https://open.spotify.com/artist/5Dl3HXZjG6ZOWT5cV375lk"
@@ -48,35 +48,35 @@
       "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
     },
     {
-      "name": "Enrique Iglesias",
-      "image": "https://i.scdn.co/image/ab6761610000f1784fa1405802a42c665b0f2dd1",
-      "url": "https://open.spotify.com/artist/7qG3b048QCHVRO5Pv1T5lw"
+      "name": "Stromae",
+      "image": "https://i.scdn.co/image/ab6761610000f178cc129f1c9b5047760d66aae2",
+      "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
     }
   ],
   "genres": [
     {
-      "name": "french house",
+      "name": "classical",
       "share": 100
+    },
+    {
+      "name": "french house",
+      "share": 78
     },
     {
       "name": "electronic",
-      "share": 100
+      "share": 78
     },
     {
       "name": "electro",
-      "share": 100
-    },
-    {
-      "name": "classical",
-      "share": 90
+      "share": 78
     },
     {
       "name": "edm",
-      "share": 50
+      "share": 59
     },
     {
       "name": "classical piano",
-      "share": 43
+      "share": 52
     }
   ],
   "tracks": [
@@ -93,16 +93,16 @@
       "url": "https://open.spotify.com/track/7dJN4NWQuqCjWwIT3UwOps"
     },
     {
-      "name": "Earrings",
-      "artist": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab67616d00001e022c1f34ecc1929fb59908aad1",
-      "url": "https://open.spotify.com/track/0eAuGrXyGFYwur9ARUe7LJ"
+      "name": "Wallflower",
+      "artist": "Dominic Fike",
+      "image": "https://i.scdn.co/image/ab67616d00001e02dcd778710b50cde4e3777844",
+      "url": "https://open.spotify.com/track/0IeBxP5BlIH2BDhQYVsRq3"
     },
     {
-      "name": "Shostakovich / Arr. Atovmyan: Suite from the Gadfly, Op. 97a: VIII. Romance",
-      "artist": "Dmitri Shostakovich, Tasmin Little, Piers Lane",
-      "image": "https://i.scdn.co/image/ab67616d00001e0216904029c31ca50916e3116a",
-      "url": "https://open.spotify.com/track/7c8EKQLv5ld1uWm1BdGqds"
+      "name": "So Cold",
+      "artist": "Balu Brigada",
+      "image": "https://i.scdn.co/image/ab67616d00001e021fc8017bbf246da18b953789",
+      "url": "https://open.spotify.com/track/2SGyf0hCuB81F85cHXuRjl"
     },
     {
       "name": "Bailando - Spanish Version",
@@ -115,6 +115,12 @@
       "artist": "Daft Punk, Paul Williams",
       "image": "https://i.scdn.co/image/ab67616d00001e024d22198f946d9b32f25fc263",
       "url": "https://open.spotify.com/track/6jmvJ2cUbImtirxo8U5Qb9"
+    },
+    {
+      "name": "Relax, Take It Easy",
+      "artist": "MIKA",
+      "image": "https://i.scdn.co/image/ab67616d00001e029b9a3105ad4ffb91ad2e2798",
+      "url": "https://open.spotify.com/track/5msFXipAG1CsK92OakSAbS"
     },
     {
       "name": "The Carnival of the Animals, R. 125: XIII. The Swan (Arr. for Cello and Piano)",
@@ -133,12 +139,6 @@
       "artist": "Kid Cudi",
       "image": "https://i.scdn.co/image/ab67616d00001e02a487deeecb334b6619489d74",
       "url": "https://open.spotify.com/track/3Ygy1L8ABabUA7MwoOLiPM"
-    },
-    {
-      "name": "Reborn",
-      "artist": "KIDS SEE GHOSTS",
-      "image": "https://i.scdn.co/image/ab67616d00001e02013c00ee367dd85396f79c82",
-      "url": "https://open.spotify.com/track/4RVbK6cV0VqWdpCDcx3hiT"
     }
   ]
 }
