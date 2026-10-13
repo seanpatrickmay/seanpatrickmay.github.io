@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T01:23:11.947575Z",
+  "generated_at": "2026-10-13T13:25:24.687859Z",
   "profile": {
     "displayName": null,
     "fullName": null,
@@ -10,13 +10,33 @@
       "monthly": {
         "window_days": 30,
         "activities_count": 38,
-        "distance_km": 238.81,
-        "time_hours": 32.97,
+        "distance_km": 236.25,
+        "time_hours": 31.64,
         "longest_km": 26.01,
-        "calories_kcal": 28012.0
+        "calories_kcal": 27009.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 24704141856,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-10-12 22:40:57",
+            "distance_km": 0.0,
+            "duration_min": 10.5,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 151.0
+          },
+          {
+            "id": 24704141841,
+            "name": "Walking",
+            "type": "walking",
+            "start": "2026-10-12 22:09:58",
+            "distance_km": 3.6,
+            "duration_min": 30.0,
+            "avg_speed_kmh": 7.19,
+            "calories_kcal": 404.0
+          },
           {
             "id": 24691573155,
             "name": "Treadmill Running",
@@ -596,26 +616,6 @@
             "duration_min": 9.7,
             "avg_speed_kmh": 9.66,
             "calories_kcal": 144.0
-          },
-          {
-            "id": 24229954877,
-            "name": "Indoor Cycling",
-            "type": "indoor_cycling",
-            "start": "2026-09-03 21:26:40",
-            "distance_km": 0.0,
-            "duration_min": 20.1,
-            "avg_speed_kmh": 0.0,
-            "calories_kcal": 302.0
-          },
-          {
-            "id": 24229853216,
-            "name": "Treadmill Running",
-            "type": "treadmill_running",
-            "start": "2026-09-03 20:57:52",
-            "distance_km": 5.0,
-            "duration_min": 25.8,
-            "avg_speed_kmh": 11.61,
-            "calories_kcal": 401.0
           }
         ]
       },
@@ -674,9 +674,9 @@
           {
             "week_start": "2026-10-12",
             "week_end": "2026-10-18",
-            "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
+            "distance_km": 3.6,
+            "time_hours": 0.68,
+            "calories_kcal": 555.0
           }
         ]
       }
@@ -686,12 +686,22 @@
         "window_days": 30,
         "activities_count": 11,
         "distance_km": 0.0,
-        "time_hours": 8.65,
+        "time_hours": 7.82,
         "longest_km": 0.0,
-        "calories_kcal": 6562.0
+        "calories_kcal": 5906.0
       },
       "recent": {
         "last60": [
+          {
+            "id": 24704141856,
+            "name": "Indoor Cycling",
+            "type": "indoor_cycling",
+            "start": "2026-10-12 22:40:57",
+            "distance_km": 0.0,
+            "duration_min": 10.5,
+            "avg_speed_kmh": 0.0,
+            "calories_kcal": 151.0
+          },
           {
             "id": 24667981496,
             "name": "Indoor Cycling",
@@ -981,16 +991,6 @@
             "duration_min": 31.4,
             "avg_speed_kmh": 24.73,
             "calories_kcal": 497.0
-          },
-          {
-            "id": 23929922553,
-            "name": "Shenandoah County Cycling",
-            "type": "cycling",
-            "start": "2026-08-10 12:49:28",
-            "distance_km": 30.47,
-            "duration_min": 94.3,
-            "avg_speed_kmh": 19.39,
-            "calories_kcal": 884.0
           }
         ]
       },
@@ -1050,8 +1050,8 @@
             "week_start": "2026-10-12",
             "week_end": "2026-10-18",
             "distance_km": 0.0,
-            "time_hours": 0.0,
-            "calories_kcal": 0.0
+            "time_hours": 0.18,
+            "calories_kcal": 151.0
           }
         ]
       }
@@ -1546,16 +1546,6 @@
             "duration_min": 87.4,
             "avg_speed_kmh": 10.71,
             "calories_kcal": 1362.0
-          },
-          {
-            "id": 23929922172,
-            "name": "Shenandoah County Running",
-            "type": "running",
-            "start": "2026-08-09 18:20:53",
-            "distance_km": 4.33,
-            "duration_min": 22.6,
-            "avg_speed_kmh": 11.52,
-            "calories_kcal": 375.0
           }
         ]
       },
