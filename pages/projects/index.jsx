@@ -32,6 +32,12 @@ export default function ProjectsPage({ boardProjects }) {
           name="description"
           content="Projects by Sean May: systems that run in production and models that think, from a quant data pipeline to a Catan engine in Rust."
         />
+        <link key="canonical" rel="canonical" href="https://seanpatrickmay.me/projects/" />
+        <meta key="og:title" property="og:title" content="Projects — Sean P. May" />
+        <meta key="og:description" property="og:description" content="Systems, AI, data, and product projects by Sean May." />
+        <meta key="og:url" property="og:url" content="https://seanpatrickmay.me/projects/" />
+        <meta key="twitter:title" name="twitter:title" content="Projects — Sean P. May" />
+        <meta key="twitter:description" name="twitter:description" content="Systems, AI, data, and product projects by Sean May." />
       </Head>
       <ProjectPageHeader />
 

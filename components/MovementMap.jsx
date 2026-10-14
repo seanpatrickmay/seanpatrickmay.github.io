@@ -1,7 +1,8 @@
 import { useCallback, useState } from 'react';
 import dynamic from 'next/dynamic';
 import PinCard from '@/components/PinCard';
-import { MOVEMENT_PINS, movementTotals } from '@/lib/mapData';
+import { MOVEMENT_GENERATED_AT, MOVEMENT_PINS, movementTotals } from '@/lib/mapData';
+import { useNearViewport } from '@/hooks/useNearViewport';
 
 // react-simple-maps pulls topojson at runtime, so it renders client-side only
 // — same as the experience map.
@@ -24,6 +25,7 @@ const TOP_PLACES = 6;
  */
 export default function MovementMap() {
   const [activePin, setActivePin] = useState(null);
+  const [mapRef, mapNear] = useNearViewport();
   const totals = movementTotals();
 
   const handleHover = useCallback(pin => setActivePin(pin), []);
@@ -35,6 +37,11 @@ export default function MovementMap() {
   if (MOVEMENT_PINS.length === 0) return null;
 
   const topPlaces = [...MOVEMENT_PINS].sort((a, b) => b.weight - a.weight).slice(0, TOP_PLACES);
+  const generated = MOVEMENT_GENERATED_AT ? new Date(MOVEMENT_GENERATED_AT) : null;
+  const generatedLabel =
+    generated && !Number.isNaN(generated.getTime())
+      ? generated.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })
+      : null;
 
   return (
     <PinCard rotation={-0.6} pinColor="teal">
@@ -49,6 +56,11 @@ export default function MovementMap() {
             {totals.since ? ` · since ${totals.since}` : ''}
           </div>
         </div>
+        {generatedLabel && (
+          <p className="mt-1 text-[10px] text-slate-500 dark:text-slate-400">
+            map data refreshed {generatedLabel}; coordinates are coarse place-level aggregates.
+          </p>
+        )}
 
         {/* Sport mix, which is also the map's legend — it is the quickest way
             to see that this is not just running. */}
@@ -67,16 +79,22 @@ export default function MovementMap() {
           )}
         </div>
 
-        <div className="relative mt-3">
-          <PinMap
-            pins={MOVEMENT_PINS}
-            activePin={activePin}
-            onPinHover={handleHover}
-            onPinClick={handleClick}
-            useInset={false}
-            showThread={false}
-            variant="plain"
-          />
+        <div ref={mapRef} className="relative mt-3">
+          {mapNear ? (
+            <PinMap
+              pins={MOVEMENT_PINS}
+              activePin={activePin}
+              onPinHover={handleHover}
+              onPinClick={handleClick}
+              useInset={false}
+              showThread={false}
+              variant="plain"
+            />
+          ) : (
+            <div className="plain-frame flex min-h-[320px] items-center justify-center rounded-xl text-sm text-stone-600 dark:text-stone-300">
+              movement map loads when visible
+            </div>
+          )}
 
           {/* Cartouche, bottom-right, where a chart puts its scale. The map
               plots 553 activities; the distance counts all 1,751, so the
@@ -127,6 +145,29 @@ export default function MovementMap() {
             );
           })}
         </div>
+
+        <details className="mt-3 rounded-sm border border-stone-200/70 bg-white/45 px-3 py-2 text-xs text-stone-600 dark:border-stone-700/70 dark:bg-stone-900/35 dark:text-stone-300">
+          <summary className="cursor-pointer font-semibold text-stone-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-500 dark:text-stone-200">
+            list all mapped places
+          </summary>
+          <ol className="mt-2 grid gap-1 sm:grid-cols-2 lg:grid-cols-3">
+            {[...MOVEMENT_PINS].sort((a, b) => b.weight - a.weight).map(pin => (
+              <li key={pin.org}>
+                <button
+                  type="button"
+                  onClick={() => handleClick(pin)}
+                  className="w-full rounded px-1.5 py-1 text-left transition hover:bg-stone-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-500 dark:hover:bg-stone-800"
+                >
+                  <span className="font-medium">{pin.org}</span>{' '}
+                  <span className="text-stone-500 dark:text-stone-400">
+                    {pin.role}
+                    {pin.period ? ` · ${pin.period}` : ''}
+                  </span>
+                </button>
+              </li>
+            ))}
+          </ol>
+        </details>
       </div>
     </PinCard>
   );

@@ -1,4 +1,5 @@
 import ThemeToggle from '@/components/ThemeToggle';
+import MotionPauseToggle from '@/components/MotionPauseToggle';
 import SidebarTimeline from '@/components/SidebarTimeline';
 import PinCard from '@/components/PinCard';
 import { Github, Linkedin, Mail } from 'lucide-react';
@@ -26,7 +27,10 @@ export default function Sidebar({ links, timeline = { current: [], past: [] } })
                 >
                   Sean P. May
                 </a>
-                <ThemeToggle />
+                <div className="flex items-center gap-2">
+                  <MotionPauseToggle compact />
+                  <ThemeToggle />
+                </div>
               </div>
               <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
                 i write code and do math
@@ -71,6 +75,27 @@ export default function Sidebar({ links, timeline = { current: [], past: [] } })
                     LinkedIn
                   </a>
                 </div>
+                <nav aria-label="Section navigation" className="mt-4 border-t border-stone-200 pt-4 dark:border-stone-700">
+                  <div className="mb-2 text-[10px] font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
+                    jump to
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      ['projects', 'projects'],
+                      ['about', 'about'],
+                      ['experience', 'map'],
+                      ['contact', 'contact'],
+                    ].map(([id, label]) => (
+                      <a
+                        key={id}
+                        href={`#${id}`}
+                        className="rounded-full bg-stone-100 px-2.5 py-1 text-xs font-medium text-stone-600 transition hover:bg-white hover:text-teal-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-500 dark:bg-stone-800 dark:text-stone-300 dark:hover:bg-stone-700 dark:hover:text-teal-300"
+                      >
+                        {label}
+                      </a>
+                    ))}
+                  </div>
+                </nav>
               </div>
             </section>
           </PinCard>

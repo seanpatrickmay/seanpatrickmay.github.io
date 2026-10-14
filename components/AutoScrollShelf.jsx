@@ -39,6 +39,7 @@ export default function AutoScrollShelf({
   const userActiveUntilRef = useRef(0);
   const dragRef = useRef({ active: false, startX: 0, startOffset: 0, moved: false });
   const startTsRef = useRef(0);
+  const visibleRef = useRef(true);
 
   const [copies, setCopies] = useState(MIN_COPIES);
   const [overflows, setOverflows] = useState(false);
@@ -124,7 +125,8 @@ export default function AutoScrollShelf({
       const dwellOver = ts - startTsRef.current >= startDelayMs;
 
       const userActive = performance.now() < userActiveUntilRef.current;
-      if (dwellOver && !pausedHoverRef.current && !userActive && !dragRef.current.active && setWidth > 0) {
+      const motionPaused = document.documentElement.classList.contains('motion-paused');
+      if (visibleRef.current && dwellOver && !motionPaused && !pausedHoverRef.current && !userActive && !dragRef.current.active && setWidth > 0) {
         offsetRef.current = (offsetRef.current + dt * pxPerMs) % setWidth;
       }
 
@@ -149,12 +151,22 @@ export default function AutoScrollShelf({
     container.addEventListener('focusin', pause);
     container.addEventListener('focusout', resume);
 
+    let io = null;
+    if (typeof IntersectionObserver === 'function') {
+      io = new IntersectionObserver(entries => {
+        visibleRef.current = entries.some(entry => entry.isIntersecting);
+        lastTsRef.current = 0;
+      });
+      io.observe(container);
+    }
+
     return () => {
       cancelAnimationFrame(rafRef.current);
       container.removeEventListener('mouseenter', pause);
       container.removeEventListener('mouseleave', resume);
       container.removeEventListener('focusin', pause);
       container.removeEventListener('focusout', resume);
+      io?.disconnect();
     };
   }, [items.length, speed, startDelayMs, resumeDelayMs, overflows, copies]);
 

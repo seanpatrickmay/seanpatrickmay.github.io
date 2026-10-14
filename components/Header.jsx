@@ -1,10 +1,12 @@
 import ThemeToggle from '@/components/ThemeToggle';
+import MotionPauseToggle from '@/components/MotionPauseToggle';
 
 const navItems = [
   { id: 'home', label: 'home' },
   { id: 'projects', label: 'projects' },
   { id: 'about', label: 'about me' },
   { id: 'experience', label: 'work' },
+  { id: 'contact', label: 'contact' },
 ];
 
 /**
@@ -21,6 +23,7 @@ export default function Header() {
           sean p. may
         </a>
         <div className="flex items-center gap-2">
+          <MotionPauseToggle compact />
           <ThemeToggle />
         </div>
       </div>

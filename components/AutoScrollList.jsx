@@ -41,6 +41,7 @@ export default function AutoScrollList({
   const lastSetContainerHRef = useRef(0);
   const startTsRef = useRef(0);
   const topFadedRef = useRef(false);
+  const visibleRef = useRef(true);
 
   // Compute arrays but DO NOT early-return before hooks
   const top10 = items.slice(0, 10);
@@ -138,11 +139,12 @@ export default function AutoScrollList({
 
       const now = performance.now();
       const userActive = now < userActiveUntilRef.current;
+      const motionPaused = document.documentElement.classList.contains('motion-paused');
 
       if (!startTsRef.current) startTsRef.current = ts;
       const dwellOver = ts - startTsRef.current >= startDelayMs;
 
-      if (dwellOver && !pausedHoverRef.current && !userActive && oneH > 0) {
+      if (visibleRef.current && dwellOver && !motionPaused && !pausedHoverRef.current && !userActive && oneH > 0) {
         offsetRef.current += dt * pxPerMs;
         if (offsetRef.current >= oneH) {
           // wrap with modulo to handle long idle gaps
@@ -169,11 +171,25 @@ export default function AutoScrollList({
 
     container.addEventListener("mouseenter", pauseOnHover);
     container.addEventListener("mouseleave", resumeAfterHover);
+    container.addEventListener("focusin", pauseOnHover);
+    container.addEventListener("focusout", resumeAfterHover);
+
+    let io = null;
+    if (typeof IntersectionObserver === 'function') {
+      io = new IntersectionObserver(entries => {
+        visibleRef.current = entries.some(entry => entry.isIntersecting);
+        lastTsRef.current = 0;
+      });
+      io.observe(container);
+    }
 
     return () => {
       cancelAnimationFrame(rafRef.current);
       container.removeEventListener("mouseenter", pauseOnHover);
       container.removeEventListener("mouseleave", resumeAfterHover);
+      container.removeEventListener("focusin", pauseOnHover);
+      container.removeEventListener("focusout", resumeAfterHover);
+      io?.disconnect();
     };
   }, [top10.length, speed, startDelayMs, resumeDelayMs]);
 

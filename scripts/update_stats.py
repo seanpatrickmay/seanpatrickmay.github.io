@@ -51,10 +51,6 @@ OUT_PATH = Path(os.getenv("GARMIN_OUT", "public/stats.json"))
 
 # How much history for weekly series (in weeks):
 WEEKLY_WINDOW = 8
-# Monthly window for totals (in days):
-MONTHLY_WINDOW_DAYS = 30
-# How many recent activities to include:
-RECENT_COUNT = 60
 # How many activities to ask for per page when paging the Garmin API:
 FETCH_PAGE_SIZE = int(os.getenv("GARMIN_FETCH_PAGE_SIZE", "100"))
 # Hard ceiling to keep API usage bounded:
@@ -228,20 +224,6 @@ def week_key(dt: datetime) -> Tuple[str, str]:
     return monday.date().isoformat(), sunday.date().isoformat()
 
 
-def existing_profile() -> Optional[Dict[str, Any]]:
-    """Read the previously-saved profile block, if any.
-
-    get_user_profile() can return nulls on some garminconnect/garth versions; we
-    don't want a refresh to wipe a good profile, so we fall back to the last one.
-    """
-    try:
-        with open(OUT_PATH, "r", encoding="utf-8") as f:
-            prof = (json.load(f) or {}).get("profile") or None
-        return prof if prof and any(prof.values()) else None
-    except (OSError, ValueError):
-        return None
-
-
 # ---------------------------- Main -------------------------------------------
 
 def main() -> None:
@@ -249,24 +231,13 @@ def main() -> None:
 
     today = date.today()
     today_dt = datetime.combine(today, datetime.min.time(), tzinfo=timezone.utc)
-    start_month = today_dt - timedelta(days=MONTHLY_WINDOW_DAYS)
     cutoff_weekly = today_dt - timedelta(weeks=WEEKLY_WINDOW)
-
-    # Profile (preserve the last good one if the endpoint returns nulls)
-    profile = client.get_user_profile() or {}
-    new_profile = {
-        "displayName": profile.get("displayName"),
-        "fullName": profile.get("fullName"),
-        "userId": profile.get("userId"),
-    }
-    if not any(new_profile.values()):
-        new_profile = existing_profile() or new_profile
 
     # Get a window of activities
     def fetch_activities(cutoff: datetime) -> List[Dict[str, Any]]:
         """
         Page through Garmin activities until we have data that predates the cutoff
-        (covers both monthly + weekly windows) or we hit the configured FETCH_MAX.
+        (covers the weekly window) or we hit the configured FETCH_MAX.
         """
         activities: List[Dict[str, Any]] = []
         start = 0
@@ -295,8 +266,7 @@ def main() -> None:
 
         return activities
 
-    cutoff = min(start_month, cutoff_weekly)
-    activities: List[Dict[str, Any]] = fetch_activities(cutoff)
+    activities: List[Dict[str, Any]] = fetch_activities(cutoff_weekly)
 
     # Categorize activities into sport types
     SPORT_TYPES = {
@@ -327,59 +297,13 @@ def main() -> None:
                 return sport
         return None
 
-    # ----- Last 3 activities
-    def start_key(a: Dict[str, Any]) -> datetime:
-        d = parse_dt(a.get("startTimeLocal") or a.get("startTimeGMT"))
-        return d or datetime.min.replace(tzinfo=timezone.utc)
-
-    activities_sorted = sorted(activities, key=start_key, reverse=True)
-
     stats_by_type: Dict[str, Dict[str, Any]] = {}
 
-    for sport in ["combined", "biking", "running", "swimming"]:
+    for sport in ["combined", "biking", "running"]:
         if sport == "combined":
             acts = activities
         else:
             acts = [a for a in activities if sport_of(a) == sport]
-
-        # Monthly aggregates
-        last30: List[Dict[str, Any]] = []
-        for a in acts:
-            start = parse_dt(a.get("startTimeLocal") or a.get("startTimeGMT"))
-            if start and start >= start_month:
-                last30.append(a)
-
-        total_m = sum(meters(a) for a in last30)
-        total_s = sum(seconds(a) for a in last30)
-        total_calories = sum(calories(a) for a in last30)
-
-        monthly = {
-            "window_days": MONTHLY_WINDOW_DAYS,
-            "activities_count": len(last30),
-            "distance_km": round(total_m / 1000.0, 2),
-            "time_hours": round(total_s / 3600.0, 2),
-            "longest_km": round(max([meters(a) for a in last30] + [0.0]) / 1000.0, 2),
-            "calories_kcal": round(total_calories, 1),
-        }
-
-        # Last N activities
-        acts_sorted = [a for a in activities_sorted if a in acts]
-        lastn = acts_sorted[:RECENT_COUNT]
-        recent_lastn = []
-        for a in lastn:
-            m = meters(a)
-            dur = seconds(a)
-            cal = calories(a)
-            recent_lastn.append({
-                "id": a.get("activityId"),
-                "name": a.get("activityName"),
-                "type": activity_type(a),
-                "start": a.get("startTimeLocal") or a.get("startTimeGMT"),
-                "distance_km": round(m / 1000.0, 2),
-                "duration_min": round(dur / 60.0, 1),
-                "avg_speed_kmh": round((m / 1000.0) / (dur / 3600.0), 2) if dur > 0 else None,
-                "calories_kcal": round(cal, 1) if cal else 0.0,
-            })
 
         # Weekly aggregates
         weekly = defaultdict(lambda: {"meters": 0.0, "seconds": 0.0, "calories": 0.0})
@@ -410,8 +334,6 @@ def main() -> None:
             })
 
         stats_by_type[sport] = {
-            "monthly": monthly,
-            "recent": {f"last{RECENT_COUNT}": recent_lastn},
             "weekly": {
                 "window_weeks": WEEKLY_WINDOW,
                 "series": weekly_rows,
@@ -421,7 +343,6 @@ def main() -> None:
     # ----- Payload
     data = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.%fZ"),
-        "profile": new_profile,
         "stats": stats_by_type,
     }
 

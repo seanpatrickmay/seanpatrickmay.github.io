@@ -270,11 +270,15 @@
     ],
     "showcaseTag": "Agentic AI",
     "showcaseTech": "PostgreSQL",
-    "overview": "life-dashboard is basically a self-hosted personal OS. it auto-ingests my imessage conversations, syncs calendar events, tracks active projects, and generates AI-driven todos and daily briefings. the whole thing is rendered in this pixel art monet theme that shifts with time of day, and garmin biometrics give me a wellness baseline alongside the productivity stuff.",
+    "overview": "life-dashboard is basically a self-hosted personal OS. it auto-ingests my imessage conversations, syncs calendar events, tracks active projects, and generates AI-driven todos and daily briefings. the whole thing is rendered in this pixel art monet theme that shifts with time of day, and garmin biometrics give me a wellness baseline alongside the productivity stuff. the public link is best treated as a hosted demo entry point; the screenshot walkthrough below is the reliable public-safe view.",
     "whatIBuilt": [
       "fastapi backend that handles imessage ingestion, calendar sync, project tracking, todo generation, and pulling garmin biometrics",
       "react/vite frontend for the daily briefing, todo management, calendar view, project status, and chatting with the assistant",
-      "postgres data model for messages, calendar events, projects, todos, biometrics, and AI-generated insights"
+      "postgres data model for messages, calendar events, projects, todos, biometrics, and AI-generated insights",
+      "scale-to-zero AWS CDK deployment that brought hosting from about $10/month to under $2/month"
+    ],
+    "findings": [
+      "guest mode exists in the app code, but the portfolio cannot repair hosted auth or redirect behavior from this repository; this page keeps the live link and pairs it with verified screenshots instead of promising the demo will always open cleanly"
     ],
     "nextSteps": [
       "add tighter evals for how relevant and well-prioritized the AI-generated todos actually are",
@@ -289,7 +293,7 @@
     "gallery": [],
     "links": [
       {
-        "label": "Live Site",
+        "label": "Live Site / Guest Demo",
         "href": "https://lifedashboard.tech",
         "kind": "live"
       },
@@ -302,6 +306,16 @@
         "label": "Wiki",
         "href": "https://seanpatrickmay.me/wiki/life-dashboard/",
         "kind": "wiki"
+      }
+    ],
+    "metrics": [
+      {
+        "value": "<$2/mo",
+        "label": "hosting after moving to a scale-to-zero CDK stack",
+        "source": {
+          "label": "published resume",
+          "href": "/resume.pdf"
+        }
       }
     ],
     "board": {
@@ -324,7 +338,7 @@
       "width": 1200,
       "height": 660,
       "alt": "Screenshot of Life-Dashboard's body view on guest demo data: a readiness score of 78 out of 100 with a one-line coaching note, a morning briefing, and HRV, resting heart rate, sleep and training load each scored out of ten, on a pixel-art pond.",
-      "caption": "the body view, on guest demo data",
+      "caption": "guest-mode body view screenshot, the reliable public walkthrough when the hosted guest link is finicky",
       "source": {
         "label": "docs/screenshots",
         "href": "https://github.com/seanpatrickmay/Life-Dashboard/blob/main/docs/screenshots/body-desktop.png"
@@ -514,7 +528,7 @@
     ],
     "showcaseTag": "Machine Learning",
     "showcaseTech": "PyTorch",
-    "overview": "Six generations of model for one question: given where a fire is now, where will it be in an hour? The final system is FireSpreadNet, a ConvGRU-U-Net with CBAM attention over a 38-channel stack of satellite, weather and terrain data, trained on eight California fires.",
+    "overview": "Six generations of model for one question: given where a fire is now, where will it be in an hour? This was a three-person research project with Aidan D'Alonzo and Ethan Meid; the final system is FireSpreadNet, a ConvGRU-U-Net with CBAM attention over a 38-channel stack of satellite, weather and terrain data, trained on eight California fires.",
     "whatIBuilt": [
       "a data pipeline that pulls GOES fire detections through Earth Engine, masks cloud with DQF, and fuses VIIRS and MODIS, GRIDMET weather and 3DEP terrain into training arrays",
       "FireSpreadNet: a ConvGRU-U-Net with CBAM attention that predicts a whole next-frame fire image from a sequence, trained with focal + Tversky loss",
@@ -722,7 +736,8 @@
         "href": "https://github.com/akul-sethi/hex-reversi",
         "kind": "repo"
       }
-    ]
+    ],
+    "credits": "with Akul Sethi; repository hosted under collaborator's account"
   },
   {
     "title": "Linux Shell (C)",

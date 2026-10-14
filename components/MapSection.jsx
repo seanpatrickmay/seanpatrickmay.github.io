@@ -4,6 +4,7 @@ import Section from '@/components/ui/Section';
 import MapEntryList from '@/components/MapEntryList';
 import Pinboard from '@/components/Pinboard';
 import { CATEGORIES } from '@/lib/mapData';
+import { useNearViewport } from '@/hooks/useNearViewport';
 import { MapPin } from 'lucide-react';
 
 const PinMap = dynamic(() => import('@/components/PinMap'), { ssr: false });
@@ -11,6 +12,7 @@ const PinMap = dynamic(() => import('@/components/PinMap'), { ssr: false });
 export default function MapSection() {
   const [categoryId, setCategoryId] = useState('work');
   const [activePin, setActivePin] = useState(null);
+  const [mapRef, mapNear] = useNearViewport();
 
   const category = CATEGORIES.find((c) => c.id === categoryId);
   const pins = category?.pins ?? [];
@@ -76,17 +78,23 @@ export default function MapSection() {
         </div>
 
         <div className="lg:flex lg:items-start lg:gap-5">
-          <div className="min-w-0 lg:flex-1">
-            <PinMap
-              pins={pins}
-              activePin={activePin}
-              onPinHover={handlePinHover}
-              onPinClick={handlePinClick}
-              useInset={category?.useInset !== false}
-              showThread={category?.useInset !== false}
-              markerStyle="flag"
-              variant="chart"
-            />
+          <div ref={mapRef} className="min-w-0 lg:flex-1">
+            {mapNear ? (
+              <PinMap
+                pins={pins}
+                activePin={activePin}
+                onPinHover={handlePinHover}
+                onPinClick={handlePinClick}
+                useInset={category?.useInset !== false}
+                showThread={category?.useInset !== false}
+                markerStyle="flag"
+                variant="chart"
+              />
+            ) : (
+              <div className="chart-frame flex min-h-[320px] items-center justify-center rounded-xl text-sm text-stone-600 dark:text-stone-300">
+                map loads when this section is near
+              </div>
+            )}
           </div>
 
           <div className="lg:w-[22rem] lg:flex-none">
