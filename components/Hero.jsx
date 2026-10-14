@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, FileText, LayoutGrid } from 'lucide-react';
 import Badge from '@/components/ui/Badge';
 import PillLink from '@/components/ui/PillLink';
 
@@ -78,14 +78,32 @@ export default function Hero({ links, timeline = { current: [] } }) {
           built an agentic AI tutor at NExT, spent this past summer interning at Capital One, and now i&apos;m doing quant research. training for the indianapolis monumental marathon, prompting, reading, and stacking some chips in between
         </p>
 
-        <div className="animate-fade-up flex flex-wrap gap-3 pt-2 [animation-delay:300ms]">
+        <ul className="animate-fade-up flex flex-wrap gap-2 text-xs text-slate-600 [animation-delay:250ms] dark:text-slate-300">
+          <li className="rounded-full border border-stone-200 bg-white/70 px-3 py-1.5 shadow-sm dark:border-stone-700 dark:bg-stone-900/70">
+            Capital One: member-ID lookup 300 ms → 7 ms
+          </li>
+          <li className="rounded-full border border-stone-200 bg-white/70 px-3 py-1.5 shadow-sm dark:border-stone-700 dark:bg-stone-900/70">
+            GDEB: automation tied to $10k+/month savings
+          </li>
+          <li className="rounded-full border border-stone-200 bg-white/70 px-3 py-1.5 shadow-sm dark:border-stone-700 dark:bg-stone-900/70">
+            AI + data systems from RAG tutors to quant pipelines
+          </li>
+        </ul>
+
+        <div className="animate-fade-up flex flex-wrap gap-3 pt-2 [animation-delay:350ms]">
+          <PillLink href="/projects/" variant="solid" icon={LayoutGrid} className="px-4">
+            View Projects
+          </PillLink>
+          <PillLink href="/resume.pdf" icon={FileText} className="px-4">
+            Resume
+          </PillLink>
           <PillLink href={links.github} icon={Github} external className="px-4">
             GitHub
           </PillLink>
           <PillLink href={links.linkedin} icon={Linkedin} external className="px-4">
             LinkedIn
           </PillLink>
-          <PillLink href={links.email} variant="solid" icon={Mail} className="px-4">
+          <PillLink href={links.email} icon={Mail} className="px-4">
             say hi
           </PillLink>
         </div>

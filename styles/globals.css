@@ -20,6 +20,19 @@ html {
   }
 }
 
+.motion-paused *,
+.motion-paused *::before,
+.motion-paused *::after {
+  animation-play-state: paused !important;
+  transition-duration: 0.01ms !important;
+}
+
+.motion-paused .animate-fade-up {
+  animation: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
 /* Light (default) */
 :root { color-scheme: light; }
 body { @apply min-h-screen bg-gradient-to-b from-white via-slate-50/80 to-stone-50/50 text-slate-900; }
@@ -193,6 +206,9 @@ body { @apply min-h-screen bg-gradient-to-b from-white via-slate-50/80 to-stone-
 .pin-card:hover {
   transform: rotate(var(--pin-rotate, 0deg)) translateY(-4px);
   box-shadow: 5px 10px 22px rgba(0, 0, 0, 0.16);
+}
+.pin-card:focus-within {
+  transform: rotate(var(--pin-rotate, 0deg));
 }
 .dark .pin-card {
   box-shadow: 3px 4px 14px rgba(0, 0, 0, 0.4);

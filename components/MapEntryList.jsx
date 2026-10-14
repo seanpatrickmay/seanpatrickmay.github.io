@@ -33,7 +33,7 @@ export default function MapEntryList({ pins = [], activePin, onEntryClick, onEnt
               onMouseEnter={() => onEntryHover(pin)}
               onMouseLeave={() => onEntryHover(null)}
               className={[
-                'flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left transition-all duration-200',
+                'flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-left transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-500',
                 isActive
                   ? 'paper border-2 shadow-sm'
                   : 'paper border border-stone-200 hover:border-stone-300 hover:shadow-sm dark:border-stone-700 dark:hover:border-stone-600',

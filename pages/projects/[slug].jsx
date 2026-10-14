@@ -93,12 +93,25 @@ export default function ProjectDetail({ project, wiki = null, wikiStaleness = nu
 
   const overview = overviewText(project);
   const sortedLinks = sortProjectLinks(links);
+  const canonical = `https://seanpatrickmay.me/projects/${project.slug}/`;
+  const imagePath = project.coverImage?.src || project.leadFigure?.src || '/images/headshot.png';
+  const image = imagePath.startsWith('http') ? imagePath : `https://seanpatrickmay.me${imagePath}`;
+  const description = overview || project.oneLiner || `${title} by Sean P. May`;
 
   return (
     <>
       <Head>
         <title>{`${title} — Projects — Sean P. May`}</title>
-        <meta name="description" content={overview || title} />
+        <meta name="description" content={description} />
+        <link key="canonical" rel="canonical" href={canonical} />
+        <meta key="og:title" property="og:title" content={`${title} — Sean P. May`} />
+        <meta key="og:description" property="og:description" content={description} />
+        <meta key="og:url" property="og:url" content={canonical} />
+        <meta key="og:type" property="og:type" content="article" />
+        <meta key="og:image" property="og:image" content={image} />
+        <meta key="twitter:title" name="twitter:title" content={`${title} — Sean P. May`} />
+        <meta key="twitter:description" name="twitter:description" content={description} />
+        <meta key="twitter:image" name="twitter:image" content={image} />
       </Head>
       <ProjectPageHeader />
 

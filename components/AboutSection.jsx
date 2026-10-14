@@ -23,14 +23,18 @@ function parseDateOnlyLocal(value) {
   const year = Number(match[1]);
   const month = Number(match[2]) - 1;
   const day = Number(match[3]);
-  const date = new Date(year, month, day);
+  const date = new Date(Date.UTC(year, month, day));
 
   return Number.isNaN(date.getTime()) ? null : date;
 }
 
-function startOfLocalDay(date) {
+function startOfUtcDay(date) {
   if (!(date instanceof Date) || Number.isNaN(date.getTime())) return null;
-  return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+  return new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
+}
+
+function formatDateOnly(date) {
+  return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
 }
 
 const KM_FORMAT = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
@@ -99,7 +103,6 @@ export default function AboutSection({
   const spotify = spotifyData;
   const combined = stats?.stats?.combined;
   const weeklySeries = Array.isArray(combined?.weekly?.series) ? combined.weekly.series : [];
-  const recent = Array.isArray(combined?.recent?.last60) ? combined.recent.last60 : [];
 
   const weeklyHours = weeklySeries.map(row => Number(row?.time_hours) || 0);
   const totalHours8w = weeklyHours.length
@@ -108,24 +111,12 @@ export default function AboutSection({
 
   const totalKm8w = weeklySeries.reduce((sum, row) => sum + (Number(row?.distance_km) || 0), 0);
 
-  const totalCaloriesFromWeekly = weeklySeries.reduce(
+  const totalCalories8w = weeklySeries.reduce(
     (sum, row) => sum + (Number(row?.calories_kcal) || 0),
     0,
-  );
+  ) || null;
 
   const generatedAt = stats?.generated_at ? new Date(stats.generated_at) : new Date();
-  const cutoff = new Date(generatedAt.getTime() - 56 * 24 * 60 * 60 * 1000);
-  const totalCaloriesFromRecent = recent.reduce((sum, activity) => {
-    const startRaw = activity?.start;
-    if (typeof startRaw !== 'string') return sum;
-    const start = new Date(startRaw.replace(' ', 'T'));
-    if (Number.isNaN(start.getTime()) || start < cutoff) return sum;
-    return sum + (Number(activity?.calories_kcal) || 0);
-  }, 0);
-
-  const totalCalories8w =
-    totalCaloriesFromWeekly > 0 ? totalCaloriesFromWeekly : totalCaloriesFromRecent || null;
-
   const sportSplit = getTrainingSplit(stats);
   const spotifyWindow = getSpotifyWindowLabel(spotify?.time_range);
 
@@ -144,19 +135,19 @@ export default function AboutSection({
 
     const start = parseDateOnlyLocal(first.week_start);
     const weekEnd = parseDateOnlyLocal(last.week_end);
-    const generatedAtDay = startOfLocalDay(generatedAt);
+    const generatedAtDay = startOfUtcDay(generatedAt);
     if (!start || !weekEnd || !generatedAtDay) return null;
 
     const end = weekEnd.getTime() > generatedAtDay.getTime() ? generatedAtDay : weekEnd;
     if (end.getTime() < start.getTime()) return null;
 
-    return `${start.toLocaleDateString(undefined, { month: 'short', day: 'numeric' })} → ${end.toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}`;
+    return `${formatDateOnly(start)} → ${formatDateOnly(end)}`;
   })();
 
 
   const weekLabels = weeklySeries.map(row => {
     const d = parseDateOnlyLocal(row?.week_start);
-    return d ? d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' }) : '';
+    return d ? formatDateOnly(d) : '';
   });
 
   return (

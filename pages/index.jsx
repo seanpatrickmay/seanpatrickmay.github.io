@@ -39,9 +39,8 @@ function readFeed(filename) {
   return { ...data, _staleness: getStaleness(data.generated_at) };
 }
 
-// stats.json is ~39KB and was shipping whole in __NEXT_DATA__ for a card that
-// renders four aggregates. Only the weekly series is read, plus a calorie
-// fallback that needs two fields off each recent activity.
+// stats.json is public, so the site only carries the aggregates the training
+// card actually renders. No exact activity identifiers or timestamps.
 function trimStats(data) {
   if (!data?.stats) return data;
 
@@ -52,16 +51,7 @@ function trimStats(data) {
     generated_at: data.generated_at,
     _staleness: data._staleness,
     stats: {
-      combined: {
-        ...weeklyOnly(data.stats.combined),
-        recent: {
-          // Used only when the weekly series carries no calories.
-          last60: (data.stats.combined?.recent?.last60 ?? []).map(a => ({
-            start: a.start,
-            calories_kcal: a.calories_kcal,
-          })),
-        },
-      },
+      combined: weeklyOnly(data.stats.combined),
       running: weeklyOnly(data.stats.running),
       biking: weeklyOnly(data.stats.biking),
     },
@@ -92,8 +82,6 @@ const links = {
   linkedin: 'https://linkedin.com/in/seanpatrickmay',
   email: 'mailto:maypatricksean@gmail.com',
   emailDisplay: 'maypatricksean@gmail.com',
-  phone: 'tel:+14438982870',
-  phoneDisplay: '(443) 898-2870',
   website: 'https://seanpatrickmay.me',
 };
 
@@ -107,6 +95,7 @@ export default function Home({ boardProjects, statsData, spotifyData, goodreadsD
           name="description"
           content="Sean May — SWE and mathematician at Northeastern University. Projects in AI, quant research, computer vision, and full-stack development."
         />
+        <link key="canonical" rel="canonical" href="https://seanpatrickmay.me/" />
       </Head>
 
       <Header />
