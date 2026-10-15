@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T13:23:07.805045Z",
+  "generated_at": "2026-10-15T13:23:07.962567Z",
   "stats": {
     "combined": {
       "weekly": {
@@ -57,9 +57,9 @@
           {
             "week_start": "2026-10-12",
             "week_end": "2026-10-18",
-            "distance_km": 25.54,
-            "time_hours": 2.41,
-            "calories_kcal": 2252.0
+            "distance_km": 29.33,
+            "time_hours": 3.19,
+            "calories_kcal": 2542.0
           }
         ]
       }
