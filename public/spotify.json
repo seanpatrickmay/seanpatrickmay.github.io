@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T17:45:15.373Z",
+  "generated_at": "2026-10-15T17:34:27.860Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -11,11 +11,6 @@
       "name": "Billie Eilish",
       "image": "https://i.scdn.co/image/ab6761610000f1784a21b4760d2ecb7b0dcdc8da",
       "url": "https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH"
-    },
-    {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000f178d3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
       "name": "Zedd",
@@ -38,19 +33,24 @@
       "url": "https://open.spotify.com/artist/7qG3b048QCHVRO5Pv1T5lw"
     },
     {
-      "name": "Yo-Yo Ma",
-      "image": "https://i.scdn.co/image/ab6761610000f178fb0fcd51414e7bbe85e00b6f",
-      "url": "https://open.spotify.com/artist/5Dl3HXZjG6ZOWT5cV375lk"
+      "name": "Dominic Fike",
+      "image": "https://i.scdn.co/image/ab6761610000f178c674a77fa82d00bcecf1a794",
+      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
     },
     {
-      "name": "Dominic Fike",
-      "image": "https://i.scdn.co/image/ab6761610000f178f2903326ec44d5ecb37dcad9",
-      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000f178d3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
       "name": "Stromae",
       "image": "https://i.scdn.co/image/ab6761610000f178cc129f1c9b5047760d66aae2",
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
+    },
+    {
+      "name": "Yo-Yo Ma",
+      "image": "https://i.scdn.co/image/ab6761610000f178fb0fcd51414e7bbe85e00b6f",
+      "url": "https://open.spotify.com/artist/5Dl3HXZjG6ZOWT5cV375lk"
     }
   ],
   "genres": [
@@ -59,24 +59,24 @@
       "share": 100
     },
     {
-      "name": "french house",
-      "share": 78
-    },
-    {
-      "name": "electronic",
-      "share": 78
-    },
-    {
-      "name": "electro",
-      "share": 78
-    },
-    {
       "name": "edm",
-      "share": 59
+      "share": 90
     },
     {
       "name": "classical piano",
-      "share": 52
+      "share": 58
+    },
+    {
+      "name": "impressionism",
+      "share": 47
+    },
+    {
+      "name": "latin pop",
+      "share": 45
+    },
+    {
+      "name": "latin",
+      "share": 45
     }
   ],
   "tracks": [
@@ -111,12 +111,6 @@
       "url": "https://open.spotify.com/track/6PSKhwo0mVcOdjUOhVJd5p"
     },
     {
-      "name": "Touch (feat. Paul Williams)",
-      "artist": "Daft Punk, Paul Williams",
-      "image": "https://i.scdn.co/image/ab67616d00001e024d22198f946d9b32f25fc263",
-      "url": "https://open.spotify.com/track/6jmvJ2cUbImtirxo8U5Qb9"
-    },
-    {
       "name": "Relax, Take It Easy",
       "artist": "MIKA",
       "image": "https://i.scdn.co/image/ab67616d00001e029b9a3105ad4ffb91ad2e2798",
@@ -139,6 +133,12 @@
       "artist": "Kid Cudi",
       "image": "https://i.scdn.co/image/ab67616d00001e02a487deeecb334b6619489d74",
       "url": "https://open.spotify.com/track/3Ygy1L8ABabUA7MwoOLiPM"
+    },
+    {
+      "name": "Reborn",
+      "artist": "KIDS SEE GHOSTS",
+      "image": "https://i.scdn.co/image/ab67616d00001e02013c00ee367dd85396f79c82",
+      "url": "https://open.spotify.com/track/4RVbK6cV0VqWdpCDcx3hiT"
     }
   ]
 }
