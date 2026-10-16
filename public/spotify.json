@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T17:34:27.860Z",
+  "generated_at": "2026-10-16T17:08:52.613Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -55,28 +55,28 @@
   ],
   "genres": [
     {
-      "name": "classical",
+      "name": "edm",
       "share": 100
     },
     {
-      "name": "edm",
-      "share": 90
-    },
-    {
-      "name": "classical piano",
-      "share": 58
+      "name": "classical",
+      "share": 98
     },
     {
       "name": "impressionism",
-      "share": 47
+      "share": 53
+    },
+    {
+      "name": "classical piano",
+      "share": 52
     },
     {
       "name": "latin pop",
-      "share": 45
+      "share": 50
     },
     {
       "name": "latin",
-      "share": 45
+      "share": 50
     }
   ],
   "tracks": [
