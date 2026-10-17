@@ -1,19 +1,6 @@
 {
-  "generated_at": "2026-10-16T17:22:09.839Z",
+  "generated_at": "2026-10-17T16:21:20.150Z",
   "currentlyReading": [
-    {
-      "title": "The Perks of Being a Wallflower",
-      "author": "Stephen Chbosky",
-      "rating": 0,
-      "avgRating": 4.4,
-      "dateAdded": "Tue, 06 Oct 2026 22:16:12 -0700",
-      "dateRead": null,
-      "published": "1999",
-      "numPages": 237,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1576628298l/49379178._SX98_.jpg",
-      "bookId": "49379178",
-      "link": "https://www.goodreads.com/review/show/9006016251?utm_medium=api&utm_source=rss"
-    },
     {
       "title": "A Game of Thrones (A Song of Ice and Fire, #1)",
       "author": "George R.R. Martin",
@@ -55,6 +42,19 @@
     }
   ],
   "recentlyRead": [
+    {
+      "title": "The Perks of Being a Wallflower",
+      "author": "Stephen Chbosky",
+      "rating": 5,
+      "avgRating": 4.4,
+      "dateAdded": "Fri, 16 Oct 2026 23:14:53 -0700",
+      "dateRead": "2026-10-16T00:00:00.000Z",
+      "published": "1999",
+      "numPages": 237,
+      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1576628298l/49379178._SX98_.jpg",
+      "bookId": "49379178",
+      "link": "https://www.goodreads.com/review/show/9006016251?utm_medium=api&utm_source=rss"
+    },
     {
       "title": "Blood Meridian, or, the Evening Redness in the West",
       "author": "Cormac McCarthy",
@@ -197,23 +197,10 @@
       "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1627907823l/8120173._SX98_.jpg",
       "bookId": "8120173",
       "link": "https://www.goodreads.com/review/show/8425266738?utm_medium=api&utm_source=rss"
-    },
-    {
-      "title": "Project Hail Mary",
-      "author": "Andy Weir",
-      "rating": 5,
-      "avgRating": 4.59,
-      "dateAdded": "Tue, 28 Apr 2026 13:19:38 -0700",
-      "dateRead": "2026-03-31T00:00:00.000Z",
-      "published": "2021",
-      "numPages": 482,
-      "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1734434586l/222697645._SX98_.jpg",
-      "bookId": "222697645",
-      "link": "https://www.goodreads.com/review/show/8418056222?utm_medium=api&utm_source=rss"
     }
   ],
-  "totalPages": 8741,
-  "yearPagesRead": 7138,
-  "yearBooksRead": 15,
+  "totalPages": 8978,
+  "yearPagesRead": 7375,
+  "yearBooksRead": 16,
   "profileUrl": "https://www.goodreads.com/user/show/199381877"
 }
