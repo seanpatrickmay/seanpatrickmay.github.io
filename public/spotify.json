@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T17:08:52.613Z",
+  "generated_at": "2026-10-17T16:06:55.514Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -38,19 +38,19 @@
       "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
     },
     {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000f178d3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
-    },
-    {
       "name": "Stromae",
       "image": "https://i.scdn.co/image/ab6761610000f178cc129f1c9b5047760d66aae2",
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
     },
     {
-      "name": "Yo-Yo Ma",
-      "image": "https://i.scdn.co/image/ab6761610000f178fb0fcd51414e7bbe85e00b6f",
-      "url": "https://open.spotify.com/artist/5Dl3HXZjG6ZOWT5cV375lk"
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000f178d3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+    },
+    {
+      "name": "Adele",
+      "image": "https://i.scdn.co/image/ab6761610000f17868f6e5892075d7f22615bd17",
+      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
     }
   ],
   "genres": [
@@ -60,15 +60,7 @@
     },
     {
       "name": "classical",
-      "share": 98
-    },
-    {
-      "name": "impressionism",
-      "share": 53
-    },
-    {
-      "name": "classical piano",
-      "share": 52
+      "share": 55
     },
     {
       "name": "latin pop",
@@ -77,6 +69,14 @@
     {
       "name": "latin",
       "share": 50
+    },
+    {
+      "name": "pop",
+      "share": 40
+    },
+    {
+      "name": "french pop",
+      "share": 38
     }
   ],
   "tracks": [
@@ -117,18 +117,6 @@
       "url": "https://open.spotify.com/track/5msFXipAG1CsK92OakSAbS"
     },
     {
-      "name": "The Carnival of the Animals, R. 125: XIII. The Swan (Arr. for Cello and Piano)",
-      "artist": "Camille Saint-Saëns, Yo-Yo Ma, Kathryn Stott",
-      "image": "https://i.scdn.co/image/ab67616d00001e02fe1daedcef433b516fa1e555",
-      "url": "https://open.spotify.com/track/2LKMUX3iN0tQOvggbalydj"
-    },
-    {
-      "name": "Lost At Sea",
-      "artist": "Zedd, Ryan Tedder",
-      "image": "https://i.scdn.co/image/ab67616d00001e02941dd3b3343d9cb9329d37bf",
-      "url": "https://open.spotify.com/track/3Gwq0zKnMWluOEPKh93BeC"
-    },
-    {
       "name": "Sky Might Fall",
       "artist": "Kid Cudi",
       "image": "https://i.scdn.co/image/ab67616d00001e02a487deeecb334b6619489d74",
@@ -139,6 +127,18 @@
       "artist": "KIDS SEE GHOSTS",
       "image": "https://i.scdn.co/image/ab67616d00001e02013c00ee367dd85396f79c82",
       "url": "https://open.spotify.com/track/4RVbK6cV0VqWdpCDcx3hiT"
+    },
+    {
+      "name": "Tek It",
+      "artist": "Cafuné",
+      "image": "https://i.scdn.co/image/ab67616d00001e02ecaf001a812bb1ecc6cc482d",
+      "url": "https://open.spotify.com/track/751srcHf5tUqcEa9pRCQwP"
+    },
+    {
+      "name": "The Commander",
+      "artist": "Kid Cudi",
+      "image": "https://i.scdn.co/image/ab67616d00001e025c8d9ad991d2a23eb039d8dd",
+      "url": "https://open.spotify.com/track/7iqsSrwZqc8vpdvbyK74pQ"
     }
   ]
 }
