@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T16:06:55.514Z",
+  "generated_at": "2026-10-18T16:19:58.657Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -33,9 +33,9 @@
       "url": "https://open.spotify.com/artist/7qG3b048QCHVRO5Pv1T5lw"
     },
     {
-      "name": "Dominic Fike",
-      "image": "https://i.scdn.co/image/ab6761610000f178c674a77fa82d00bcecf1a794",
-      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000f178d3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
       "name": "Stromae",
@@ -43,24 +43,20 @@
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
     },
     {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000f178d3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+      "name": "Dominic Fike",
+      "image": "https://i.scdn.co/image/ab6761610000f178c674a77fa82d00bcecf1a794",
+      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
     },
     {
-      "name": "Adele",
-      "image": "https://i.scdn.co/image/ab6761610000f17868f6e5892075d7f22615bd17",
-      "url": "https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY"
+      "name": "boygenius",
+      "image": "https://i.scdn.co/image/ab6761610000f1781a6373c01e8b86e289859f57",
+      "url": "https://open.spotify.com/artist/1hLiboQ98IQWhpKeP9vRFw"
     }
   ],
   "genres": [
     {
       "name": "edm",
       "share": 100
-    },
-    {
-      "name": "classical",
-      "share": 55
     },
     {
       "name": "latin pop",
@@ -72,11 +68,15 @@
     },
     {
       "name": "pop",
-      "share": 40
+      "share": 44
     },
     {
-      "name": "french pop",
-      "share": 38
+      "name": "french house",
+      "share": 43
+    },
+    {
+      "name": "electronic",
+      "share": 43
     }
   ],
   "tracks": [
@@ -129,16 +129,16 @@
       "url": "https://open.spotify.com/track/4RVbK6cV0VqWdpCDcx3hiT"
     },
     {
-      "name": "Tek It",
-      "artist": "Cafuné",
-      "image": "https://i.scdn.co/image/ab67616d00001e02ecaf001a812bb1ecc6cc482d",
-      "url": "https://open.spotify.com/track/751srcHf5tUqcEa9pRCQwP"
-    },
-    {
       "name": "The Commander",
       "artist": "Kid Cudi",
       "image": "https://i.scdn.co/image/ab67616d00001e025c8d9ad991d2a23eb039d8dd",
       "url": "https://open.spotify.com/track/7iqsSrwZqc8vpdvbyK74pQ"
+    },
+    {
+      "name": "Washing Machine Heart",
+      "artist": "Mitski",
+      "image": "https://i.scdn.co/image/ab67616d00001e02c428f67b4a9b7e1114dfc117",
+      "url": "https://open.spotify.com/track/3jjsRKEsF42ccXf8kWR3nu"
     }
   ]
 }
