@@ -2,6 +2,9 @@
   "ci": {
     "collect": {
       "staticDistDir": "./out",
+      "autodiscoverUrlBlocklist": [
+        "/headshot/index.html"
+      ],
       "numberOfRuns": 1,
       "settings": {
         "skipAudits": [
