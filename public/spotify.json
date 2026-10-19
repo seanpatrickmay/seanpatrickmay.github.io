@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T16:19:58.657Z",
+  "generated_at": "2026-10-19T18:58:00.172Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -18,14 +18,14 @@
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
+      "name": "Cesária Evora",
+      "image": "https://i.scdn.co/image/ab6761610000f17819ef99eadb0dc66816089006",
+      "url": "https://open.spotify.com/artist/0Nks3cFWU2a7rooAlFQYgn"
+    },
+    {
       "name": "Post Malone",
       "image": "https://i.scdn.co/image/ab6761610000f178e17c0aa1714a03d62b5ce4e0",
       "url": "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
-    },
-    {
-      "name": "KIDS SEE GHOSTS",
-      "image": "https://i.scdn.co/image/ab6761610000f17822c693c66a5494d88194d543",
-      "url": "https://open.spotify.com/artist/2hPgGN4uhvXAxiXQBIXOmE"
     },
     {
       "name": "Enrique Iglesias",
@@ -59,6 +59,10 @@
       "share": 100
     },
     {
+      "name": "fado",
+      "share": 75
+    },
+    {
       "name": "latin pop",
       "share": 50
     },
@@ -72,10 +76,6 @@
     },
     {
       "name": "french house",
-      "share": 43
-    },
-    {
-      "name": "electronic",
       "share": 43
     }
   ],
@@ -117,28 +117,28 @@
       "url": "https://open.spotify.com/track/5msFXipAG1CsK92OakSAbS"
     },
     {
-      "name": "Sky Might Fall",
-      "artist": "Kid Cudi",
-      "image": "https://i.scdn.co/image/ab67616d00001e02a487deeecb334b6619489d74",
-      "url": "https://open.spotify.com/track/3Ygy1L8ABabUA7MwoOLiPM"
-    },
-    {
-      "name": "Reborn",
-      "artist": "KIDS SEE GHOSTS",
-      "image": "https://i.scdn.co/image/ab67616d00001e02013c00ee367dd85396f79c82",
-      "url": "https://open.spotify.com/track/4RVbK6cV0VqWdpCDcx3hiT"
-    },
-    {
-      "name": "The Commander",
-      "artist": "Kid Cudi",
-      "image": "https://i.scdn.co/image/ab67616d00001e025c8d9ad991d2a23eb039d8dd",
-      "url": "https://open.spotify.com/track/7iqsSrwZqc8vpdvbyK74pQ"
-    },
-    {
       "name": "Washing Machine Heart",
       "artist": "Mitski",
       "image": "https://i.scdn.co/image/ab67616d00001e02c428f67b4a9b7e1114dfc117",
       "url": "https://open.spotify.com/track/3jjsRKEsF42ccXf8kWR3nu"
+    },
+    {
+      "name": "bury a friend",
+      "artist": "Billie Eilish",
+      "image": "https://i.scdn.co/image/ab67616d00001e0250a3147b4edd7701a876c6ce",
+      "url": "https://open.spotify.com/track/4SSnFejRGlZikf02HLewEF"
+    },
+    {
+      "name": "Not Strong Enough",
+      "artist": "boygenius, Julien Baker, Phoebe Bridgers, Lucy Dacus",
+      "image": "https://i.scdn.co/image/ab67616d00001e0243fc02bcfa7cd4e6bb66aa22",
+      "url": "https://open.spotify.com/track/09DR0sHnQUhHOiSNttc1mv"
+    },
+    {
+      "name": "my boy",
+      "artist": "Billie Eilish",
+      "image": "https://i.scdn.co/image/ab67616d00001e029c05fec02bd9b81ee1246b2f",
+      "url": "https://open.spotify.com/track/0FQhAHyHGsrbSHvDURmFPn"
     }
   ]
 }
