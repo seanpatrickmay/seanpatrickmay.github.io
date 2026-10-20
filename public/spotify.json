@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T18:58:00.172Z",
+  "generated_at": "2026-10-20T17:44:49.710Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -11,6 +11,11 @@
       "name": "Billie Eilish",
       "image": "https://i.scdn.co/image/ab6761610000f1784a21b4760d2ecb7b0dcdc8da",
       "url": "https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH"
+    },
+    {
+      "name": "Dominic Fike",
+      "image": "https://i.scdn.co/image/ab6761610000f178c674a77fa82d00bcecf1a794",
+      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
     },
     {
       "name": "Zedd",
@@ -28,11 +33,6 @@
       "url": "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
     },
     {
-      "name": "Enrique Iglesias",
-      "image": "https://i.scdn.co/image/ab6761610000f1784fa1405802a42c665b0f2dd1",
-      "url": "https://open.spotify.com/artist/7qG3b048QCHVRO5Pv1T5lw"
-    },
-    {
       "name": "Daft Punk",
       "image": "https://i.scdn.co/image/ab6761610000f178d3aa7cc0e419b6c459b08e8e",
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
@@ -43,14 +43,14 @@
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
     },
     {
-      "name": "Dominic Fike",
-      "image": "https://i.scdn.co/image/ab6761610000f178c674a77fa82d00bcecf1a794",
-      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
-    },
-    {
       "name": "boygenius",
       "image": "https://i.scdn.co/image/ab6761610000f1781a6373c01e8b86e289859f57",
       "url": "https://open.spotify.com/artist/1hLiboQ98IQWhpKeP9vRFw"
+    },
+    {
+      "name": "Tame Impala",
+      "image": "https://i.scdn.co/image/ab6761610000f178e412a782245eb20d9626c601",
+      "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
     }
   ],
   "genres": [
@@ -60,31 +60,31 @@
     },
     {
       "name": "fado",
-      "share": 75
+      "share": 80
     },
     {
-      "name": "latin pop",
-      "share": 50
-    },
-    {
-      "name": "latin",
-      "share": 50
-    },
-    {
-      "name": "pop",
-      "share": 44
+      "name": "indie",
+      "share": 60
     },
     {
       "name": "french house",
-      "share": 43
+      "share": 57
+    },
+    {
+      "name": "electronic",
+      "share": 57
+    },
+    {
+      "name": "electro",
+      "share": 57
     }
   ],
   "tracks": [
     {
-      "name": "Glorious Morning",
-      "artist": "Waterflame",
-      "image": "https://i.scdn.co/image/ab67616d00001e02a2147086ba6896af03c0e258",
-      "url": "https://open.spotify.com/track/2XpXDMRJiYLygz1rFQF6rc"
+      "name": "Wallflower",
+      "artist": "Dominic Fike",
+      "image": "https://i.scdn.co/image/ab67616d00001e02dcd778710b50cde4e3777844",
+      "url": "https://open.spotify.com/track/0IeBxP5BlIH2BDhQYVsRq3"
     },
     {
       "name": "Useless",
@@ -93,10 +93,10 @@
       "url": "https://open.spotify.com/track/7dJN4NWQuqCjWwIT3UwOps"
     },
     {
-      "name": "Wallflower",
-      "artist": "Dominic Fike",
-      "image": "https://i.scdn.co/image/ab67616d00001e02dcd778710b50cde4e3777844",
-      "url": "https://open.spotify.com/track/0IeBxP5BlIH2BDhQYVsRq3"
+      "name": "Glorious Morning",
+      "artist": "Waterflame",
+      "image": "https://i.scdn.co/image/ab67616d00001e02a2147086ba6896af03c0e258",
+      "url": "https://open.spotify.com/track/2XpXDMRJiYLygz1rFQF6rc"
     },
     {
       "name": "So Cold",
@@ -105,22 +105,10 @@
       "url": "https://open.spotify.com/track/2SGyf0hCuB81F85cHXuRjl"
     },
     {
-      "name": "Bailando - Spanish Version",
-      "artist": "Enrique Iglesias, Descemer Bueno, Gente De Zona",
-      "image": "https://i.scdn.co/image/ab67616d00001e0290b2ea6298a6e5d98e60d6ec",
-      "url": "https://open.spotify.com/track/6PSKhwo0mVcOdjUOhVJd5p"
-    },
-    {
       "name": "Relax, Take It Easy",
       "artist": "MIKA",
       "image": "https://i.scdn.co/image/ab67616d00001e029b9a3105ad4ffb91ad2e2798",
       "url": "https://open.spotify.com/track/5msFXipAG1CsK92OakSAbS"
-    },
-    {
-      "name": "Washing Machine Heart",
-      "artist": "Mitski",
-      "image": "https://i.scdn.co/image/ab67616d00001e02c428f67b4a9b7e1114dfc117",
-      "url": "https://open.spotify.com/track/3jjsRKEsF42ccXf8kWR3nu"
     },
     {
       "name": "bury a friend",
@@ -139,6 +127,18 @@
       "artist": "Billie Eilish",
       "image": "https://i.scdn.co/image/ab67616d00001e029c05fec02bd9b81ee1246b2f",
       "url": "https://open.spotify.com/track/0FQhAHyHGsrbSHvDURmFPn"
+    },
+    {
+      "name": "The Well-Tempered Clavier I, Prelude & Fugue No. 1 in C Major, BWV 846: I. Prelude",
+      "artist": "Johann Sebastian Bach, Lang Lang",
+      "image": "https://i.scdn.co/image/ab67616d00001e0275903e4166b8a18e23bd7956",
+      "url": "https://open.spotify.com/track/1TGp4083lfFG6clpKGHVfc"
+    },
+    {
+      "name": "Viva La Vida",
+      "artist": "Coldplay",
+      "image": "https://i.scdn.co/image/ab67616d00001e02e21cc1db05580b6f2d2a3b6e",
+      "url": "https://open.spotify.com/track/1mea3bSkSGXuIRvnydlB5b"
     }
   ]
 }
