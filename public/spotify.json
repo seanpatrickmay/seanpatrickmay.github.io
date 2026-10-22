@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-10-21T17:52:41.557Z",
+  "generated_at": "2026-10-22T17:50:01.057Z",
   "time_range": "short_term",
   "artists": [
-    {
-      "name": "Kid Cudi",
-      "image": "https://i.scdn.co/image/ab6761610000f1785f00bb6dd7a7008d14156630",
-      "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
-    },
     {
       "name": "Billie Eilish",
       "image": "https://i.scdn.co/image/ab6761610000f1784a21b4760d2ecb7b0dcdc8da",
       "url": "https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH"
     },
     {
-      "name": "Dominic Fike",
-      "image": "https://i.scdn.co/image/ab6761610000f178c674a77fa82d00bcecf1a794",
-      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
+      "name": "Kid Cudi",
+      "image": "https://i.scdn.co/image/ab6761610000f1785f00bb6dd7a7008d14156630",
+      "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
     },
     {
       "name": "Zedd",
       "image": "https://i.scdn.co/image/ab6761610000f178eefa05f0b8fcafd4beb19d31",
       "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+    },
+    {
+      "name": "Dominic Fike",
+      "image": "https://i.scdn.co/image/ab6761610000f178c674a77fa82d00bcecf1a794",
+      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
     },
     {
       "name": "Cesária Evora",
@@ -60,23 +60,23 @@
     },
     {
       "name": "fado",
-      "share": 80
+      "share": 60
     },
     {
       "name": "indie",
-      "share": 67
+      "share": 44
     },
     {
       "name": "french house",
-      "share": 57
+      "share": 43
     },
     {
       "name": "electronic",
-      "share": 57
+      "share": 43
     },
     {
       "name": "electro",
-      "share": 57
+      "share": 43
     }
   ],
   "tracks": [
@@ -95,8 +95,8 @@
     {
       "name": "Glorious Morning",
       "artist": "Waterflame",
-      "image": "https://i.scdn.co/image/ab67616d00001e02a2147086ba6896af03c0e258",
-      "url": "https://open.spotify.com/track/2XpXDMRJiYLygz1rFQF6rc"
+      "image": "https://i.scdn.co/image/ab67616d00001e02944c6c016b62f7d859aa67b5",
+      "url": "https://open.spotify.com/track/3oo2WoGCGrjgnbDHyO0V7l"
     },
     {
       "name": "So Cold",
