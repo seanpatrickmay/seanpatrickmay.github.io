@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T18:05:59.463Z",
+  "generated_at": "2026-10-23T17:55:08.263Z",
   "wikis": {
     "life-dashboard": {
       "url": "https://seanpatrickmay.me/wiki/life-dashboard/",
@@ -37,7 +37,7 @@
           "href": "https://seanpatrickmay.me/wiki/life-dashboard/wiki/ai-digest/"
         }
       ],
-      "fetchedAt": "2026-10-22T18:05:59.463Z"
+      "fetchedAt": "2026-10-23T17:55:08.263Z"
     },
     "lecteuraide": {
       "url": "https://seanpatrickmay.me/wiki/lecteuraide/",
@@ -71,7 +71,7 @@
           "href": "https://seanpatrickmay.me/wiki/lecteuraide/wiki/book-management/"
         }
       ],
-      "fetchedAt": "2026-10-22T18:05:59.463Z"
+      "fetchedAt": "2026-10-23T17:55:08.263Z"
     },
     "pokerml": {
       "url": "https://seanpatrickmay.me/wiki/pokerml/",
@@ -109,7 +109,7 @@
           "href": "https://seanpatrickmay.me/wiki/pokerml/wiki/interactive-play/"
         }
       ],
-      "fetchedAt": "2026-10-22T18:05:59.463Z"
+      "fetchedAt": "2026-10-23T17:55:08.263Z"
     },
     "repowiki": {
       "url": "https://seanpatrickmay.me/wiki/repowiki/",
@@ -146,7 +146,7 @@
           "href": "https://seanpatrickmay.me/wiki/repowiki/wiki/link-verification/"
         }
       ],
-      "fetchedAt": "2026-10-22T18:05:59.463Z"
+      "fetchedAt": "2026-10-23T17:55:08.263Z"
     },
     "alphasettler": {
       "url": "https://seanpatrickmay.me/wiki/alphasettler/",
@@ -184,7 +184,7 @@
           "href": "https://seanpatrickmay.me/wiki/alphasettler/wiki/network-training/"
         }
       ],
-      "fetchedAt": "2026-10-22T18:05:59.463Z"
+      "fetchedAt": "2026-10-23T17:55:08.263Z"
     },
     "rototext": {
       "url": "https://seanpatrickmay.me/wiki/rototext/",
@@ -222,7 +222,7 @@
           "href": "https://seanpatrickmay.me/wiki/rototext/wiki/scene-rendering/"
         }
       ],
-      "fetchedAt": "2026-10-22T18:05:59.463Z"
+      "fetchedAt": "2026-10-23T17:55:08.263Z"
     }
   }
 }
