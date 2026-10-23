@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T17:50:01.057Z",
+  "generated_at": "2026-10-23T17:40:13.317Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -28,19 +28,14 @@
       "url": "https://open.spotify.com/artist/0Nks3cFWU2a7rooAlFQYgn"
     },
     {
-      "name": "Post Malone",
-      "image": "https://i.scdn.co/image/ab6761610000f178e17c0aa1714a03d62b5ce4e0",
-      "url": "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
+      "name": "Stromae",
+      "image": "https://i.scdn.co/image/ab6761610000f178cc129f1c9b5047760d66aae2",
+      "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
     },
     {
       "name": "Daft Punk",
       "image": "https://i.scdn.co/image/ab6761610000f178d3aa7cc0e419b6c459b08e8e",
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
-    },
-    {
-      "name": "Stromae",
-      "image": "https://i.scdn.co/image/ab6761610000f178cc129f1c9b5047760d66aae2",
-      "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
     },
     {
       "name": "boygenius",
@@ -51,6 +46,11 @@
       "name": "Tame Impala",
       "image": "https://i.scdn.co/image/ab6761610000f178e412a782245eb20d9626c601",
       "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
+    },
+    {
+      "name": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab6761610000f1789f6f7c2d12975d2a4b3a0fd8",
+      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     }
   ],
   "genres": [
@@ -63,19 +63,19 @@
       "share": 60
     },
     {
+      "name": "pop",
+      "share": 58
+    },
+    {
+      "name": "french pop",
+      "share": 50
+    },
+    {
       "name": "indie",
-      "share": 44
+      "share": 48
     },
     {
       "name": "french house",
-      "share": 43
-    },
-    {
-      "name": "electronic",
-      "share": 43
-    },
-    {
-      "name": "electro",
       "share": 43
     }
   ],
@@ -129,16 +129,16 @@
       "url": "https://open.spotify.com/track/0FQhAHyHGsrbSHvDURmFPn"
     },
     {
-      "name": "The Well-Tempered Clavier I, Prelude & Fugue No. 1 in C Major, BWV 846: I. Prelude",
-      "artist": "Johann Sebastian Bach, Lang Lang",
-      "image": "https://i.scdn.co/image/ab67616d00001e0275903e4166b8a18e23bd7956",
-      "url": "https://open.spotify.com/track/1TGp4083lfFG6clpKGHVfc"
-    },
-    {
       "name": "Viva La Vida",
       "artist": "Coldplay",
       "image": "https://i.scdn.co/image/ab67616d00001e02e21cc1db05580b6f2d2a3b6e",
       "url": "https://open.spotify.com/track/1mea3bSkSGXuIRvnydlB5b"
+    },
+    {
+      "name": "Day ‘n’ Nite",
+      "artist": "Kid Cudi",
+      "image": "https://i.scdn.co/image/ab67616d00001e02cd4666c02c9749c71dabb8ea",
+      "url": "https://open.spotify.com/track/2P9HugRjZqZ2v3Sm9JBnIO"
     }
   ]
 }
