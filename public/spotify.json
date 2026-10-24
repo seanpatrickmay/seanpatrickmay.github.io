@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T17:40:13.317Z",
+  "generated_at": "2026-10-24T16:25:14.112Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -64,7 +64,7 @@
     },
     {
       "name": "pop",
-      "share": 58
+      "share": 55
     },
     {
       "name": "french pop",
@@ -87,12 +87,6 @@
       "url": "https://open.spotify.com/track/0IeBxP5BlIH2BDhQYVsRq3"
     },
     {
-      "name": "Useless",
-      "artist": "Omar Apollo",
-      "image": "https://i.scdn.co/image/ab67616d00001e026e06e45ecdc297ddaea115e4",
-      "url": "https://open.spotify.com/track/7dJN4NWQuqCjWwIT3UwOps"
-    },
-    {
       "name": "Glorious Morning",
       "artist": "Waterflame",
       "image": "https://i.scdn.co/image/ab67616d00001e02944c6c016b62f7d859aa67b5",
@@ -103,6 +97,12 @@
       "artist": "Balu Brigada",
       "image": "https://i.scdn.co/image/ab67616d00001e021fc8017bbf246da18b953789",
       "url": "https://open.spotify.com/track/2SGyf0hCuB81F85cHXuRjl"
+    },
+    {
+      "name": "Useless",
+      "artist": "Omar Apollo",
+      "image": "https://i.scdn.co/image/ab67616d00001e026e06e45ecdc297ddaea115e4",
+      "url": "https://open.spotify.com/track/7dJN4NWQuqCjWwIT3UwOps"
     },
     {
       "name": "Relax, Take It Easy",
@@ -117,6 +117,12 @@
       "url": "https://open.spotify.com/track/4SSnFejRGlZikf02HLewEF"
     },
     {
+      "name": "Viva La Vida",
+      "artist": "Coldplay",
+      "image": "https://i.scdn.co/image/ab67616d00001e02e21cc1db05580b6f2d2a3b6e",
+      "url": "https://open.spotify.com/track/1mea3bSkSGXuIRvnydlB5b"
+    },
+    {
       "name": "Not Strong Enough",
       "artist": "boygenius, Julien Baker, Phoebe Bridgers, Lucy Dacus",
       "image": "https://i.scdn.co/image/ab67616d00001e0243fc02bcfa7cd4e6bb66aa22",
@@ -127,12 +133,6 @@
       "artist": "Billie Eilish",
       "image": "https://i.scdn.co/image/ab67616d00001e029c05fec02bd9b81ee1246b2f",
       "url": "https://open.spotify.com/track/0FQhAHyHGsrbSHvDURmFPn"
-    },
-    {
-      "name": "Viva La Vida",
-      "artist": "Coldplay",
-      "image": "https://i.scdn.co/image/ab67616d00001e02e21cc1db05580b6f2d2a3b6e",
-      "url": "https://open.spotify.com/track/1mea3bSkSGXuIRvnydlB5b"
     },
     {
       "name": "Day ‘n’ Nite",
