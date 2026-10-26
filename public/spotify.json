@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T16:57:11.053Z",
+  "generated_at": "2026-10-26T18:59:58.475Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -64,7 +64,7 @@
     },
     {
       "name": "pop",
-      "share": 55
+      "share": 58
     },
     {
       "name": "french pop",
@@ -72,7 +72,7 @@
     },
     {
       "name": "indie",
-      "share": 48
+      "share": 47
     },
     {
       "name": "french house",
@@ -87,22 +87,16 @@
       "url": "https://open.spotify.com/track/0IeBxP5BlIH2BDhQYVsRq3"
     },
     {
-      "name": "Glorious Morning",
-      "artist": "Waterflame",
-      "image": "https://i.scdn.co/image/ab67616d00001e02944c6c016b62f7d859aa67b5",
-      "url": "https://open.spotify.com/track/3oo2WoGCGrjgnbDHyO0V7l"
-    },
-    {
       "name": "So Cold",
       "artist": "Balu Brigada",
       "image": "https://i.scdn.co/image/ab67616d00001e021fc8017bbf246da18b953789",
       "url": "https://open.spotify.com/track/2SGyf0hCuB81F85cHXuRjl"
     },
     {
-      "name": "Useless",
-      "artist": "Omar Apollo",
-      "image": "https://i.scdn.co/image/ab67616d00001e026e06e45ecdc297ddaea115e4",
-      "url": "https://open.spotify.com/track/7dJN4NWQuqCjWwIT3UwOps"
+      "name": "Glorious Morning",
+      "artist": "Waterflame",
+      "image": "https://i.scdn.co/image/ab67616d00001e02944c6c016b62f7d859aa67b5",
+      "url": "https://open.spotify.com/track/3oo2WoGCGrjgnbDHyO0V7l"
     },
     {
       "name": "Relax, Take It Easy",
@@ -139,6 +133,12 @@
       "artist": "Kid Cudi",
       "image": "https://i.scdn.co/image/ab67616d00001e02cd4666c02c9749c71dabb8ea",
       "url": "https://open.spotify.com/track/2P9HugRjZqZ2v3Sm9JBnIO"
+    },
+    {
+      "name": "Reborn",
+      "artist": "KIDS SEE GHOSTS",
+      "image": "https://i.scdn.co/image/ab67616d00001e02013c00ee367dd85396f79c82",
+      "url": "https://open.spotify.com/track/4RVbK6cV0VqWdpCDcx3hiT"
     }
   ]
 }
