@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T18:59:58.475Z",
+  "generated_at": "2026-10-27T18:31:28.876Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -38,11 +38,6 @@
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
-      "name": "boygenius",
-      "image": "https://i.scdn.co/image/ab6761610000f1781a6373c01e8b86e289859f57",
-      "url": "https://open.spotify.com/artist/1hLiboQ98IQWhpKeP9vRFw"
-    },
-    {
       "name": "Tame Impala",
       "image": "https://i.scdn.co/image/ab6761610000f178e412a782245eb20d9626c601",
       "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
@@ -51,6 +46,11 @@
       "name": "Malcolm Todd",
       "image": "https://i.scdn.co/image/ab6761610000f1789f6f7c2d12975d2a4b3a0fd8",
       "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
+    },
+    {
+      "name": "Remi Wolf",
+      "image": "https://i.scdn.co/image/ab6761610000f178a9dae97c76ed2b476d75a1b1",
+      "url": "https://open.spotify.com/artist/0NB5HROxc8dDBXpkIi1v3d"
     }
   ],
   "genres": [
@@ -59,20 +59,20 @@
       "share": 100
     },
     {
+      "name": "pop",
+      "share": 62
+    },
+    {
       "name": "fado",
       "share": 60
     },
     {
-      "name": "pop",
-      "share": 58
+      "name": "indie",
+      "share": 52
     },
     {
       "name": "french pop",
       "share": 50
-    },
-    {
-      "name": "indie",
-      "share": 47
     },
     {
       "name": "french house",
@@ -91,6 +91,12 @@
       "artist": "Balu Brigada",
       "image": "https://i.scdn.co/image/ab67616d00001e021fc8017bbf246da18b953789",
       "url": "https://open.spotify.com/track/2SGyf0hCuB81F85cHXuRjl"
+    },
+    {
+      "name": "Problem Child",
+      "artist": "brakence",
+      "image": "https://i.scdn.co/image/ab67616d00001e02155d39be706095403e6a365d",
+      "url": "https://open.spotify.com/track/6bTsje5dpsVHLixQfgPXaY"
     },
     {
       "name": "Glorious Morning",
@@ -115,12 +121,6 @@
       "artist": "Coldplay",
       "image": "https://i.scdn.co/image/ab67616d00001e02e21cc1db05580b6f2d2a3b6e",
       "url": "https://open.spotify.com/track/1mea3bSkSGXuIRvnydlB5b"
-    },
-    {
-      "name": "Not Strong Enough",
-      "artist": "boygenius, Julien Baker, Phoebe Bridgers, Lucy Dacus",
-      "image": "https://i.scdn.co/image/ab67616d00001e0243fc02bcfa7cd4e6bb66aa22",
-      "url": "https://open.spotify.com/track/09DR0sHnQUhHOiSNttc1mv"
     },
     {
       "name": "my boy",
