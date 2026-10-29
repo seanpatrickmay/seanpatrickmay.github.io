@@ -1,16 +1,11 @@
 {
-  "generated_at": "2026-10-28T18:38:00.234Z",
+  "generated_at": "2026-10-29T18:45:59.039Z",
   "time_range": "short_term",
   "artists": [
     {
       "name": "Billie Eilish",
       "image": "https://i.scdn.co/image/ab6761610000f1784a21b4760d2ecb7b0dcdc8da",
       "url": "https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH"
-    },
-    {
-      "name": "Kid Cudi",
-      "image": "https://i.scdn.co/image/ab6761610000f1785f00bb6dd7a7008d14156630",
-      "url": "https://open.spotify.com/artist/0fA0VVWsXO9YnASrzqfmYu"
     },
     {
       "name": "Zedd",
@@ -51,6 +46,11 @@
       "name": "Remi Wolf",
       "image": "https://i.scdn.co/image/ab6761610000f178a9dae97c76ed2b476d75a1b1",
       "url": "https://open.spotify.com/artist/0NB5HROxc8dDBXpkIi1v3d"
+    },
+    {
+      "name": "Black Eyed Peas",
+      "image": "https://i.scdn.co/image/ab6761610000f178f2200ce505d25e1d7e1561be",
+      "url": "https://open.spotify.com/artist/1yxSLGMDHlW21z4YXirZDS"
     }
   ],
   "genres": [
@@ -59,24 +59,24 @@
       "share": 100
     },
     {
-      "name": "pop",
-      "share": 62
-    },
-    {
       "name": "fado",
-      "share": 60
-    },
-    {
-      "name": "indie",
-      "share": 52
-    },
-    {
-      "name": "french pop",
       "share": 50
     },
     {
+      "name": "pop",
+      "share": 41
+    },
+    {
+      "name": "french pop",
+      "share": 40
+    },
+    {
+      "name": "indie",
+      "share": 38
+    },
+    {
       "name": "french house",
-      "share": 43
+      "share": 33
     }
   ],
   "tracks": [
@@ -129,16 +129,16 @@
       "url": "https://open.spotify.com/track/0FQhAHyHGsrbSHvDURmFPn"
     },
     {
-      "name": "Day ‘n’ Nite",
-      "artist": "Kid Cudi",
-      "image": "https://i.scdn.co/image/ab67616d00001e02cd4666c02c9749c71dabb8ea",
-      "url": "https://open.spotify.com/track/2P9HugRjZqZ2v3Sm9JBnIO"
+      "name": "The Well-Tempered Clavier I, Prelude & Fugue No. 1 in C Major, BWV 846: I. Prelude",
+      "artist": "Johann Sebastian Bach, Lang Lang",
+      "image": "https://i.scdn.co/image/ab67616d00001e02d6dc270a77d858c955379046",
+      "url": "https://open.spotify.com/track/4i8ly7ffzWu8nfKLI8SZFj"
     },
     {
-      "name": "Reborn",
-      "artist": "KIDS SEE GHOSTS",
-      "image": "https://i.scdn.co/image/ab67616d00001e02013c00ee367dd85396f79c82",
-      "url": "https://open.spotify.com/track/4RVbK6cV0VqWdpCDcx3hiT"
+      "name": "My Boo",
+      "artist": "USHER, Alicia Keys",
+      "image": "https://i.scdn.co/image/ab67616d00001e02365b3fb800c19f7ff72602da",
+      "url": "https://open.spotify.com/track/68vgtRHr7iZHpzGpon6Jlo"
     }
   ]
 }
