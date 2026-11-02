@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T18:14:27.028Z",
+  "generated_at": "2026-11-02T22:05:39.861Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -23,6 +23,11 @@
       "url": "https://open.spotify.com/artist/0Nks3cFWU2a7rooAlFQYgn"
     },
     {
+      "name": "Keane",
+      "image": "https://i.scdn.co/image/ab6761610000f17841ad42c0fd1dabe8db013a7a",
+      "url": "https://open.spotify.com/artist/53A0W3U0s8diEn9RhXQhVz"
+    },
+    {
       "name": "Stromae",
       "image": "https://i.scdn.co/image/ab6761610000f178cc129f1c9b5047760d66aae2",
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
@@ -33,24 +38,19 @@
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
-      "name": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab6761610000f1789f6f7c2d12975d2a4b3a0fd8",
-      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
+      "name": "Maroon 5",
+      "image": "https://i.scdn.co/image/ab6761610000f178f8349dfb619a7f842242de77",
+      "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
+    },
+    {
+      "name": "Coldplay",
+      "image": "https://i.scdn.co/image/ab6761610000f1781ba8fc5f5c73e7e9313cc6eb",
+      "url": "https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU"
     },
     {
       "name": "Tame Impala",
       "image": "https://i.scdn.co/image/ab6761610000f178e412a782245eb20d9626c601",
       "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
-    },
-    {
-      "name": "Remi Wolf",
-      "image": "https://i.scdn.co/image/ab6761610000f178a9dae97c76ed2b476d75a1b1",
-      "url": "https://open.spotify.com/artist/0NB5HROxc8dDBXpkIi1v3d"
-    },
-    {
-      "name": "Black Eyed Peas",
-      "image": "https://i.scdn.co/image/ab6761610000f178f2200ce505d25e1d7e1561be",
-      "url": "https://open.spotify.com/artist/1yxSLGMDHlW21z4YXirZDS"
     }
   ],
   "genres": [
@@ -59,24 +59,24 @@
       "share": 100
     },
     {
+      "name": "pop",
+      "share": 26
+    },
+    {
       "name": "fado",
       "share": 25
     },
     {
-      "name": "pop",
-      "share": 21
-    },
-    {
       "name": "french pop",
-      "share": 20
+      "share": 17
     },
     {
       "name": "indie",
-      "share": 17
+      "share": 15
     },
     {
       "name": "french house",
-      "share": 17
+      "share": 14
     }
   ],
   "tracks": [
@@ -89,14 +89,20 @@
     {
       "name": "WALLFLOWER",
       "artist": "Dominic Fike",
-      "image": "https://i.scdn.co/image/ab67616d00001e02dcd778710b50cde4e3777844",
-      "url": "https://open.spotify.com/track/0IeBxP5BlIH2BDhQYVsRq3"
+      "image": "https://i.scdn.co/image/ab67616d00001e027a5456ace4c059df03b973ee",
+      "url": "https://open.spotify.com/track/20cre5t6pqsZPCF794uJpT"
     },
     {
       "name": "So Cold",
       "artist": "Balu Brigada",
       "image": "https://i.scdn.co/image/ab67616d00001e021fc8017bbf246da18b953789",
       "url": "https://open.spotify.com/track/2SGyf0hCuB81F85cHXuRjl"
+    },
+    {
+      "name": "Everybody's Changing",
+      "artist": "Keane",
+      "image": "https://i.scdn.co/image/ab67616d00001e02045d0a38105fbe7bde43c490",
+      "url": "https://open.spotify.com/track/5hkdfA87RZvNaxl6XiveOA"
     },
     {
       "name": "Glorious Morning",
@@ -111,6 +117,12 @@
       "url": "https://open.spotify.com/track/5msFXipAG1CsK92OakSAbS"
     },
     {
+      "name": "Washing Machine Heart",
+      "artist": "Mitski",
+      "image": "https://i.scdn.co/image/ab67616d00001e02c428f67b4a9b7e1114dfc117",
+      "url": "https://open.spotify.com/track/3jjsRKEsF42ccXf8kWR3nu"
+    },
+    {
       "name": "Viva La Vida",
       "artist": "Coldplay",
       "image": "https://i.scdn.co/image/ab67616d00001e02e21cc1db05580b6f2d2a3b6e",
@@ -123,22 +135,10 @@
       "url": "https://open.spotify.com/track/0FQhAHyHGsrbSHvDURmFPn"
     },
     {
-      "name": "12 Songs, Op. 21: V. Lilacs (Transcr. Rachmaninoff for Solo Piano)",
-      "artist": "Sergei Rachmaninoff, Sergei Babayan",
-      "image": "https://i.scdn.co/image/ab67616d00001e0207ec93581ad7b16b666165b6",
-      "url": "https://open.spotify.com/track/4ObQ0m7VUtrgdEwpFeCKua"
-    },
-    {
-      "name": "My Boo",
-      "artist": "USHER, Alicia Keys",
-      "image": "https://i.scdn.co/image/ab67616d00001e02365b3fb800c19f7ff72602da",
-      "url": "https://open.spotify.com/track/68vgtRHr7iZHpzGpon6Jlo"
-    },
-    {
-      "name": "Hourglass",
-      "artist": "Zedd, LIZ",
-      "image": "https://i.scdn.co/image/ab67616d00001e02941dd3b3343d9cb9329d37bf",
-      "url": "https://open.spotify.com/track/6NwrXtcFbc8OX7wJyBqE89"
+      "name": "Just Give Me a Reason (feat. Nate Ruess)",
+      "artist": "P!nk, Nate Ruess",
+      "image": "https://i.scdn.co/image/ab67616d00001e0224a1ac503b55e6eef9a7bb8c",
+      "url": "https://open.spotify.com/track/1mKXFLRA179hdOWQBwUk9e"
     }
   ]
 }
