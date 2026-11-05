@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T19:09:54.202Z",
+  "generated_at": "2026-11-05T19:30:12.595Z",
   "currentlyReading": [
     {
       "title": "Les Misérables",
@@ -109,19 +109,19 @@
       "link": "https://hardcover.app/books/the-trial"
     },
     {
-      "title": "The Obscene Bird of Night: Unabridged, Centennial Edition",
-      "author": null,
+      "title": "The Obscene Bird of Night",
+      "author": "José Donoso",
       "rating": 4,
-      "avgRating": 4,
+      "avgRating": 4.53,
       "dateAdded": "2026-11-05T00:00:00.000Z",
       "dateStarted": null,
       "dateRead": "2026-09-19T00:00:00.000Z",
-      "published": "",
-      "numPages": null,
+      "published": "1970",
+      "numPages": 439,
       "progress": null,
-      "imageUrl": null,
-      "bookId": "2030926",
-      "link": "https://hardcover.app/books/the-obscene-bird-of-night-unabridged-centennial-edition"
+      "imageUrl": "https://assets.hardcover.app/edition/31982760/c7cb60f172ea701e7796441bcef05218236528b8.jpeg",
+      "bookId": "586221",
+      "link": "https://hardcover.app/books/the-obscene-bird-of-night"
     },
     {
       "title": "A Clockwork Orange",
@@ -244,8 +244,8 @@
       "link": "https://hardcover.app/books/the-book-thief"
     }
   ],
-  "totalPages": 8129,
-  "yearPagesRead": 6461,
+  "totalPages": 8568,
+  "yearPagesRead": 6900,
   "yearBooksRead": 16,
   "profileUrl": "https://hardcover.app/@seanmay"
 }
