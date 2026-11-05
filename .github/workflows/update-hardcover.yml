@@ -1,4 +1,4 @@
-name: Update Goodreads data
+name: Update Hardcover data
 
 on:
   schedule:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: "update-goodreads"
+  group: "update-hardcover"
   cancel-in-progress: true
 
 jobs:
@@ -24,17 +24,19 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Fetch Goodreads data
-        run: node scripts/update_goodreads.mjs
+      - name: Fetch Hardcover data
+        env:
+          HARDCOVER_TOKEN: ${{ secrets.HARDCOVER_TOKEN }}
+        run: node scripts/update_hardcover.mjs
 
       - name: Commit & push changes
         run: |
           set -euo pipefail
-          if [[ -n "$(git status --porcelain public/goodreads.json)" ]]; then
+          if [[ -n "$(git status --porcelain public/hardcover.json)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add public/goodreads.json
-            git commit -m "chore(goodreads): daily refresh"
+            git add public/hardcover.json
+            git commit -m "chore(hardcover): daily refresh"
             git push
           else
             echo "No changes to commit."

@@ -15,7 +15,7 @@ on:
   # whose whole point is being live.
   workflow_run:
     workflows:
-      - "Update Goodreads data"
+      - "Update Hardcover data"
       - "Update Spotify data"
       - "Update Garmin stats.json"
       - "Update Duolingo data"
