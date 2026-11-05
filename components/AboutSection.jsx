@@ -6,7 +6,7 @@ import BarSparkline from '@/components/ui/BarSparkline';
 import { getBostonJourneyEquivalence } from '@/lib/journeyEquivalents';
 import { getTrainingSplit } from '@/lib/trainingSplit';
 import { getSpotifyWindowLabel } from '@/lib/spotifyWindow';
-import GoodreadsCard from '@/components/GoodreadsCard';
+import HardcoverCard from '@/components/HardcoverCard';
 import DuolingoCard from '@/components/DuolingoCard';
 import Pinboard from '@/components/Pinboard';
 import MovementMap from '@/components/MovementMap';
@@ -96,7 +96,7 @@ function SportSplit({ split }) {
 export default function AboutSection({
   statsData = null,
   spotifyData = null,
-  goodreadsData = null,
+  readingData = null,
   duolingoData = null,
 }) {
   const stats = statsData;
@@ -263,10 +263,10 @@ export default function AboutSection({
             </div>
           </PinCard>
 
-          {/* Goodreads */}
+          {/* Hardcover */}
           <PinCard rotation={1} pinColor="green">
             <div className="paper border border-stone-200/80 p-4 dark:border-stone-700/80">
-              <GoodreadsCard data={goodreadsData} bare />
+              <HardcoverCard data={readingData} bare />
             </div>
           </PinCard>
 

@@ -24,7 +24,7 @@ const PUBLIC_DIR = resolve(__dirname, '..', 'public');
 // rather than half a year.
 const FEEDS = [
   { file: 'stats.json', label: 'Garmin training', maxAgeDays: 10 },
-  { file: 'goodreads.json', label: 'Goodreads reading', maxAgeDays: 10 },
+  { file: 'hardcover.json', label: 'Hardcover reading', maxAgeDays: 10 },
   { file: 'spotify.json', label: 'Spotify top 10', maxAgeDays: 10 },
   { file: 'duolingo.json', label: 'Duolingo progress', maxAgeDays: 10 },
   { file: 'wikis.json', label: 'Code wiki stats', maxAgeDays: 10 },

@@ -67,7 +67,7 @@ export async function getStaticProps() {
       boardProjects: boardProps(projects),
       statsData: trimStats(readFeed('stats.json')),
       spotifyData: readFeed('spotify.json'),
-      goodreadsData: readFeed('goodreads.json'),
+      readingData: readFeed('hardcover.json'),
       duolingoData: readFeed('duolingo.json'),
       timeline: splitTimeline(Date.now()),
       // Resolved at build time like the rest: `new Date()` at render time
@@ -86,7 +86,7 @@ const links = {
 };
 
 
-export default function Home({ boardProjects, statsData, spotifyData, goodreadsData, duolingoData, timeline, buildYear }) {
+export default function Home({ boardProjects, statsData, spotifyData, readingData, duolingoData, timeline, buildYear }) {
   return (
     <>
       <Head>
@@ -124,7 +124,7 @@ export default function Home({ boardProjects, statsData, spotifyData, goodreadsD
           <AboutSection
             statsData={statsData}
             spotifyData={spotifyData}
-            goodreadsData={goodreadsData}
+            readingData={readingData}
             duolingoData={duolingoData}
           />
 

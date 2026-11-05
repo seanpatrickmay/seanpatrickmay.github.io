@@ -18,8 +18,14 @@ function toShelfItems(books, withRatings) {
     subtitle: book.author,
     image: book.imageUrl,
     url: book.link,
-    badge: withRatings && book.rating ? `★${book.rating}` : null,
+    badge: withRatings ? (book.rating ? `★${book.rating}` : null) : progressBadge(book.progress),
   }));
+}
+
+/** "53%" for a book in progress; nothing before the first page or once done. */
+export function progressBadge(progress) {
+  const percent = Math.round((Number(progress) || 0) * 100);
+  return percent > 0 && percent < 100 ? `${percent}%` : null;
 }
 
 /** One horizontal shelf of covers, with a wooden rail underneath. */
@@ -58,7 +64,7 @@ function Shelf({ label, count, books, withRatings = false, emptyMessage, meta = 
   );
 }
 
-export default function GoodreadsCard({ data = null, bare = false }) {
+export default function HardcoverCard({ data = null, bare = false }) {
   const currentlyReading = data?.currentlyReading ?? [];
   const recent = data?.recentlyRead ?? [];
 
