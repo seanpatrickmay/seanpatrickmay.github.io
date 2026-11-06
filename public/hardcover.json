@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T19:30:12.595Z",
+  "generated_at": "2026-11-06T19:56:35.135Z",
   "currentlyReading": [
     {
       "title": "Les Misérables",
@@ -26,7 +26,7 @@
       "dateRead": null,
       "published": "2020",
       "numPages": 446,
-      "progress": 0.529,
+      "progress": 0.951,
       "imageUrl": "https://assets.hardcover.app/edition/30407789/bb717fbb-b8e5-4f90-ad98-0370995fc69b.jpg",
       "bookId": "446681",
       "link": "https://hardcover.app/books/dungeon-crawler-carl"
@@ -50,7 +50,7 @@
       "title": "The Brothers Karamazov",
       "author": "Fyodor Dostoevsky",
       "rating": 0,
-      "avgRating": 4.39,
+      "avgRating": 4.38,
       "dateAdded": "2026-03-11T00:00:00.000Z",
       "dateStarted": null,
       "dateRead": null,
@@ -127,7 +127,7 @@
       "title": "A Clockwork Orange",
       "author": "Anthony Burgess",
       "rating": 4,
-      "avgRating": 3.98,
+      "avgRating": 3.97,
       "dateAdded": "2026-11-05T00:00:00.000Z",
       "dateStarted": null,
       "dateRead": "2026-09-14T00:00:00.000Z",
