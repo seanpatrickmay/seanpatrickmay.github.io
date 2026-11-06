@@ -1,12 +1,7 @@
 {
-  "generated_at": "2026-11-05T20:27:10.649Z",
+  "generated_at": "2026-11-06T19:49:31.424Z",
   "time_range": "short_term",
   "artists": [
-    {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000f178eefa05f0b8fcafd4beb19d31",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
     {
       "name": "Dominic Fike",
       "image": "https://i.scdn.co/image/ab6761610000f178c674a77fa82d00bcecf1a794",
@@ -33,6 +28,11 @@
       "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
+      "name": "François-Joël Thiollier",
+      "image": "https://i.scdn.co/image/ab67616d00001e0271141466a3b7054ba14a28de",
+      "url": "https://open.spotify.com/artist/6iYKdlSq42Em0z7knC3rgM"
+    },
+    {
       "name": "Maroon 5",
       "image": "https://i.scdn.co/image/ab6761610000f178f8349dfb619a7f842242de77",
       "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
@@ -55,28 +55,28 @@
   ],
   "genres": [
     {
-      "name": "edm",
+      "name": "fado",
       "share": 100
     },
     {
-      "name": "fado",
-      "share": 33
+      "name": "pop",
+      "share": 55
     },
     {
-      "name": "pop",
-      "share": 28
+      "name": "classical",
+      "share": 55
     },
     {
       "name": "french pop",
-      "share": 20
+      "share": 50
     },
     {
-      "name": "french house",
-      "share": 17
+      "name": "impressionism",
+      "share": 48
     },
     {
-      "name": "electronic",
-      "share": 17
+      "name": "classical piano",
+      "share": 48
     }
   ],
   "tracks": [
@@ -97,6 +97,12 @@
       "artist": "Balu Brigada",
       "image": "https://i.scdn.co/image/ab67616d00001e021fc8017bbf246da18b953789",
       "url": "https://open.spotify.com/track/2SGyf0hCuB81F85cHXuRjl"
+    },
+    {
+      "name": "12 Songs, Op. 21: V. Lilacs (Transcr. Rachmaninoff for Solo Piano)",
+      "artist": "Sergei Rachmaninoff, Sergei Babayan",
+      "image": "https://i.scdn.co/image/ab67616d00001e0207ec93581ad7b16b666165b6",
+      "url": "https://open.spotify.com/track/4ObQ0m7VUtrgdEwpFeCKua"
     },
     {
       "name": "Everybody's Changing",
@@ -129,16 +135,10 @@
       "url": "https://open.spotify.com/track/1mea3bSkSGXuIRvnydlB5b"
     },
     {
-      "name": "Just Give Me a Reason (feat. Nate Ruess)",
-      "artist": "P!nk, Nate Ruess",
-      "image": "https://i.scdn.co/image/ab67616d00001e0224a1ac503b55e6eef9a7bb8c",
-      "url": "https://open.spotify.com/track/1mKXFLRA179hdOWQBwUk9e"
-    },
-    {
-      "name": "12 Songs, Op. 21: V. Lilacs (Transcr. Rachmaninoff for Solo Piano)",
-      "artist": "Sergei Rachmaninoff, Sergei Babayan",
-      "image": "https://i.scdn.co/image/ab67616d00001e0207ec93581ad7b16b666165b6",
-      "url": "https://open.spotify.com/track/4ObQ0m7VUtrgdEwpFeCKua"
+      "name": "Etudes symphoniques (Symphonic Etudes), Op. 13, Adagio and Allegro brillante: Variation 11 [arr. P.I. Tchaikovsky for orchestra]",
+      "artist": "Robert Schumann, Seattle Symphony Orchestra, Gerard Schwarz",
+      "image": "https://i.scdn.co/image/ab67616d00001e020bff48e1d92ee2513c78833f",
+      "url": "https://open.spotify.com/track/0u60Tzq3rzE10vqvJqVGZA"
     }
   ]
 }
