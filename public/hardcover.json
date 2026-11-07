@@ -1,6 +1,21 @@
 {
-  "generated_at": "2026-11-06T19:56:35.135Z",
+  "generated_at": "2026-11-07T18:00:11.967Z",
   "currentlyReading": [
+    {
+      "title": "Carl's Doomsday Scenario",
+      "author": "Matt Dinniman",
+      "rating": 0,
+      "avgRating": 4.37,
+      "dateAdded": "2026-11-07T00:00:00.000Z",
+      "dateStarted": "2026-11-06T00:00:00.000Z",
+      "dateRead": null,
+      "published": "2021",
+      "numPages": 386,
+      "progress": 0.391,
+      "imageUrl": "https://assets.hardcover.app/editions/31292760/6676682478410345.jpg",
+      "bookId": "446680",
+      "link": "https://hardcover.app/books/carls-doomsday-scenario"
+    },
     {
       "title": "Les Misérables",
       "author": "Victor Hugo",
