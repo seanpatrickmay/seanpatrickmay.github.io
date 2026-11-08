@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T17:55:38.364Z",
+  "generated_at": "2026-11-08T18:11:23.001Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -33,6 +33,11 @@
       "url": "https://open.spotify.com/artist/6iYKdlSq42Em0z7knC3rgM"
     },
     {
+      "name": "Tame Impala",
+      "image": "https://i.scdn.co/image/ab6761610000f178e412a782245eb20d9626c601",
+      "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
+    },
+    {
       "name": "Maroon 5",
       "image": "https://i.scdn.co/image/ab6761610000f178f8349dfb619a7f842242de77",
       "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
@@ -41,11 +46,6 @@
       "name": "Coldplay",
       "image": "https://i.scdn.co/image/ab6761610000f1781ba8fc5f5c73e7e9313cc6eb",
       "url": "https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU"
-    },
-    {
-      "name": "Tame Impala",
-      "image": "https://i.scdn.co/image/ab6761610000f178e412a782245eb20d9626c601",
-      "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
     },
     {
       "name": "Remi Wolf",
@@ -59,12 +59,8 @@
       "share": 100
     },
     {
-      "name": "pop",
-      "share": 55
-    },
-    {
       "name": "classical",
-      "share": 55
+      "share": 58
     },
     {
       "name": "french pop",
@@ -72,11 +68,15 @@
     },
     {
       "name": "impressionism",
-      "share": 48
+      "share": 50
     },
     {
       "name": "classical piano",
-      "share": 48
+      "share": 50
+    },
+    {
+      "name": "pop",
+      "share": 49
     }
   ],
   "tracks": [
