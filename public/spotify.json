@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T18:11:23.001Z",
+  "generated_at": "2026-11-09T22:50:51.392Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -38,14 +38,14 @@
       "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
     },
     {
-      "name": "Maroon 5",
-      "image": "https://i.scdn.co/image/ab6761610000f178f8349dfb619a7f842242de77",
-      "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
-    },
-    {
       "name": "Coldplay",
       "image": "https://i.scdn.co/image/ab6761610000f1781ba8fc5f5c73e7e9313cc6eb",
       "url": "https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU"
+    },
+    {
+      "name": "Maroon 5",
+      "image": "https://i.scdn.co/image/ab6761610000f178f8349dfb619a7f842242de77",
+      "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
     },
     {
       "name": "Remi Wolf",
@@ -60,22 +60,22 @@
     },
     {
       "name": "classical",
-      "share": 58
+      "share": 56
     },
     {
       "name": "french pop",
       "share": 50
     },
     {
-      "name": "impressionism",
+      "name": "pop",
       "share": 50
+    },
+    {
+      "name": "impressionism",
+      "share": 49
     },
     {
       "name": "classical piano",
-      "share": 50
-    },
-    {
-      "name": "pop",
       "share": 49
     }
   ],
