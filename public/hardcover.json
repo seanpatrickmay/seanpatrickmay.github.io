@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T18:00:11.967Z",
+  "generated_at": "2026-11-09T22:57:49.760Z",
   "currentlyReading": [
     {
       "title": "Carl's Doomsday Scenario",
@@ -11,7 +11,7 @@
       "dateRead": null,
       "published": "2021",
       "numPages": 386,
-      "progress": 0.391,
+      "progress": 0.759,
       "imageUrl": "https://assets.hardcover.app/editions/31292760/6676682478410345.jpg",
       "bookId": "446680",
       "link": "https://hardcover.app/books/carls-doomsday-scenario"
@@ -32,21 +32,6 @@
       "link": "https://hardcover.app/books/les-miserables"
     },
     {
-      "title": "Dungeon Crawler Carl",
-      "author": "Matt Dinniman",
-      "rating": 0,
-      "avgRating": 4.34,
-      "dateAdded": "2026-11-05T00:00:00.000Z",
-      "dateStarted": "2026-11-05T00:00:00.000Z",
-      "dateRead": null,
-      "published": "2020",
-      "numPages": 446,
-      "progress": 0.951,
-      "imageUrl": "https://assets.hardcover.app/edition/30407789/bb717fbb-b8e5-4f90-ad98-0370995fc69b.jpg",
-      "bookId": "446681",
-      "link": "https://hardcover.app/books/dungeon-crawler-carl"
-    },
-    {
       "title": "A Game of Thrones",
       "author": "George R.R. Martin",
       "rating": 0,
@@ -65,7 +50,7 @@
       "title": "The Brothers Karamazov",
       "author": "Fyodor Dostoevsky",
       "rating": 0,
-      "avgRating": 4.38,
+      "avgRating": 4.39,
       "dateAdded": "2026-03-11T00:00:00.000Z",
       "dateStarted": null,
       "dateRead": null,
@@ -78,6 +63,21 @@
     }
   ],
   "recentlyRead": [
+    {
+      "title": "Dungeon Crawler Carl",
+      "author": "Matt Dinniman",
+      "rating": 0,
+      "avgRating": 4.34,
+      "dateAdded": "2026-11-05T00:00:00.000Z",
+      "dateStarted": null,
+      "dateRead": "2026-11-09T00:00:00.000Z",
+      "published": "2020",
+      "numPages": 446,
+      "progress": null,
+      "imageUrl": "https://assets.hardcover.app/edition/30407789/bb717fbb-b8e5-4f90-ad98-0370995fc69b.jpg",
+      "bookId": "446681",
+      "link": "https://hardcover.app/books/dungeon-crawler-carl"
+    },
     {
       "title": "The Perks of Being a Wallflower",
       "author": "Stephen Chbosky",
@@ -242,25 +242,10 @@
       "imageUrl": "https://assets.hardcover.app/edition/16193290/af6c35a5-087b-4f9a-a72d-4435e80c36af.jpg",
       "bookId": "2459845",
       "link": "https://hardcover.app/books/the-hobbit"
-    },
-    {
-      "title": "The Book Thief",
-      "author": "Markus Zusak",
-      "rating": 4,
-      "avgRating": 4.31,
-      "dateAdded": "2026-03-09T00:00:00.000Z",
-      "dateStarted": null,
-      "dateRead": "2026-04-18T00:00:00.000Z",
-      "published": "2005",
-      "numPages": 582,
-      "progress": null,
-      "imageUrl": "https://assets.hardcover.app/editions/30382744/3860761341165435.jpg",
-      "bookId": "300042",
-      "link": "https://hardcover.app/books/the-book-thief"
     }
   ],
-  "totalPages": 8568,
-  "yearPagesRead": 6900,
-  "yearBooksRead": 16,
+  "totalPages": 9014,
+  "yearPagesRead": 7346,
+  "yearBooksRead": 17,
   "profileUrl": "https://hardcover.app/@seanmay"
 }
