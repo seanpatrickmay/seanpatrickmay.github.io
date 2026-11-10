@@ -9,10 +9,11 @@
  * (with or without the leading "Bearer "). Only books whose privacy setting is
  * public are written out.
  *
- * Besides the shelves it reads the reading journal (every progress update,
- * Kindle and paper alike) into pages per day for the heatmap. Paper reading is
- * logged now and then, so each update's pages are spread evenly across the
- * days since that read's previous update.
+ * Besides the shelves it builds pages per day for the heatmap from real dates
+ * only: each read's start and finish, and the reading journal's progress
+ * updates in between (Kindle and paper alike). Pages are spread evenly over
+ * each stretch between two of those dates, since paper reading is logged now
+ * and then. Reads with no start date (most Goodreads imports) are left out.
  */
 
 import { writeFileSync } from 'fs';
@@ -32,9 +33,8 @@ const TIMEOUT_MS = 15_000;
 const RETRIES = 3;
 // Hardcover returns at most 100 rows per query, whatever the limit asks for.
 const PAGE_SIZE = 100;
-// The relay began posting Kindle progress to Hardcover here; nothing earlier
-// has dated progress, only imported finishes.
-export const ACTIVITY_START = '2026-11-05';
+// The heatmap covers the same trailing year as the "past 12 months" panel.
+const ACTIVITY_DAYS = 365;
 const TIME_ZONE = 'America/New_York';
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -48,7 +48,7 @@ const QUERY = `{
       rating
       date_added
       privacy_setting_id
-      user_book_reads(order_by: { id: desc }) { id started_at finished_at progress_pages }
+      user_book_reads(order_by: { id: desc }) { id started_at finished_at progress_pages edition { pages } }
       edition { pages image { url } cached_contributors }
       book { id title slug pages release_year rating image { url } cached_contributors }
     }
@@ -166,46 +166,89 @@ function daysBetween(from, to) {
   return days;
 }
 
+/** Every public read: its id, start and finish dates, and the pages it covers. */
+export function readsFor(me) {
+  return (me?.user_books ?? [])
+    .filter((ub) => ub.privacy_setting_id === PUBLIC)
+    .flatMap((ub) => (ub.user_book_reads ?? []).map((r) => ({
+      id: r.id,
+      started: r.started_at ?? null,
+      finished: r.finished_at ?? null,
+      total: Number(r.progress_pages) || Number(r.edition?.pages) || Number(ub.edition?.pages) || Number(ub.book?.pages) || null,
+    })));
+}
+
 /**
- * Pages per day from the reading journal, plus each book's last real update.
+ * Pages per day over the trailing year, plus each book's last real update.
  *
- * `reads` maps user_book_read_id → started_at (YYYY-MM-DD). Each update's
- * pages are spread evenly over the days since that read's previous update,
- * or since the read began for its first one. Updates with no previous page
- * count are imports (Goodreads history copied over), not reading, and are
- * skipped, as are backwards corrections and non-public entries.
+ * Each read is a run of dated points: its start (0 pages), its progress
+ * updates from the reading journal, and its finish (all its pages). The pages
+ * between two points are spread evenly over the days between them; a start
+ * counts its own day, later points start the day after the one before.
+ *
+ * Only real dates are used. A read with no start date contributes nothing
+ * before its first update. Journal entries with no previous page count are
+ * imports (Goodreads history copied over): they mark pages as already read
+ * without putting them on any day. Backwards corrections and non-public
+ * entries add nothing.
  */
-export function readingActivity(journals, reads, { start = ACTIVITY_START, now = Date.now() } = {}) {
+export function readingActivity(journals, reads, { now = Date.now() } = {}) {
   const today = localDay(now);
+  const first = addDays(today, -(ACTIVITY_DAYS - 1));
   const pages = new Map();
   const lastRead = new Map();
-  const previous = new Map(); // read id → day of its last update
 
-  const entries = journals
-    .filter((j) => j.privacy_setting_id === PUBLIC && j.metadata?.progress_pages_was != null)
-    .map((j) => ({ ...j, at: journalTime(j.created_at) }))
+  const spread = (from, to, delta) => {
+    if (!(delta > 0) || from > to) return;
+    const span = daysBetween(from, to);
+    for (const day of span) {
+      if (day >= first && day <= today) pages.set(day, (pages.get(day) ?? 0) + delta / span.length);
+    }
+  };
+
+  const updates = new Map(); // read id → its journal entries, oldest first
+  journals
+    .filter((j) => j.privacy_setting_id === PUBLIC && j.metadata)
+    .map((j) => ({ ...j, at: journalTime(j.created_at), imported: j.metadata.progress_pages_was == null }))
     .filter((j) => Number.isFinite(j.at))
-    .sort((a, b) => a.at - b.at);
+    .sort((a, b) => a.at - b.at)
+    .forEach((entry) => {
+      if (!entry.imported) lastRead.set(entry.book_id, new Date(entry.at).toISOString());
+      const id = entry.metadata.user_book_read_id;
+      updates.set(id, [...(updates.get(id) ?? []), entry]);
+    });
 
-  for (const entry of entries) {
-    const readId = entry.metadata.user_book_read_id;
-    const day = localDay(entry.at);
-    lastRead.set(entry.book_id, new Date(entry.at).toISOString());
+  const byId = new Map(reads.map((r) => [r.id, r]));
+  for (const id of new Set([...byId.keys(), ...updates.keys()])) {
+    const read = byId.get(id);
+    // The last dated point: its day, whether that day itself is still unread, and the page reached.
+    let point = read?.started ? { day: read.started, inclusive: true, pages: 0 } : null;
+    const fromPoint = (day) => {
+      if (!point || point.day > day) return day;
+      if (point.inclusive) return point.day;
+      return point.day < day ? addDays(point.day, 1) : day;
+    };
 
-    const delta = Number(entry.metadata.pages_delta) || 0;
-    const prior = previous.get(readId);
-    previous.set(readId, day);
-    if (delta <= 0) continue;
+    for (const entry of updates.get(id) ?? []) {
+      const reached = Number(entry.metadata.progress_pages);
+      // An import says how far the read already was, not when those pages were read.
+      if (entry.imported) {
+        if (point && Number.isFinite(reached)) point = { ...point, pages: Math.max(point.pages, reached) };
+        continue;
+      }
+      const day = localDay(entry.at);
+      const delta = Number(entry.metadata.pages_delta) || 0;
+      spread(fromPoint(day), day, delta);
+      point = { day, inclusive: false, pages: Number.isFinite(reached) ? reached : (point?.pages ?? 0) + delta };
+    }
 
-    const started = reads.get(readId);
-    let from = day;
-    if (prior) from = prior < day ? addDays(prior, 1) : day;
-    else if (started && started < day) from = started;
-
-    const span = daysBetween(from, day);
-    for (const d of span) pages.set(d, (pages.get(d) ?? 0) + delta / span.length);
+    if (read?.finished && point && read.total) {
+      spread(fromPoint(read.finished), read.finished, read.total - point.pages);
+    }
   }
 
+  const reading = [...pages.keys()].filter((day) => pages.get(day) >= 0.5).sort();
+  const start = reading[0] ?? today;
   return {
     start,
     days: daysBetween(start, today).map((day) => ({ day, pages: Math.round(pages.get(day) ?? 0) })),
@@ -286,16 +329,16 @@ async function main() {
 
   console.log('Fetching Hardcover shelves...');
   const me = await fetchMe(token);
-  // A day earlier than the heatmap so Boston's evening of the first day is in.
-  const journals = await fetchJournals(token, me.id, addDays(ACTIVITY_START, -1));
-  const reads = new Map(
-    (me.user_books ?? []).flatMap((ub) => (ub.user_book_reads ?? []).map((r) => [r.id, r.started_at])),
-  );
+  // A day past the heatmap's year so Boston's evening of its first day is in.
+  const since = addDays(localDay(Date.now()), -ACTIVITY_DAYS);
+  const journals = await fetchJournals(token, me.id, since);
+  const reads = readsFor(me);
   const activity = readingActivity(journals, reads);
   const output = buildOutput(me, Date.now(), activity);
   console.log(`  currently reading: ${output.currentlyReading.length} books`);
   console.log(`  read: ${output.recentlyRead.length} shown`);
-  console.log(`  journal: ${journals.length} progress updates since ${ACTIVITY_START}`);
+  console.log(`  journal: ${journals.length} progress updates since ${since}`);
+  console.log(`  heatmap: from ${activity.start}, ${reads.filter((r) => r.started).length} of ${reads.length} reads have a start date`);
 
   // An empty result is far likelier to be a broken token or API change than a
   // real empty library. Writing it would blank the card and the workflow would

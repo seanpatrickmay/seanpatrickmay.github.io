@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { buildOutput, fetchJournals, fetchMe, pickAuthor, readingActivity, toBook } from './update_hardcover.mjs';
+import { buildOutput, fetchJournals, fetchMe, pickAuthor, readingActivity, readsFor, toBook } from './update_hardcover.mjs';
 
 const NOW = Date.parse('2026-11-05T12:00:00Z');
 
@@ -129,17 +129,18 @@ test('fetchMe fails loudly on a refused token or a GraphQL error', async () => {
 
 // --- reading activity (the pages-per-day heatmap) ---------------------------
 
-const ACTIVITY_START = '2026-11-05';
-
 /** A progress_updated journal entry, as Hardcover returns it (UTC, no zone suffix). */
-function progress(createdAt, delta, { was = 0, read = 7, book = 10, privacy = 1 } = {}) {
+function progress(createdAt, delta, { was = 0, now = was + delta, read = 7, book = 10, privacy = 1 } = {}) {
   return {
     book_id: book,
     created_at: createdAt,
     privacy_setting_id: privacy,
-    metadata: { pages_delta: delta, progress_pages_was: was, user_book_read_id: read },
+    metadata: { pages_delta: delta, progress_pages_was: was, progress_pages: now, user_book_read_id: read },
   };
 }
+
+/** A read as readingActivity takes it. */
+const read = (id, started, finished = null, total = null) => ({ id, started, finished, total });
 
 const pagesOn = (activity) => Object.fromEntries(activity.days.filter((d) => d.pages).map((d) => [d.day, d.pages]));
 
@@ -149,8 +150,7 @@ test('readingActivity spreads a late paper update evenly over the days since the
     // Logged Monday night, four Boston days after the previous update.
     progress('2026-11-10T23:00:00', 60, { was: 30 }),
   ];
-  const reads = new Map([[7, '2026-11-06']]);
-  const out = readingActivity(journals, reads, { start: ACTIVITY_START, now: Date.parse('2026-11-11T03:00:00Z') });
+  const out = readingActivity(journals, [read(7, '2026-11-06')], { now: Date.parse('2026-11-11T03:00:00Z') });
   assert.deepEqual(pagesOn(out), {
     '2026-11-06': 30,
     '2026-11-07': 15,
@@ -158,30 +158,68 @@ test('readingActivity spreads a late paper update evenly over the days since the
     '2026-11-09': 15,
     '2026-11-10': 15,
   });
-  assert.equal(out.start, ACTIVITY_START);
-  assert.equal(out.days[0].day, ACTIVITY_START);
+  // The grid starts at the first day with reading and runs to today.
+  assert.equal(out.start, '2026-11-06');
+  assert.equal(out.days[0].day, '2026-11-06');
   assert.equal(out.days.at(-1).day, '2026-11-10');
 });
 
 test('readingActivity spreads a read\'s first update back to the day it was started', () => {
   const journals = [progress('2026-11-09T02:00:00', 90, { was: 0 })]; // Nov 8, 9pm in Boston
-  const out = readingActivity(journals, new Map([[7, '2026-11-06']]), {
-    start: ACTIVITY_START,
-    now: Date.parse('2026-11-09T12:00:00Z'),
-  });
+  const out = readingActivity(journals, [read(7, '2026-11-06')], { now: Date.parse('2026-11-09T12:00:00Z') });
   assert.deepEqual(pagesOn(out), { '2026-11-06': 30, '2026-11-07': 30, '2026-11-08': 30 });
 });
 
-test('readingActivity skips imports, backwards corrections, private entries and days before the start', () => {
+test('readingActivity spreads a finished read evenly from its start date to its finish date', () => {
+  const out = readingActivity([], [read(1, '2026-09-01', '2026-09-10', 300)], { now: Date.parse('2026-11-10T12:00:00Z') });
+  const pages = pagesOn(out);
+  assert.equal(Object.keys(pages).length, 10);
+  assert.equal(pages['2026-09-01'], 30);
+  assert.equal(pages['2026-09-10'], 30);
+  assert.equal(out.start, '2026-09-01');
+  assert.equal(out.days.at(-1).day, '2026-11-10');
+});
+
+test('readingActivity splits a finished read at its progress updates', () => {
+  const journals = [progress('2026-09-04T16:00:00', 200, { was: 0, read: 1 })]; // noon, Sep 4
+  const out = readingActivity(journals, [read(1, '2026-09-01', '2026-09-08', 300)], { now: Date.parse('2026-09-08T20:00:00Z') });
+  assert.deepEqual(pagesOn(out), {
+    '2026-09-01': 50, '2026-09-02': 50, '2026-09-03': 50, '2026-09-04': 50, // 200 over Sep 1-4
+    '2026-09-05': 25, '2026-09-06': 25, '2026-09-07': 25, '2026-09-08': 25, // the last 100 over Sep 5-8
+  });
+});
+
+test('readingActivity leaves a read with no start date off the heatmap', () => {
+  // Imported from Goodreads: a finish date and nothing else.
+  const out = readingActivity([], [read(1, null, '2026-09-20', 231)], { now: Date.parse('2026-11-10T12:00:00Z') });
+  assert.deepEqual(pagesOn(out), {});
+  assert.equal(out.days.length, 1); // just today
+});
+
+test('readingActivity skips imports, backwards corrections, private entries and days over a year back', () => {
   const journals = [
     progress('2026-11-05T19:03:00', 240, { was: null, read: 1 }), // copied over from Goodreads
     progress('2026-11-06T15:00:00', -20, { was: 100, read: 2 }), // progress moved back
     progress('2026-11-06T15:00:00', 50, { was: 0, read: 3, privacy: 3 }),
-    progress('2026-11-06T15:00:00', 40, { was: 0, read: 4 }), // started Nov 3: only Nov 5-6 count
+    progress('2026-11-06T15:00:00', 40, { was: 0, read: 4 }), // started Nov 3: 10 a day Nov 3-6
   ];
-  const reads = new Map([[4, '2026-11-03']]);
-  const out = readingActivity(journals, reads, { start: ACTIVITY_START, now: Date.parse('2026-11-06T20:00:00Z') });
-  assert.deepEqual(pagesOn(out), { '2026-11-05': 10, '2026-11-06': 10 });
+  const reads = [read(1, '2026-11-05'), read(4, '2026-11-03'), read(5, '2024-01-01', '2025-12-31', 730)];
+  const out = readingActivity(journals, reads, { now: Date.parse('2026-11-06T20:00:00Z') });
+  const pages = pagesOn(out);
+  assert.equal(pages['2026-11-03'], 10);
+  assert.equal(pages['2026-11-06'], 10);
+  // The two-year read keeps only its days inside the trailing 365, at its own one-a-day rate.
+  assert.equal(out.days.length, 365);
+  assert.equal(out.start, '2025-11-07');
+  assert.equal(pages['2025-11-07'], 1);
+  assert.equal(pages['2026-01-01'], undefined);
+});
+
+test('readingActivity counts an imported page count as already read, not read that day', () => {
+  // Started Nov 5 by the relay with 401 pages already behind it, then finished Nov 9.
+  const journals = [progress('2026-11-05T19:05:00', 401, { was: null, now: 401, read: 1 })];
+  const out = readingActivity(journals, [read(1, '2026-11-05', '2026-11-09', 501)], { now: Date.parse('2026-11-10T12:00:00Z') });
+  assert.deepEqual(pagesOn(out), { '2026-11-05': 20, '2026-11-06': 20, '2026-11-07': 20, '2026-11-08': 20, '2026-11-09': 20 });
 });
 
 test('readingActivity reports the last real update per book, not import time', () => {
@@ -190,8 +228,22 @@ test('readingActivity reports the last real update per book, not import time', (
     progress('2026-11-07T01:54:00', 151, { was: 0, book: 2, read: 2 }),
     progress('2026-11-10T05:36:22.228338', 70, { was: 151, book: 2, read: 2 }),
   ];
-  const out = readingActivity(journals, new Map(), { start: ACTIVITY_START, now: Date.parse('2026-11-10T12:00:00Z') });
+  const out = readingActivity(journals, [], { now: Date.parse('2026-11-10T12:00:00Z') });
   assert.deepEqual(Object.fromEntries(out.lastRead), { 2: '2026-11-10T05:36:22.228Z' });
+});
+
+test('readsFor keeps public reads with the pages each one was read in', () => {
+  const me = {
+    user_books: [
+      userBook({ user_book_reads: [{ id: 1, started_at: '2026-09-01', finished_at: '2026-09-10', progress_pages: 290, edition: { pages: 310 } }] }),
+      userBook({ user_book_reads: [{ id: 2, started_at: '2026-10-01', finished_at: '2026-10-05', progress_pages: null, edition: null }] }),
+      userBook({ privacy_setting_id: 3, user_book_reads: [{ id: 3, started_at: '2026-10-01', finished_at: '2026-10-05' }] }),
+    ],
+  };
+  assert.deepEqual(readsFor(me), [
+    { id: 1, started: '2026-09-01', finished: '2026-09-10', total: 290 },
+    { id: 2, started: '2026-10-01', finished: '2026-10-05', total: 300 }, // the user book's edition
+  ]);
 });
 
 test('buildOutput adds the activity days and each current book\'s last read', () => {
@@ -199,9 +251,9 @@ test('buildOutput adds the activity days and each current book\'s last read', ()
     username: 'reader',
     user_books: [userBook({ id: 5, status_id: 2, book: { ...userBook().book, id: 5 } })],
   };
-  const activity = { start: ACTIVITY_START, days: [{ day: ACTIVITY_START, pages: 12 }], lastRead: new Map([[5, '2026-11-05T20:00:00.000Z']]) };
+  const activity = { start: '2026-11-05', days: [{ day: '2026-11-05', pages: 12 }], lastRead: new Map([[5, '2026-11-05T20:00:00.000Z']]) };
   const out = buildOutput(me, Date.parse('2026-11-05T22:00:00Z'), activity);
-  assert.deepEqual(out.activity, { start: ACTIVITY_START, days: [{ day: ACTIVITY_START, pages: 12 }] });
+  assert.deepEqual(out.activity, { start: '2026-11-05', days: [{ day: '2026-11-05', pages: 12 }] });
   assert.equal(out.currentlyReading[0].lastRead, '2026-11-05T20:00:00.000Z');
 });
 
@@ -214,7 +266,7 @@ test('fetchJournals pages past Hardcover\'s 100-row cap', async () => {
     const rows = Array.from({ length: count }, (_, i) => progress('2026-11-06T12:00:00', 1, { book: variables.offset + i }));
     return new Response(JSON.stringify({ data: { reading_journals: rows } }), { status: 200 });
   };
-  const rows = await fetchJournals('x', 141555, '2026-11-05', { fetchImpl, sleep: async () => {} });
+  const rows = await fetchJournals('x', 141555, '2025-11-05', { fetchImpl, sleep: async () => {} });
   assert.equal(rows.length, 107);
   assert.deepEqual(offsets, [0, 100]);
 });
