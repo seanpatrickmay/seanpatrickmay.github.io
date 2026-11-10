@@ -4,6 +4,7 @@ import { BookOpen } from 'lucide-react';
 import StaleBadge from '@/components/ui/StaleBadge';
 import AutoScrollShelf from '@/components/AutoScrollShelf';
 import { pickReadingBenchmark } from '@/lib/readingBenchmarks';
+import { activitySummary, heatmapWeeks, lastReadLabel } from '@/lib/readingActivity';
 
 const NUM = new Intl.NumberFormat('en-US');
 
@@ -11,11 +12,12 @@ function sumPages(books) {
   return books.reduce((sum, book) => sum + (Number(book?.numPages) || 0), 0);
 }
 
-function toShelfItems(books, withRatings) {
+function toShelfItems(books, withRatings, generatedAt) {
   return books.map((book, index) => ({
     id: book.bookId || book.link || `${book.title}-${index}`,
     title: book.title,
     subtitle: book.author,
+    caption: withRatings ? null : lastReadLabel(book.lastRead, generatedAt),
     image: book.imageUrl,
     url: book.link,
     badge: withRatings ? (book.rating ? `★${book.rating}` : null) : progressBadge(book.progress),
@@ -29,10 +31,13 @@ export function progressBadge(progress) {
 }
 
 /** One horizontal shelf of covers, with a wooden rail underneath. */
-function Shelf({ label, count, books, withRatings = false, emptyMessage, meta = null }) {
+function Shelf({ label, count, books, withRatings = false, emptyMessage, meta = null, generatedAt = null }) {
   // Stable identity: AutoScrollShelf re-measures whenever `items` changes, and
   // a fresh array every render would re-measure on every render.
-  const shelfItems = useMemo(() => toShelfItems(books, withRatings), [books, withRatings]);
+  const shelfItems = useMemo(
+    () => toShelfItems(books, withRatings, generatedAt),
+    [books, withRatings, generatedAt],
+  );
 
   if (!books.length) return null;
 
@@ -60,6 +65,74 @@ function Shelf({ label, count, books, withRatings = false, emptyMessage, meta = 
         aria-hidden="true"
         className="mt-1 h-[3px] rounded-full bg-gradient-to-r from-amber-900/15 via-amber-800/35 to-amber-900/15 dark:from-amber-200/10 dark:via-amber-200/25 dark:to-amber-200/10"
       />
+    </div>
+  );
+}
+
+// Level 0 is a day with no reading; 1-4 follow heatLevel's page steps.
+const HEAT_CLASSES = [
+  'bg-stone-200/80 dark:bg-stone-700/60',
+  'bg-amber-200 dark:bg-amber-900/80',
+  'bg-amber-300 dark:bg-amber-700',
+  'bg-amber-500 dark:bg-amber-500',
+  'bg-amber-700 dark:bg-amber-300',
+];
+const SHORT_DAY = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+const shortDay = (day) => SHORT_DAY.format(new Date(`${day}T00:00:00Z`));
+
+/**
+ * Pages per day, Kindle and paper alike, newest week on the right. Older
+ * weeks fall off the left edge once the grid outgrows the card. Paper
+ * updates are spread over the days since the last one, hence the "~".
+ */
+function ReadingHeatmap({ activity }) {
+  const days = activity?.days ?? [];
+  const weeks = useMemo(() => heatmapWeeks(days), [days]);
+  if (!days.length) return null;
+
+  const { totalPages, perDay, daysRead } = activitySummary(days);
+  const since = shortDay(activity.start ?? days[0].day);
+
+  return (
+    <div>
+      <div className="mb-2 flex items-baseline justify-between gap-2">
+        <div className="text-[10px] font-semibold uppercase tracking-widest text-stone-500 dark:text-stone-400">
+          pages per day
+        </div>
+        <div className="text-[10px] tabular-nums text-stone-500 dark:text-stone-400">
+          ~{NUM.format(perDay)}/day since {since}
+        </div>
+      </div>
+      <div className="flex items-end gap-3">
+        <div aria-hidden="true" className="flex flex-none items-center gap-[3px] text-[9px] text-stone-500 dark:text-stone-400">
+          <span className="mr-0.5">less</span>
+          {HEAT_CLASSES.map((shade) => (
+            <span key={shade} className={`h-[8px] w-[8px] rounded-[2px] ${shade}`} />
+          ))}
+          <span className="ml-0.5">more</span>
+        </div>
+        <div
+          role="img"
+          aria-label={`About ${NUM.format(totalPages)} pages read since ${since}, on ${daysRead} of ${days.length} days, roughly ${NUM.format(perDay)} a day`}
+          className="flex min-w-0 flex-1 justify-end gap-[3px] overflow-hidden"
+        >
+          {weeks.map((week) => (
+            <div key={(week.find(Boolean) ?? {}).day} className="flex flex-none flex-col gap-[3px]">
+              {Array.from({ length: 7 }, (_, i) => week[i]).map((cell, i) =>
+                cell ? (
+                  <span
+                    key={cell.day}
+                    title={`${shortDay(cell.day)} · ${cell.pages ? `~${NUM.format(cell.pages)}` : 'no'} pages`}
+                    className={`h-[10px] w-[10px] rounded-[2px] ${HEAT_CLASSES[cell.level]}`}
+                  />
+                ) : (
+                  <span key={`pad-${i}`} aria-hidden="true" className="h-[10px] w-[10px]" />
+                ),
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
@@ -138,12 +211,15 @@ export default function HardcoverCard({ data = null, bare = false }) {
         </div>
       )}
 
+      <ReadingHeatmap activity={data?.activity} />
+
       <Shelf
         label="currently reading"
         count={currentlyReading.length}
         books={currentlyReading}
         meta={pagesInFlight > 0 ? `${NUM.format(pagesInFlight)} pages` : null}
         emptyMessage="Nothing on the go"
+        generatedAt={data?.generated_at}
       />
 
       <Shelf

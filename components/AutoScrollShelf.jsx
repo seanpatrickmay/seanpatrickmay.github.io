@@ -16,7 +16,7 @@ const MIN_COPIES = 2;
 const MAX_COPIES = 8;
 
 export default function AutoScrollShelf({
-  items = [], // [{ id, title, subtitle, image, url, badge }]
+  items = [], // [{ id, title, subtitle, caption, image, url, badge }]
   speed = 14, // px per second
   // Hold on the first cover long enough to read it, matching AutoScrollList.
   startDelayMs = 2600,
@@ -291,6 +291,11 @@ export default function AutoScrollShelf({
           {item.subtitle && (
             <div className="truncate text-[9px] leading-tight text-stone-500 dark:text-stone-400">
               {item.subtitle}
+            </div>
+          )}
+          {item.caption && (
+            <div className="truncate text-[9px] leading-tight text-amber-700 dark:text-amber-400/80">
+              {item.caption}
             </div>
           )}
         </div>
