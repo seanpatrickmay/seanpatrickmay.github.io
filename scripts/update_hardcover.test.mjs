@@ -222,6 +222,27 @@ test('readingActivity counts an imported page count as already read, not read th
   assert.deepEqual(pagesOn(out), { '2026-11-05': 20, '2026-11-06': 20, '2026-11-07': 20, '2026-11-08': 20, '2026-11-09': 20 });
 });
 
+test('readingActivity ignores an import made after the book was already finished', () => {
+  // Finished Sep 19; the Goodreads copy-over on Nov 5 restates the same 439 pages.
+  const journals = [progress('2026-11-05T19:14:00', 439, { was: null, now: 439, read: 1 })];
+  const out = readingActivity(journals, [read(1, '2026-09-15', '2026-09-19', 439)], { now: Date.parse('2026-11-10T12:00:00Z') });
+  const pages = pagesOn(out);
+  assert.deepEqual(Object.keys(pages), ['2026-09-15', '2026-09-16', '2026-09-17', '2026-09-18', '2026-09-19']);
+  // Days are whole pages: 87.8 a day shows as 88.
+  assert.deepEqual([...new Set(Object.values(pages))], [88]);
+});
+
+test('readingActivity spreads an import made after a known start back to that start', () => {
+  // Started Sep 13 (from Goodreads), 401 pages in by the Nov 5 copy-over: 54 days.
+  const journals = [progress('2026-11-05T19:05:00', 401, { was: null, now: 401, read: 1 })];
+  const out = readingActivity(journals, [read(1, '2026-09-13')], { now: Date.parse('2026-11-10T12:00:00Z') });
+  const pages = pagesOn(out);
+  assert.equal(out.start, '2026-09-13');
+  assert.equal(pages['2026-09-13'], 7);
+  assert.equal(pages['2026-11-05'], 7);
+  assert.equal(pages['2026-11-06'], undefined);
+});
+
 test('readingActivity reports the last real update per book, not import time', () => {
   const journals = [
     progress('2026-11-05T19:05:00', 401, { was: null, book: 1, read: 1 }),

@@ -82,7 +82,7 @@ const shortDay = (day) => SHORT_DAY.format(new Date(`${day}T00:00:00Z`));
 
 /**
  * Pages per day, Kindle and paper alike, newest week on the right. Older
- * weeks fall off the left edge once the grid outgrows the card. Paper
+ * weeks drop off the left edge, whole, once the grid outgrows the card. Paper
  * updates are spread over the days since the last one, hence the "~".
  */
 function ReadingHeatmap({ activity }) {
@@ -103,35 +103,35 @@ function ReadingHeatmap({ activity }) {
           ~{NUM.format(perDay)}/day since {since}
         </div>
       </div>
-      <div className="flex items-end gap-3">
-        <div aria-hidden="true" className="flex flex-none items-center gap-[3px] text-[9px] text-stone-500 dark:text-stone-400">
-          <span className="mr-0.5">less</span>
-          {HEAT_CLASSES.map((shade) => (
-            <span key={shade} className={`h-[8px] w-[8px] rounded-[2px] ${shade}`} />
-          ))}
-          <span className="ml-0.5">more</span>
-        </div>
-        <div
-          role="img"
-          aria-label={`About ${NUM.format(totalPages)} pages read since ${since}, on ${daysRead} of ${days.length} days, roughly ${NUM.format(perDay)} a day`}
-          className="flex min-w-0 flex-1 justify-end gap-[3px] overflow-hidden"
-        >
-          {weeks.map((week) => (
-            <div key={(week.find(Boolean) ?? {}).day} className="flex flex-none flex-col gap-[3px]">
-              {Array.from({ length: 7 }, (_, i) => week[i]).map((cell, i) =>
-                cell ? (
-                  <span
-                    key={cell.day}
-                    title={`${shortDay(cell.day)} · ${cell.pages ? `~${NUM.format(cell.pages)}` : 'no'} pages`}
-                    className={`h-[10px] w-[10px] rounded-[2px] ${HEAT_CLASSES[cell.level]}`}
-                  />
-                ) : (
-                  <span key={`pad-${i}`} aria-hidden="true" className="h-[10px] w-[10px]" />
-                ),
-              )}
-            </div>
-          ))}
-        </div>
+      <div
+        role="img"
+        aria-label={`About ${NUM.format(totalPages)} pages read since ${since}, on ${daysRead} of ${days.length} days, roughly ${NUM.format(perDay)} a day`}
+        // Newest week first, laid right to left; weeks that do not fit wrap onto
+        // a second row that the fixed height hides, so no week is cut in half.
+        className="flex h-[88px] flex-row-reverse flex-wrap gap-[3px] overflow-hidden"
+      >
+        {[...weeks].reverse().map((week) => (
+          <div key={(week.find(Boolean) ?? {}).day} className="flex flex-none flex-col gap-[3px]">
+            {Array.from({ length: 7 }, (_, i) => week[i]).map((cell, i) =>
+              cell ? (
+                <span
+                  key={cell.day}
+                  title={`${shortDay(cell.day)} · ${cell.pages ? `~${NUM.format(cell.pages)}` : 'no'} pages`}
+                  className={`h-[10px] w-[10px] rounded-[2px] ${HEAT_CLASSES[cell.level]}`}
+                />
+              ) : (
+                <span key={`pad-${i}`} aria-hidden="true" className="h-[10px] w-[10px]" />
+              ),
+            )}
+          </div>
+        ))}
+      </div>
+      <div aria-hidden="true" className="mt-1.5 flex items-center justify-end gap-[3px] text-[9px] text-stone-500 dark:text-stone-400">
+        <span className="mr-0.5">less</span>
+        {HEAT_CLASSES.map((shade) => (
+          <span key={shade} className={`h-[8px] w-[8px] rounded-[2px] ${shade}`} />
+        ))}
+        <span className="ml-0.5">more</span>
       </div>
     </div>
   );
