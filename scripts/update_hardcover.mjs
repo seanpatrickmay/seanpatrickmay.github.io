@@ -8,6 +8,11 @@
  * HARDCOVER_TOKEN is a personal API token from hardcover.app/account/api
  * (with or without the leading "Bearer "). Only books whose privacy setting is
  * public are written out.
+ *
+ * Besides the shelves it reads the reading journal (every progress update,
+ * Kindle and paper alike) into pages per day for the heatmap. Paper reading is
+ * logged now and then, so each update's pages are spread evenly across the
+ * days since that read's previous update.
  */
 
 import { writeFileSync } from 'fs';
@@ -25,9 +30,17 @@ const PUBLIC = 1; // privacy_setting_id
 const MAX_RECENT = 12;
 const TIMEOUT_MS = 15_000;
 const RETRIES = 3;
+// Hardcover returns at most 100 rows per query, whatever the limit asks for.
+const PAGE_SIZE = 100;
+// The relay began posting Kindle progress to Hardcover here; nothing earlier
+// has dated progress, only imported finishes.
+export const ACTIVITY_START = '2026-11-05';
+const TIME_ZONE = 'America/New_York';
+const DAY_MS = 24 * 60 * 60 * 1000;
 
 const QUERY = `{
   me {
+    id
     username
     user_books(where: { status_id: { _in: [2, 3] } }, order_by: { id: desc }) {
       id
@@ -35,11 +48,20 @@ const QUERY = `{
       rating
       date_added
       privacy_setting_id
-      user_book_reads(order_by: { id: desc }) { started_at finished_at progress_pages }
+      user_book_reads(order_by: { id: desc }) { id started_at finished_at progress_pages }
       edition { pages image { url } cached_contributors }
       book { id title slug pages release_year rating image { url } cached_contributors }
     }
   }
+}`;
+
+const JOURNALS = `query ($user: Int!, $since: timestamp!, $offset: Int!) {
+  reading_journals(
+    where: { user_id: { _eq: $user }, event: { _eq: "progress_updated" }, created_at: { _gte: $since } }
+    order_by: [{ created_at: asc }, { id: asc }]
+    limit: ${PAGE_SIZE}
+    offset: $offset
+  ) { book_id created_at privacy_setting_id metadata }
 }`;
 
 // Hardcover keeps some titles and names with doubled spaces; they render verbatim.
@@ -92,15 +114,15 @@ export function toBook(userBook) {
 }
 
 /** Build public/hardcover.json from the `me` query result. */
-export function buildOutput(me, now = Date.now()) {
+export function buildOutput(me, now = Date.now(), activity = null) {
   const shelf = (me?.user_books ?? []).filter((ub) => ub.privacy_setting_id === PUBLIC);
   const on = (status) => shelf.filter((ub) => ub.status_id === status).map(toBook);
   const ts = (value) => Date.parse(value || '') || 0;
 
   // Most recently started first.
-  const currentlyReading = on(STATUS.reading).sort(
-    (a, b) => ts(b.dateStarted || b.dateAdded) - ts(a.dateStarted || a.dateAdded),
-  );
+  const currentlyReading = on(STATUS.reading)
+    .map((book) => ({ ...book, lastRead: activity?.lastRead?.get(Number(book.bookId)) ?? null }))
+    .sort((a, b) => ts(b.dateStarted || b.dateAdded) - ts(a.dateStarted || a.dateAdded));
   const readAll = on(STATUS.read);
   // Most-recently-finished first (fall back to date added when no read date).
   const recentlyRead = [...readAll]
@@ -122,14 +144,80 @@ export function buildOutput(me, now = Date.now()) {
     yearPagesRead: readThisYear.reduce((sum, b) => sum + (b.numPages || 0), 0),
     yearBooksRead: readThisYear.length,
     profileUrl: me?.username ? `https://hardcover.app/@${me.username}` : 'https://hardcover.app',
+    ...(activity ? { activity: { start: activity.start, days: activity.days } } : {}),
+  };
+}
+
+// Journal timestamps are UTC without a zone suffix, sometimes to the microsecond.
+function journalTime(createdAt) {
+  const [whole, fraction = ''] = String(createdAt).replace(/Z$/, '').split('.');
+  return Date.parse(`${whole}.${fraction.padEnd(3, '0').slice(0, 3)}Z`);
+}
+
+const dayFormat = new Intl.DateTimeFormat('en-CA', { timeZone: TIME_ZONE, year: 'numeric', month: '2-digit', day: '2-digit' });
+/** The calendar day in Boston, as YYYY-MM-DD. */
+const localDay = (ms) => dayFormat.format(ms);
+const addDays = (day, n) => new Date(Date.parse(`${day}T00:00:00Z`) + n * DAY_MS).toISOString().slice(0, 10);
+
+/** Every day from `from` to `to`, both included. */
+function daysBetween(from, to) {
+  const days = [];
+  for (let day = from; day <= to; day = addDays(day, 1)) days.push(day);
+  return days;
+}
+
+/**
+ * Pages per day from the reading journal, plus each book's last real update.
+ *
+ * `reads` maps user_book_read_id → started_at (YYYY-MM-DD). Each update's
+ * pages are spread evenly over the days since that read's previous update,
+ * or since the read began for its first one. Updates with no previous page
+ * count are imports (Goodreads history copied over), not reading, and are
+ * skipped, as are backwards corrections and non-public entries.
+ */
+export function readingActivity(journals, reads, { start = ACTIVITY_START, now = Date.now() } = {}) {
+  const today = localDay(now);
+  const pages = new Map();
+  const lastRead = new Map();
+  const previous = new Map(); // read id → day of its last update
+
+  const entries = journals
+    .filter((j) => j.privacy_setting_id === PUBLIC && j.metadata?.progress_pages_was != null)
+    .map((j) => ({ ...j, at: journalTime(j.created_at) }))
+    .filter((j) => Number.isFinite(j.at))
+    .sort((a, b) => a.at - b.at);
+
+  for (const entry of entries) {
+    const readId = entry.metadata.user_book_read_id;
+    const day = localDay(entry.at);
+    lastRead.set(entry.book_id, new Date(entry.at).toISOString());
+
+    const delta = Number(entry.metadata.pages_delta) || 0;
+    const prior = previous.get(readId);
+    previous.set(readId, day);
+    if (delta <= 0) continue;
+
+    const started = reads.get(readId);
+    let from = day;
+    if (prior) from = prior < day ? addDays(prior, 1) : day;
+    else if (started && started < day) from = started;
+
+    const span = daysBetween(from, day);
+    for (const d of span) pages.set(d, (pages.get(d) ?? 0) + delta / span.length);
+  }
+
+  return {
+    start,
+    days: daysBetween(start, today).map((day) => ({ day, pages: Math.round(pages.get(day) ?? 0) })),
+    lastRead,
   };
 }
 
 /**
- * POST the query; retries rate limits, 5xx, dropped connections and timeouts,
- * throws on anything else.
+ * POST a query and return its data; retries rate limits, 5xx, dropped
+ * connections and timeouts, throws on anything else.
  */
-export async function fetchMe(token, { fetchImpl = fetch, sleep = (ms) => new Promise((r) => setTimeout(r, ms)) } = {}) {
+async function gql(token, query, variables, { fetchImpl = fetch, sleep = (ms) => new Promise((r) => setTimeout(r, ms)) } = {}) {
   const auth = `Bearer ${String(token).trim().replace(/^bearer\s+/i, '')}`;
   for (let attempt = 1; ; attempt++) {
     const controller = new AbortController();
@@ -144,7 +232,7 @@ export async function fetchMe(token, { fetchImpl = fetch, sleep = (ms) => new Pr
           'content-type': 'application/json',
           'user-agent': 'seanpatrickmay.github.io reading card',
         },
-        body: JSON.stringify({ query: QUERY }),
+        body: JSON.stringify({ query, variables }),
       });
     } catch (err) {
       // No response at all (DNS, reset, our own timeout): as transient as a 5xx.
@@ -169,9 +257,26 @@ export async function fetchMe(token, { fetchImpl = fetch, sleep = (ms) => new Pr
     if (body.errors?.length || body.error) {
       throw new Error(`GraphQL: ${String(body.errors?.[0]?.message ?? body.error).slice(0, 200)}`);
     }
-    const me = Array.isArray(body.data?.me) ? body.data.me[0] : body.data?.me;
-    if (!me) throw new Error('no user for this token');
-    return me;
+    return body.data;
+  }
+}
+
+/** The token's user, with the shelves the card renders. */
+export async function fetchMe(token, options) {
+  const data = await gql(token, QUERY, {}, options);
+  const me = Array.isArray(data?.me) ? data.me[0] : data?.me;
+  if (!me) throw new Error('no user for this token');
+  return me;
+}
+
+/** Every progress update since `since` (YYYY-MM-DD), oldest first. */
+export async function fetchJournals(token, userId, since, options) {
+  const rows = [];
+  for (let offset = 0; ; offset += PAGE_SIZE) {
+    const data = await gql(token, JOURNALS, { user: userId, since: `${since}T00:00:00`, offset }, options);
+    const page = data?.reading_journals ?? [];
+    rows.push(...page);
+    if (page.length < PAGE_SIZE) return rows;
   }
 }
 
@@ -181,9 +286,16 @@ async function main() {
 
   console.log('Fetching Hardcover shelves...');
   const me = await fetchMe(token);
-  const output = buildOutput(me);
+  // A day earlier than the heatmap so Boston's evening of the first day is in.
+  const journals = await fetchJournals(token, me.id, addDays(ACTIVITY_START, -1));
+  const reads = new Map(
+    (me.user_books ?? []).flatMap((ub) => (ub.user_book_reads ?? []).map((r) => [r.id, r.started_at])),
+  );
+  const activity = readingActivity(journals, reads);
+  const output = buildOutput(me, Date.now(), activity);
   console.log(`  currently reading: ${output.currentlyReading.length} books`);
   console.log(`  read: ${output.recentlyRead.length} shown`);
+  console.log(`  journal: ${journals.length} progress updates since ${ACTIVITY_START}`);
 
   // An empty result is far likelier to be a broken token or API change than a
   // real empty library. Writing it would blank the card and the workflow would

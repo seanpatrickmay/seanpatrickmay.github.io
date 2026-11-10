@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T15:58:50.255Z",
+  "generated_at": "2026-11-10T16:24:21.206Z",
   "currentlyReading": [
     {
       "title": "Carl's Doomsday Scenario",
@@ -14,7 +14,8 @@
       "progress": 0.94,
       "imageUrl": "https://assets.hardcover.app/editions/31292760/6676682478410345.jpg",
       "bookId": "446680",
-      "link": "https://hardcover.app/books/carls-doomsday-scenario"
+      "link": "https://hardcover.app/books/carls-doomsday-scenario",
+      "lastRead": "2026-11-10T05:36:22.228Z"
     },
     {
       "title": "Les Misérables",
@@ -29,7 +30,8 @@
       "progress": 0.269,
       "imageUrl": "https://assets.hardcover.app/book_mappings/7332799/5b0a8ce3991b4d2c561633d1e31fc24c0666fa0a.jpeg",
       "bookId": "370972",
-      "link": "https://hardcover.app/books/les-miserables"
+      "link": "https://hardcover.app/books/les-miserables",
+      "lastRead": null
     },
     {
       "title": "A Game of Thrones",
@@ -44,7 +46,8 @@
       "progress": 0.26,
       "imageUrl": "https://assets.hardcover.app/edition/24949259/9d081ca8-8f94-43c2-a2cc-1fab7cb58d7f.jpg",
       "bookId": "644",
-      "link": "https://hardcover.app/books/a-game-of-thrones"
+      "link": "https://hardcover.app/books/a-game-of-thrones",
+      "lastRead": null
     },
     {
       "title": "The Brothers Karamazov",
@@ -59,7 +62,8 @@
       "progress": 0.879,
       "imageUrl": "https://assets.hardcover.app/edition/31169699/f7e6c180-48fd-480d-9823-9a81c87cdf4c.jpg",
       "bookId": "212258",
-      "link": "https://hardcover.app/books/the-brothers-karamazov"
+      "link": "https://hardcover.app/books/the-brothers-karamazov",
+      "lastRead": null
     }
   ],
   "recentlyRead": [
@@ -247,5 +251,34 @@
   "totalPages": 9014,
   "yearPagesRead": 7346,
   "yearBooksRead": 17,
-  "profileUrl": "https://hardcover.app/@seanmay"
+  "profileUrl": "https://hardcover.app/@seanmay",
+  "activity": {
+    "start": "2026-11-05",
+    "days": [
+      {
+        "day": "2026-11-05",
+        "pages": 361
+      },
+      {
+        "day": "2026-11-06",
+        "pages": 214
+      },
+      {
+        "day": "2026-11-07",
+        "pages": 59
+      },
+      {
+        "day": "2026-11-08",
+        "pages": 59
+      },
+      {
+        "day": "2026-11-09",
+        "pages": 45
+      },
+      {
+        "day": "2026-11-10",
+        "pages": 70
+      }
+    ]
+  }
 }
