@@ -102,6 +102,24 @@ test('fetchMe sends a Bearer token, retries a rate limit, and unwraps me', async
   assert.deepEqual(seen, ['Bearer hc_test', 'Bearer hc_test']);
 });
 
+// The 2026-11-08 refresh died on a single "fetch failed" from the runner:
+// a dropped connection throws rather than returning a status to retry on.
+test('fetchMe retries a network error or timeout, then gives up with the cause', async () => {
+  let calls = 0;
+  const flaky = async () => {
+    calls += 1;
+    if (calls === 1) throw new TypeError('fetch failed');
+    if (calls === 2) throw new DOMException('This operation was aborted', 'AbortError');
+    return new Response(JSON.stringify({ data: { me: { username: 'reader', user_books: [] } } }), { status: 200 });
+  };
+  const me = await fetchMe('x', { fetchImpl: flaky, sleep: async () => {} });
+  assert.equal(me.username, 'reader');
+  assert.equal(calls, 3);
+
+  const down = async () => { throw new TypeError('fetch failed'); };
+  await assert.rejects(fetchMe('x', { fetchImpl: down, sleep: async () => {} }), /network error after 3 attempts: fetch failed/);
+});
+
 test('fetchMe fails loudly on a refused token or a GraphQL error', async () => {
   const refused = async () => new Response('{}', { status: 401 });
   await assert.rejects(fetchMe('x', { fetchImpl: refused }), /token refused/);

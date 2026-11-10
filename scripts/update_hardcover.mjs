@@ -125,7 +125,10 @@ export function buildOutput(me, now = Date.now()) {
   };
 }
 
-/** POST the query; retries rate limits and 5xx, throws on anything else. */
+/**
+ * POST the query; retries rate limits, 5xx, dropped connections and timeouts,
+ * throws on anything else.
+ */
 export async function fetchMe(token, { fetchImpl = fetch, sleep = (ms) => new Promise((r) => setTimeout(r, ms)) } = {}) {
   const auth = `Bearer ${String(token).trim().replace(/^bearer\s+/i, '')}`;
   for (let attempt = 1; ; attempt++) {
@@ -143,6 +146,13 @@ export async function fetchMe(token, { fetchImpl = fetch, sleep = (ms) => new Pr
         },
         body: JSON.stringify({ query: QUERY }),
       });
+    } catch (err) {
+      // No response at all (DNS, reset, our own timeout): as transient as a 5xx.
+      if (attempt < RETRIES) {
+        await sleep(2000 * attempt);
+        continue;
+      }
+      throw new Error(`network error after ${RETRIES} attempts: ${err.message}`);
     } finally {
       clearTimeout(timer);
     }
