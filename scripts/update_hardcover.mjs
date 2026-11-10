@@ -188,9 +188,11 @@ export function readsFor(me) {
  *
  * Only real dates are used. A read with no start date contributes nothing
  * before its first update. Journal entries with no previous page count are
- * imports (Goodreads history copied over): they mark pages as already read
- * without putting them on any day. Backwards corrections and non-public
- * entries add nothing.
+ * imports (Goodreads history copied over). One some days after an earlier
+ * point is a real point like any update; one on the start's own day (the
+ * relay opening a read mid-book) marks pages already behind it; one after the
+ * finish adds nothing. Backwards corrections and non-public entries add
+ * nothing either.
  */
 export function readingActivity(journals, reads, { now = Date.now() } = {}) {
   const today = localDay(now);
@@ -221,29 +223,46 @@ export function readingActivity(journals, reads, { now = Date.now() } = {}) {
   const byId = new Map(reads.map((r) => [r.id, r]));
   for (const id of new Set([...byId.keys(), ...updates.keys()])) {
     const read = byId.get(id);
-    // The last dated point: its day, whether that day itself is still unread, and the page reached.
+    // The read's dated points in order: updates and imports, then its finish
+    // (at the end of its day, after any update logged that day).
+    const events = (updates.get(id) ?? []).map((entry) => ({
+      day: localDay(entry.at),
+      kind: entry.imported ? 'import' : 'update',
+      delta: Number(entry.metadata.pages_delta) || 0,
+      reached: Number(entry.metadata.progress_pages),
+    }));
+    if (read?.finished) events.push({ day: read.finished, kind: 'finish', reached: Number(read.total) });
+    events.sort((a, b) => (a.day < b.day ? -1 : a.day > b.day ? 1 : (a.kind === 'finish') - (b.kind === 'finish')));
+
+    // The last point: its day, whether that day itself is still unread, and the page reached.
     let point = read?.started ? { day: read.started, inclusive: true, pages: 0 } : null;
     const fromPoint = (day) => {
       if (!point || point.day > day) return day;
       if (point.inclusive) return point.day;
       return point.day < day ? addDays(point.day, 1) : day;
     };
+    const reach = (day, pages) => {
+      point = { day, inclusive: false, pages: Math.max(point?.pages ?? 0, Number.isFinite(pages) ? pages : 0) };
+    };
 
-    for (const entry of updates.get(id) ?? []) {
-      const reached = Number(entry.metadata.progress_pages);
-      // An import says how far the read already was, not when those pages were read.
-      if (entry.imported) {
-        if (point && Number.isFinite(reached)) point = { ...point, pages: Math.max(point.pages, reached) };
+    for (const event of events) {
+      if (event.kind === 'update') {
+        spread(fromPoint(event.day), event.day, event.delta);
+        reach(event.day, Number.isFinite(event.reached) ? event.reached : (point?.pages ?? 0) + event.delta);
+      } else if (!Number.isFinite(event.reached)) {
         continue;
+      } else if (point && (event.kind === 'finish' || point.day < event.day)) {
+        // A finish, or an import some days after an earlier point: those pages
+        // were read in between.
+        spread(fromPoint(event.day), event.day, event.reached - point.pages);
+        reach(event.day, event.reached);
+      } else if (point) {
+        // An import on the start's own day: pages already behind it.
+        point = { ...point, pages: Math.max(point.pages, event.reached) };
+      } else {
+        // No earlier date to spread from: only the page reached is known.
+        reach(event.day, event.reached);
       }
-      const day = localDay(entry.at);
-      const delta = Number(entry.metadata.pages_delta) || 0;
-      spread(fromPoint(day), day, delta);
-      point = { day, inclusive: false, pages: Number.isFinite(reached) ? reached : (point?.pages ?? 0) + delta };
-    }
-
-    if (read?.finished && point && read.total) {
-      spread(fromPoint(read.finished), read.finished, read.total - point.pages);
     }
   }
 
