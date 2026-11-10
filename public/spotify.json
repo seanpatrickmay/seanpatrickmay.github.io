@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T22:50:51.392Z",
+  "generated_at": "2026-11-10T20:11:01.891Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -18,29 +18,24 @@
       "url": "https://open.spotify.com/artist/53A0W3U0s8diEn9RhXQhVz"
     },
     {
-      "name": "Stromae",
-      "image": "https://i.scdn.co/image/ab6761610000f178cc129f1c9b5047760d66aae2",
-      "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
-    },
-    {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000f178d3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
-    },
-    {
       "name": "François-Joël Thiollier",
       "image": "https://i.scdn.co/image/ab67616d00001e0271141466a3b7054ba14a28de",
       "url": "https://open.spotify.com/artist/6iYKdlSq42Em0z7knC3rgM"
     },
     {
-      "name": "Tame Impala",
-      "image": "https://i.scdn.co/image/ab6761610000f178e412a782245eb20d9626c601",
-      "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb"
+      "name": "Stromae",
+      "image": "https://i.scdn.co/image/ab6761610000f178cc129f1c9b5047760d66aae2",
+      "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
     },
     {
       "name": "Coldplay",
       "image": "https://i.scdn.co/image/ab6761610000f1781ba8fc5f5c73e7e9313cc6eb",
       "url": "https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU"
+    },
+    {
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000f178d3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
       "name": "Maroon 5",
@@ -51,6 +46,11 @@
       "name": "Remi Wolf",
       "image": "https://i.scdn.co/image/ab6761610000f178a9dae97c76ed2b476d75a1b1",
       "url": "https://open.spotify.com/artist/0NB5HROxc8dDBXpkIi1v3d"
+    },
+    {
+      "name": "Zedd",
+      "image": "https://i.scdn.co/image/ab6761610000f178eefa05f0b8fcafd4beb19d31",
+      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     }
   ],
   "genres": [
@@ -60,23 +60,23 @@
     },
     {
       "name": "classical",
-      "share": 56
-    },
-    {
-      "name": "french pop",
-      "share": 50
-    },
-    {
-      "name": "pop",
-      "share": 50
+      "share": 75
     },
     {
       "name": "impressionism",
-      "share": 49
+      "share": 67
     },
     {
       "name": "classical piano",
-      "share": 49
+      "share": 67
+    },
+    {
+      "name": "pop",
+      "share": 54
+    },
+    {
+      "name": "french pop",
+      "share": 40
     }
   ],
   "tracks": [
@@ -85,18 +85,6 @@
       "artist": "brakence",
       "image": "https://i.scdn.co/image/ab67616d00001e02155d39be706095403e6a365d",
       "url": "https://open.spotify.com/track/6bTsje5dpsVHLixQfgPXaY"
-    },
-    {
-      "name": "WALLFLOWER",
-      "artist": "Dominic Fike",
-      "image": "https://i.scdn.co/image/ab67616d00001e027a5456ace4c059df03b973ee",
-      "url": "https://open.spotify.com/track/20cre5t6pqsZPCF794uJpT"
-    },
-    {
-      "name": "So Cold",
-      "artist": "Balu Brigada",
-      "image": "https://i.scdn.co/image/ab67616d00001e021fc8017bbf246da18b953789",
-      "url": "https://open.spotify.com/track/2SGyf0hCuB81F85cHXuRjl"
     },
     {
       "name": "12 Songs, Op. 21: V. Lilacs (Transcr. Rachmaninoff for Solo Piano)",
@@ -111,16 +99,10 @@
       "url": "https://open.spotify.com/track/5hkdfA87RZvNaxl6XiveOA"
     },
     {
-      "name": "Relax, Take It Easy",
-      "artist": "MIKA",
-      "image": "https://i.scdn.co/image/ab67616d00001e029b9a3105ad4ffb91ad2e2798",
-      "url": "https://open.spotify.com/track/5msFXipAG1CsK92OakSAbS"
-    },
-    {
-      "name": "Washing Machine Heart",
-      "artist": "Mitski",
-      "image": "https://i.scdn.co/image/ab67616d00001e02c428f67b4a9b7e1114dfc117",
-      "url": "https://open.spotify.com/track/3jjsRKEsF42ccXf8kWR3nu"
+      "name": "WALLFLOWER",
+      "artist": "Dominic Fike",
+      "image": "https://i.scdn.co/image/ab67616d00001e027a5456ace4c059df03b973ee",
+      "url": "https://open.spotify.com/track/20cre5t6pqsZPCF794uJpT"
     },
     {
       "name": "Formidable",
@@ -139,6 +121,24 @@
       "artist": "Robert Schumann, Seattle Symphony Orchestra, Gerard Schwarz",
       "image": "https://i.scdn.co/image/ab67616d00001e020bff48e1d92ee2513c78833f",
       "url": "https://open.spotify.com/track/0u60Tzq3rzE10vqvJqVGZA"
+    },
+    {
+      "name": "Sonatine, M. 40: Modéré",
+      "artist": "Maurice Ravel, François-Joël Thiollier",
+      "image": "https://i.scdn.co/image/ab67616d00001e025bd122bb40c5aa65f2890544",
+      "url": "https://open.spotify.com/track/1bGzFerVd4nodyZRcXD7wp"
+    },
+    {
+      "name": "Just Give Me a Reason (feat. Nate Ruess)",
+      "artist": "P!nk, Nate Ruess",
+      "image": "https://i.scdn.co/image/ab67616d00001e0224a1ac503b55e6eef9a7bb8c",
+      "url": "https://open.spotify.com/track/1mKXFLRA179hdOWQBwUk9e"
+    },
+    {
+      "name": "Best Friend (feat. Doja Cat)",
+      "artist": "Saweetie, Doja Cat",
+      "image": "https://i.scdn.co/image/ab67616d00001e02c547aeca467bfa366aef1bce",
+      "url": "https://open.spotify.com/track/20BOju91NaEFK5Py4VJ2pp"
     }
   ]
 }
