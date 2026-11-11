@@ -243,6 +243,27 @@ test('readingActivity spreads an import made after a known start back to that st
   assert.equal(pages['2026-11-06'], undefined);
 });
 
+test('readingActivity puts a paused read\'s pages only in its listed stretches', () => {
+  // Hardcover has one span, Mar 28 2025 to Mar 23 2026; it was read in two stretches.
+  const stretches = {
+    1: [{ from: '2025-05-01', to: '2025-08-31', pages: 473 }, { from: '2026-03-01', to: '2026-03-23', pages: 460 }],
+  };
+  const journals = [progress('2026-02-01T15:00:00', 100, { was: 0, read: 1 })]; // ignored for pages
+  const out = readingActivity(journals, [read(1, '2025-03-28', '2026-03-23', 946)], { now: Date.parse('2026-11-10T12:00:00Z'), stretches });
+  const pages = pagesOn(out);
+  // The summer stretch is over a year back; the spring one is 20 a day, Mar 1-23 only.
+  assert.deepEqual(Object.keys(pages), daysFrom('2026-03-01', 23));
+  assert.deepEqual([...new Set(Object.values(pages))], [20]);
+  assert.equal(out.start, '2026-03-01');
+  // Another read is unaffected.
+  const other = readingActivity([], [read(2, '2026-03-01', '2026-03-10', 300)], { now: Date.parse('2026-11-10T12:00:00Z'), stretches });
+  assert.equal(pagesOn(other)['2026-03-05'], 30);
+});
+
+function daysFrom(day, count) {
+  return Array.from({ length: count }, (_, i) => new Date(Date.parse(`${day}T00:00:00Z`) + i * 86_400_000).toISOString().slice(0, 10));
+}
+
 test('readingActivity reports the last real update per book, not import time', () => {
   const journals = [
     progress('2026-11-05T19:05:00', 401, { was: null, book: 1, read: 1 }),
