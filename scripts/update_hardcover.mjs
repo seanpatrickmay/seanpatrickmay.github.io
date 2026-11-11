@@ -38,6 +38,16 @@ const ACTIVITY_DAYS = 365;
 const TIME_ZONE = 'America/New_York';
 const DAY_MS = 24 * 60 * 60 * 1000;
 
+// Reads Hardcover can only hold as one continuous span, by user_book_read id.
+// Each one's pages go evenly into these stretches and nowhere else.
+const STRETCHES = {
+  // Atlas Shrugged (946 pages): half over summer 2025, the rest after months away.
+  6197466: [
+    { from: '2025-05-01', to: '2025-08-31', pages: 473 },
+    { from: '2026-03-01', to: '2026-03-23', pages: 473 },
+  ],
+};
+
 const QUERY = `{
   me {
     id
@@ -192,9 +202,10 @@ export function readsFor(me) {
  * point is a real point like any update; one on the start's own day (the
  * relay opening a read mid-book) marks pages already behind it; one after the
  * finish adds nothing. Backwards corrections and non-public entries add
- * nothing either.
+ * nothing either. A read listed in `stretches` (a book set down for months)
+ * uses those stretches in place of all of this.
  */
-export function readingActivity(journals, reads, { now = Date.now() } = {}) {
+export function readingActivity(journals, reads, { now = Date.now(), stretches = STRETCHES } = {}) {
   const today = localDay(now);
   const first = addDays(today, -(ACTIVITY_DAYS - 1));
   const pages = new Map();
@@ -223,6 +234,10 @@ export function readingActivity(journals, reads, { now = Date.now() } = {}) {
   const byId = new Map(reads.map((r) => [r.id, r]));
   for (const id of new Set([...byId.keys(), ...updates.keys()])) {
     const read = byId.get(id);
+    if (read && stretches[id]) {
+      for (const s of stretches[id]) spread(s.from, s.to, s.pages);
+      continue;
+    }
     // The read's dated points in order: updates and imports, then its finish
     // (at the end of its day, after any update logged that day).
     const events = (updates.get(id) ?? []).map((entry) => ({
