@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T20:11:01.891Z",
+  "generated_at": "2026-11-11T19:59:07.508Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -60,15 +60,15 @@
     },
     {
       "name": "classical",
-      "share": 75
+      "share": 74
     },
     {
       "name": "impressionism",
-      "share": 67
+      "share": 65
     },
     {
       "name": "classical piano",
-      "share": 67
+      "share": 65
     },
     {
       "name": "pop",
