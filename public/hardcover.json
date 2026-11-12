@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T20:09:18.628Z",
+  "generated_at": "2026-11-12T20:45:44.800Z",
   "currentlyReading": [
     {
       "title": "The Dungeon Anarchist's Cookbook",
@@ -11,11 +11,11 @@
       "dateRead": null,
       "published": "2021",
       "numPages": 534,
-      "progress": 0.051,
+      "progress": 0.401,
       "imageUrl": "https://assets.hardcover.app/editions/31335055/1112010445054463.jpg",
       "bookId": "446730",
       "link": "https://hardcover.app/books/the-dungeon-anarchists-cookbook",
-      "lastRead": null
+      "lastRead": "2026-11-12T05:55:11.412Z"
     },
     {
       "title": "A Game of Thrones",
@@ -161,7 +161,7 @@
       "title": "A Clockwork Orange",
       "author": "Anthony Burgess",
       "rating": 4,
-      "avgRating": 3.97,
+      "avgRating": 3.98,
       "dateAdded": "2026-11-05T00:00:00.000Z",
       "dateStarted": null,
       "dateRead": "2026-09-14T00:00:00.000Z",
@@ -1273,11 +1273,15 @@
       },
       {
         "day": "2026-11-10",
-        "pages": 93
+        "pages": 120
       },
       {
         "day": "2026-11-11",
-        "pages": 0
+        "pages": 27
+      },
+      {
+        "day": "2026-11-12",
+        "pages": 134
       }
     ]
   }
