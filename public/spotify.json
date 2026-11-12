@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T19:59:07.508Z",
+  "generated_at": "2026-11-12T20:37:38.654Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -23,6 +23,11 @@
       "url": "https://open.spotify.com/artist/6iYKdlSq42Em0z7knC3rgM"
     },
     {
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000f178d3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+    },
+    {
       "name": "Stromae",
       "image": "https://i.scdn.co/image/ab6761610000f178cc129f1c9b5047760d66aae2",
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
@@ -31,11 +36,6 @@
       "name": "Coldplay",
       "image": "https://i.scdn.co/image/ab6761610000f1781ba8fc5f5c73e7e9313cc6eb",
       "url": "https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU"
-    },
-    {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000f178d3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     },
     {
       "name": "Maroon 5",
@@ -60,22 +60,22 @@
     },
     {
       "name": "classical",
-      "share": 74
+      "share": 72
     },
     {
       "name": "impressionism",
-      "share": 65
+      "share": 64
     },
     {
       "name": "classical piano",
-      "share": 65
+      "share": 64
     },
     {
       "name": "pop",
-      "share": 54
+      "share": 51
     },
     {
-      "name": "french pop",
+      "name": "french house",
       "share": 40
     }
   ],
