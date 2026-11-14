@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-11-13T20:27:02.133Z",
+  "generated_at": "2026-11-14T18:42:39.751Z",
   "currentlyReading": [
     {
-      "title": "The Dungeon Anarchist's Cookbook",
+      "title": "The Gate of the Feral Gods",
       "author": "Matt Dinniman",
       "rating": 0,
-      "avgRating": 4.28,
-      "dateAdded": "2026-11-11T00:00:00.000Z",
-      "dateStarted": "2026-11-10T00:00:00.000Z",
+      "avgRating": 4.42,
+      "dateAdded": "2026-11-14T00:00:00.000Z",
+      "dateStarted": "2026-11-14T00:00:00.000Z",
       "dateRead": null,
       "published": "2021",
-      "numPages": 534,
-      "progress": 0.74,
-      "imageUrl": "https://assets.hardcover.app/editions/31335055/1112010445054463.jpg",
-      "bookId": "446730",
-      "link": "https://hardcover.app/books/the-dungeon-anarchists-cookbook",
-      "lastRead": "2026-11-13T06:49:07.277Z"
+      "numPages": 586,
+      "progress": 0.031,
+      "imageUrl": "https://assets.hardcover.app/book/446722/d1291f60-f505-4b74-836d-09d70ac5ad05.jpg",
+      "bookId": "446722",
+      "link": "https://hardcover.app/books/the-gate-of-the-feral-gods",
+      "lastRead": null
     },
     {
       "title": "A Game of Thrones",
@@ -68,9 +68,24 @@
   ],
   "recentlyRead": [
     {
+      "title": "The Dungeon Anarchist's Cookbook",
+      "author": "Matt Dinniman",
+      "rating": 4,
+      "avgRating": 4.28,
+      "dateAdded": "2026-11-11T00:00:00.000Z",
+      "dateStarted": "2026-11-10T00:00:00.000Z",
+      "dateRead": "2026-11-14T00:00:00.000Z",
+      "published": "2021",
+      "numPages": 534,
+      "progress": null,
+      "imageUrl": "https://assets.hardcover.app/editions/31335055/1112010445054463.jpg",
+      "bookId": "446730",
+      "link": "https://hardcover.app/books/the-dungeon-anarchists-cookbook"
+    },
+    {
       "title": "Carl's Doomsday Scenario",
       "author": "Matt Dinniman",
-      "rating": 0,
+      "rating": 4.5,
       "avgRating": 4.37,
       "dateAdded": "2026-11-07T00:00:00.000Z",
       "dateStarted": null,
@@ -85,7 +100,7 @@
     {
       "title": "Dungeon Crawler Carl",
       "author": "Matt Dinniman",
-      "rating": 0,
+      "rating": 4.5,
       "avgRating": 4.34,
       "dateAdded": "2026-11-05T00:00:00.000Z",
       "dateStarted": null,
@@ -100,7 +115,7 @@
     {
       "title": "The Perks of Being a Wallflower",
       "author": "Stephen Chbosky",
-      "rating": 5,
+      "rating": 4,
       "avgRating": 4.09,
       "dateAdded": "2026-11-05T00:00:00.000Z",
       "dateStarted": null,
@@ -115,7 +130,7 @@
     {
       "title": "Blood Meridian: Or the Evening Redness in the West",
       "author": "Cormac McCarthy",
-      "rating": 4,
+      "rating": 3.5,
       "avgRating": 4.05,
       "dateAdded": "2026-03-07T00:00:00.000Z",
       "dateStarted": null,
@@ -145,8 +160,8 @@
     {
       "title": "The Obscene Bird of Night",
       "author": "José Donoso",
-      "rating": 4,
-      "avgRating": 4.53,
+      "rating": 3.5,
+      "avgRating": 4.5,
       "dateAdded": "2026-11-05T00:00:00.000Z",
       "dateStarted": null,
       "dateRead": "2026-09-19T00:00:00.000Z",
@@ -160,7 +175,7 @@
     {
       "title": "A Clockwork Orange",
       "author": "Anthony Burgess",
-      "rating": 4,
+      "rating": 4.5,
       "avgRating": 3.97,
       "dateAdded": "2026-11-05T00:00:00.000Z",
       "dateStarted": null,
@@ -190,7 +205,7 @@
     {
       "title": "The Two Towers",
       "author": "J.R.R. Tolkien",
-      "rating": 4,
+      "rating": 3.5,
       "avgRating": 4.47,
       "dateAdded": "2026-05-12T00:00:00.000Z",
       "dateStarted": null,
@@ -205,7 +220,7 @@
     {
       "title": "The Picture of Dorian Gray",
       "author": "Oscar Wilde",
-      "rating": 4,
+      "rating": 3.5,
       "avgRating": 4.02,
       "dateAdded": "2026-03-09T00:00:00.000Z",
       "dateStarted": null,
@@ -220,7 +235,7 @@
     {
       "title": "Pet Sematary",
       "author": "Stephen King",
-      "rating": 5,
+      "rating": 4.5,
       "avgRating": 3.97,
       "dateAdded": "2026-05-29T00:00:00.000Z",
       "dateStarted": null,
@@ -231,26 +246,11 @@
       "imageUrl": "https://assets.hardcover.app/edition/15687505/9e53948f056beddf735adeb51c56319d220ebbc4.jpeg",
       "bookId": "385850",
       "link": "https://hardcover.app/books/pet-sematary"
-    },
-    {
-      "title": "The Fellowship of the Ring",
-      "author": "J.R.R. Tolkien",
-      "rating": 5,
-      "avgRating": 4.42,
-      "dateAdded": "2026-05-12T00:00:00.000Z",
-      "dateStarted": null,
-      "dateRead": "2026-05-04T00:00:00.000Z",
-      "published": "1937",
-      "numPages": 527,
-      "progress": null,
-      "imageUrl": "https://assets.hardcover.app/editions/30399426/1253339946037508.jpeg",
-      "bookId": "139773",
-      "link": "https://hardcover.app/books/the-fellowship-of-the-ring"
     }
   ],
-  "totalPages": 9400,
-  "yearPagesRead": 7732,
-  "yearBooksRead": 18,
+  "totalPages": 9934,
+  "yearPagesRead": 8266,
+  "yearBooksRead": 19,
   "profileUrl": "https://hardcover.app/@seanmay",
   "activity": {
     "start": "2026-03-01",
@@ -1285,7 +1285,11 @@
       },
       {
         "day": "2026-11-13",
-        "pages": 117
+        "pages": 224
+      },
+      {
+        "day": "2026-11-14",
+        "pages": 32
       }
     ]
   }
