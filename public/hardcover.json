@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T18:42:39.751Z",
+  "generated_at": "2026-11-15T19:21:07.296Z",
   "currentlyReading": [
     {
       "title": "The Gate of the Feral Gods",
@@ -11,11 +11,11 @@
       "dateRead": null,
       "published": "2021",
       "numPages": 586,
-      "progress": 0.031,
+      "progress": 0.07,
       "imageUrl": "https://assets.hardcover.app/book/446722/d1291f60-f505-4b74-836d-09d70ac5ad05.jpg",
       "bookId": "446722",
       "link": "https://hardcover.app/books/the-gate-of-the-feral-gods",
-      "lastRead": null
+      "lastRead": "2026-11-15T07:19:58.929Z"
     },
     {
       "title": "A Game of Thrones",
@@ -71,7 +71,7 @@
       "title": "The Dungeon Anarchist's Cookbook",
       "author": "Matt Dinniman",
       "rating": 4,
-      "avgRating": 4.28,
+      "avgRating": 4.29,
       "dateAdded": "2026-11-11T00:00:00.000Z",
       "dateStarted": "2026-11-10T00:00:00.000Z",
       "dateRead": "2026-11-14T00:00:00.000Z",
@@ -1289,7 +1289,11 @@
       },
       {
         "day": "2026-11-14",
-        "pages": 32
+        "pages": 44
+      },
+      {
+        "day": "2026-11-15",
+        "pages": 12
       }
     ]
   }
