@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T19:21:07.296Z",
+  "generated_at": "2026-11-16T22:51:02.496Z",
   "currentlyReading": [
     {
       "title": "The Gate of the Feral Gods",
@@ -53,7 +53,7 @@
       "title": "The Brothers Karamazov",
       "author": "Fyodor Dostoevsky",
       "rating": 0,
-      "avgRating": 4.39,
+      "avgRating": 4.38,
       "dateAdded": "2026-03-11T00:00:00.000Z",
       "dateStarted": "2026-03-16T00:00:00.000Z",
       "dateRead": null,
@@ -151,7 +151,7 @@
       "dateStarted": null,
       "dateRead": "2026-09-20T00:00:00.000Z",
       "published": "1925",
-      "numPages": 231,
+      "numPages": 312,
       "progress": null,
       "imageUrl": "https://assets.hardcover.app/external_data/25858891/f85f9c97ba14076d8c208a81d47a80d13b53f292.jpeg",
       "bookId": "29886",
@@ -176,7 +176,7 @@
       "title": "A Clockwork Orange",
       "author": "Anthony Burgess",
       "rating": 4.5,
-      "avgRating": 3.97,
+      "avgRating": 3.98,
       "dateAdded": "2026-11-05T00:00:00.000Z",
       "dateStarted": null,
       "dateRead": "2026-09-14T00:00:00.000Z",
@@ -248,8 +248,8 @@
       "link": "https://hardcover.app/books/pet-sematary"
     }
   ],
-  "totalPages": 9934,
-  "yearPagesRead": 8266,
+  "totalPages": 10015,
+  "yearPagesRead": 8347,
   "yearBooksRead": 19,
   "profileUrl": "https://hardcover.app/@seanmay",
   "activity": {
@@ -829,247 +829,247 @@
       },
       {
         "day": "2026-07-22",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-07-23",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-07-24",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-07-25",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-07-26",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-07-27",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-07-28",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-07-29",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-07-30",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-07-31",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-01",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-02",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-03",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-04",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-05",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-06",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-07",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-08",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-09",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-10",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-11",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-12",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-13",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-14",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-15",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-16",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-17",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-18",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-19",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-20",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-21",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-22",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-23",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-24",
-        "pages": 28
+        "pages": 29
       },
       {
         "day": "2026-08-25",
-        "pages": 45
+        "pages": 46
       },
       {
         "day": "2026-08-26",
-        "pages": 24
+        "pages": 26
       },
       {
         "day": "2026-08-27",
-        "pages": 24
+        "pages": 26
       },
       {
         "day": "2026-08-28",
-        "pages": 24
+        "pages": 26
       },
       {
         "day": "2026-08-29",
-        "pages": 24
+        "pages": 26
       },
       {
         "day": "2026-08-30",
-        "pages": 24
+        "pages": 26
       },
       {
         "day": "2026-08-31",
-        "pages": 24
+        "pages": 26
       },
       {
         "day": "2026-09-01",
-        "pages": 24
+        "pages": 26
       },
       {
         "day": "2026-09-02",
-        "pages": 24
+        "pages": 26
       },
       {
         "day": "2026-09-03",
-        "pages": 24
+        "pages": 26
       },
       {
         "day": "2026-09-04",
-        "pages": 24
+        "pages": 26
       },
       {
         "day": "2026-09-05",
-        "pages": 24
+        "pages": 26
       },
       {
         "day": "2026-09-06",
-        "pages": 24
+        "pages": 26
       },
       {
         "day": "2026-09-07",
-        "pages": 24
+        "pages": 26
       },
       {
         "day": "2026-09-08",
-        "pages": 24
+        "pages": 26
       },
       {
         "day": "2026-09-09",
-        "pages": 24
+        "pages": 26
       },
       {
         "day": "2026-09-10",
-        "pages": 24
+        "pages": 26
       },
       {
         "day": "2026-09-11",
-        "pages": 24
+        "pages": 26
       },
       {
         "day": "2026-09-12",
-        "pages": 24
+        "pages": 26
       },
       {
         "day": "2026-09-13",
-        "pages": 152
+        "pages": 153
       },
       {
         "day": "2026-09-14",
-        "pages": 173
+        "pages": 174
       },
       {
         "day": "2026-09-15",
-        "pages": 53
+        "pages": 54
       },
       {
         "day": "2026-09-16",
-        "pages": 53
+        "pages": 54
       },
       {
         "day": "2026-09-17",
-        "pages": 53
+        "pages": 54
       },
       {
         "day": "2026-09-18",
-        "pages": 53
+        "pages": 54
       },
       {
         "day": "2026-09-19",
-        "pages": 53
+        "pages": 54
       },
       {
         "day": "2026-09-20",
-        "pages": 36
+        "pages": 37
       },
       {
         "day": "2026-09-21",
@@ -1294,6 +1294,10 @@
       {
         "day": "2026-11-15",
         "pages": 12
+      },
+      {
+        "day": "2026-11-16",
+        "pages": 0
       }
     ]
   }
