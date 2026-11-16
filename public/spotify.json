@@ -1,17 +1,7 @@
 {
-  "generated_at": "2026-11-15T19:13:33.506Z",
+  "generated_at": "2026-11-16T22:42:46.876Z",
   "time_range": "short_term",
   "artists": [
-    {
-      "name": "Dominic Fike",
-      "image": "https://i.scdn.co/image/ab6761610000f178c674a77fa82d00bcecf1a794",
-      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
-    },
-    {
-      "name": "Cesária Evora",
-      "image": "https://i.scdn.co/image/ab6761610000f17819ef99eadb0dc66816089006",
-      "url": "https://open.spotify.com/artist/0Nks3cFWU2a7rooAlFQYgn"
-    },
     {
       "name": "Keane",
       "image": "https://i.scdn.co/image/ab6761610000f17841ad42c0fd1dabe8db013a7a",
@@ -23,9 +13,19 @@
       "url": "https://open.spotify.com/artist/6iYKdlSq42Em0z7knC3rgM"
     },
     {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000f178d3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+      "name": "Dominic Fike",
+      "image": "https://i.scdn.co/image/ab6761610000f178c674a77fa82d00bcecf1a794",
+      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
+    },
+    {
+      "name": "Omar Apollo",
+      "image": "https://i.scdn.co/image/ab6761610000f178ae8080a07532b843b42acec1",
+      "url": "https://open.spotify.com/artist/5FxD8fkQZ6KcsSYupDVoSO"
+    },
+    {
+      "name": "Zedd",
+      "image": "https://i.scdn.co/image/ab6761610000f178eefa05f0b8fcafd4beb19d31",
+      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
     },
     {
       "name": "Stromae",
@@ -33,50 +33,50 @@
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
     },
     {
-      "name": "Coldplay",
-      "image": "https://i.scdn.co/image/ab6761610000f1781ba8fc5f5c73e7e9313cc6eb",
-      "url": "https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU"
+      "name": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab6761610000f1789f6f7c2d12975d2a4b3a0fd8",
+      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
-      "name": "Maroon 5",
-      "image": "https://i.scdn.co/image/ab6761610000f178f8349dfb619a7f842242de77",
-      "url": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP"
+      "name": "Lady Gaga",
+      "image": "https://i.scdn.co/image/ab6761610000f178aadc18cac8d48124357c38e6",
+      "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
     },
     {
-      "name": "Remi Wolf",
-      "image": "https://i.scdn.co/image/ab6761610000f178a9dae97c76ed2b476d75a1b1",
-      "url": "https://open.spotify.com/artist/0NB5HROxc8dDBXpkIi1v3d"
+      "name": "The Marías",
+      "image": "https://i.scdn.co/image/ab6761610000f178af586afa2b397f1288683a76",
+      "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
     },
     {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000f178eefa05f0b8fcafd4beb19d31",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
+      "name": "Daft Punk",
+      "image": "https://i.scdn.co/image/ab6761610000f178d3aa7cc0e419b6c459b08e8e",
+      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     }
   ],
   "genres": [
     {
-      "name": "fado",
+      "name": "classical",
       "share": 100
     },
     {
-      "name": "classical",
-      "share": 72
-    },
-    {
       "name": "impressionism",
-      "share": 64
+      "share": 94
     },
     {
       "name": "classical piano",
-      "share": 64
+      "share": 94
+    },
+    {
+      "name": "bedroom pop",
+      "share": 78
     },
     {
       "name": "pop",
-      "share": 51
+      "share": 39
     },
     {
-      "name": "french house",
-      "share": 40
+      "name": "edm",
+      "share": 32
     }
   ],
   "tracks": [
@@ -99,22 +99,10 @@
       "url": "https://open.spotify.com/track/5hkdfA87RZvNaxl6XiveOA"
     },
     {
-      "name": "WALLFLOWER",
-      "artist": "Dominic Fike",
-      "image": "https://i.scdn.co/image/ab67616d00001e027a5456ace4c059df03b973ee",
-      "url": "https://open.spotify.com/track/20cre5t6pqsZPCF794uJpT"
-    },
-    {
       "name": "Formidable",
       "artist": "Stromae",
       "image": "https://i.scdn.co/image/ab67616d00001e02ab580fab750cc9baf0d52b5c",
       "url": "https://open.spotify.com/track/2AMysGXOe0zzZJMtH3Nizb"
-    },
-    {
-      "name": "Viva La Vida",
-      "artist": "Coldplay",
-      "image": "https://i.scdn.co/image/ab67616d00001e02e21cc1db05580b6f2d2a3b6e",
-      "url": "https://open.spotify.com/track/1mea3bSkSGXuIRvnydlB5b"
     },
     {
       "name": "Etudes symphoniques (Symphonic Etudes), Op. 13, Adagio and Allegro brillante: Variation 11 [arr. P.I. Tchaikovsky for orchestra]",
@@ -139,6 +127,18 @@
       "artist": "Saweetie, Doja Cat",
       "image": "https://i.scdn.co/image/ab67616d00001e02c547aeca467bfa366aef1bce",
       "url": "https://open.spotify.com/track/20BOju91NaEFK5Py4VJ2pp"
+    },
+    {
+      "name": "Notturno in G-Flat Major, P. 011: No. 6, Internmezzo-Serenata",
+      "artist": "Ottorino Respighi, Konstantin Scherbakov",
+      "image": "https://i.scdn.co/image/ab67616d00001e0213deeef2153fb49345c92339",
+      "url": "https://open.spotify.com/track/2dr9v8jGFQbHch7aJjxZDj"
+    },
+    {
+      "name": "Lyric Pieces, Book I, Op. 12: No. 1, Arietta",
+      "artist": "Edvard Grieg, Javier Perianes",
+      "image": "https://i.scdn.co/image/ab67616d00001e028de52a31db55808ae2e0288a",
+      "url": "https://open.spotify.com/track/4YOfoWA6fgvPnEAb5XGlYA"
     }
   ]
 }
