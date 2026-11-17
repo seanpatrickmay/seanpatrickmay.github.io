@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T22:42:46.876Z",
+  "generated_at": "2026-11-17T21:29:00.543Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -13,14 +13,19 @@
       "url": "https://open.spotify.com/artist/6iYKdlSq42Em0z7knC3rgM"
     },
     {
-      "name": "Dominic Fike",
-      "image": "https://i.scdn.co/image/ab6761610000f178c674a77fa82d00bcecf1a794",
-      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
+      "name": "Metaphysical Sound Therapy",
+      "image": "https://i.scdn.co/image/ab6761610000f178c8bb91af200c8413d57b33f6",
+      "url": "https://open.spotify.com/artist/7I5oBYT7bD3CPyZcQTUk1p"
     },
     {
       "name": "Omar Apollo",
       "image": "https://i.scdn.co/image/ab6761610000f178ae8080a07532b843b42acec1",
       "url": "https://open.spotify.com/artist/5FxD8fkQZ6KcsSYupDVoSO"
+    },
+    {
+      "name": "Dominic Fike",
+      "image": "https://i.scdn.co/image/ab6761610000f178c674a77fa82d00bcecf1a794",
+      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
     },
     {
       "name": "Zedd",
@@ -31,11 +36,6 @@
       "name": "Stromae",
       "image": "https://i.scdn.co/image/ab6761610000f178cc129f1c9b5047760d66aae2",
       "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
-    },
-    {
-      "name": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab6761610000f1789f6f7c2d12975d2a4b3a0fd8",
-      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     },
     {
       "name": "Lady Gaga",
@@ -68,15 +68,15 @@
     },
     {
       "name": "bedroom pop",
-      "share": 78
+      "share": 72
     },
     {
       "name": "pop",
-      "share": 39
+      "share": 38
     },
     {
       "name": "edm",
-      "share": 32
+      "share": 27
     }
   ],
   "tracks": [
