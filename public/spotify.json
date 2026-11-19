@@ -1,11 +1,21 @@
 {
-  "generated_at": "2026-11-18T21:04:00.243Z",
+  "generated_at": "2026-11-19T21:08:57.981Z",
   "time_range": "short_term",
   "artists": [
+    {
+      "name": "Czech Symphony Orchestra",
+      "image": "https://i.scdn.co/image/ab6761610000f178eec722d94eb271cb0e72b813",
+      "url": "https://open.spotify.com/artist/6dBBpd1zW3iywDqNt0UVOk"
+    },
     {
       "name": "Keane",
       "image": "https://i.scdn.co/image/ab6761610000f17841ad42c0fd1dabe8db013a7a",
       "url": "https://open.spotify.com/artist/53A0W3U0s8diEn9RhXQhVz"
+    },
+    {
+      "name": "The City of Prague Philharmonic Orchestra",
+      "image": "https://i.scdn.co/image/ab6761610000f1788c6007c4950dd2361e50be9a",
+      "url": "https://open.spotify.com/artist/2oQJQUIpJFFnfKvHJA0xBu"
     },
     {
       "name": "François-Joël Thiollier",
@@ -21,11 +31,6 @@
       "name": "Omar Apollo",
       "image": "https://i.scdn.co/image/ab6761610000f178ae8080a07532b843b42acec1",
       "url": "https://open.spotify.com/artist/5FxD8fkQZ6KcsSYupDVoSO"
-    },
-    {
-      "name": "Dominic Fike",
-      "image": "https://i.scdn.co/image/ab6761610000f178c674a77fa82d00bcecf1a794",
-      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
     },
     {
       "name": "Zedd",
@@ -46,11 +51,6 @@
       "name": "The Marías",
       "image": "https://i.scdn.co/image/ab6761610000f178af586afa2b397f1288683a76",
       "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
-    },
-    {
-      "name": "Daft Punk",
-      "image": "https://i.scdn.co/image/ab6761610000f178d3aa7cc0e419b6c459b08e8e",
-      "url": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
     }
   ],
   "genres": [
@@ -59,24 +59,24 @@
       "share": 100
     },
     {
-      "name": "impressionism",
-      "share": 94
-    },
-    {
-      "name": "classical piano",
-      "share": 94
+      "name": "orchestral",
+      "share": 78
     },
     {
       "name": "bedroom pop",
-      "share": 72
+      "share": 21
+    },
+    {
+      "name": "impressionism",
+      "share": 20
+    },
+    {
+      "name": "classical piano",
+      "share": 20
     },
     {
       "name": "pop",
-      "share": 38
-    },
-    {
-      "name": "edm",
-      "share": 27
+      "share": 11
     }
   ],
   "tracks": [
@@ -93,6 +93,12 @@
       "url": "https://open.spotify.com/track/4ObQ0m7VUtrgdEwpFeCKua"
     },
     {
+      "name": "Shostakovich / Arr. Atovmyan: Suite from the Gadfly, Op. 97a: VIII. Romance",
+      "artist": "Dmitri Shostakovich, Tasmin Little, Piers Lane",
+      "image": "https://i.scdn.co/image/ab67616d00001e0216904029c31ca50916e3116a",
+      "url": "https://open.spotify.com/track/7c8EKQLv5ld1uWm1BdGqds"
+    },
+    {
       "name": "Everybody's Changing",
       "artist": "Keane",
       "image": "https://i.scdn.co/image/ab67616d00001e02045d0a38105fbe7bde43c490",
@@ -103,6 +109,12 @@
       "artist": "Stromae",
       "image": "https://i.scdn.co/image/ab67616d00001e02ab580fab750cc9baf0d52b5c",
       "url": "https://open.spotify.com/track/2AMysGXOe0zzZJMtH3Nizb"
+    },
+    {
+      "name": "Mirrors",
+      "artist": "Justin Timberlake",
+      "image": "https://i.scdn.co/image/ab67616d00001e0256d5fb0cc9cec001d8ae0c8c",
+      "url": "https://open.spotify.com/track/4rHZZAmHpZrA3iH5zx8frV"
     },
     {
       "name": "Etudes symphoniques (Symphonic Etudes), Op. 13, Adagio and Allegro brillante: Variation 11 [arr. P.I. Tchaikovsky for orchestra]",
@@ -127,18 +139,6 @@
       "artist": "Saweetie, Doja Cat",
       "image": "https://i.scdn.co/image/ab67616d00001e02c547aeca467bfa366aef1bce",
       "url": "https://open.spotify.com/track/20BOju91NaEFK5Py4VJ2pp"
-    },
-    {
-      "name": "Notturno in G-Flat Major, P. 011: No. 6, Internmezzo-Serenata",
-      "artist": "Ottorino Respighi, Konstantin Scherbakov",
-      "image": "https://i.scdn.co/image/ab67616d00001e0213deeef2153fb49345c92339",
-      "url": "https://open.spotify.com/track/2dr9v8jGFQbHch7aJjxZDj"
-    },
-    {
-      "name": "Lyric Pieces, Book I, Op. 12: No. 1, Arietta",
-      "artist": "Edvard Grieg, Javier Perianes",
-      "image": "https://i.scdn.co/image/ab67616d00001e028de52a31db55808ae2e0288a",
-      "url": "https://open.spotify.com/track/4YOfoWA6fgvPnEAb5XGlYA"
     }
   ]
 }
