@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T21:21:45.361Z",
+  "generated_at": "2026-11-19T21:25:18.464Z",
   "currentlyReading": [
     {
       "title": "The Gate of the Feral Gods",
@@ -11,11 +11,11 @@
       "dateRead": null,
       "published": "2021",
       "numPages": 586,
-      "progress": 0.109,
+      "progress": 0.14,
       "imageUrl": "https://assets.hardcover.app/book/446722/d1291f60-f505-4b74-836d-09d70ac5ad05.jpg",
       "bookId": "446722",
       "link": "https://hardcover.app/books/the-gate-of-the-feral-gods",
-      "lastRead": "2026-11-17T05:42:21.899Z"
+      "lastRead": "2026-11-19T07:19:55.454Z"
     },
     {
       "title": "A Game of Thrones",
@@ -131,7 +131,7 @@
       "title": "Blood Meridian: Or the Evening Redness in the West",
       "author": "Cormac McCarthy",
       "rating": 3.5,
-      "avgRating": 4.05,
+      "avgRating": 4.04,
       "dateAdded": "2026-03-07T00:00:00.000Z",
       "dateStarted": null,
       "dateRead": "2026-09-29T00:00:00.000Z",
@@ -1305,7 +1305,11 @@
       },
       {
         "day": "2026-11-18",
-        "pages": 0
+        "pages": 9
+      },
+      {
+        "day": "2026-11-19",
+        "pages": 9
       }
     ]
   }
