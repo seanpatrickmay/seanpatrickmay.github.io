@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T21:01:34.859Z",
+  "generated_at": "2026-11-21T20:02:26.869Z",
   "currentlyReading": [
     {
       "title": "The Gate of the Feral Gods",
@@ -161,7 +161,7 @@
       "title": "The Obscene Bird of Night",
       "author": "José Donoso",
       "rating": 3.5,
-      "avgRating": 4.42,
+      "avgRating": 4.5,
       "dateAdded": "2026-11-05T00:00:00.000Z",
       "dateStarted": null,
       "dateRead": "2026-09-19T00:00:00.000Z",
@@ -1313,6 +1313,10 @@
       },
       {
         "day": "2026-11-20",
+        "pages": 0
+      },
+      {
+        "day": "2026-11-21",
         "pages": 0
       }
     ]
