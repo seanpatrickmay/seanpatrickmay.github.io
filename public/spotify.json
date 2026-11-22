@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T19:54:47.472Z",
+  "generated_at": "2026-11-22T20:06:41.545Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -33,24 +33,24 @@
       "url": "https://open.spotify.com/artist/5FxD8fkQZ6KcsSYupDVoSO"
     },
     {
-      "name": "Zedd",
-      "image": "https://i.scdn.co/image/ab6761610000f178eefa05f0b8fcafd4beb19d31",
-      "url": "https://open.spotify.com/artist/2qxJFvFYMEDqd7ui6kSAcq"
-    },
-    {
-      "name": "Stromae",
-      "image": "https://i.scdn.co/image/ab6761610000f178cc129f1c9b5047760d66aae2",
-      "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
-    },
-    {
-      "name": "Lady Gaga",
-      "image": "https://i.scdn.co/image/ab6761610000f178aadc18cac8d48124357c38e6",
-      "url": "https://open.spotify.com/artist/1HY2Jd0NmPuamShAr6KMms"
+      "name": "Alexandre Tharaud",
+      "image": "https://i.scdn.co/image/ab6761610000f178c9ecbdc6f1732b27ad284ad9",
+      "url": "https://open.spotify.com/artist/5HG9Eg7Ik8ZuNtMyGYTxLG"
     },
     {
       "name": "The Marías",
       "image": "https://i.scdn.co/image/ab6761610000f178af586afa2b397f1288683a76",
       "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
+    },
+    {
+      "name": "Dominic Fike",
+      "image": "https://i.scdn.co/image/ab6761610000f178c674a77fa82d00bcecf1a794",
+      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
+    },
+    {
+      "name": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab6761610000f1789f6f7c2d12975d2a4b3a0fd8",
+      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     }
   ],
   "genres": [
@@ -60,23 +60,23 @@
     },
     {
       "name": "orchestral",
-      "share": 78
+      "share": 75
     },
     {
       "name": "bedroom pop",
-      "share": 21
+      "share": 23
     },
     {
       "name": "impressionism",
-      "share": 20
+      "share": 22
     },
     {
       "name": "classical piano",
-      "share": 20
+      "share": 22
     },
     {
       "name": "pop",
-      "share": 11
+      "share": 5
     }
   ],
   "tracks": [
@@ -103,12 +103,6 @@
       "artist": "Keane",
       "image": "https://i.scdn.co/image/ab67616d00001e02045d0a38105fbe7bde43c490",
       "url": "https://open.spotify.com/track/5hkdfA87RZvNaxl6XiveOA"
-    },
-    {
-      "name": "Formidable",
-      "artist": "Stromae",
-      "image": "https://i.scdn.co/image/ab67616d00001e02ab580fab750cc9baf0d52b5c",
-      "url": "https://open.spotify.com/track/2AMysGXOe0zzZJMtH3Nizb"
     },
     {
       "name": "Mirrors",
@@ -139,6 +133,12 @@
       "artist": "Saweetie, Doja Cat",
       "image": "https://i.scdn.co/image/ab67616d00001e02c547aeca467bfa366aef1bce",
       "url": "https://open.spotify.com/track/20BOju91NaEFK5Py4VJ2pp"
+    },
+    {
+      "name": "Notturno in G-Flat Major, P. 011: No. 6, Internmezzo-Serenata",
+      "artist": "Ottorino Respighi, Konstantin Scherbakov",
+      "image": "https://i.scdn.co/image/ab67616d00001e0213deeef2153fb49345c92339",
+      "url": "https://open.spotify.com/track/2dr9v8jGFQbHch7aJjxZDj"
     }
   ]
 }
