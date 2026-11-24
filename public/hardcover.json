@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T20:18:01.867Z",
+  "generated_at": "2026-11-24T00:45:35.118Z",
   "currentlyReading": [
     {
       "title": "The Gate of the Feral Gods",
@@ -11,11 +11,11 @@
       "dateRead": null,
       "published": "2021",
       "numPages": 586,
-      "progress": 0.14,
+      "progress": 0.36,
       "imageUrl": "https://assets.hardcover.app/book/446722/d1291f60-f505-4b74-836d-09d70ac5ad05.jpg",
       "bookId": "446722",
       "link": "https://hardcover.app/books/the-gate-of-the-feral-gods",
-      "lastRead": "2026-11-19T07:19:55.454Z"
+      "lastRead": "2026-11-23T08:23:44.478Z"
     },
     {
       "title": "A Game of Thrones",
@@ -1313,15 +1313,19 @@
       },
       {
         "day": "2026-11-20",
-        "pages": 0
+        "pages": 32
       },
       {
         "day": "2026-11-21",
-        "pages": 0
+        "pages": 32
       },
       {
         "day": "2026-11-22",
-        "pages": 0
+        "pages": 32
+      },
+      {
+        "day": "2026-11-23",
+        "pages": 32
       }
     ]
   }
