@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T20:06:41.545Z",
+  "generated_at": "2026-11-24T00:33:20.197Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -28,6 +28,11 @@
       "url": "https://open.spotify.com/artist/7I5oBYT7bD3CPyZcQTUk1p"
     },
     {
+      "name": "Brainy",
+      "image": "https://i.scdn.co/image/ab6761610000f178b15b863d6b972cc6b0818241",
+      "url": "https://open.spotify.com/artist/2GPLowDuIzf10Ju8mFunge"
+    },
+    {
       "name": "Omar Apollo",
       "image": "https://i.scdn.co/image/ab6761610000f178ae8080a07532b843b42acec1",
       "url": "https://open.spotify.com/artist/5FxD8fkQZ6KcsSYupDVoSO"
@@ -46,11 +51,6 @@
       "name": "Dominic Fike",
       "image": "https://i.scdn.co/image/ab6761610000f178c674a77fa82d00bcecf1a794",
       "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
-    },
-    {
-      "name": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab6761610000f1789f6f7c2d12975d2a4b3a0fd8",
-      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     }
   ],
   "genres": [
@@ -60,19 +60,19 @@
     },
     {
       "name": "orchestral",
-      "share": 75
-    },
-    {
-      "name": "bedroom pop",
-      "share": 23
+      "share": 76
     },
     {
       "name": "impressionism",
-      "share": 22
+      "share": 21
     },
     {
       "name": "classical piano",
-      "share": 22
+      "share": 21
+    },
+    {
+      "name": "bedroom pop",
+      "share": 21
     },
     {
       "name": "pop",
@@ -93,6 +93,12 @@
       "url": "https://open.spotify.com/track/4ObQ0m7VUtrgdEwpFeCKua"
     },
     {
+      "name": "2 Arabesques, L. 66: No. 1 in E Major",
+      "artist": "Claude Debussy, François-Joël Thiollier",
+      "image": "https://i.scdn.co/image/ab67616d00001e0271141466a3b7054ba14a28de",
+      "url": "https://open.spotify.com/track/5RWwCMjt9hZ5e9gJASIjuU"
+    },
+    {
       "name": "Shostakovich / Arr. Atovmyan: Suite from the Gadfly, Op. 97a: VIII. Romance",
       "artist": "Dmitri Shostakovich, Tasmin Little, Piers Lane",
       "image": "https://i.scdn.co/image/ab67616d00001e0216904029c31ca50916e3116a",
@@ -103,6 +109,12 @@
       "artist": "Keane",
       "image": "https://i.scdn.co/image/ab67616d00001e02045d0a38105fbe7bde43c490",
       "url": "https://open.spotify.com/track/5hkdfA87RZvNaxl6XiveOA"
+    },
+    {
+      "name": "Swan Lake (Suite), Op. 20a, TH.219: I. Scene - Swan Theme",
+      "artist": "Pyotr Ilyich Tchaikovsky, Czech Symphony Orchestra, Michaela Rózsa Růžičková",
+      "image": "https://i.scdn.co/image/ab67616d00001e0233c0a204f83265f8a8629137",
+      "url": "https://open.spotify.com/track/6JyihARD2zGUa4uB4NfQiv"
     },
     {
       "name": "Mirrors",
@@ -127,18 +139,6 @@
       "artist": "P!nk, Nate Ruess",
       "image": "https://i.scdn.co/image/ab67616d00001e0224a1ac503b55e6eef9a7bb8c",
       "url": "https://open.spotify.com/track/1mKXFLRA179hdOWQBwUk9e"
-    },
-    {
-      "name": "Best Friend (feat. Doja Cat)",
-      "artist": "Saweetie, Doja Cat",
-      "image": "https://i.scdn.co/image/ab67616d00001e02c547aeca467bfa366aef1bce",
-      "url": "https://open.spotify.com/track/20BOju91NaEFK5Py4VJ2pp"
-    },
-    {
-      "name": "Notturno in G-Flat Major, P. 011: No. 6, Internmezzo-Serenata",
-      "artist": "Ottorino Respighi, Konstantin Scherbakov",
-      "image": "https://i.scdn.co/image/ab67616d00001e0213deeef2153fb49345c92339",
-      "url": "https://open.spotify.com/track/2dr9v8jGFQbHch7aJjxZDj"
     }
   ]
 }
