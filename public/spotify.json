@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T00:33:20.197Z",
+  "generated_at": "2026-11-24T22:53:18.305Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -48,9 +48,9 @@
       "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
     },
     {
-      "name": "Dominic Fike",
-      "image": "https://i.scdn.co/image/ab6761610000f178c674a77fa82d00bcecf1a794",
-      "url": "https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
+      "name": "Malcolm Todd",
+      "image": "https://i.scdn.co/image/ab6761610000f1789f6f7c2d12975d2a4b3a0fd8",
+      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
     }
   ],
   "genres": [
@@ -60,19 +60,19 @@
     },
     {
       "name": "orchestral",
-      "share": 76
+      "share": 73
     },
     {
       "name": "impressionism",
-      "share": 21
+      "share": 20
     },
     {
       "name": "classical piano",
-      "share": 21
+      "share": 20
     },
     {
       "name": "bedroom pop",
-      "share": 21
+      "share": 20
     },
     {
       "name": "pop",
@@ -80,12 +80,6 @@
     }
   ],
   "tracks": [
-    {
-      "name": "Problem Child",
-      "artist": "brakence",
-      "image": "https://i.scdn.co/image/ab67616d00001e02155d39be706095403e6a365d",
-      "url": "https://open.spotify.com/track/6bTsje5dpsVHLixQfgPXaY"
-    },
     {
       "name": "12 Songs, Op. 21: V. Lilacs (Transcr. Rachmaninoff for Solo Piano)",
       "artist": "Sergei Rachmaninoff, Sergei Babayan",
@@ -139,6 +133,12 @@
       "artist": "P!nk, Nate Ruess",
       "image": "https://i.scdn.co/image/ab67616d00001e0224a1ac503b55e6eef9a7bb8c",
       "url": "https://open.spotify.com/track/1mKXFLRA179hdOWQBwUk9e"
+    },
+    {
+      "name": "Best Friend (feat. Doja Cat)",
+      "artist": "Saweetie, Doja Cat",
+      "image": "https://i.scdn.co/image/ab67616d00001e02c547aeca467bfa366aef1bce",
+      "url": "https://open.spotify.com/track/20BOju91NaEFK5Py4VJ2pp"
     }
   ]
 }
