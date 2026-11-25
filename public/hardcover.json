@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T22:59:03.422Z",
+  "generated_at": "2026-11-25T22:27:04.432Z",
   "currentlyReading": [
     {
       "title": "The Gate of the Feral Gods",
@@ -11,11 +11,11 @@
       "dateRead": null,
       "published": "2021",
       "numPages": 586,
-      "progress": 0.37,
+      "progress": 0.52,
       "imageUrl": "https://assets.hardcover.app/book/446722/d1291f60-f505-4b74-836d-09d70ac5ad05.jpg",
       "bookId": "446722",
       "link": "https://hardcover.app/books/the-gate-of-the-feral-gods",
-      "lastRead": "2026-11-24T07:19:34.756Z"
+      "lastRead": "2026-11-25T07:48:29.798Z"
     },
     {
       "title": "A Game of Thrones",
@@ -37,7 +37,7 @@
       "title": "Les Misérables",
       "author": "Victor Hugo",
       "rating": 0,
-      "avgRating": 4.23,
+      "avgRating": 4.24,
       "dateAdded": "2026-11-05T00:00:00.000Z",
       "dateStarted": "2026-09-13T00:00:00.000Z",
       "dateRead": null,
@@ -1330,6 +1330,10 @@
       {
         "day": "2026-11-24",
         "pages": 6
+      },
+      {
+        "day": "2026-11-25",
+        "pages": 88
       }
     ]
   }
