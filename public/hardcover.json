@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T22:27:04.432Z",
+  "generated_at": "2026-11-26T22:15:57.707Z",
   "currentlyReading": [
     {
       "title": "The Gate of the Feral Gods",
@@ -116,7 +116,7 @@
       "title": "The Perks of Being a Wallflower",
       "author": "Stephen Chbosky",
       "rating": 4,
-      "avgRating": 4.09,
+      "avgRating": 4.1,
       "dateAdded": "2026-11-05T00:00:00.000Z",
       "dateStarted": null,
       "dateRead": "2026-10-16T00:00:00.000Z",
@@ -191,7 +191,7 @@
       "title": "Lonesome Dove",
       "author": "Larry McMurtry",
       "rating": 4,
-      "avgRating": 4.64,
+      "avgRating": 4.65,
       "dateAdded": "2026-04-27T00:00:00.000Z",
       "dateStarted": null,
       "dateRead": "2026-08-25T00:00:00.000Z",
@@ -1334,6 +1334,10 @@
       {
         "day": "2026-11-25",
         "pages": 88
+      },
+      {
+        "day": "2026-11-26",
+        "pages": 0
       }
     ]
   }
