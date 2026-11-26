@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T22:06:37.741Z",
+  "generated_at": "2026-11-26T22:05:23.614Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -38,19 +38,19 @@
       "url": "https://open.spotify.com/artist/5FxD8fkQZ6KcsSYupDVoSO"
     },
     {
+      "name": "Stromae",
+      "image": "https://i.scdn.co/image/ab6761610000f178cc129f1c9b5047760d66aae2",
+      "url": "https://open.spotify.com/artist/5j4HeCoUlzhfWtjAfM1acR"
+    },
+    {
       "name": "Alexandre Tharaud",
       "image": "https://i.scdn.co/image/ab6761610000f178c9ecbdc6f1732b27ad284ad9",
       "url": "https://open.spotify.com/artist/5HG9Eg7Ik8ZuNtMyGYTxLG"
     },
     {
-      "name": "The Marías",
-      "image": "https://i.scdn.co/image/ab6761610000f178af586afa2b397f1288683a76",
-      "url": "https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx"
-    },
-    {
-      "name": "Malcolm Todd",
-      "image": "https://i.scdn.co/image/ab6761610000f1789f6f7c2d12975d2a4b3a0fd8",
-      "url": "https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz"
+      "name": "Justin Timberlake",
+      "image": "https://i.scdn.co/image/ab6761610000f1787a5cfe2597665a3d160e805e",
+      "url": "https://open.spotify.com/artist/31TPClRtHm23RisEBtV3X7"
     }
   ],
   "genres": [
@@ -72,14 +72,20 @@
     },
     {
       "name": "bedroom pop",
-      "share": 20
+      "share": 18
     },
     {
       "name": "french pop",
-      "share": 4
+      "share": 7
     }
   ],
   "tracks": [
+    {
+      "name": "Everybody's Changing",
+      "artist": "Keane",
+      "image": "https://i.scdn.co/image/ab67616d00001e02045d0a38105fbe7bde43c490",
+      "url": "https://open.spotify.com/track/5hkdfA87RZvNaxl6XiveOA"
+    },
     {
       "name": "12 Songs, Op. 21: V. Lilacs (Transcr. Rachmaninoff for Solo Piano)",
       "artist": "Sergei Rachmaninoff, Sergei Babayan",
@@ -99,10 +105,10 @@
       "url": "https://open.spotify.com/track/7c8EKQLv5ld1uWm1BdGqds"
     },
     {
-      "name": "Everybody's Changing",
-      "artist": "Keane",
-      "image": "https://i.scdn.co/image/ab67616d00001e02045d0a38105fbe7bde43c490",
-      "url": "https://open.spotify.com/track/5hkdfA87RZvNaxl6XiveOA"
+      "name": "Mirrors",
+      "artist": "Justin Timberlake",
+      "image": "https://i.scdn.co/image/ab67616d00001e0256d5fb0cc9cec001d8ae0c8c",
+      "url": "https://open.spotify.com/track/4rHZZAmHpZrA3iH5zx8frV"
     },
     {
       "name": "Swan Lake (Suite), Op. 20a, TH.219: I. Scene - Swan Theme",
@@ -111,10 +117,10 @@
       "url": "https://open.spotify.com/track/6JyihARD2zGUa4uB4NfQiv"
     },
     {
-      "name": "Mirrors",
-      "artist": "Justin Timberlake",
-      "image": "https://i.scdn.co/image/ab67616d00001e0256d5fb0cc9cec001d8ae0c8c",
-      "url": "https://open.spotify.com/track/4rHZZAmHpZrA3iH5zx8frV"
+      "name": "How Far We've Come",
+      "artist": "Matchbox Twenty",
+      "image": "https://i.scdn.co/image/ab67616d00001e02f98ea6feb7227c326dc3efe4",
+      "url": "https://open.spotify.com/track/6FYuXs13pZOuTPYJZODbRs"
     },
     {
       "name": "Etudes symphoniques (Symphonic Etudes), Op. 13, Adagio and Allegro brillante: Variation 11 [arr. P.I. Tchaikovsky for orchestra]",
@@ -133,12 +139,6 @@
       "artist": "P!nk, Nate Ruess",
       "image": "https://i.scdn.co/image/ab67616d00001e0224a1ac503b55e6eef9a7bb8c",
       "url": "https://open.spotify.com/track/1mKXFLRA179hdOWQBwUk9e"
-    },
-    {
-      "name": "Best Friend (feat. Doja Cat)",
-      "artist": "Saweetie, Doja Cat",
-      "image": "https://i.scdn.co/image/ab67616d00001e02c547aeca467bfa366aef1bce",
-      "url": "https://open.spotify.com/track/20BOju91NaEFK5Py4VJ2pp"
     }
   ]
 }
