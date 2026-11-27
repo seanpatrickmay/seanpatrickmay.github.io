@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T22:05:23.614Z",
+  "generated_at": "2026-11-27T21:47:12.160Z",
   "time_range": "short_term",
   "artists": [
     {
@@ -87,6 +87,12 @@
       "url": "https://open.spotify.com/track/5hkdfA87RZvNaxl6XiveOA"
     },
     {
+      "name": "Washing Machine Heart",
+      "artist": "Mitski",
+      "image": "https://i.scdn.co/image/ab67616d00001e02c428f67b4a9b7e1114dfc117",
+      "url": "https://open.spotify.com/track/3jjsRKEsF42ccXf8kWR3nu"
+    },
+    {
       "name": "12 Songs, Op. 21: V. Lilacs (Transcr. Rachmaninoff for Solo Piano)",
       "artist": "Sergei Rachmaninoff, Sergei Babayan",
       "image": "https://i.scdn.co/image/ab67616d00001e0207ec93581ad7b16b666165b6",
@@ -103,6 +109,12 @@
       "artist": "Dmitri Shostakovich, Tasmin Little, Piers Lane",
       "image": "https://i.scdn.co/image/ab67616d00001e0216904029c31ca50916e3116a",
       "url": "https://open.spotify.com/track/7c8EKQLv5ld1uWm1BdGqds"
+    },
+    {
+      "name": "Useless",
+      "artist": "Omar Apollo",
+      "image": "https://i.scdn.co/image/ab67616d00001e026e06e45ecdc297ddaea115e4",
+      "url": "https://open.spotify.com/track/7dJN4NWQuqCjWwIT3UwOps"
     },
     {
       "name": "Mirrors",
@@ -127,18 +139,6 @@
       "artist": "Robert Schumann, Seattle Symphony Orchestra, Gerard Schwarz",
       "image": "https://i.scdn.co/image/ab67616d00001e020bff48e1d92ee2513c78833f",
       "url": "https://open.spotify.com/track/0u60Tzq3rzE10vqvJqVGZA"
-    },
-    {
-      "name": "Sonatine, M. 40: Modéré",
-      "artist": "Maurice Ravel, François-Joël Thiollier",
-      "image": "https://i.scdn.co/image/ab67616d00001e025bd122bb40c5aa65f2890544",
-      "url": "https://open.spotify.com/track/1bGzFerVd4nodyZRcXD7wp"
-    },
-    {
-      "name": "Just Give Me a Reason (feat. Nate Ruess)",
-      "artist": "P!nk, Nate Ruess",
-      "image": "https://i.scdn.co/image/ab67616d00001e0224a1ac503b55e6eef9a7bb8c",
-      "url": "https://open.spotify.com/track/1mKXFLRA179hdOWQBwUk9e"
     }
   ]
 }
